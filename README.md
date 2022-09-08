@@ -22,12 +22,13 @@ Run:
 
 Environment variables
 
-| Name              | Value                                                          |
-|-------------------|----------------------------------------------------------------|
-| `VITE_FONT_PATH`  | `/vercel/path0`                                                |
-| `LD_LIBRARY_PATH` | `/var/task/node_modules/canvas/build/Release:$LD_LIBRARY_PATH` |
+| Name                           | Value                                                          |
+|--------------------------------|----------------------------------------------------------------|
+| `VITE_CONTENTFUL_ACCESS_TOKEN` | `something`                                                    |
+| `VITE_FONT_PATH`               | `/vercel/path0` (not sure if still needed ^^')                 |
+| `LD_LIBRARY_PATH`              | `/var/task/node_modules/canvas/build/Release:$LD_LIBRARY_PATH` |
 
-⚠️ currently, `--force` should be added to the BUILD and INSTALL commands (maybe not for install, I need more tests)..
+⚠️ currently, `--force` should be added to the BUILD command otherwise there is no output folder since Vercel start the build in a new environment.
 
 ### For ehretdotme
 
