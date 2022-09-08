@@ -1,0 +1,12 @@
+{
+  "name": "@packages/utils",
+  "description": "Some utilities functions",
+  "version": "1.0.0",
+  "license": "AGPL-3.0-or-later",
+  "author": {
+    "name": "Siegfried EHRET",
+    "email": "siegfried@ehret.me",
+    "url": "https://ehret.me"
+  },
+  "main": "index.ts"
+}

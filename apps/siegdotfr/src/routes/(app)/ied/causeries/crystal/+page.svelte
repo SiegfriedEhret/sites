@@ -1,0 +1,44 @@
+<h1>Coder avec Crystal pour ne pas perdre la boule</h1>
+
+<h2>Description</h2>
+
+<p>
+	Crystal est un langage généraliste inspiré de Ruby et qui cible des performances proches du C. Il
+	est bien placé dans les étoiles sur GitHub entre Scala, Elixir et Ruby et est accompagné d'une
+	petite communauté bien productive.
+</p>
+
+<p>
+	À travers le développement d’une petite application, découvrons Crystal ensemble ainsi que
+	l’outillage qui l’entoure.
+</p>
+
+<p>
+	Au programme: Hello <code>nom de conférence</code> (comme un Hello World mais en différent), types,
+	programmation orientée objet, compilateur, ligne de commande, gestion de dépendances et tests.
+</p>
+
+<h2>Liens</h2>
+
+<ul>
+	<li>
+		<a href="https://git.sr.ht/~siegfriedehret/coder-avec-crystal-pour-ne-pas-perdre-la-boule">
+			Dépôt git
+		</a>
+	</li>
+	<li>
+		La même chose en 3 parties: <a href="https://sieg.fr/ied/crystal-01">1</a>,
+		<a href="https://sieg.fr/ied/crystal-02">2</a>, <a href="https://sieg.fr/ied/crystal-03">3</a>
+	</li>
+</ul>
+
+<h2>Conférences</h2>
+
+<ul>
+	<li>21 avril 2022 - Devoxx France</li>
+	<li>
+		28 octobre 2020 - Halloween des speakers (<a href="https://www.youtube.com/watch?v=QhwkBK4J9HM"
+			>vidéo</a
+		>)
+	</li>
+</ul>

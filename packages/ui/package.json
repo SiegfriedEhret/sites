@@ -1,0 +1,18 @@
+{
+  "name": "@packages/ui",
+  "description": "Some components",
+  "version": "1.0.0",
+  "license": "AGPL-3.0-or-later",
+  "author": {
+    "name": "Siegfried EHRET",
+    "email": "siegfried@ehret.me",
+    "url": "https://ehret.me"
+  },
+  "main": "index.js",
+  "files": [
+    "*.svelte"
+  ],
+  "dependencies": {
+    "@packages/utils": "workspace:1.0.0"
+  }
+}
