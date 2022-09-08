@@ -25,8 +25,7 @@
 	<p slot="awesome">Vous êtes chouettes. Bisous.</p>
 	<a slot="link" href="https://ehret.me/" title="Mon site en anglais"> 🔗 ehret.me </a>
 	<p slot="made-with">
-		Bidouillé avec <a href="https://kit.svelte.dev/">SvelteKit</a> et
-		<a href="https://www.contentful.com/">Contentful</a>
+		Bidouillé avec 💖 et <a href="https://git.sr.ht/~siegfriedehret/sites">⌨️</a>.
 	</p>
 </Footer>
 

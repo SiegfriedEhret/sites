@@ -24,7 +24,6 @@
 	<p slot="awesome">I think you are awesome. Peace.</p>
 	<a slot="link" href="https://sieg.fr/ied" title="My website in French"> 🔗 sieg.fr/ied </a>
 	<p slot="made-with">
-		Made with <a href="https://kit.svelte.dev/">SvelteKit</a> and
-		<a href="https://www.contentful.com/">Contentful</a>
+		Made with 💖 and <a href="https://git.sr.ht/~siegfriedehret/sites">⌨️</a>.
 	</p>
 </Footer>
