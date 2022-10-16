@@ -13,6 +13,7 @@
 	<span slot="links">
 		<a class="text-wevet" data-sveltekit:prefetch href="/notes">/notes</a>
 		<a class="text-wevet" data-sveltekit:prefetch href="/museum">/museum</a>
+		<a class="text-wevet" data-sveltekit:prefetch href="/salary">/salary</a>
 	</span>
 </Header>
 
