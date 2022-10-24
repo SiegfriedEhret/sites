@@ -5,14 +5,15 @@
 </script>
 
 <Header>
-	<a slot="title" class="text-wevet mr-2" data-sveltekit:prefetch href="/">ehret.me</a>
+	<a slot="title" class="to-home" data-sveltekit:prefetch href="/">ehret.me</a>
 	<span slot="links">
-		<a class="text-wevet" data-sveltekit:prefetch href="/notes">/notes</a>
-		<a class="text-wevet" data-sveltekit:prefetch href="/museum">/museum</a>
+		<a data-sveltekit:prefetch href="/notes">/notes</a>
+		<a data-sveltekit:prefetch href="/museum">/museum</a>
+		<a data-sveltekit:prefetch href="/salary">/salary</a>
 	</span>
 </Header>
 
-<main class="flex flex-col my-0 mx-4">
+<main>
 	<slot />
 </main>
 
@@ -23,3 +24,21 @@
 		Made with 💖 and <a href="https://git.sr.ht/~siegfriedehret/sites">⌨️</a>.
 	</p>
 </Footer>
+
+<style>
+	.to-home {
+		margin-right: .5rem;
+	}
+
+main {
+	display: flex;
+	flex-direction: column;
+	margin: 0 1rem;
+}
+
+@media screen and (min-width: 800px) {
+	main {
+		padding: 1rem 0;
+	}
+}
+</style>

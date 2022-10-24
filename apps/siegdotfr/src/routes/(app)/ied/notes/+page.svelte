@@ -16,7 +16,7 @@
 
 <nav>
 	{#each items as item}
-		<section class="flex flex-col" data-year={getYear(item.publicationDate)}>
+		<section data-year={getYear(item.publicationDate)}>
 			<a href={`/ied/${item.slug}`} sveltekit:prefetch>
 				{item.title}
 			</a>
@@ -32,6 +32,8 @@
 	}
 
 	section {
+		display: flex;
+		flex-direction: column;
 		margin: 1rem 0;
 	}
 

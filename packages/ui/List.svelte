@@ -12,7 +12,7 @@
 {:else if page === 'index'}
 	<ul>
 		{#each items as item}
-			<li class="my-0 py-0">
+			<li>
 				<a href={`/${item.slug}`} data-sveltekit:prefetch>
 					{item.title}
 				</a>
@@ -39,6 +39,11 @@
 <style>
 	time {
 		font-variant: tabular-nums;
+	}
+
+	li {
+		margin: 0;
+		padding: 0;
 	}
 
 	section {

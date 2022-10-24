@@ -12,7 +12,7 @@
 	<h2>Dernières notes.</h2>
 	<ul>
 		{#each items as item}
-			<li class="my-0 py-0">
+			<li>
 				<a href={`/ied/${item.slug}`} sveltekit:prefetch>
 					{item.title}
 				</a>
@@ -21,3 +21,10 @@
 	</ul>
 	<a href="/ied/notes">Toutes mes notes.</a>
 </section>
+
+<style>
+	li {
+		margin: 0;
+		padding: 0;
+	}
+</style>

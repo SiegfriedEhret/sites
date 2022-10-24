@@ -17,18 +17,28 @@
 <ul>
 	{#each items.sort((a, b) => a.title.localeCompare(b.title)) as item}
 		{#if item.isReviewed}
-			<li data-title={item.title} class="grid grid-cols-2">
-				<a class="col-span-2" href={`/ied/mu/${item.slug}`} sveltekit:prefetch>
+			<li data-title={item.title} class="grid">
+				<a href={`/ied/mu/${item.slug}`} sveltekit:prefetch>
 					{item.title}
 				</a>
 				<span>Sorti le {formatDate(item.releaseDate)}</span>
-				<span class="text-right">[{item.note}/10]</span>
+				<span>[{item.note}/10]</span>
 			</li>
 		{/if}
 	{/each}
 </ul>
 
 <style>
+	.grid {
+		display: grid; 
+		grid-template-columns: repeat(2,minmax(0,1fr));
+	}
+	.grid a {
+	    grid-column: span 2 / span 2;
+	}
+	.grid span+span {
+		text-align: right;
+	}
 	ul {
 		list-style-type: none !important;
 	}

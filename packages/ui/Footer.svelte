@@ -1,11 +1,11 @@
-<div class="mt-16 border-t border-t-prime">
-	<footer class="prose prose-lg mx-auto p-4 lg:px-0">
+<div class="container">
+	<footer>
 		<slot name="awesome" />
 		<nav>
 			<a href="/rss.xml">📫 RSS</a>
-			<span class="mx-2">|</span>
+			<span class="separator">|</span>
 			<slot name="link" />
-			<span class="mx-2">|</span>
+			<span class="separator">|</span>
 			<a href="https://mastodon.ehret.me/@SiegfriedEhret" rel="me" title="🐘 mastodon">
 				🐘 mastodon
 			</a>
@@ -13,3 +13,23 @@
 		<slot name="made-with" />
 	</footer>
 </div>
+
+<style>
+.container {
+	border-top: 1px solid var(--prime);
+	margin-top: 4rem;
+}
+footer {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+.separator {
+	margin: 0 .5rem;
+}
+@media screen and (min-width: 800px) {
+	footer {
+		padding: 0;
+	}
+}
+</style>

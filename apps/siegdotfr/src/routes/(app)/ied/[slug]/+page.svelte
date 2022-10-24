@@ -25,27 +25,70 @@
 	{#if item.heroImage}
 		<Figure item={item.heroImage} />
 	{/if}
-	<details class="text-sm mb-4">
-		<summary class="underline cursor-pointer">{formatDate(item.publicationDate)}</summary>
+	<details>
+		<summary>{formatDate(item.publicationDate)}</summary>
 		Dernière modification le {formatDate(item.sys.publishedAt)}
 	</details>
 	{#if headings && headings.length > 0}
+	<div class="toc">
 		<button
-				class="border rounded border-prime hover:bg-prime hover:text-wevet py-1 px-2"
 				on:click|preventDefault={() => (show = !show)}
 		>
 			Raccourcis
 		</button>
 		{#if show}
-			<nav class="flex flex-col text-sm">
+			<nav>
 				{#each headings as heading}
 					<a class={heading.level} href={`#${heading.id}`}>{heading.title}</a>
 				{/each}
 			</nav>
 		{/if}
+	</div>
 	{/if}
 
 	{@html html}
 </article>
 
-<!--<pre>{JSON.stringify(item, null, 2)}</pre>-->
+<style>
+	details {
+		margin-bottom: 1rem;
+		font-size: var(--fs-small);
+	}
+	summary {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	.toc button {
+		border-radius: .5rem;
+		border: 1px solid var(--prime);
+		background: transparent;
+		color: var(--text);
+		padding: .5rem 1rem;
+	}
+	.toc .h2 {
+		padding-left: .5rem;
+	}
+	.toc .h3 {
+		padding-left: 1rem;
+	}
+	.toc .h4 {
+		padding-left: 1.5rem;
+	}
+	.toc .h5 {
+		padding-left: 2rem;
+	}
+	.toc .h6 {
+		padding-left: 2.5rem;
+	}
+	button:focus,
+	button:hover {
+		background: var(--prime);
+		color: var(--wevet);
+	}
+	nav {
+		display: flex;
+		flex-direction: column; 
+		 font-size: .875rem;
+  		line-height: 1.25rem;
+	}
+</style>

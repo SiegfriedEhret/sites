@@ -1,8 +1,25 @@
-<header class="bg-prime">
-	<nav class="prose prose-lg mx-auto px-4 lg:px-0">
+<header>
+	<nav>
 		<slot name="title" />
-		<span class="text-wevet">(</span>
+		<span>(</span>
 		<slot name="links" />
-		<span class="text-wevet">)</span>
+		<span>)</span>
 	</nav>
 </header>
+
+<style>
+header {
+	background: var(--lake-red);
+	color: var(--wevet);
+}
+nav {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+@media screen and (min-width: 800px) {
+	nav {
+		padding: 0;
+	}
+}
+</style>

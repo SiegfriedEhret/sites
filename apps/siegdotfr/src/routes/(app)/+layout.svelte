@@ -9,15 +9,15 @@
 </svelte:head>
 
 <Header>
-	<a slot="title" class="text-wevet mr-2" sveltekit:prefetch href="/ied">sieg.fr/ied</a>
+	<a slot="title" class="to-home" sveltekit:prefetch href="/ied">sieg.fr/ied</a>
 	<span slot="links">
-		<a class="text-wevet" sveltekit:prefetch href="/ied/notes">/notes</a>
-		<a class="text-wevet" sveltekit:prefetch href="/ied/mu">/mu</a>
-		<a class="text-wevet" sveltekit:prefetch href="/ied/causeries">/causeries</a>
+		<a sveltekit:prefetch href="/ied/notes">/notes</a>
+		<a sveltekit:prefetch href="/ied/mu">/mu</a>
+		<a sveltekit:prefetch href="/ied/causeries">/causeries</a>
 	</span>
 </Header>
 
-<main class="prose prose-lg mx-auto my-4 dark:prose-invert px-4 lg:px-0">
+<main>
 	<slot />
 </main>
 
@@ -29,7 +29,20 @@
 	</p>
 </Footer>
 
+<style>
+	.to-home {
+		margin-right: .5rem;
+	}
 
-<div aria-hidden="true" class="hidden mt-16 bg-prime border-t border-t-prime p-4 lg:px-0 mx-2">
-	<!-- Some classes to fix styles of imported components -->
-</div>
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+	main {
+		padding: 1rem 0;
+	}
+}
+</style>

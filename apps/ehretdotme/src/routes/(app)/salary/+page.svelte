@@ -5,15 +5,13 @@
     export let data: PageData;
     const { items }: { items: Job[] } = data;
 
-    function f(amount, currency) {
+    function f(amount: number, currency: string) {
         return new Intl.NumberFormat('en', { style: 'currency', currency }).format(amount)
     }
 
     function sortByDate(jobs: Job[]) {
         return jobs.sort((a, b) => a.startDate.localeCompare(b.startDate));
     }
-
-    const td = "block lg:table-cell before:block lg:before:hidden before:font-bold before:content-[attr(data-before)]"
 </script>
 
 <h1>Salary transparency</h1>
@@ -21,8 +19,8 @@
 <p>Following the example from <a href="https://xeiaso.net/salary-transparency">this page</a>, here is an overview on my different jobs and associated salaries.</p>
 <p>🚧 This is the first version of this page, some numbers are wrong because I have not been through all my archives yet; starting with MetLife, I am confident with the numbers. I will also include raises.</p>
 
-<table class="block lg:table">
-    <thead class="hidden lg:table-header-group">
+<table>
+    <thead>
         <tr>
             <th>Title</th>
             <th>Company</th>
@@ -34,12 +32,12 @@
     </thead>
     <tbody>
     {#each sortByDate(items) as item}
-        <tr class="block lg:table-row">
-            <td class={`${td} pl-3 lg:pl-0`} data-before="Title">{item.title}</td>
-            <td class={td} data-before="Company"><a href={item.url}>{item.company}</a></td>
-            <td class={td} data-before="Start">{item.startDate}</td>
-            <td class={td} data-before="End">{item.endDate ?? ""}</td>
-            <td class={td} data-before="Entry Salary">
+        <tr>
+            <td data-before="Title">{item.title}</td>
+            <td data-before="Company"><a href={item.url}>{item.company}</a></td>
+            <td data-before="Start">{item.startDate}</td>
+            <td data-before="End">{item.endDate ?? ""}</td>
+            <td data-before="Entry Salary">
                 {#if item.salary}
                     {f(item.salary, item.currency)}
                     {#if item.bonus}
@@ -48,8 +46,66 @@
                     {/if}
                 {/if}
             </td>
-            <td class={td} data-before="Note">{item.comment ?? ""}</td>
+            <td data-before="Note">{item.comment ?? ""}</td>
         </tr>
         {/each}
     </tbody>
 </table>
+
+<style>
+    table {
+        display: block;
+        font-size: 1rem;
+    }
+    thead {
+        display: none;
+    }
+    tbody tr {
+        display: block;
+    }
+    tbody td {
+        display: block;
+    }
+    tbody tr {
+        border-top: 1px solid var(--wevet);
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+    tbody tr:first-child {
+        border-top: none;
+    }
+    tbody td::before {
+        display: block;
+        font-weight: bold;
+        content: attr(data-before);
+    }
+
+    @media screen and (min-width: 800px) {
+        table {
+            display: table;
+            border-collapse: collapse;
+        }
+        td {
+            padding: .2rem .5rem;
+        }
+        td:first-child {
+            padding-left: 0;
+        }
+        td:last-child {
+            padding-right: 0;
+        }
+        thead {
+            display: table-header-group;
+        }
+        tbody tr {
+            display: table-row;
+        }
+        tbody td {
+            display: table-cell;
+            border-top: 1px solid var(--wevet);
+        }
+        tbody td::before {
+            display: none;
+        }
+    }
+</style>

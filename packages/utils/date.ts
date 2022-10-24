@@ -6,7 +6,7 @@ function add0(time: number) {
   return `0${time}`.slice(-2);
 }
 
-export function formatDate(date: string | number | Date, locale: string) {
+export function formatDate(date: string | number | Date, locale = "en") {
   if (locale === "fr") {
     return new Date(date).toLocaleDateString("fr");
   } else {

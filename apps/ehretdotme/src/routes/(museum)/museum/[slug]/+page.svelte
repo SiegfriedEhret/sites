@@ -15,7 +15,7 @@
 	<meta name="description" content={artPiece.description ?? getTitle(artPiece)} />
 </svelte:head>
 
-<article class="prose prose-xl dark:prose-invert">
+<article>
 	{#each artPiece.mediaCollection.items as item}
 		<figure>
 			<img src={item.url} alt={getTitle(artPiece)} />
@@ -26,7 +26,7 @@
 			</figcaption>
 		</figure>
 	{/each}
-	<h1 class="hidden">{artPiece.name}</h1>
+	<h1>{artPiece.name}</h1>
 	{#if artPiece.descriptionHtml}
 		<div>{@html artPiece.descriptionHtml.html}</div>
 	{/if}
@@ -35,6 +35,9 @@
 </article>
 
 <style>
+	h1 {
+		display: none;
+	}
 	figure,
 	img {
 		max-width: 100%;

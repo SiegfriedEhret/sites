@@ -15,9 +15,7 @@
 	<meta name="description" content="Bad photographs, real art." />
 </svelte:head>
 
-<div class="prose max-w-none">
 	<h1>Museum of Poorly Photographed Art</h1>
-</div>
 
 <div class="filters">
 	<button on:click={() => ($filterArtist = '')}>All</button>
