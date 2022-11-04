@@ -60,6 +60,10 @@ h6 {
 	font-weight: 500;
 }
 
+h1 {
+	margin-top: 0;
+}
+
 ul {
 	list-style-type: hiragana-iroha !important;
 }
@@ -97,7 +101,6 @@ article pre {
 }
 
 pre {
-	margin: 0;
 	color: var(--wevet);
 	background-color: var(--code);
 	border: 1px solid var(--wevet);
@@ -105,8 +108,7 @@ pre {
 	font-weight: 400;
 	font-size: var(--fs-small);
 	line-height: 1.75;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin: 2rem 0;
 	border-radius: 0.375rem;
 	padding: 1rem 1.5rem;
 }

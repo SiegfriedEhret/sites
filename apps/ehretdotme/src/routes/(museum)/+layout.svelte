@@ -27,18 +27,12 @@
 
 <style>
 	.to-home {
-		margin-right: .5rem;
+		font-weight: 800;
+		font-size: 2rem;
 	}
 
-main {
-	display: flex;
-	flex-direction: column;
-	margin: 0 1rem;
-}
-
-@media screen and (min-width: 800px) {
 	main {
-		padding: 1rem 0;
+		width: 100%;
+		padding: 1rem;
 	}
-}
 </style>

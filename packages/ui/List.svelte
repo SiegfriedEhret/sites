@@ -61,15 +61,19 @@
 		padding: 0.5rem 1rem;
 		font-weight: bold;
 		font-variant: tabular-nums;
+		border: 2px solid var(--back);
 	}
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 60rem) {
 		section[data-year]::before {
 			position: absolute;
-			transform: rotate(-90deg) translateX(-1rem) translateY(-5rem);
+			transform: rotate(-90deg) translateX(-1rem) translateY(-4.5rem);
 		}
 	}
 
+	section[data-year='2023']::before {
+		content: '2023';
+	}
 	section[data-year='2022']::before {
 		content: '2022';
 	}
@@ -121,5 +125,6 @@
 	section[data-year='2011'] + section[data-year='2011']::before {
 		content: '';
 		padding: 0;
+		border: 0;
 	}
 </style>
