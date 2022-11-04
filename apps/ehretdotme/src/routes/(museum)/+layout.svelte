@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../../app.css';
+	import '@packages/ui/app.css';
 	import Footer from '@packages/ui/Footer.svelte';
 	import Header from '@packages/ui/Header.svelte';
 </script>

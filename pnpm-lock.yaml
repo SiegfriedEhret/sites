@@ -123,11 +123,21 @@ importers:
   packages/ui:
     specifiers:
       '@packages/utils': workspace:1.0.0
+      prettier: ^2.7.1
+      prettier-plugin-svelte: ^2.8.0
+      svelte: ^3.52.0
     dependencies:
       '@packages/utils': link:../utils
+    devDependencies:
+      prettier: 2.7.1
+      prettier-plugin-svelte: 2.8.0_lrllcp5xtrkmmdzifit4hd52ze
+      svelte: 3.52.0
 
   packages/utils:
-    specifiers: {}
+    specifiers:
+      prettier: ^2.7.1
+    devDependencies:
+      prettier: 2.7.1
 
 packages:
 

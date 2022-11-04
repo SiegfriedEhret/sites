@@ -1,18 +1,29 @@
 {
-  "name": "@packages/ui",
-  "description": "Some components",
-  "version": "1.0.0",
-  "license": "AGPL-3.0-or-later",
-  "author": {
-    "name": "Siegfried EHRET",
-    "email": "siegfried@ehret.me",
-    "url": "https://ehret.me"
-  },
-  "main": "index.js",
-  "files": [
-    "*.svelte"
-  ],
-  "dependencies": {
-    "@packages/utils": "workspace:1.0.0"
-  }
+	"name": "@packages/ui",
+	"description": "Some components",
+	"version": "1.0.0",
+	"license": "AGPL-3.0-or-later",
+	"author": {
+		"name": "Siegfried EHRET",
+		"email": "siegfried@ehret.me",
+		"url": "https://ehret.me"
+	},
+	"scripts": {
+		"format": "prettier --write ."
+	},
+	"main": "index.js",
+	"files": [
+		"*.svelte"
+	],
+	"dependencies": {
+		"@packages/utils": "workspace:1.0.0"
+	},
+	"devDependencies": {
+		"prettier": "^2.7.1",
+		"prettier-plugin-svelte": "^2.8.0",
+		"svelte": "^3.52.0"
+	},
+	"peerDependencies": {
+		"svelte": "^3.2.0"
+	}
 }

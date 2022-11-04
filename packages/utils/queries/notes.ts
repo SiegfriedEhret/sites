@@ -1,5 +1,5 @@
-export const getNotesCollectionQuery = (limit: number, language = "en") => {
-  return `query getPosts {
+export const getNotesCollectionQuery = (limit: number, language = 'en') => {
+	return `query getPosts {
   blogPostCollection(where: {
     OR: [
       { language_contains: "${language}" }
@@ -25,8 +25,8 @@ export const getNotesCollectionQuery = (limit: number, language = "en") => {
 `;
 };
 
-export const getNoteQuery = (slug: string, language = "en") => {
-  return `query getPost {
+export const getNoteQuery = (slug: string, language = 'en') => {
+	return `query getPost {
   blogPostCollection(where: {
     AND: [
       { language_contains: "${language}" }

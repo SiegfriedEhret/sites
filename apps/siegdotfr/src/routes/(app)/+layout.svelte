@@ -1,7 +1,7 @@
 <script lang="ts">
+	import '@packages/ui/app.css';
 	import Footer from '@packages/ui/Footer.svelte';
 	import Header from '@packages/ui/Header.svelte';
-	import '../../app.css';
 </script>
 
 <svelte:head>
