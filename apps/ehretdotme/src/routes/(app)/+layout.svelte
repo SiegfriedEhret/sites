@@ -21,7 +21,6 @@
 
 	<main slot="main">
 		<slot />
-
 		<Footer>
 			<p slot="awesome">I think you are awesome. Peace.</p>
 			<a slot="link" href="https://sieg.fr/ied" title="My website in French"> 🔗 sieg.fr/ied </a>

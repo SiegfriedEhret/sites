@@ -7,7 +7,9 @@
 </script>
 
 <svelte:head>
-	<title>sieg.fr/ied/mu</title>
+	<title>/mu [sieg.fr/ied]</title>
+	<meta property="og:title" content={`/mu [sieg.fr/ied]`} />
+	<meta property="og:description" name="description" content="Musieg, musique, tout ça." />
 	<meta name="description" content="Musieg, musique, tout ça." />
 </svelte:head>
 

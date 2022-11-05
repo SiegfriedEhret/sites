@@ -14,6 +14,13 @@
     }
 </script>
 
+<svelte:head>
+    <title>/salary [ehret.me]</title>
+    <meta property="og:title" content="/salary [ehret.me]" />
+    <meta name="og:description" content="Salary transparency: about job titles and salaries." />
+    <meta name="description" content="Salary transparency: about job titles and salaries." />
+</svelte:head>
+
 <h1>Salary transparency</h1>
 
 <p>Following the example from <a href="https://xeiaso.net/salary-transparency">this page</a>, here is an overview on my different jobs and associated salaries.</p>

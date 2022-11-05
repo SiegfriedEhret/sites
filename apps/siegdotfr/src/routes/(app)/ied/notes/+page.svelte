@@ -7,7 +7,9 @@
 </script>
 
 <svelte:head>
-	<title>sieg.fr/ied/notes</title>
+	<title>/notes [sieg.fr/ied]</title>
+	<meta property="og:title" content={`/notes [sieg.fr/ied]`} />
+	<meta property="og:description" name="description" content="Un peu de tout, et beaucoup de rien." />
 	<meta name="description" content="Un peu de tout, et beaucoup de rien." />
 </svelte:head>
 

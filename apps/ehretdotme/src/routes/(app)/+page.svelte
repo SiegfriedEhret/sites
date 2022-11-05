@@ -7,14 +7,16 @@
 </script>
 
 <svelte:head>
-	<title>ehret.me</title>
-	<meta name="description" content="Some notes." />
+	<title>/ [ehret.me]</title>
+	<meta property="og:title" content={`/ [ehret.me]`} />
+	<meta property="og:description" name="description" content="My name is Siegfried Ehret. I am a developer." />
+	<meta name="description" content="My name is Siegfried Ehret. I am a developer." />
 </svelte:head>
 
 <article>
 	<h1>Hello!</h1>
 
-	<p>My name is Siegfried. I am a developer.</p>
+	<p>My name is Siegfried Ehret. I am a developer.</p>
 
 	<section>
 		<h2>Latest notes.</h2>

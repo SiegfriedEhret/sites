@@ -9,6 +9,8 @@
 
 <svelte:head>
 	<title>{item.title} [sieg.fr/ied]</title>
+	<meta property="og:title" content={`${item.title} [sieg.fr/ied]`} />
+	<meta property="og:description" name="description" content={item.description} />
 	<meta name="description" content={item.description} />
 </svelte:head>
 

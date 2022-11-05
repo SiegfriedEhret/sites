@@ -11,11 +11,13 @@
 </script>
 
 <svelte:head>
-	<title>Museum of Poorly Photographed Art [ehret.me]</title>
-	<meta name="description" content="Bad photographs, real art." />
+	<title>/museum [ehret.me]</title>
+	<meta property="og:title" content="/museum [ehret.me]" />
+	<meta name="og:description" content="Museum of Poorly Photographed Art - Bad photographs, real art." />
+	<meta name="description" content="Museum of Poorly Photographed Art - Bad photographs, real art." />
 </svelte:head>
 
-	<h1>Museum of Poorly Photographed Art</h1>
+<h1>Museum of Poorly Photographed Art</h1>
 
 <div class="filters">
 	<button on:click={() => ($filterArtist = '')}>All</button>
