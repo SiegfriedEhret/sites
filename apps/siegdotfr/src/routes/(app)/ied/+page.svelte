@@ -19,7 +19,7 @@
 
 	<section>
 		<h2>Dernières notes.</h2>
-		<List {items} page="index" />
+		<List {items} page="index" prefix="/ied" />
 		<a href="/ied/notes">Toutes mes notes.</a>
 	</section>
 </article>

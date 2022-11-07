@@ -14,7 +14,9 @@
 	<meta name="description" content="A little of everything and a lot of nothing." />
 </svelte:head>
 
+<h1>Notes.</h1>
+<p>A little of everything and a lot of nothing.</p>
+
 <nav>
-	<h1>Notes.</h1>
 	<List {items} />
 </nav>

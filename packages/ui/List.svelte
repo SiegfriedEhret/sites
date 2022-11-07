@@ -5,6 +5,7 @@
 
 	export let items: Post[] = [];
 	export let page: 'index' = null;
+	export let prefix = '';
 </script>
 
 {#if items.length === 0}
@@ -13,7 +14,7 @@
 	<ul>
 		{#each items as item}
 			<li>
-				<a href={`/${item.slug}`} data-sveltekit:prefetch>
+				<a href={`${prefix}/${item.slug}`} data-sveltekit:prefetch>
 					{item.title}
 				</a>
 			</li>
@@ -23,7 +24,7 @@
 	{#each items as item}
 		<section data-year={getYear(item.publicationDate)}>
 			<h2>
-				<a href={`/${item.slug}`} data-sveltekit:prefetch>
+				<a href={`${prefix}/${item.slug}`} data-sveltekit:prefetch>
 					{item.title}
 				</a>
 			</h2>
