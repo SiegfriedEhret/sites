@@ -22,5 +22,8 @@ format-utils: ## Format packages/utils
 
 format: format-ehretdotme format-siegdotfr format-ui format-utils ## Format code
 
+run: ## Run development server
+	pnpm run dev
+
 help: ## Print this message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
