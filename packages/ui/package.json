@@ -9,7 +9,7 @@
 		"url": "https://ehret.me"
 	},
 	"scripts": {
-		"format": "prettier --write ."
+		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"files": [
 		"*.svelte"

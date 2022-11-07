@@ -15,7 +15,7 @@
 	],
 	"type": "module",
 	"scripts": {
-		"format": "prettier --write ."
+		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
 		"prettier": "^2.7.1"
