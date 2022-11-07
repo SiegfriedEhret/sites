@@ -11,10 +11,10 @@
 	"scripts": {
 		"format": "prettier --write ."
 	},
-	"main": "index.js",
 	"files": [
 		"*.svelte"
 	],
+	"type": "module",
 	"dependencies": {
 		"@packages/utils": "workspace:1.0.0"
 	},

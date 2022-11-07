@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {formatDateHuman} from "@packages/utils";
+	import {formatDateHuman} from "@packages/utils/date";
 	import type {Art} from "./types";
 
 	export let art: Art;

@@ -8,10 +8,15 @@
 		"email": "siegfried@ehret.me",
 		"url": "https://ehret.me"
 	},
+	"files": [
+		"*.ts",
+		"queries/*.ts",
+		"types/*.ts"
+	],
+	"type": "module",
 	"scripts": {
 		"format": "prettier --write ."
 	},
-	"main": "index.ts",
 	"devDependencies": {
 		"prettier": "^2.7.1"
 	}

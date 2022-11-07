@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Figure from '@packages/ui/Figure.svelte';
 	import Tags from '@packages/ui/Tags.svelte';
+	import {formatDate} from "@packages/utils/date";
 	import type { PageData } from './$types';
-	import {formatDate} from "@packages/utils";
 
 	export let data: PageData;
 	const { item, html, headings } = data;

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { formatDate, getYear } from '../utils/date';
+	import { formatDate, getYear } from '@packages/utils/date';
 	import Tags from './Tags.svelte';
 	import type { Post } from '@packages/utils/types/posts';
 
