@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Figure from '@packages/ui/Figure.svelte';
 	import Tags from '@packages/ui/Tags.svelte';
-	import {formatDate} from "@packages/utils/date";
+	import { formatDate } from '@packages/utils/date';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -35,29 +35,27 @@
 		Last modified on {formatDate(item.sys.publishedAt)}
 	</details>
 	{#if headings && headings.length > 0}
-	<div class="toc">
-		<button
-			on:click|preventDefault={() => (show = !show)}
-		>
-			Shortcuts
-		</button>
-		{#if show}
-			<nav>
-				{#each headings as heading}
-					<a class:h2={heading.level === "h2"} 
-					class:h3={heading.level === "h3"}
-					class:h4={heading.level === "h4"}
-					class:h5={heading.level === "h5"}
-					class:h6={heading.level === "h6"}
-					href={`#${heading.id}`}>{heading.title}</a>
-				{/each}
-			</nav>
-		{/if}
+		<div class="toc">
+			<button on:click|preventDefault={() => (show = !show)}> Shortcuts </button>
+			{#if show}
+				<nav>
+					{#each headings as heading}
+						<a
+							class:h2={heading.level === 'h2'}
+							class:h3={heading.level === 'h3'}
+							class:h4={heading.level === 'h4'}
+							class:h5={heading.level === 'h5'}
+							class:h6={heading.level === 'h6'}
+							href={`#${heading.id}`}>{heading.title}</a
+						>
+					{/each}
+				</nav>
+			{/if}
 		</div>
 	{/if}
 	{@html html}
 	{#if item.contentfulMetadata?.tags}
-	<Tags tags={item.contentfulMetadata.tags} />
+		<Tags tags={item.contentfulMetadata.tags} />
 	{/if}
 </article>
 
@@ -71,14 +69,14 @@
 		cursor: pointer;
 	}
 	.toc button {
-		border-radius: .5rem;
+		border-radius: 0.5rem;
 		border: 1px solid var(--prime);
 		background: transparent;
 		color: var(--text);
-		padding: .5rem 1rem;
+		padding: 0.5rem 1rem;
 	}
 	.toc .h2 {
-		padding-left: .5rem;
+		padding-left: 0.5rem;
 	}
 	.toc .h3 {
 		padding-left: 1rem;
@@ -99,8 +97,8 @@
 	}
 	nav {
 		display: flex;
-		flex-direction: column; 
-		 font-size: .875rem;
-  		line-height: 1.25rem;
+		flex-direction: column;
+		font-size: 0.875rem;
+		line-height: 1.25rem;
 	}
 </style>

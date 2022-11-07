@@ -10,7 +10,11 @@
 <svelte:head>
 	<title>/notes [ehret.me]</title>
 	<meta property="og:title" content={`/notes [ehret.me]`} />
-	<meta property="og:description" name="description" content="A little of everything and a lot of nothing." />
+	<meta
+		property="og:description"
+		name="description"
+		content="A little of everything and a lot of nothing."
+	/>
 	<meta name="description" content="A little of everything and a lot of nothing." />
 </svelte:head>
 

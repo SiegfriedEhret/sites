@@ -30,20 +30,16 @@
 		Dernière modification le {formatDate(item.sys.publishedAt)}
 	</details>
 	{#if headings && headings.length > 0}
-	<div class="toc">
-		<button
-				on:click|preventDefault={() => (show = !show)}
-		>
-			Raccourcis
-		</button>
-		{#if show}
-			<nav>
-				{#each headings as heading}
-					<a class={heading.level} href={`#${heading.id}`}>{heading.title}</a>
-				{/each}
-			</nav>
-		{/if}
-	</div>
+		<div class="toc">
+			<button on:click|preventDefault={() => (show = !show)}> Raccourcis </button>
+			{#if show}
+				<nav>
+					{#each headings as heading}
+						<a class={heading.level} href={`#${heading.id}`}>{heading.title}</a>
+					{/each}
+				</nav>
+			{/if}
+		</div>
 	{/if}
 
 	{@html html}
@@ -59,14 +55,14 @@
 		cursor: pointer;
 	}
 	.toc button {
-		border-radius: .5rem;
+		border-radius: 0.5rem;
 		border: 1px solid var(--prime);
 		background: transparent;
 		color: var(--text);
-		padding: .5rem 1rem;
+		padding: 0.5rem 1rem;
 	}
 	.toc .h2 {
-		padding-left: .5rem;
+		padding-left: 0.5rem;
 	}
 	.toc .h3 {
 		padding-left: 1rem;
@@ -87,8 +83,8 @@
 	}
 	nav {
 		display: flex;
-		flex-direction: column; 
-		 font-size: .875rem;
-  		line-height: 1.25rem;
+		flex-direction: column;
+		font-size: 0.875rem;
+		line-height: 1.25rem;
 	}
 </style>

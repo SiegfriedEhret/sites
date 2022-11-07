@@ -32,13 +32,13 @@
 
 <style>
 	.grid {
-		display: grid; 
-		grid-template-columns: repeat(2,minmax(0,1fr));
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 	.grid a {
-	    grid-column: span 2 / span 2;
+		grid-column: span 2 / span 2;
 	}
-	.grid span+span {
+	.grid span + span {
 		text-align: right;
 	}
 	ul {

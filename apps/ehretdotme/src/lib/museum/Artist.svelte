@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Artist } from '$lib/museum/types';
-	import {formatDateHuman} from "@packages/utils";
+	import { formatDateHuman } from '@packages/utils/date';
 
 	export let artist: Artist;
 </script>

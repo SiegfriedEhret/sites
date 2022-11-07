@@ -12,8 +12,15 @@
 
 <svelte:head>
 	<title>{getTitle(artPiece)} - Museum of Poorly Photographed Art [ehret.me]</title>
-	<meta property="og:title" content={`${getTitle(artPiece)} - Museum of Poorly Photographed Art [ehret.me]`} />
-	<meta property="og:description" name="description" content={artPiece.description ?? getTitle(artPiece)} />
+	<meta
+		property="og:title"
+		content={`${getTitle(artPiece)} - Museum of Poorly Photographed Art [ehret.me]`}
+	/>
+	<meta
+		property="og:description"
+		name="description"
+		content={artPiece.description ?? getTitle(artPiece)}
+	/>
 	<meta name="description" content={artPiece.description ?? getTitle(artPiece)} />
 </svelte:head>
 

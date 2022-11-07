@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import List from "@packages/ui/List.svelte";
+	import List from '@packages/ui/List.svelte';
 
 	export let data: PageData;
 	const { items } = data;
@@ -9,7 +9,11 @@
 <svelte:head>
 	<title>/ [sieg.fr/ied]</title>
 	<meta property="og:title" content={`/ [sieg.fr/ied]`} />
-	<meta property="og:description" name="description" content="Je m'appelle Siegfried. Je suis développeur." />
+	<meta
+		property="og:description"
+		name="description"
+		content="Je m'appelle Siegfried. Je suis développeur."
+	/>
 	<meta name="description" content="Je m'appelle Siegfried. Je suis développeur." />
 </svelte:head>
 

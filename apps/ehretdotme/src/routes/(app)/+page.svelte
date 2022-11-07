@@ -9,7 +9,11 @@
 <svelte:head>
 	<title>/ [ehret.me]</title>
 	<meta property="og:title" content={`/ [ehret.me]`} />
-	<meta property="og:description" name="description" content="My name is Siegfried Ehret. I am a developer." />
+	<meta
+		property="og:description"
+		name="description"
+		content="My name is Siegfried Ehret. I am a developer."
+	/>
 	<meta name="description" content="My name is Siegfried Ehret. I am a developer." />
 </svelte:head>
 

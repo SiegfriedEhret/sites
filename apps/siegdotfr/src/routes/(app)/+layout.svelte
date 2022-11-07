@@ -2,7 +2,7 @@
 	import '@packages/ui/app.css';
 	import Footer from '@packages/ui/Footer.svelte';
 	import Header from '@packages/ui/Header.svelte';
-	import Layout from "@packages/ui/Layout.svelte";
+	import Layout from '@packages/ui/Layout.svelte';
 </script>
 
 <svelte:head>

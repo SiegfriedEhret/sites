@@ -13,8 +13,14 @@
 <svelte:head>
 	<title>/museum [ehret.me]</title>
 	<meta property="og:title" content="/museum [ehret.me]" />
-	<meta name="og:description" content="Museum of Poorly Photographed Art - Bad photographs, real art." />
-	<meta name="description" content="Museum of Poorly Photographed Art - Bad photographs, real art." />
+	<meta
+		name="og:description"
+		content="Museum of Poorly Photographed Art - Bad photographs, real art."
+	/>
+	<meta
+		name="description"
+		content="Museum of Poorly Photographed Art - Bad photographs, real art."
+	/>
 </svelte:head>
 
 <h1>Museum of Poorly Photographed Art</h1>

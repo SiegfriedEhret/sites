@@ -1,6 +1,6 @@
 <script lang="ts">
-	import {formatDateHuman} from "@packages/utils/date";
-	import type {Art} from "./types";
+	import { formatDateHuman } from '@packages/utils/date';
+	import type { Art } from './types';
 
 	export let art: Art;
 </script>
