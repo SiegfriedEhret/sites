@@ -19,12 +19,13 @@
 		</svelte:fragment>
 	</Header>
 
+	<a slot="link" href="https://sieg.fr/ied" title="My website in French"> 🔗 sieg.fr/ied </a>
+
 	<main slot="main">
 		<slot />
 		<Footer>
-			<p slot="awesome">I think you are awesome. Peace.</p>
-			<a slot="link" href="https://sieg.fr/ied" title="My website in French"> 🔗 sieg.fr/ied </a>
-			<p slot="made-with">
+			<p>I think you are awesome. Peace.</p>
+			<p>
 				Made with 💖 and <a href="https://git.sr.ht/~siegfriedehret/sites">⌨️</a>.
 			</p>
 		</Footer>

@@ -19,12 +19,13 @@
 		</svelte:fragment>
 	</Header>
 
+	<a slot="link" href="https://ehret.me/" title="Mon site en anglais"> 🔗 ehret.me </a>
+
 	<main slot="main">
 		<slot />
 		<Footer>
-			<p slot="awesome">Vous êtes chouettes. Bisous.</p>
-			<a slot="link" href="https://ehret.me/" title="Mon site en anglais"> 🔗 ehret.me </a>
-			<p slot="made-with">
+			<p>Vous êtes chouettes. Bisous.</p>
+			<p>
 				Bidouillé avec 💖 et <a href="https://git.sr.ht/~siegfriedehret/sites">⌨️</a>.
 			</p>
 		</Footer>

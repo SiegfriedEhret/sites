@@ -6,16 +6,15 @@
 </header>
 
 <style>
-	header {
-		background: var(--lake-red);
-		color: var(--wevet);
-		padding: 1rem;
+	nav {
+		display: flex;
+		gap: 1ch;
 	}
 
 	@media screen and (min-width: 60rem) {
 		nav {
-			display: flex;
 			flex-direction: column;
+			gap: 0;
 		}
 	}
 </style>
