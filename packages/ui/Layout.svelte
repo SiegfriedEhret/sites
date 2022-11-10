@@ -16,9 +16,6 @@
 
 <style>
 	.sidebar {
-		position: fixed;
-		height: 100vh;
-		width: 15rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -27,23 +24,20 @@
 		color: var(--wevet);
 	}
 
-	.burrito {
-		margin-left: 16rem;
-	}
-
 	nav {
 		display: flex;
 		gap: 1ch;
 	}
 
 	@media screen and (min-width: 60rem) {
-		.layout {
-			min-height: 100vh;
-			grid-template-columns: 15rem 1fr;
+		.sidebar {
+			position: fixed;
+			height: 100vh;
+			width: 15rem;
 		}
 
-		.sidebar {
-			height: 100vh;
+		.burrito {
+			margin-left: 16rem;
 		}
 
 		nav {
