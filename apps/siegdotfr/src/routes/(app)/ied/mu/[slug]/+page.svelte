@@ -27,21 +27,21 @@
 		<Figure item={item.cover} />
 
 		<h2>Introduction</h2>
-		{@html item.reviewIntroductionHtml}
+		{@html item.reviewIntroductionHtml.html}
 
 		<h2>Causerie</h2>
-		{@html item.reviewHtml}
+		{@html item.reviewHtml.html}
 
 		<h2>Conclusion</h2>
-		{@html item.reviewConclusionHtml}
+		{@html item.reviewConclusionHtml.html}
 
 		<p>Note: {item.note}/10</p>
 
 		<h2>Pistes</h2>
-		{@html item.tracksHtml}
+		{@html item.tracksHtml.html}
 
 		<h2>Liens</h2>
-		{@html item.linksHtml}
+		{@html item.linksHtml.html}
 	</article>
 {:else}
 	<p>404 ! Rien de plus sur ce disque.</p>

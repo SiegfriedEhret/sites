@@ -4,7 +4,7 @@
 	import Header from '@packages/ui/Header.svelte';
 </script>
 
-<div class="burrito">
+<div class="sidebar">
 	<Header>
 		<a slot="title" class="to-home" data-sveltekit:prefetch href="/">ehret.me</a>
 		<span slot="links">
@@ -35,7 +35,7 @@
 </Footer>
 
 <style>
-	.burrito {
+	.sidebar {
 		padding: 1rem;
 		background: var(--lake-red);
 		color: var(--wevet);

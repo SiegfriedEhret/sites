@@ -1,36 +1,34 @@
-<div class="layout">
-	<div class="sidebar">
-		<div class="burrito">
-			<slot name="header" />
+<div class="sidebar">
+	<slot name="header" />
 
-			<nav>
-				<a href="/rss.xml">📫 RSS</a>
-				<slot name="link" />
-				<a href="https://mastodon.ehret.me/@SiegfriedEhret" rel="me" title="🐘 mastodon">
-					🐘 mastodon
-				</a>
-			</nav>
-		</div>
-	</div>
+	<nav>
+		<a href="/rss.xml">📫 RSS</a>
+		<slot name="link" />
+		<a href="https://mastodon.ehret.me/@SiegfriedEhret" rel="me" title="🐘 mastodon">
+			🐘 mastodon
+		</a>
+	</nav>
+</div>
+
+<div class="burrito">
 	<slot name="main" />
 </div>
 
 <style>
-	.layout {
-		display: grid;
-		gap: 1rem;
-	}
-
 	.sidebar {
+		position: fixed;
+		height: 100vh;
+		width: 15rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 1rem;
 		background: var(--lake-red);
 		color: var(--wevet);
 	}
 
 	.burrito {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		padding: 1rem;
+		margin-left: 16rem;
 	}
 
 	nav {
@@ -44,7 +42,7 @@
 			grid-template-columns: 15rem 1fr;
 		}
 
-		.burrito {
+		.sidebar {
 			height: 100vh;
 		}
 
