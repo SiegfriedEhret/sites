@@ -17,7 +17,6 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta property="og:title" content={`${item.title} [ehret.me]`} />
 	<meta property="og:description" name="description" content={item.description} />
-	<meta property="og:image" content={`/image/${encodeURIComponent(item.title)}.jpg`} />
 </svelte:head>
 
 <nav>
