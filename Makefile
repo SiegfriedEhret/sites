@@ -8,6 +8,10 @@ format-ehretdotme: ## Format apps/ehretdotme
 	cd apps/ehretdotme ;\
 	pnpm run format
 
+format-meloedotfr: ## Format apps/meloedotfr
+	cd apps/meloedotfr ;\
+	pnpm run format
+
 format-siegdotfr: ## Format apps/siegdotfr
 	cd apps/siegdotfr ;\
 	pnpm run format
@@ -20,7 +24,7 @@ format-utils: ## Format packages/utils
 	cd packages/utils ;\
 	pnpm run format
 
-format: format-ehretdotme format-siegdotfr format-ui format-utils ## Format code
+format: format-ehretdotme format-meloedotfr format-siegdotfr format-ui format-utils ## Format code
 
 run: ## Run development server
 	pnpm run dev

@@ -1,0 +1,11 @@
+<h1>À propos</h1>
+
+<p>
+	Merci d'être arrivé·e ici. Je m'appelle Siegfried EHRET. Je publie cette page le 26 novembre 2022,
+	25 ans après le décès de Jean-Marie EHRET, mon papa.
+</p>
+
+<p>
+	Il a écrit cette histoire « La Vie fabuleuse de Méloé » et ça fait trop longtemps que je souhaite
+	la mettre à disposition sur Internet (le nom de domaine a été créé en 2016).
+</p>

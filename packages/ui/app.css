@@ -65,7 +65,7 @@ h1 {
 }
 
 ul {
-	list-style-type: hiragana-iroha !important;
+	list-style-type: hiragana-iroha;
 }
 
 a {

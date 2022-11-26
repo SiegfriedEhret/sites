@@ -1,13 +1,19 @@
+<script lang="ts">
+	export let withNavLinks = true;
+</script>
+
 <div class="sidebar">
 	<slot name="header" />
 
-	<nav>
-		<a href="/rss.xml">📫 RSS</a>
-		<slot name="link" />
-		<a href="https://mastodon.ehret.me/@SiegfriedEhret" rel="me" title="🐘 mastodon">
-			🐘 mastodon
-		</a>
-	</nav>
+	{#if withNavLinks}
+		<nav>
+			<a href="/rss.xml">📫 RSS</a>
+			<slot name="link" />
+			<a href="https://mastodon.ehret.me/@SiegfriedEhret" rel="me" title="🐘 mastodon">
+				🐘 mastodon
+			</a>
+		</nav>
+	{/if}
 </div>
 
 <div class="burrito">

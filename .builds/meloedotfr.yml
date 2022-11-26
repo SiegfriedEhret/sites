@@ -1,0 +1,16 @@
+image: alpine/edge
+packages:
+  - nodejs
+  - npm
+secrets:
+  - b281abe1-aa13-4d4d-aa44-7caae701052e
+  - 5249ccc1-6ab0-4a74-a551-f4d0e277600c
+sources:
+  - git@git.sr.ht:~siegfriedehret/sites
+tasks:
+  - deploy: |
+      set +x
+      . ~/.buildsecrets
+      set -x
+      cd sites
+      npx vercel --prod --token "$VERCEL_TOKEN"
