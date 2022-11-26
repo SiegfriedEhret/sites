@@ -11,6 +11,5 @@ tasks:
   - deploy: |
       set +x
       . ~/.buildsecrets
-      set -x
       cd sites
       npx vercel --prod --token "$VERCEL_TOKEN"
