@@ -79,7 +79,7 @@ blockquote {
 	padding-left: 1rem;
 }
 
-header a {
+header a, header + nav a {
 	color: var(--wevet);
 }
 
