@@ -7,11 +7,11 @@
 <div class="sidebar">
 	<Header>
 		<a slot="title" class="to-home" data-sveltekit:prefetch href="/">ehret.me</a>
-		<span slot="links">
+		<svelte:fragment slot="links">
 			<a data-sveltekit:prefetch href="/notes">/notes</a>
 			<a data-sveltekit:prefetch href="/museum">/museum</a>
 			<a data-sveltekit:prefetch href="/salary">/salary</a>
-		</span>
+		</svelte:fragment>
 	</Header>
 
 	<nav>
