@@ -1,10 +1,13 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import type { UserConfig } from 'vite';
 
-const config: UserConfig = {
+/** @type {import('vite').UserConfig} */
+const config = {
 	plugins: [sveltekit()],
 	server: {
 		port: 5173
+	},
+	test: {
+		include: ['src/**/*.{test,spec}.{js,ts}']
 	}
 };
 
