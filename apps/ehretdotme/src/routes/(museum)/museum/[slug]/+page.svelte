@@ -37,7 +37,7 @@
 	{/each}
 	<h1>{artPiece.name}</h1>
 	{#if artPiece.descriptionHtml}
-		<div>{@html artPiece.descriptionHtml.html}</div>
+		<div>{@html artPiece.descriptionHtml}</div>
 	{/if}
 	<Artist artist={artPiece.artist} />
 	<Shot art={artPiece} />
