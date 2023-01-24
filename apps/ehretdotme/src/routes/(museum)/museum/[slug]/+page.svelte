@@ -2,8 +2,7 @@
 	import type { PageData } from './$types';
 
 	import { getTitle } from '../../../../lib/utils/art';
-	import Artist from '../../../../lib/museum/Artist.svelte';
-	import Shot from '../../../../lib/museum/Shot.svelte';
+	import { formatDateHuman } from '@packages/utils/date';
 
 	export let data: PageData;
 	const { artPiece } = data;
@@ -36,11 +35,23 @@
 		</figure>
 	{/each}
 	<h1>{artPiece.name}</h1>
-	{#if artPiece.descriptionHtml}
-		<div>{@html artPiece.descriptionHtml}</div>
-	{/if}
-	<Artist artist={artPiece.artist} />
-	<Shot art={artPiece} />
+
+	<dl>
+		<dt>Name</dt>
+		<dd>{artPiece.name}</dd>
+		{#if artPiece.descriptionHtml}
+			<dt>Info</dt>
+			<dd>{artPiece.description}</dd>
+		{/if}
+		<dt>Artist</dt>
+		<dd>
+			{artPiece.artist.name} ({artPiece.artist.dateOfBirth} - {artPiece.artist.dateOfDeath ?? ''})
+		</dd>
+		{#if artPiece.location?.name}
+			<dt>Shot</dt>
+			<dd>at {artPiece.location.name} on {formatDateHuman(artPiece.shot)}</dd>
+		{/if}
+	</dl>
 </article>
 
 <style>
@@ -52,8 +63,13 @@
 		max-width: 100%;
 		height: auto;
 	}
-
 	figure {
 		margin: 1rem 0;
+	}
+	figcaption {
+		text-align: center;
+	}
+	dt {
+		font-weight: bold;
 	}
 </style>
