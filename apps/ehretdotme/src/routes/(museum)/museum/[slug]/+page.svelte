@@ -39,7 +39,7 @@
 	<dl>
 		<dt>Name</dt>
 		<dd>{artPiece.name}</dd>
-		{#if artPiece.descriptionHtml}
+		{#if artPiece.description}
 			<dt>Info</dt>
 			<dd>{artPiece.description}</dd>
 		{/if}

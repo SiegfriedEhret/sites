@@ -24,7 +24,6 @@ export const getMuseumPieceQuery = (slug: string) => `query getArt {
     items {
       artist {
         name
-        description
         dateOfBirth
         dateOfDeath
       }
