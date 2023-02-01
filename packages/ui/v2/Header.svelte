@@ -1,0 +1,51 @@
+<script lang="ts">
+	import logo from './sieg.jpg';
+</script>
+
+<header>
+	<div class="logo">
+		<a href="/"><img src={logo} alt="Kabuki Siegfried" /></a>
+	</div>
+
+	<nav>
+		<slot name="title" />
+		<slot name="links" />
+	</nav>
+</header>
+
+<style>
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.logo {
+		display: grid;
+		place-content: center;
+	}
+	.logo img {
+		border: 5px solid var(--lake-red);
+		border-radius: 50%;
+		max-width: 80px;
+		max-height: 80px;
+		aspect-ratio: 1;
+	}
+	.logo a:is(:active, :focus, :hover) img {
+		transform: rotate3d(1, 1, 1, 15deg);
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 4px;
+	}
+
+	@media screen and (min-width: 40rem) {
+		nav {
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 16px;
+		}
+	}
+</style>

@@ -2,19 +2,19 @@
 	/* From Farrow & Ball */
 	--ovalRoomBlue: #8b9d9b;
 	--railings: #45484b;
-	--imperial-purple: #55566b;
-	--lake-red: #c8526a;
-	--wevet: #eee9e7;
+	--imperial-purple: hsl(237, 11%, 38%);
+	--lake-red: hsl(348, 52%, 55%);
+	--wevet: hsl(17, 17%, 92%);
 	--code: #2d2d2d;
 
 	/*  theme vars */
 	--back: var(--wevet);
 	--prime: var(--lake-red);
 	--text: var(--imperial-purple);
-	--dark: var(--code);
 
 	/* fonts */
-	--fs-base: 1.2rem;
+	--fs-mobile: 1.2rem;
+	--fs-base: 1.5rem;
 	--fs-small: 0.75rem;
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 html {
-	font-size: var(--fs-base);
+	font-size: var(--fs-mobile);
 	box-sizing: border-box;
 	border-collapse: collapse;
 }
@@ -41,7 +41,7 @@ body {
 	margin: 0;
 	overflow-wrap: break-word;
 	font-family: var(--font);
-	background-color: var(--back);
+	background-color: var(--lake-red);
 	font-feature-settings: 'kern', 'liga';
 	color: var(--text);
 	line-height: 1.5;
@@ -73,19 +73,20 @@ a {
 	color: var(--text);
 }
 
-blockquote {
-	border-left: 2px solid var(--text);
-	margin-left: 0;
-	padding-left: 1rem;
-}
-
-header a,
-header + nav a {
+.link {
+	background: var(--lake-red);
+	border: 2px solid var(--wevet);
 	color: var(--wevet);
+	font-weight: bold;
+	font-size: 1rem;
+	padding: 3px 5px;
+	transform: rotateZ(0);
+	will-change: transform;
+	transition: transform 0.3s;
 }
 
-.toc a {
-	color: var(--prime);
+.link:is(:active, :focus, :hover) {
+	transform: rotate3d(1, 1, 1, 15deg);
 }
 
 article img {
@@ -114,6 +115,16 @@ pre {
 	padding: 1rem 1.5rem;
 }
 
+button {
+	cursor: pointer;
+}
+
+blockquote {
+	border-left: 2px solid var(--text);
+	margin-left: 0;
+	padding-left: 1rem;
+}
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--back: var(--imperial-purple);
@@ -124,4 +135,22 @@ pre {
 	.toc a {
 		color: var(--text);
 	}
+}
+
+@media screen and (min-width: 40rem) {
+	html {
+		font-size: var(--fs-base);
+	}
+
+	.link {
+		padding: 10px 20px;
+	}
+}
+
+*:focus:not(:focus-visible) {
+	outline: none;
+}
+
+:focus-visible {
+	outline: #ff3399 solid 3px;
 }

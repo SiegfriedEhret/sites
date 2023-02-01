@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Figure from '@packages/ui/Figure.svelte';
-	import Tags from '@packages/ui/Tags.svelte';
+	import Figure from '@packages/ui/v1/Figure.svelte';
+	import Tags from '@packages/ui/v1/Tags.svelte';
 	import { formatDate } from '@packages/utils/date';
 	import type { PageData } from './$types';
 

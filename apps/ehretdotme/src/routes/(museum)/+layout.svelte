@@ -1,53 +1,38 @@
 <script lang="ts">
-	import '@packages/ui/app.css';
-	import Footer from '@packages/ui/Footer.svelte';
-	import Header from '@packages/ui/Header.svelte';
+	import '@packages/ui/v2/app.css';
+	import Footer from '@packages/ui/v2/Footer.svelte';
+	import Header from '@packages/ui/v2/Header.svelte';
+	import Layout from '@packages/ui/v2/Layout.svelte';
 </script>
 
-<div class="sidebar">
-	<Header>
-		<a slot="title" class="to-home" data-sveltekit:prefetch href="/">ehret.me</a>
+<svelte:head>
+	<link rel="alternate" type="application/rss+xml" title="ehret.me" href="/rss.xml" />
+</svelte:head>
+
+<Layout>
+	<Header slot="header">
+		<a slot="title" class="link" data-sveltekit:prefetch href="/">ehret.me</a>
 		<svelte:fragment slot="links">
-			<a data-sveltekit:prefetch href="/notes">/notes</a>
-			<a data-sveltekit:prefetch href="/museum">/museum</a>
-			<a data-sveltekit:prefetch href="/salary">/salary</a>
+			<a data-sveltekit:prefetch class="link" href="/notes">/notes</a>
+			<a data-sveltekit:prefetch class="link" href="/museum">/museum</a>
+			<a data-sveltekit:prefetch class="link" href="/salary">/salary</a>
 		</svelte:fragment>
 	</Header>
 
-	<nav>
-		<a href="/rss.xml">📫 RSS</a>
-		<a href="https://sieg.fr/ied" title="My website in French"> 🔗 sieg.fr/ied </a>
-		<a href="https://mastodon.ehret.me/@SiegfriedEhret" rel="me" title="🐘 mastodon">
-			🐘 mastodon
+	<main slot="main">
+		<slot />
+	</main>
+
+	<Footer slot="footer">
+		<a slot="link" class="link" href="https://sieg.fr/ied" title="My French website">
+			🔗 sieg.fr/ied
 		</a>
-	</nav>
-</div>
-
-<main>
-	<slot />
-</main>
-
-<Footer>
-	<p>I think you are awesome. Peace.</p>
-	<p>
-		Made with 💖 and <a href="https://git.sr.ht/~siegfriedehret/sites">⌨️</a>.
-	</p>
-</Footer>
+		<p>I think you are awesome. Peace.</p>
+		<p>
+			Made with 💖 and <a href="https://git.sr.ht/~siegfriedehret/sites">⌨️</a>.
+		</p>
+	</Footer>
+</Layout>
 
 <style>
-	.sidebar {
-		padding: 1rem;
-		background: var(--lake-red);
-		color: var(--wevet);
-	}
-
-	.to-home {
-		font-weight: 800;
-		font-size: 2rem;
-	}
-
-	main {
-		width: 100%;
-		padding: 1rem;
-	}
 </style>

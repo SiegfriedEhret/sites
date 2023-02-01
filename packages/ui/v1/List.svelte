@@ -55,6 +55,10 @@
 		margin: 0;
 	}
 
+	section[data-year] {
+		position: relative;
+	}
+
 	section[data-year]::before {
 		display: block;
 		background: var(--prime);
@@ -68,6 +72,8 @@
 	@media screen and (min-width: 60rem) {
 		section[data-year]::before {
 			position: absolute;
+			right: 0;
+			top: 0;
 			transform: rotate(-90deg) translateX(-1rem) translateY(-4.5rem);
 		}
 	}
@@ -112,6 +118,7 @@
 		content: '2011';
 	}
 
+	section[data-year='2023'] + section[data-year='2023']::before,
 	section[data-year='2022'] + section[data-year='2022']::before,
 	section[data-year='2021'] + section[data-year='2021']::before,
 	section[data-year='2020'] + section[data-year='2020']::before,

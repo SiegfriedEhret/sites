@@ -1,5 +1,5 @@
 <script lang="ts">
-	import List from '@packages/ui/List.svelte';
+	import List from '@packages/ui/v1/List.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;

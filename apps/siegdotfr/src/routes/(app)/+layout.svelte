@@ -1,8 +1,8 @@
 <script lang="ts">
-	import '@packages/ui/app.css';
-	import Footer from '@packages/ui/Footer.svelte';
-	import Header from '@packages/ui/Header.svelte';
-	import Layout from '@packages/ui/Layout.svelte';
+	import '@packages/ui/v1/app.css';
+	import Footer from '@packages/ui/v1/Footer.svelte';
+	import Header from '@packages/ui/v1/Header.svelte';
+	import Layout from '@packages/ui/v1/Layout.svelte';
 </script>
 
 <svelte:head>

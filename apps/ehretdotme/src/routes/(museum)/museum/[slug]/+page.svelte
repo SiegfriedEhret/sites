@@ -23,6 +23,10 @@
 	<meta name="description" content={artPiece.description ?? getTitle(artPiece)} />
 </svelte:head>
 
+<nav>
+	<a href="/museum" data-sveltekit:prefetch>&lt;= all works</a>
+</nav>
+
 <article>
 	{#each artPiece.mediaCollection.items as item}
 		<figure>

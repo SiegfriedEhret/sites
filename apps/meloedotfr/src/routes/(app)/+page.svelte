@@ -109,10 +109,10 @@
 							>3</a
 						>]</sup
 					>
-					avec des griffes en trident, à tel point que chaque patte se prend pour Neptune. Tiens,
-					puisque vous êtes curieux, je vais vous détailler mes griffes : une large lame médiane
-					pourvue de deux expansions latérales ; un plus deux égal trois. Trois griffes par patte,
-					qui peut en dire autant ? C&#8217;est pour cette raison que je porte le nom de Triongulin<sup
+					avec des griffes en trident, à tel point que chaque patte se prend pour Neptune. Tiens, puisque
+					vous êtes curieux, je vais vous détailler mes griffes : une large lame médiane pourvue de deux
+					expansions latérales ; un plus deux égal trois. Trois griffes par patte, qui peut en dire autant
+					? C&#8217;est pour cette raison que je porte le nom de Triongulin<sup
 						class="footnote"
 						id="_footnote_triongulin"
 						>[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote."
@@ -183,10 +183,10 @@
 							>7</a
 						>]</sup
 					>
-					? Aux grands mots les grands remèdes, laissons répondre à cette question les spécialistes
-					et reprenons la grimpette, on verra bien là-haut. Tiens, une bifurcation, je préfère
-					continuer sur la tige plutôt que prendre cette allée qui me paraît bien trop facile.
-					Triongulin<sup class="footnoteref"
+					? Aux grands mots les grands remèdes, laissons répondre à cette question les spécialistes et
+					reprenons la grimpette, on verra bien là-haut. Tiens, une bifurcation, je préfère continuer
+					sur la tige plutôt que prendre cette allée qui me paraît bien trop facile. Triongulin<sup
+						class="footnoteref"
 						>[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup
 					>
 					fort aime la difficulté ! Et il y en avait déjà une bonne dizaine de triongulins<sup
@@ -296,8 +296,8 @@
 								>]</sup
 							>
 							savent toujours ce qui est bon pour leurs descendants, qu&#8217;ils soient spécialisés
-							dans quelques Composées comme moi ou dans d&#8217;autres familles végétales. Certains
-							ne sont pas difficiles et sont oligophages<sup class="footnote"
+							dans quelques Composées comme moi ou dans d&#8217;autres familles végétales. Certains ne
+							sont pas difficiles et sont oligophages<sup class="footnote"
 								>[<a
 									id="_footnoteref_12"
 									class="footnote"
@@ -362,15 +362,15 @@
 							l&#8217;intérieur de la cuticule<sup class="footnoteref"
 								>[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup
 							>
-							de grands changements, disparition de mes caractères larvaires et apparition de ceux
-							d&#8217;adulte, dont les fameux caractères sexuels qui te font défaut. Puis, après une
-							renaissance, je suis enfin devenue adulte, et me voici. Bon, c&#8217;est pas tout de
-							causer, mais il faut que je pense à ma progéniture. Adieu petit Triongulin, et bonne
-							chance. Mais voilà Dermeste<sup class="footnoteref"
+							de grands changements, disparition de mes caractères larvaires et apparition de ceux d&#8217;adulte,
+							dont les fameux caractères sexuels qui te font défaut. Puis, après une renaissance, je
+							suis enfin devenue adulte, et me voici. Bon, c&#8217;est pas tout de causer, mais il faut
+							que je pense à ma progéniture. Adieu petit Triongulin, et bonne chance. Mais voilà Dermeste<sup
+								class="footnoteref"
 								>[<a class="footnote" href="#_footnotedef_14" title="View footnote.">14</a>]</sup
 							>
-							qui arrive. Il pourra assurément répondre à tes questions mieux que moi, du moins à
-							certaines. Eh ! Dermeste<sup class="footnoteref"
+							qui arrive. Il pourra assurément répondre à tes questions mieux que moi, du moins à certaines.
+							Eh ! Dermeste<sup class="footnoteref"
 								>[<a class="footnote" href="#_footnotedef_14" title="View footnote.">14</a>]</sup
 							>, viens expliquer ce qu&#8217;est la Vie à cette jeune larve qui a l&#8217;air bien
 							perdue dans cette vallée de larmes.
@@ -388,9 +388,9 @@
 					Que fais-tu ici petit Triongulin<sup class="footnoteref"
 						>[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup
 					>
-					? Tu m&#8217;excuseras de ne pas me poser car tes copains m&#8217;ont déjà envahi,
-					regarde, j&#8217;en ai trois accrochés à mes poils. Je vais aller les poser plus loin,
-					près d&#8217;un essaim, car les triongulins<sup class="footnoteref"
+					? Tu m&#8217;excuseras de ne pas me poser car tes copains m&#8217;ont déjà envahi, regarde,
+					j&#8217;en ai trois accrochés à mes poils. Je vais aller les poser plus loin, près d&#8217;un
+					essaim, car les triongulins<sup class="footnoteref"
 						>[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup
 					>
 					vivent aux dépens d&#8217;abeilles
@@ -595,14 +595,13 @@
 					du triongulin<sup class="footnoteref"
 						>[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup
 					>
-					que j&#8217;étais. Grignotons un peu de ce délicieux miel et voyons de quels organes la
-					nature m&#8217;a doté. Mais que s&#8217;est-il passé ? Serais-je toujours un triongulin<sup
+					que j&#8217;étais. Grignotons un peu de ce délicieux miel et voyons de quels organes la nature
+					m&#8217;a doté. Mais que s&#8217;est-il passé ? Serais-je toujours un triongulin<sup
 						class="footnoteref"
 						>[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup
 					>
-					? J&#8217;ai grandi, c&#8217;est sûr, je dois bien mesurer près de trois millimètres, je
-					suis devenu jaune, mes pattes me semblent plus faibles, mes téguments<sup
-						class="footnoteref"
+					? J&#8217;ai grandi, c&#8217;est sûr, je dois bien mesurer près de trois millimètres, je suis
+					devenu jaune, mes pattes me semblent plus faibles, mes téguments<sup class="footnoteref"
 						>[<a class="footnote" href="#_footnotedef_21" title="View footnote.">21</a>]</sup
 					>
 					plus mous, mes soies caudales<sup class="footnote"
@@ -669,10 +668,10 @@
 						>]</sup
 					>
 					? Tels que je vous imagine, vous les humains, il y a longtemps que vous vous seriez mis au
-					régime ! Si je reprends mon récit, c&#8217;est que je sens qu&#8217;un changement va
-					prochainement arriver. D&#8217;abord, je perds l&#8217;appétit, ensuite, j&#8217;ai
-					l&#8217;impression qu&#8217;une métamorphose se prépare. L&#8217;espoir que j&#8217;avais
-					perdu de devenir enfin un véritable méloé<sup class="footnoteref"
+					régime ! Si je reprends mon récit, c&#8217;est que je sens qu&#8217;un changement va prochainement
+					arriver. D&#8217;abord, je perds l&#8217;appétit, ensuite, j&#8217;ai l&#8217;impression qu&#8217;une
+					métamorphose se prépare. L&#8217;espoir que j&#8217;avais perdu de devenir enfin un véritable
+					méloé<sup class="footnoteref"
 						>[<a class="footnote" href="#_footnotedef_13" title="View footnote.">13</a>]</sup
 					> revient. Vais-je enfin connaître ma forme adulte, et découvrir ? J&#8217;ai tellement eu
 					de déceptions dans ma vie qui me paraît bien remplie. Bon, c&#8217;est décidé, je cesse de
@@ -694,8 +693,8 @@
 					j&#8217;avais ressenti à la fin de ma vie de triongulin<sup class="footnoteref"
 						>[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup
 					>
-					se renouvelle. Cette fois-ci est la bonne, je le sens. Il me faut maintenant
-					m&#8217;extraire de ce derme de larve presque apode<sup class="footnoteref"
+					se renouvelle. Cette fois-ci est la bonne, je le sens. Il me faut maintenant m&#8217;extraire
+					de ce derme de larve presque apode<sup class="footnoteref"
 						>[<a class="footnote" href="#_footnotedef_24" title="View footnote.">24</a>]</sup
 					>…
 				</p>
@@ -963,9 +962,9 @@
 					constituent une famille de Coléoptères<sup class="footnoteref"
 						>[<a class="footnote" href="#_footnotedef_16" title="View footnote.">16</a>]</sup
 					>
-					caractérisée par des métamorphoses complexes (hypermétamorphoses). Le polymorphisme
-					larvaire est dû au cycle parasitaire de l&#8217;insecte. Le déroulement du développement
-					s&#8217;effectue en neuf stades différents
+					caractérisée par des métamorphoses complexes (hypermétamorphoses). Le polymorphisme larvaire
+					est dû au cycle parasitaire de l&#8217;insecte. Le déroulement du développement s&#8217;effectue
+					en neuf stades différents
 					<sup class="footnote"
 						>[<a
 							id="_footnoteref_34"

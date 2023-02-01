@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { formatDate } from '@packages/utils/date';
-	import Figure from '@packages/ui/Figure.svelte';
+	import Figure from '@packages/ui/v1/Figure.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
