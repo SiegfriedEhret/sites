@@ -9,7 +9,7 @@
 
 	const artists = Array.from(new Set(items.map((i) => i.artist.name))).sort();
 
-	let showArtists = true;
+	let showArtists = false;
 	function toggle() {
 		showArtists = !showArtists;
 	}
