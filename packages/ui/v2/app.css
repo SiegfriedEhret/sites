@@ -77,7 +77,6 @@ a {
 	background: var(--lake-red);
 	border: 2px solid var(--wevet);
 	color: var(--wevet);
-	font-weight: bold;
 	font-size: 1rem;
 	padding: 3px 5px;
 	transform: rotateZ(0);
@@ -144,6 +143,7 @@ blockquote {
 
 	.link {
 		padding: 10px 20px;
+		font-weight: bold;
 	}
 }
 
