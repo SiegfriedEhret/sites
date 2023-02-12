@@ -23,7 +23,7 @@
 	<a href="/notes" data-sveltekit:prefetch>&lt;= all notes</a>
 </nav>
 
-<article>
+<section>
 	<h1>{item.title}</h1>
 
 	{#if item.heroImage}
@@ -56,7 +56,7 @@
 	{#if item.contentfulMetadata?.tags}
 		<Tags tags={item.contentfulMetadata.tags} />
 	{/if}
-</article>
+</section>
 
 <style>
 	details {

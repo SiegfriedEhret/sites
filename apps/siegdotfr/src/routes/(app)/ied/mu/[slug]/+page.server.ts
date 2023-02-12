@@ -1,5 +1,5 @@
 import { getContent } from '@packages/utils/api';
-import { convert } from '../../../../../lib/content';
+import { convert } from '@packages/utils/content';
 import type { AlbumRequest } from '../../../../../lib/types/mu';
 import type { PageServerLoad } from './$types';
 import { error } from '@sveltejs/kit';

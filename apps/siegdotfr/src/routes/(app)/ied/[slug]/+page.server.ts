@@ -1,9 +1,9 @@
-import { convert } from '$lib/content';
 import { error, redirect } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import { getContent } from '@packages/utils/api';
 import { getNoteQuery } from '@packages/utils/queries';
 import type { PostsRequest } from '@packages/utils/types';
+import { convert } from '@packages/utils/content';
 
 const extension = '.html';
 

@@ -18,6 +18,16 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@types/markdown-it": "^12.2.3",
+		"@types/react": "^18.0.28",
 		"prettier": "^2.8.4"
+	},
+	"dependencies": {
+		"@markdoc/markdoc": "^0.1.13",
+		"highlight.js": "^11.7.0"
+	},
+	"peerDependencies": {
+		"@types/markdown-it": "^12.2.3",
+		"@types/react": "^18.0.28"
 	}
 }

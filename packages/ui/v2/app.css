@@ -124,6 +124,10 @@ blockquote {
 	padding-left: 1rem;
 }
 
+main > * + * {
+	margin-block-start: var(--flow-space, 1em);
+}
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--back: var(--imperial-purple);

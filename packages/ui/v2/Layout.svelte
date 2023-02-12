@@ -13,6 +13,7 @@
 		background: var(--back);
 		margin: var(--burrito-spacing);
 		padding: var(--burrito-spacing);
+		min-height: calc(100vh - (2 * var(--burrito-spacing)));
 	}
 
 	@media screen and (min-width: 40rem) {

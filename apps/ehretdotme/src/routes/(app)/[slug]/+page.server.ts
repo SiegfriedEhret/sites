@@ -3,7 +3,7 @@ import type { PostsRequest } from '@packages/utils/types/posts';
 import { error } from '@sveltejs/kit';
 import type { LoadEvent } from '@sveltejs/kit';
 import { getNoteQuery } from '@packages/utils/queries/notes';
-import { convert } from '../../../lib/content';
+import { convert } from '@packages/utils/content';
 
 const extension = '.html';
 
