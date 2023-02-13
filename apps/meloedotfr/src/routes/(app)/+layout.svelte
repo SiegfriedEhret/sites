@@ -1,16 +1,15 @@
 <script lang="ts">
-	import '@packages/ui/v1/app.css';
-	import Footer from '@packages/ui/v1/Footer.svelte';
-	import Header from '@packages/ui/v1/Header.svelte';
-	import Layout from '@packages/ui/v1/Layout.svelte';
+	import '@packages/ui/v2/app.css';
+	import Header from '@packages/ui/v2/Header.svelte';
+	import Layout from '@packages/ui/v2/Layout.svelte';
 </script>
 
-<Layout withNavLinks={false}>
+<Layout>
 	<Header slot="header">
-		<a slot="title" class="to-home" data-sveltekit:prefetch href="/">meloe.fr</a>
+		<a slot="title" class="link" data-sveltekit:prefetch href="/">meloe.fr</a>
 		<svelte:fragment slot="links">
-			<a data-sveltekit:prefetch href="/fichiers">/fichiers</a>
-			<a data-sveltekit:prefetch href="/a-propos">/a-propos</a>
+			<a data-sveltekit:prefetch class="link" href="/fichiers">/fichiers</a>
+			<a data-sveltekit:prefetch class="link" href="/a-propos">/a-propos</a>
 		</svelte:fragment>
 	</Header>
 
@@ -20,19 +19,8 @@
 </Layout>
 
 <style>
-	.to-home {
-		font-weight: 800;
-		font-size: 2rem;
-	}
-
 	main {
-		width: 100%;
-		padding: 1rem;
-	}
-
-	@media screen and (min-width: 60rem) {
-		main {
-			max-width: 40rem;
-		}
+		max-width: 72ch;
+		margin: 0 auto;
 	}
 </style>

@@ -1,17 +1,4 @@
 :root {
-	/* From Farrow & Ball */
-	--ovalRoomBlue: #8b9d9b;
-	--railings: #45484b;
-	--imperial-purple: hsl(237, 11%, 38%);
-	--lake-red: hsl(348, 52%, 55%);
-	--wevet: hsl(17, 17%, 92%);
-	--code: #2d2d2d;
-
-	/*  theme vars */
-	--back: var(--wevet);
-	--prime: var(--lake-red);
-	--text: var(--imperial-purple);
-
 	/* fonts */
 	--fs-mobile: 1.2rem;
 	--fs-base: 1.5rem;
@@ -41,7 +28,7 @@ body {
 	margin: 0;
 	overflow-wrap: break-word;
 	font-family: var(--font);
-	background-color: var(--lake-red);
+	background-color: var(--prime);
 	font-feature-settings: 'kern', 'liga';
 	color: var(--text);
 	line-height: 1.5;
@@ -129,12 +116,6 @@ main > * + * {
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--back: var(--imperial-purple);
-		--prime: var(--lake-red);
-		--text: var(--wevet);
-	}
-
 	.toc a {
 		color: var(--text);
 	}
