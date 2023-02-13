@@ -22,9 +22,9 @@ Run:
 
 Environment variables
 
-| Name                           | Value                                                          |
-|--------------------------------|----------------------------------------------------------------|
-| `VITE_CONTENTFUL_ACCESS_TOKEN` | `something`                                                    |
+| Name                           | Value       |
+| ------------------------------ | ----------- |
+| `VITE_CONTENTFUL_ACCESS_TOKEN` | `something` |
 
 ⚠️ currently, `--force` should be added to the BUILD command otherwise there is no output folder since Vercel start the build in a new environment.
 
