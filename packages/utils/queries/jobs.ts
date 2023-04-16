@@ -7,8 +7,9 @@ export function getJobs() {
       url
       startDate
       endDate
-      salary
       currency
+      salary
+      variable
       bonus
       bonusDescription
       comment

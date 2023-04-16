@@ -7,8 +7,9 @@ export interface Job {
 	url: string;
 	startDate: string;
 	endDate: string;
-	salary: number;
 	currency: string;
+	salary: number;
+	variable: number;
 	bonus: number;
 	bonusDescription: string;
 	comment: string;

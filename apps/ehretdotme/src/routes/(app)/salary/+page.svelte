@@ -54,9 +54,13 @@
 				<td data-before="Entry Salary">
 					{#if item.salary}
 						{f(item.salary, item.currency)}
+						{#if item.variable}
+							<br />
+							+ Variable: {f(item.variable, item.currency)}
+						{/if}
 						{#if item.bonus}
 							<br />
-							Bonus: {f(item.bonus, item.currency)} ({item.bonusDescription})
+							+ Bonus: {f(item.bonus, item.currency)} ({item.bonusDescription})
 						{/if}
 					{/if}
 				</td>
@@ -69,7 +73,8 @@
 <style>
 	table {
 		display: block;
-		font-size: 1rem;
+		font-size: .8rem;
+		border-collapse: collapse;
 	}
 	thead {
 		display: none;
@@ -81,7 +86,7 @@
 		display: block;
 	}
 	tbody tr {
-		border-top: 1px solid var(--wevet);
+		border-top: 1px solid var(--text);
 		margin-top: 1rem;
 		padding-top: 1rem;
 	}
@@ -116,7 +121,7 @@
 		}
 		tbody td {
 			display: table-cell;
-			border-top: 1px solid var(--wevet);
+			border-top: 1px solid var(--text);
 		}
 		tbody td::before {
 			display: none;
