@@ -135,7 +135,3 @@ main > * + * {
 *:focus:not(:focus-visible) {
 	outline: none;
 }
-
-:focus-visible {
-	outline: #ff3399 solid 3px;
-}
