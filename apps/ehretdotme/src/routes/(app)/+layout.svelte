@@ -30,6 +30,9 @@
 		<p>I think you are awesome. Peace.</p>
 		<p>
 			Made with 💖 and <a href="https://git.sr.ht/~siegfriedehret/sites">⌨️</a>.
+			<a href="https://analytics.ehret.me/share/OmNL2nYE/ehret.me" target="_blank" rel="noreferrer">
+				Analytics
+			</a>.
 		</p>
 	</Footer>
 </Layout>
