@@ -24,7 +24,9 @@
 	</main>
 
 	<Footer slot="footer">
-		<a slot="link" href="https://ehret.me/" title="Mon site en anglais"> 🔗 ehret.me </a>
+		<a slot="link" class="link" href="https://ehret.me/" title="Mon site en anglais">
+			🔗 ehret.me
+		</a>
 
 		<p>Vous êtes chouettes. Bisous.</p>
 		<p>
