@@ -1,22 +1,22 @@
 :root {
-    /* From Farrow & Ball */
-    --ovalRoomBlue: #8b9d9b;
-    --railings: #45484b;
-    --imperial-purple: hsl(237, 11%, 38%);
-    --lake-red: hsl(348, 52%, 55%);
-    --wevet: hsl(17, 17%, 92%);
-    --code: #2d2d2d;
+	/* From Farrow & Ball */
+	--ovalRoomBlue: #8b9d9b;
+	--railings: #45484b;
+	--imperial-purple: hsl(237, 11%, 38%);
+	--lake-red: hsl(348, 52%, 55%);
+	--wevet: hsl(17, 17%, 92%);
+	--code: #2d2d2d;
 
-    /*  theme vars */
-    --back: var(--wevet);
-    --prime: var(--lake-red);
-    --text: var(--imperial-purple);
+	/*  theme vars */
+	--back: var(--wevet);
+	--prime: var(--lake-red);
+	--text: var(--imperial-purple);
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --back: var(--imperial-purple);
-        --prime: var(--lake-red);
-        --text: var(--wevet);
-    }
+	:root {
+		--back: var(--imperial-purple);
+		--prime: var(--lake-red);
+		--text: var(--wevet);
+	}
 }

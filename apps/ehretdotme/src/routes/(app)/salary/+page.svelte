@@ -73,7 +73,7 @@
 <style>
 	table {
 		display: block;
-		font-size: .8rem;
+		font-size: 0.8rem;
 		border-collapse: collapse;
 	}
 	thead {
