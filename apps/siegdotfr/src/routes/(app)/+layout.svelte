@@ -31,7 +31,11 @@
 		<p>Vous êtes chouettes. Bisous.</p>
 		<p>
 			Bidouillé avec 💖 et <a href="https://git.sr.ht/~siegfriedehret/sites">⌨️</a>.
-			<a href="https://analytics.ehret.me/share/s4IHeO5u/sieg.fr" target="_blank" rel="noreferrer">
+			<a
+				href="https://analytics.ehret.me/share/4u4ZpdkiBuUCmAvg/sieg.fr"
+				target="_blank"
+				rel="noreferrer"
+			>
 				Statistiques
 			</a>.
 		</p>
