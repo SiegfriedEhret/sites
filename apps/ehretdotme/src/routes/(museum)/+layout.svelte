@@ -24,6 +24,7 @@
 	</main>
 
 	<Footer slot="footer">
+		<a slot="rss" class="link" href="/rss.xml">📫 RSS</a>
 		<a slot="link" class="link" href="https://sieg.fr/ied" title="My French website">
 			🔗 sieg.fr/ied
 		</a>

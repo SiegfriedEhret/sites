@@ -2,7 +2,7 @@
 	<slot />
 
 	<nav>
-		<a class="link" href="/rss.xml">📫 RSS</a>
+		<slot name="rss" />
 		<slot name="link" />
 		<a class="link" href="https://mastodon.ehret.me/@SiegfriedEhret" rel="me" title="🐘 mastodon">
 			🐘 mastodon
