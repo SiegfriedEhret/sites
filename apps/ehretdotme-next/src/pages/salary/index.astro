@@ -1,0 +1,162 @@
+---
+import {contentfulClient} from "../../lib/contentful";
+import type {Job} from '@packages/utils/types/jobs';
+import Layout from "../../layouts/Layout.astro";
+
+const entries = await contentfulClient.getEntries<Job>({
+    content_type: "job",
+    limit: 50,
+    order: 'fields.startDate',
+    select: "fields.title,fields.url,fields.company,fields.startDate,fields.endDate,fields.salary,fields.currency,fields.variable,fields.bonus,fields.bonusDescription,fields.comment"
+});
+
+const items = entries.items.map((item) => {
+    const {
+        title,
+        url,
+        company,
+        startDate,
+        endDate,
+        salary,
+        currency,
+        variable,
+        bonus,
+        bonusDescription,
+        comment
+    } = item.fields;
+    return {
+        title, url, company, startDate, endDate, salary, currency, variable, bonus, bonusDescription, comment
+    };
+});
+
+function f(amount: number, currency: string) {
+    return new Intl.NumberFormat('en', {style: 'currency', currency}).format(amount);
+}
+---
+<Layout title="/salary [ehret.me]">
+<h1>Salary transparency</h1>
+
+<p>
+    Following the example from <a href="https://xeiaso.net/salary-transparency">this page</a>, here is
+    an overview on my different jobs and associated salaries.
+</p>
+<p>
+    🚧 This is the first version of this page, some numbers are wrong because I have not been through
+    all my archives yet; starting with MetLife, I am confident with the numbers. I will also include
+    raises.
+</p>
+
+<table>
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Company</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Entry Salary</th>
+        <th>Note</th>
+    </tr>
+    </thead>
+    <tbody>
+    {items.map(item =>
+        <tr>
+            <td data-before="Title">{item.title}</td>
+            <td data-before="Company"><a href={item.url}>{item.company}</a></td>
+            <td data-before="Start">{item.startDate}</td>
+            <td data-before="End">{item.endDate ?? ''}</td>
+            <td data-before="Entry Salary">
+                {item.salary &&
+                        <Fragment>
+                            <span>{f(item.salary, item.currency)}</span>
+                            {item.variable &&
+                                    <Fragment>
+                                        <br/>
+                                        + Variable: {f(item.variable, item.currency)}
+                                    </Fragment>}
+                            {item.bonus &&
+                                    <Fragment>
+                                        <br/>
+                                        + Bonus: {f(item.bonus, item.currency)} ({item.bonusDescription})
+                                    </Fragment>}
+                        </Fragment>
+                }
+
+            </td>
+            <td data-before="Note">{item.comment ?? ''}</td>
+        </tr>
+    )}
+    </tbody>
+</table>
+</Layout>
+
+<style>
+    table {
+        display: block;
+        font-size: 0.8rem;
+        border-collapse: collapse;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        display: block;
+    }
+
+    tbody td {
+        display: block;
+    }
+
+    tbody tr {
+        border-top: 1px solid var(--text);
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+
+    tbody tr:first-child {
+        border-top: none;
+    }
+
+    tbody td::before {
+        display: block;
+        font-weight: bold;
+        content: attr(data-before);
+    }
+
+    @media screen and (min-width: 800px) {
+        table {
+            display: table;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 0.2rem 0.5rem;
+        }
+
+        td:first-child {
+            padding-left: 0;
+        }
+
+        td:last-child {
+            padding-right: 0;
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tbody tr {
+            display: table-row;
+        }
+
+        tbody td {
+            display: table-cell;
+            border-top: 1px solid var(--text);
+        }
+
+        tbody td::before {
+            display: none;
+        }
+    }
+</style>

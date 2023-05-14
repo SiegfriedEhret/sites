@@ -1,6 +1,3 @@
-import { Tag } from './tags';
-import { Media } from './media';
-
 export interface Job {
 	title: string;
 	company: string;

@@ -7,6 +7,7 @@ export interface Post {
 		tags?: Tag[];
 	};
 	description: string;
+	headings?: string[];
 	heroImage: Media;
 	language: string;
 	publicationDate: string;

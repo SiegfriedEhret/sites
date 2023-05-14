@@ -1,0 +1,67 @@
+---
+import { contentfulClient } from "../lib/contentful";
+import type { Post } from '@packages/utils/types/posts';
+import Layout from '../layouts/Layout.astro'
+import { formatDate } from '@packages/utils/date';
+import { convert } from '@packages/utils/content';
+import Toc from "../components/Toc.astro";
+
+export async function getStaticPaths() {
+    const entries = await contentfulClient.getEntries<Post>({
+        content_type: "blogPost",
+        limit: 2,
+        'fields.language': 'en',
+        order: '-fields.publicationDate',
+        select: 'fields.slug,fields.title,fields.publicationDate,fields.body,sys.updatedAt'
+    });
+
+    const items = [];
+    for (const item of entries.items) {
+        const {title, slug, body, publicationDate} = item.fields;
+        items.push({
+            params: {slug},
+            props: {
+                title,
+                date: formatDate(publicationDate as string),
+                updatedAt: formatDate(item.sys.updatedAt),
+                ...await convert(body as string)
+            },
+        });
+    }
+
+    return items;
+}
+
+const { title, date, updatedAt, headings, html } = Astro.props;
+---
+
+<Layout title={title}>
+    <nav>
+        <a href="/notes">&lt;= all notes</a>
+    </nav>
+
+    <section>
+        <h1>{title}</h1>
+
+        <details>
+            <summary>{date}</summary>
+            Last modified on {updatedAt}
+        </details>
+        {headings && <Toc headings={headings} />}
+
+
+        <Fragment set:html={html} />
+    </section>
+
+</Layout>
+
+<style>
+    details {
+        margin-bottom: 1rem;
+        font-size: var(--fs-small);
+    }
+    summary {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+</style>

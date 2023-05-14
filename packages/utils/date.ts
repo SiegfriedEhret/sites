@@ -7,6 +7,8 @@ function add0(time: number) {
 }
 
 export function formatDate(date: string | number | Date, locale = 'en') {
+	if (!date) return "";
+
 	if (locale === 'fr') {
 		return new Date(date).toLocaleDateString('fr');
 	} else {

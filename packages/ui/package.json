@@ -16,12 +16,13 @@
 	],
 	"type": "module",
 	"dependencies": {
+		"@fontsource/jost": "^4.5.13",
 		"@packages/utils": "workspace:*"
 	},
 	"devDependencies": {
-		"prettier": "^2.8.7",
+		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.0",
-		"svelte": "^3.58.0"
+		"svelte": "^3.59.1"
 	},
 	"peerDependencies": {
 		"svelte": "^3.2.0"

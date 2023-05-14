@@ -1,0 +1,53 @@
+---
+import Layout from '@packages/ui/v3/Layout.astro';
+import Header from '@packages/ui/v3/Header.astro';
+import Footer from '@packages/ui/v3/Footer.astro';
+const { title, fullWidth } = Astro.props
+
+import "../styles.css"
+---
+
+<Layout title={title}>
+    <Header slot="header">
+        <a slot="title" class="link" href="/">ehret.me</a>
+        <Fragment slot="links">
+            <a class="link" href="/notes">/notes</a>
+            <a class="link" href="/museum">/museum</a>
+            <a class="link" href="/salary">/salary</a>
+        </Fragment>
+    </Header>
+
+    <main class:list={{
+        'full-width': fullWidth
+    }} slot="main">
+        <slot />
+    </main>
+
+    <Footer slot="footer">
+        <a slot="rss" class="link" href="/rss.xml">📫 RSS</a>
+        <a slot="link" class="link" href="https://sieg.fr/ied" title="My French website">
+            🔗 sieg.fr/ied
+        </a>
+        <p>I think you are awesome. Peace.</p>
+        <p>
+            Made with 💖 and <a href="https://git.sr.ht/~siegfriedehret/sites">⌨️</a>.
+            <a
+                    href="https://analytics.ehret.me/share/Oq7kAcFEm322GZ8d/ehret.me"
+                    target="_blank"
+                    rel="noreferrer"
+            >
+                Analytics
+            </a>.
+        </p>
+    </Footer>
+</Layout>
+
+<style>
+    main {
+        max-width: 72ch;
+        margin: 0 auto;
+    }
+    main.full-width {
+        max-width: none;
+    }
+</style>

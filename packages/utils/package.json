@@ -19,12 +19,13 @@
 	},
 	"devDependencies": {
 		"@types/markdown-it": "^12.2.3",
-		"@types/react": "^18.0.35",
-		"prettier": "^2.8.7"
+		"@types/react": "^18.2.6",
+		"prettier": "^2.8.8"
 	},
 	"dependencies": {
 		"@markdoc/markdoc": "^0.1.13",
-		"highlight.js": "^11.7.0"
+		"highlight.js": "^11.8.0",
+		"uid": "^2.0.2"
 	},
 	"peerDependencies": {
 		"@types/markdown-it": "^12.2.3",

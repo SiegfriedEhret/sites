@@ -2,6 +2,7 @@ import Markdoc from '@markdoc/markdoc';
 import type { Config } from '@markdoc/markdoc';
 import Tag from '@markdoc/markdoc/src/tag';
 import hljs from 'highlight.js';
+import { uid } from 'uid';
 
 interface Title extends HTMLElement {
 	id: string;
@@ -55,8 +56,10 @@ export async function convert(input: string): Promise<ConvertedContent> {
 		...Markdoc.nodes.fence,
 		async transform(node, config) {
 			const { content, language = 'text' } = node.attributes;
-			const id = crypto.randomUUID();
-			const code = hljs.highlight(content, { language }).value;
+			const id = uid();
+			const code = hljs.getLanguage(language)
+				? hljs.highlight(content, { language }).value
+				: hljs.highlightAuto(content).value;
 			codeBlocks.set(id, code);
 
 			return new Tag('pre', {}, [new Tag('code', {}, [id])]);
