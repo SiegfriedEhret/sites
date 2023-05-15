@@ -8,6 +8,8 @@ secrets:
 sources:
   - git@git.sr.ht:~siegfriedehret/sites
 tasks:
+  - check-branch:
+      if [ "$(cd sites && git rev-parse HEAD)" != "$(cd sites && git rev-parse origin/main)" ]; then complete-build; fi
   - deploy: |
       set +x
       . ~/.buildsecrets
