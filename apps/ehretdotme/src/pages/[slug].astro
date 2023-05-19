@@ -9,7 +9,7 @@ import Toc from "../components/Toc.astro";
 export async function getStaticPaths() {
     const entries = await contentfulClient.getEntries<Post>({
         content_type: "blogPost",
-        limit: 2,
+        limit: 200,
         'fields.language': 'en',
         order: '-fields.publicationDate',
         select: 'fields.slug,fields.title,fields.publicationDate,fields.body,sys.updatedAt'
