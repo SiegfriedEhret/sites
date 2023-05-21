@@ -16,7 +16,7 @@
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
     "@sindresorhus/slugify": "^2.2.1",
-    "astro": "^2.5.0",
+    "astro": "^2.5.1",
     "contentful": "^10.2.0",
     "highlight.js": "^11.8.0"
   },
