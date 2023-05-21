@@ -5,6 +5,7 @@ import Layout from '../layouts/Layout.astro'
 import { formatDate } from '@packages/utils/date';
 import { convert } from '@packages/utils/content';
 import Toc from "../components/Toc.astro";
+import Figure from "../components/Figure.astro";
 
 export async function getStaticPaths() {
     const entries = await contentfulClient.getEntries<Post>({
@@ -12,16 +13,17 @@ export async function getStaticPaths() {
         limit: 200,
         'fields.language': 'en',
         order: '-fields.publicationDate',
-        select: 'fields.slug,fields.title,fields.publicationDate,fields.body,sys.updatedAt'
+        select: 'fields.slug,fields.title,fields.publicationDate,fields.body,sys.updatedAt,fields.heroImage'
     });
 
     const items = [];
     for (const item of entries.items) {
-        const {title, slug, body, publicationDate} = item.fields;
+        const {title, slug, body, publicationDate, heroImage} = item.fields;
         items.push({
             params: {slug},
             props: {
                 title,
+                image: heroImage?.fields || {} ,
                 date: formatDate(publicationDate as string),
                 updatedAt: formatDate(item.sys.updatedAt),
                 ...await convert(body as string)
@@ -32,7 +34,7 @@ export async function getStaticPaths() {
     return items;
 }
 
-const { title, date, updatedAt, headings, html } = Astro.props;
+const { title, date, updatedAt, headings, html, image } = Astro.props;
 ---
 
 <Layout title={title}>
@@ -42,6 +44,10 @@ const { title, date, updatedAt, headings, html } = Astro.props;
 
     <section>
         <h1>{title}</h1>
+
+        {image?.file?.url &&
+            <Figure url={image.file.url} title={image.title} />
+        }
 
         <details>
             <summary>{date}</summary>

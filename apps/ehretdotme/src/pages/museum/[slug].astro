@@ -15,7 +15,6 @@ export async function getStaticPaths() {
     const items = [];
     for (const item of entries.items) {
         const { artist, date, description, location, media, name, shot, slug } = item.fields;
-        console.log(artist);
         items.push({
             params: {slug},
             props: {
