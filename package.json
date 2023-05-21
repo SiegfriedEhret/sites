@@ -9,6 +9,9 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "build:ehretdotme" : "turbo run build --scope ehretdotme",
+    "build:meloedotfr" : "turbo run build --scope meloedotfr",
+    "build:siegdotfr" : "turbo run build --scope siegdotfr",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
