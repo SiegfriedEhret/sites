@@ -2,12 +2,12 @@
 import Layout from '@packages/ui/v3/Layout.astro';
 import Header from '@packages/ui/v3/Header.astro';
 import Footer from '@packages/ui/v3/Footer.astro';
-const { title, fullWidth } = Astro.props
+const { title, description, metaImage, fullWidth } = Astro.props
 
 import "../styles.css"
 ---
 
-<Layout title={title}>
+<Layout title={title} description={description} metaImage={metaImage}>
     <Header slot="header">
         <a slot="title" class="link" href="/">ehret.me</a>
         <Fragment slot="links">

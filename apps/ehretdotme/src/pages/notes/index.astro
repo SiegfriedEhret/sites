@@ -10,6 +10,7 @@ const entries = await contentfulClient.getEntries<Post>({
     limit: 200,
     'fields.language': 'en',
     order: '-fields.publicationDate',
+    select: "fields.title,fields.slug,fields.publicationDate,fields.description",
 });
 
 const posts = entries.items.map((item) => {
@@ -18,23 +19,9 @@ const posts = entries.items.map((item) => {
         title,
         slug,
         description,
-        date: formatDate(item.fields.publicationDate),
+        date: formatDate(publicationDate as string),
     };
 }).sort((a, b) => b.date.localeCompare(a.date));
-
-// import { contentfulClient } from "../lib/contentful";
-// import type { blogPost } from "../lib/contentful";
-// import { getContent } from '@packages/utils/api';
-// import type { PostsRequest } from '@packages/utils/types/posts';
-// import { getNotesCollectionQuery } from '@packages/utils/queries/notes';
-//
-// const entries = await contentfulClient.getEntries<blogPost>({
-// 	content_type: "blogPost",
-// });
-//
-// const query = getNotesCollectionQuery(10, 'en');
-// const res = await getContent<PostsRequest>(query);
-// const { items } = res.body.data.blogPostCollection;
 ---
 
 <Layout title="/notes [ehret.me]">
