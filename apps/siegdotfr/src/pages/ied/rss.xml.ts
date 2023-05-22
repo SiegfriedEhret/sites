@@ -6,7 +6,7 @@ import { contentfulClient } from "../../lib/contentful";
 const entries = await contentfulClient.getEntries<Post>({
   content_type: "blogPost",
   limit: 10,
-  "fields.language": "en",
+  "fields.language": "fr",
   order: "-fields.publicationDate",
 });
 
