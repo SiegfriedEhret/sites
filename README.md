@@ -3,10 +3,11 @@
 This is a monorepo with the sources for:
 
 - [ehret.me](https://ehret.me)
-- [sieg.fr](sieg.fr)
+- [sieg.fr](https://sieg.fr/ied)
 
 Using:
 
+- [Astro](https://astro.build/)
 - [SvelteKit](https://kit.svelte.dev/)
 - [pnpm](https://pnpm.io/)
 - [turborepo](https://turborepo.org/)
@@ -24,7 +25,9 @@ Environment variables
 
 | Name                           | Value       |
 | ------------------------------ | ----------- |
-| `VITE_CONTENTFUL_ACCESS_TOKEN` | `something` |
+| `CONTENTFUL_SPACE_ID` | `something` |
+| `CONTENTFUL_DELIVERY_TOKEN` | `something` |
+| `CONTENTFUL_PREVIEW_TOKEN` | `something` |
 
 ⚠️ currently, `--force` should be added to the BUILD command otherwise there is no output folder since Vercel start the build in a new environment.
 
