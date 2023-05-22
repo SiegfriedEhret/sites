@@ -1,4 +1,10 @@
 {
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/ied"
+    }
+  ],
   "rewrites": [
     {
       "source": "/stats/:match*",
