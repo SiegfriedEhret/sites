@@ -7,7 +7,7 @@ const { title, description, metaImage, fullWidth } = Astro.props
 import "../styles.css"
 ---
 
-<Layout title={title} description={description} metaImage={metaImage}>
+<Layout title={title} description={description} metaImage={metaImage} rssTitle="ehret.me" rssHref="/rss.xml">
     <Header slot="header">
         <a slot="title" class="link" href="/">ehret.me</a>
         <Fragment slot="links">
@@ -40,6 +40,14 @@ import "../styles.css"
             </a>.
         </p>
     </Footer>
+    <script
+            async
+            defer
+            data-website-id="739260ff-9986-45af-99b3-1ac5055b3677"
+            src="/stats/script.js"
+            data-do-not-track="true"
+            is:inline
+    ></script>
 </Layout>
 
 <style>

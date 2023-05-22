@@ -1,7 +1,7 @@
 import rss from "@astrojs/rss";
 import type { Post } from "@packages/utils/types/posts";
 import { formatDate } from "@packages/utils/date";
-import { contentfulClient } from "../lib/contentful.js";
+import { contentfulClient } from "../lib/contentful";
 
 const entries = await contentfulClient.getEntries<Post>({
   content_type: "blogPost",
