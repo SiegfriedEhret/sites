@@ -1,9 +1,9 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://sieg.fr",
-    server: {
-        port: 3000,
-    }
+  site: "https://sieg.fr",
+  server: {
+    port: 3000,
+  },
 });

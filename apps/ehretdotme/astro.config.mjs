@@ -5,5 +5,5 @@ export default defineConfig({
   site: "https://ehret.me",
   server: {
     port: 5173,
-  }
+  },
 });
