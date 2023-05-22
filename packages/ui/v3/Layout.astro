@@ -2,7 +2,7 @@
 import "./app.css"
 import "@fontsource/jost/variable.css"
 
-const { description, title, metaImage } = Astro.props
+const { description, title, metaImage, rssHref, rssTitle } = Astro.props
 ---
 <html lang="en">
 <head>
@@ -46,6 +46,8 @@ const { description, title, metaImage } = Astro.props
     <meta name="msapplication-TileColor" content="#C85168">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#C85168">
+
+    <link rel="alternate" type="application/rss+xml" title={rssTitle} href={rssHref} />
 </head>
 <body>
 <div class="burrito">

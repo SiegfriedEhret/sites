@@ -1,0 +1,55 @@
+---
+import Layout from '@packages/ui/v3/Layout.astro';
+import Header from '@packages/ui/v3/Header.astro';
+import Footer from '@packages/ui/v3/Footer.astro';
+const { title, description, metaImage } = Astro.props
+
+import "../styles.css"
+---
+
+<Layout title={title} description={description} metaImage={metaImage} rssTitle="sieg.fr/ied" rssHref="/ied/rss.xml">
+    <Header slot="header">
+        <a slot="title" class="link" href="/ied">sieg.fr/ied</a>
+        <Fragment slot="links">
+            <a class="link" href="/ied/notes">/notes</a>
+            <a class="link" href="/ied/mu">/mu</a>
+            <a class="link" href="/ied/causeries">/causeries</a>
+        </Fragment>
+    </Header>
+
+    <main slot="main">
+        <slot />
+    </main>
+
+    <Footer slot="footer">
+        <a slot="rss" class="link" href="/ied/rss.xml">📫 RSS</a>
+        <a slot="link" href="https://ehret.me/" title="Mon site en anglais"> 🔗 ehret.me </a>
+
+        <p>Vous êtes chouettes. Bisous.</p>
+        <p>
+            Bidouillé avec 💖 et <a href="https://git.sr.ht/~siegfriedehret/sites">⌨️</a>.
+            <a
+                    href="https://analytics.ehret.me/share/4u4ZpdkiBuUCmAvg/sieg.fr"
+                    target="_blank"
+                    rel="noreferrer"
+            >
+                Statistiques
+            </a>.
+        </p>
+    </Footer>
+    <script
+            async
+            defer
+            data-website-id="feceac52-c115-46be-b858-6d829933c796"
+            src="/stats/script.js"
+            data-do-not-track="true"
+            is:inline
+    ></script>
+</Layout>
+
+<style>
+    main {
+        max-width: 72ch;
+        margin: 0 auto;
+    }
+</style>
