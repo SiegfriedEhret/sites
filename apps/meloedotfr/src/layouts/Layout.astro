@@ -1,0 +1,38 @@
+---
+import Layout from '@packages/ui/v3/Layout.astro';
+import Header from '@packages/ui/v3/Header.astro';
+import Footer from '@packages/ui/v3/Footer.astro';
+const { title, description, metaImage } = Astro.props
+
+import "../styles.css"
+---
+
+<Layout title={title} description={description} metaImage={metaImage}>
+    <Header slot="header">
+        <a slot="title" class="link" href="/">meloe.fr</a>
+        <Fragment slot="links">
+            <a class="link" href="/fichiers">/fichiers</a>
+            <a class="link" href="/a-propos">/a-propos</a>
+        </Fragment>
+    </Header>
+
+    <main slot="main">
+        <slot />
+    </main>
+
+    <script
+            async
+            defer
+            data-website-id="10e339bb-efca-497d-a126-f9f69e8bc293"
+            src="/stats/script.js"
+            data-do-not-track="true"
+            is:inline
+    ></script>
+</Layout>
+
+<style>
+    main {
+        max-width: 72ch;
+        margin: 0 auto;
+    }
+</style>
