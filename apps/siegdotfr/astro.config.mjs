@@ -4,6 +4,6 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   site: "https://sieg.fr",
   server: {
-    port: 3000,
+    port: 5174,
   },
 });
