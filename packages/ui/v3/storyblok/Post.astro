@@ -1,0 +1,36 @@
+---
+import {formatDate} from '@packages/utils/date'
+import {convert} from '@packages/utils/content'
+import Figure from '../Figure.astro'
+import Toc from '../Toc.astro'
+
+const { story } = Astro.props
+const post = {
+    title: story.name,
+    image: story.content.image?.fields || {} ,
+    date: formatDate(story.content.date),
+    description: story.content.description,
+    slug: story.full_slug,
+    ...await convert(story.content.content as string)
+}
+---
+<nav>
+    <a href="/notes">&lt;= all notes</a>
+</nav>
+
+<section>
+    <h1>{post.title}</h1>
+
+    {post.image?.file?.url &&
+            <Figure url={post.image.file.url} title={post.image.title} />
+    }
+
+    <details>
+        <summary>{post.date}</summary>
+        <!--Last modified on {updatedAt}-->
+    </details>
+    {post.headings && <Toc headings={post.headings} />}
+
+    <Fragment set:html={post.html} />
+</section>
+

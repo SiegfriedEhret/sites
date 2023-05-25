@@ -13,7 +13,7 @@
   "dependencies": {
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
-    "astro": "^2.5.4"
+    "astro": "^2.5.5"
   },
   "devDependencies": {
     "prettier": "^2.8.8",

@@ -1,49 +1,44 @@
 ---
-import {contentfulClient} from "../../lib/contentful";
-import type {Job} from '@packages/utils/types/jobs';
 import Layout from "../../layouts/Layout.astro";
+import { useStoryblokApi } from '@storyblok/astro'
 
-const entries = await contentfulClient.getEntries<Job>({
-    content_type: "job",
-    limit: 50,
-    order: 'fields.startDate',
-    select: "fields.title,fields.url,fields.company,fields.startDate,fields.endDate,fields.salary,fields.currency,fields.variable,fields.bonus,fields.bonusDescription,fields.comment"
-});
+const storyblokApi = useStoryblokApi();
 
-const items = entries.items.map((item) => {
-    const {
-        title,
-        url,
-        company,
-        startDate,
-        endDate,
-        salary,
-        currency,
-        variable,
-        bonus,
-        bonusDescription,
-        comment
-    } = item.fields;
+const { data } = await storyblokApi.get('cdn/stories', {
+    version: import.meta.env.DEV ? "draft" : "published",
+    content_type: 'job',
+})
+
+const posts = data.stories.map(story => {
     return {
-        title, url, company, startDate, endDate, salary, currency, variable, bonus, bonusDescription, comment
-    };
-});
+        title: story.content.title,
+        url: story.content.url,
+        company: story.content.company,
+        startDate: story.content.startDate,
+        endDate: story.content.endDate,
+        salary: story.content.salary,
+        currency: story.content.currency,
+        variable: story.content.variable,
+        bonus: story.content.bonus,
+        bonusDescription: story.content.bonusDescription,
+        comment: story.content.comment
+    }}).sort((a, b) => a.startDate.localeCompare(b.startDate));
 
 function f(amount: number, currency: string) {
     return new Intl.NumberFormat('en', {style: 'currency', currency}).format(amount);
 }
 ---
+
 <Layout title="/salary [ehret.me]">
 <h1>Salary transparency</h1>
 
 <p>
     Following the example from <a href="https://xeiaso.net/salary-transparency">this page</a>, here is
-    an overview on my different jobs and associated salaries.
+    an overview on my different jobs and associated annual salaries.
 </p>
 <p>
-    🚧 This is the first version of this page, some numbers are wrong because I have not been through
-    all my archives yet; starting with MetLife, I am confident with the numbers. I will also include
-    raises.
+    🚧 This is the second version of this page, some numbers may be wrong because I have not been through
+    all my archives yet.
 </p>
 
 <table>
@@ -58,7 +53,7 @@ function f(amount: number, currency: string) {
     </tr>
     </thead>
     <tbody>
-    {items.map(item =>
+    {posts.map(item =>
         <tr>
             <td data-before="Title">{item.title}</td>
             <td data-before="Company"><a href={item.url}>{item.company}</a></td>
