@@ -27,7 +27,7 @@ export async function getStaticPaths() {
                 image: heroImage?.fields || {} ,
                 date: formatDate(publicationDate as string),
                 updatedAt: formatDate(item.sys.updatedAt),
-                ...await convert(body as string)
+                ...await convert(body as string ?? "")
             },
         });
     }
