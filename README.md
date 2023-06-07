@@ -4,6 +4,7 @@ This is a monorepo with the sources for:
 
 - [ehret.me](https://ehret.me)
 - [sieg.fr](https://sieg.fr/ied)
+- [meloe.fr](https://meloe.fr)
 
 Using:
 
@@ -39,13 +40,13 @@ Environment variables
 ### For siegdotfr
 
 - Root directory: `apps/siegdotfr`
-- BUILD COMMAND: `cd ../.. && pnpm run build:siegdotfr --force
+- BUILD COMMAND: `cd ../.. && pnpm run build:siegdotfr --force`
 - INSTALL COMMAND: `cd ../.. && pnpm install`
 
 ### For meloedotfr
 
 - Root directory: `apps/meloedotfr`
-- BUILD COMMAND: `cd ../.. && pnpm run build:meloedotfr --force
+- BUILD COMMAND: `cd ../.. && pnpm run build:meloedotfr --force`
 - INSTALL COMMAND: `cd ../.. && pnpm install`
 
 ## License
