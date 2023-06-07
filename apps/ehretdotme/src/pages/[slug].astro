@@ -43,7 +43,7 @@ const { title, description, date, updatedAt, headings, html, image } = Astro.pro
         <a href="/notes">&lt;= all notes</a>
     </nav>
 
-    <section>
+    <article>
         <h1>{title}</h1>
 
         {image?.file?.url &&
@@ -58,7 +58,7 @@ const { title, description, date, updatedAt, headings, html, image } = Astro.pro
 
 
         <Fragment set:html={html} />
-    </section>
+    </article>
 
 </Layout>
 

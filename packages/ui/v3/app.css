@@ -46,6 +46,12 @@ h1 {
 	margin-top: 0;
 }
 
+@keyframes blink {
+	to {
+		opacity: 0;
+	}
+}
+
 ul {
 	list-style-type: hiragana-iroha;
 }

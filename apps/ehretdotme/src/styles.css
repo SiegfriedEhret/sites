@@ -13,6 +13,13 @@
   --text: var(--imperial-purple);
 }
 
+article h1::after {
+  animation: blink 0.9s infinite;
+  content: "█";
+  padding-left: 2px;
+  font-family: var(--font-mono);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --back: var(--imperial-purple);

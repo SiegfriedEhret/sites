@@ -43,7 +43,7 @@ const { title, description, date, updatedAt, headings, html, image } = Astro.pro
         <a href="/ied/notes">&lt;= toutes les notes</a>
     </nav>
 
-    <section>
+    <article>
         <h1>{title}</h1>
 
         {image?.file?.url &&
@@ -57,8 +57,7 @@ const { title, description, date, updatedAt, headings, html, image } = Astro.pro
         {headings && <Toc headings={headings} />}
 
         <Fragment set:html={html} />
-    </section>
-
+    </article>
 </Layout>
 
 <style>
