@@ -5,10 +5,5 @@
       "destination": "/ied"
     }
   ],
-  "rewrites": [
-    {
-      "source": "/stats/:match*",
-      "destination": "https://analytics.ehret.me/:match*"
-    }
-  ]
+  "rewrites": []
 }
