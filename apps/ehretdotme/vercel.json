@@ -1,3 +1,6 @@
 {
-  "rewrites": []
+  "rewrites": [{
+    "source": "/notes",
+    "destination": "/notes/1"
+  }]
 }

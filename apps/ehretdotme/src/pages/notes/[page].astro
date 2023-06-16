@@ -1,46 +1,73 @@
 ---
-import {contentfulClient} from "../../lib/contentful";
-import type {Post} from '@packages/utils/types/posts';
-import Layout from "../../layouts/Layout.astro";
-import {formatDate, getYear} from '@packages/utils/date';
+import { useStoryblokApi } from '@storyblok/astro'
+import Layout from "../../layouts/Layout.astro"
+import {formatDate, getYear} from '@packages/utils/date'
 
+export async function getStaticPaths() {
+    const storyblokApi = useStoryblokApi();
 
-const entries = await contentfulClient.getEntries<Post>({
-    content_type: "blogPost",
-    limit: 200,
-    'fields.language': 'en',
-    order: '-fields.publicationDate',
-    select: "fields.title,fields.slug,fields.publicationDate,fields.description",
-});
+    const storyblokRes = await storyblokApi.get('cdn/stories', {
+        version: import.meta.env.DEV ? "draft" : "published",
+        content_type: 'post',
+        page: 0,
+        per_page: 100,
+    })
 
-const posts = entries.items.map((item) => {
-    const {title, publicationDate, description, slug} = item.fields;
+    const result = [];
+    const total = Math.ceil(storyblokRes.total / 25);
+    for (let i = 0; i < total; i++) {
+        result.push({
+            params: {
+                page: i+1,
+                total
+            }
+        })
+    }
+    return result;
+}
+
+const { page, total } = Astro.params;
+console.log("############")
+console.log("############")
+console.log("page", page)
+console.log("############")
+console.log("############")
+const storyblokApi = useStoryblokApi();
+
+const { data } = await storyblokApi.get('cdn/stories', {
+    version: import.meta.env.DEV ? "draft" : "published",
+    content_type: 'post',
+    page: page as number,
+    per_page: 25,
+})
+
+const posts = data.stories.map(story => {
     return {
-        title,
-        slug,
-        description,
-        date: formatDate(publicationDate as string),
-    };
-}).sort((a, b) => b.date.localeCompare(a.date));
+        title: story.name,
+        date: formatDate(new Date(story.content.date)),
+        description: story.content.description,
+        slug: story.slug,
+    }
+})
 ---
 
 <Layout title="/notes [ehret.me]">
     <h1>Notes.</h1>
     <p>A little of everything and a lot of nothing.</p>
-
     <nav>
-        {posts.map(item =>
-                <section data-year={getYear(item.date)}>
+        {posts.map(post =>
+                <section data-year={getYear(post.date)}>
                     <h2>
-                        <a href={`/${item.slug}`}>
-                            {item.title}
+                        <a href={`/${post.slug}`}>
+                            {post.title}
                         </a>
                     </h2>
                     <div>
-                        <time datetime={item.date}>{formatDate(item.date)}</time>
+                        <time datetime={post.date}>{formatDate(post.date)}</time>
                     </div>
-                    <p>{item.description}</p>
-                </section>)}
+                    <p>{post.description}</p>
+                </section>
+            )}
 	</nav>
 </Layout>
 

@@ -3,6 +3,9 @@
 	--fs-mobile: 1.2rem;
 	--fs-base: 1.5rem;
 	--fs-small: 0.75rem;
+
+	/* sizes */
+	--base: 8px;
 }
 
 html,

@@ -1,55 +1,92 @@
 ---
-import { contentfulClient } from "../lib/contentful";
-import type { Post } from '@packages/utils/types/posts';
-import Layout from "../layouts/Layout.astro";
-import { formatDate } from '@packages/utils/date';
+import { useStoryblokApi } from '@storyblok/astro'
+import Layout from "../layouts/Layout.astro"
+import {formatDate} from '@packages/utils/date'
 
-const entries = await contentfulClient.getEntries<Post>({
-	content_type: "blogPost",
-	limit: 10,
-	'fields.language': 'en',
-	order: '-fields.publicationDate',
-	select: 'fields.title,fields.slug,fields.publicationDate,fields.description',
-});
+const storyblokApi = useStoryblokApi();
 
-const posts = entries.items.map((item) => {
-	const { title, publicationDate, description, slug } = item.fields;
-	return {
-		title,
-		slug,
-		description,
-		date: formatDate(publicationDate),
-	};
-}).sort((a, b) => b.date.localeCompare(a.date));
+const { data } = await storyblokApi.get('cdn/stories', {
+    version: import.meta.env.DEV ? "draft" : "published",
+    content_type: 'post',
+    page: 0,
+    per_page: 10
+})
+
+
+const posts = data.stories.map(story => {
+    return {
+        title: story.name,
+        date: formatDate(new Date(story.content.date)),
+        description: story.content.description,
+        slug: story.slug,
+    }
+})
 ---
 
 <Layout title="/ [ehret.me]">
-	<article>
-		<h1>Hello!</h1>
+    <article>
+        <h1>Hello!</h1>
 
-		<p>My name is Siegfried Ehret. I am a developer.</p>
+        <p>My name is Siegfried Ehret. I am a developer.</p>
 
-		<section>
-			<h2>Latest notes.</h2>
-			<ul>
-				{posts.map(item => (
-					<li>
-						<a href={`/${item.slug}`}>{item.title}</a>
-					</li>
-				))}
-			</ul>
-			<a href="/notes">All notes.</a>
-		</section>
+        <section>
+            <h2>Latest notes.</h2>
+            {posts.map(post => (
+                <a href={post.slug}>
+                    <time>{post.date}</time>
+                    <p>{post.title}</p>
+                    <p class="small">{post.description}</p>
+                </a>
+            ))}
+            <a href="/notes">All notes.</a>
+        </section>
 
-		<section>
-			<h2>Some projects.</h2>
-			<p>🚧 This section is it progress. 🚧</p>
-			<dl>
-				<dt>
-					<a href="https://git.sr.ht/~siegfriedehret/tagzytout"> tagzytout </a>
-				</dt>
-				<dd>A tool to automate tag creation from git commits.</dd>
-			</dl>
-		</section>
-	</article>
+        <section>
+            <h2>Some projects.</h2>
+            <p>🚧 This section is it progress. 🚧</p>
+            <dl>
+                <dt>
+                    <a href="https://git.sr.ht/~siegfriedehret/tagzytout"> tagzytout </a>
+                </dt>
+                <dd>A tool to automate tag creation from git commits.</dd>
+            </dl>
+        </section>
+    </article>
 </Layout>
+
+<style>
+    a {
+        position: relative;
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid var(--prime);
+        padding: var(--base) calc(var(--base) * 2);
+    }
+
+    a::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        content: " ";
+        border: 0 solid var(--prime);
+        will-change: border-width;
+        transition: border-width .2s ease-in-out;
+    }
+    a:is(:active,:focus,:hover)::before {
+        border-width: var(--base);
+    }
+
+    a > * {
+        margin: 0;
+    }
+
+    .small {
+        font-size: .8rem;
+    }
+
+    time {
+        font-size: .6rem;
+    }
+</style>

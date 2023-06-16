@@ -1,36 +1,44 @@
 ---
-import {formatDate} from '@packages/utils/date'
-import {convert} from '@packages/utils/content'
-import Figure from '../Figure.astro'
-import Toc from '../Toc.astro'
+import { formatDate } from '@packages/utils/date';
+import { convert } from '@packages/utils/content';
+import Figure from '../Figure.astro';
+import Toc from '../Toc.astro';
 
-const { story } = Astro.props
+const { story } = Astro.props;
 const post = {
-    title: story.name,
-    image: story.content.image?.fields || {} ,
-    date: formatDate(story.content.date),
-    description: story.content.description,
-    slug: story.full_slug,
-    ...await convert(story.content.content as string)
-}
+	title: story.name,
+	image: story.content.image?.fields || {},
+	date: formatDate(story.content.date),
+	updatedAt: formatDate(story.published_at),
+	...(await convert(story.content.content as string))
+};
 ---
+
 <nav>
-    <a href="/notes">&lt;= all notes</a>
+	<a href="/notes">&lt;= all notes</a>
 </nav>
 
 <section>
-    <h1>{post.title}</h1>
+	<h1>{post.title}</h1>
 
-    {post.image?.file?.url &&
-            <Figure url={post.image.file.url} title={post.image.title} />
-    }
+	{post.image?.file?.url && <Figure url={post.image.file.url} title={post.image.title} />}
 
-    <details>
-        <summary>{post.date}</summary>
-        <!--Last modified on {updatedAt}-->
-    </details>
-    {post.headings && <Toc headings={post.headings} />}
+	<details>
+		<summary>{post.date}</summary>
+		Last modified on {post.updatedAt}
+	</details>
+	{post.headings && <Toc headings={post.headings} />}
 
-    <Fragment set:html={post.html} />
+	<Fragment set:html={post.html} />
 </section>
 
+<style>
+	details {
+		margin-bottom: 1rem;
+		font-size: var(--fs-small);
+	}
+	summary {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+</style>
