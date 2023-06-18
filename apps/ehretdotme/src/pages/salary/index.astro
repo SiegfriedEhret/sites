@@ -1,157 +1,167 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { useStoryblokApi } from '@storyblok/astro'
+import { useStoryblokApi } from "@storyblok/astro";
 
 const storyblokApi = useStoryblokApi();
 
-const { data } = await storyblokApi.get('cdn/stories', {
-    version: import.meta.env.DEV ? "draft" : "published",
-    content_type: 'job',
-})
+const { data } = await storyblokApi.get("cdn/stories", {
+  version: import.meta.env.DEV ? "draft" : "published",
+  content_type: "job",
+});
 
-const posts = data.stories.map(story => {
+const posts = data.stories
+  .map((story) => {
     return {
-        title: story.content.title,
-        url: story.content.url,
-        company: story.content.company,
-        startDate: story.content.startDate,
-        endDate: story.content.endDate,
-        salary: story.content.salary,
-        currency: story.content.currency,
-        variable: story.content.variable,
-        bonus: story.content.bonus,
-        bonusDescription: story.content.bonusDescription,
-        comment: story.content.comment
-    }}).sort((a, b) => a.startDate.localeCompare(b.startDate));
+      title: story.content.title,
+      url: story.content.url,
+      company: story.content.company,
+      startDate: story.content.startDate,
+      endDate: story.content.endDate,
+      salary: story.content.salary,
+      currency: story.content.currency,
+      variable: story.content.variable,
+      bonus: story.content.bonus,
+      bonusDescription: story.content.bonusDescription,
+      comment: story.content.comment,
+    };
+  })
+  .sort((a, b) => a.startDate.localeCompare(b.startDate));
 
 function f(amount: number, currency: string) {
-    return new Intl.NumberFormat('en', {style: 'currency', currency}).format(amount);
+  return new Intl.NumberFormat("en", { style: "currency", currency }).format(
+    amount
+  );
 }
 ---
 
 <Layout title="/salary [ehret.me]">
-<h1>Salary transparency</h1>
+  <h1>Salary transparency</h1>
 
-<p>
-    Following the example from <a href="https://xeiaso.net/salary-transparency">this page</a>, here is
-    an overview on my different jobs and associated annual salaries.
-</p>
-<p>
-    🚧 This is the second version of this page, some numbers may be wrong because I have not been through
-    all my archives yet.
-</p>
+  <p>
+    Following the example from <a href="https://xeiaso.net/salary-transparency"
+      >this page</a
+    >, here is an overview on my different jobs and associated annual salaries.
+  </p>
+  <p>
+    🚧 This is the second version of this page, some numbers may be wrong
+    because I have not been through all my archives yet.
+  </p>
 
-<table>
+  <table>
     <thead>
-    <tr>
+      <tr>
         <th>Title</th>
         <th>Company</th>
         <th>Start</th>
         <th>End</th>
         <th>Entry Salary</th>
         <th>Note</th>
-    </tr>
+      </tr>
     </thead>
     <tbody>
-    {posts.map(item =>
-        <tr>
+      {
+        posts.map((item) => (
+          <tr>
             <td data-before="Title">{item.title}</td>
-            <td data-before="Company"><a href={item.url}>{item.company}</a></td>
-            <td data-before="Start">{item.startDate}</td>
-            <td data-before="End">{item.endDate ?? ''}</td>
-            <td data-before="Entry Salary">
-                {item.salary &&
-                        <Fragment>
-                            <span>{f(item.salary, item.currency)}</span>
-                            {item.variable &&
-                                    <Fragment>
-                                        <br/>
-                                        + Variable: {f(item.variable, item.currency)}
-                                    </Fragment>}
-                            {item.bonus &&
-                                    <Fragment>
-                                        <br/>
-                                        + Bonus: {f(item.bonus, item.currency)} ({item.bonusDescription})
-                                    </Fragment>}
-                        </Fragment>
-                }
-
+            <td data-before="Company">
+              <a href={item.url}>{item.company}</a>
             </td>
-            <td data-before="Note">{item.comment ?? ''}</td>
-        </tr>
-    )}
+            <td data-before="Start">{item.startDate}</td>
+            <td data-before="End">{item.endDate ?? ""}</td>
+            <td data-before="Entry Salary">
+              {item.salary && (
+                <Fragment>
+                  <span>{f(item.salary, item.currency)}</span>
+                  {item.variable && (
+                    <Fragment>
+                      <br />+ Variable: {f(item.variable, item.currency)}
+                    </Fragment>
+                  )}
+                  {item.bonus && (
+                    <Fragment>
+                      <br />+ Bonus: {f(item.bonus, item.currency)} (
+                      {item.bonusDescription})
+                    </Fragment>
+                  )}
+                </Fragment>
+              )}
+            </td>
+            <td data-before="Note">{item.comment ?? ""}</td>
+          </tr>
+        ))
+      }
     </tbody>
-</table>
+  </table>
 </Layout>
 
 <style>
+  table {
+    display: block;
+    font-size: 0.8rem;
+    border-collapse: collapse;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    display: block;
+  }
+
+  tbody td {
+    display: block;
+  }
+
+  tbody tr {
+    border-top: 1px solid var(--text);
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+  tbody tr:first-child {
+    border-top: none;
+  }
+
+  tbody td::before {
+    display: block;
+    font-weight: bold;
+    content: attr(data-before);
+  }
+
+  @media screen and (min-width: 800px) {
     table {
-        display: block;
-        font-size: 0.8rem;
-        border-collapse: collapse;
+      display: table;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 0.2rem 0.5rem;
+    }
+
+    td:first-child {
+      padding-left: 0;
+    }
+
+    td:last-child {
+      padding-right: 0;
     }
 
     thead {
-        display: none;
+      display: table-header-group;
     }
 
     tbody tr {
-        display: block;
+      display: table-row;
     }
 
     tbody td {
-        display: block;
-    }
-
-    tbody tr {
-        border-top: 1px solid var(--text);
-        margin-top: 1rem;
-        padding-top: 1rem;
-    }
-
-    tbody tr:first-child {
-        border-top: none;
+      display: table-cell;
+      border-top: 1px solid var(--text);
     }
 
     tbody td::before {
-        display: block;
-        font-weight: bold;
-        content: attr(data-before);
+      display: none;
     }
-
-    @media screen and (min-width: 800px) {
-        table {
-            display: table;
-            border-collapse: collapse;
-        }
-
-        td {
-            padding: 0.2rem 0.5rem;
-        }
-
-        td:first-child {
-            padding-left: 0;
-        }
-
-        td:last-child {
-            padding-right: 0;
-        }
-
-        thead {
-            display: table-header-group;
-        }
-
-        tbody tr {
-            display: table-row;
-        }
-
-        tbody td {
-            display: table-cell;
-            border-top: 1px solid var(--text);
-        }
-
-        tbody td::before {
-            display: none;
-        }
-    }
+  }
 </style>

@@ -1,23 +1,27 @@
 import rss from "@astrojs/rss";
-import type { Post } from "@packages/utils/types/posts";
 import { formatDate } from "@packages/utils/date";
-import { contentfulClient } from "../lib/contentful";
+import {useStoryblokApi} from "@storyblok/astro";
 
-const entries = await contentfulClient.getEntries<Post>({
-  content_type: "blogPost",
-  limit: 10,
-  "fields.language": "en",
-  order: "-fields.publicationDate",
+const storyblokApi = useStoryblokApi();
+
+const { data } = await storyblokApi.get("cdn/stories", {
+  version: import.meta.env.DEV ? "draft" : "published",
+  content_type: "post",
+  page: 1,
+  per_page: 10,
+  sort_by: "content.date:desc",
 });
 
-const items = entries.items.map((entry) => ({
-  link: `https://ehret.me/${entry.fields.slug}`,
-  title: entry.fields.title,
-  description: entry.fields.description,
-  pubDate: entry.fields.publicationDate,
-}));
-
 export function get(context) {
+  const items = data.stories.map((story) => {
+    return {
+      title: story.name,
+      pubDate: formatDate(new Date(story.content.date)),
+      description: story.content.description,
+      link: `${context.site}${story.slug}`,
+    };
+  });
+
   return rss({
     // `<title>` field in output xml
     title: "I'm Siegfried. A developer. Yep.",
