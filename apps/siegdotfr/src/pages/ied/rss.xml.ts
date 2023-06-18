@@ -20,9 +20,9 @@ const items = entries.items.map((entry) => ({
 export function get(context) {
   return rss({
     // `<title>` field in output xml
-    title: "I'm Siegfried. A developer. Yep.",
+    title: "Je m'appelle Siegfried. Je suis développeur.",
     // `<description>` field in output xml
-    description: "This is my personal website.",
+    description: "Ceci est mon site personnel.",
     // Pull in your project "site" from the endpoint context
     // https://docs.astro.build/en/reference/api-reference/#contextsite
     site: context.site,
