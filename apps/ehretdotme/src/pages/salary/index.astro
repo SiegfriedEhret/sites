@@ -1,31 +1,30 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { useStoryblokApi } from "@storyblok/astro";
+import { doFetch } from "@packages/utils/storyblok";
 
-const storyblokApi = useStoryblokApi();
+const query = `query getJobs {
+  JobItems(sort_by: "content.startDate:desc") {
+    items {
+      content {
+        title
+        url
+        company
+        startDate
+        endDate
+        salary
+        currency
+        variable
+        bonus
+        bonusDescription
+        comment
+      }
+    }
+  }
+}
+`;
 
-const { data } = await storyblokApi.get("cdn/stories", {
-  version: import.meta.env.DEV ? "draft" : "published",
-  content_type: "job",
-});
-
-const posts = data.stories
-  .map((story) => {
-    return {
-      title: story.content.title,
-      url: story.content.url,
-      company: story.content.company,
-      startDate: story.content.startDate,
-      endDate: story.content.endDate,
-      salary: story.content.salary,
-      currency: story.content.currency,
-      variable: story.content.variable,
-      bonus: story.content.bonus,
-      bonusDescription: story.content.bonusDescription,
-      comment: story.content.comment,
-    };
-  })
-  .sort((a, b) => a.startDate.localeCompare(b.startDate));
+const { data } = await doFetch(import.meta.env.STORYBLOK_TOKEN, query, {});
+const jobs = data.JobItems.items.map((item) => item.content);
 
 function f(amount: number, currency: string) {
   return new Intl.NumberFormat("en", { style: "currency", currency }).format(
@@ -60,7 +59,7 @@ function f(amount: number, currency: string) {
     </thead>
     <tbody>
       {
-        posts.map((item) => (
+        jobs.map((item) => (
           <tr>
             <td data-before="Title">{item.title}</td>
             <td data-before="Company">

@@ -7,7 +7,7 @@ import Toc from '../Toc.astro';
 const { story } = Astro.props;
 const post = {
 	title: story.name,
-	image: story.content.image?.fields || {},
+	image: story.content.image || {},
 	date: formatDate(story.content.date),
 	updatedAt: formatDate(story.published_at),
 	...(await convert(story.content.content as string))
@@ -21,7 +21,7 @@ const post = {
 <section>
 	<h1>{post.title}</h1>
 
-	{post.image?.file?.url && <Figure url={post.image.file.url} title={post.image.title} />}
+	{post.image.filename && <Figure url={post.image.filename} title={post.image.alt} />}
 
 	<details>
 		<summary>{post.date}</summary>

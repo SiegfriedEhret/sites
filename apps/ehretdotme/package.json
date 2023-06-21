@@ -16,10 +16,10 @@
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
     "@sindresorhus/slugify": "^2.2.1",
-    "@storyblok/astro": "^2.3.4",
+    "@storyblok/astro": "^2.4.0",
     "@storyblok/js": "^2.2.0",
-    "astro": "^2.6.4",
-    "contentful": "^10.2.3",
+    "astro": "^2.6.5",
+    "contentful": "^10.2.4",
     "highlight.js": "^11.8.0",
     "vite": "^4.3.9"
   },

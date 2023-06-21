@@ -1,25 +1,21 @@
 ---
-import { useStoryblokApi } from "@storyblok/astro";
 import Layout from "../layouts/Layout.astro";
 import { formatDate } from "@packages/utils/date";
+import { getNotes } from "@packages/utils/storyblok";
 
-const storyblokApi = useStoryblokApi();
-
-const { data } = await storyblokApi.get("cdn/stories", {
-  version: import.meta.env.DEV ? "draft" : "published",
-  content_type: "post",
-  page: 0,
-  per_page: 10,
-});
-
-const posts = data.stories.map((story) => {
-  return {
-    title: story.name,
-    date: formatDate(new Date(story.content.date)),
-    description: story.content.description,
-    slug: story.slug,
-  };
-});
+const posts = (
+  await getNotes({
+    language: "en",
+    page: 1,
+    perPage: 5,
+    token: import.meta.env.STORYBLOK_TOKEN,
+  })
+).map((story) => ({
+  title: story.name,
+  date: formatDate(new Date(story.content.date)),
+  description: story.content.description,
+  slug: story.slug,
+}));
 ---
 
 <Layout title="/ [ehret.me]">
@@ -97,5 +93,4 @@ const posts = data.stories.map((story) => {
     font-size: 0.8rem;
     text-decoration: none;
   }
-
 </style>

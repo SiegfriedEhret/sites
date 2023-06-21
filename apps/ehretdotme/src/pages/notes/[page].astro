@@ -1,21 +1,16 @@
 ---
-import { useStoryblokApi } from "@storyblok/astro";
 import Layout from "../../layouts/Layout.astro";
 import { formatDate, getYear } from "@packages/utils/date";
+import { getNotes, getNumberOfNotes } from "@packages/utils/storyblok";
 import Pagination from "../../components/Pagination.astro";
 
 export async function getStaticPaths() {
-  const storyblokApi = useStoryblokApi();
-
-  const storyblokRes = await storyblokApi.get("cdn/stories", {
-    version: import.meta.env.DEV ? "draft" : "published",
-    content_type: "post",
-    page: 1,
-    per_page: 1,
+  const numberOfNotes = await getNumberOfNotes({
+    token: import.meta.env.STORYBLOK_TOKEN,
   });
 
   const results = [];
-  const total = Math.ceil(storyblokRes.total / 25);
+  const total = Math.ceil(numberOfNotes / 25);
   for (let i = 0; i < total; i++) {
     results.push({
       params: {
@@ -26,31 +21,26 @@ export async function getStaticPaths() {
       },
     });
   }
-  console.log(">>>>>>>>>", results);
   return results;
 }
 
 const { page } = Astro.params;
 const { total } = Astro.props;
 const currentPage = parseInt(page, 10);
-const storyblokApi = useStoryblokApi();
 
-const { data } = await storyblokApi.get("cdn/stories", {
-  version: import.meta.env.DEV ? "draft" : "published",
-  content_type: "post",
-  page: currentPage,
-  per_page: 25,
-  sort_by: "content.date:desc",
-});
-
-const posts = data.stories.map((story) => {
-  return {
-    title: story.name,
-    date: formatDate(new Date(story.content.date)),
-    description: story.content.description,
-    slug: story.slug,
-  };
-});
+const posts = (
+  await getNotes({
+    language: "en",
+    page: currentPage,
+    perPage: 25,
+    token: import.meta.env.STORYBLOK_TOKEN,
+  })
+).map((story) => ({
+  title: story.name,
+  date: formatDate(new Date(story.content.date)),
+  description: story.content.description,
+  slug: story.slug,
+}));
 ---
 
 <Layout title="/notes [ehret.me]">

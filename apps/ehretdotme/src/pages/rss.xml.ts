@@ -1,19 +1,16 @@
 import rss from "@astrojs/rss";
 import { formatDate } from "@packages/utils/date";
-import {useStoryblokApi} from "@storyblok/astro";
+import { getNotes } from "@packages/utils/storyblok";
 
-const storyblokApi = useStoryblokApi();
-
-const { data } = await storyblokApi.get("cdn/stories", {
-  version: import.meta.env.DEV ? "draft" : "published",
-  content_type: "post",
+const posts = await getNotes({
+  language: "en",
   page: 1,
-  per_page: 10,
-  sort_by: "content.date:desc",
+  perPage: 5,
+  token: import.meta.env.STORYBLOK_TOKEN,
 });
 
 export function get(context) {
-  const items = data.stories.map((story) => {
+  const items = posts.map((story) => {
     return {
       title: story.name,
       pubDate: formatDate(new Date(story.content.date)),

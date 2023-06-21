@@ -7,7 +7,11 @@ for (let i = 1; i <= total; i++) {
 ---
 
 <nav>
-    {arr.map((i) => (i === page ? <span>{i}</span> : <a href={`${baseUrl}/${i}`}>{i}</a>))}
+  {
+    arr.map((i) =>
+      i === page ? <span>{i}</span> : <a href={`${baseUrl}/${i}`}>{i}</a>
+    )
+  }
 </nav>
 
 <style>
@@ -17,22 +21,22 @@ for (let i = 1; i <= total; i++) {
     align-items: center;
   }
   nav::before {
-      content: "[";
+    content: "[";
   }
   nav::after {
-      content: "]";
+    content: "]";
   }
   nav a {
     margin-inline: var(--base);
-      transition: color .2s;
-      will-change: color;
+    transition: color 0.2s;
+    will-change: color;
   }
-  nav a:is(:active,:focus,:hover) {
+  nav a:is(:active, :focus, :hover) {
     color: var(--prime);
   }
   nav span {
-      margin-inline: var(--base);
-      color: var(--prime);
+    margin-inline: var(--base);
+    color: var(--prime);
     font-weight: bold;
   }
 </style>
