@@ -11,7 +11,7 @@ const entries = await contentfulClient.getEntries<Post>({
 });
 
 const items = entries.items.map((entry) => ({
-  link: `https://ehret.me/${entry.fields.slug}`,
+  link: `https://sieg.fr/ied/${entry.fields.slug}`,
   title: entry.fields.title,
   description: entry.fields.description,
   pubDate: entry.fields.publicationDate,
@@ -25,12 +25,12 @@ export function get(context) {
     description: "Ceci est mon site personnel.",
     // Pull in your project "site" from the endpoint context
     // https://docs.astro.build/en/reference/api-reference/#contextsite
-    site: context.site,
+    site: `${context.site}/ied`,
     // Array of `<item>`s in output xml
     // See "Generating items" section for examples using content collections and glob imports
     items: items,
     // (optional) inject custom xml
-    customData: `<language>en</language>
+    customData: `<language>fr</language>
 <lastBuildDate>${formatDate(new Date())}</lastBuildDate>`,
   });
 }
