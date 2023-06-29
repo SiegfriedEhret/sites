@@ -1,21 +1,25 @@
 ---
 import { formatDate } from '@packages/utils/date';
 import { convert } from '@packages/utils/content';
+import { useTranslations } from '@packages/utils/i18n';
+import type { Language } from '@packages/utils/i18n';
 import Figure from '../Figure.astro';
 import Toc from '../Toc.astro';
 
-const { story } = Astro.props;
+const { story, lang = 'en' } = Astro.props;
 const post = {
 	title: story.name,
 	image: story.content.image || {},
-	date: formatDate(story.content.date),
+	date: formatDate(story.first_published_at),
 	updatedAt: formatDate(story.published_at),
 	...(await convert(story.content.content as string))
 };
+
+const t = useTranslations(lang as Language);
 ---
 
 <nav>
-	<a href="/notes">&lt;= all notes</a>
+	<a href={t('post.all-notes-link')}>&lt;= {t('post.all-notes')}</a>
 </nav>
 
 <section>
@@ -25,7 +29,8 @@ const post = {
 
 	<details>
 		<summary>{post.date}</summary>
-		Last modified on {post.updatedAt}
+		{t('post.last-modified')}
+		{post.updatedAt}
 	</details>
 	{post.headings && <Toc headings={post.headings} />}
 

@@ -1,3 +1,5 @@
+import type { Language } from './i18n';
+
 const maxPerPage = 100;
 const version = 'published';
 
@@ -27,7 +29,7 @@ async function paginate(
 	variables: Record<string, string | number>,
 	token = ''
 ) {
-	const result = await doFetch(token, query, {...variables, page} );
+	const result = await doFetch(token, query, { ...variables, page });
 	const { total, items } = result.data.PostItems;
 	if (page * maxPerPage < total) {
 		return [...items, ...(await paginate(page + 1, query, variables, token))];
@@ -36,7 +38,6 @@ async function paginate(
 	}
 }
 
-type Language = 'en' | 'fr' | 'test';
 type Options = { language?: Language; page?: number; perPage?: number; token?: string };
 
 export async function getNumberOfNotes(options: Options): Promise<number> {
@@ -54,14 +55,15 @@ export async function getNumberOfNotes(options: Options): Promise<number> {
 export async function getAllNotes(options: Options) {
 	const { language = 'en', page = 1, perPage = maxPerPage, token = '' } = options;
 	const query = `query($page: Int!, $perPage: Int!) {
-  PostItems(filter_query: {language: {in: ${language}}}, per_page: $perPage, page: $page, sort_by: "content.date:desc") {
+  PostItems(filter_query: {language: {in: ${language}}}, per_page: $perPage, page: $page, sort_by: "first_published_at:desc") {
     total
     items {
+      first_published_at
       name
+      published_at
       slug
       content {
         component
-        date
         content
         image {
           alt
@@ -82,14 +84,15 @@ export async function getAllNotes(options: Options) {
 export async function getNotes(options: Options) {
 	const { language = 'en', page = 1, perPage = 10, token = '' } = options;
 	const query = `query($page: Int!, $perPage: Int!) {
-  PostItems(filter_query: {language: {in: ${language}}}, per_page: $perPage, page: $page, sort_by: "content.date:desc") {
+  PostItems(filter_query: {language: {in: ${language}}}, per_page: $perPage, page: $page, sort_by: "first_published_at:desc") {
     total
     items {
+      first_published_at
       name
+      published_at
       slug
       content {
         component
-        date
         description
       }
     }
@@ -100,7 +103,7 @@ export async function getNotes(options: Options) {
 		perPage
 	};
 
-	const result = await doFetch(token, query, {...variables, page});
+	const result = await doFetch(token, query, { ...variables, page });
 	const { items } = result.data.PostItems;
 	return items;
 }

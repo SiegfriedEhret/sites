@@ -12,7 +12,7 @@ const posts = (
   })
 ).map((story) => ({
   title: story.name,
-  date: formatDate(new Date(story.content.date)),
+  date: formatDate(new Date(story.first_published_at)),
   description: story.content.description,
   slug: story.slug,
 }));
@@ -26,15 +26,17 @@ const posts = (
 
     <section>
       <h2>Latest notes.</h2>
-      {
-        posts.map((post) => (
-          <a href={post.slug}>
-            <time>{post.date}</time>
-            <p class="title">{post.title}</p>
-            <p class="small">{post.description}</p>
-          </a>
-        ))
-      }
+      <nav>
+        {
+          posts.map((post) => (
+            <a href={post.slug}>
+              <time>{post.date}</time>
+              <p class="title">{post.title}</p>
+              <p class="small">{post.description}</p>
+            </a>
+          ))
+        }
+      </nav>
       <a href="/notes">All notes.</a>
     </section>
 

@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import { formatDate, getYear } from "@packages/utils/date";
 import { getNotes, getNumberOfNotes } from "@packages/utils/storyblok";
-import Pagination from "../../components/Pagination.astro";
+import Pagination from "@packages/ui/v3/Pagination.astro";
 
 export async function getStaticPaths() {
   const numberOfNotes = await getNumberOfNotes({
@@ -37,7 +37,7 @@ const posts = (
   })
 ).map((story) => ({
   title: story.name,
-  date: formatDate(new Date(story.content.date)),
+  date: formatDate(new Date(story.first_published_at)),
   description: story.content.description,
   slug: story.slug,
 }));

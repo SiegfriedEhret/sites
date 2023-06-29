@@ -1,73 +1,24 @@
 ---
-import { contentfulClient } from "../../lib/contentful";
-import type { Post } from "@packages/utils/types/posts";
+import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
 import Layout from "../../layouts/Layout.astro";
-import { formatDate } from "@packages/utils/date";
-import { convert } from "@packages/utils/content";
-import Toc from "@packages/ui/v3/Toc.astro";
-import Figure from "@packages/ui/v3/Figure.astro";
+import { getAllNotes } from "@packages/utils/storyblok";
 
 export async function getStaticPaths() {
-  const entries = await contentfulClient.getEntries<Post>({
-    content_type: "blogPost",
-    limit: 200,
-    "fields.language": "fr",
-    order: "-fields.publicationDate",
-    select:
-      "fields.slug,fields.title,fields.description,fields.publicationDate,fields.body,sys.updatedAt,fields.heroImage",
-  });
-
-  const items = [];
-  for (const item of entries.items) {
-    const { description, title, slug, body, publicationDate, heroImage } =
-      item.fields;
-    items.push({
-      params: { slug },
-      props: {
-        title,
-        description,
-        image: heroImage?.fields || {},
-        date: formatDate(publicationDate as string),
-        updatedAt: formatDate(item.sys.updatedAt),
-        ...(await convert(body as string)),
-      },
-    });
-  }
-
-  return items;
+  return (
+    await getAllNotes({
+      language: "fr",
+      page: 1,
+      token: import.meta.env.STORYBLOK_TOKEN,
+    })
+  ).map((story) => ({
+    params: { slug: story.slug },
+    props: { story },
+  }));
 }
 
-const { title, description, date, updatedAt, headings, html, image } =
-  Astro.props;
+const { story } = Astro.props;
 ---
 
-<Layout title={title} description={description} metaImage={image?.file?.url}>
-  <nav>
-    <a href="/ied/notes">&lt;= toutes les notes</a>
-  </nav>
-
-  <article>
-    <h1>{title}</h1>
-
-    {image?.file?.url && <Figure url={image.file.url} title={image.title} />}
-
-    <details>
-      <summary>{date}</summary>
-      Dernière modification le {updatedAt}
-    </details>
-    {headings && <Toc headings={headings} />}
-
-    <Fragment set:html={html} />
-  </article>
+<Layout>
+  <StoryblokComponent blok={story.content} story={story} />
 </Layout>
-
-<style>
-  details {
-    margin-bottom: 1rem;
-    font-size: var(--fs-small);
-  }
-  summary {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-</style>

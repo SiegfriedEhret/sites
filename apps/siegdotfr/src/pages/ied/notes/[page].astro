@@ -1,28 +1,47 @@
 ---
-import { contentfulClient } from "../../../lib/contentful";
-import type { Post } from "@packages/utils/types/posts";
 import Layout from "../../../layouts/Layout.astro";
 import { formatDate, getYear } from "@packages/utils/date";
+import { getNotes, getNumberOfNotes } from "@packages/utils/storyblok";
+import Pagination from "@packages/ui/v3/Pagination.astro";
 
-const entries = await contentfulClient.getEntries<Post>({
-  content_type: "blogPost",
-  limit: 200,
-  "fields.language": "fr",
-  order: "-fields.publicationDate",
-  select: "fields.title,fields.slug,fields.publicationDate,fields.description",
-});
+export async function getStaticPaths() {
+  const numberOfNotes = await getNumberOfNotes({
+    language: "fr",
+    token: import.meta.env.STORYBLOK_TOKEN,
+  });
 
-const posts = entries.items
-  .map((item) => {
-    const { title, publicationDate, description, slug } = item.fields;
-    return {
-      title,
-      slug,
-      description,
-      date: formatDate(publicationDate as string),
-    };
+  const results = [];
+  const total = Math.ceil(numberOfNotes / 25);
+  for (let i = 0; i < total; i++) {
+    results.push({
+      params: {
+        page: i + 1,
+      },
+      props: {
+        total,
+      },
+    });
+  }
+  return results;
+}
+
+const { page } = Astro.params;
+const { total } = Astro.props;
+const currentPage = parseInt(page, 10);
+
+const posts = (
+  await getNotes({
+    language: "fr",
+    page: currentPage,
+    perPage: 25,
+    token: import.meta.env.STORYBLOK_TOKEN,
   })
-  .sort((a, b) => b.date.localeCompare(a.date));
+).map((story) => ({
+  title: story.name,
+  date: formatDate(new Date(story.first_published_at)),
+  description: story.content.description,
+  slug: story.slug,
+}));
 ---
 
 <Layout
@@ -31,22 +50,22 @@ const posts = entries.items
 >
   <h1>Notes.</h1>
   <p>Un peu de tout, et beaucoup de rien.</p>
-
   <nav>
     {
-      posts.map((item) => (
-        <section data-year={getYear(item.date)}>
+      posts.map((post) => (
+        <section data-year={getYear(post.date)}>
           <h2>
-            <a href={`/ied/${item.slug}`}>{item.title}</a>
+            <a href={`/ied/${post.slug}`}>{post.title}</a>
           </h2>
           <div>
-            <time datetime={item.date}>{formatDate(item.date)}</time>
+            <time datetime={post.date}>{formatDate(post.date)}</time>
           </div>
-          <p>{item.description}</p>
+          <p>{post.description}</p>
         </section>
       ))
     }
   </nav>
+  <Pagination page={currentPage} total={total} baseUrl="/ied/notes" />
 </Layout>
 
 <style>

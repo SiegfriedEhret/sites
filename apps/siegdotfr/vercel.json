@@ -5,5 +5,10 @@
       "destination": "/ied"
     }
   ],
-  "rewrites": []
+  "rewrites": [
+    {
+      "source": "/ied/notes",
+      "destination": "/ied/notes/1"
+    }
+  ]
 }

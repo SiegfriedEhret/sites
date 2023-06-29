@@ -13,7 +13,7 @@ export function get(context) {
   const items = posts.map((story) => {
     return {
       title: story.name,
-      pubDate: formatDate(new Date(story.content.date)),
+      pubDate: formatDate(new Date(story.first_published_at)),
       description: story.content.description,
       link: `${context.site}${story.slug}`,
     };

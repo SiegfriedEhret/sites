@@ -1,28 +1,21 @@
 ---
-import { contentfulClient } from "../../lib/contentful";
-import type { Post } from "@packages/utils/types/posts";
 import Layout from "../../layouts/Layout.astro";
 import { formatDate } from "@packages/utils/date";
+import { getNotes } from "@packages/utils/storyblok";
 
-const entries = await contentfulClient.getEntries<Post>({
-  content_type: "blogPost",
-  limit: 10,
-  "fields.language": "fr",
-  order: "-fields.publicationDate",
-  select: "fields.title,fields.slug,fields.publicationDate,fields.description",
-});
-
-const posts = entries.items
-  .map((item) => {
-    const { title, publicationDate, description, slug } = item.fields;
-    return {
-      title,
-      slug,
-      description,
-      date: formatDate(publicationDate),
-    };
+const posts = (
+  await getNotes({
+    language: "fr",
+    page: 1,
+    perPage: 5,
+    token: import.meta.env.STORYBLOK_TOKEN,
   })
-  .sort((a, b) => b.date.localeCompare(a.date));
+).map((story) => ({
+  title: story.name,
+  date: formatDate(new Date(story.first_published_at)),
+  description: story.content.description,
+  slug: story.slug,
+}));
 ---
 
 <Layout
@@ -35,16 +28,62 @@ const posts = entries.items
 
     <section>
       <h2>Dernières notes.</h2>
-      <ul>
+      <nav>
         {
-          posts.map((item) => (
-            <li>
-              <a href={`/ied/${item.slug}`}>{item.title}</a>
-            </li>
+          posts.map((post) => (
+            <a href={`/ied/${post.slug}`}>
+              <time>{post.date}</time>
+              <p class="title">{post.title}</p>
+              <p class="small">{post.description}</p>
+            </a>
           ))
         }
-      </ul>
+      </nav>
       <a href="/ied/notes">Toutes mes notes.</a>
     </section>
   </article>
 </Layout>
+
+<style>
+  a {
+    position: relative;
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid var(--prime);
+    padding: var(--base) calc(var(--base) * 2);
+    text-decoration: none;
+  }
+
+  a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: " ";
+    border: 0 solid var(--prime);
+    will-change: border-width;
+    transition: border-width 0.2s ease-in-out;
+  }
+  a:is(:active, :focus, :hover)::before {
+    border-width: var(--base);
+  }
+
+  a > * {
+    margin: 0;
+  }
+
+  time {
+    font-size: 0.6rem;
+    text-decoration: none;
+  }
+
+  .title {
+    text-decoration: underline;
+  }
+
+  .small {
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+</style>
