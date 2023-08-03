@@ -12,12 +12,12 @@
   },
   "dependencies": {
     "@astrojs/rss": "^2.4.3",
-    "@astrojs/ts-plugin": "^1.0.10",
+    "@astrojs/ts-plugin": "^1.1.1",
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
     "@sindresorhus/slugify": "^2.2.1",
-    "astro": "^2.7.2",
-    "contentful": "^10.3.1",
+    "astro": "^2.10.1",
+    "contentful": "^10.4.0",
     "highlight.js": "^11.8.0"
   },
   "devDependencies": {
