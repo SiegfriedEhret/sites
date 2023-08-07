@@ -6,7 +6,7 @@ import Layout from "../../layouts/Layout.astro";
 const entries = await contentfulClient.getEntries<Job>({
     content_type: "job",
     limit: 50,
-    order: 'fields.startDate',
+    order: '-fields.startDate',
     select: "fields.title,fields.url,fields.company,fields.startDate,fields.endDate,fields.salary,fields.currency,fields.variable,fields.bonus,fields.bonusDescription,fields.comment"
 });
 
