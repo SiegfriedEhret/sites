@@ -3,7 +3,6 @@ import { contentfulClient } from "../../lib/contentful";
 import type {Art} from "../../lib/art";
 import Layout from '../../layouts/Layout.astro'
 import { formatDateHuman } from '@packages/utils/date';
-import {getTitle} from "../../lib/art";
 
 export async function getStaticPaths() {
     const entries = await contentfulClient.getEntries<Art>({
