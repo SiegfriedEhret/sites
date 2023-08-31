@@ -29,17 +29,17 @@ const artists = Array.from(new Set(posts.map((i) => i.artist))).sort();
 
 	<button class="show-artists">Show artists</button>
 
-	<div class="tacos">
+	<div class="tacos" x-data="{selected: 'all'}">
 		<div class="filters">
-			<button class="artists-all">All</button>
+			<button class="artists-all" @click="selected = 'all'">All</button>
 			{artists.map(artist => (
-				<button class="artist-select" data-artist={slugify(artist)}>{artist}</button>
+				<button class="artist-select" @click={`selected = '${slugify(artist)}'`}>{artist}</button>
 			))}
 		</div>
 
 		<div class="grid">
 			{posts.map((item) => (
-				<a class="item active" href={`/museum/${item.slug}`} data-artist={slugify(item.artist)}>
+				<a class="item" href={`/museum/${item.slug}`} x-show={`['all', '${slugify(item.artist)}'].includes(selected)`}>
 					<figure>
 						<figcaption>{getTitle(item)}</figcaption>
 						<img loading="lazy" src={`${item.media[0]}?fm=jpg&q=50&w=300`} alt={getTitle(item)} />
@@ -49,27 +49,6 @@ const artists = Array.from(new Set(posts.map((i) => i.artist))).sort();
 		</div>
 	</div>
 </Layout>
-
-<script>
-	function handleShowArtists() {
-		document.querySelector(".filters").classList.toggle("show");
-	}
-	document.querySelector(".show-artists").addEventListener("click", handleShowArtists);
-
-	function handleFilter(e) {
-		const {artist} = e.target.dataset;
-		const items = Array.from(document.querySelectorAll(".grid .item"));
-		items.forEach(item => item.classList.remove("active"));
-		const itemsToActivate = artist ? items.filter(item => item.dataset.artist === artist) : items;
-		itemsToActivate.forEach(item => item.classList.add("active"));
-
-		const toggle = document.querySelector(".filters");
-		if (toggle.classList.contains("show")) {
-			toggle.classList.toggle("show");
-		}
-	}
-	Array.from(document.querySelectorAll(".filters button")).forEach(el => el.addEventListener("click", handleFilter));
-</script>
 
 <style>
 	.tacos {
@@ -145,14 +124,8 @@ const artists = Array.from(new Set(posts.map((i) => i.artist))).sort();
 	}
 
 	.item {
-		display: none;
-		break-inside: avoid;
-		/*margin: 0;*/
-		/*padding: 0;*/
-	}
-
-	.item.active {
 		display: block;
+		break-inside: avoid;
 	}
 
 	figure {
