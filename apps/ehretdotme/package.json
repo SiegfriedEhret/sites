@@ -17,10 +17,10 @@
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
     "@sindresorhus/slugify": "^2.2.1",
-    "@types/alpinejs": "^3.7.2",
+    "@types/alpinejs": "^3.13.0",
     "alpinejs": "^3.13.0",
-    "astro": "^3.0.5",
-    "contentful": "^10.5.1",
+    "astro": "^3.1.0",
+    "contentful": "^10.5.2",
     "highlight.js": "^11.8.0"
   },
   "devDependencies": {
