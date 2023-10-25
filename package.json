@@ -13,6 +13,7 @@
     "build:meloedotfr": "turbo run build --scope meloedotfr",
     "build:siegdotfr": "turbo run build --scope siegdotfr",
     "dev": "turbo run dev --parallel",
+    "tina": "turbo run tina --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },

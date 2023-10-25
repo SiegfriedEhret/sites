@@ -29,5 +29,8 @@ format: format-ehretdotme format-meloedotfr format-siegdotfr format-ui format-ut
 run: ## Run development server
 	pnpm dev
 
+run-tina-ehretdotme: ## Run tina on ehretdotme
+	pnpm tinacms dev -c "<your dev command>"
+
 help: ## Print this message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'

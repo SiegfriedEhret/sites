@@ -11,6 +11,9 @@
     },
     "dev": {
       "cache": false
+    },
+    "tina": {
+      "cache": false
     }
   }
 }
