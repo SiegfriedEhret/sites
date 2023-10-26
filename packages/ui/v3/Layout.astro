@@ -2,7 +2,10 @@
 import "./app.css"
 import "@fontsource/jost/variable.css"
 
-const { description, title, metaImage, rssHref, rssTitle } = Astro.props
+const { description, title, metaImage, rssHref, rssTitle } = Astro.props;
+
+const img = `${Astro.site}${metaImage}`.replaceAll("//", "/");
+
 ---
 <html lang="en">
 <head>
@@ -21,14 +24,14 @@ const { description, title, metaImage, rssHref, rssTitle } = Astro.props
     <meta property="og:url" content={Astro.url}>
     <meta property="og:title" content={title}>
     <meta property="og:description" content={description}>
-    {metaImage && <meta property="og:image" content={metaImage}>}
+    {metaImage && <meta property="og:image" content={img}>}
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content={Astro.url}>
     <meta property="twitter:title" content={title}>
     <meta property="twitter:description" content={description}>
-    {metaImage && <meta property="twitter:image" content={metaImage}>}
+    {metaImage && <meta property="twitter:image" content={img}>}
 
     <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
