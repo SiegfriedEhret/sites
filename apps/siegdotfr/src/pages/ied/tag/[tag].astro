@@ -1,0 +1,59 @@
+---
+import { formatDate } from '@packages/utils/date';
+import Layout from "../../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+    const posts = await Astro.glob(`../../../../content/posts/*.md`);
+    const tags = posts.reduce((allTags, post) => {
+        const postTags = post.frontmatter.tags;
+        if (postTags) {
+            postTags.forEach((tag) => {
+                if (!allTags[tag]) {
+                    allTags[tag] = [];
+                }
+                allTags[tag].push(post);
+            });
+        }
+        return allTags;
+    }, {});
+
+    return Object.keys(tags).map((t) => {
+        return {
+            params: { tag: t },
+            props: { tag: tags[t] },
+        };
+    });
+}
+
+const { tag } = Astro.props;
+const { tag: currentTag } = Astro.params;
+
+let sortedPosts = tag.sort(
+    (a, b) =>
+        new Date(b.frontmatter.date).valueOf() -
+        new Date(a.frontmatter.date).valueOf()
+);
+---
+
+<Layout>
+        <h1>Posts tagged with "{currentTag}"</h1>
+            {
+                sortedPosts.map(
+                    ({
+                         frontmatter: { description, title, slug, date },
+                     }) => <div class="post">
+                            <a href={`/${slug}`}>{title}</a>
+                            <time datetime={date}>{formatDate(date)}</time><br>
+                            <span>{description}</span>
+                    </div>
+                )
+            }
+</Layout>
+
+<style>
+        .post {
+                display: flex;
+                flex-direction: column;
+
+        }
+</style>

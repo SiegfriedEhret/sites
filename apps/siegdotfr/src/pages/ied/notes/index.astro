@@ -5,23 +5,32 @@ import Layout from "../../../layouts/Layout.astro";
 import {formatDate, getYear} from '@packages/utils/date';
 
 
-const entries = await contentfulClient.getEntries<Post>({
+const entriesFromContentful = await contentfulClient.getEntries<Post>({
     content_type: "blogPost",
     limit: 200,
     'fields.language': 'fr',
     order: '-fields.publicationDate',
     select: "fields.title,fields.slug,fields.publicationDate,fields.description",
 });
+const entriesFromRepository = await Astro.glob(`../../../../content/posts/*.md`);
 
-const posts = entries.items.map((item) => {
-    const {title, publicationDate, description, slug} = item.fields;
-    return {
-        title,
-        slug,
-        description,
-        date: formatDate(publicationDate as string),
-    };
-}).sort((a, b) => b.date.localeCompare(a.date));
+const posts = [
+    ...entriesFromContentful.items.map((item) => {
+        const {title, publicationDate, description, slug} = item.fields;
+        return {
+            title,
+            slug,
+            description,
+            date: formatDate(publicationDate as string),
+        };
+    }),
+    ...entriesFromRepository.map(item => ({
+        title: item.frontmatter.title,
+        slug: item.frontmatter.slug,
+        description: item.frontmatter.description,
+        date: formatDate(item.frontmatter.date)
+    }))
+].sort((a, b) => b.date.localeCompare(a.date));
 ---
 
 <Layout title="/notes [sieg.fr/ied]" description="Un peu de tout, et beaucoup de rien.">

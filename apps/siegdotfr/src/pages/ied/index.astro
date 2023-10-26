@@ -4,23 +4,32 @@ import type { Post } from '@packages/utils/types/posts';
 import Layout from "../../layouts/Layout.astro";
 import { formatDate } from '@packages/utils/date';
 
-const entries = await contentfulClient.getEntries<Post>({
+const entriesFromContentful = await contentfulClient.getEntries<Post>({
 	content_type: "blogPost",
 	limit: 10,
 	'fields.language': 'fr',
 	order: '-fields.publicationDate',
 	select: 'fields.title,fields.slug,fields.publicationDate,fields.description',
 });
+const entriesFromRepository = await Astro.glob(`../../../content/posts/*.md`);
 
-const posts = entries.items.map((item) => {
-	const { title, publicationDate, description, slug } = item.fields;
-	return {
-		title,
-		slug,
-		description,
-		date: formatDate(publicationDate),
-	};
-}).sort((a, b) => b.date.localeCompare(a.date));
+const posts = [
+	...entriesFromContentful.items.map((item) => {
+		const { title, publicationDate, description, slug } = item.fields;
+		return {
+			title,
+			slug,
+			description,
+			date: formatDate(publicationDate),
+		};
+	}),
+	...entriesFromRepository.map(item => ({
+	title: item.frontmatter.title,
+	slug: item.frontmatter.slug,
+	description: item.frontmatter.description,
+	date: formatDate(item.frontmatter.date)
+})).slice(0, 10)
+].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 10);
 ---
 
 <Layout title="/ [sieg.fr/ied]" description="Je m'appelle Siegfried. Je suis développeur.">

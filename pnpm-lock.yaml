@@ -103,6 +103,9 @@ importers:
       '@sindresorhus/slugify':
         specifier: ^2.2.1
         version: 2.2.1
+      '@tinacms/cli':
+        specifier: ^1.5.31
+        version: 1.5.31(@babel/core@7.23.0)(react-dom@18.2.0)(react@18.2.0)
       astro:
         specifier: ^3.2.4
         version: 3.2.4
@@ -112,6 +115,9 @@ importers:
       highlight.js:
         specifier: ^11.9.0
         version: 11.9.0
+      tinacms:
+        specifier: ^1.5.22
+        version: 1.5.22(@babel/core@7.23.0)(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       prettier:
         specifier: ^2.8.8
@@ -1968,7 +1974,7 @@ packages:
     dependencies:
       '@monaco-editor/loader': 1.4.0(monaco-editor@0.31.0)
       monaco-editor: 0.31.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
     dev: false
@@ -1982,7 +1988,7 @@ packages:
     dependencies:
       '@monaco-editor/loader': 1.4.0(monaco-editor@0.31.0)
       monaco-editor: 0.31.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -11832,7 +11838,7 @@ packages:
       create-react-class: 15.7.0
       moment: 2.29.4
       object-assign: 3.0.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
       react-onclickoutside: 6.13.0(react-dom@17.0.2)(react@17.0.2)
@@ -11848,7 +11854,7 @@ packages:
       create-react-class: 15.7.0
       moment: 2.29.4
       object-assign: 3.0.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-onclickoutside: 6.13.0(react-dom@18.2.0)(react@18.2.0)
