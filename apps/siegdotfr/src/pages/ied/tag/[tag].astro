@@ -36,13 +36,13 @@ let sortedPosts = tag.sort(
 ---
 
 <Layout>
-        <h1>Posts tagged with "{currentTag}"</h1>
+        <h1>Billets avec le label « {currentTag} »</h1>
             {
                 sortedPosts.map(
                     ({
                          frontmatter: { description, title, slug, date },
                      }) => <div class="post">
-                            <a href={`/${slug}`}>{title}</a>
+                            <a href={`/ied/${slug}`}>{title}</a>
                             <time datetime={date}>{formatDate(date)}</time><br>
                             <span>{description}</span>
                     </div>
