@@ -14,7 +14,7 @@
     "@astrojs/rss": "^3.0.0",
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
-    "astro": "^3.2.4"
+    "astro": "^3.4.0"
   },
   "devDependencies": {
     "prettier": "^2.8.8",
