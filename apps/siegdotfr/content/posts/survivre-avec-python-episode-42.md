@@ -74,4 +74,4 @@ Voilà !
 
 Je n'ai plus qu'à lancer make lint-docker ou make format-docker et je suis sauvé !
 
-Notons qu'avec PyCharm il me semble qu'on peut tirer un Python (avec Docker aussi) pour faire des trucs mais je n'ai pas encore essayé.
+Notons qu'avec PyCharm il me semble qu'on peut utiliser Python avec Docker pour faire des trucs mais je n'ai pas encore essayé.
