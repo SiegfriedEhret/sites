@@ -21,7 +21,7 @@ const items = [
     pubDate: entry.fields.publicationDate,
   })),
   ...entriesFromRepository.map((entry) => ({
-    link: `https://ehret.me/${entry.slug}`,
+    link: `https://ehret.me/${entry.frontmatter.slug}`,
     title: entry.frontmatter.title,
     description: entry.frontmatter.description,
     pubDate: entry.frontmatter.date,
