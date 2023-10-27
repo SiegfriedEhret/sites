@@ -63,8 +63,14 @@ build-docker-formatter: ## Build formatter image
 
 build-docker: build-docker-linter build-docker-formatter ## Build docker images
 
+lint: ## Check python files with flake8
+	poetry run python -m flake8 dags/ tests/
+
 lint-docker: ## Lint with docker
 	docker run --rm -v $(current_dir):/app verify-linter
+
+format: ## Format code
+	poetry run python -m black dags/ tests/
 
 format-docker: ## Format with docker
 	docker run --rm -v $(current_dir):/app verify-formatter
