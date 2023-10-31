@@ -3,6 +3,7 @@ title: Survivre avec Python épisode 42
 slug: python-42
 description: Ou comment Docker m'a sauvé
 date: 2023-10-25T22:00:00.000Z
+updatedAt: 2023-10-25T22:00:00.000Z
 image: /assets/python-whale.png
 imageDescription: >-
   Générée avec SDXL 1.0, avec le texte « 2 animals facing each other. An angry

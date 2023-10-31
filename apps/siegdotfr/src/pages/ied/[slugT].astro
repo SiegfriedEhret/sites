@@ -1,6 +1,7 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import { formatDate } from '@packages/utils/date';
 import Figure from "@packages/ui/v3/Figure.astro";
+import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
     const posts = await Astro.glob(`../../../content/posts/*.md`);
@@ -15,19 +16,10 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 
-// post.frontmatter.added = new Date(post.frontmatter.added).toLocaleDateString(
-//     "en-us",
-//     {
-//         year: "numeric",
-//         month: "short",
-//         day: "numeric",
-//     }
-// );
-
 const {
     Content,
     getHeadings,
-    frontmatter: { title, description, image, imageDescription, tags },
+    frontmatter: { title, date, updatedAt, description, image, imageDescription, tags },
 } = post;
 
 console.log(">>> image", image);
@@ -46,10 +38,10 @@ console.log(">>>", await getHeadings());
                 <Figure url={image} title={imageDescription || title} />
         }
 
-        <!--<details>-->
-        <!--    <summary>{date}</summary>-->
-        <!--    Last modified on {updatedAt}-->
-        <!--</details>-->
+        <details>
+            <summary>{formatDate(date, "fr")}</summary>
+            Dernière modification le {formatDate(updatedAt, "fr")}
+        </details>
         <!--{headings && <Toc headings={headings} />}-->
 
         <Content/>

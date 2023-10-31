@@ -45,8 +45,14 @@ export default defineConfig({
             required: true,
           },
           {
-            label: "Date",
+            label: "Published at",
             name: "date",
+            type: "datetime",
+            required: true,
+          },
+          {
+            label: "Updated at",
+            name: "updatedAt",
             type: "datetime",
             required: true,
           },

@@ -3,6 +3,7 @@ title: "Tina \U0001F999"
 slug: tina
 description: 'Quietly going back to "owning my data", using TinaCMS as a lovely editor'
 date: 2023-10-24T22:00:00.000Z
+updatedAt: 2023-10-24T22:00:00.000Z
 image: /assets/llama.png
 imageDescription: >-
   Generated with SDXL 1.0, with the prompt "A llama in a storage room full of  

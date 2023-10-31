@@ -1,5 +1,5 @@
 ---
-const { headings } = Astro.props
+const { headings } = Astro.props;
 ---
 {headings && headings.length > 0 && <div class="toc">
     <button>Shortcuts</button>
@@ -7,14 +7,14 @@ const { headings } = Astro.props
     <nav>
         {headings.map(heading =>
                 <a class:list={{
-                    h2: heading.level === 'h2',
-                    h3: heading.level === 'h3',
-                    h4: heading.level === 'h4',
-                    h5: heading.level === 'h5',
-                    h6: heading.level === 'h6',
+                    h2: heading.level === 'h2' || heading.depth === 2,
+                    h3: heading.level === 'h3' || heading.depth === 3,
+                    h4: heading.level === 'h4' || heading.depth === 4,
+                    h5: heading.level === 'h5' || heading.depth === 5,
+                    h6: heading.level === 'h6' || heading.depth === 6,
                 }}
-                   href={`#${heading.id}`}>
-                    {heading.title}
+                   href={`#${heading.id || heading.slug}`}>
+                    {heading.title || heading.text}
                 </a>
         )}
     </nav>
