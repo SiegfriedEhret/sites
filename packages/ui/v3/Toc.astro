@@ -1,66 +1,73 @@
 ---
 const { headings } = Astro.props;
 ---
-{headings && headings.length > 0 && <div class="toc">
-    <button>Shortcuts</button>
 
-    <nav>
-        {headings.map(heading =>
-                <a class:list={{
-                    h2: heading.level === 'h2' || heading.depth === 2,
-                    h3: heading.level === 'h3' || heading.depth === 3,
-                    h4: heading.level === 'h4' || heading.depth === 4,
-                    h5: heading.level === 'h5' || heading.depth === 5,
-                    h6: heading.level === 'h6' || heading.depth === 6,
-                }}
-                   href={`#${heading.id || heading.slug}`}>
-                    {heading.title || heading.text}
-                </a>
-        )}
-    </nav>
-</div>}
+{
+	headings && headings.length > 0 && (
+		<div class="toc">
+			<button>Shortcuts</button>
+
+			<nav>
+				{headings.map((heading) => (
+					<a
+						class:list={{
+							h2: heading.level === 'h2' || heading.depth === 2,
+							h3: heading.level === 'h3' || heading.depth === 3,
+							h4: heading.level === 'h4' || heading.depth === 4,
+							h5: heading.level === 'h5' || heading.depth === 5,
+							h6: heading.level === 'h6' || heading.depth === 6
+						}}
+						href={`#${heading.id || heading.slug}`}
+					>
+						{heading.title || heading.text}
+					</a>
+				))}
+			</nav>
+		</div>
+	)
+}
 
 <script>
-    document.querySelector(".toc button").addEventListener("click", function() {
-        document.querySelector(".toc nav").classList.toggle("show");
-    });
+	document.querySelector('.toc button').addEventListener('click', function () {
+		document.querySelector('.toc nav').classList.toggle('show');
+	});
 </script>
 
 <style>
-    .toc button {
-        border-radius: 0.5rem;
-        border: 1px solid var(--prime);
-        background: transparent;
-        color: var(--text);
-        padding: 0.5rem 1rem;
-    }
-    .toc .h2 {
-        padding-left: 0.5rem;
-    }
-    .toc .h3 {
-        padding-left: 1rem;
-    }
-    .toc .h4 {
-        padding-left: 1.5rem;
-    }
-    .toc .h5 {
-        padding-left: 2rem;
-    }
-    .toc .h6 {
-        padding-left: 2.5rem;
-    }
-    button:focus,
-    button:hover {
-        background: var(--prime);
-        color: var(--wevet);
-    }
-    nav {
-        display: none;
-        flex-direction: column;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-    }
-    nav.show {
-        display: flex;
-    }
+	.toc button {
+		border-radius: 0.5rem;
+		border: 1px solid var(--prime);
+		background: transparent;
+		color: var(--text);
+		padding: 0.5rem 1rem;
+	}
+	.toc .h2 {
+		padding-left: 0.5rem;
+	}
+	.toc .h3 {
+		padding-left: 1rem;
+	}
+	.toc .h4 {
+		padding-left: 1.5rem;
+	}
+	.toc .h5 {
+		padding-left: 2rem;
+	}
+	.toc .h6 {
+		padding-left: 2.5rem;
+	}
+	button:focus,
+	button:hover {
+		background: var(--prime);
+		color: var(--wevet);
+	}
+	nav {
+		display: none;
+		flex-direction: column;
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+	}
+	nav.show {
+		display: flex;
+	}
 </style>

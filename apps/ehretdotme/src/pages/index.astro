@@ -1,65 +1,72 @@
 ---
 import { contentfulClient } from "../lib/contentful";
-import type { Post } from '@packages/utils/types/posts';
+import type { Post } from "@packages/utils/types/posts";
 import Layout from "../layouts/Layout.astro";
-import { formatDate } from '@packages/utils/date';
+import { formatDate } from "@packages/utils/date";
 
 const entriesFromContentful = await contentfulClient.getEntries<Post>({
-	content_type: "blogPost",
-	limit: 10,
-	'fields.language': 'en',
-	order: '-fields.publicationDate',
-	select: 'fields.title,fields.slug,fields.publicationDate,fields.description',
+  content_type: "blogPost",
+  limit: 10,
+  "fields.language": "en",
+  order: "-fields.publicationDate",
+  select: "fields.title,fields.slug,fields.publicationDate,fields.description",
 });
 const entriesFromRepository = await Astro.glob(`../../content/posts/*.md`);
 
 const posts = [
-	...entriesFromContentful.items.map((item) => {
-		const { title, publicationDate, description, slug } = item.fields;
-		return {
-			title,
-			slug,
-			description,
-			date: formatDate(publicationDate),
-		};
-	}).slice(0, 10),
-	...entriesFromRepository.map(item => ({
-		title: item.frontmatter.title,
-		slug: item.frontmatter.slug,
-		description: item.frontmatter.description,
-		date: formatDate(item.frontmatter.date)
-	})).slice(0, 10)
-].sort((a, b) => b.date.localeCompare(a.date))
-	.slice(0, 10);
+  ...entriesFromContentful.items
+    .map((item) => {
+      const { title, publicationDate, description, slug } = item.fields;
+      return {
+        title,
+        slug,
+        description,
+        date: formatDate(publicationDate),
+      };
+    })
+    .slice(0, 10),
+  ...entriesFromRepository
+    .map((item) => ({
+      title: item.frontmatter.title,
+      slug: item.frontmatter.slug,
+      description: item.frontmatter.description,
+      date: formatDate(item.frontmatter.date),
+    }))
+    .slice(0, 10),
+]
+  .sort((a, b) => b.date.localeCompare(a.date))
+  .slice(0, 10);
 ---
 
 <Layout title="/ [ehret.me]">
-	<article>
-		<h1>Hello!</h1>
+  <article>
+    <h1>Hello!</h1>
 
-		<p>My name is Siegfried Ehret. I am a developer.</p>
+    <p>My name is Siegfried Ehret. I am a developer.</p>
 
-		<section>
-			<h2>Latest notes.</h2>
-			<ul>
-				{posts.map(item => (
-					<li>
-						<a href={`/${item.slug}`}>{item.title}</a>
-					</li>
-				))}
-			</ul>
-			<a href="/notes">All notes.</a>
-		</section>
+    <section>
+      <h2>Latest notes.</h2>
+      <ul>
+        {
+          posts.map((item) => (
+            <li>
+              <a href={`/${item.slug}`}>{item.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+      <a href="/notes">All notes.</a>
+    </section>
 
-		<section>
-			<h2>Some projects.</h2>
-			<p>🚧 This section is it progress. 🚧</p>
-			<dl>
-				<dt>
-					<a href="https://git.sr.ht/~siegfriedehret/tagzytout"> tagzytout </a>
-				</dt>
-				<dd>A tool to automate tag creation from git commits.</dd>
-			</dl>
-		</section>
-	</article>
+    <section>
+      <h2>Some projects.</h2>
+      <p>🚧 This section is it progress. 🚧</p>
+      <dl>
+        <dt>
+          <a href="https://git.sr.ht/~siegfriedehret/tagzytout"> tagzytout</a>
+        </dt>
+        <dd>A tool to automate tag creation from git commits.</dd>
+      </dl>
+    </section>
+  </article>
 </Layout>

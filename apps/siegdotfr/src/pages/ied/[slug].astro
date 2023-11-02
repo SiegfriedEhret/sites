@@ -1,72 +1,73 @@
 ---
 import { contentfulClient } from "../../lib/contentful";
-import type { Post } from '@packages/utils/types/posts';
-import Layout from '../../layouts/Layout.astro'
-import { formatDate } from '@packages/utils/date';
-import { convert } from '@packages/utils/content';
+import type { Post } from "@packages/utils/types/posts";
+import Layout from "../../layouts/Layout.astro";
+import { formatDate } from "@packages/utils/date";
+import { convert } from "@packages/utils/content";
 import Toc from "@packages/ui/v3/Toc.astro";
 import Figure from "@packages/ui/v3/Figure.astro";
 
 export async function getStaticPaths() {
-    const entries = await contentfulClient.getEntries<Post>({
-        content_type: "blogPost",
-        limit: 200,
-        'fields.language': 'fr',
-        order: '-fields.publicationDate',
-        select: 'fields.slug,fields.title,fields.description,fields.publicationDate,fields.body,sys.updatedAt,fields.heroImage'
+  const entries = await contentfulClient.getEntries<Post>({
+    content_type: "blogPost",
+    limit: 200,
+    "fields.language": "fr",
+    order: "-fields.publicationDate",
+    select:
+      "fields.slug,fields.title,fields.description,fields.publicationDate,fields.body,sys.updatedAt,fields.heroImage",
+  });
+
+  const items = [];
+  for (const item of entries.items) {
+    const { description, title, slug, body, publicationDate, heroImage } =
+      item.fields;
+    items.push({
+      params: { slug },
+      props: {
+        title,
+        description,
+        image: heroImage?.fields || {},
+        date: formatDate(publicationDate as string),
+        updatedAt: formatDate(item.sys.updatedAt),
+        ...(await convert(body as string)),
+      },
     });
+  }
 
-    const items = [];
-    for (const item of entries.items) {
-        const {description, title, slug, body, publicationDate, heroImage} = item.fields;
-        items.push({
-            params: {slug},
-            props: {
-                title,
-                description,
-                image: heroImage?.fields || {} ,
-                date: formatDate(publicationDate as string),
-                updatedAt: formatDate(item.sys.updatedAt),
-                ...await convert(body as string)
-            },
-        });
-    }
-
-    return items;
+  return items;
 }
 
-const { title, description, date, updatedAt, headings, html, image } = Astro.props;
+const { title, description, date, updatedAt, headings, html, image } =
+  Astro.props;
 ---
 
 <Layout title={title} description={description} metaImage={image?.file?.url}>
-    <nav>
-        <a href="/ied/notes">&lt;= toutes les notes</a>
-    </nav>
+  <nav>
+    <a href="/ied/notes">&lt;= toutes les notes</a>
+  </nav>
 
-    <article>
-        <h1>{title}</h1>
+  <article>
+    <h1>{title}</h1>
 
-        {image?.file?.url &&
-            <Figure url={image.file.url} title={image.title} />
-        }
+    {image?.file?.url && <Figure url={image.file.url} title={image.title} />}
 
-        <details>
-            <summary>{date}</summary>
-            Dernière modification le {updatedAt}
-        </details>
-        {headings && <Toc headings={headings} />}
+    <details>
+      <summary>{date}</summary>
+       Dernière modification le {updatedAt}
+    </details>
+    {headings && <Toc headings={headings} />}
 
-        <Fragment set:html={html} />
-    </article>
+    <Fragment set:html={html} />
+  </article>
 </Layout>
 
 <style>
-    details {
-        margin-bottom: 1rem;
-        font-size: var(--fs-small);
-    }
-    summary {
-        text-decoration: underline;
-        cursor: pointer;
-    }
+  details {
+    margin-bottom: 1rem;
+    font-size: var(--fs-small);
+  }
+  summary {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 </style>

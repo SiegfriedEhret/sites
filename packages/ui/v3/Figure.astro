@@ -1,21 +1,21 @@
 ---
-const { url, title } = Astro.props
+const { url, title } = Astro.props;
 ---
 
 <figure>
-    <img src={url } alt={ title }>
-    <figcaption>{ title }</figcaption>
+	<img src={url} alt={title} />
+	<figcaption>{title}</figcaption>
 </figure>
 
 <style>
-    img {
-        display: block;
-        margin-inline: auto;
-        object-fit: contain;
-        max-width: 100%;
-    }
-    figcaption {
-        text-align: center;
-        font-size: .8rem;
-    }
+	img {
+		display: block;
+		margin-inline: auto;
+		object-fit: contain;
+		max-width: 100%;
+	}
+	figcaption {
+		text-align: center;
+		font-size: 0.8rem;
+	}
 </style>

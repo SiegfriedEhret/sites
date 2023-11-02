@@ -1,93 +1,108 @@
 ---
 import { contentfulClient } from "../../lib/contentful";
-import type {Art} from "../../lib/art";
-import Layout from '../../layouts/Layout.astro'
-import { formatDateHuman } from '@packages/utils/date';
+import type { Art } from "../../lib/art";
+import Layout from "../../layouts/Layout.astro";
+import { formatDateHuman } from "@packages/utils/date";
 
 export async function getStaticPaths() {
-    const entries = await contentfulClient.getEntries<Art>({
-        content_type: "art",
-        limit: 50,
-        select: "fields.artist,fields.date,fields.description,fields.location,fields.media,fields.name,fields.shot,fields.slug",
+  const entries = await contentfulClient.getEntries<Art>({
+    content_type: "art",
+    limit: 50,
+    select:
+      "fields.artist,fields.date,fields.description,fields.location,fields.media,fields.name,fields.shot,fields.slug",
+  });
+
+  const items = [];
+  for (const item of entries.items) {
+    const { artist, date, description, location, media, name, shot, slug } =
+      item.fields;
+    items.push({
+      params: { slug },
+      props: {
+        artist: artist.fields,
+        date,
+        description,
+        location,
+        media: media.map((i) => i.fields.file.url),
+        name,
+        shot,
+        slug,
+      },
     });
+  }
 
-    const items = [];
-    for (const item of entries.items) {
-        const { artist, date, description, location, media, name, shot, slug } = item.fields;
-        items.push({
-            params: {slug},
-            props: {
-                artist: artist.fields,
-                date,
-                description,
-                location,
-                media: media.map((i) => i.fields.file.url),
-                name,
-                shot,
-                slug,
-            }
-        });
-    }
-
-    return items;
+  return items;
 }
 
-const { artist, date, description, location, media, name, shot, slug } = Astro.props;
+const { artist, date, description, location, media, name, shot, slug } =
+  Astro.props;
 ---
 
 <Layout title={name}>
-    <nav>
-        <a href="/museum">&lt;= all works</a>
-    </nav>
+  <nav>
+    <a href="/museum">&lt;= all works</a>
+  </nav>
 
-    <article>
-        {media.map(url => (
-                <figure>
-                    <img src={url} alt={name} />
-                    <figcaption>
-                        <a href={url} title={name}>
-                            {name}
-                        </a>
-                    </figcaption>
-                </figure>
-        ))}
-        <h1>{name}</h1>
+  <article>
+    {
+      media.map((url) => (
+        <figure>
+          <img src={url} alt={name} />
+          <figcaption>
+            <a href={url} title={name}>
+              {name}
+            </a>
+          </figcaption>
+        </figure>
+      ))
+    }
+    <h1>{name}</h1>
 
-        <dl>
-            <dt>Name</dt>
-            <dd>{name}</dd>
-            { description && (
+    <dl>
+      <dt>Name</dt>
+      <dd>{name}</dd>
+      {
+        description && (
+          <>
             <dt>Info</dt>
             <dd>{description}</dd>
-            )}
-            <dt>Artist</dt>
-            <dd>
-                {artist.name} ({artist.dateOfBirth} - {artist.dateOfDeath ?? ''})
-            </dd>
-            {location?.name && (
+          </>
+        )
+      }
+      <dt>Artist</dt>
+      <dd>
+        {artist.name} ({artist.dateOfBirth} - {artist.dateOfDeath ?? ""})
+      </dd>
+      {
+        location?.name && (
+          <>
             <dt>Shot</dt>
-            <dd>at {location.name} on {formatDateHuman(shot)}</dd>
-            )}
-        </dl>
-    </article>
+            <dd>
+              at {location.name} on {formatDateHuman(shot)}
+            </dd>
+          </>
+        )
+      }
+    </dl>
+  </article>
 </Layout>
 
 <style>
-    h1 {
-        display: none;
-    }
-    figure,
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    figure {
-        margin: 1rem 0;
-    }
-    figcaption {
-        text-align: center;
-    }
-    dt {
-        font-weight: bold;
-    }
+  h1 {
+    display: none;
+  }
+  figure,
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  figure {
+    margin: 1rem 0;
+  }
+  figcaption {
+    text-align: center;
+  }
+  dt {
+    font-weight: bold;
+  }
 </style>

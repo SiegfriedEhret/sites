@@ -1,52 +1,61 @@
 ---
 import { contentfulClient } from "../../lib/contentful";
-import type { Post } from '@packages/utils/types/posts';
+import type { Post } from "@packages/utils/types/posts";
 import Layout from "../../layouts/Layout.astro";
-import { formatDate } from '@packages/utils/date';
+import { formatDate } from "@packages/utils/date";
 
 const entriesFromContentful = await contentfulClient.getEntries<Post>({
-	content_type: "blogPost",
-	limit: 10,
-	'fields.language': 'fr',
-	order: '-fields.publicationDate',
-	select: 'fields.title,fields.slug,fields.publicationDate,fields.description',
+  content_type: "blogPost",
+  limit: 10,
+  "fields.language": "fr",
+  order: "-fields.publicationDate",
+  select: "fields.title,fields.slug,fields.publicationDate,fields.description",
 });
 const entriesFromRepository = await Astro.glob(`../../../content/posts/*.md`);
 
 const posts = [
-	...entriesFromContentful.items.map((item) => {
-		const { title, publicationDate, description, slug } = item.fields;
-		return {
-			title,
-			slug,
-			description,
-			date: formatDate(publicationDate),
-		};
-	}),
-	...entriesFromRepository.map(item => ({
-	title: item.frontmatter.title,
-	slug: item.frontmatter.slug,
-	description: item.frontmatter.description,
-	date: formatDate(item.frontmatter.date)
-})).slice(0, 10)
-].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 10);
+  ...entriesFromContentful.items.map((item) => {
+    const { title, publicationDate, description, slug } = item.fields;
+    return {
+      title,
+      slug,
+      description,
+      date: formatDate(publicationDate),
+    };
+  }),
+  ...entriesFromRepository
+    .map((item) => ({
+      title: item.frontmatter.title,
+      slug: item.frontmatter.slug,
+      description: item.frontmatter.description,
+      date: formatDate(item.frontmatter.date),
+    }))
+    .slice(0, 10),
+]
+  .sort((a, b) => b.date.localeCompare(a.date))
+  .slice(0, 10);
 ---
 
-<Layout title="/ [sieg.fr/ied]" description="Je m'appelle Siegfried. Je suis développeur.">
-	<article>
-		<h1>Coucou !</h1>
-		<p>Je m'appelle Siegfried Ehret. Je suis développeur.</p>
+<Layout
+  title="/ [sieg.fr/ied]"
+  description="Je m'appelle Siegfried. Je suis développeur."
+>
+  <article>
+    <h1>Coucou !</h1>
+    <p>Je m'appelle Siegfried Ehret. Je suis développeur.</p>
 
-		<section>
-			<h2>Dernières notes.</h2>
-			<ul>
-				{posts.map(item => (
-					<li>
-						<a href={`/ied/${item.slug}`}>{item.title}</a>
-					</li>
-				))}
-			</ul>
-			<a href="/ied/notes">Toutes mes notes.</a>
-		</section>
-	</article>
+    <section>
+      <h2>Dernières notes.</h2>
+      <ul>
+        {
+          posts.map((item) => (
+            <li>
+              <a href={`/ied/${item.slug}`}>{item.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+      <a href="/ied/notes">Toutes mes notes.</a>
+    </section>
+  </article>
 </Layout>

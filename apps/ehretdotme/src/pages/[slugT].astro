@@ -1,67 +1,80 @@
 ---
 import Figure from "@packages/ui/v3/Figure.astro";
-import { formatDate } from '@packages/utils/date';
+import { formatDate } from "@packages/utils/date";
 import Toc from "@packages/ui/v3/Toc.astro";
 import Layout from "../layouts/Layout.astro";
 
-
 export async function getStaticPaths() {
-    const posts = await Astro.glob(`../../content/posts/*.md`);
+  const posts = await Astro.glob(`../../content/posts/*.md`);
 
-    return posts.map((post) => {
-        return {
-            params: { slugT: post.frontmatter.slug },
-            props: { post },
-        };
-    });
+  return posts.map((post) => {
+    return {
+      params: { slugT: post.frontmatter.slug },
+      props: { post },
+    };
+  });
 }
 
 const { post } = Astro.props;
 
 const {
-    Content,
-    getHeadings,
-    frontmatter: { title, date, updatedAt, description, image, imageDescription, tags },
+  Content,
+  getHeadings,
+  frontmatter: {
+    title,
+    date,
+    updatedAt,
+    description,
+    image,
+    imageDescription,
+    tags,
+  },
 } = post;
 
 const headings = await getHeadings();
 ---
 
 <Layout title={title} description={description} metaImage={image}>
-    <nav>
-        <a href="/notes">&lt;= all notes</a>
-    </nav>
+  <nav>
+    <a href="/notes">&lt;= all notes</a>
+  </nav>
 
-    <article>
-        <h1>{title}</h1>
+  <article>
+    <h1>{title}</h1>
 
-        {image &&
-                <Figure url={image} title={imageDescription || title} />
-        }
+    {image && <Figure url={image} title={imageDescription || title} />}
 
-        <details>
-            <summary>{formatDate(date)}</summary>
-            Last modified on {formatDate(updatedAt)}
-        </details>
-        {headings && <Toc headings={headings} />}
+    <details>
+      <summary>{formatDate(date)}</summary>
+       Last modified on {formatDate(updatedAt)}
+    </details>
+    {headings && <Toc headings={headings} />}
 
-        <Content/>
+    <Content />
 
-        {tags && tags.length > 0 && <Fragment>
-            <p>Tags:</p>
-               <div> {tags.map(t => <a href={`/tag/${t}`}>#{t}</a>)}</div>
-        </Fragment>}
-    </article>
-
+    {
+      tags && tags.length > 0 && (
+        <Fragment>
+          <p>Tags:</p>
+          <div>
+            {" "}
+            {tags.map((t) => (
+              <a href={`/tag/${t}`}>#{t}</a>
+            ))}
+          </div>
+        </Fragment>
+      )
+    }
+  </article>
 </Layout>
 
 <style>
-    details {
-        margin-bottom: 1rem;
-        font-size: var(--fs-small);
-    }
-    summary {
-        text-decoration: underline;
-        cursor: pointer;
-    }
+  details {
+    margin-bottom: 1rem;
+    font-size: var(--fs-small);
+  }
+  summary {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 </style>

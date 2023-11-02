@@ -1,31 +1,33 @@
 ---
-import Layout from '@packages/ui/v3/Layout.astro';
-import Header from '@packages/ui/v3/Header.astro';
-const { title, description, metaImage } = Astro.props
+import Layout from "@packages/ui/v3/Layout.astro";
+import Header from "@packages/ui/v3/Header.astro";
+const { title, description, metaImage } = Astro.props;
 
-import "../styles.css"
+import "../styles.css";
 ---
 
 <Layout title={title} description={description} metaImage={metaImage}>
-    <Header slot="header">
-        <a slot="title" class="link" href="/">meloe.fr</a>
-        <Fragment slot="links">
-            <a class="link" href="/fichiers">/fichiers</a>
-            <a class="link" href="/a-propos">/a-propos</a>
-        </Fragment>
-    </Header>
+  <Header slot="header">
+    <a slot="title" class="link" href="/">meloe.fr</a>
+    <Fragment slot="links">
+      <a class="link" href="/fichiers">/fichiers</a>
+      <a class="link" href="/a-propos">/a-propos</a>
+    </Fragment>
+  </Header>
 
-    <main slot="main">
-        <slot />
+  <main slot="main">
+    <slot />
 
-        <script data-goatcounter="https://meloedotfr.goatcounter.com/count"
-                async src="/analytics.js"></script>
-    </main>
+    <script
+      data-goatcounter="https://meloedotfr.goatcounter.com/count"
+      async
+      src="/analytics.js"></script>
+  </main>
 </Layout>
 
 <style>
-    main {
-        max-width: 72ch;
-        margin: 0 auto;
-    }
+  main {
+    max-width: 72ch;
+    margin: 0 auto;
+  }
 </style>

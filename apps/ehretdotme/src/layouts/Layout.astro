@@ -1,48 +1,65 @@
 ---
-import Layout from '@packages/ui/v3/Layout.astro';
-import Header from '@packages/ui/v3/Header.astro';
-import Footer from '@packages/ui/v3/Footer.astro';
-const { title, description, metaImage, fullWidth } = Astro.props
+import Layout from "@packages/ui/v3/Layout.astro";
+import Header from "@packages/ui/v3/Header.astro";
+import Footer from "@packages/ui/v3/Footer.astro";
+const { title, description, metaImage, fullWidth } = Astro.props;
 
-import "../styles.css"
+import "../styles.css";
 ---
 
-<Layout title={title} description={description} metaImage={metaImage} rssTitle="ehret.me" rssHref="/rss.xml">
-    <Header slot="header">
-        <a slot="title" class="link" href="/">ehret.me</a>
-        <Fragment slot="links">
-            <a class="link" href="/notes">/notes</a>
-            <a class="link" href="/museum">/museum</a>
-            <a class="link" href="/salary">/salary</a>
-        </Fragment>
-    </Header>
+<Layout
+  title={title}
+  description={description}
+  metaImage={metaImage}
+  rssTitle="ehret.me"
+  rssHref="/rss.xml"
+>
+  <Header slot="header">
+    <a slot="title" class="link" href="/">ehret.me</a>
+    <Fragment slot="links">
+      <a class="link" href="/notes">/notes</a>
+      <a class="link" href="/museum">/museum</a>
+      <a class="link" href="/salary">/salary</a>
+    </Fragment>
+  </Header>
 
-    <main class:list={{
-        'full-width': fullWidth
-    }} slot="main">
-        <slot />
-    </main>
+  <main
+    class:list={{
+      "full-width": fullWidth,
+    }}
+    slot="main"
+  >
+    <slot />
+  </main>
 
-    <Footer slot="footer">
-        <a slot="rss" class="link" href="/rss.xml">📫 RSS</a>
-        <a slot="link" class="link" href="https://sieg.fr/ied" title="My French website">
-            🔗 sieg.fr/ied
-        </a>
-        <p>I think you are awesome. Peace.</p>
-        <p>
-            Made with 💖 and <a href="https://github.com/SiegfriedEhret/sites">⌨️</a>. <a href="https://ehretdotme.goatcounter.com/">Stats</a>.
-        </p>
-        <script data-goatcounter="https://ehretdotme.goatcounter.com/count"
-                async src="/analytics.js"></script>
-    </Footer>
+  <Footer slot="footer">
+    <a slot="rss" class="link" href="/rss.xml">📫 RSS</a>
+    <a
+      slot="link"
+      class="link"
+      href="https://sieg.fr/ied"
+      title="My French website"
+    >
+      🔗 sieg.fr/ied
+    </a>
+    <p>I think you are awesome. Peace.</p>
+    <p>
+      Made with 💖 and <a href="https://github.com/SiegfriedEhret/sites">⌨️</a>.
+      <a href="https://ehretdotme.goatcounter.com/">Stats</a>.
+    </p>
+    <script
+      data-goatcounter="https://ehretdotme.goatcounter.com/count"
+      async
+      src="/analytics.js"></script>
+  </Footer>
 </Layout>
 
 <style>
-    main {
-        max-width: 72ch;
-        margin: 0 auto;
-    }
-    main.full-width {
-        max-width: none;
-    }
+  main {
+    max-width: 72ch;
+    margin: 0 auto;
+  }
+  main.full-width {
+    max-width: none;
+  }
 </style>
