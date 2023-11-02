@@ -3,8 +3,8 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["build/**", ".vercel_build_output/**", ".svelte-kit/**", "dist/**"],
-      "inputs": ["apps/src/**/*.{html,js,svelte,svx,ts,astro}", "packages/**/*.{html,js,svelte,svx,ts,astro}" ]
+      "outputs": ["build/**", ".vercel_build_output/**", "dist/**"],
+      "inputs": ["apps/src/**/*.{html,js,ts,astro}", "packages/**/*.{html,js,ts,astro}" ]
     },
     "lint": {
       "outputs": []
