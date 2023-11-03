@@ -1,8 +1,13 @@
 ---
-import Layout from "@packages/ui//Layout.astro";
-import Header from "@packages/ui//Header.astro";
-import Footer from "@packages/ui//Footer.astro";
-const { title, description, metaImage, fullWidth } = Astro.props;
+import Layout from "@packages/ui/Layout.astro";
+import Header from "@packages/ui/Header.astro";
+import Footer from "@packages/ui/Footer.astro";
+const {
+  title,
+  description = "My name is Siegfried Ehret. I am a developer.",
+  metaImage,
+  fullWidth,
+} = Astro.props;
 
 import "../styles.css";
 ---

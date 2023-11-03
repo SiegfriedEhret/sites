@@ -15,7 +15,6 @@ const img = `${Astro.site}${metaImage}`.replaceAll("//", "/");
     <meta name="googlebot" content="noindex" />
 
     <!-- Primary Meta Tags -->
-    <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
 
@@ -129,7 +128,7 @@ const img = `${Astro.site}${metaImage}`.replaceAll("//", "/");
     background: var(--back);
     margin: var(--burrito-spacing);
     padding: var(--burrito-spacing);
-    min-height: calc(100vh - (2 * var(--burrito-spacing)));
+    min-height: calc(100vh - 32px);
   }
 
   @media screen and (min-width: 40rem) {

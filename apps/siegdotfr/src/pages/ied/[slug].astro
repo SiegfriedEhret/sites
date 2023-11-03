@@ -4,8 +4,8 @@ import type { Post } from "@packages/utils/types/posts";
 import Layout from "../../layouts/Layout.astro";
 import { formatDate } from "@packages/utils/date";
 import { convert } from "@packages/utils/content";
-import Toc from "@packages/ui//Toc.astro";
-import Figure from "@packages/ui//Figure.astro";
+import Toc from "@packages/ui/Toc.astro";
+import Figure from "@packages/ui/Figure.astro";
 
 export async function getStaticPaths() {
   const entries = await contentfulClient.getEntries<Post>({

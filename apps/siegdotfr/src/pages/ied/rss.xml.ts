@@ -1,7 +1,6 @@
 import type { Post } from "@packages/utils/types/posts";
-import { formatDate } from "@packages/utils/date";
 import { contentfulClient } from "../../lib/contentful";
-import rss, { pagesGlobToRssItems } from "@astrojs/rss";
+import rss from "@astrojs/rss";
 
 const entriesFromContentful = await contentfulClient.getEntries<Post>({
   content_type: "blogPost",
@@ -32,18 +31,17 @@ const items = [
 
 export function get(context) {
   return rss({
-    // `<title>` field in output xml
     title: "Je m'appelle Siegfried. Je suis développeur.",
-    // `<description>` field in output xml
     description: "Ceci est mon site personnel.",
-    // Pull in your project "site" from the endpoint context
-    // https://docs.astro.build/en/reference/api-reference/#contextsite
     site: `${context.site}/ied`,
-    // Array of `<item>`s in output xml
-    // See "Generating items" section for examples using content collections and glob imports
     items: items,
-    // (optional) inject custom xml
-    customData: `<language>fr</language>
-<lastBuildDate>${formatDate(new Date())}</lastBuildDate>`,
+    xmlns: {
+      atom: "http://www.w3.org/2005/Atom",
+    },
+    customData: `<atom:link href="${
+      context.site
+    }/ied/rss.xml" rel="self" type="application/rss+xml" />
+<language>fr</language>
+<lastBuildDate>${new Date().toUTCString()}</lastBuildDate>`,
   });
 }
