@@ -1,13 +1,13 @@
 export interface Res<T> {
-	error?: Error;
-	status: number;
-	body: T;
+  error?: Error;
+  status: number;
+  body: T;
 }
 
 export type ResponseError = {
-	error?: string;
+  error?: string;
 };
 
 export interface Items<T> {
-	items: T;
+  items: T;
 }

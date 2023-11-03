@@ -1,103 +1,103 @@
-import Markdoc from '@markdoc/markdoc';
-import type { Config } from '@markdoc/markdoc';
-import Tag from '@markdoc/markdoc/src/tag';
-import hljs from 'highlight.js';
-import { uid } from 'uid';
+import Markdoc from "@markdoc/markdoc";
+import type { Config } from "@markdoc/markdoc";
+import Tag from "@markdoc/markdoc/src/tag";
+import hljs from "highlight.js";
+import { uid } from "uid";
 
 interface Title extends HTMLElement {
-	id: string;
-	title: string;
-	level: string;
+  id: string;
+  title: string;
+  level: string;
 }
 
 const heading = {
-	...Markdoc.nodes.heading,
-	transform(node, config) {
-		const base = Markdoc.nodes.heading.transform(node, config);
-		base.attributes.id = generateSlug(base.children[0]);
-		return base;
-	}
+  ...Markdoc.nodes.heading,
+  transform(node, config) {
+    const base = Markdoc.nodes.heading.transform(node, config);
+    base.attributes.id = generateSlug(base.children[0]);
+    return base;
+  },
 };
 
 function collectHeadings(node, sections: Title[] = []) {
-	if (node && node.name) {
-		// Match all h1, h2, h3… tags
-		if (node.name.match(/h\d/)) {
-			const title = node.children[0];
+  if (node && node.name) {
+    // Match all h1, h2, h3… tags
+    if (node.name.match(/h\d/)) {
+      const title = node.children[0];
 
-			if (typeof title === 'string') {
-				sections.push({
-					...node.attributes,
-					title,
-					level: node.name
-				});
-			}
-		}
+      if (typeof title === "string") {
+        sections.push({
+          ...node.attributes,
+          title,
+          level: node.name,
+        });
+      }
+    }
 
-		if (node.children) {
-			for (const child of node.children) {
-				collectHeadings(child, sections);
-			}
-		}
-	}
+    if (node.children) {
+      for (const child of node.children) {
+        collectHeadings(child, sections);
+      }
+    }
+  }
 
-	return sections;
+  return sections;
 }
 
 interface ConvertedContent {
-	html: string;
-	headings: Title[];
+  html: string;
+  headings: Title[];
 }
 
 export async function convert(input: string): Promise<ConvertedContent> {
-	const codeBlocks = new Map();
+  const codeBlocks = new Map();
 
-	const fence = {
-		...Markdoc.nodes.fence,
-		async transform(node, config) {
-			const { content, language = 'text' } = node.attributes;
-			const id = uid();
-			const code = hljs.getLanguage(language)
-				? hljs.highlight(content, { language }).value
-				: hljs.highlightAuto(content).value;
-			codeBlocks.set(id, code);
+  const fence = {
+    ...Markdoc.nodes.fence,
+    async transform(node, config) {
+      const { content, language = "text" } = node.attributes;
+      const id = uid();
+      const code = hljs.getLanguage(language)
+        ? hljs.highlight(content, { language }).value
+        : hljs.highlightAuto(content).value;
+      codeBlocks.set(id, code);
 
-			return new Tag('pre', {}, [new Tag('code', {}, [id])]);
-		}
-	};
+      return new Tag("pre", {}, [new Tag("code", {}, [id])]);
+    },
+  };
 
-	const config: Config = {
-		tags: {},
-		nodes: {
-			fence,
-			heading
-		},
-		variables: {}
-	};
+  const config: Config = {
+    tags: {},
+    nodes: {
+      fence,
+      heading,
+    },
+    variables: {},
+  };
 
-	const ast = Markdoc.parse(input);
-	const content = await Markdoc.transform(ast, config);
+  const ast = Markdoc.parse(input);
+  const content = await Markdoc.transform(ast, config);
 
-	const headings = collectHeadings(content);
-	let html = Markdoc.renderers.html(content);
-	for (const [key, value] of codeBlocks.entries()) {
-		html = html.replace(key, value);
-	}
+  const headings = collectHeadings(content);
+  let html = Markdoc.renderers.html(content);
+  for (const [key, value] of codeBlocks.entries()) {
+    html = html.replace(key, value);
+  }
 
-	html = html.replaceAll(/&lt;!-- TAGS: [\w-,]+ --&gt;/g, '');
+  html = html.replaceAll(/&lt;!-- TAGS: [\w-,]+ --&gt;/g, "");
 
-	return {
-		headings,
-		html
-	};
+  return {
+    headings,
+    html,
+  };
 }
 
 export function generateSlug(input: string) {
-	return input
-		.trim()
-		.toLowerCase()
-		.normalize('NFKD')
-		.replace(/[^\w]/g, '-')
-		.replace(/-+/g, '-')
-		.replace(/^-+|-+$/g, '');
+  return input
+    .trim()
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[^\w]/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }

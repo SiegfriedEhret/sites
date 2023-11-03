@@ -1,34 +1,34 @@
 {
-	"name": "@packages/utils",
-	"description": "Some utilities functions",
-	"version": "1.0.0",
-	"license": "AGPL-3.0-or-later",
-	"author": {
-		"name": "Siegfried EHRET",
-		"email": "siegfried@ehret.me",
-		"url": "https://ehret.me"
-	},
-	"files": [
-		"*.ts",
-		"queries/*.ts",
-		"types/*.ts"
-	],
-	"type": "module",
-	"scripts": {
-		"format": "prettier --write ."
-	},
-	"devDependencies": {
-		"@types/markdown-it": "^12.2.3",
-		"@types/react": "^18.2.34",
-		"prettier": "^2.8.8"
-	},
-	"dependencies": {
-		"@markdoc/markdoc": "^0.1.13",
-		"highlight.js": "^11.9.0",
-		"uid": "^2.0.2"
-	},
-	"peerDependencies": {
-		"@types/markdown-it": "^12.2.3",
-		"@types/react": "^18.0.28"
-	}
+  "name": "@packages/utils",
+  "description": "Some utilities functions",
+  "version": "1.0.0",
+  "license": "AGPL-3.0-or-later",
+  "author": {
+    "name": "Siegfried EHRET",
+    "email": "siegfried@ehret.me",
+    "url": "https://ehret.me"
+  },
+  "files": [
+    "*.ts",
+    "queries/*.ts",
+    "types/*.ts"
+  ],
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^12.2.3",
+    "@types/react": "^18.2.34",
+    "prettier": "^2.8.8"
+  },
+  "dependencies": {
+    "@markdoc/markdoc": "^0.1.13",
+    "highlight.js": "^11.9.0",
+    "uid": "^2.0.2"
+  },
+  "peerDependencies": {
+    "@types/markdown-it": "^12.2.3",
+    "@types/react": "^18.0.28"
+  }
 }

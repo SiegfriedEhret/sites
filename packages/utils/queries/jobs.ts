@@ -1,5 +1,5 @@
 export function getJobs() {
-	return `query GetJobs {
+  return `query GetJobs {
   jobCollection {
     items {
       title
