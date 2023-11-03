@@ -15,7 +15,7 @@
 	],
 	"type": "module",
 	"scripts": {
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --write ."
 	},
 	"devDependencies": {
 		"@types/markdown-it": "^12.2.3",

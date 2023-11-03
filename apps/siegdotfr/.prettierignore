@@ -1,3 +1,4 @@
 dist/
 tina/__generated__/
 tina/tina-lock.json
+public/admin/
