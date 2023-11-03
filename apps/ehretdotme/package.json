@@ -5,11 +5,11 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "tinacms build && astro build",
+    "build": "tinacms --port 4003 --datalayer-port 9003 build && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write . --plugin=prettier-plugin-astro",
-    "tina": "pnpm tinacms dev -c 'pnpm run dev'"
+    "tina": "pnpm tinacms --port 4003 --datalayer-port 9003 dev -c 'pnpm run dev'"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.3.1",
