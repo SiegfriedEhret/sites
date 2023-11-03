@@ -21,7 +21,7 @@
     "@tinacms/cli": "^1.5.31",
     "@types/alpinejs": "^3.13.3",
     "alpinejs": "^3.13.2",
-    "astro": "^3.4.2",
+    "astro": "^3.4.3",
     "contentful": "^10.6.5",
     "highlight.js": "^11.9.0",
     "tinacms": "^1.5.22"
