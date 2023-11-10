@@ -1,4 +1,10 @@
 :root {
+  /* sizes */
+  --base: 8px;
+  --babase: calc(2 * var(--base));
+  --side: 13rem;
+  --main: 55rem;
+  --main-small: 34rem;
   /* fonts */
   --fs-mobile: 1.2rem;
   --fs-base: 1.5rem;
@@ -23,7 +29,7 @@ body {
   margin: 0;
   overflow-wrap: break-word;
   font-family: var(--font);
-  background-color: var(--prime);
+  background-color: var(--baback);
   font-feature-settings: "kern", "liga";
   color: var(--text);
   line-height: 1.5;
@@ -46,12 +52,6 @@ h1 {
   margin-top: 0;
 }
 
-@keyframes blink {
-  to {
-    opacity: 0;
-  }
-}
-
 ul {
   list-style-type: hiragana-iroha;
 }
@@ -61,12 +61,17 @@ a {
   color: var(--text);
 }
 
+hr {
+  border: 0;
+  border-top: 1px solid var(--baback);
+}
+
 .link {
   background: var(--lake-red);
   border: 2px solid var(--wevet);
   color: var(--wevet);
   font-size: 1rem;
-  padding: 3px 5px;
+  padding: calc(var(--base) / 4) calc(var(--base) / 2);
   transform: rotateZ(0);
   will-change: transform;
   transition: transform 0.3s;
@@ -74,15 +79,6 @@ a {
 
 .link:is(:active, :focus, :hover) {
   transform: rotate3d(1, 1, 1, 15deg);
-}
-
-article img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  background: var(--dark);
-  border: 1px solid var(--text);
 }
 
 article pre {
@@ -122,14 +118,14 @@ main > * + * {
   }
 }
 
-@media screen and (min-width: 40rem) {
-  html {
-    font-size: var(--fs-base);
-  }
-
+@media screen and (min-width: 34rem) {
   .link {
-    padding: 10px 20px;
-    font-weight: bold;
+    padding: var(--base) var(--babase);
+  }
+}
+@media screen and (min-width: 67rem) {
+  html {
+    /*font-size: var(--fs-base);*/
   }
 }
 

@@ -4,10 +4,10 @@ const { headings } = Astro.props;
 
 {
   headings && headings.length > 0 && (
-    <div class="toc">
-      <button>Shortcuts</button>
+    <div class="toc" x-data="{ open: false }">
+      <button @click="open = !open">Shortcuts</button>
 
-      <nav>
+      <nav x-show="open">
         {headings.map((heading) => (
           <a
             class:list={{
@@ -27,18 +27,15 @@ const { headings } = Astro.props;
   )
 }
 
-<script>
-  document.querySelector(".toc button").addEventListener("click", function () {
-    document.querySelector(".toc nav").classList.toggle("show");
-  });
-</script>
-
 <style>
+  .toc {
+    float: right;
+  }
   .toc button {
     border-radius: 0.5rem;
-    border: 1px solid var(--prime);
+    border: 1px solid var(--baback);
     background: transparent;
-    color: var(--text);
+    color: var(--wevet);
     padding: 0.5rem 1rem;
   }
   .toc .h2 {
@@ -62,12 +59,20 @@ const { headings } = Astro.props;
     color: var(--wevet);
   }
   nav {
-    display: none;
+    position: absolute;
+    display: flex;
+    right: 0;
     flex-direction: column;
     font-size: 0.875rem;
     line-height: 1.25rem;
+    width: 100vw;
+    max-width: 16rem;
+    border: 2px solid var(--baback);
+    background-color: var(--back);
   }
-  nav.show {
-    display: flex;
+  @media screen and (min-width: 55rem) {
+    .toc {
+      align-self: auto;
+    }
   }
 </style>

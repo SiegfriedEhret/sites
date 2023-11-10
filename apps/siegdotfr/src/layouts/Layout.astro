@@ -19,28 +19,30 @@ import "../styles.css";
   rssHref="/ied/rss.xml"
 >
   <Header slot="header">
-    <a slot="title" class="link" href="/ied">sieg.fr/ied</a>
+    <a slot="title" class="link" href="/ied">/</a>
     <Fragment slot="links">
       <a class="link" href="/ied/notes">/notes</a>
       <a class="link" href="/ied/causeries">/causeries</a>
+      <a class="link" href="/ied/rss.xml">📫 RSS</a>
+      <a class="link" href="https://ehret.me/" title="Mon site en anglais">
+        🔗 ehret.me
+      </a>
+      <a
+        class="link"
+        href="https://mastodon.ehret.me/@SiegfriedEhret"
+        rel="me"
+        title="🐘 mastodon"
+      >
+        🐘 mastodon
+      </a>
     </Fragment>
   </Header>
 
-  <main slot="main">
+  <Fragment slot="main">
     <slot />
-  </main>
+  </Fragment>
 
   <Footer slot="footer">
-    <a slot="rss" class="link" href="/ied/rss.xml">📫 RSS</a>
-    <a
-      slot="link"
-      class="link"
-      href="https://ehret.me/"
-      title="Mon site en anglais"
-    >
-      🔗 ehret.me
-    </a>
-
     <p>Vous êtes chouettes. Bisous.</p>
     <p>
       Bidouillé avec 💖 et <a href="https://github.com/SiegfriedEhret/sites"
@@ -53,10 +55,3 @@ import "../styles.css";
       src="/analytics.js"></script>
   </Footer>
 </Layout>
-
-<style>
-  main {
-    max-width: 72ch;
-    margin: 0 auto;
-  }
-</style>

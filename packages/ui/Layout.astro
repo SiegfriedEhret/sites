@@ -114,24 +114,62 @@ const img = `${Astro.site}${metaImage}`.replaceAll("//", "/");
     />
   </head>
   <body>
-    <div class="burrito">
-      <slot name="header" />
-      <slot name="main" />
-      <slot name="footer" />
+    <div class="grid">
+      <div></div>
+      <div class="burrito">
+        <main>
+          <slot name="main" />
+        </main>
+        <slot name="footer" />
+      </div>
+      <div class="taco">
+        <slot name="header" />
+      </div>
     </div>
   </body>
 </html>
 
 <style>
+  .grid {
+    display: grid;
+    //gap: var(--babase);
+    max-width: calc(var(--side) + var(--main) + var(--side));
+    margin: 0 auto;
+  }
   .burrito {
     --burrito-spacing: 16px;
     background: var(--back);
-    margin: var(--burrito-spacing);
     padding: var(--burrito-spacing);
     min-height: calc(100vh - 32px);
+    width: 100%;
+    max-width: 55rem;
+    margin: 0;
+    margin-right: var(--babase);
+  }
+  .taco {
+    order: -1;
+    margin-bottom: var(--babase);
   }
 
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 47rem) {
+    .grid {
+      grid-template-columns: 0 34fr 13fr;
+    }
+    .taco {
+      position: sticky;
+      top: 0;
+      order: 1;
+    }
+  }
+  @media screen and (min-width: 68rem) {
+    .grid {
+      grid-template-columns: 0 55fr 13fr;
+    }
+  }
+  @media screen and (min-width: 81rem) {
+    .grid {
+      grid-template-columns: 13fr 55fr 13fr;
+    }
     .burrito {
       --burrito-spacing: 32px;
     }

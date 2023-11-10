@@ -35,40 +35,46 @@ const headings = await getHeadings();
 ---
 
 <Layout title={title} description={description} metaImage={image}>
-  <nav>
-    <a href="/notes">&lt;= all notes</a>
-  </nav>
-
   <article>
-    <h1>{title}</h1>
-
     {image && <Figure url={image} title={imageDescription || title} />}
 
-    <details>
-      <summary>{formatDate(date)}</summary>
-       Last modified on {formatDate(updatedAt)}
-    </details>
+    <h1>{title}</h1>
     {headings && <Toc headings={headings} />}
 
     <Content />
 
+    <hr />
+
+    <p class="date">
+      Published on {formatDate(date)}, last modified on {formatDate(updatedAt)}.
+    </p>
+
     {
       tags && tags.length > 0 && (
-        <Fragment>
-          <p>Tags:</p>
-          <div>
+        <p>
+          <span>Tags:</span>
+          <span>
             {" "}
             {tags.map((t) => (
               <a href={`/tag/${t}`}>#{t}</a>
             ))}
-          </div>
-        </Fragment>
+          </span>
+        </p>
       )
     }
   </article>
 </Layout>
 
 <style>
+  article {
+    position: relative;
+  }
+  h1 {
+    color: var(--wevet);
+    margin: 0 0 var(--babase);
+    padding: var(--base) var(--babase);
+    background: var(--prime);
+  }
   details {
     margin-bottom: 1rem;
     font-size: var(--fs-small);
@@ -76,5 +82,11 @@ const headings = await getHeadings();
   summary {
     text-decoration: underline;
     cursor: pointer;
+  }
+  @media screen and (min-width: 55rem) {
+    h1 {
+      position: sticky;
+      top: var(--babase);
+    }
   }
 </style>

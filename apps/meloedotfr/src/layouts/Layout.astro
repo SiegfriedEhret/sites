@@ -15,19 +15,12 @@ import "../styles.css";
     </Fragment>
   </Header>
 
-  <main slot="main">
+  <Fragment slot="main">
     <slot />
 
     <script
       data-goatcounter="https://meloedotfr.goatcounter.com/count"
       async
       src="/analytics.js"></script>
-  </main>
+  </Fragment>
 </Layout>
-
-<style>
-  main {
-    max-width: 72ch;
-    margin: 0 auto;
-  }
-</style>

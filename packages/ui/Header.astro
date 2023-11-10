@@ -17,18 +17,18 @@ import logo from "./sieg.jpg";
   header {
     display: flex;
     justify-content: space-between;
+    gap: var(--babase);
+    padding: var(--babase);
   }
 
-  .logo {
-    display: grid;
-    place-content: center;
-  }
   .logo img {
-    border: 5px solid var(--lake-red);
+    border: 4px solid var(--lake-red);
     border-radius: 50%;
     max-width: 80px;
     max-height: 80px;
     aspect-ratio: 1 / 1;
+    will-change: transform;
+    transition: transform 0.3s;
   }
   .logo a:is(:active, :focus, :hover) img {
     transform: rotate3d(1, 1, 1, 15deg);
@@ -36,16 +36,25 @@ import logo from "./sieg.jpg";
 
   nav {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 4px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: var(--base);
   }
 
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 47rem) {
+    header {
+      flex-direction: column;
+      position: sticky;
+      top: 0;
+    }
     nav {
-      flex-direction: row;
+      flex-direction: column;
       align-items: flex-start;
-      gap: 16px;
+    }
+  }
+  @media screen and (min-width: 68rem) {
+    header {
+      padding-top: calc(2 * var(--babase));
     }
   }
 </style>

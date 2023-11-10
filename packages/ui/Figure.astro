@@ -8,14 +8,20 @@ const { url, title } = Astro.props;
 </figure>
 
 <style>
+  figure {
+    margin: 0 0 var(--babase);
+  }
   img {
     display: block;
     margin-inline: auto;
     object-fit: contain;
     max-width: 100%;
+    border-radius: var(--babase);
+    border: 2px solid var(--baback);
   }
   figcaption {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    margin: 0 auto;
   }
 </style>

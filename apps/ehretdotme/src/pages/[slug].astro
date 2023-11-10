@@ -42,26 +42,32 @@ const { title, description, date, updatedAt, headings, html, image } =
 ---
 
 <Layout title={title} description={description} metaImage={image?.file?.url}>
-  <nav>
-    <a href="/notes">&lt;= all notes</a>
-  </nav>
-
   <article>
-    <h1>{title}</h1>
-
     {image?.file?.url && <Figure url={image.file.url} title={image.title} />}
 
-    <details>
-      <summary>{date}</summary>
-       Last modified on {updatedAt}
-    </details>
+    <h1>{title}</h1>
     {headings && <Toc headings={headings} />}
 
     <Fragment set:html={html} />
+
+    <hr />
+
+    <p class="date">
+      Published on {formatDate(date)}, last modified on {formatDate(updatedAt)}.
+    </p>
   </article>
 </Layout>
 
 <style>
+  article {
+    position: relative;
+  }
+  h1 {
+    color: var(--wevet);
+    margin: 0 0 var(--babase);
+    padding: var(--base) var(--babase);
+    background: var(--prime);
+  }
   details {
     margin-bottom: 1rem;
     font-size: var(--fs-small);
@@ -69,5 +75,11 @@ const { title, description, date, updatedAt, headings, html, image } =
   summary {
     text-decoration: underline;
     cursor: pointer;
+  }
+  @media screen and (min-width: 55rem) {
+    h1 {
+      position: sticky;
+      top: var(--babase);
+    }
   }
 </style>

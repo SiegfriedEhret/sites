@@ -6,7 +6,6 @@ const {
   title,
   description = "My name is Siegfried Ehret. I am a developer.",
   metaImage,
-  fullWidth,
 } = Astro.props;
 
 import "../styles.css";
@@ -20,33 +19,31 @@ import "../styles.css";
   rssHref="/rss.xml"
 >
   <Header slot="header">
-    <a slot="title" class="link" href="/">ehret.me</a>
+    <a slot="title" class="link" href="/">/</a>
     <Fragment slot="links">
       <a class="link" href="/notes">/notes</a>
       <a class="link" href="/museum">/museum</a>
       <a class="link" href="/salary">/salary</a>
+      <a class="link" href="/rss.xml">📫 RSS</a>
+      <a class="link" href="https://sieg.fr/ied" title="My French website">
+        🇫🇷 sieg.fr/ied
+      </a>
+      <a
+        class="link"
+        href="https://mastodon.ehret.me/@SiegfriedEhret"
+        rel="me"
+        title="🐘 mastodon"
+      >
+        🐘 mastodon
+      </a>
     </Fragment>
   </Header>
 
-  <main
-    class:list={{
-      "full-width": fullWidth,
-    }}
-    slot="main"
-  >
+  <Fragment slot="main">
     <slot />
-  </main>
+  </Fragment>
 
   <Footer slot="footer">
-    <a slot="rss" class="link" href="/rss.xml">📫 RSS</a>
-    <a
-      slot="link"
-      class="link"
-      href="https://sieg.fr/ied"
-      title="My French website"
-    >
-      🔗 sieg.fr/ied
-    </a>
     <p>I think you are awesome. Peace.</p>
     <p>
       Made with 💖 and <a href="https://github.com/SiegfriedEhret/sites">⌨️</a>.
@@ -60,13 +57,3 @@ import "../styles.css";
       src="/analytics.js"></script>
   </Footer>
 </Layout>
-
-<style>
-  main {
-    max-width: 72ch;
-    margin: 0 auto;
-  }
-  main.full-width {
-    max-width: none;
-  }
-</style>
