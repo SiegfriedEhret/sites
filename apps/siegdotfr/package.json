@@ -18,8 +18,8 @@
     "@packages/utils": "workspace:^",
     "@sindresorhus/slugify": "^2.2.1",
     "@tinacms/cli": "^1.5.31",
-    "astro": "^3.4.3",
-    "contentful": "^10.6.5",
+    "astro": "^3.5.2",
+    "contentful": "^10.6.7",
     "highlight.js": "^11.9.0",
     "tinacms": "^1.5.22"
   },
