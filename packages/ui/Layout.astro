@@ -137,7 +137,7 @@ const img = `${Astro.site}${metaImage}`.replaceAll("//", "/");
     margin: 0 auto;
   }
   .burrito {
-    --burrito-spacing: 16px;
+    --burrito-spacing: var(--base);
     background: var(--back);
     padding: var(--burrito-spacing);
     min-height: calc(100vh - 32px);
@@ -171,7 +171,7 @@ const img = `${Astro.site}${metaImage}`.replaceAll("//", "/");
       grid-template-columns: 13fr 55fr 13fr;
     }
     .burrito {
-      --burrito-spacing: 32px;
+      --burrito-spacing: var(--babase);
     }
   }
 </style>

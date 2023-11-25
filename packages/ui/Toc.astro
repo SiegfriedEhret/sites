@@ -5,7 +5,9 @@ const { headings } = Astro.props;
 {
   headings && headings.length > 0 && (
     <div class="toc" x-data="{ open: false }">
-      <button @click="open = !open">Shortcuts</button>
+      <button @click="open = !open" @click.outside="open = false">
+        Shortcuts
+      </button>
 
       <nav x-show="open">
         {headings.map((heading) => (
@@ -33,9 +35,9 @@ const { headings } = Astro.props;
   }
   .toc button {
     border-radius: 0.5rem;
-    border: 1px solid var(--baback);
+    border: 1px solid var(--text);
     background: transparent;
-    color: var(--wevet);
+    color: var(--text);
     padding: 0.5rem 1rem;
   }
   .toc .h2 {
@@ -53,11 +55,6 @@ const { headings } = Astro.props;
   .toc .h6 {
     padding-left: 2.5rem;
   }
-  button:focus,
-  button:hover {
-    background: var(--prime);
-    color: var(--wevet);
-  }
   nav {
     position: absolute;
     display: flex;
@@ -66,13 +63,19 @@ const { headings } = Astro.props;
     font-size: 0.875rem;
     line-height: 1.25rem;
     width: 100vw;
+    margin-block-start: 4px;
     max-width: 16rem;
-    border: 2px solid var(--baback);
+    border: 2px solid var(--text);
     background-color: var(--back);
   }
   @media screen and (min-width: 55rem) {
     .toc {
       align-self: auto;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    .toc a {
+      color: var(--text);
     }
   }
 </style>

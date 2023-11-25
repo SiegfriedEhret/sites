@@ -112,23 +112,27 @@ main > * + * {
   margin-block-start: var(--flow-space, 1em);
 }
 
-@media (prefers-color-scheme: dark) {
-  .toc a {
-    color: var(--text);
-  }
-}
-
 @media screen and (min-width: 34rem) {
   .link {
     padding: var(--base) var(--babase);
   }
-}
-@media screen and (min-width: 67rem) {
-  html {
-    /*font-size: var(--fs-base);*/
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    scroll-margin-top: 100px;
   }
 }
 
 *:focus:not(:focus-visible) {
   outline: none;
+}
+
+:target {
+  &:before {
+    content: "🎯";
+    margin-inline-end: var(--base);
+  }
 }
