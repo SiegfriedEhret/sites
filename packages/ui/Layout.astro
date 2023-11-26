@@ -115,16 +115,16 @@ const img = `${Astro.site}${metaImage}`.replaceAll("//", "/");
   </head>
   <body>
     <div class="grid">
-      <div></div>
+      <div class="taco">
+        <slot name="header" />
+      </div>
       <div class="burrito">
         <main>
           <slot name="main" />
         </main>
         <slot name="footer" />
       </div>
-      <div class="taco">
-        <slot name="header" />
-      </div>
+      <div></div>
     </div>
   </body>
 </html>
@@ -147,23 +147,23 @@ const img = `${Astro.site}${metaImage}`.replaceAll("//", "/");
     margin-right: var(--babase);
   }
   .taco {
-    order: -1;
+    //order: -1;
     margin-bottom: var(--babase);
   }
 
   @media screen and (min-width: 47rem) {
     .grid {
-      grid-template-columns: 0 34fr 13fr;
+      grid-template-columns: 13fr 34fr 0;
     }
     .taco {
       position: sticky;
       top: 0;
-      order: 1;
+      //order: 1;
     }
   }
   @media screen and (min-width: 68rem) {
     .grid {
-      grid-template-columns: 0 55fr 13fr;
+      grid-template-columns: 13fr 55fr 0;
     }
   }
   @media screen and (min-width: 81rem) {

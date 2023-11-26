@@ -88,6 +88,9 @@ importers:
 
   apps/siegdotfr:
     dependencies:
+      '@astrojs/alpinejs':
+        specifier: ^0.3.1
+        version: 0.3.1(@types/alpinejs@3.13.5)(alpinejs@3.13.3)
       '@astrojs/rss':
         specifier: ^3.0.0
         version: 3.0.0
@@ -106,6 +109,12 @@ importers:
       '@tinacms/cli':
         specifier: ^1.5.36
         version: 1.5.36(@babel/core@7.23.3)(react-dom@18.2.0)(react@18.2.0)
+      '@types/alpinejs':
+        specifier: ^3.0.0
+        version: 3.13.5
+      alpinejs:
+        specifier: ^3.0.0
+        version: 3.13.3
       astro:
         specifier: ^3.6.0
         version: 3.6.0
