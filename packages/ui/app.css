@@ -6,8 +6,8 @@
   --main: 55rem;
   --main-small: 34rem;
   /* fonts */
-  --font: "JostVariable", sans-serif;
-  --font-mono: monospace;
+  --font: 'Berkeley Mono', sans-serif;
+  --font-mono: 'Berkeley Mono', monospace;
   --step--2: clamp(0.5206rem, 0.6175rem + -0.125vw, 0.5925rem);
   --step--1: clamp(0.625rem, 0.6814rem + -0.0728vw, 0.6669rem);
   --step-0: clamp(0.75rem, 0.75rem + 0vw, 0.75rem);
