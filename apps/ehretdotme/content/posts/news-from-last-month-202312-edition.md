@@ -12,6 +12,14 @@ tags:
   - nflm
 ---
 
+Hello folks, I hope you are doing well.
+
+At work we released a new report and the associated website is available at [geneva.cyberpeace.ngo](https://geneva.cyberpeace.ngo/). It was fun to work on, first time for me playing with the [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API).
+
+Also, December is here! I will try something new on my [French website](https://sieg.fr/ied/): an advent calendar with some thoughts about work matters. The first bit is available [here](https://sieg.fr/ied/2023-12-01-apprentissage).
+
+And now, let's go with these news from last month. Enjoy!
+
 ## Programming
 
 ### Web (HTML, CSS, JS, Design...)
