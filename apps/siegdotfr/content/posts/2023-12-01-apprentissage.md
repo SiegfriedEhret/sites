@@ -1,5 +1,5 @@
 ---
-title: 2023-12-01 Apprentissage
+title: "Apprentissage (\U0001F3841/24)"
 slug: 2023-12-01-apprentissage
 description: >-
   Premier jour du calendrier de l'avent des choses liées boulot :
