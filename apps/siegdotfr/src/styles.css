@@ -24,3 +24,12 @@
     --text: var(--wevet);
   }
 }
+
+@font-face {
+  font-family: "Berkeley Mono";
+  src: url("/fonts/BerkeleyMono/BerkeleyMonoVariable-Regular.woff2")
+  format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
