@@ -33,3 +33,7 @@
   font-style: normal;
   font-display: swap;
 }
+
+body {
+  letter-spacing: -0.02rem;
+}
