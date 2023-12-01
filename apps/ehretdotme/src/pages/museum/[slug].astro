@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import { formatDateHuman } from "@packages/utils/date";
+import Responsive from "@packages/ui/Responsive.astro";
 
 export async function getStaticPaths() {
   const items = await getCollection("museum");
@@ -31,11 +32,11 @@ const {
 ---
 
 <Layout title={name}>
-  <nav>
-    <a href="/museum">&lt;= all works</a>
-  </nav>
+  <Responsive tag="article">
+    <nav>
+      <a href="/museum">&lt;= all works</a>
+    </nav>
 
-  <article>
     {
       images.map(({ image, imageDescription = "pouet" }) => (
         <figure>
@@ -72,7 +73,7 @@ const {
         )
       }
     </dl>
-  </article>
+  </Responsive>
 </Layout>
 
 <style>

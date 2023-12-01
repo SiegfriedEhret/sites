@@ -1,0 +1,65 @@
+---
+interface Props {
+  repeat: number;
+  tag: "h1" | "h2" | "div";
+}
+
+const { repeat = 10, tag } = Astro.props;
+const Element = tag;
+
+let html = "";
+if (Astro.slots.has("default")) {
+  html = await Astro.slots.render("default");
+}
+---
+
+<div class="marquee">
+  <div class="title">
+    <Element class="main" set:html={html} />
+    {
+      Array(repeat)
+        .fill("")
+        .map(() => (
+          <Fragment>
+            <span class="copy" aria-hidden="true" set:html={html} />
+          </Fragment>
+        ))
+    }
+  </div>
+</div>
+
+<style>
+  .marquee {
+    background-color: var(--prime);
+    color: var(--wevet);
+    overflow-x: hidden;
+  }
+
+  .title {
+    display: flex;
+    gap: var(--babase);
+    animation: marquee 60s linear infinite alternate;
+    font-size: var(--step-5);
+  }
+
+  .main,
+  .copy {
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    white-space: nowrap;
+
+    @media screen and (min-width: 34rem) {
+      font-size: 3rem;
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+</style>

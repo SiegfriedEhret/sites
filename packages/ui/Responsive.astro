@@ -1,0 +1,22 @@
+---
+interface Props {
+  tag: "article" | "div" | "section";
+}
+
+const { tag = "div" } = Astro.props;
+const Element = tag;
+---
+
+<Element class="responsive">
+  <slot />
+</Element>
+
+<style>
+  .responsive {
+    margin-block: var(--babase);
+    margin-inline: auto;
+    padding: var(--babase);
+    width: calc(100% - 2 * var(--babase));
+    max-width: max(80vw, 55rem);
+  }
+</style>

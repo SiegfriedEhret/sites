@@ -1,0 +1,14 @@
+---
+import Marquee from "./Marquee.astro";
+const { title } = Astro.props;
+---
+
+<div class="super">
+  <Marquee tag="h1">{title.endsWith(".") ? title : `${title}.`}</Marquee>
+</div>
+
+<style>
+  .super {
+    background-color: var(--prime);
+  }
+</style>

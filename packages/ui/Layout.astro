@@ -118,63 +118,19 @@ const img = metaImage
     />
   </head>
   <body>
-    <div class="grid">
-      <div class="taco">
-        <slot name="header" />
-      </div>
-      <div class="burrito">
-        <main>
-          <slot name="main" />
-        </main>
-        <slot name="footer" />
-      </div>
-      <div></div>
-    </div>
+    <slot name="first" />
+    <slot name="header" />
+    <main>
+      <slot name="main" />
+    </main>
+    <slot name="footer" />
   </body>
 </html>
 
 <style>
-  .grid {
-    display: grid;
-    max-width: calc(var(--side) + var(--main) + var(--side));
-    margin: 0 auto;
-  }
-  .burrito {
-    --burrito-spacing: var(--base);
-    background: var(--back);
-    padding: var(--burrito-spacing);
-    min-height: 100dvh;
-    width: 100%;
-    max-width: 55rem;
-    margin: 0;
-    margin-right: var(--babase);
-  }
-  .taco {
-    //order: -1;
-    margin-bottom: var(--babase);
-  }
-
-  @media screen and (min-width: 47rem) {
-    .grid {
-      grid-template-columns: 13fr 34fr 0;
-    }
-    .taco {
-      position: sticky;
-      top: 0;
-      //order: 1;
-    }
-  }
-  @media screen and (min-width: 68rem) {
-    .grid {
-      grid-template-columns: 13fr 55fr 0;
-    }
-  }
-  @media screen and (min-width: 81rem) {
-    .grid {
-      grid-template-columns: 13fr 55fr 13fr;
-    }
-    .burrito {
-      --burrito-spacing: var(--babase);
-    }
+  main {
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
   }
 </style>

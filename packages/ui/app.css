@@ -49,6 +49,7 @@ h4,
 h5,
 h6 {
   font-weight: 500;
+  margin-block-start: 0;
 }
 h1 {
   font-size: var(--step-5);
@@ -67,12 +68,6 @@ h5 {
 }
 h6 {
   font-size: var(--step-0);
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
 }
 
 html {
@@ -140,7 +135,7 @@ img {
   color: var(--text);
   font-size: 1rem;
   text-decoration: underline;
-  padding: var(--base) var(--babase);
+  padding: calc(var(--base) / 2) var(--base);
   transform: rotateZ(0);
   will-change: transform, border-color, color, background-color;
   transition:
@@ -148,6 +143,10 @@ img {
     border-color 0.3s,
     color 0.3s,
     background-color 0.3s;
+
+  @media screen and (min-width: 42rem) {
+    padding: var(--base) var(--babase);
+  }
 }
 
 .link:is(:active, :focus, :hover) {

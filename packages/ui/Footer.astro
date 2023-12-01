@@ -1,16 +1,25 @@
+---
+import Sieg from "./Sieg.astro";
+---
+
 <footer>
   <slot />
 
   <nav>
     <slot name="link" />
   </nav>
+
+  <a href="/" class="sieg">
+    <Sieg small={true} />
+  </a>
 </footer>
 
 <style>
   footer {
-    border-top: 1px solid var(--baback);
+    border-block-start: 1px solid var(--baback);
     text-align: center;
-    margin-top: 16px;
+    margin-block-start: var(--babase);
+    padding-block: var(--babase);
   }
 
   nav {
@@ -20,7 +29,17 @@
     gap: 16px;
   }
 
-  @media screen and (min-width: 40rem) {
+  .sieg {
+    transform: rotateZ(0);
+    transition: transform 0.3s;
+    will-change: transform;
+
+    :is(:active, :focus, :hover) {
+      transform: rotate3d(1, 1, 1, 10deg);
+    }
+  }
+
+  @media screen and (min-width: 34rem) {
     nav {
       flex-direction: row;
     }

@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import { formatDate, getYear } from "@packages/utils/date";
 import BadidonSubscribe from "../../../components/BadidonSubscribe.astro";
+import Responsive from "@packages/ui/Responsive.astro";
 
 const badidon = (await getCollection("badidon"))
   .map((item) => ({
@@ -17,38 +18,40 @@ const badidon = (await getCollection("badidon"))
 ---
 
 <Layout title="/badidon [sieg.fr/ied]" description="🎙️badidon. Un podcast.">
-  <h1>Badidon.</h1>
-  <p>Un podcast.</p>
+  <Responsive>
+    <h1>Badidon.</h1>
+    <p>Un podcast.</p>
 
-  <div class="badidon">
-    <img src="/images/badidon-small.png" />
-    <span>ba</span>
-    <span>di</span>
-    <span>don</span>
-  </div>
+    <div class="badidon">
+      <img src="/images/badidon-small.png" />
+      <span>ba</span>
+      <span>di</span>
+      <span>don</span>
+    </div>
 
-  <BadidonSubscribe />
+    <BadidonSubscribe />
 
-  <h2>Tous les épisodes</h2>
+    <h2>Tous les épisodes</h2>
 
-  <nav>
-    {
-      badidon.map((item) => (
-        <section data-year={getYear(item.date)}>
-          <h2>
-            <a href={`/ied/badidon/${item.slug}`}>
-              <span>🎙️</span>
-              <span>{item.title}</span>
-            </a>
-          </h2>
-          <div>
-            <time datetime={item.date}>{formatDate(item.date)}</time>
-          </div>
-          <p>{item.description}</p>
-        </section>
-      ))
-    }
-  </nav>
+    <nav>
+      {
+        badidon.map((item) => (
+          <section data-year={getYear(item.date)}>
+            <h2>
+              <a href={`/ied/badidon/${item.slug}`}>
+                <span>🎙️</span>
+                <span>{item.title}</span>
+              </a>
+            </h2>
+            <div>
+              <time datetime={item.date}>{formatDate(item.date)}</time>
+            </div>
+            <p>{item.description}</p>
+          </section>
+        ))
+      }
+    </nav>
+  </Responsive>
 </Layout>
 
 <style>

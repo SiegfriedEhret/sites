@@ -3,7 +3,9 @@ import { getCollection } from "astro:content";
 import Figure from "@packages/ui/Figure.astro";
 import { formatDate } from "@packages/utils/date";
 import Toc from "@packages/ui/Toc.astro";
+import SuperTitle from "@packages/ui/SuperTitle.astro";
 import Layout from "../layouts/Layout.astro";
+import Responsive from "@packages/ui/Responsive.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
@@ -24,43 +26,62 @@ const { Content, headings } = await post.render();
 
 <Layout title={title} description={description} metaImage={image}>
   <article>
-    {image && <Figure url={image} title={imageDescription || title} />}
+    <SuperTitle title={title} />
 
-    <h1>{title}</h1>
-    {headings && <Toc headings={headings} />}
+    <Responsive>
+      {
+        image && (
+          <Figure
+            url={image}
+            title={imageDescription || title}
+            maxHeight="34rem"
+          />
+        )
+      }
 
-    <Content />
+      {headings && <Toc headings={headings} />}
 
-    <hr />
+      <div class="content">
+        <Content />
+      </div>
 
-    <p class="date">
-      Published on {formatDate(date)}, last modified on {formatDate(updatedAt)}.
-    </p>
+      <hr />
 
-    {
-      tags && tags.length > 0 && (
-        <p>
-          <span>Tags:</span>
-          <span>
-            {" "}
-            {tags.map((t) => (
-              <a href={`/tag/${t}`}>#{t}</a>
-            ))}
-          </span>
-        </p>
-      )
-    }
+      <p class="date">
+        Published on {formatDate(date)}, last modified on {
+          formatDate(updatedAt)
+        }.
+      </p>
+
+      {
+        tags && tags.length > 0 && (
+          <p>
+            <span>Tags:</span>
+            <span>
+              {" "}
+              {tags.map((t) => (
+                <a href={`/tag/${t}`}>#{t}</a>
+              ))}
+            </span>
+          </p>
+        )
+      }
+    </Responsive>
   </article>
 </Layout>
 
 <style>
   article {
     position: relative;
+    z-index: 0;
   }
   h1 {
     color: var(--wevet);
-    margin: 0 0 var(--babase);
+    margin: 0;
     padding: var(--base) var(--babase);
     background: var(--prime);
+    text-wrap: balance;
+    text-align: center;
+    font-family: "Berkeley Mono", monospace;
   }
 </style>

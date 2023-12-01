@@ -1,80 +1,132 @@
 ---
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import { formatDate } from "@packages/utils/date";
+import Intro from "@packages/ui/Intro.astro";
+import ClickOnThatPost from "@packages/ui/ClickOnThatPost.astro";
+import Responsive from "@packages/ui/Responsive.astro";
+import Marquee from "@packages/ui/Marquee.astro";
 
-const posts = (await getCollection("posts")).map((item) => ({
-  title: item.data.title,
-  slug: item.slug,
-  description: item.data.description,
-  date: formatDate(item.data.date),
-  type: "post",
-}));
-
-const badidon = (await getCollection("badidon")).map((item) => ({
-  title: item.data.title,
-  slug: item.slug,
-  description: item.data.description,
-  image: item.data.image,
-  date: formatDate(item.data.date),
-  tags: item.data.tags,
-  type: "badidon",
-}));
-
-const items = [...posts, ...badidon]
+const posts = (await getCollection("posts"))
+  .map((item) => ({
+    title: item.data.title,
+    url: `/ied/${item.slug}`,
+    description: item.data.description,
+    date: formatDate(item.data.date),
+    image: item.data.image,
+    imageDescription: item.data.imageDescription,
+    type: "post",
+  }))
   .sort((a, b) => b.date.localeCompare(a.date))
-  .slice(0, 10);
+  .slice(0, 3);
+
+const badidon = (await getCollection("badidon"))
+  .map((item) => ({
+    title: item.data.title,
+    url: `/ied/badidon/${item.slug}`,
+    description: item.data.description,
+    image: item.data.image,
+    imageDescription:
+      "Le logo de notre podcast, avec des bols de riz et des bouts de pain. On lit badidon par dessus le reste.",
+    date: formatDate(item.data.date),
+    tags: item.data.tags,
+    type: "badidon",
+  }))
+  .sort((a, b) => b.date.localeCompare(a.date))
+  .slice(0, 3);
 ---
 
 <Layout title="/ [sieg.fr/ied]">
-  <article>
-    <h1>Je m'appelle Siegfried Ehret. Je suis développeur.</h1>
+  <Intro slot="first" imgAlt="C'est ma tête avec un maquillage de kabuki !">
+    <Fragment slot="banners">
+      <Marquee tag="h1">Je m'appelle Siegfried Ehret.</Marquee>
+      <Marquee tag="h2">Je suis développeur.</Marquee>
+    </Fragment>
+    <Fragment slot="text">
+      <p>
+        J'habite en <span class="previous-country">France 🇫🇷</span>
+        <span class="previous-country">Japon 🇯🇵</span> Suisse 🇨🇭.
+      </p>
+      <p>Bienvenue sur mon site !</p>
+    </Fragment>
+  </Intro>
 
-    <p>Bienvenue sur mon site !</p>
+  <Responsive tag="section">
+    <h2>C'est tout chaud, voici les dernières notes.</h2>
+    <nav class="spotlight">
+      {posts.map((item) => <ClickOnThatPost item={item} />)}
+    </nav>
+    <a href="/ied/notes">Toutes les notes.</a>
+  </Responsive>
 
-    <section>
-      <h2>C'est tout chaud, voici les dernières publications.</h2>
+  <Responsive tag="section">
+    <h2>Et les derniers épisodes de notre podcast. Badidon !</h2>
+    <div class="badidon">
+      <Image
+        src="/images/badidon-badidon.jpg"
+        width="300"
+        height="300"
+        alt="Le logo de notre podcast"
+      />
       <nav>
         {
-          items.map((item) => (
-            <section>
+          badidon.map((item) => (
+            <div class="podcast">
               <h3>
-                {item.type === "post" && (
-                  <a href={`/ied/${item.slug}`}>{item.title}</a>
-                )}
-
-                {item.type === "badidon" && (
-                  <a href={`/ied/badidon/${item.slug}`}>
-                    <span>🎙️</span>
-                    <span>{item.title}</span>
-                  </a>
-                )}
+                <a href={item.url}>
+                  <span>🎙️</span>
+                  <span>{item.title}</span>
+                </a>
               </h3>
               <div>
                 <time datetime={item.date}>{formatDate(item.date)}</time>
               </div>
               <p>{item.description}</p>
-            </section>
+            </div>
           ))
         }
+
+        <a href="/ied/badidon">Tous les badidons.</a>
       </nav>
-      <a href="/ied/notes">Toutes les notes.</a>
-      <a href="/ied/badidon">Tous les badidons.</a>
-    </section>
-  </article>
+    </div>
+  </Responsive>
 </Layout>
 
 <style>
   section {
-    margin: 1rem 0;
+    border: 1px solid var(--back);
   }
 
-  section > * {
-    margin: 0;
+  .previous-country {
+    text-decoration: line-through;
   }
 
-  a {
-    display: inline-flex;
-    gap: var(--base);
+  .spotlight {
+    display: grid;
+    gap: var(--babase);
+
+    @media screen and (min-width: 34rem) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .badidon {
+    display: flex;
+    flex-direction: column;
+    gap: var(--babase);
+
+    @media screen and (min-width: 34rem) {
+      flex-direction: row;
+      nav {
+        flex-grow: 1;
+      }
+    }
+  }
+  .podcast {
+    margin-block: var(--base);
+    * {
+      margin: 0;
+    }
   }
 </style>

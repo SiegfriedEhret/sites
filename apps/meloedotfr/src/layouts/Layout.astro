@@ -1,6 +1,8 @@
 ---
 import Layout from "@packages/ui/Layout.astro";
 import Header from "@packages/ui/Header.astro";
+import Responsive from "@packages/ui/Responsive.astro";
+
 const { title, description, metaImage } = Astro.props;
 
 import "../styles.css";
@@ -13,15 +15,19 @@ import "../styles.css";
   name="meloe.fr"
 >
   <Header slot="header">
-    <a slot="title" class="link" href="/">meloe.fr</a>
-    <Fragment slot="links">
+    <Fragment slot="links1">
+      <a class="link" href="/">meloe.fr</a>
+    </Fragment>
+    <Fragment slot="links2">
       <a class="link" href="/fichiers">/fichiers</a>
       <a class="link" href="/a-propos">/a-propos</a>
     </Fragment>
   </Header>
 
   <Fragment slot="main">
-    <slot />
+    <Responsive tag="article">
+      <slot />
+    </Responsive>
 
     <script
       data-goatcounter="https://meloedotfr.goatcounter.com/count"

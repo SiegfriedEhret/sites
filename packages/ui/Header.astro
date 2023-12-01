@@ -1,72 +1,45 @@
----
-import logo from "./sieg.jpg";
----
-
 <header>
-  <div class="logo">
-    <a href="/"><img src={logo.src} alt="Kabuki Siegfried" /></a>
+  <div class="links">
+    <slot name="links1" />
   </div>
-
-  <nav>
-    <slot name="title" />
-    <slot name="links" />
-  </nav>
+  <div class="links">
+    <slot name="links2" />
+  </div>
 </header>
 
 <style>
   header {
+    background-color: var(--back);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    gap: var(--babase);
-    padding: var(--babase);
+    gap: var(--base);
+    padding: var(--base);
+    border-bottom: 1px solid var(--prime);
   }
 
-  .logo {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .logo img {
-    border: 4px solid var(--lake-red);
-    border-radius: 50%;
-    max-width: 80px;
-    max-height: 80px;
-    aspect-ratio: 1 / 1;
-    will-change: transform;
-    transition: transform 0.3s;
-  }
-  .logo a {
-    border-bottom: 0;
-  }
-  .logo a:is(:active, :focus, :hover) img {
-    transform: rotate3d(1, 1, 1, 15deg);
-  }
-
-  nav {
+  .links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: center;
     gap: var(--base);
-
-    a {
-      text-decoration: none;
-    }
   }
 
-  @media screen and (min-width: 47rem) {
+  @media screen and (min-width: 34rem) {
     header {
-      flex-direction: column;
+      flex-direction: row;
       position: sticky;
       top: 0;
+      z-index: 1;
     }
-    nav {
-      flex-direction: column;
-      align-items: flex-end;
-    }
-  }
-  @media screen and (min-width: 68rem) {
-    header {
-      padding-top: var(--babase);
+    .links {
+      &:first-child {
+        justify-content: flex-end;
+      }
+      &:last-child {
+        justify-content: flex-start;
+      }
     }
   }
 </style>

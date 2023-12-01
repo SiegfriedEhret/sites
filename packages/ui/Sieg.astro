@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+import Sieg from "./sieg.jpg";
+
+const { alt = "Coucou !", small = false } = Astro.props;
+---
+
+<Image class:list={["coucou", { small }]} src={Sieg} alt={alt} />
+
+<style>
+  .coucou {
+    border: 4px solid var(--lake-red);
+    border-radius: 50%;
+    max-width: calc(8 * var(--babase));
+    max-height: calc(8 * var(--babase));
+    aspect-ratio: 1 / 1;
+
+    &.small {
+      max-width: calc(3 * var(--babase));
+      max-height: calc(3 * var(--babase));
+    }
+  }
+</style>

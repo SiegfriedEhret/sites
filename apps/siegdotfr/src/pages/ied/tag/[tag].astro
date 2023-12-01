@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import { formatDate } from "@packages/utils/date";
 import Layout from "../../../layouts/Layout.astro";
+import Responsive from "@packages/ui/Responsive.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
@@ -28,25 +29,27 @@ let sortedPosts = posts.sort(
 ---
 
 <Layout>
-  <h1>Billets avec l'étiquette « {tag} »</h1>
-  {
-    sortedPosts.map(
-      ({ data: { description, title, date, audioUrl }, slug }) => (
-        <div class="post">
-          {audioUrl ? (
-            <a href={`/ied/badidon/${slug}`}>
-              <span>🎙️</span>
-              <span>{title}</span>
-            </a>
-          ) : (
-            <a href={`/ied/${slug}`}>{title}</a>
-          )}
-          <time datetime={date}>{formatDate(date)}</time>
-          <span>{description}</span>
-        </div>
-      ),
-    )
-  }
+  <Responsive>
+    <h1>Billets avec l'étiquette « {tag} »</h1>
+    {
+      sortedPosts.map(
+        ({ data: { description, title, date, audioUrl }, slug }) => (
+          <div class="post">
+            {audioUrl ? (
+              <a href={`/ied/badidon/${slug}`}>
+                <span>🎙️</span>
+                <span>{title}</span>
+              </a>
+            ) : (
+              <a href={`/ied/${slug}`}>{title}</a>
+            )}
+            <time datetime={date}>{formatDate(date)}</time>
+            <span>{description}</span>
+          </div>
+        ),
+      )
+    }
+  </Responsive>
 </Layout>
 
 <style>

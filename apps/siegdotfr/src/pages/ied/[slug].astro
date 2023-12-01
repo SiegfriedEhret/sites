@@ -4,6 +4,8 @@ import { formatDate } from "@packages/utils/date";
 import Figure from "@packages/ui/Figure.astro";
 import Toc from "@packages/ui/Toc.astro";
 import Layout from "../../layouts/Layout.astro";
+import SuperTitle from "@packages/ui/SuperTitle.astro";
+import Responsive from "@packages/ui/Responsive.astro";
 
 export async function getStaticPaths() {
   return (await getCollection("posts")).map((post) => ({
@@ -21,34 +23,37 @@ const { Content, headings } = await post.render();
 
 <Layout title={title} description={description} metaImage={image}>
   <article>
-    {image && <Figure url={image} title={imageDescription || title} />}
+    <SuperTitle title={title} />
 
-    <h1>{title}</h1>
-    {headings && <Toc headings={headings} />}
+    <Responsive>
+      {image && <Figure url={image} title={imageDescription || title} />}
 
-    <Content />
+      {headings && <Toc headings={headings} />}
 
-    <hr />
+      <Content />
 
-    <p class="date">
-      Publié le {formatDate(date, "fr")}, dernière modification le {
-        formatDate(updatedAt, "fr")
-      }.
-    </p>
+      <hr />
 
-    {
-      tags && tags.length > 0 && (
-        <p>
-          <span>Tags:</span>
-          <span>
-            {" "}
-            {tags.map((t) => (
-              <a href={`/ied/tag/${t}`}>#{t}</a>
-            ))}
-          </span>
-        </p>
-      )
-    }
+      <p class="date">
+        Publié le {formatDate(date, "fr")}, dernière modification le {
+          formatDate(updatedAt, "fr")
+        }.
+      </p>
+
+      {
+        tags && tags.length > 0 && (
+          <p>
+            <span>Tags:</span>
+            <span>
+              {" "}
+              {tags.map((t) => (
+                <a href={`/ied/tag/${t}`}>#{t}</a>
+              ))}
+            </span>
+          </p>
+        )
+      }
+    </Responsive>
   </article>
 </Layout>
 

@@ -1,0 +1,50 @@
+---
+import Responsive from "./Responsive.astro";
+import Sieg from "./Sieg.astro";
+
+const { imgAlt } = Astro.props;
+---
+
+<div class="my">
+  <div class="intro">
+    <slot name="banners" />
+  </div>
+
+  <Responsive>
+    <div class="face">
+      <div><slot name="text" /></div>
+      <Sieg alt={imgAlt} />
+    </div>
+  </Responsive>
+</div>
+
+<style>
+  .my {
+    display: flex;
+    flex-direction: column;
+    gap: var(--babase);
+    background-color: var(--prime);
+    color: var(--wevet);
+    overflow: hidden;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .face {
+    grid-row: 1;
+    text-align: center;
+    margin-block-start: 0;
+    padding-block-start: 0;
+
+    @media screen and (min-width: 34rem) {
+      text-align: initial;
+      grid-row: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+</style>

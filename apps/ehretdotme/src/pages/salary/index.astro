@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import Responsive from "@packages/ui/Responsive.astro";
 
 const entries = await getCollection("jobs");
 
@@ -20,70 +21,71 @@ function f(amount: number, currency: string) {
 ---
 
 <Layout title="/salary [ehret.me]">
-  <h1>Salary transparency</h1>
+  <Responsive>
+    <h1>Salary transparency</h1>
 
-  <p>
-    Following the example from <a href="https://xeiaso.net/salary-transparency"
-      >this page</a
-    >, here is an overview on my different jobs and associated salaries.
-  </p>
-  <p>
-    🚧 This is the first version of this page, some numbers are wrong because I
-    have not been through all my archives yet; starting with MetLife, I am
-    confident with the numbers. I will also include raises.
-  </p>
+    <p>
+      Following the example from <a
+        href="https://xeiaso.net/salary-transparency">this page</a
+      >, here is an overview on my different jobs and associated salaries.
+    </p>
+    <p>
+      🚧 This is the first version of this page, some numbers are wrong because
+      I have not been through all my archives yet; starting with MetLife, I am
+      confident with the numbers. I will also include raises.
+    </p>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Company</th>
-        <th>Start</th>
-        <th>End</th>
-        <th>Entry Salary</th>
-        <th>Note</th>
-      </tr>
-    </thead>
-    <tbody>
-      {
-        items.map((item) => (
-          <tr>
-            <td data-before="Title">{item.title}</td>
-            <td data-before="Company">
-              <a href={item.url}>{item.company}</a>
-            </td>
-            <td data-before="Start">{item.startDate}</td>
-            <td data-before="End">{item.endDate ?? ""}</td>
-            <td data-before="Entry Salary">
-              {item.salary && (
-                <Fragment>
-                  <span>{f(item.salary, item.currency)}</span>
-                  {item.variable && (
-                    <Fragment>
-                      <br />+ Variable: {f(item.variable, item.currency)}
-                    </Fragment>
-                  )}
-                  {item.bonus && (
-                    <Fragment>
-                      <br />+ Bonus: {f(item.bonus, item.currency)} (
-                      {item.bonusDescription})
-                    </Fragment>
-                  )}
-                </Fragment>
-              )}
-            </td>
-            <td data-before="Note">{item.comment ?? ""}</td>
-          </tr>
-        ))
-      }
-    </tbody>
-  </table>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Company</th>
+          <th>Start</th>
+          <th>End</th>
+          <th>Entry Salary</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          items.map((item) => (
+            <tr>
+              <td data-before="Title">{item.title}</td>
+              <td data-before="Company">
+                <a href={item.url}>{item.company}</a>
+              </td>
+              <td data-before="Start">{item.startDate}</td>
+              <td data-before="End">{item.endDate ?? ""}</td>
+              <td data-before="Entry Salary">
+                {item.salary && (
+                  <Fragment>
+                    <span>{f(item.salary, item.currency)}</span>
+                    {item.variable && (
+                      <Fragment>
+                        <br />+ Variable: {f(item.variable, item.currency)}
+                      </Fragment>
+                    )}
+                    {item.bonus && (
+                      <Fragment>
+                        <br />+ Bonus: {f(item.bonus, item.currency)} (
+                        {item.bonusDescription})
+                      </Fragment>
+                    )}
+                  </Fragment>
+                )}
+              </td>
+              <td data-before="Note">{item.comment ?? ""}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </Responsive>
 </Layout>
 
 <style>
   table {
     display: block;
-    font-size: 0.8rem;
     border-collapse: collapse;
   }
 
@@ -101,8 +103,8 @@ function f(amount: number, currency: string) {
 
   tbody tr {
     border-top: 1px solid var(--text);
-    margin-top: 1rem;
-    padding-top: 1rem;
+    margin-top: var(--base);
+    padding-top: var(--base);
   }
 
   tbody tr:first-child {
@@ -111,26 +113,27 @@ function f(amount: number, currency: string) {
 
   tbody td::before {
     display: block;
-    font-weight: bold;
+    font-style: italic;
+    margin-inline-start: calc(-1 * var(--base));
     content: attr(data-before);
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 34rem) {
     table {
       display: table;
       border-collapse: collapse;
     }
 
     td {
-      padding: 0.2rem 0.5rem;
+      padding: var(--base);
     }
 
     td:first-child {
-      padding-left: 0;
+      padding-inline-start: 0;
     }
 
     td:last-child {
-      padding-right: 0;
+      padding-inline-end: 0;
     }
 
     thead {

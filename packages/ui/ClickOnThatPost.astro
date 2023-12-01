@@ -1,0 +1,62 @@
+---
+import { formatDate } from "@packages/utils/date";
+
+const { item } = Astro.props;
+const { url, title, description, date, image, imageDescription } = item;
+---
+
+<a class="post" href={url}>
+  <div class="image">
+    <img src={image} alt={imageDescription} />
+  </div>
+  <div class="title">{title}</div>
+  <div class="description">{description}</div>
+  <time datetime={date}>{formatDate(date)}</time>
+</a>
+
+<style>
+  .post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .post {
+    .image {
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      display: block;
+      transition: transform 300ms;
+      transform: scale3d(1, 1, 1);
+      transform-style: preserve-3d;
+    }
+  }
+
+  .post:is(:active, :focus, :hover) img {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+
+  .post .title {
+    font-size: var(--step-3);
+    margin-block-start: var(--base);
+    text-decoration: underline;
+  }
+
+  .post .description {
+    margin-block-start: var(--base);
+  }
+
+  .post time {
+    margin-block-start: 0.5rem;
+    font-size: var(--step-0);
+  }
+</style>

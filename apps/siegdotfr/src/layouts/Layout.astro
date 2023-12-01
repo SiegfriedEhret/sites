@@ -19,12 +19,18 @@ import "../styles.css";
   rssTitle="sieg.fr/ied"
   rssHref="/ied/rss.xml"
 >
+  <Fragment slot="first">
+    <slot name="first" />
+  </Fragment>
+
   <Header slot="header">
-    <a slot="title" class="link" href="/ied">/</a>
-    <Fragment slot="links">
+    <Fragment slot="links1">
+      <a class="link" href="/ied">/</a>
       <a class="link" href="/ied/notes">/notes</a>
       <a class="link" href="/ied/badidon">/badidon</a>
       <a class="link" href="/ied/causeries">/causeries</a>
+    </Fragment>
+    <Fragment slot="links2">
       <a class="link" href="/ied/rss.xml">📫 RSS</a>
       <a class="link" href="https://ehret.me/" title="Mon site en anglais">
         🔗 ehret.me

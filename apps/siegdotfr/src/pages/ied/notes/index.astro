@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import { formatDate, getYear } from "@packages/utils/date";
+import Responsive from "@packages/ui/Responsive.astro";
 
 const entriesFromRepository = await getCollection("posts");
 
@@ -19,24 +20,26 @@ const posts = [
   title="/notes [sieg.fr/ied]"
   description="Un peu de tout, et beaucoup de rien."
 >
-  <h1>Notes.</h1>
-  <p>Un peu de tout, et beaucoup de rien.</p>
+  <Responsive>
+    <h1>Notes.</h1>
+    <p>Un peu de tout, et beaucoup de rien.</p>
 
-  <nav>
-    {
-      posts.map((item) => (
-        <section data-year={getYear(item.date)}>
-          <h2>
-            <a href={`/ied/${item.slug}`}>{item.title}</a>
-          </h2>
-          <div>
-            <time datetime={item.date}>{formatDate(item.date)}</time>
-          </div>
-          <p>{item.description}</p>
-        </section>
-      ))
-    }
-  </nav>
+    <nav>
+      {
+        posts.map((item) => (
+          <section data-year={getYear(item.date)}>
+            <h2>
+              <a href={`/ied/${item.slug}`}>{item.title}</a>
+            </h2>
+            <div>
+              <time datetime={item.date}>{formatDate(item.date)}</time>
+            </div>
+            <p>{item.description}</p>
+          </section>
+        ))
+      }
+    </nav>
+  </Responsive>
 </Layout>
 
 <style>

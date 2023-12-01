@@ -21,14 +21,6 @@ Run:
 
 ## On Vercel
 
-Environment variables
-
-| Name                        | Value       |
-| --------------------------- | ----------- |
-| `CONTENTFUL_SPACE_ID`       | `something` |
-| `CONTENTFUL_DELIVERY_TOKEN` | `something` |
-| `CONTENTFUL_PREVIEW_TOKEN`  | `something` |
-
 ⚠️ currently, `--force` should be added to the BUILD command otherwise there is no output folder since Vercel start the build in a new environment.
 
 ## License
