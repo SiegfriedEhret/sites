@@ -9,7 +9,7 @@ const entriesFromContentful = await contentfulClient.getEntries<Post>({
   order: "-fields.publicationDate",
 });
 const entriesFromRepository = Object.values(
-  import.meta.glob("../../../content/posts/*.md", { eager: true }),
+  import.meta.glob("../../../content/posts/*.md", { eager: true })
 );
 
 const items = [
