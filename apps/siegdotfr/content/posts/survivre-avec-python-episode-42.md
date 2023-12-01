@@ -6,9 +6,9 @@ date: 2023-10-25T22:00:00.000Z
 updatedAt: 2023-10-25T22:00:00.000Z
 image: /assets/python-whale.png
 imageDescription: >-
-  Générée avec SDXL 1.0, avec le texte « 2 animals facing each other. An angry
+  Générée avec SDXL 1.0, avec le texte « 2 animals facing each other. An angry
   green python ready to bite. A nice blue whale with containers on her back with
-  a gentle smile. »
+  a gentle smile. »
 tags:
   - python
 ---
