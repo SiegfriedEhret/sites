@@ -9,7 +9,7 @@ const { headings } = Astro.props;
         Shortcuts
       </button>
 
-      <nav x-show="open">
+      <nav x-show="open" x-cloak x-transition>
         {headings.map((heading) => (
           <a
             class:list={{

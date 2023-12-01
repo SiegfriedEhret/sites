@@ -6,8 +6,8 @@
   --main: 55rem;
   --main-small: 34rem;
   /* fonts */
-  --font: 'Berkeley Mono', sans-serif;
-  --font-mono: 'Berkeley Mono', monospace;
+  --font: "Berkeley Mono", sans-serif;
+  --font-mono: "Berkeley Mono", monospace;
   --step--2: clamp(0.5206rem, 0.6175rem + -0.125vw, 0.5925rem);
   --step--1: clamp(0.625rem, 0.6814rem + -0.0728vw, 0.6669rem);
   --step-0: clamp(0.75rem, 0.75rem + 0vw, 0.75rem);
@@ -16,8 +16,31 @@
   --step-3: clamp(1.0681rem, 0.9888rem + 0.3967vw, 1.2963rem);
   --step-4: clamp(1.2013rem, 1.0782rem + 0.6152vw, 1.555rem);
   --step-5: clamp(1.3513rem, 1.1721rem + 0.8957vw, 1.8663rem);
-}
 
+  /* spacing */
+  --space-3xs: clamp(0.1875rem, 0.1875rem + 0vw, 0.1875rem);
+  --space-2xs: clamp(0.375rem, 0.375rem + 0vw, 0.375rem);
+  --space-xs: clamp(0.5625rem, 0.5625rem + 0vw, 0.5625rem);
+  --space-s: clamp(0.75rem, 0.75rem + 0vw, 0.75rem);
+  --space-m: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  --space-l: clamp(1.5rem, 1.5rem + 0vw, 1.5rem);
+  --space-xl: clamp(2.25rem, 2.25rem + 0vw, 2.25rem);
+  --space-2xl: clamp(3rem, 3rem + 0vw, 3rem);
+  --space-3xl: clamp(4.5rem, 4.5rem + 0vw, 4.5rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.1875rem, 0.1223rem + 0.3261vw, 0.375rem);
+  --space-2xs-xs: clamp(0.375rem, 0.3098rem + 0.3261vw, 0.5625rem);
+  --space-xs-s: clamp(0.5625rem, 0.4973rem + 0.3261vw, 0.75rem);
+  --space-s-m: clamp(0.75rem, 0.6196rem + 0.6522vw, 1.125rem);
+  --space-m-l: clamp(1.125rem, 0.9946rem + 0.6522vw, 1.5rem);
+  --space-l-xl: clamp(1.5rem, 1.2391rem + 1.3043vw, 2.25rem);
+  --space-xl-2xl: clamp(2.25rem, 1.9891rem + 1.3043vw, 3rem);
+  --space-2xl-3xl: clamp(3rem, 2.4783rem + 2.6087vw, 4.5rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(0.75rem, 0.4891rem + 1.3043vw, 1.5rem);
+}
 
 h1,
 h2,
@@ -80,6 +103,11 @@ h1 {
 
 ul {
   list-style-type: hiragana-iroha;
+  list-style-position: outside;
+
+  & li {
+    padding-inline-start: var(--space-s);
+  }
 }
 
 a {
@@ -104,7 +132,10 @@ img {
   padding: calc(var(--base) / 4) calc(var(--base));
   transform: rotateZ(0);
   will-change: transform;
-  transition: transform 0.3s, color 0.3s, background-color 0.3s;
+  transition:
+    transform 0.3s,
+    color 0.3s,
+    background-color 0.3s;
 }
 
 .link:is(:active, :focus, :hover) {
@@ -166,4 +197,8 @@ main > * + * {
     content: "🎯";
     margin-inline-end: var(--base);
   }
+}
+
+[x-cloak] {
+  display: none !important;
 }

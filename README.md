@@ -35,6 +35,4 @@ Environment variables
 
 Under `AGPL-3.0-or-later`, see the `LICENSE` file at the root of the repository.
 
-The fonts are copyrighted, do not use them unless you have a license:
-- https://berkeleygraphics.com/
-- https://simplebits.shop/products/ships-whistle
+The font is copyrighted, do not use unless you have a license: https://berkeleygraphics.com/
