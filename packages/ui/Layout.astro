@@ -3,7 +3,9 @@ import "./app.css";
 
 const { description, title, metaImage, rssHref, rssTitle } = Astro.props;
 
-const img = `${Astro.site}${metaImage}`;
+const img = `${Astro.site}${
+  metaImage.startsWith("/") ? metaImage.substring(1) : metaImage
+}`;
 ---
 
 <html lang="en">
