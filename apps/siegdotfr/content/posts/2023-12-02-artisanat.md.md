@@ -22,4 +22,4 @@ Avec la pression des gens qui font de la gestion de projets / produits ou les cl
 
 Je vois l'artisanat dans mon métier comme un ensemble de bonnes pratiques et de principes d'organisation et d'architecture (pas dans le sens boites et flèches dans PowerPoint) à appliquer au bon moment, une maîtrise des outils, que ce soit les bibliothèques / socles aux éditeurs en passant par les utilitaires, et un [apprentissage](https://sieg.fr/ied/2023-12-01-apprentissage) continu pour s'améliorer. Et tout ça s'apprend, et s'améliore normalement avec le temps.
 
-Je termine avec  ce documentaire : [Takumi - a 60,000-hour story on the survival of human craft - YouTube](https://www.youtube.com/watch?v=9EI3aEFANBo) (en anglais), j'espère que ça vous plaira.
+Je termine avec ce documentaire : [Takumi - a 60,000-hour story on the survival of human craft - YouTube](https://www.youtube.com/watch?v=9EI3aEFANBo) (en anglais), j'espère que ça vous plaira.
