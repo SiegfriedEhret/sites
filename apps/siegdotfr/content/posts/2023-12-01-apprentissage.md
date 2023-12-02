@@ -2,7 +2,7 @@
 title: "Apprentissage (\U0001F3841/24)"
 slug: 2023-12-01-apprentissage
 description: >-
-  Premier jour du calendrier de l'avent des choses liées boulot :
+  Premier jour du calendrier de l'avent des choses liées au boulot :
   l'apprentissage.
 date: 2023-11-30T23:00:00.000Z
 updatedAt: 2023-11-30T23:00:00.000Z
