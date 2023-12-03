@@ -54,7 +54,7 @@ export default defineConfig({
             type: "datetime",
             required: true,
             ui: {
-              timeFormat: "HH:mm",
+              utc: true,
             },
           },
           {
@@ -63,7 +63,7 @@ export default defineConfig({
             type: "datetime",
             required: true,
             ui: {
-              timeFormat: "HH:mm",
+              utc: true,
             },
           },
           {
