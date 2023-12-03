@@ -2,7 +2,7 @@
 title: "Communication (\U0001F3843/24)"
 slug: 2023-12-03-communication
 description: >-
-  Premier jour du calendrier de l'avent des choses liées au boulot : la
+  Troisième jour du calendrier de l'avent des choses liées au boulot : la
   communication.
 date: 2023-12-03T11:36:00.000Z
 updatedAt: 2023-12-03T11:36:00.000Z
