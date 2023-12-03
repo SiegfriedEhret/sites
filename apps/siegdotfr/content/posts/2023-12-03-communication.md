@@ -4,8 +4,8 @@ slug: 2023-12-03-communication
 description: >-
   Premier jour du calendrier de l'avent des choses liées au boulot : la
   communication.
-date: 2023-12-02T23:00:00.000Z
-updatedAt: 2023-12-02T23:00:00.000Z
+date: 2023-12-03T11:36:00.000Z
+updatedAt: 2023-12-03T11:36:00.000Z
 image: /assets/2023-12-03-communication.png
 imageDescription: >-
   Un développeur qui essaie de survivre avec tous les messages qui l'entourent.
@@ -22,9 +22,9 @@ Pour les chats, la relation est différente : les gens attendent des autres qu'i
 
 Deux petits trucs pour être sauvé de l'envahissement de Teams :
 
-* Je n'ai pas de notifications, donc c'est moi qui décide quand je le consulte.
-* Quand la journée a besoin de focus, je mets des blocs partout dans mon agenda, j'apparais donc tout le temps occupé, donc on ne me dérange pas trop.
+- Je n'ai pas de notifications, donc c'est moi qui décide quand je le consulte.
+- Quand la journée a besoin de focus, je mets des blocs partout dans mon agenda, j'apparais donc tout le temps occupé, donc on ne me dérange pas trop.
 
 Et la visio ? C'est surtout utilisé comme support pour les réunions car nous ne sommes pas tous toujours au bureau. Je n'aime pas trop être appelé sans prévenir ou sans motif (sauf si c'est pour une petite pause thé).
 
-Petit cadeau pour la fin, je vous invite à convertir vos collègues au  [no hello](https://nohello.net/fr/).
+Petit cadeau pour la fin, je vous invite à convertir vos collègues au [no hello](https://nohello.net/fr/).
