@@ -4,8 +4,8 @@ slug: 2023-12-01-apprentissage
 description: >-
   Premier jour du calendrier de l'avent des choses liées au boulot :
   l'apprentissage.
-date: 2023-11-30T23:00:00.000Z
-updatedAt: 2023-11-30T23:00:00.000Z
+date: 2023-12-01T14:00:00.000Z
+updatedAt: 2023-12-01T14:00:00.000Z
 image: /assets/2023-12-01-apprentissage.png
 imageDescription: Un développeur sur le chemin de l'apprentissage. Générée avec SDXL 1.0.
 tags:
