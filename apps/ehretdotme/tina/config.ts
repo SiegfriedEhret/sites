@@ -53,12 +53,18 @@ export default defineConfig({
             name: "date",
             type: "datetime",
             required: true,
+            ui: {
+              timeFormat: "HH:mm",
+            },
           },
           {
             label: "Updated at",
             name: "updatedAt",
             type: "datetime",
             required: true,
+            ui: {
+              timeFormat: "HH:mm",
+            },
           },
           {
             type: "image",
