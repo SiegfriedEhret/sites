@@ -1,5 +1,5 @@
 ---
-title: "Communication (\U0001F3843/24)"
+title: "Communication (\U0001F384 3/24)"
 slug: 2023-12-03-communication
 description: >-
   Troisième jour du calendrier de l'avent des choses liées au boulot : la
@@ -22,8 +22,8 @@ Pour les chats, la relation est différente : les gens attendent des autres qu'i
 
 Deux petits trucs pour être sauvé de l'envahissement de Teams :
 
-- Je n'ai pas de notifications, donc c'est moi qui décide quand je le consulte.
-- Quand la journée a besoin de focus, je mets des blocs partout dans mon agenda, j'apparais donc tout le temps occupé, donc on ne me dérange pas trop.
+* Je n'ai pas de notifications, donc c'est moi qui décide quand je le consulte.
+* Quand la journée a besoin de focus, je mets des blocs partout dans mon agenda, j'apparais donc tout le temps occupé, donc on ne me dérange pas trop.
 
 Et la visio ? C'est surtout utilisé comme support pour les réunions car nous ne sommes pas tous toujours au bureau. Je n'aime pas trop être appelé sans prévenir ou sans motif (sauf si c'est pour une petite pause thé).
 
