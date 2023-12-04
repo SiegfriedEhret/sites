@@ -11,7 +11,7 @@ imageDescription: >-
   Un développeur qui fait une pause pour admirer la culture qui s'étale devant
   lui. Générée avec SDXL 1.0.
 tags:
-  - 2023-12-04-culture
+  - avent-2023
 ---
 
 J'ai pu observer plusieurs entreprises, en y étant employé ou en y effectuant une mission. Toutes les entreprises cherchent à avoir une « culture », un ensemble de valeurs, de pratiques, de règles communes aux employés, à tous les niveaux et d'être reconnue, d'être unique.
