@@ -29,7 +29,7 @@ const items = [
   .sort((a, b) => b.pubDate.localeCompare(a.pubDate))
   .slice(0, 10);
 
-export function get(context) {
+export function GET(context) {
   return rss({
     title: "Je m'appelle Siegfried. Je suis développeur.",
     description: "Ceci est mon site personnel.",
