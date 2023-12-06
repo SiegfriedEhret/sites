@@ -1,5 +1,5 @@
 ---
-title: "Engagement (\U0001F384 5/24)"
+title: "Engagement (\U0001F384 6/24)"
 slug: 2023-12-06-engagement
 description: >-
   Sixième jour du calendrier de l'avent des choses liées au boulot :
