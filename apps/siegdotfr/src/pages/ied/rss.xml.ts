@@ -20,7 +20,7 @@ const items = [
     pubDate: entry.fields.publicationDate,
   })),
   ...entriesFromRepository.map((entry) => ({
-    link: `https://sieg.fr/ied/${entry.slug}`,
+    link: `https://sieg.fr/ied/${entry.frontmatter.slug}`,
     title: entry.frontmatter.title,
     description: entry.frontmatter.description,
     pubDate: entry.frontmatter.date,
