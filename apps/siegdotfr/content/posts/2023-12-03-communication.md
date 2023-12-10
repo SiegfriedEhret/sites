@@ -1,5 +1,5 @@
 ---
-title: "Communication (\U0001F384 3/24)"
+title: "Communication (\U0001F3843/24)"
 slug: 2023-12-03-communication
 description: >-
   Troisième jour du calendrier de l'avent des choses liées au boulot : la

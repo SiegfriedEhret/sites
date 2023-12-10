@@ -1,5 +1,5 @@
 ---
-title: "Évolution (\U0001F384 7/24)"
+title: "Évolution (\U0001F3847/24)"
 slug: 2023-12-07-evolution
 description: >-
   Septième jour du calendrier de l'avent des choses liées au boulot :

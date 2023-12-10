@@ -1,5 +1,5 @@
 ---
-title: "Emplois fictifs (\U0001F384 5/24)"
+title: "Emplois fictifs (\U0001F3845/24)"
 slug: 2023-12-05-emplois-fictifs
 description: >-
   Cinquième jour du calendrier de l'avent des choses liées au boulot : les

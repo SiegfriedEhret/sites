@@ -1,5 +1,5 @@
 ---
-title: "Artisanat (\U0001F384 2/24)"
+title: "Artisanat (\U0001F3842/24)"
 slug: 2023-12-02-artisanat
 description: >-
   Deuxième jour du calendrier de l'avent des choses liées au boulot :
