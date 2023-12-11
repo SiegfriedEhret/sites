@@ -13,25 +13,23 @@ const entriesFromContentful = await contentfulClient.getEntries<Post>({
 });
 const entriesFromRepository = await Astro.glob(`../../../content/posts/*.md`);
 
-const posts = [
-  ...entriesFromContentful.items.map((item) => {
-    const { title, publicationDate, description, slug } = item.fields;
-    return {
-      title,
-      slug,
-      description,
-      date: formatDate(publicationDate),
-    };
-  }),
-  ...entriesFromRepository
-    .map((item) => ({
-      title: item.frontmatter.title,
-      slug: item.frontmatter.slug,
-      description: item.frontmatter.description,
-      date: formatDate(item.frontmatter.date),
-    }))
-    .slice(0, 10),
-]
+const contentfulPosts = entriesFromContentful.items.map((item) => {
+  const { title, publicationDate, description, slug } = item.fields;
+  return {
+    title,
+    slug,
+    description,
+    date: formatDate(publicationDate),
+  };
+});
+const localPosts = entriesFromRepository.map((item) => ({
+  title: item.frontmatter.title,
+  slug: item.frontmatter.slug,
+  description: item.frontmatter.description,
+  date: formatDate(item.frontmatter.date),
+}));
+
+const posts = [...contentfulPosts, ...localPosts]
   .sort((a, b) => b.date.localeCompare(a.date))
   .slice(0, 10);
 ---
