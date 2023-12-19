@@ -18,7 +18,7 @@ I use [Contentful](https://www.contentful.com/) to host the content of my websit
 
 I bumped into [this article](https://blog.cassidoo.co/post/trying-tinacms/) about [TinaCMS](https://tina.io/) and decided to try it. I am hyped as a llama.
 
-Let's see how it goes, if you read this article it means that my website has not exploded in the process.
+Let’s see how it goes, if you read this article it means that my website has not exploded in the process.
 
 Also, I will progressively move back the content from Contentful to the repository so I am quite convinced that I will break my RSS feed. Again.
 

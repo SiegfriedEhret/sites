@@ -1,7 +1,7 @@
 ---
 title: Survivre avec Python épisode 42
 slug: python-42
-description: Ou comment Docker m'a sauvé
+description: Ou comment Docker m’a sauvé
 date: 2023-10-25T22:00:00.000Z
 updatedAt: 2023-10-25T22:00:00.000Z
 image: /assets/python-whale.png
@@ -13,15 +13,15 @@ tags:
   - python
 ---
 
-Je dis épisode 42 mais j'ai évidemment sauté les autres... Tant de choses à dire sur le monde Python, même le monde JavaScript me semble plus sain, c'est dire !
+Je dis épisode 42 mais j’ai évidemment sauté les autres... Tant de choses à dire sur le monde Python, même le monde JavaScript me semble plus sain, c’est dire !
 
 Déjà, pourquoi utiliser Python ? Au boulot nous utilisons [Airflow](https://airflow.apache.org/) (la version Google Cloud appelée [Cloud Composer](https://cloud.google.com/composer)) et ce langage est donc inévitable.
 
-Composer utilise à ce jour Python 3.8.12 (voir [ici](https://cloud.google.com/composer/docs/concepts/versioning/composer-versions) pour les détails), qui n'est évidemment pas celle installée sur ma machine.
+Composer utilise à ce jour Python 3.8.12 (voir [ici](https://cloud.google.com/composer/docs/concepts/versioning/composer-versions) pour les détails), qui n’est évidemment pas celle installée sur ma machine.
 
 Bref, dès que je veux faire quelque chose ça explose.
 
-Et donc, Docker ! Avec ça, je peux avoir une version spécifique sans avoir à l'installer réellement et monter mon dossier pour utiliser la version spécifique et les outils sur mon code:
+Et donc, Docker ! Avec ça, je peux avoir une version spécifique sans avoir à l’installer réellement et monter mon dossier pour utiliser la version spécifique et les outils sur mon code:
 
 ```dockerfile
 FROM python: 3.8 as installer
@@ -53,7 +53,7 @@ CMD["make", "format"]
 
 ```
 
-Accompagné d'un petit Makefile:
+Accompagné d’un petit Makefile:
 
 ```shell
 build-docker-linter: ## Build linter image
@@ -79,6 +79,6 @@ format-docker: ## Format with docker
 
 Voilà !
 
-Je n'ai plus qu'à lancer make lint-docker ou make format-docker et je suis sauvé !
+Je n’ai plus qu’à lancer make lint-docker ou make format-docker et je suis sauvé !
 
-Notons qu'avec PyCharm il me semble qu'on peut utiliser Python avec Docker pour faire des trucs mais je n'ai pas encore essayé.
+Notons qu’avec PyCharm il me semble qu’on peut utiliser Python avec Docker pour faire des trucs mais je n’ai pas encore essayé.
