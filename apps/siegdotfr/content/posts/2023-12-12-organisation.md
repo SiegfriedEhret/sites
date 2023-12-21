@@ -10,6 +10,8 @@ image: /assets/2023-12-12-organisation.png
 imageDescription: >-
   Le développeur tente de trouver son chemin dans la hiérarchie. Générée avec
   SDXL 1.0
+tags:
+  - avent-2023
 ---
 
 J’ai travaillé dans des boites où j’ai observé et participé à plusieurs types d’organisations. De la société de conseil avec une structure très plate qui fait des expériences holacratiques à la compagnie d’assurance dans laquelle on ne connait pas le nombre de couches hiérarchiques tellement il y en a, en passant par l’éditeur logiciel à structure faussement plate.
