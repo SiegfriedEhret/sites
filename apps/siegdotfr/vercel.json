@@ -3,6 +3,10 @@
     {
       "source": "/",
       "destination": "/ied"
+    },
+    {
+      "source": "/ied/2023-12-23-Urgence",
+      "destination": "/ied/2023-12-23-urgence"
     }
   ],
   "rewrites": [
