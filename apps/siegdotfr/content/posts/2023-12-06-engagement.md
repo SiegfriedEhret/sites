@@ -3,9 +3,9 @@ title: "Engagement (\U0001F3846/24)"
 slug: 2023-12-06-engagement
 description: >-
   Sixième jour du calendrier de l’avent des choses liées au boulot :
-  l’engagement
+  l’engagement.
 date: 2023-12-06T00:00:00.000Z
-updatedAt: 2023-12-06T00:00:00.000Z
+updatedAt: 2023-12-29T00:00:00.000Z
 image: /assets/2023-12-06-engagement.png
 imageDescription: >-
   Le développeur assiste à des gens bien trop engagés qui font semblant

@@ -7,6 +7,10 @@
     {
       "source": "/ied/2023-12-23-Urgence",
       "destination": "/ied/2023-12-23-urgence"
+    },
+    {
+      "source": "/ied/2023-12-12-organisation",
+      "destination": "/ied/2023-12-12-organisations"
     }
   ],
   "rewrites": [

@@ -1,11 +1,11 @@
 ---
-title: "Organisation (\U0001F38412/24)"
-slug: 2023-12-12-organisation
+title: "Organisations (\U0001F38412/24)"
+slug: 2023-12-12-organisations
 description: >-
   Douzième jour du calendrier de l’avent des choses liées au boulot : les
   organisations.
 date: 2023-12-12T00:00:00.000Z
-updatedAt: 2023-12-12T00:00:00.000Z
+updatedAt: 2023-12-29T00:00:00.000Z
 image: /assets/2023-12-12-organisation.png
 imageDescription: >-
   Le développeur tente de trouver son chemin dans la hiérarchie. Générée avec
