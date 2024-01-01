@@ -18,3 +18,6 @@ Disallow: /
 
 User-Agent: FacebookBot
 Disallow: /
+
+User-agent: LinkedInBot
+Allow: /
