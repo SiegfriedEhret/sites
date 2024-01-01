@@ -2,8 +2,8 @@
 title: To 2024 and beyond
 slug: to-2024-and-beyond
 description: It is that time again... A review of last year.
-date: 2024-01-01T00:00:00.000Z
-updatedAt: 2024-01-01T00:00:00.000Z
+date: 2024-01-01T10:00:00.000Z
+updatedAt: 2024-01-01T10:00:00.000Z
 image: /assets/3543543300_xl-1024-v0-9.png
 imageDescription: Generated using stable-diffusion-xl-1024-v0-9.
 tags:

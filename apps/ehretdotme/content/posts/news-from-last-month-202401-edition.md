@@ -2,8 +2,8 @@
 title: News from last month (2024/01 edition)
 slug: news-from-last-month-202401-edition
 description: A selection of links from last month.
-date: 2024-01-01T00:00:00.000Z
-updatedAt: 2024-01-01T00:00:00.000Z
+date: 2024-01-01T14:50:00.000Z
+updatedAt: 2024-01-01T14:50:00.000Z
 image: >-
   /assets/287110_A barbie doll is floating around tons of news.
   She_xl-1024-v1-0.png
