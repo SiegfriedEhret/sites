@@ -14,6 +14,8 @@ tags:
   - nflm
 ---
 
+Happy new year! My retrospective of last year is available [here](https://ehret.me/to-2024-and-beyond).
+
 ## Programming
 
 ### Web (HTML, CSS, JS, Design...)
