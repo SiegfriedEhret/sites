@@ -1,4 +1,5 @@
 import { defineConfig } from "tinacms";
+import { tinaCommonFields } from "@packages/utils/tina";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.VERCEL_GIT_COMMIT_REF || process.env.HEAD || "main";
@@ -29,65 +30,7 @@ export default defineConfig({
         label: "Posts",
         path: "src/content/posts",
         fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
-          },
-          {
-            label: "Slug",
-            name: "slug",
-            type: "string",
-            required: true,
-          },
-          {
-            label: "Description",
-            name: "description",
-            type: "string",
-            required: true,
-          },
-          {
-            label: "Published at",
-            name: "date",
-            type: "datetime",
-            required: true,
-            ui: {
-              utc: true,
-            },
-          },
-          {
-            label: "Updated at",
-            name: "updatedAt",
-            type: "datetime",
-            required: true,
-            ui: {
-              utc: true,
-            },
-          },
-          {
-            type: "image",
-            label: "Hero image",
-            name: "image",
-          },
-          {
-            label: "Image description",
-            name: "imageDescription",
-            type: "string",
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
-          },
-          {
-            label: "Tags",
-            name: "tags",
-            type: "string",
-            list: true,
-          },
+            ...tinaCommonFields
         ],
       },
     ],
