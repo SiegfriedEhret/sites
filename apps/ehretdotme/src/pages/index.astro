@@ -51,7 +51,7 @@ const posts = [...contentfulPosts, ...localPosts]
           posts.map((item) => (
             <section>
               <h3>
-                <a href={`/ied/${item.slug}`}>{item.title}</a>
+                <a href={`/${item.slug}`}>{item.title}</a>
               </h3>
               <div>
                 <time datetime={item.date}>{formatDate(item.date)}</time>
