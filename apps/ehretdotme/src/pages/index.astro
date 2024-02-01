@@ -45,16 +45,22 @@ const posts = [...contentfulPosts, ...localPosts]
     <p>Welcome to my website!</p>
 
     <section>
-      <h2>Latest notes.</h2>
-      <ul>
+      <h2>Get them while they're hot, here are the latest publications.</h2>
+      <nav>
         {
           posts.map((item) => (
-            <li>
-              <a href={`/${item.slug}`}>{item.title}</a>
-            </li>
+            <section>
+              <h3>
+                <a href={`/ied/${item.slug}`}>{item.title}</a>
+              </h3>
+              <div>
+                <time datetime={item.date}>{formatDate(item.date)}</time>
+              </div>
+              <p>{item.description}</p>
+            </section>
           ))
         }
-      </ul>
+      </nav>
       <a href="/notes">All notes.</a>
     </section>
 
@@ -70,3 +76,13 @@ const posts = [...contentfulPosts, ...localPosts]
     </section>
   </article>
 </Layout>
+
+<style>
+  section {
+    margin: 1rem 0;
+  }
+
+  section > * {
+    margin: 0;
+  }
+</style>
