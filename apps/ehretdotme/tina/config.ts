@@ -29,9 +29,7 @@ export default defineConfig({
         name: "post",
         label: "Posts",
         path: "src/content/posts",
-        fields: [
-            ...tinaCommonFields
-        ],
+        fields: [...tinaCommonFields],
       },
     ],
   },
