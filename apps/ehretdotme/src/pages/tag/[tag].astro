@@ -30,16 +30,14 @@ const { tag } = Astro.props;
 const { tag: currentTag } = Astro.params;
 
 let sortedPosts = tag.sort(
-  (a, b) =>
-    new Date(b.frontmatter.date).valueOf() -
-    new Date(a.frontmatter.date).valueOf(),
+  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
 );
 ---
 
 <Layout>
   <h1>Posts tagged with "{currentTag}"</h1>
   {
-    sortedPosts.map(({ frontmatter: { description, title, slug, date } }) => (
+    sortedPosts.map(({ data: { description, title, slug, date } }) => (
       <div class="post">
         <a href={`/${slug}`}>{title}</a>
         <>
