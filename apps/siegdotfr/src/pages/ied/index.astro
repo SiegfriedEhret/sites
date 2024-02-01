@@ -11,7 +11,17 @@ const posts = (await getCollection("posts")).map((item) => ({
   type: "post",
 }));
 
-const items = [...posts]
+const badidon = (await getCollection("badidon")).map((item) => ({
+  title: item.data.title,
+  slug: item.slug,
+  description: item.data.description,
+  image: item.data.image,
+  date: formatDate(item.data.date),
+  tags: item.data.tags,
+  type: "badidon",
+}));
+
+const items = [...posts, ...badidon]
   .sort((a, b) => b.date.localeCompare(a.date))
   .slice(0, 10);
 ---
@@ -49,6 +59,7 @@ const items = [...posts]
         }
       </nav>
       <a href="/ied/notes">Toutes les notes.</a>
+      <a href="/ied/badidon">Tous les badidons.</a>
     </section>
   </article>
 </Layout>
