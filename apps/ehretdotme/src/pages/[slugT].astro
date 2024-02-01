@@ -7,7 +7,6 @@ import Layout from "../layouts/Layout.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
-
   return posts.map((post) => {
     return {
       params: { slugT: post.slug },
@@ -18,9 +17,8 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 
-const {
-  data: { title, date, updatedAt, description, image, imageDescription, tags },
-} = post;
+const { title, date, updatedAt, description, image, imageDescription, tags } =
+  post.data;
 const { Content, headings } = await post.render();
 ---
 
