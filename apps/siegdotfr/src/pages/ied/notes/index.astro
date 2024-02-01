@@ -1,4 +1,5 @@
 ---
+import { getCollection } from "astro:content";
 import { contentfulClient } from "../../../lib/contentful";
 import type { Post } from "@packages/utils/types/posts";
 import Layout from "../../../layouts/Layout.astro";
@@ -11,9 +12,7 @@ const entriesFromContentful = await contentfulClient.getEntries<Post>({
   order: "-fields.publicationDate",
   select: "fields.title,fields.slug,fields.publicationDate,fields.description",
 });
-const entriesFromRepository = await Astro.glob(
-  `../../../../content/posts/*.md`,
-);
+const entriesFromRepository = await getCollection("posts");
 
 const posts = [
   ...entriesFromContentful.items.map((item) => {
@@ -26,10 +25,10 @@ const posts = [
     };
   }),
   ...entriesFromRepository.map((item) => ({
-    title: item.frontmatter.title,
-    slug: item.frontmatter.slug,
-    description: item.frontmatter.description,
-    date: formatDate(item.frontmatter.date),
+    title: item.data.title,
+    slug: item.slug,
+    description: item.data.description,
+    date: formatDate(item.data.date),
   })),
 ].sort((a, b) => b.date.localeCompare(a.date));
 ---
@@ -99,6 +98,9 @@ const posts = [
     }
   }
 
+  section[data-year="2024"]::before {
+    content: "2024";
+  }
   section[data-year="2023"]::before {
     content: "2023";
   }
@@ -139,6 +141,7 @@ const posts = [
     content: "2011";
   }
 
+  section[data-year="2024"] + section[data-year="2024"]::before,
   section[data-year="2023"] + section[data-year="2023"]::before,
   section[data-year="2022"] + section[data-year="2022"]::before,
   section[data-year="2021"] + section[data-year="2021"]::before,

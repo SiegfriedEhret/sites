@@ -1,32 +1,16 @@
-import type { Post } from "@packages/utils/types/posts";
-import { contentfulClient } from "../../lib/contentful";
 import rss from "@astrojs/rss";
+import { getCollection } from "astro:content";
 
-const entriesFromContentful = await contentfulClient.getEntries<Post>({
-  content_type: "blogPost",
-  limit: 10,
-  "fields.language": "fr",
-  order: "-fields.publicationDate",
-});
-const entriesFromRepository = Object.values(
-  import.meta.glob("../../../content/posts/*.md", { eager: true }),
-);
-
-const items = [
-  ...entriesFromContentful.items.map((entry) => ({
-    link: `https://sieg.fr/ied/${entry.fields.slug}`,
-    title: entry.fields.title,
-    description: entry.fields.description,
-    pubDate: entry.fields.publicationDate,
-  })),
-  ...entriesFromRepository.map((entry) => ({
-    link: `https://sieg.fr/ied/${entry.frontmatter.slug}`,
-    title: entry.frontmatter.title,
-    description: entry.frontmatter.description,
-    pubDate: entry.frontmatter.date,
-  })),
-]
-  .sort((a, b) => b.pubDate.localeCompare(a.pubDate))
+const items = (await getCollection("posts"))
+  .map((entry) => ({
+    link: `https://sieg.fr/ied/${entry.slug}`,
+    title: entry.data.title,
+    description: entry.data.description,
+    pubDate: entry.data.date,
+  }))
+  .sort((a, b) =>
+    b.pubDate.toISOString().localeCompare(a.pubDate.toISOString()),
+  )
   .slice(0, 10);
 
 export function GET(context) {

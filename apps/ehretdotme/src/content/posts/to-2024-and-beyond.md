@@ -1,6 +1,5 @@
 ---
 title: To 2024 and beyond
-slug: to-2024-and-beyond
 description: It is that time again... A review of last year.
 date: 2024-01-01T10:00:00.000Z
 updatedAt: 2024-01-01T10:00:00.000Z
@@ -32,8 +31,8 @@ Ayako (I am her husband) was pregnant and we learnt in June that nothing was the
 
 On top of that, and unrelated, I discovered 2 things regarding family members:
 
-* They are just people
-* It is ok to cut ties
+- They are just people
+- It is ok to cut ties
 
 On the nerdy side, I changed (again) the tools I use for my websites, I added some details at [beulogue v4](https://ehret.me/beulogue-v4), and more recently trying to bring back content to the repository, as I described in [Tina 🦙](https://ehret.me/tina).
 
@@ -73,20 +72,20 @@ I have a [Rate Your Music account](https://rateyourmusic.com/list/SiegfriedEhre
 
 My top albums of the year (ordered by release date, not preference):
 
-* [Dogsbody by Model/Actriz (Album, Noise Rock)](https://rateyourmusic.com/release/album/model_actriz/dogsbody/)
-* [UGLY by slowthai (Album, Post-Punk)](https://rateyourmusic.com/release/album/slowthai/ugly/)
-* [10,000 gecs by 100 gecs (Album, Alternative Rock)](https://rateyourmusic.com/release/album/100-gecs/10_000-gecs-3/)
-* [Scaring the Hoes by JPEGMAFIA x Danny Brown (Album, Experimental Hip Hop)](https://rateyourmusic.com/release/album/jpegmafia-x-danny-brown/scaring-the-hoes/)
-* [93696 by Liturgy (Album, Avant-Garde Metal)](https://rateyourmusic.com/release/album/liturgy/93696/)
-* [Maps by billy woods & Kenny Segal (Album, Abstract Hip Hop)](https://rateyourmusic.com/release/album/billy-woods-kenny-segal/maps/)
-* [Scaring the Hoes: DLC Pack by JPEGMAFIA x Danny Brown (EP, Hardcore Hip Hop)](https://rateyourmusic.com/release/ep/jpegmafia-x-danny-brown/scaring-the-hoes-dlc-pack/)
-* [Struggler by Genesis Owusu (Album, Post-Punk Revival)](https://rateyourmusic.com/release/album/genesis-owusu/struggler/)
-* [HELLMODE by Jeff Rosenstock (Album, Indie Rock)](https://rateyourmusic.com/release/album/jeff-rosenstock/hellmode/)
-* [We Buy Diabetic Test Strips by Armand Hammer (Album, Experimental Hip Hop)](https://rateyourmusic.com/release/album/armand-hammer/we-buy-diabetic-test-strips/)
-* [INSAINT by 春ねむり \[Haru Nemuri\] (EP, J-Rock)](https://rateyourmusic.com/release/ep/%E6%98%A5%E3%81%AD%E3%82%80%E3%82%8A/insaint/)
-* [Integrated Tech Solutions by Aesop Rock (Album, Abstract Hip Hop)](https://rateyourmusic.com/release/album/aesop-rock/integrated-tech-solutions/) (my favorite album of the year!)
-* [14K Figaro by Wiki & Tony Seltzer (Album, East Coast Hip Hop)](https://rateyourmusic.com/release/album/wiki-tony-seltzer/14k-figaro/)
-* [The Rime of Memory by Panopticon (Album, Atmospheric Black Metal)](https://rateyourmusic.com/release/album/panopticon/the-rime-of-memory/)
+- [Dogsbody by Model/Actriz (Album, Noise Rock)](https://rateyourmusic.com/release/album/model_actriz/dogsbody/)
+- [UGLY by slowthai (Album, Post-Punk)](https://rateyourmusic.com/release/album/slowthai/ugly/)
+- [10,000 gecs by 100 gecs (Album, Alternative Rock)](https://rateyourmusic.com/release/album/100-gecs/10_000-gecs-3/)
+- [Scaring the Hoes by JPEGMAFIA x Danny Brown (Album, Experimental Hip Hop)](https://rateyourmusic.com/release/album/jpegmafia-x-danny-brown/scaring-the-hoes/)
+- [93696 by Liturgy (Album, Avant-Garde Metal)](https://rateyourmusic.com/release/album/liturgy/93696/)
+- [Maps by billy woods & Kenny Segal (Album, Abstract Hip Hop)](https://rateyourmusic.com/release/album/billy-woods-kenny-segal/maps/)
+- [Scaring the Hoes: DLC Pack by JPEGMAFIA x Danny Brown (EP, Hardcore Hip Hop)](https://rateyourmusic.com/release/ep/jpegmafia-x-danny-brown/scaring-the-hoes-dlc-pack/)
+- [Struggler by Genesis Owusu (Album, Post-Punk Revival)](https://rateyourmusic.com/release/album/genesis-owusu/struggler/)
+- [HELLMODE by Jeff Rosenstock (Album, Indie Rock)](https://rateyourmusic.com/release/album/jeff-rosenstock/hellmode/)
+- [We Buy Diabetic Test Strips by Armand Hammer (Album, Experimental Hip Hop)](https://rateyourmusic.com/release/album/armand-hammer/we-buy-diabetic-test-strips/)
+- [INSAINT by 春ねむり \[Haru Nemuri\] (EP, J-Rock)](https://rateyourmusic.com/release/ep/%E6%98%A5%E3%81%AD%E3%82%80%E3%82%8A/insaint/)
+- [Integrated Tech Solutions by Aesop Rock (Album, Abstract Hip Hop)](https://rateyourmusic.com/release/album/aesop-rock/integrated-tech-solutions/) (my favorite album of the year!)
+- [14K Figaro by Wiki & Tony Seltzer (Album, East Coast Hip Hop)](https://rateyourmusic.com/release/album/wiki-tony-seltzer/14k-figaro/)
+- [The Rime of Memory by Panopticon (Album, Atmospheric Black Metal)](https://rateyourmusic.com/release/album/panopticon/the-rime-of-memory/)
 
 The song of the year is [Pomme de reinette et pomme d’api - YouTube](https://www.youtube.com/watch?v=ZFc1HR8zghY), my daughter loves it.
 
@@ -96,21 +95,21 @@ I have a [letterboxd account](https://letterboxd.com/siegfriedehret/)
 
 I did not watch many movies this year, here are some nice ones:
 
-* [Lunana: A Yak in the Classroom (2019)](https://letterboxd.com/film/lunana-a-yak-in-the-classroom/)
-* [Puss in Boots: The Last Wish (2022)](https://letterboxd.com/film/puss-in-boots-the-last-wish/)
-* [Beyond the Infinite Two Minutes (2020)](https://letterboxd.com/film/beyond-the-infinite-two-minutes/)
-* [Woman (2019)](https://letterboxd.com/film/woman-2019/)
-* [John Wick: Chapter 4 (2023)](https://letterboxd.com/film/john-wick-chapter-4/)
-* [Barbie (2023)](https://letterboxd.com/film/barbie/)
-* [Rear Window (1954)](https://letterboxd.com/film/rear-window/)
+- [Lunana: A Yak in the Classroom (2019)](https://letterboxd.com/film/lunana-a-yak-in-the-classroom/)
+- [Puss in Boots: The Last Wish (2022)](https://letterboxd.com/film/puss-in-boots-the-last-wish/)
+- [Beyond the Infinite Two Minutes (2020)](https://letterboxd.com/film/beyond-the-infinite-two-minutes/)
+- [Woman (2019)](https://letterboxd.com/film/woman-2019/)
+- [John Wick: Chapter 4 (2023)](https://letterboxd.com/film/john-wick-chapter-4/)
+- [Barbie (2023)](https://letterboxd.com/film/barbie/)
+- [Rear Window (1954)](https://letterboxd.com/film/rear-window/)
 
 I have not yet finished Oppenheimer, this is soooo long.
 
 I still found time to watch some "old" tv shows:
 
-* [Community (TV series) - Wikipedia](https://en.wikipedia.org/wiki/Community_\(TV_series\))
-* [Fringe (TV series) - Wikipedia](https://en.wikipedia.org/wiki/Fringe_\(TV_series\))
-* [House (TV series) - Wikipedia](https://en.wikipedia.org/wiki/House_\(TV_series\)) (ongoing)
+- [Community (TV series) - Wikipedia](<https://en.wikipedia.org/wiki/Community_(TV_series)>)
+- [Fringe (TV series) - Wikipedia](<https://en.wikipedia.org/wiki/Fringe_(TV_series)>)
+- [House (TV series) - Wikipedia](<https://en.wikipedia.org/wiki/House_(TV_series)>) (ongoing)
 
 ### Books
 

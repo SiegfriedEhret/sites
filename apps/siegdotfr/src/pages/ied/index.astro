@@ -1,35 +1,27 @@
 ---
-import { contentfulClient } from "../../lib/contentful";
-import type { Post } from "@packages/utils/types/posts";
+import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import { formatDate } from "@packages/utils/date";
 
-const entriesFromContentful = await contentfulClient.getEntries<Post>({
-  content_type: "blogPost",
-  limit: 10,
-  "fields.language": "fr",
-  order: "-fields.publicationDate",
-  select: "fields.title,fields.slug,fields.publicationDate,fields.description",
-});
-const entriesFromRepository = await Astro.glob(`../../../content/posts/*.md`);
-
-const contentfulPosts = entriesFromContentful.items.map((item) => {
-  const { title, publicationDate, description, slug } = item.fields;
-  return {
-    title,
-    slug,
-    description,
-    date: formatDate(publicationDate),
-  };
-});
-const localPosts = entriesFromRepository.map((item) => ({
-  title: item.frontmatter.title,
-  slug: item.frontmatter.slug,
-  description: item.frontmatter.description,
-  date: formatDate(item.frontmatter.date),
+const posts = (await getCollection("posts")).map((item) => ({
+  title: item.data.title,
+  slug: item.slug,
+  description: item.data.description,
+  date: formatDate(item.data.date),
+  type: "post",
 }));
 
-const posts = [...contentfulPosts, ...localPosts]
+const badidon = (await getCollection("badidon")).map((item) => ({
+  title: item.data.title,
+  slug: item.slug,
+  description: item.data.description,
+  image: item.data.image,
+  date: formatDate(item.data.date),
+  tags: item.data.tags,
+  type: "badidon",
+}));
+
+const items = [...posts, ...badidon]
   .sort((a, b) => b.date.localeCompare(a.date))
   .slice(0, 10);
 ---
@@ -41,17 +33,48 @@ const posts = [...contentfulPosts, ...localPosts]
     <p>Bienvenue sur mon site !</p>
 
     <section>
-      <h2>Dernières notes.</h2>
-      <ul>
+      <h2>C'est tout chaud, voici les dernières publications.</h2>
+      <nav>
         {
-          posts.map((item) => (
-            <li>
-              <a href={`/ied/${item.slug}`}>{item.title}</a>
-            </li>
+          items.map((item) => (
+            <section>
+              <h3>
+                {item.type === "post" && (
+                  <a href={`/ied/${item.slug}`}>{item.title}</a>
+                )}
+
+                {item.type === "badidon" && (
+                  <a href={`/ied/badidon/${item.slug}`}>
+                    <span>🎙️</span>
+                    <span>{item.title}</span>
+                  </a>
+                )}
+              </h3>
+              <div>
+                <time datetime={item.date}>{formatDate(item.date)}</time>
+              </div>
+              <p>{item.description}</p>
+            </section>
           ))
         }
-      </ul>
-      <a href="/ied/notes">Toutes mes notes.</a>
+      </nav>
+      <a href="/ied/notes">Toutes les notes.</a>
+      <a href="/ied/badidon">Tous les badidons.</a>
     </section>
   </article>
 </Layout>
+
+<style>
+  section {
+    margin: 1rem 0;
+  }
+
+  section > * {
+    margin: 0;
+  }
+
+  a {
+    display: inline-flex;
+    gap: var(--base);
+  }
+</style>

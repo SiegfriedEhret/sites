@@ -1,0 +1,99 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import { formatDate } from "@packages/utils/date";
+import Toc from "@packages/ui/Toc.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { BadidonSchema } from "../../../content/config";
+import Player from "../../../components/Player.astro";
+import { Image } from "astro:assets";
+
+interface Props {
+  entry: CollectionEntry<"badidon">;
+}
+
+export async function getStaticPaths() {
+  const badidonEntries = await getCollection("badidon");
+  return badidonEntries.map((entry, i) => ({
+    params: { slugB: entry.slug },
+    props: { entry, episodeNumber: i++ },
+  }));
+}
+
+const { entry, episodeNumber } = Astro.props;
+const episode: BadidonSchema = entry.data;
+const { title, description, audioUrl, date, updatedAt, duration, image, tags } =
+  episode;
+
+const { Content, headings } = await entry.render();
+---
+
+<Layout title={title} description={description} metaImage={image}>
+  <article>
+    <header>
+      <div class="image">
+        {
+          image ? (
+            <Image src={image} alt={title} width="100" height="100" />
+          ) : (
+            <Image
+              src="/images/sieg.jpg"
+              alt={title}
+              width="100"
+              height="100"
+            />
+          )
+        }
+      </div>
+      <div>
+        <h1>{title}</h1>
+      </div>
+    </header>
+
+    <Player url={audioUrl} />
+
+    {headings && <Toc headings={headings} />}
+
+    <Content />
+
+    <hr />
+
+    <p class="date">
+      Publié le {formatDate(date, "fr")}, dernière modification le {
+        formatDate(updatedAt, "fr")
+      }.
+    </p>
+
+    {
+      tags && tags.length > 0 && (
+        <p>
+          <span>Tags:</span>
+          <span>
+            {" "}
+            {tags.map((t) => (
+              <a href={`/ied/tag/${t}`}>#{t}</a>
+            ))}
+          </span>
+        </p>
+      )
+    }
+  </article>
+</Layout>
+
+<style>
+  article {
+    position: relative;
+  }
+  header {
+    display: flex;
+    gap: var(--babase);
+  }
+  .image {
+    max-width: 100px;
+  }
+  h1 {
+    color: var(--wevet);
+    margin: 0 0 var(--babase);
+    padding: var(--base) var(--babase);
+    background: var(--prime);
+  }
+</style>

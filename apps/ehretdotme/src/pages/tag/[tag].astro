@@ -1,9 +1,10 @@
 ---
 import { formatDate } from "@packages/utils/date";
 import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await Astro.glob(`../../../content/posts/*.md`);
+  const posts = await getCollection("posts");
   const tags = posts.reduce((allTags, post) => {
     const postTags = post.frontmatter.tags;
     if (postTags) {

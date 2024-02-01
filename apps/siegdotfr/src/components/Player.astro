@@ -1,0 +1,23 @@
+---
+const { url } = Astro.props;
+---
+
+<figure>
+  <figcaption>Écouter l'épisode</figcaption>
+  <audio controls src={url}></audio>
+  <div>
+    <a href={url}>Télécharger</a>
+  </div>
+</figure>
+
+<style>
+  figure {
+    display: flex;
+    flex-direction: column;
+    gap: var(--base);
+  }
+
+  audio {
+    width: 100%;
+  }
+</style>

@@ -1,6 +1,5 @@
 ---
 title: News from last month (2023/11 edition)
-slug: news-from-last-month-202311-edition
 description: A selection of links from last month.
 date: 2023-10-31T23:00:00.000Z
 updatedAt: 2023-10-31T23:00:00.000Z
