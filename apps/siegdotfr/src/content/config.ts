@@ -4,6 +4,8 @@ const badidonSchema = z.object({
   title: z.string(),
   description: z.string(),
   audioUrl: z.string(),
+  audioSize: z.number(),
+  audioDuration: z.number(),
   date: z.coerce.date().optional(),
   updatedAt: z.coerce.date().optional(),
   image: z.string().optional(),

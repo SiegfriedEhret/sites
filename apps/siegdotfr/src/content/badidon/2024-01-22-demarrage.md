@@ -1,14 +1,28 @@
 ---
-title: Demo Episode
-description: Lorem Ipsum
-audioUrl: https://ia800505.us.archive.org/15/items/astropod/1%20-%20Trailer%20with%20BG%20%28enhanced%29.ogg
-image: "https://sieg.fr/images/sieg.jpg"
+audioSize: 567000
+audioDuration: 31
+title: Le tout premier épisode du podcast !
+description: 'Badidon, c''est parti ! Découvrez le premier épisode de notre podcast.'
 date: 2024-01-22T14:00:00.000Z
 updatedAt: 2024-01-22T14:00:00.000Z
+image: /assets/2024-01-22-demarrage.png
 tags:
-  - badidev
+  - badidon
+audioUrl: 'https://badidon.s3.fr-par.scw.cloud/test.ogg'
 ---
 
-## Intro
+## Un podcast ?
 
-This is an episode demo of Astropod. Here you can add the description of your episode.
+Et oui ! Après des mois d'hésitation, nous nous lançons enfin.
+
+## Par qui ?
+
+Pour l'instant avec Ayako ou Siegfried, ou les deux. On espère pouvoir inviter des gens à l'occasion.
+
+## Badidon ?
+
+Un podcast qui fera dire « badidon ». Nous allons parler culture, musique, développement, France, Japon etc.
+
+## C'est disponible où ?
+
+Ce sera sur vos plateformes préférées, ou disponible sur le site [sieg.fr/ied/badidon](https://sieg.fr/ied/badidon)

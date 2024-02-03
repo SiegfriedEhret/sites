@@ -37,6 +37,18 @@ export default defineConfig({
             label: "Audio URL",
             required: true,
           },
+          {
+            type: "number",
+            name: "audioSize",
+            label: "Audio Size (bytes)",
+            required: true,
+          },
+          {
+            type: "number",
+            name: "audioDuration",
+            label: "Audio Duration (seconds)",
+            required: true,
+          }
         ],
       },
       {

@@ -6,6 +6,7 @@ import Layout from "../../../layouts/Layout.astro";
 import { BadidonSchema } from "../../../content/config";
 import Player from "../../../components/Player.astro";
 import { Image } from "astro:assets";
+import BadidonSubscribe from "../../../components/BadidonSubscribe.astro";
 
 interface Props {
   entry: CollectionEntry<"badidon">;
@@ -30,26 +31,13 @@ const { Content, headings } = await entry.render();
 <Layout title={title} description={description} metaImage={image}>
   <article>
     <header>
-      <div class="image">
-        {
-          image ? (
-            <Image src={image} alt={title} width="100" height="100" />
-          ) : (
-            <Image
-              src="/images/sieg.jpg"
-              alt={title}
-              width="100"
-              height="100"
-            />
-          )
-        }
-      </div>
+      <h1>{title}</h1>
       <div>
-        <h1>{title}</h1>
+        {description}
       </div>
     </header>
 
-    <Player url={audioUrl} />
+    <Player url={audioUrl} image={image} title={title} />
 
     {headings && <Toc headings={headings} />}
 
@@ -76,6 +64,8 @@ const { Content, headings } = await entry.render();
         </p>
       )
     }
+
+    <BadidonSubscribe/>
   </article>
 </Layout>
 
@@ -83,13 +73,7 @@ const { Content, headings } = await entry.render();
   article {
     position: relative;
   }
-  header {
-    display: flex;
-    gap: var(--babase);
-  }
-  .image {
-    max-width: 100px;
-  }
+
   h1 {
     color: var(--wevet);
     margin: 0 0 var(--babase);

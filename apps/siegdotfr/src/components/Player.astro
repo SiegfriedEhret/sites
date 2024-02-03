@@ -1,23 +1,159 @@
 ---
-const { url } = Astro.props;
+import {Image} from "astro:assets";
+const { url, image, title } = Astro.props;
+
+const id = `player-${crypto.randomUUID()}`;
 ---
 
-<figure>
-  <figcaption>Écouter l'épisode</figcaption>
-  <audio controls src={url}></audio>
-  <div>
-    <a href={url}>Télécharger</a>
+<div class="player" x-data="initPlayer()" :class="!clicked && 'show-button'">
+  <audio controls src={url} id={id} x-ref="audio" @timeupdate="updateTime()" ></audio>
+
+  <button class="toggle" @click="toggle">
+    <span x-show="playing" x-cloak>pause</span>
+    <span x-show="!playing">lire</span>
+  </button>
+
+  <Image class="cover" src={image} alt={`Illustration de l'épisode « ${title} »`} width="500" height="500" />
+
+  <div class="time">
+    <div x-text="currentTime"></div>
+    <div x-text="duration"></div>
   </div>
-</figure>
+  <input type="range" step="1" min="0" id={`range-${id}`}
+         x-ref="progress"
+         @change="setTime()">
+</div>
+
+<script define:vars={{id}}>
+  function pad(value) {
+    return value.toString().padStart(2, '0');
+  }
+
+  function convertSecondsToTime(seconds) {
+    // const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const remainingSeconds = seconds % 60;
+    // return `${pad(hours)}:${pad(minutes)}:${pad(remainingSeconds.toFixed(0))}`;
+    return `${pad(minutes)}:${pad(remainingSeconds.toFixed(0))}`;
+  }
+
+  const audio = document.getElementById(id);
+  const range = document.getElementById(`range-${id}`);
+
+  const obj = {
+    playing: false,
+    clicked: false,
+    currentTime: "00:00",
+    duration: "",
+    init() {
+      audio.addEventListener('loadedmetadata', () => {
+        this.duration = convertSecondsToTime(audio.duration);
+        range.setAttribute("max", audio.duration);
+      });
+    },
+    toggle() {
+      this.clicked = true;
+      if (this.playing) {
+        audio.pause();
+        this.playing = false;
+        console.log(this.currentTime)
+      } else {
+        audio.play();
+        this.playing = true;
+      }
+    },
+    setTime() {
+      this.$refs.audio.currentTime = this.$refs.progress.value;
+    },
+    updateTime() {
+      this.$refs.progress.value = this.$refs.audio.currentTime;
+      this.currentTime = convertSecondsToTime(audio.currentTime);
+    }
+  };
+
+  obj.init();
+
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('initPlayer', () => obj)
+  })
+</script>
 
 <style>
-  figure {
+  .player {
+    --the-width: calc(21rem - (2*var(--base)) - (2*3px)); /* player width - 2*padding - 2*borders */
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: var(--base);
+    max-width: 21rem;
+    margin: var(--babase) auto;
+    border: 3px solid var(--paean-black);
+    border-radius: var(--base);
+    padding: var(--base);
+    background: var(--imperial-purple);
+    color: var(--wevet);
+  }
+
+  .player:hover, .player.show-button {
+    .cover {
+      filter: blur(1px);
+    }
+
+    .toggle {
+      z-index: 2;
+    }
+  }
+
+  .cover {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    max-height: var(--the-width);
+    border-radius: calc(var(--base) - 2px);
+    z-index: 1;
+  }
+
+  .toggle {
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: var(--the-width);
+    border: 0;
+    outline: 0;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+    color: var(--wevet);
+
+    span {
+      background: var(--wevet);
+      color: var(--imperial-purple);
+      border-radius: var(--base);
+      width: 80px;
+      height: 80px;
+      display: grid;
+      place-content: center;
+      margin: 0 auto;
+    }
+  }
+
+  figure {
+    display: none;
   }
 
   audio {
+    display: none;
+  }
+
+  .time {
+    display: flex;
+    gap: var(--base);
+    justify-content: space-between;
     width: 100%;
+  }
+
+  .image img {
+    border-radius: var(--babase);
+    border: 2px solid var(--prime);
+    max-width: 100px;
   }
 </style>
