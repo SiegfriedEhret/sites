@@ -2,7 +2,6 @@ import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 
 export async function GET(context) {
-    const cover = `${context.site}/images/badidon.png`;
     const items = (await getCollection("badidon"))
         .map((entry, index) => {
             const episodeNumber = index + 1;
@@ -27,8 +26,8 @@ export async function GET(context) {
 
     const link = `${context.site}/ied/badidon.xml`;
     return rss({
-        title: "Je m'appelle Siegfried. Je suis développeur.",
-        description: "Ceci est mon site personnel.",
+        title: "Badidon.",
+        description: "Le podcast qui vous fait dire « badidon ». Par Ayako et Siegfried.",
         site: `${context.site}/ied`,
         items,
         xmlns: {
@@ -45,7 +44,7 @@ export async function GET(context) {
 <copyright>All rights reserved</copyright>
 <itunes:author>Siegfried Ehret</itunes:author>
 <itunes:image>${context.site}images/badidon-badidon.png</itunes:image>
-<itunes:summary>Le podcast qui vous fait dire « badidon ».</itunes:summary>
+<itunes:summary>Le podcast qui vous fait dire « badidon ». Par Ayako et Siegfried.</itunes:summary>
 <itunes:type>episodic</itunes:type>
 <itunes:explicit>false</itunes:explicit>
 <itunes:category text="Society &amp; Culture"></itunes:category>
