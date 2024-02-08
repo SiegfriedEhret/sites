@@ -1,6 +1,6 @@
 ---
-audioSize: 567000
-audioDuration: 31
+audioSize: 27506
+audioDuration: 3
 title: Le tout premier épisode du podcast !
 description: "Badidon, c'est parti ! Découvrez le premier épisode de notre podcast."
 date: 2024-01-22T14:00:00.000Z
