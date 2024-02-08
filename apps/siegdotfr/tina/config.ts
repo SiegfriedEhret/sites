@@ -48,7 +48,7 @@ export default defineConfig({
             name: "audioDuration",
             label: "Audio Duration (seconds)",
             required: true,
-          }
+          },
         ],
       },
       {

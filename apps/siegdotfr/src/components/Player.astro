@@ -1,32 +1,44 @@
 ---
-import {Image} from "astro:assets";
+import { Image } from "astro:assets";
 const { url, image, title } = Astro.props;
 
 const id = `player-${crypto.randomUUID()}`;
 ---
 
 <div class="player" x-data="initPlayer()" :class="!clicked && 'show-button'">
-  <audio controls src={url} id={id} x-ref="audio" @timeupdate="updateTime()" ></audio>
+  <audio controls src={url} id={id} x-ref="audio" @timeupdate="updateTime()"
+  ></audio>
 
   <button class="toggle" @click="toggle">
     <span x-show="playing" x-cloak>pause</span>
     <span x-show="!playing">lire</span>
   </button>
 
-  <Image class="cover" src={image} alt={`Illustration de l'épisode « ${title} »`} width="500" height="500" />
+  <Image
+    class="cover"
+    src={image}
+    alt={`Illustration de l'épisode « ${title} »`}
+    width="500"
+    height="500"
+  />
 
   <div class="time">
     <div x-text="currentTime"></div>
     <div x-text="duration"></div>
   </div>
-  <input type="range" step="1" min="0" id={`range-${id}`}
-         x-ref="progress"
-         @change="setTime()">
+  <input
+    type="range"
+    step="1"
+    min="0"
+    id={`range-${id}`}
+    x-ref="progress"
+    @change="setTime()"
+  />
 </div>
 
-<script define:vars={{id}}>
+<script define:vars={{ id }}>
   function pad(value) {
-    return value.toString().padStart(2, '0');
+    return value.toString().padStart(2, "0");
   }
 
   function convertSecondsToTime(seconds) {
@@ -46,7 +58,7 @@ const id = `player-${crypto.randomUUID()}`;
     currentTime: "00:00",
     duration: "",
     init() {
-      audio.addEventListener('loadedmetadata', () => {
+      audio.addEventListener("loadedmetadata", () => {
         this.duration = convertSecondsToTime(audio.duration);
         range.setAttribute("max", audio.duration);
       });
@@ -56,7 +68,7 @@ const id = `player-${crypto.randomUUID()}`;
       if (this.playing) {
         audio.pause();
         this.playing = false;
-        console.log(this.currentTime)
+        console.log(this.currentTime);
       } else {
         audio.play();
         this.playing = true;
@@ -68,19 +80,21 @@ const id = `player-${crypto.randomUUID()}`;
     updateTime() {
       this.$refs.progress.value = this.$refs.audio.currentTime;
       this.currentTime = convertSecondsToTime(audio.currentTime);
-    }
+    },
   };
 
   obj.init();
 
-  document.addEventListener('alpine:init', () => {
-    Alpine.data('initPlayer', () => obj)
-  })
+  document.addEventListener("alpine:init", () => {
+    Alpine.data("initPlayer", () => obj);
+  });
 </script>
 
 <style>
   .player {
-    --the-width: calc(21rem - (2*var(--base)) - (2*3px)); /* player width - 2*padding - 2*borders */
+    --the-width: calc(
+      21rem - (2 * var(--base)) - (2 * 3px)
+    ); /* player width - 2*padding - 2*borders */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -94,7 +108,8 @@ const id = `player-${crypto.randomUUID()}`;
     color: var(--wevet);
   }
 
-  .player:hover, .player.show-button {
+  .player:hover,
+  .player.show-button {
     .cover {
       filter: blur(1px);
     }
