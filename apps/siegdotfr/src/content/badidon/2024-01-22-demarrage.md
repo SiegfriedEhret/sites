@@ -2,13 +2,13 @@
 audioSize: 567000
 audioDuration: 31
 title: Le tout premier épisode du podcast !
-description: 'Badidon, c''est parti ! Découvrez le premier épisode de notre podcast.'
+description: "Badidon, c'est parti ! Découvrez le premier épisode de notre podcast."
 date: 2024-01-22T14:00:00.000Z
 updatedAt: 2024-01-22T14:00:00.000Z
 image: /assets/2024-01-22-demarrage.png
 tags:
   - badidon
-audioUrl: 'https://badidon.s3.fr-par.scw.cloud/test.ogg'
+audioUrl: "https://badidon.s3.fr-par.scw.cloud/test.mp3"
 ---
 
 ## Un podcast ?
