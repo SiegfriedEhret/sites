@@ -11,13 +11,13 @@
     "format": "prettier --write . --plugin=prettier-plugin-astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.4",
+    "@astrojs/rss": "^4.0.5",
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
-    "astro": "^4.2.8"
+    "astro": "^4.3.5"
   },
   "devDependencies": {
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.12.3"
   }
 }

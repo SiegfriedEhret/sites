@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.3.2",
-    "@astrojs/rss": "^4.0.4",
+    "@astrojs/rss": "^4.0.5",
     "@astrojs/ts-plugin": "^1.4.0",
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
@@ -21,13 +21,13 @@
     "@tinacms/cli": "^1.5.39",
     "@types/alpinejs": "^3.13.6",
     "alpinejs": "^3.13.5",
-    "astro": "^4.2.8",
+    "astro": "^4.3.5",
     "contentful": "^10.6.21",
     "highlight.js": "^11.9.0",
     "tinacms": "^1.5.28"
   },
   "devDependencies": {
-    "prettier": "^3.2.4",
+    "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.12.3"
   }
 }
