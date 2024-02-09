@@ -20,7 +20,7 @@ export async function GET(context) {
 <itunes:episode>${episodeNumber}</itunes:episode>
 <itunes:episodeType>false</itunes:episodeType>
 <itunes:duration>${entry.data.audioDuration}</itunes:duration>
-<itunes:image>${image}</itunes:image>
+<itunes:image href="${image}"></itunes:image>
 `,
       };
     })
@@ -49,7 +49,7 @@ export async function GET(context) {
 <author>Siegfried Ehret</author>
 <copyright>All rights reserved</copyright>
 <itunes:author>Siegfried Ehret</itunes:author>
-<itunes:image>${context.site}images/badidon-badidon.png</itunes:image>
+<itunes:image href="${context.site}images/badidon-badidon.jpg"></itunes:image>
 <itunes:summary>Le podcast qui vous fait dire « badidon ». Par Ayako et Siegfried.</itunes:summary>
 <itunes:type>episodic</itunes:type>
 <itunes:explicit>false</itunes:explicit>
