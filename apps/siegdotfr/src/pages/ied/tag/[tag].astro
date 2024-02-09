@@ -5,48 +5,50 @@ import Layout from "../../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
-  const tags = posts.reduce((allTags, post) => {
-    const postTags = post.data.tags;
-    if (postTags) {
-      postTags.forEach((tag) => {
-        if (!allTags[tag]) {
-          allTags[tag] = [];
-        }
-        allTags[tag].push(post);
-      });
-    }
-    return allTags;
-  }, {});
+  const badidon = await getCollection("badidon");
+  const items = [...posts, ...badidon];
+  const tags = [...new Set(items.flatMap((el) => el.data.tags))];
 
-  return Object.keys(tags).map((t) => {
+  return tags.map((t) => {
     return {
       params: { tag: t },
-      props: { tag: tags[t] },
+      props: {
+        tag: t,
+        posts: items.filter((el) => el.data.tags.includes(t)),
+      },
     };
   });
 }
 
-const { tag } = Astro.props;
-const { tag: currentTag } = Astro.params;
+const { tag, posts } = Astro.props;
 
-let sortedPosts = tag.sort(
+let sortedPosts = posts.sort(
   (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
 );
 ---
 
 <Layout>
-  <h1>Billets avec le label « {currentTag} »</h1>
+  <h1>Billets avec l'étiquette « {tag} »</h1>
   {
-    sortedPosts.map(({ data: { description, title, slug, date } }) => (
-      <div class="post">
-        <a href={`/ied/${slug}`}>{title}</a>
-        <>
-          <time datetime={date}>{formatDate(date)}</time>
-          <br />
-        </>
-        <span>{description}</span>
-      </div>
-    ))
+    sortedPosts.map(
+      ({ data: { description, title, date, audioUrl }, slug }) => (
+        <div class="post">
+          {audioUrl ? (
+            <a href={`/ied/badidon/${slug}`}>
+              <span>🎙️</span>
+              <span>{title}</span>
+            </a>
+          ) : (
+            <a href={`/ied/${slug}`}>{title}</a>
+          )}
+          <>
+            <time datetime={date}>{formatDate(date)}</time>
+            <br />
+          </>
+          <span>{description}</span>
+        </div>
+      ),
+    )
   }
 </Layout>
 
@@ -54,5 +56,10 @@ let sortedPosts = tag.sort(
   .post {
     display: flex;
     flex-direction: column;
+  }
+
+  a {
+    display: inline-flex;
+    gap: var(--base);
   }
 </style>

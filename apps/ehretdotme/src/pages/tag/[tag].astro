@@ -5,37 +5,28 @@ import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
-  const tags = posts.reduce((allTags, post) => {
-    const postTags = post.data.tags;
-    if (postTags) {
-      postTags.forEach((tag) => {
-        if (!allTags[tag]) {
-          allTags[tag] = [];
-        }
-        allTags[tag].push(post);
-      });
-    }
-    return allTags;
-  }, {});
+  const tags = [...new Set(posts.flatMap((el) => el.data.tags))];
 
-  return Object.keys(tags).map((t) => {
+  return tags.map((t) => {
     return {
       params: { tag: t },
-      props: { tag: tags[t] },
+      props: {
+        tag: t,
+        posts: posts.filter((el) => el.data.tags.includes(t)),
+      },
     };
   });
 }
 
-const { tag } = Astro.props;
-const { tag: currentTag } = Astro.params;
+const { tag, posts } = Astro.props;
 
-let sortedPosts = tag.sort(
+let sortedPosts = posts.sort(
   (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
 );
 ---
 
 <Layout>
-  <h1>Posts tagged with "{currentTag}"</h1>
+  <h1>Posts tagged with "{tag}"</h1>
   {
     sortedPosts.map(({ data: { description, title, slug, date } }) => (
       <div class="post">
