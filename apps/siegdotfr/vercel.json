@@ -11,6 +11,10 @@
     {
       "source": "/ied/2023-12-12-organisation",
       "destination": "/ied/2023-12-12-organisations"
+    },
+    {
+      "source": "/ied/badidon/2024-02-27-demarrage",
+      "destination": "/ied/badidon/2024-02-17-demarrage"
     }
   ],
   "rewrites": [
