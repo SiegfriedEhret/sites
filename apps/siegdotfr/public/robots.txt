@@ -6,6 +6,7 @@ Disallow: /
 
 User-agent: Googlebot
 Disallow: /
+Allow: /ied/badidon.xml
 
 User-agent: CCBot
 Disallow: /
