@@ -29,6 +29,8 @@ Ce sera sur vos plateformes préférées (on ajoutera les liens bientôt), ou di
 
 ## La musique
 
+C'est un morceau de [Jehan Alain](https://fr.wikipedia.org/wiki/Jehan_Alain) : JA 025 - Choral et variations - Mythologies japonaises, pour piano (1932).
+
 Elle est dispo [ici au format aiff](/Choral.aiff) ou [là au format wav](/Choral.wav). Merci à Laurent Terrenoire pour son aide.
 
 ## Contactez-nous !

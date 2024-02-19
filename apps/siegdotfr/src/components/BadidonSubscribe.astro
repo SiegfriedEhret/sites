@@ -1,66 +1,48 @@
 ---
+import Icon from "./Icon.astro";
 const url = `${Astro.site}ied/badidon.xml`;
+import IconRSS from "./IconRSS.astro";
+import IconApplePodcasts from "./IconApplePodcasts.astro";
+import IconSpotify from "./IconSpotify.astro";
+import IconYouTube from "./IconYouTube.astro";
+import IconOvercast from "./IconOvercast.astro";
 ---
 
-<a href={url}>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    id="RSSicon"
-    viewBox="0 0 8 8"
-    width="256"
-    height="256"
+<p>Le podcast est disponible sur :</p>
+
+<nav>
+  <Icon link={url} text="RSS">
+    <IconRSS />
+  </Icon>
+  <Icon
+    link="https://podcasts.apple.com/us/podcast/badidon/id1729729633"
+    text="Apple"
   >
-    <title>RSS feed icon</title>
-
-    <style type="text/css">
-      .button {
-        stroke: none;
-        fill: orange;
-      }
-      .symbol {
-        stroke: none;
-        fill: white;
-      }
-    </style>
-
-    <rect class="button" width="8" height="8" rx="1.5"></rect>
-    <circle class="symbol" cx="2" cy="6" r="1"></circle>
-    <path class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"
-    ></path>
-    <path class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"
-    ></path>
-  </svg>
-  <span>ajoutez le podcast à votre application préférée avec ce flux RSS !</span
+    <IconApplePodcasts />
+  </Icon>
+  <Icon link="https://overcast.fm/itunes1729729633" text="Overcast">
+    <IconOvercast />
+  </Icon>
+  <Icon
+    link="https://open.spotify.com/show/6fFbaUa2rEpGjuOmMXwF7g"
+    text="Spotify"
   >
-</a>
-
-<p>Le podcast est disponible sur les plateformes suivantes :</p>
-
-<ul>
-  <li>
-    <a href="https://podcasts.apple.com/us/podcast/badidon/id1729729633">
-      Apple Podcasts
-    </a>
-  </li>
-  <li>
-    <a href="https://open.spotify.com/show/6fFbaUa2rEpGjuOmMXwF7g"> Spotify</a>
-  </li>
-  <li>
-    <a
-      href="https://www.youtube.com/playlist?list=PLlJyR-yn3BU0gLKBqM5GLcvpzud7Eso7Z"
-    >
-      YouTube
-    </a>
-  </li>
-</ul>
+    <IconSpotify />
+  </Icon>
+  <Icon
+    link="https://www.youtube.com/playlist?list=PLlJyR-yn3BU0gLKBqM5GLcvpzud7Eso7Z"
+    text="YouTube"
+  >
+    <IconYouTube />
+  </Icon>
+</nav>
 
 <style>
-  a {
-    display: inline-flex;
+  nav {
+    display: flex;
     gap: var(--base);
-  }
-  svg {
-    width: var(--babase);
-    height: var(--babase);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
   }
 </style>

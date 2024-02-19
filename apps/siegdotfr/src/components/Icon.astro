@@ -1,0 +1,23 @@
+---
+const { link, text } = Astro.props;
+---
+
+<a href={link}>
+  <slot />
+  <span>{text}</span>
+</a>
+
+<style>
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: var(--base);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:is(:active, :focus, :hover) {
+      color: var(--prime);
+    }
+  }
+</style>
