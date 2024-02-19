@@ -37,7 +37,12 @@ const { Content, headings } = await entry.render();
       </div>
     </header>
 
-    <Player url={audioUrl} image={image} title={title} />
+    <Player
+      url={audioUrl}
+      image={image}
+      title={title}
+      analytics={`badidon-${entry.slug}`}
+    />
 
     {headings && <Toc headings={headings} />}
 

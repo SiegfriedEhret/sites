@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-const { url, image, title } = Astro.props;
+const { analytics, url, image, title } = Astro.props;
 
 const id = `player-${crypto.randomUUID()}`;
 ---
@@ -36,7 +36,7 @@ const id = `player-${crypto.randomUUID()}`;
   />
 </div>
 
-<script define:vars={{ id }}>
+<script define:vars={{ id, analytics, title }}>
   function pad(value) {
     return value.toString().padStart(2, "0");
   }
@@ -56,6 +56,7 @@ const id = `player-${crypto.randomUUID()}`;
     playing: false,
     currentTime: "00:00",
     duration: "",
+    analytics: true,
     init() {
       audio.addEventListener("loadedmetadata", () => {
         this.duration = convertSecondsToTime(audio.duration);
@@ -66,8 +67,18 @@ const id = `player-${crypto.randomUUID()}`;
       if (this.playing) {
         audio.pause();
         this.playing = false;
-        console.log(this.currentTime);
       } else {
+        if (this.analytics) {
+          this.analytics = false;
+          try {
+            const event = {
+              path: analytics,
+              title,
+              event: true,
+            };
+            window.goatcounter.count(event);
+          } catch {}
+        }
         audio.play();
         this.playing = true;
       }
