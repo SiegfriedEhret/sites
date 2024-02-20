@@ -1,7 +1,7 @@
 ---
 import "./app.css";
 
-const { description, title, metaImage, rssHref, rssTitle } = Astro.props;
+const { description, title, name, metaImage, rssHref, rssTitle } = Astro.props;
 
 const img = metaImage
   ? `${Astro.site}${metaImage}`.replace(`${Astro.site}/`, `${Astro.site}`)
@@ -10,12 +10,15 @@ const img = metaImage
 
 <html lang="en">
   <head>
-    <title>{title}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{title}</title>
     <meta name="googlebot" content="noindex" />
 
     <!-- Primary Meta Tags -->
+    <meta name="application-name" content={name} />
+    <meta name="theme-color" content="hsl(348 52% 55%)" />
     <meta name="title" content={title} />
     <meta name="description" content={description} />
 

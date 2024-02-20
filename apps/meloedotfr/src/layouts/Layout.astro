@@ -6,7 +6,12 @@ const { title, description, metaImage } = Astro.props;
 import "../styles.css";
 ---
 
-<Layout title={title} description={description} metaImage={metaImage}>
+<Layout
+  title={title}
+  description={description}
+  metaImage={metaImage}
+  name="meloe.fr"
+>
   <Header slot="header">
     <a slot="title" class="link" href="/">meloe.fr</a>
     <Fragment slot="links">
