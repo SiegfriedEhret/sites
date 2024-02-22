@@ -14,15 +14,15 @@
   "dependencies": {
     "@astrojs/alpinejs": "^0.3.2",
     "@astrojs/rss": "^4.0.5",
-    "@astrojs/ts-plugin": "^1.5.2",
+    "@astrojs/ts-plugin": "^1.5.3",
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
     "@sindresorhus/slugify": "^2.2.1",
     "@tinacms/cli": "^1.5.39",
     "@types/alpinejs": "^3.13.6",
     "alpinejs": "^3.13.5",
-    "astro": "^4.4.0",
-    "contentful": "^10.6.21",
+    "astro": "^4.4.3",
+    "contentful": "^10.6.22",
     "highlight.js": "^11.9.0",
     "tinacms": "^1.5.28"
   },
