@@ -1,19 +1,31 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 
-const items = (await getCollection("posts"))
-  .map((entry) => ({
+export async function GET(context) {
+  const posts = (await getCollection("posts")).map((entry) => ({
     link: `https://sieg.fr/ied/${entry.slug}`,
     title: entry.data.title,
     description: entry.data.description,
     pubDate: entry.data.date,
-  }))
-  .sort((a, b) =>
-    b.pubDate.toISOString().localeCompare(a.pubDate.toISOString()),
-  )
-  .slice(0, 10);
+  }));
 
-export function GET(context) {
+  const badidon = (await getCollection("badidon")).map((entry, index) => {
+    const episodeNumber = index + 1;
+    const link = `${context.site}ied/badidon/${entry.slug}`;
+    return {
+      link,
+      title: `🎙️ ${entry.data.title}`,
+      description: entry.data.description,
+      pubDate: entry.data.date,
+    };
+  });
+
+  const items = [...posts, ...badidon]
+    .sort((a, b) =>
+      b.pubDate.toISOString().localeCompare(a.pubDate.toISOString()),
+    )
+    .slice(0, 10);
+
   return rss({
     title: "Je m'appelle Siegfried. Je suis développeur.",
     description: "Ceci est mon site personnel.",
