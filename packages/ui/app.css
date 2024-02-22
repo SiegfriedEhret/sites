@@ -111,9 +111,19 @@ ul {
 }
 
 a {
-  text-decoration: none;
   color: var(--text);
-  border-bottom: 1px solid color-mix(in srgb, var(--text) 50%, white);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  transition: all 0.25s ease;
+
+  &:is(:active, :focus, :hover) {
+    color: var(--prime);
+    text-underline-offset: 2px;
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--wevet);
+    }
+  }
 }
 
 hr {
