@@ -27,8 +27,6 @@ const artists = Array.from(new Set(posts.map((i) => i.artist))).sort();
 <Layout title="/ [ehret.me]">
   <h1>Museum of Poorly Photographed Art</h1>
 
-  <button class="show-artists">Show artists</button>
-
   <div class="tacos" x-data="{selected: 'all'}">
     <div class="filters">
       <button class="artists-all" @click="selected = 'all'">All</button>
@@ -75,10 +73,12 @@ const artists = Array.from(new Set(posts.map((i) => i.artist))).sort();
   }
 
   .filters {
-    display: none;
-    flex-direction: column;
-    gap: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--base);
   }
+
   .filters.show {
     display: flex;
   }
@@ -99,12 +99,8 @@ const artists = Array.from(new Set(posts.map((i) => i.artist))).sort();
       grid-template-columns: 200px 1fr;
     }
 
-    .show-artists {
-      display: none;
-    }
-
     .filters {
-      display: flex;
+      flex-direction: column;
     }
 
     .grid {
