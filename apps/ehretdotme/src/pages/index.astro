@@ -1,39 +1,16 @@
 ---
 import { getCollection } from "astro:content";
-import { contentfulClient } from "../lib/contentful";
-import type { Post } from "@packages/utils/types/posts";
 import Layout from "../layouts/Layout.astro";
 import { formatDate } from "@packages/utils/date";
 
-const entriesFromContentful = await contentfulClient.getEntries<Post>({
-  content_type: "blogPost",
-  limit: 10,
-  "fields.language": "en",
-  order: "-fields.publicationDate",
-  select: "fields.title,fields.slug,fields.publicationDate,fields.description",
-});
 const entriesFromRepository = await getCollection("posts");
 
-const contentfulPosts = entriesFromContentful.items
-  .map((item) => {
-    const { title, publicationDate, description, slug } = item.fields;
-    return {
-      title,
-      slug,
-      description,
-      date: formatDate(publicationDate),
-    };
-  })
-  .slice(0, 10);
-
-const localPosts = entriesFromRepository.map((item) => ({
+const posts = entriesFromRepository.map((item) => ({
   title: item.data.title,
   slug: item.slug,
   description: item.data.description,
   date: formatDate(item.data.date),
-}));
-
-const posts = [...contentfulPosts, ...localPosts]
+}))
   .sort((a, b) => b.date.localeCompare(a.date))
   .slice(0, 10);
 ---

@@ -1,29 +1,11 @@
 ---
-import { contentfulClient } from "../../lib/contentful";
-import type { Post } from "@packages/utils/types/posts";
 import Layout from "../../layouts/Layout.astro";
 import { formatDate, getYear } from "@packages/utils/date";
 import { getCollection } from "astro:content";
 
-const entriesFromContentful = await contentfulClient.getEntries<Post>({
-  content_type: "blogPost",
-  limit: 200,
-  "fields.language": "en",
-  order: "-fields.publicationDate",
-  select: "fields.title,fields.slug,fields.publicationDate,fields.description",
-});
 const entriesFromRepository = await getCollection("posts");
 
 const posts = [
-  ...entriesFromContentful.items.map((item) => {
-    const { title, publicationDate, description, slug } = item.fields;
-    return {
-      title,
-      slug,
-      description,
-      date: formatDate(publicationDate as string),
-    };
-  }),
   ...entriesFromRepository.map((item) => ({
     title: item.data.title,
     slug: item.slug,
