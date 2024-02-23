@@ -1,12 +1,13 @@
 ---
-date: '2020-04-05T00:00:00.000Z'
-updatedAt: '2022-10-29T19:29:16.931Z'
+date: "2020-04-05T00:00:00.000Z"
+updatedAt: "2022-10-29T19:29:16.931Z"
 title: News from last month (2020/04 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 I hope you are all safe.
 
 ## Programming
@@ -36,7 +37,7 @@ I hope you are all safe.
 - [Learn D3: Introduction](https://observablehq.com/@d3/learn-d3)
 - [WebAssembly branching instructions, by example](https://samrat.me/posts/2020-03-29-webassembly-control-instr-examples/)
 - [Selte Society Day: April 26th](https://sveltesociety.dev/)
-- [colors.lol:  Overly descriptive color palettes.](https://colors.lol/)
+- [colors.lol: Overly descriptive color palettes.](https://colors.lol/)
 - [The Vanilla JavaScript Toolkit](https://vanillajstoolkit.com/)
 - [CSS Findings From The New Facebook Design](https://ishadeed.com/article/new-facebook-css/)
 

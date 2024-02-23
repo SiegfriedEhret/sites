@@ -1,10 +1,11 @@
 ---
-date: '2022-08-22T00:00:00.000Z'
-updatedAt: '2022-08-22T12:05:37.027Z'
+date: "2022-08-22T00:00:00.000Z"
+updatedAt: "2022-08-22T12:05:37.027Z"
 title: buku 101
-description: 'Some notes about buku, a powerful bookmark manager'
+description: "Some notes about buku, a powerful bookmark manager"
 tags: []
 ---
+
 I have been looking for something to keep my bookmarks. I have been a long time user of [pinboard](https://pinboard.in) and I was looking for a self-hosted or a non-hosted service. And I discovered [buku](https://github.com/jarun/buku).
 
 So let's see what buku is about!
@@ -122,7 +123,7 @@ As described in the [README](https://github.com/jarun/buku), we can have a short
 alias b='buku --suggest'
 ```
 
-### A function for my shell 
+### A function for my shell
 
 A [fish shell](https://fishshell.com/) function to add something, and automatically add a `<year>-<month>` tag:
 

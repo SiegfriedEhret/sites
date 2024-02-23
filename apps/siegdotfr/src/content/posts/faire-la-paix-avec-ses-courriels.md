@@ -1,17 +1,18 @@
 ---
-date: '2021-05-13T00:00:00.000Z'
-updatedAt: '2021-05-24T12:12:16.494Z'
+date: "2021-05-13T00:00:00.000Z"
+updatedAt: "2021-05-24T12:12:16.494Z"
 title: Faire la paix avec ses courriels
 description: Voici comment je survis au milieu de l'océan de messages que je reçois.
 tags: []
 ---
+
 Nous recevons toutes et tous une quantité incroyable de messages. En général, ça arrive dans la boîte de réception, que ce soit intéressant, important ou juste un message suite à une commande. Il y a certainement mieux à faire, et ça demande un peu de préparation.
 
 Je suis récemment tombé sur [cet article](https://piet.me/my-email-workflow-in-fastmail/) (en anglais) qui a totalement inspiré ce que je vais vous raconter dans ce billet. Comme l'auteur de l'article, j'utilise [Fastmail](https://ref.fm/u10904521) (ce lien vous donne 10% de réduction sur la première année, plus d'informations en anglais [ici](https://www.fastmail.help/hc/en-us/articles/1500000279701)).
 
 ## Le tri des contacts.
 
-C'est la base ! L'objectif ici est d'identifier les contacts en les regroupant par thème. 
+C'est la base ! L'objectif ici est d'identifier les contacts en les regroupant par thème.
 
 ![Les groupes de contacts dans Fastmail](/contentful/7G2KEfIMDwZnP54SomHp9l/fca0e5dfd5b7b3b2f0e8978930f810c6/groupes.png)
 

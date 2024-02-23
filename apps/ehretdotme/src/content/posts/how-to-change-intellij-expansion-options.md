@@ -1,10 +1,11 @@
 ---
-date: '2013-11-06T00:00:00.000Z'
-updatedAt: '2021-05-24T12:54:35.362Z'
+date: "2013-11-06T00:00:00.000Z"
+updatedAt: "2021-05-24T12:54:35.362Z"
 title: How to change IntelliJ expansion options
 description: A small tip for custom live templates.
 tags: []
 ---
+
 I use [intelliJ](http://www.jetbrains.com/idea/) for... Everything.
 
 When I create a `test.css` file with:

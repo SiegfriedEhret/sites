@@ -1,11 +1,12 @@
 ---
-date: '2019-01-02T00:00:00.000Z'
-updatedAt: '2021-05-24T08:52:44.104Z'
+date: "2019-01-02T00:00:00.000Z"
+updatedAt: "2021-05-24T08:52:44.104Z"
 title: Vers 2019 et au-delà
 description: It’s that time again... A review of last year.
 tags:
   - personalbranling
 ---
+
 Bonjour !
 
 Comme d'habitude, un petit billet pour faire [le bilan, calmement](https://www.youtube.com/watch?v=qyHmeySM14k).
@@ -14,7 +15,7 @@ Comme d'habitude, un petit billet pour faire [le bilan, calmement](https://www.y
 
 ## Écriture
 
-J'ai publié sur plusieurs sites et j'ai croisé quelques gens: 
+J'ai publié sur plusieurs sites et j'ai croisé quelques gens:
 
 - Une [interview](https://lemag.sfeir.com/interview-de-tim-carry-algolia/) de [Tim Carry](https://twitter.com/pixelastic) à [dotCSS](https://www.dotcss.io/).
 - Une [interview](https://lemag.sfeir.com/interview-eiji-kitamura-google/) de [Eiji Kitamura](https://twitter.com/agektmr).

@@ -1,12 +1,13 @@
 ---
-date: '2023-01-01T00:00:00.000Z'
-updatedAt: '2023-02-03T10:33:10.040Z'
+date: "2023-01-01T00:00:00.000Z"
+updatedAt: "2023-02-03T10:33:10.040Z"
 title: News from last month (2023/01 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 Hello folks, I hope you are doing well. Happy new year! I published my brief [review of 2022](https://ehret.me/to-2023-and-beyond) if you have nothing else to do.
 
 ## Programming

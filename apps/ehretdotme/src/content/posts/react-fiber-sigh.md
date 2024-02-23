@@ -1,6 +1,6 @@
 ---
-date: '2017-04-19T00:00:00.000Z'
-updatedAt: '2021-05-23T21:01:44.946Z'
+date: "2017-04-19T00:00:00.000Z"
+updatedAt: "2021-05-23T21:01:44.946Z"
 title: React Fiber... *sigh*
 description: >-
   React was mainly sold using the VirtualDOM previously, and now everything is
@@ -9,6 +9,7 @@ tags:
   - javascript
   - react
 ---
+
 Hello you, how are you ?
 
 I just bumped into the following TechCrunch post: [Facebook announces React Fiber, a rewrite of its React framework](https://techcrunch.com/2017/04/18/facebook-announces-react-fiber-a-rewrite-of-its-react-framework)

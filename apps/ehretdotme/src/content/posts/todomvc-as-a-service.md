@@ -1,10 +1,11 @@
 ---
-date: '2015-04-03T00:00:00.000Z'
-updatedAt: '2021-05-23T19:07:25.597Z'
+date: "2015-04-03T00:00:00.000Z"
+updatedAt: "2021-05-23T19:07:25.597Z"
 title: TodoMVC As A Service
 description: Choose a random thing for your next project !
 tags: []
 ---
+
 ## Intro
 
 I had this idea when I woke up on April 1st.
@@ -20,25 +21,29 @@ This is a good starting point but won't help you if you have to build a big appl
 I use [fetch](https://developer.mozilla.org/en-US/docs/Web/API/GlobalFetch/fetch) to call the [Github API](https://developer.github.com/v3/) to retrieve the list of framework and libraries used by the TodoMVC demos.
 
 ```javascript
-fetch('https://api.github.com/repos/tastejs/todomvc/git/trees/6d71146f56e9ad51ddf3b6776e8871d33e02f4bd').then(function(response) {
-    if (response.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' + response.status);
-        return;
-    }
+fetch(
+  "https://api.github.com/repos/tastejs/todomvc/git/trees/6d71146f56e9ad51ddf3b6776e8871d33e02f4bd",
+).then(function (response) {
+  if (response.status !== 200) {
+    console.log(
+      "Looks like there was a problem. Status Code: " + response.status,
+    );
+    return;
+  }
 
-    response.json().then(function(data) {
-        var types = data.tree.map(function(element) {
-            return element.path;
-        });
-        DOSTUFF(types[Math.floor(Math.random() * types.length)]);
+  response.json().then(function (data) {
+    var types = data.tree.map(function (element) {
+      return element.path;
     });
+    DOSTUFF(types[Math.floor(Math.random() * types.length)]);
+  });
 });
 ```
 
 ### Web components
 
 > "A tiny little heart for the Web"<br>
-&mdash; from [Carmen Popoviciu](https://carmenpopoviciu.github.io/ascii-heart/)
+> &mdash; from [Carmen Popoviciu](https://carmenpopoviciu.github.io/ascii-heart/)
 
 Web components are a set of 4 specifications:
 
@@ -54,35 +59,37 @@ A longer introduction:
 The code for my web component is:
 
 ```html
-<link rel="stylesheet" href="todo.css">
+<link rel="stylesheet" href="todo.css" />
 <template id="todo-template"></template>
 <script>
-    var thisDoc = document.currentScript.ownerDocument;
-    var mainDoc = document;
+  var thisDoc = document.currentScript.ownerDocument;
+  var mainDoc = document;
 
-    var proto = Object.create(HTMLElement.prototype);
-    proto.createdCallback = function() {
-        var shadowRoot = this.createShadowRoot();
-        fetch('https://api.github.com/repos/tastejs/todomvc/git/trees/6d71146f56e9ad51ddf3b6776e8871d33e02f4bd').then(function(response) {
-            'see the previous part about fetch';
-        });
-
-        function DOSTUFF(truc) {
-            var template = thisDoc.querySelector('#todo-template');
-            var iframe = document.createElement('iframe');
-            iframe.frameBorder = 0;
-            iframe.setAttribute('id', 'todo-iframe');
-            iframe.setAttribute('src', 'http://todomvc.com/examples/' + truc);
-
-            var clone = thisDoc.importNode(template.content, true);
-            clone.appendChild(iframe);
-            shadowRoot.appendChild(clone);
-        }
-    };
-
-    mainDoc.registerElement('todo-js', {
-        prototype: proto
+  var proto = Object.create(HTMLElement.prototype);
+  proto.createdCallback = function () {
+    var shadowRoot = this.createShadowRoot();
+    fetch(
+      "https://api.github.com/repos/tastejs/todomvc/git/trees/6d71146f56e9ad51ddf3b6776e8871d33e02f4bd",
+    ).then(function (response) {
+      "see the previous part about fetch";
     });
+
+    function DOSTUFF(truc) {
+      var template = thisDoc.querySelector("#todo-template");
+      var iframe = document.createElement("iframe");
+      iframe.frameBorder = 0;
+      iframe.setAttribute("id", "todo-iframe");
+      iframe.setAttribute("src", "http://todomvc.com/examples/" + truc);
+
+      var clone = thisDoc.importNode(template.content, true);
+      clone.appendChild(iframe);
+      shadowRoot.appendChild(clone);
+    }
+  };
+
+  mainDoc.registerElement("todo-js", {
+    prototype: proto,
+  });
 </script>
 ```
 
@@ -105,7 +112,7 @@ I added the [webcomponents.js polyfill](https://github.com/WebComponents/webcomp
 If you can make Mozilla add all Web Components standards, I won't be sad anymore.
 
 > Mozilla will not ship an implementation of HTML Imports.<br>
-&mdash; https://hacks.mozilla.org/2014/12/mozilla-and-web-components/
+> &mdash; https://hacks.mozilla.org/2014/12/mozilla-and-web-components/
 
 ## License
 

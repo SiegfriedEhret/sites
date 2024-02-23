@@ -1,10 +1,11 @@
 ---
-date: '2013-09-24T00:00:00.000Z'
-updatedAt: '2021-05-23T13:49:25.637Z'
+date: "2013-09-24T00:00:00.000Z"
+updatedAt: "2021-05-23T13:49:25.637Z"
 title: Android without (too much) Google
 description: So how to survive on Android without the Store ?
 tags: []
 ---
+
 ## Android
 
 I use [CyanogenMod](http://cyanogenmod.org/) without the signed Google apps (available somewhere on the interwebs).
@@ -13,22 +14,22 @@ And I have not added my old Gmail account... So how to survive on Android withou
 
 ## Software
 
-* Firefox: epic browser is epic
-  * [Aurora channel](https://www.mozilla.org/en-US/mobile/aurora/)
-  * [Classic channel](https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/multi/)
-* [Spotify](http://download.spotify.com/android/SpotifyAndroid.apk) for music
-* [F-Droid](https://f-droid.org/FDroid.apk), a Google Play Store alternative
-* [Tweetlanes](https://github.com/chrislacy/TweetLanes/releases/) for Twitter
-* Facebook... in Firefox
+- Firefox: epic browser is epic
+  - [Aurora channel](https://www.mozilla.org/en-US/mobile/aurora/)
+  - [Classic channel](https://ftp.mozilla.org/pub/mozilla.org/mobile/releases/latest/android/multi/)
+- [Spotify](http://download.spotify.com/android/SpotifyAndroid.apk) for music
+- [F-Droid](https://f-droid.org/FDroid.apk), a Google Play Store alternative
+- [Tweetlanes](https://github.com/chrislacy/TweetLanes/releases/) for Twitter
+- Facebook... in Firefox
 
 On F-Droid:
 
-* K9Mail: a very nice email client
-* Barcode Scanner: QRcode
-* RMaps: amazing maps
-* Pinboard: to manage bookmarks and stuff to read later. See [here](http://pinboard.in/)
-* Anki: to learn stuff
-* yaxim / xabber / gibberbot: xmpp and jabber client (for gtalk)
+- K9Mail: a very nice email client
+- Barcode Scanner: QRcode
+- RMaps: amazing maps
+- Pinboard: to manage bookmarks and stuff to read later. See [here](http://pinboard.in/)
+- Anki: to learn stuff
+- yaxim / xabber / gibberbot: xmpp and jabber client (for gtalk)
 
 On Firefox, I went on their [addons catalog for mobile firefox](https://addons.mozilla.org/fr/android/) and installed the [DuckDuckGo](https://duckduckgo.com/) plugin.
 
@@ -49,8 +50,8 @@ You **should** have a nice [Humble Bundle](http://humblebundle.com/) collection.
 
 ## Still missing
 
-* [Mightytext](http://mightytext.net/) a web app connected to the Google Account from the phone to easily send text messages with your favorite browser.
-* A **good** japanese keyboard, so I'm still using the [Google Japanese Input ](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.japanese)
+- [Mightytext](http://mightytext.net/) a web app connected to the Google Account from the phone to easily send text messages with your favorite browser.
+- A **good** japanese keyboard, so I'm still using the [Google Japanese Input ](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.japanese)
 
 ## What next ?
 
@@ -66,9 +67,9 @@ What made me change my mind about them was the dramatic shutdown of Google Reade
 
 Here are some things I use know:
 
-* Google Reader -> [Tiny Tiny RSS](http://tt-rss.org)
-* Gmail -> [FastMail](http://fastmail.fm/)
-* Google Maps -> [Open Street Map](www.openstreetmap.org) or (sorry) [Bing Maps](http://www.bing.com/maps/)
-* Picasa / G+ albums: not found yet. I tried Flickr, but I am not really convinced. [OwnCloud](http://owncloud.org/) may do the job
-* Drive -> [OwnCloud](http://owncloud.org/) or [Hubic](https://hubic.com)
-* Agenda -> [OwnCloud](http://owncloud.org/)
+- Google Reader -> [Tiny Tiny RSS](http://tt-rss.org)
+- Gmail -> [FastMail](http://fastmail.fm/)
+- Google Maps -> [Open Street Map](www.openstreetmap.org) or (sorry) [Bing Maps](http://www.bing.com/maps/)
+- Picasa / G+ albums: not found yet. I tried Flickr, but I am not really convinced. [OwnCloud](http://owncloud.org/) may do the job
+- Drive -> [OwnCloud](http://owncloud.org/) or [Hubic](https://hubic.com)
+- Agenda -> [OwnCloud](http://owncloud.org/)

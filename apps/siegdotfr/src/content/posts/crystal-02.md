@@ -1,12 +1,13 @@
 ---
-date: '2020-06-17T00:00:00.000Z'
-updatedAt: '2022-04-01T09:09:38.679Z'
-title: 'Coder avec Crystal pour ne pas perdre la boule, deuxième partie'
+date: "2020-06-17T00:00:00.000Z"
+updatedAt: "2022-04-01T09:09:38.679Z"
+title: "Coder avec Crystal pour ne pas perdre la boule, deuxième partie"
 description: Découvrons le langage Crystal ensemble !
 tags:
   - crystal
 ---
-## Résumé de l'épisode précédent 
+
+## Résumé de l'épisode précédent
 
 C'est ici: [première partie](https://sieg.fr/ied/crystal-01)
 
@@ -52,7 +53,7 @@ module Myapp
 end
 ```
 
-Nous remarquons `include YAML::Serializable`, qui permet d'ajouter des méthodes à nos structs pour permettre de les sérialiser. Pour plus de détails, c'est [par ici](https://crystal-lang.org/api/0.35.0/YAML/Serializable.html). Ceci est arrivé avec Crystal 0.35 et remplace l'ancien ([YAML.mapping](https://crystal-lang.org/api/0.35.0/YAML.html#mapping(_properties_,strict=false)-macro) qui est déprécié, mais toujours disponible en dépendance: [yaml_mapping.cr](https://github.com/crystal-lang/yaml_mapping.cr)).
+Nous remarquons `include YAML::Serializable`, qui permet d'ajouter des méthodes à nos structs pour permettre de les sérialiser. Pour plus de détails, c'est [par ici](https://crystal-lang.org/api/0.35.0/YAML/Serializable.html). Ceci est arrivé avec Crystal 0.35 et remplace l'ancien ([YAML.mapping](<https://crystal-lang.org/api/0.35.0/YAML.html#mapping(_properties_,strict=false)-macro>) qui est déprécié, mais toujours disponible en dépendance: [yaml_mapping.cr](https://github.com/crystal-lang/yaml_mapping.cr)).
 
 Le nom `name` est de type `String` et est obligatoire.
 Pour les adresses emails `emails`, le type est `Array(String)` et la présence de `?` à la fin indique que cette propriété est optionnelle (elle peut être égale à [`Nil`](https://crystal-lang.org/api/0.35.0/Nil.html) si non remplie).
@@ -126,13 +127,13 @@ Nous commençons par "require" les dépendances nécessaires au bon déroulement
 
 Nous avons donc des variables préfixées par `@` (comme vu un peu plus haut) ou `@@`. Ce sont des variables d'[instance](https://crystal-lang.org/reference/syntax_and_semantics/new,_initialize_and_allocate.html) (`@`) ou de [classe](https://crystal-lang.org/reference/syntax_and_semantics/class_variables.html) (`@@`).
 
-La ligne `@@config_path : Path = Path.home / "myapp.yaml` est intéressante. Elle fait appel à l'API [Path](https://crystal-lang.org/api/0.35.0/Path.html) qui représente un chemin vers un fichier et qui contient plein de méthodes liées aux possibles opérations sur celui-ci. Ici nous utilisons [`/`](https://crystal-lang.org/api/0.35.0/Path.html#/(part:Path%7CString):Path-instance-method) pour joindre des `Path` comme [`Path.home`](https://crystal-lang.org/api/0.35.0/Path.html#home:Path-class-method) ou une chaîne de caractères.
+La ligne `@@config_path : Path = Path.home / "myapp.yaml` est intéressante. Elle fait appel à l'API [Path](https://crystal-lang.org/api/0.35.0/Path.html) qui représente un chemin vers un fichier et qui contient plein de méthodes liées aux possibles opérations sur celui-ci. Ici nous utilisons [`/`](<https://crystal-lang.org/api/0.35.0/Path.html#/(part:Path%7CString):Path-instance-method>) pour joindre des `Path` comme [`Path.home`](https://crystal-lang.org/api/0.35.0/Path.html#home:Path-class-method) ou une chaîne de caractères.
 
 Notre classe contient 4 méthodes: "initialize" que nous connaissons déjà, "contacts", "add_contact" et "save".
 
-- "initialize" va vérifier que le fichier de configuration existe pour le charger, ou va utiliser une structure vide. Notons le point d'interrogation à la fin de [`File.exists?`](https://crystal-lang.org/api/0.35.0/File.html#exists?(path:Path%7CString):Bool-class-method) qui indique que cette méthode retourne vrai (`true`) ou faux (`false`).
+- "initialize" va vérifier que le fichier de configuration existe pour le charger, ou va utiliser une structure vide. Notons le point d'interrogation à la fin de [`File.exists?`](<https://crystal-lang.org/api/0.35.0/File.html#exists?(path:Path%7CString):Bool-class-method>) qui indique que cette méthode retourne vrai (`true`) ou faux (`false`).
 - "contacts" retourne les contacts. Nous n'avons pas de mot clé "return" rencontré dans bon nombre de langages. La dernière expression est retournée automatiquement !
-- "add_contact" permet... D'ajouter un contact. [`<<`](https://crystal-lang.org/api/0.35.0/Array.html#%3C%3C(value:T)-instance-method) est un alias de la classique méthode [`push`](https://crystal-lang.org/api/0.35.0/Array.html#push(value:T)-instance-method) pour ajouter un élément à un tableau.
+- "add_contact" permet... D'ajouter un contact. [`<<`](<https://crystal-lang.org/api/0.35.0/Array.html#%3C%3C(value:T)-instance-method>) est un alias de la classique méthode [`push`](<https://crystal-lang.org/api/0.35.0/Array.html#push(value:T)-instance-method>) pour ajouter un élément à un tableau.
 - "save" permet d'enregistrer la configuration. `from_yaml` est injectée par le `include YAML::Serializable`. Cette fonction est préfixée par le mot clé `private` qui permet de limiter la [visibilité](https://crystal-lang.org/reference/syntax_and_semantics/visibility.html) de cette méthode.
 
 Dans la fonction "load", nous utilisons la struct `List`, avec une méthode `from_yaml` qui est ajoutée par le `include YAML::Serializable` mentionné précédemment, qui va permettre de remplir notre struct à partir de ce qui est passé.
@@ -185,9 +186,9 @@ end
 
 Ici, notre constructeur "initialize" va lire le nom `name` et les emails `emails` à partir des arguments `args` que nous allons passer.
 
-`args` est un [Array](https://crystal-lang.org/api/0.35.0/Array.html), et la méthode [find](https://crystal-lang.org/api/0.35.0/Enumerable.html#find(if_none=nil,&)-instance-method) est héritée de [Enumerable](https://crystal-lang.org/api/0.35.0/Enumerable.html), tout comme [select](https://crystal-lang.org/api/0.35.0/Enumerable.html#select(pattern)-instance-method) mais pas [map](https://crystal-lang.org/api/0.35.0/Array.html#map(&block:T-%3EU)forallU-instance-method), qui existe aussi sur Enumerable mais est réimplémentée dans Array de façon optimisée.
+`args` est un [Array](https://crystal-lang.org/api/0.35.0/Array.html), et la méthode [find](<https://crystal-lang.org/api/0.35.0/Enumerable.html#find(if_none=nil,&)-instance-method>) est héritée de [Enumerable](https://crystal-lang.org/api/0.35.0/Enumerable.html), tout comme [select](<https://crystal-lang.org/api/0.35.0/Enumerable.html#select(pattern)-instance-method>) mais pas [map](<https://crystal-lang.org/api/0.35.0/Array.html#map(&block:T-%3EU)forallU-instance-method>), qui existe aussi sur Enumerable mais est réimplémentée dans Array de façon optimisée.
 
-La fonction `add` va vérifier que nous avons bien un nom pour notre contact et l'ajouter à notre configuration. Autrement, nous utilisons [puts](https://crystal-lang.org/api/0.35.0/toplevel.html#puts(*objects):Nil-class-method) pour afficher un message dans la console.
+La fonction `add` va vérifier que nous avons bien un nom pour notre contact et l'ajouter à notre configuration. Autrement, nous utilisons [puts](<https://crystal-lang.org/api/0.35.0/toplevel.html#puts(*objects):Nil-class-method>) pour afficher un message dans la console.
 
 Notons que `name` a pour type `String | Nil`, et l'utilisation de `.nil?` pour vérifier la présence ou nom d'une valeur.
 

@@ -1,12 +1,13 @@
 ---
-date: '2023-05-04T00:00:00.000Z'
-updatedAt: '2023-05-04T15:10:52.613Z'
+date: "2023-05-04T00:00:00.000Z"
+updatedAt: "2023-05-04T15:10:52.613Z"
 title: Using different package repositories with Alpine Linux
 description: >-
   I needed a way to install something from the "testing" repository in Alpine
   Linux.
 tags: []
 ---
+
 As described in the [Alpine Linux wiki](https://wiki.alpinelinux.org/wiki/Repositories), there are 3 package repositories: main, community and testing.
 
 Looking for the [`kubectl` package](https://pkgs.alpinelinux.org/packages?name=kubectl&branch=edge&repo=&arch=&maintainer=), we see that it is part of the "testing" repository.

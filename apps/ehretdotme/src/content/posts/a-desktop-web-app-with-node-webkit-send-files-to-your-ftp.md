@@ -1,10 +1,11 @@
 ---
-date: '2014-03-21T00:00:00.000Z'
-updatedAt: '2021-05-24T12:56:41.673Z'
-title: 'A desktop web-app with node-webkit, send files to your ftp !'
-description: 'Let''s play with node-webkit, to make a desktop web-app (part 3).'
+date: "2014-03-21T00:00:00.000Z"
+updatedAt: "2021-05-24T12:56:41.673Z"
+title: "A desktop web-app with node-webkit, send files to your ftp !"
+description: "Let's play with node-webkit, to make a desktop web-app (part 3)."
 tags: []
 ---
+
 ## Hello you !
 
 I just added a new thing to my node-webkit experiment.
@@ -30,35 +31,37 @@ If you want to read more about this, [have fun](http://www.w3.org/TR/file-upload
 
 ```javascript
 var files;
-var listing = document.getElementById('listing');
-var dropbox = document.getElementById('dropbox');
-dropbox.addEventListener('dragenter', dragenter, false);
-dropbox.addEventListener('dragover', dragover, false);
-dropbox.addEventListener('drop', drop, false);
+var listing = document.getElementById("listing");
+var dropbox = document.getElementById("dropbox");
+dropbox.addEventListener("dragenter", dragenter, false);
+dropbox.addEventListener("dragover", dragover, false);
+dropbox.addEventListener("drop", drop, false);
 
 function dragenter(e) {
-    e.stopPropagation();
-    e.preventDefault();
+  e.stopPropagation();
+  e.preventDefault();
 }
 
 function dragover(e) {
-    e.stopPropagation();
-    e.preventDefault();
+  e.stopPropagation();
+  e.preventDefault();
 }
 
 function drop(e) {
-    e.stopPropagation();
-    e.preventDefault();
+  e.stopPropagation();
+  e.preventDefault();
 
-    var dt = e.dataTransfer;
-    files = dt.files;
+  var dt = e.dataTransfer;
+  files = dt.files;
 
-    document.querySelector('.pure-button-disabled').classList.remove('pure-button-disabled');
+  document
+    .querySelector(".pure-button-disabled")
+    .classList.remove("pure-button-disabled");
 
-    dropbox.style.display = 'none';
+  dropbox.style.display = "none";
 
-    var buttonForm = document.getElementById('submitFile');
-    buttonForm.addEventListener('click', sendToFtp);
+  var buttonForm = document.getElementById("submitFile");
+  buttonForm.addEventListener("click", sendToFtp);
 }
 ```
 
@@ -68,34 +71,31 @@ Please note that there is absolutely no check for permissions.
 
 ```javascript
 function sendToFtp() {
-    var Client = require('ftp');
-    var c = new Client();
+  var Client = require("ftp");
+  var c = new Client();
 
-    var port = document.getElementById('port').value;
+  var port = document.getElementById("port").value;
 
-    var options = {
-        host: document.getElementById('server').value,
-        port: port,
-        user: document.getElementById('login').value,
-        password: document.getElementById('password').value,
-        secure: port == 22
-    };
+  var options = {
+    host: document.getElementById("server").value,
+    port: port,
+    user: document.getElementById("login").value,
+    password: document.getElementById("password").value,
+    secure: port == 22,
+  };
 
-    console.log(options);
+  console.log(options);
 
-    c.on('ready', function() {
+  c.on("ready", function () {
+    var folder = document.getElementById("folder").value;
 
-        var folder = document.getElementById('folder').value;
+    for (var i = 0; i < files.length; i++) {
+      var file = files[i];
+      sendFile(c, file.path, folder, file.name);
+    }
+  });
 
-        for (var i=0; i<files.length; i++) {
-            var file = files[i];
-            sendFile(c, file.path, folder, file.name);
-        }
-
-    });
-
-    c.connect(options);
-
+  c.connect(options);
 }
 ```
 
@@ -103,25 +103,25 @@ The following function send an individual file using the node-ftp client:
 
 ```javascript
 function sendFile(c, path, folder, name) {
-
-    c.put(path, folder + '/' + name, function(err) {
-        if (err) {
-            logFile('upload ' + name + ' ko: ' + err + '<br/>');
-        } else {
-            logFile('upload ' + name + ' ok !<br/>');
-        }
-        c.end();
-    });
-
-    function logFile(msg) {
-        var li = document.createElement('li');
-        li.innerHTML = msg;
-        listing.appendChild(li);
+  c.put(path, folder + "/" + name, function (err) {
+    if (err) {
+      logFile("upload " + name + " ko: " + err + "<br/>");
+    } else {
+      logFile("upload " + name + " ok !<br/>");
     }
+    c.end();
+  });
+
+  function logFile(msg) {
+    var li = document.createElement("li");
+    li.innerHTML = msg;
+    listing.appendChild(li);
+  }
 }
 ```
 
 ## Finally
+
 I told you I have a secret project to take over the world.
 It will use HTML5 super powers and nodejs.
 

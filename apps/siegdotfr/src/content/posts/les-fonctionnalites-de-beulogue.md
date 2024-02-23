@@ -1,12 +1,13 @@
 ---
-date: '2019-05-24T00:00:00.000Z'
-updatedAt: '2021-05-24T06:55:50.530Z'
+date: "2019-05-24T00:00:00.000Z"
+updatedAt: "2021-05-24T06:55:50.530Z"
 title: Les fonctionnalités de beulogue
 description: Plongeons un peu dans ce que beulogue sait faire.
 tags:
   - beulogue
   - blog
 ---
+
 On m'a posé une [question](https://twitter.com/oduquesne/status/1131718926386323456) sur Twitter à propos des fonctionnalités de `beulogue`, et comment il se place par rapport à Hugo et Pelican.
 
 ## Contenu

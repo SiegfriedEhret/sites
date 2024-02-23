@@ -1,11 +1,12 @@
 ---
-date: '2016-12-07T00:00:00.000Z'
-updatedAt: '2021-05-24T21:08:08.312Z'
+date: "2016-12-07T00:00:00.000Z"
+updatedAt: "2021-05-24T21:08:08.312Z"
 title: What is terrible ?
 description: Some thoughts about Angular and how the world reacts.
 tags:
   - angular
 ---
+
 The internets are on fire since [this article about Angular 2](https://meebleforp.com/blog/36/angular-2-is-terrible) came out.
 
 Some people understand the feeling of the author, some don't. Maintainers have mixed reactions (sometimes stupid, like one from a so called «Rockstar», which has been deleted).
@@ -42,7 +43,7 @@ About the Babel example, I highly recommand reading the following article: [No, 
 
 Dude, I feel the same. There are too many things, the thing seems to be over complicated.
 
-It is like when introducing RxJS to follow a click on a button. Who would be that crazy to actually do that in the real world ? How about an example where Rx is *really* useful ?
+It is like when introducing RxJS to follow a click on a button. Who would be that crazy to actually do that in the real world ? How about an example where Rx is _really_ useful ?
 
 The sad thing, reported by [PatrickJS](https://twitter.com/gdi2290/status/805255845646913536):
 
@@ -56,7 +57,7 @@ It may actually be good once you have passed through the dark places of the fram
 
 Nope, it is not. I am pretty sure it is difficult to handle for a project like Angular.
 
-I *think* that some opinions during the development of Angular were not listened, and now, the framework makes some developers suffer.
+I _think_ that some opinions during the development of Angular were not listened, and now, the framework makes some developers suffer.
 
 From the issue report for [angular/angular](https://github.com/angular/angular/issues/new):
 

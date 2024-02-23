@@ -1,19 +1,20 @@
 ---
-date: '2016-10-12T00:00:00.000Z'
-updatedAt: '2021-05-23T20:04:40.507Z'
+date: "2016-10-12T00:00:00.000Z"
+updatedAt: "2021-05-23T20:04:40.507Z"
 title: About yarn
 description: >-
   Yarn came out yesterday, and raises a few questions, Imma just leave this
   here.
 tags: []
 ---
+
 Yarn came out yesterday, and raises a few questions, Imma just leave this here.
 
 I haven't tried everything so I'll separate my questions/remarks in 2 parts:
 
 ## "another" package manager LOL
 
-Yup. And *that's good*. The thing that is not good is that almost nobody cared about the other ones. The [npm blog](http://blog.npmjs.org/post/151660845210/hello-yarn) mentions a few. 
+Yup. And _that's good_. The thing that is not good is that almost nobody cared about the other ones. The [npm blog](http://blog.npmjs.org/post/151660845210/hello-yarn) mentions a few.
 
 ## You will force your team / admins to use yarn
 
@@ -72,10 +73,10 @@ For example, we have no author or license, yarn added them.
 I use [npm-run-all](https://www.npmjs.com/package/npm-run-all) to run a bunch of tests on my project. It runs fine with `npm test` but:
 
 ```shell
-~/d/e/Projet (develop ↩=) yarn run test                                                  
+~/d/e/Projet (develop ↩=) yarn run test
 
 yarn run v0.15.1
-$ "npm-run-all test:*" 
+$ "npm-run-all test:*"
 sh: npm-run-all test:*: command not found
 error Command failed with exit code 127.
 info Visit http://yarnpkg.com/en/docs/cli/run for documentation about this command.

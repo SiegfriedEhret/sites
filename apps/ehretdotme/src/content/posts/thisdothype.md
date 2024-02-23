@@ -1,11 +1,12 @@
 ---
-date: '2017-02-18T00:00:00.000Z'
-updatedAt: '2021-05-24T21:08:08.254Z'
+date: "2017-02-18T00:00:00.000Z"
+updatedAt: "2021-05-24T21:08:08.254Z"
 title: thisdothype
 description: An experiment about bias in the JavaScript world.
 tags:
   - angular
 ---
+
 Last month, [@thisdotmedia](https://twitter.com/thisdotmedia) hosted an interesting «thisdotjavascript» event, bringing people from popular libraries and framework together:
 
 [![thisdothype stream screenshot](/contentful/1DI4ZTYuqjaRshRRqYOIEU/5987e861316654e27f8be4cdaa1f0805/screenshot.jpg)](https://www.youtube.com/watch?v=InOWBvseRYU)

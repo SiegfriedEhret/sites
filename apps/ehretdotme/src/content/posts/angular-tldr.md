@@ -1,7 +1,7 @@
 ---
-date: '2018-10-22T00:00:00.000Z'
-updatedAt: '2021-05-24T06:45:06.858Z'
-title: 'Angular, TL;DR'
+date: "2018-10-22T00:00:00.000Z"
+updatedAt: "2021-05-24T06:45:06.858Z"
+title: "Angular, TL;DR"
 description: >-
   I have written a few things about Angular in the past here. I have finally
   been able to work with it professionnaly, so here are a few thoughts about the
@@ -10,6 +10,7 @@ tags:
   - angular
   - tldr
 ---
+
 I have written a few things about [Angular](https://angular.io/) in the past here. I have finally been able to work with it professionnaly, so here are a few thoughts about the framework and what is around it.
 
 In the end, working with Angular was interesting, and I think Angular is a contradictory framework.

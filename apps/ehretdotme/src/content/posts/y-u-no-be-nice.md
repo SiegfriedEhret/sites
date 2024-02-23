@@ -1,10 +1,11 @@
 ---
-date: '2015-03-17T00:00:00.000Z'
-updatedAt: '2021-05-23T19:04:49.855Z'
+date: "2015-03-17T00:00:00.000Z"
+updatedAt: "2021-05-23T19:04:49.855Z"
 title: Y U NO BE NICE ?!?!?!
-description: 'A rant about criticism, that I should read sometimes instead of being stupid.'
+description: "A rant about criticism, that I should read sometimes instead of being stupid."
 tags: []
 ---
+
 Dude,
 
 I just read your tweet about how you don't like it. Actually, let me rephrase my last sentence: I just read your tweet about how you don't explain why you don't like it. Your open criticism is sad and you should allow a real conversation about this subject instead of stubbornly bashing it.
@@ -19,7 +20,7 @@ I have made the same mistake. I also replied "this idea sucks" to someone, witho
 
 I admit it, my remark was stupid. Now, you made the same mistake. Everything has its advantages and drawbacks. We need this diversity and we should embrace it instead of criticize with no reason.
 
-I will never kill «[trolls](https://fr.wikipedia.org/wiki/Troll_(Internet))», with what I want to share with you, but here are a few lines about "bashing for pleasure".
+I will never kill «[trolls](<https://fr.wikipedia.org/wiki/Troll_(Internet)>)», with what I want to share with you, but here are a few lines about "bashing for pleasure".
 
 ## You are not alone
 
@@ -91,7 +92,7 @@ And:
 I love this tweet from [Addy Osmani](http://addyosmani.com/) and the answer. I want to stop being a douchebag and I hope you will too.
 
 > ![stick-grunt-1](/contentful/1epygrjtCPhujFOMKf01X1/9f1e89e4c7f354449294192337c6b588/stick-grunt-1.png)
-<br>&mdash; [source](https://twitter.com/addyosmani/status/431575503615442945)
+> <br>&mdash; [source](https://twitter.com/addyosmani/status/431575503615442945)
 
 Last quote:
 
@@ -117,7 +118,7 @@ I invite you to read these articles:
 - This article was originally entitled "Lovers gonna love", an article to non-constructive and not-so-funny trolls (during december 2014).
 - Then, it was intended to be a "Be nice 101", like a crash course of positivism (january 2015).
 - Finally, you may be reading its final form, kind of a letter (february 2015). With
-meme images, and gifs. And ponys. I like ponys.
+  meme images, and gifs. And ponys. I like ponys.
 - Sorry, I removed the gifs and ponys. They'll come back in another post ;)
 - I hope you like it.
 

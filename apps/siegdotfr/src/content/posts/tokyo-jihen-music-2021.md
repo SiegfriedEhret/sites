@@ -1,12 +1,13 @@
 ---
-date: '2021-07-29T00:00:00.000Z'
-updatedAt: '2022-02-06T08:57:38.500Z'
+date: "2021-07-29T00:00:00.000Z"
+updatedAt: "2022-02-06T08:57:38.500Z"
 title: 東京事変 (Tokyo Jihen) - 音楽 (Music) (2021)
 description: Un retour sur le dernier album!
 tags:
   - music
   - review
 ---
+
 ## Préambule
 
 J'attends toujours avec beaucoup d'impatience de la musique de [Tokyo Jihen](https://fr.wikipedia.org/wiki/Tokyo_Jihen) / [Shiina Ringo](https://fr.wikipedia.org/wiki/Ringo_Shiina)... Voici donc le 6ème album: 音楽 (Music), sorti le 9 juin 2021.
@@ -27,7 +28,7 @@ On reprend avec 黄金比 (The Golden Ratio), que j'aime beaucoup: les instrumen
 
 Ensuite, on croit que 青のID (Blue Period) démarre calmement, mais en fait non. J'ai l'impression de retrouver du Tokyo Jihen de l'époque de [Killer Tune](https://www.youtube.com/watch?v=lC8la4l4RhQ), et ça fait du bien ! Ça s'emballe et ça donne envie de taper du pied.
 
-J'ai une relation compliqué avec la chanson suivante, 闇なる白 (Whiteout), principalement à cause des changements apportés à la voix de la chanteuse et au son du synthé utilisé qui manque de goût pour moi. 
+J'ai une relation compliqué avec la chanson suivante, 闇なる白 (Whiteout), principalement à cause des changements apportés à la voix de la chanteuse et au son du synthé utilisé qui manque de goût pour moi.
 
 Je ne sais pas trop pour 赤の同盟 (Red Alliance). J'ai l'impression que c'est un peu facile. Je ne comprends pas la coupure et l'intervention du piano pendant la pause entre les deux parties de la chanson.
 
@@ -53,7 +54,7 @@ Voilà ! C'est juste mon avis, j'espère que vous en avez un différent. Bisous 
 
 ## Pistes
 
-1. ⬇️ 孔雀（Peacock） 
+1. ⬇️ 孔雀（Peacock）
 2. 毒味 (Foretaste)
 3. 紫電 (Lightning)
 4. 命の帳 (Veil of Life)

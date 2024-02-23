@@ -1,12 +1,13 @@
 ---
-date: '2014-06-27T00:00:00.000Z'
-updatedAt: '2021-05-23T20:54:27.873Z'
+date: "2014-06-27T00:00:00.000Z"
+updatedAt: "2021-05-23T20:54:27.873Z"
 title: Hodor with AngularJS
 description: ng-hodor !
 tags:
   - angular
   - javascript
 ---
+
 ## angular-hodor
 
 ![Hodor !](/contentful/38log8us31S0ROXlnqJn9b/839584563121d043f69dcee812c88aae/oatmeal_hodor.jpg)
@@ -20,9 +21,7 @@ The demo is [here](https://dev.ehret.me/angular-hodor/demo/).
 The default ng-hodor directive replace the $element content with "hodor".
 
 ```html
-<div ng-hodor>
-    Plop
-</div>
+<div ng-hodor>Plop</div>
 ```
 
 will be displayed as:
@@ -36,9 +35,7 @@ hodor
 Give it some hodoring:
 
 ```html
-<div ng-hodor ng-hodor-hodor="10">
-    Plop
-</div>
+<div ng-hodor ng-hodor-hodor="10">Plop</div>
 ```
 
 and it will
@@ -52,9 +49,7 @@ hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor
 Make it hodor speak with:
 
 ```html
-<div ng-hodor="hodor" ng-hodor-hodor="100">
-    Plop
-</div>
+<div ng-hodor="hodor" ng-hodor-hodor="100">Plop</div>
 ```
 
 Aaaaand here it comes !

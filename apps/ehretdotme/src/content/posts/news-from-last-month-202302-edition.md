@@ -1,10 +1,11 @@
 ---
-date: '2023-02-01T00:00:00.000Z'
-updatedAt: '2023-02-03T10:34:11.848Z'
+date: "2023-02-01T00:00:00.000Z"
+updatedAt: "2023-02-03T10:34:11.848Z"
 title: News from last month (2023/02 edition)
 description: A selection of links from last month.
 tags: []
 ---
+
 ## Programming
 
 ### Web (HTML, CSS, JS, Design...)

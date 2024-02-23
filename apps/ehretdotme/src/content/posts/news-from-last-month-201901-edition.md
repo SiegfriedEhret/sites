@@ -1,12 +1,13 @@
 ---
-date: '2019-01-05T00:00:00.000Z'
-updatedAt: '2022-04-27T01:48:53.401Z'
+date: "2019-01-05T00:00:00.000Z"
+updatedAt: "2022-04-27T01:48:53.401Z"
 title: News from last month (2019/01 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 ## Intro
 
 Here are some links for you, so you can get back on tracks before going back to work.

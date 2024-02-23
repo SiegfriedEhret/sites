@@ -1,6 +1,6 @@
 ---
-date: '2019-12-31T00:00:00.000Z'
-updatedAt: '2021-05-24T07:11:05.479Z'
+date: "2019-12-31T00:00:00.000Z"
+updatedAt: "2021-05-24T07:11:05.479Z"
 title: Get some superpowers with your terminal
 description: >-
   A few notes about the apps I use from my terminal to be the only one who can
@@ -10,6 +10,7 @@ tags:
   - talks
   - tools
 ---
+
 This article is the written version of a small talk I gave in multiple conferences ([Devoxx France](https://www.youtube.com/watch?v=mxRpBHar_BQ), [Voxxed Days Luxembourg](https://www.youtube.com/watch?v=fXYnrNr0yug), [Jug Summer Camp](https://www.youtube.com/watch?v=DZcvLvKL-g0), [Voxxed Days Ticino](https://www.youtube.com/watch?v=ZVv4klOho2M)).
 
 ## Linux

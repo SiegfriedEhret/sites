@@ -1,10 +1,11 @@
 ---
-date: '2012-03-16T00:00:00.000Z'
-updatedAt: '2021-05-23T13:28:18.695Z'
+date: "2012-03-16T00:00:00.000Z"
+updatedAt: "2021-05-23T13:28:18.695Z"
 title: colourz
-description: 'Colourz, a jquery plugin for color conversion.'
+description: "Colourz, a jquery plugin for color conversion."
 tags: []
 ---
+
 Colourz, a jquery plugin for color conversion.
 
 ## intro
@@ -16,24 +17,26 @@ Demo : [v0.1](http://dev.federalbureauofinhumanity.org/colourz/v0.1/demo) (broke
 Github : [https://github.com/SiegfriedEhret/colourz](https://github.com/SiegfriedEhret/colourz)
 
 ## how ?
+
 Include jquery.
 Include colourz.js.
 Add some js code :
 
 ```javascript
 $(function () {
-  $('#hex-to-rgb').colourz({
-    from:'#hex',
-    to:'#rgb',
-    mode:'hex-to-rgb',
-    opacity:.2,
-    elementToPimp:'body',
-    cssProperty:'background-color'
+  $("#hex-to-rgb").colourz({
+    from: "#hex",
+    to: "#rgb",
+    mode: "hex-to-rgb",
+    opacity: 0.2,
+    elementToPimp: "body",
+    cssProperty: "background-color",
   });
 });
 ```
 
 ## options
+
 - from: the selector for the input element (to read)
 - to: the selector for the output element (to write)
 - mode: 'hex-to-rgb' or 'rgb-to-hex', to select the conversion mode
@@ -42,6 +45,7 @@ $(function () {
 - cssProperty: the css property to apply the converted colour (like 'background-color')
 
 ## license
+
 This plugin is licensed under the terms of the WTF Public License (see [http://en.wikipedia.org/wiki/WTFPL](http://en.wikipedia.org/wiki/WTFPL) and [http://sam.zoy.org/wtfpl/](http://sam.zoy.org/wtfpl/)) :
 
 ```text

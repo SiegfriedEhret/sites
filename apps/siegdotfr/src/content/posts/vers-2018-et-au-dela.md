@@ -1,11 +1,12 @@
 ---
-date: '2018-01-01T00:00:00.000Z'
-updatedAt: '2021-05-24T06:20:01.725Z'
+date: "2018-01-01T00:00:00.000Z"
+updatedAt: "2021-05-24T06:20:01.725Z"
 title: Vers 2018 et au-delà
 description: Un retour sur l'année dernière.
 tags:
   - personalbranling
 ---
+
 C'est la première fois que j'écris en anglais et en français ce genre de billet.
 
 Cette année n'a pas été facile pour moi, j'ai eu beaucoup de changement de contexte au niveau des projets pendant trop longtemps. Cela explique pourquoi j'ai quasiment arrêté de code en dehors du travail. Je suis rassuré quand je lis des choses comme [ce billet de Julia Evans «Learning at work»](https://jvns.ca/blog/2017/08/06/learning-at-work/) (en anglais), particulièrement:
@@ -73,11 +74,11 @@ J'ai été assez inactif cette année. J'ai appris à me déconnecter quand je s
 L'expérience [beulogue](https://www.npmjs.com/package/beulogue) est terminée. C'était vraiment sympa. Voici le code source final:
 
 ```javascript
-'use strict';
+"use strict";
 
-const path = require('path');
+const path = require("path");
 
-const pkg = require(path.resolve(__dirname, './package.json'));
+const pkg = require(path.resolve(__dirname, "./package.json"));
 
 console.log(`
   beulogue v${pkg.version} #EOL

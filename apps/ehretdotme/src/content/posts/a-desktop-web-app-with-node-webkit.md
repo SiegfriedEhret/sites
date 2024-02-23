@@ -1,10 +1,11 @@
 ---
-date: '2013-12-27T00:00:00.000Z'
-updatedAt: '2021-05-24T12:56:14.199Z'
+date: "2013-12-27T00:00:00.000Z"
+updatedAt: "2021-05-24T12:56:14.199Z"
 title: A desktop web-app with node-webkit
-description: 'Let''s play with node-webkit, to make a desktop web-app (part 1).'
+description: "Let's play with node-webkit, to make a desktop web-app (part 1)."
 tags: []
 ---
+
 ## Why ?
 
 A few days ago, Intel released a cross platform development kit (XDK) for HTML5 developement.
@@ -56,14 +57,14 @@ It is described using a `package.json` file (like everything based on nodeJS).
 
 ```json
 {
-    "name": "my-app",
-    "version": "0.1.0",
-    "main": "index.html",
-    "window": {
-        "toolbar": false,
-        "width": 800,
-        "height": 600
-    }
+  "name": "my-app",
+  "version": "0.1.0",
+  "main": "index.html",
+  "window": {
+    "toolbar": false,
+    "width": 800,
+    "height": 600
+  }
 }
 ```
 

@@ -1,12 +1,13 @@
 ---
-date: '2023-08-09T00:00:00.000Z'
-updatedAt: '2023-08-09T18:54:56.246Z'
+date: "2023-08-09T00:00:00.000Z"
+updatedAt: "2023-08-09T18:54:56.246Z"
 title: À plus les bots !
 description: >-
   Comment s'échapper (un peu) de la bulle de l'intelligence artificielle qui
   veut utiliser nos contenus.
 tags: []
 ---
+
 Pour suivre la voie prise part [Tracy Durnell](https://tracydurnell.com/2023/07/11/pulling-my-site-from-google-over-ai-training/) ou [Vasilis van Gemert](https://vasilis.nl/nerd/how-to-disagree-with-googles-privacy-policy/), j'ai décidé de réduire les possibilités de certains robots à utiliser mon site à des fins que je ne souhaite pas imaginer, avec par exemple Google qui annonce pouvoir utiliser tout ce qui est posté pour amuser ses projets d'intelligence artificielle ([en savoir plus](https://gizmodo.com/google-says-itll-scrape-everything-you-post-online-for-1850601486)) ou OpenAI avec ChatGPT qui peut faire de même.
 
 ## Empêcher ChatGPT
@@ -33,7 +34,7 @@ Disallow: /
 Il faut aussi ajouter le tag suivant pour indiquer à GoogleBot de ne plus indexer les pages qu'il connait:
 
 ```html
-<meta name="googlebot" content="noindex">
+<meta name="googlebot" content="noindex" />
 ```
 
 ## Et pour le reste ?

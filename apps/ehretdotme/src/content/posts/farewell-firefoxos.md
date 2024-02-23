@@ -1,16 +1,17 @@
 ---
-date: '2015-12-21T00:00:00.000Z'
-updatedAt: '2021-05-23T19:13:22.825Z'
-title: 'Farewell, FirefoxOS'
+date: "2015-12-21T00:00:00.000Z"
+updatedAt: "2021-05-23T19:13:22.825Z"
+title: "Farewell, FirefoxOS"
 description: Mozilla announced that they stopped their work on FirefoxOS.
 tags: []
 ---
+
 [FirefoxOS](https://www.mozilla.org/fr/firefox/os/) is (was ?) a mobile device experiment.
 
 Recently, they announced:
 
 > We will make space for this [IoT] exploration by stopping our work to build and ship smartphones through carrier partners.<br>
-&mdash; [source](https://blog.mozilla.org/blog/2015/12/09/firefox-os-pivot-to-connected-devices/)
+> &mdash; [source](https://blog.mozilla.org/blog/2015/12/09/firefox-os-pivot-to-connected-devices/)
 
 ## FirefoxOS devices
 

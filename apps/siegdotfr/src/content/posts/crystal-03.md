@@ -1,12 +1,13 @@
 ---
-date: '2020-10-12T00:00:00.000Z'
-updatedAt: '2022-04-01T09:10:25.918Z'
-title: 'Coder avec Crystal pour ne pas perdre la boule, troisième partie'
+date: "2020-10-12T00:00:00.000Z"
+updatedAt: "2022-04-01T09:10:25.918Z"
+title: "Coder avec Crystal pour ne pas perdre la boule, troisième partie"
 description: Découvrons le langage Crystal ensemble !
 tags:
   - crystal
 ---
-## Résumé de l'épisode précédent 
+
+## Résumé de l'épisode précédent
 
 C'est ici: [deuxième partie](https://sieg.fr/ied/crystal-02)
 
@@ -40,7 +41,7 @@ en
 @@config_path : Path = Path[ENV.fetch("MYAPP_PATH", Path.home.to_s)] / "myapp.yaml"
 ```
 
-L'API [ENV](https://crystal-lang.org/api/0.35.1/ENV.html) permet d'accéder aux variables d'environnement, et nous utilisons [ENV.fetch](https://crystal-lang.org/api/0.35.1/ENV.html#fetch(key,default)-class-method) pour extraire la valeur de la variable "MYAPP_PATH". Le second argument est la valeur par défaut.
+L'API [ENV](https://crystal-lang.org/api/0.35.1/ENV.html) permet d'accéder aux variables d'environnement, et nous utilisons [ENV.fetch](<https://crystal-lang.org/api/0.35.1/ENV.html#fetch(key,default)-class-method>) pour extraire la valeur de la variable "MYAPP_PATH". Le second argument est la valeur par défaut.
 
 ## Testons notre application
 
@@ -148,7 +149,7 @@ Il peut y avoir d'autres choses que des points:
 
 ### Cycle de vie
 
-Comme pour la plupart des outils de tests, il y a un cycle de vie pour les tests ([before_each](https://crystal-lang.org/api/0.35.1/Spec/Methods.html#before_each(&block)-instance-method), [after_each](https://crystal-lang.org/api/0.35.1/Spec/Methods.html#after_each(&block)-instance-method)) et les suites de tests ([before_all](https://crystal-lang.org/api/0.35.1/Spec/Methods.html#before_all(&block)-instance-method), [after_all](https://crystal-lang.org/api/0.35.1/Spec/Methods.html#after_all(&block)-instance-method)) au niveau des fichiers de tests, ainsi que [before_suite](https://crystal-lang.org/api/0.35.1/Spec.html#before_suite(&block)-class-method) et [after_suite](https://crystal-lang.org/api/0.35.1/Spec.html#after_suite(&block)-class-method) au niveau de la suite (l'ensemble des tests).
+Comme pour la plupart des outils de tests, il y a un cycle de vie pour les tests ([before_each](<https://crystal-lang.org/api/0.35.1/Spec/Methods.html#before_each(&block)-instance-method>), [after_each](<https://crystal-lang.org/api/0.35.1/Spec/Methods.html#after_each(&block)-instance-method>)) et les suites de tests ([before_all](<https://crystal-lang.org/api/0.35.1/Spec/Methods.html#before_all(&block)-instance-method>), [after_all](<https://crystal-lang.org/api/0.35.1/Spec/Methods.html#after_all(&block)-instance-method>)) au niveau des fichiers de tests, ainsi que [before_suite](<https://crystal-lang.org/api/0.35.1/Spec.html#before_suite(&block)-class-method>) et [after_suite](<https://crystal-lang.org/api/0.35.1/Spec.html#after_suite(&block)-class-method>) au niveau de la suite (l'ensemble des tests).
 
 Par exemple, modifions `/spec/spec_helper.cr` pour ajouter les lignes suivantes:
 

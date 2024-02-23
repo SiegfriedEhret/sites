@@ -1,10 +1,11 @@
 ---
-date: '2023-10-01T00:00:00.000Z'
-updatedAt: '2023-10-01T07:11:50.057Z'
+date: "2023-10-01T00:00:00.000Z"
+updatedAt: "2023-10-01T07:11:50.057Z"
 title: News from last month (2023/10 edition)
 description: A selection of links from last month.
 tags: []
 ---
+
 ## Programming
 
 ### Web (HTML, CSS, JS, Design...)
@@ -203,7 +204,7 @@ En français / In French:
 - [Parmesan Makers Add Microchips To Cheese Wheels To Foil Counterfeiters | Tom's Hardware](https://www.tomshardware.com/news/parmesan-makers-add-microchips-to-cheese-wheels-to-foil-counterfeiters) <!-- TAGS: 2023-09,various -->
 - [Twitter Left Up 86% of Hate Speech Posts Found by Researchers](https://gizmodo.com/twitter-x-hate-speech-research-no-action-1850833923) <!-- TAGS: 2023-09,various -->
 - [silo - IndieWeb](https://indieweb.org/silo) <!-- TAGS: 2023-09,various -->
-- [The Pirate Bay Celebrates Its 20th Anniversary * TorrentFreak](https://torrentfreak.com/the-pirate-bay-celebrates-its-20th-anniversary-230919/) <!-- TAGS: 2023-09,various -->
+- [The Pirate Bay Celebrates Its 20th Anniversary \* TorrentFreak](https://torrentfreak.com/the-pirate-bay-celebrates-its-20th-anniversary-230919/) <!-- TAGS: 2023-09,various -->
 - [Danish artist told to repay museum €67,000 after turning in blank canvasses - BBC News](https://www.bbc.com/news/world-europe-66847139) <!-- TAGS: 2023-09,various -->
 - [They Literally Don't Make Things Like They Used To – SOME MORE NEWS - YouTube](https://www.youtube.com/watch?v=SbhRrLuy0tc) <!-- TAGS: 2023-09,various -->
 - [Confessions of a McKinsey Whistleblower | The Nation](https://www.thenation.com/article/society/mckinsey-whistleblower-confessions/) <!-- TAGS: 2023-09,various -->

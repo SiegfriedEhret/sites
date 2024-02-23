@@ -1,12 +1,13 @@
 ---
-date: '2019-05-24T00:00:00.000Z'
-updatedAt: '2021-05-24T06:56:05.705Z'
+date: "2019-05-24T00:00:00.000Z"
+updatedAt: "2021-05-24T06:56:05.705Z"
 title: beulogue features
 description: Let's dive into the features for beulogue.
 tags:
   - beulogue
   - blog
 ---
+
 I had a [question](https://twitter.com/oduquesne/status/1131718926386323456) about `beulogue` features, and how it can be compared with Hugo and Pelican.
 
 ## Content

@@ -1,12 +1,13 @@
 ---
-date: '2019-11-15T00:00:00.000Z'
-updatedAt: '2022-10-29T19:26:06.523Z'
+date: "2019-11-15T00:00:00.000Z"
+updatedAt: "2022-10-29T19:26:06.523Z"
 title: News from last month (2019/11 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 ## Programming
 
 ### Web & Frontend (HTML, CSS, JS, Design...)

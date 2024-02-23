@@ -1,11 +1,12 @@
 ---
-date: '2016-05-12T00:00:00.000Z'
-updatedAt: '2021-05-24T08:40:21.569Z'
+date: "2016-05-12T00:00:00.000Z"
+updatedAt: "2021-05-24T08:40:21.569Z"
 title: beulogue again
 description: beulogue is my small attempt of making my blog generator.
 tags:
   - beulogue
 ---
+
 ![beulogue logo](/contentful/4ZGKt8LKA7v8RynaccxQ32/f525b12344e73044ae714a1d792a1b54/beulogue-logo.png)
 
 > beulogue [\bøloɡ\]: french for blog.

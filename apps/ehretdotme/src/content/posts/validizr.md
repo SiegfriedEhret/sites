@@ -1,10 +1,11 @@
 ---
-date: '2012-03-15T00:00:00.000Z'
-updatedAt: '2021-05-23T13:26:48.069Z'
+date: "2012-03-15T00:00:00.000Z"
+updatedAt: "2021-05-23T13:26:48.069Z"
 title: validizr
 description: A plugin for form validation.
 tags: []
 ---
+
 A plugin for form validation.
 
 ## intro
@@ -12,6 +13,7 @@ A plugin for form validation.
 ANOTHERPROJECTENDINGWITHANEFFINGR.
 
 ## whaaaat
+
 A jquery plugin for form validation.
 
 Demo here : [v0.1](http://dev.federalbureauofinhumanity.org/validizr/v0.1/demo/) (broken link)
@@ -19,32 +21,34 @@ Demo here : [v0.1](http://dev.federalbureauofinhumanity.org/validizr/v0.1/demo/)
 On github here : [https://github.com/SiegfriedEhret/validizr](https://github.com/SiegfriedEhret/validizr)
 
 ## how ?
+
 Include jquery.
 Include validizr.js.
 Add some js code :
 
 ```javascript
 $(function () {
-  $('#myForm').validizr({
-    submit:'#submitButton',
-    parentContainer:'dd',
-    notValidClass:'not-valid'
+  $("#myForm").validizr({
+    submit: "#submitButton",
+    parentContainer: "dd",
+    notValidClass: "not-valid",
   });
 });
 ```
 
 ## not working
+
 Normal. You have to add stuff to your form elements :
 
-* data-validate="notEmpty" : will check if your element has a value.
-* data-validate="notEmpty isEmail" : will check if your element has a value, and if it's a valid email (basic regex).
-* data-validate="notEmpty onlyNumbers" : will check if your element has a value, and if it's filled with numbers.
+- data-validate="notEmpty" : will check if your element has a value.
+- data-validate="notEmpty isEmail" : will check if your element has a value, and if it's a valid email (basic regex).
+- data-validate="notEmpty onlyNumbers" : will check if your element has a value, and if it's filled with numbers.
 
 ## options
 
-* submit : the identifier for the submit button. Default is :submit. It will search under the form where validizr is called.
-* parentContainer : the parent container for the input etc. It will be used to add a "not-valid" class.
-* notValidClass : the "not-valid" class to add.
+- submit : the identifier for the submit button. Default is :submit. It will search under the form where validizr is called.
+- parentContainer : the parent container for the input etc. It will be used to add a "not-valid" class.
+- notValidClass : the "not-valid" class to add.
 
 ## license
 

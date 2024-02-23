@@ -1,13 +1,14 @@
 ---
-date: '2022-05-26T00:00:00.000Z'
-updatedAt: '2022-05-26T13:17:38.314Z'
-title: 'Interview: Matt Holt'
+date: "2022-05-26T00:00:00.000Z"
+updatedAt: "2022-05-26T13:17:38.314Z"
+title: "Interview: Matt Holt"
 description: >-
   I interviewed Matt Holt at dotGo 2016. We talked about open source, Caddy, Go,
   Let’s Encrypt and the life of a programmer who is still studying!
 tags:
   - interview
 ---
+
 📢 This article was first published on 2nd of November 2016, on [Sfeir](https://www.sfeir.com/en/)'s blog, which has disappeared since.
 
 I interviewed Matt Holt at dotGo 2016. We talked about open source, Caddy, Go, Let’s Encrypt and the life of a programmer who is still studying!
@@ -44,10 +45,10 @@ The last company I worked at was looking into using it. They were going to switc
 
 I would say, if you are brand new to it:
 
-  * Read the documentation on the Go website
-  * Play with the [Go Tour](https://tour.golang.org/)
-  * Read [Effective Go](https://golang.org/doc/effective_go.html)
-  * Read the language spec (it’s not actually that bad for a language spec!)
+- Read the documentation on the Go website
+- Play with the [Go Tour](https://tour.golang.org/)
+- Read [Effective Go](https://golang.org/doc/effective_go.html)
+- Read the language spec (it’s not actually that bad for a language spec!)
 
 Try hacking out little programs in Go. There are a lot of great blog posts and great projects to contribute to. Find issues on projects that you like, maybe some projects will tag things as “easy” or “good for beginners”, jump into those, get involved in the [Go Slack Community](https://blog.gopheracademy.com/gophers-slack-community/), they have a channel for people who are new to Go.
 

@@ -1,10 +1,11 @@
 ---
-date: '2013-04-05T00:00:00.000Z'
-updatedAt: '2021-05-23T13:39:09.065Z'
-title: 'Vagrant, Apache, Tomcat, OpenCms'
-description: 'This is mostly a vagrant guide for me, which may be useful for somebody.'
+date: "2013-04-05T00:00:00.000Z"
+updatedAt: "2021-05-23T13:39:09.065Z"
+title: "Vagrant, Apache, Tomcat, OpenCms"
+description: "This is mostly a vagrant guide for me, which may be useful for somebody."
 tags: []
 ---
+
 ## intro
 
 Hi all,
@@ -99,8 +100,8 @@ It's time to restart tomcat with `sudo /etc/init.d/tomcat7 restart`. It will dep
 
 Run `sudo vi /etc/hosts` to add:
 
--  `127.0.0.1 back-leproject.ehret`
--  `127.0.0.1 leproject.ehret`
+- `127.0.0.1 back-leproject.ehret`
+- `127.0.0.1 leproject.ehret`
 
 Run `sudo chmod -R 777 opencms` in the "www" folder to give full right to Tomcat (it's a development platform, so who cares ?).
 
@@ -114,6 +115,7 @@ Yes. We're going to set nicer urls and hide tomcat behind apache.
 ### opencms configuration
 
 Run the following commands :
+
 - `cd ~/www` to go in the folder where OpenCms is installed
 - `mv opencms ROOT` to rename opencms root folder
 

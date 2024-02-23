@@ -1,12 +1,13 @@
 ---
-date: '2018-02-17T00:00:00.000Z'
-updatedAt: '2021-05-24T06:34:00.410Z'
+date: "2018-02-17T00:00:00.000Z"
+updatedAt: "2021-05-24T06:34:00.410Z"
 title: AMP Game Theory
 description: >-
   This is an ugly copypasta from this twitter thread (and I don’t like threads)
   by user lukestevens.
 tags: []
 ---
+
 This is an ugly copypasta from [this twitter thread](https://twitter.com/lukestevens/status/963905898895699968) (and I don't like threads) by user [lukestevens](https://twitter.com/lukestevens).
 
 <hr>
@@ -30,7 +31,7 @@ For background, smart people with similar misgivings have been writing criticall
 
 With the announcement of AMP stories, AMP for email, and just-build-your-whole-site-in-AMP, it's clear that these concerns are being realised.
 
-AMP is now a Google-driven metaplatform that spans the SERPs, web & email. 
+AMP is now a Google-driven metaplatform that spans the SERPs, web & email.
 
 Google forked the web.
 
@@ -62,15 +63,15 @@ We've been here before with the web standards movement ([webstandards.org](https
 
 It's clear that this is a lesson we'll need to re-learn again and again.
 
-But it's worth acknowledging the way Google is hiding its blatant corporate interests behind its tech *and* its engineers is just gross.
+But it's worth acknowledging the way Google is hiding its blatant corporate interests behind its tech _and_ its engineers is just gross.
 
 <hr>
 
-Google's VPs were smart enough to dress up the initiative with enough buzzwords (neutral branding, "open source" etc) *and* people who genuinely care about the web.
+Google's VPs were smart enough to dress up the initiative with enough buzzwords (neutral branding, "open source" etc) _and_ people who genuinely care about the web.
 
 <hr>
 
-This is ingenious because they can enlist their employee's passion for the web as well as *volunteers* to help with the technical implementation of their corporate strategy.
+This is ingenious because they can enlist their employee's passion for the web as well as _volunteers_ to help with the technical implementation of their corporate strategy.
 
 Get it? Volunteers helping implement the Google Web Fork (GWF?) so Google can chase Facebook.
 
@@ -78,11 +79,11 @@ G R O S S
 
 <hr>
 
-Imagine if Microsoft implemented Microsoft Web Fork in the 90s/00s (they tried). Not ok then, not ok now. 
+Imagine if Microsoft implemented Microsoft Web Fork in the 90s/00s (they tried). Not ok then, not ok now.
 
 Why? The web wasn't MS's then, & it's not Google's to re-implement now.
 
-Who's looking after ActiveX content? Flash? Java? 
+Who's looking after ActiveX content? Flash? Java?
 
 AMP is going to be the mess we get to clean up.
 
@@ -94,7 +95,7 @@ But autoplay video and music in Stories? JavaScript in your email? Just gross. T
 
 <hr>
 
-Problem is, appeals to "The AMP team" seem futile, because the AMP team's domain \*is purely technical implementation\*. 
+Problem is, appeals to "The AMP team" seem futile, because the AMP team's domain \*is purely technical implementation\*.
 
 It's the VP's that are pulling the strings here (presumably [Dave Besbris](https://twitter.com/tweetbez)).
 
@@ -102,7 +103,7 @@ But all we can do is appeal to the engineers involved.
 
 <hr>
 
-So, [@cramforce](https://twitter.com/cramforce) & [@AMPhtml](https://twitter.com/AMPhtml) team, you have some of the most lucrative skills on the planet, please reconsider what you’re using them for. 
+So, [@cramforce](https://twitter.com/cramforce) & [@AMPhtml](https://twitter.com/AMPhtml) team, you have some of the most lucrative skills on the planet, please reconsider what you’re using them for.
 
 The web isn't yours to remake, and the tools you’re providing your management with are too dangerous for the web you intend to help.
 

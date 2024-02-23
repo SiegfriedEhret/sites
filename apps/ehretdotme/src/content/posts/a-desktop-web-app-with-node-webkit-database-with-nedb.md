@@ -1,10 +1,11 @@
 ---
-date: '2014-01-21T00:00:00.000Z'
-updatedAt: '2021-05-24T12:56:28.200Z'
-title: 'A desktop web-app with node-webkit, database with nedb !'
-description: 'Let''s play with node-webkit, to make a desktop web-app (part 2).'
+date: "2014-01-21T00:00:00.000Z"
+updatedAt: "2021-05-24T12:56:28.200Z"
+title: "A desktop web-app with node-webkit, database with nedb !"
+description: "Let's play with node-webkit, to make a desktop web-app (part 2)."
 tags: []
 ---
+
 ## Why ?
 
 In my secret project to conquer the world, I want to store stuff.
@@ -43,10 +44,10 @@ The page contains:
 Very hard:
 
 ```javascript
-var Datastore = require('nedb');
+var Datastore = require("nedb");
 var db = new Datastore({
-  filename : getUserDataPath() + '/dudes.db',
-  autoload: true
+  filename: getUserDataPath() + "/dudes.db",
+  autoload: true,
 });
 ```
 
@@ -54,8 +55,8 @@ The getUserDataPath() function returns the .exe directory:
 
 ```javascript
 function getUserDataPath() {
-    var path = require('path');
-    return path.dirname(process.execPath);
+  var path = require("path");
+  return path.dirname(process.execPath);
 }
 ```
 
@@ -65,16 +66,19 @@ Very hard again: db.insert, with the data to insert, and a callback:
 
 ```javascript
 function saveUser(firstName, lastName) {
-  db.insert({
-    firstName: firstName,
-    lastName: lastName
-  }, function(err, newDoc) {
-    if (err) {
-      console.log(err);
-    } else {
-      showUser(newDoc);
-    }
-  });
+  db.insert(
+    {
+      firstName: firstName,
+      lastName: lastName,
+    },
+    function (err, newDoc) {
+      if (err) {
+        console.log(err);
+      } else {
+        showUser(newDoc);
+      }
+    },
+  );
 }
 ```
 
@@ -84,7 +88,7 @@ A db.find, with an empty object `{}` retrieves all the users. We can add things 
 
 ```javascript
 function getAllTheThings() {
-  db.find({}, function(err, docs) {
+  db.find({}, function (err, docs) {
     for (var i = 0; i < docs.length; i++) {
       showUser(docs[i]);
     }

@@ -1,12 +1,13 @@
 ---
-date: '2020-10-29T00:00:00.000Z'
-updatedAt: '2021-05-24T08:45:14.633Z'
+date: "2020-10-29T00:00:00.000Z"
+updatedAt: "2021-05-24T08:45:14.633Z"
 title: beulogue is fast enough
-description: 'A quick article about a recent change in beulogue, and benchmarks'
+description: "A quick article about a recent change in beulogue, and benchmarks"
 tags:
   - beulogue
   - blog
 ---
+
 The [beulogue](https://github.com/SiegfriedEhret/beulogue/) adventure began a year and a half ago, to start playing with [Crystal](https://crystal-lang.org/).
 
 ## It was fast, and I made it slow
@@ -76,7 +77,7 @@ beulogue stays close to Eleventy. Jekyll and Next.js are a bit faster.
 
 When I ran the benchmarks, in particular the ones with a lot of files (about 4000 markdown files), I noticed that the performance was less and less good.
 
-I used the [Time API](https://crystal-lang.org/api/0.35.1/Time.html#measure(&):Time::Span-class-method) from Crystal to find the hot point(s).
+I used the [Time API](<https://crystal-lang.org/api/0.35.1/Time.html#measure(&):Time::Span-class-method>) from Crystal to find the hot point(s).
 
 I managed to fix the issue which was pretty dumb, as usual: I created a new template parser for each page, but I only really needed one!
 

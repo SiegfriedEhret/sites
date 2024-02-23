@@ -1,11 +1,12 @@
 ---
-date: '2017-03-05T00:00:00.000Z'
-updatedAt: '2021-05-24T21:08:07.818Z'
+date: "2017-03-05T00:00:00.000Z"
+updatedAt: "2021-05-24T21:08:07.818Z"
 title: beulogue and gitlab ci
 description: How do I deploy my beulogue blog with Gitlab CI ?
 tags:
   - beulogue
 ---
+
 So [beulogue](https://gitlab.com/SiegfriedEhret/beulogue) is hosted on Gitlab. My blog (private repo) is also there.
 
 Since beulogue is a static site generator, I have to upload my files myself. Kinda boring. Let's try [Gitlab pipelines !](https://docs.gitlab.com/ee/ci/pipelines.html)
@@ -16,7 +17,7 @@ First, we need to configure some [secret variables](https://docs.gitlab.com/ce/c
 - `REMOTE_PATH` with the target folder
 - `REMOTE_USER` with the name of the remote user
 - `SSH_HOST_KEY` with the result of `ssh-keyscan your-domain.something` (the line starting with `your-domain.something ssh-rsa`)
-- `SSH_PRIVATE_KEY` with the content of the *private key* [created for the CI](https://docs.gitlab.com/ce/ssh/README.html#generating-a-new-ssh-key-pair)
+- `SSH_PRIVATE_KEY` with the content of the _private key_ [created for the CI](https://docs.gitlab.com/ce/ssh/README.html#generating-a-new-ssh-key-pair)
 
 Then, I need to add my public key to the server authorized keys (`~/.ssh/authorized_keys` relative to the `REMOTE_USER` home directory).
 

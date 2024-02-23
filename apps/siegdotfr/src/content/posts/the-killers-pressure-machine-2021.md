@@ -1,17 +1,18 @@
 ---
-date: '2021-08-21T00:00:00.000Z'
-updatedAt: '2022-02-06T08:50:03.587Z'
+date: "2021-08-21T00:00:00.000Z"
+updatedAt: "2022-02-06T08:50:03.587Z"
 title: The Killers - Pressure Machine (2021)
 description: Le 7ème album the The Killers. Sans surprise.
 tags:
   - music
   - review
 ---
+
 ## Préambule
 
 «Pressure Machine» est 7ème album du groupe de rock [The Killers](https://fr.wikipedia.org/wiki/The_Killers). Un album né et achevé pendant la pandémie.
 
-Très orienté sur la vie dans une petite ville des États-Unis (par exemple [Nephi](https://fr.wikipedia.org/wiki/Nephi_(Utah)), où le chanteur a passé une partie de sa jeunesse), il touche des thèmes importants et parfois graves. De jolis textes dans une instrumentation peu surprenante.
+Très orienté sur la vie dans une petite ville des États-Unis (par exemple [Nephi](<https://fr.wikipedia.org/wiki/Nephi_(Utah)>), où le chanteur a passé une partie de sa jeunesse), il touche des thèmes importants et parfois graves. De jolis textes dans une instrumentation peu surprenante.
 
 ![The Killers - Pressure Machine](/contentful/42IRSzodKltj35tVKjGIQ2/d1dadd79041953b596767efdd7c01a72/R-19829656-1628933248-3292.jpeg.jpg)
 
@@ -21,7 +22,7 @@ L'album démarre avec West Hills, en commençant par 3 commentaires de personnes
 
 Quiet Town a l'air d'une petite balade sympathique... mais non. Ça parle d'accident de train, de problème de drogue. Les instrus changent un peu de ce qu'on entend de The Killers habituellement, mais ça sonne comme du déjà entendu.
 
-Continuons dans la déprime avec Terrible Thing avec le sujet du suicide, pensé par un ado homosexuel entouré d'une communauté religieuse où l'homosexualité n'est pas bienvenue. 
+Continuons dans la déprime avec Terrible Thing avec le sujet du suicide, pensé par un ado homosexuel entouré d'une communauté religieuse où l'homosexualité n'est pas bienvenue.
 
 Cody décrit les «grands frères», qui font des choses dangereuses, qui inquiètent les parents et intriguent les autres. Une instru tranquille, avec un petit solo de guitare manque de goût (pourquoi dans de distortion ?), et on finit dans l'attente du miracle avec le chœur et les violons, c'est peut être un peu trop.
 
@@ -29,7 +30,7 @@ Sleepwalker commencent avec un discours d'une jeune sur le moment où elle a eu 
 
 Runaway Horses, avec Phoebe Bridgers, sur le chemin qu'on fait ensemble et qui se sépare en deux. C'est mignon et un peu plus léger que le début de l'album. Je ne suis pas certain de la valeur ajoutée par la chanteuse.
 
-In the Car Outside démarre avec une conversation dans un garage, puis des percussions dignes d'une batterie électronique d'il y a quelques dizaines d'années, accompagnée par une meilleure percussion un peu plus loin. C'est la chanson rapide de l'album, sur la vie et 
+In the Car Outside démarre avec une conversation dans un garage, puis des percussions dignes d'une batterie électronique d'il y a quelques dizaines d'années, accompagnée par une meilleure percussion un peu plus loin. C'est la chanson rapide de l'album, sur la vie et
 
 In Another Life s'ouvre avec une personne qui parle d'alcool et de drogue et qu'on cherche tout à s'échapper de quelque chose. Une autre vie. Instru sans surprise.
 
@@ -65,5 +66,5 @@ Voilà ! C'est juste mon avis, j'espère que vous en avez un différent. Bisous 
 
 ## Liens
 
-* [Genius](https://genius.com/albums/The-killers/Pressure-machine)
-* [Site](https://www.thekillersmusic.com/)
+- [Genius](https://genius.com/albums/The-killers/Pressure-machine)
+- [Site](https://www.thekillersmusic.com/)

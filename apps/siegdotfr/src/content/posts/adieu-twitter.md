@@ -1,12 +1,13 @@
 ---
-date: '2022-05-01T00:00:00.000Z'
-updatedAt: '2022-05-01T09:03:50.972Z'
+date: "2022-05-01T00:00:00.000Z"
+updatedAt: "2022-05-01T09:03:50.972Z"
 title: Twitter
 description: >-
   Suite aux annonces de rachat par Elon Musk, je vais bientôt fermer mon compte
   Twitter.
 tags: []
 ---
+
 Suite aux annonces de rachat par Elon Musk, je vais bientôt fermer mon compte Twitter.
 
 J'ai envie de croire que les désirs d'Elon Musk de rendre la plateforme plus ouverte lui seront bénéfiques, mais je souhaite m'éloigner des propriétés de ce personnage.
@@ -19,15 +20,16 @@ Je pense qu'une évolution saine de Twitter est le travail effectué autour de [
 
 J'ai reçu l'archive avec mes données Twitter que je vais parcourir et utiliser une instance [nitter](https://github.com/zedeus/nitter) pour avoir des flux RSS et continuer de suivre vos aventures.
 
-Aujourd'hui il y a d'autres choix avec le [Fediverse](https://fr.wikipedia.org/wiki/Fediverse).  De mon côté, j'ai choisi [Mastodon](https://joinmastodon.org/) et je suis actif ici: [@SiegfriedEhret@mastodon.ehret.me](https://mastodon.ehret.me/@SiegfriedEhret).
+Aujourd'hui il y a d'autres choix avec le [Fediverse](https://fr.wikipedia.org/wiki/Fediverse). De mon côté, j'ai choisi [Mastodon](https://joinmastodon.org/) et je suis actif ici: [@SiegfriedEhret@mastodon.ehret.me](https://mastodon.ehret.me/@SiegfriedEhret).
 
 Et aussi:
 
-* Par email à siegfried (arobase) ehret.me
-* Par téléphone (demandez-moi) sur Signal
-* Sur Keybase: [siegfriedehret](https://keybase.io/siegfriedehret/)
+- Par email à siegfried (arobase) ehret.me
+- Par téléphone (demandez-moi) sur Signal
+- Sur Keybase: [siegfriedehret](https://keybase.io/siegfriedehret/)
 
 ## Une note à propos de Twitter Blue
+
 J'ai essayé [Twitter Blue](https://help.twitter.com/fr/using-twitter/twitter-blue) pour un mois. Pour un abonnement, j'espérais trouver une réponse à 2 points noirs de la plateforme: la bulle personnalisée et les publicités. À ce jour, Twitter Blue ne résoud aucun des deux.
 
 Mais on peut changer l'icône de l'appli, génial ! (non). Voir les [fonctionnalités Twitter Blue](https://help.twitter.com/fr/using-twitter/twitter-blue-features).

@@ -1,6 +1,6 @@
 ---
-date: '2021-08-01T00:00:00.000Z'
-updatedAt: '2022-02-06T08:55:59.794Z'
+date: "2021-08-01T00:00:00.000Z"
+updatedAt: "2022-02-06T08:55:59.794Z"
 title: Yola - Stand For Myself (2021)
 description: >-
   Quelques remarques sur le deuxième album de Yola «Stand For Myself», sorti le
@@ -9,6 +9,7 @@ tags:
   - music
   - review
 ---
+
 ## Préambule
 
 Yola est une chanteuse pop/soul anglaise, que j’ai découverte il y a quelques mois avec la chanson [Diamond Studded Shoes](https://www.youtube.com/watch?v=GfC_n8efpiM) et son [Tiny Desk Concert](https://www.youtube.com/watch?v=usDb7VDRzeM). Je m’étais jeté sur son premier album, Walk Through Fire, et attendais cet album avec impatience. Allons-y !
@@ -25,7 +26,7 @@ Oh oui Diamond Studded Shoes ! Le rythme s’accélère sur ces 3 premières pis
 
 Retour au calme avec Be My Friend, un appel à l’amitié et au soutien, même quand les choses ne vont pas comme il faut. Et qu’en plus il pleut.
 
-Et encore plus calme avec Great Divide, une nouvelle foix sur la séparation et l’attente.  C’est plein d’émotion ! Curieusement, cette chanson n’a pas de refrain, même si on n’est quand même pas perdu.
+Et encore plus calme avec Great Divide, une nouvelle foix sur la séparation et l’attente. C’est plein d’émotion ! Curieusement, cette chanson n’a pas de refrain, même si on n’est quand même pas perdu.
 
 Avec Starlight, on retouche à l’idée d’une relation, on espère, on a peur, mais on est optimiste. Les chœurs sont là pour encourager. C’est beau !
 
@@ -53,7 +54,7 @@ Voilà ! C'est juste mon avis, j'espère que vous en avez un différent. Bisous 
 
 ## Pistes
 
-1. 💖 Barely Alive 
+1. 💖 Barely Alive
 2. Dancing Away In Tears
 3. 💖 Diamond Studded Shoes
 4. Be My Friend

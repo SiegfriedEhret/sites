@@ -5,12 +5,13 @@ import { formatDate } from "@packages/utils/date";
 
 const entriesFromRepository = await getCollection("posts");
 
-const posts = entriesFromRepository.map((item) => ({
-  title: item.data.title,
-  slug: item.slug,
-  description: item.data.description,
-  date: formatDate(item.data.date),
-}))
+const posts = entriesFromRepository
+  .map((item) => ({
+    title: item.data.title,
+    slug: item.slug,
+    description: item.data.description,
+    date: formatDate(item.data.date),
+  }))
   .sort((a, b) => b.date.localeCompare(a.date))
   .slice(0, 10);
 ---

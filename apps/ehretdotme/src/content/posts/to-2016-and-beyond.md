@@ -1,11 +1,12 @@
 ---
-date: '2016-01-01T00:00:00.000Z'
-updatedAt: '2021-05-24T21:08:08.242Z'
+date: "2016-01-01T00:00:00.000Z"
+updatedAt: "2021-05-24T21:08:08.242Z"
 title: To 2016 and beyond
 description: It’s that time again... A review of last year.
 tags:
   - personalbranling
 ---
+
 明けましておめでとうございます！今年も宜しくお願いします！
 
 I wrote [last year](https://ehret.me/to-2015-and-beyond.html) about my plans for 2015. Let's see what happens and what I want for 2016.
@@ -31,7 +32,7 @@ I'll continue to share things and try to contribute to other blogs for 2016.
 Interlude: [Ceschi - This won't last forever](https://www.youtube.com/watch?v=PlI1u_VhaE8) (hip-hop)
 
 > Back when I was 10, sang "fuck the police".<br>
-  20 years later - know exactly what that means.
+> 20 years later - know exactly what that means.
 
 ## &#9745; Speaking
 
@@ -69,7 +70,7 @@ Interlude: [Bloqués - Le Jeu du Johnny Deep](https://www.youtube.com/watch?v=bA
 
 ## &#9733; Programming
 
-I *finally* invested some time into into some personal projects:
+I _finally_ invested some time into into some personal projects:
 
 - [beulogue](https://www.npmjs.com/package/beulogue), a static site generator
 - [jisho](https://www.npmjs.com/package/jisho), a command line japanese dictionary
@@ -91,7 +92,7 @@ I still have my [app.net](https://alpha.app.net/siegfriedehret) account but I do
 
 <hr>
 
-Interlude: [Peste noire - Dans ma nuit](https://vimeo.com/113376933)  (french countryside black metal)
+Interlude: [Peste noire - Dans ma nuit](https://vimeo.com/113376933) (french countryside black metal)
 
 ## Peace ?
 

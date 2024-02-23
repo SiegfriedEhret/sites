@@ -1,11 +1,12 @@
 ---
-date: '2018-01-01T00:00:00.000Z'
-updatedAt: '2021-05-23T21:15:16.572Z'
+date: "2018-01-01T00:00:00.000Z"
+updatedAt: "2021-05-23T21:15:16.572Z"
 title: FFmpeg tips
 description: Here are a few commands for FFmpeg that were useful for me.
 tags:
   - tips
 ---
+
 Here are a few commands for [FFmpeg](https://ffmpeg.org/) that were useful for me.
 
 The help page for all parameters is [here](https://ffmpeg.org/ffmpeg.html).
@@ -43,8 +44,8 @@ ffmpeg -i audio.m4a -acodec libmp3lame -ac 0 -ab 320k audio.mp3
 
 Parameters:
 
-- `-acodec libmp3lame` allows to use the lame mp3 library for conversion 
-- `-ac 2` sets the number of channels 
+- `-acodec libmp3lame` allows to use the lame mp3 library for conversion
+- `-ac 2` sets the number of channels
 - `-ab 320k` sets the bitrate
 
 Of course, the previous command and this one can be merged for a 1 step audio extraction & conversion.

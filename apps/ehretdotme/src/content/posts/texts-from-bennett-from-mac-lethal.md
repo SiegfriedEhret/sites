@@ -1,10 +1,11 @@
 ---
-date: '2013-11-07T00:00:00.000Z'
-updatedAt: '2021-05-24T12:54:46.440Z'
+date: "2013-11-07T00:00:00.000Z"
+updatedAt: "2021-05-24T12:54:46.440Z"
 title: Texts from Bennett from Mac Lethal
 description: I read that !
 tags: []
 ---
+
 ![Bennett speaks "da female language"](/contentful/1YbAZDYHqQiRJoNJqdVopf/6ea44a69b73159fdcc1b0f69fa69c5e8/tumblr_lw82dbpfM41qk9nrro1_500.png)
 (from [here](http://textsfrombennett.tumblr.com/post/14242386878/bennett-is-a-ninja-textsfrombennett))
 
@@ -28,7 +29,7 @@ I am not an expert at all in hip hop, but I think this pale kid raps good. I lik
 
 ## The book
 
-The book is not *only* about Bennett. It is about a period in the life of Mac Lethal, when his cousin Bennett and Aunt Lily came to live in his house... With their problems (and their solutions ?)
+The book is not _only_ about Bennett. It is about a period in the life of Mac Lethal, when his cousin Bennett and Aunt Lily came to live in his house... With their problems (and their solutions ?)
 
 The book is **not** a blog copycat. You will find lots of conversations between Mac Lethal and Bennett, and you will meet some members of the family, and their friends, their girlfriends.
 
@@ -48,9 +49,9 @@ I can't wait to see what happens with this: [FX Buys Odd Couple Comedy From Rand
 
 ## Resources
 
-* The book on [Amazon US](www.amazon.com/Texts-Bennett-Mac-Lethal/dp/1476706875/) and [Amazon France](www.amazon.fr/Texts-Bennett-Mac-Lethal/dp/1476706875/)
-* [Texts from Bennetts blog](http://textsfrombennett.tumblr.com/)
-* [Mac Lethal videos](https://www.youtube.com/user/BlackCloverRecords/videos)
+- The book on [Amazon US](www.amazon.com/Texts-Bennett-Mac-Lethal/dp/1476706875/) and [Amazon France](www.amazon.fr/Texts-Bennett-Mac-Lethal/dp/1476706875/)
+- [Texts from Bennetts blog](http://textsfrombennett.tumblr.com/)
+- [Mac Lethal videos](https://www.youtube.com/user/BlackCloverRecords/videos)
 
 ## Last words
 

@@ -1,10 +1,11 @@
 ---
-date: '2015-07-05T00:00:00.000Z'
-updatedAt: '2021-05-23T19:10:56.290Z'
+date: "2015-07-05T00:00:00.000Z"
+updatedAt: "2021-05-23T19:10:56.290Z"
 title: (and (keep calm) (hack lisp))
 description: A quick presentation to discover the marvelous world of lisp.
 tags: []
 ---
+
 Hello there !
 
 I made a small presentation about lisp at a functional programming event at [SFEIR](http://www.sfeir.com). In fact, it was more an intro than "hacking" into it.
@@ -28,15 +29,18 @@ With a nice clisp REPL open, I started showing a few examples (`> ` represent th
 "Hello World !"
 "Hello World !"
 ```
+
 Why is "Hello World !" printed 2 times ?
 
 Because everything **returns** something. The `print` function prints the given arguments and then returns the data. It is useful for things like:
+
 ```
 > (+ (print 1) (print 2))
 1
 2
 3
 ```
+
 which print 1, then 2, and finally the computation of `(+ 1 2)` which is 3.
 
 ## Variables
@@ -84,7 +88,7 @@ C
 
 ### let
 
-I should also have talked about let* but I forgot what was the difference...
+I should also have talked about let\* but I forgot what was the difference...
 The last `x` is not defined since the let declaration is scoped, so I got an error.
 
 ```
@@ -169,12 +173,14 @@ I introduced cons and the quote operator.
 ```
 
 Also, `car`:
+
 ```
 > (car '(1 2 3))
 1
 ```
 
 And its buddy `cdr`:
+
 ```
 > (cdr '(1 2 3))
 (2 3)
@@ -188,6 +194,7 @@ And its buddy `cdr`:
 ## Magic operators
 
 ### quote or '
+
 In lisp, code is data !
 You can use quote to **not** evaluate a list (in the second example, setq is not processed).
 
@@ -199,6 +206,7 @@ You can use quote to **not** evaluate a list (in the second example, setq is not
 ```
 
 ### backquote / quasiquote and comma
+
 Quasiquote is like the previous quote, but you can use comma **,** to evaluate the following expression:
 
 ```
@@ -220,6 +228,7 @@ It's like `funcall` or `apply`.
 ### DEFMACRO, MACROEXPAND
 
 #### The macro
+
 ```
 > (defmacro let1 (var val &body body)
   `(let ((,var ,val))
@@ -228,6 +237,7 @@ LET1
 ```
 
 #### The use
+
 Allows to understand in a simple way the macro code. In this example:
 
 ```

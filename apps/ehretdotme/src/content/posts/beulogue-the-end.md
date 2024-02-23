@@ -1,12 +1,13 @@
 ---
-date: '2021-05-25T00:00:00.000Z'
-updatedAt: '2021-05-26T21:03:37.350Z'
+date: "2021-05-25T00:00:00.000Z"
+updatedAt: "2021-05-26T21:03:37.350Z"
 title: Beulogue... The end?
 description: Looking back at the multiple lives of beulogue.
 tags:
   - beulogue
   - blog
 ---
+
 ## Once upon a beulogue...
 
 beulogue is my go-to project when I want to dig more into a language and its ecosystem.
@@ -41,7 +42,7 @@ This website has been over-engineered for fun (and no profit).
 
 ## That's all folks!
 
-beulogue is the second project I stopped this year, after [brrr](/en/brrr-the-end). This is give me more time for a new secret project about writing. 
+beulogue is the second project I stopped this year, after [brrr](/en/brrr-the-end). This is give me more time for a new secret project about writing.
 
 Stay tuned for 2 articles in the near future about:
 

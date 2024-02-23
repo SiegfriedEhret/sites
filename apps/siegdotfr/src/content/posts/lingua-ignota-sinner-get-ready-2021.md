@@ -1,17 +1,18 @@
 ---
-date: '2021-08-11T00:00:00.000Z'
-updatedAt: '2022-02-06T08:52:18.736Z'
+date: "2021-08-11T00:00:00.000Z"
+updatedAt: "2022-02-06T08:52:18.736Z"
 title: LINGUA IGNOTA - SINNER GET READY (2021)
 description: Découvrons ensemble le nouvel album de LINGUA IGNOTA. C'est magnifique.
 tags:
   - music
   - review
 ---
+
 ## Préambule
 
 Très intrigué par les titres qui ont précédé la sortie de l'album tels que [PERPETUAL FLAME OF CENTRALIA](https://www.youtube.com/watch?v=6FKgLmT5s2A) ou [PENNSYLVANIA FURNACE](https://www.youtube.com/watch?v=7YRMV7ffPpY), il est temps de se plonger dans ce 4ème album, sorti le 6 août. Une découverte pour moi.
 
-Comme genres, [Wikipedia](https://en.wikipedia.org/wiki/Lingua_Ignota_(musician)) indique «Industrial, classical, noise».
+Comme genres, [Wikipedia](<https://en.wikipedia.org/wiki/Lingua_Ignota_(musician)>) indique «Industrial, classical, noise».
 
 L'inspiration vient entre autres de textes Amish and Mennonite des années 1700 et 1800. Elle traite aussi de la solitude et de la relation avec dieu.
 
@@ -63,5 +64,5 @@ Voilà ! C'est juste mon avis, j'espère que vous en avez un différent. Bisous 
 
 ## Liens
 
-* [Page Bandcamp](https://linguaignota.bandcamp.com/)
-* [Genius](https://genius.com/albums/Lingua-ignota/Sinner-get-ready)
+- [Page Bandcamp](https://linguaignota.bandcamp.com/)
+- [Genius](https://genius.com/albums/Lingua-ignota/Sinner-get-ready)

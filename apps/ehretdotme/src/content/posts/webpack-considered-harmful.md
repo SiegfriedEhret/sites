@@ -1,15 +1,16 @@
 ---
-date: '2016-09-06T00:00:00.000Z'
-updatedAt: '2021-05-23T20:02:50.406Z'
+date: "2016-09-06T00:00:00.000Z"
+updatedAt: "2021-05-23T20:02:50.406Z"
 title: Webpack considered harmful
 description: I hope you enjoy this clickbait title.
 tags: []
 ---
+
 I hope you enjoyed this clickbait title.
 
 Edit: 2016-09-08
 
-- add reference to Webpack: The Missing Tutorial ™ in the *My problem with webpack*
+- add reference to Webpack: The Missing Tutorial ™ in the _My problem with webpack_
 
 ## What is webpack
 
@@ -17,7 +18,7 @@ Edit: 2016-09-08
 
 ![what is webpack](/contentful/1zYfudDplLiPRz2awDUcEA/5bfbb74a07ef9ba3db323b0e6a377e0a/what-is-webpack.png)
 
-In most cases you will be able to replace your build toolchain (with *legacy* things like [grunt](http://gruntjs.com/) or [gulp](http://gulpjs.com/)) with webpack, but keep in mind that their goals are different.
+In most cases you will be able to replace your build toolchain (with _legacy_ things like [grunt](http://gruntjs.com/) or [gulp](http://gulpjs.com/)) with webpack, but keep in mind that their goals are different.
 
 ## My story with webpack
 

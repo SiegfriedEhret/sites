@@ -1,12 +1,13 @@
 ---
-date: '2020-10-05T00:00:00.000Z'
-updatedAt: '2022-10-29T19:36:29.388Z'
+date: "2020-10-05T00:00:00.000Z"
+updatedAt: "2022-10-29T19:36:29.388Z"
 title: News from last month (2020/10 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 ## Programming
 
 ### Web (HTML, CSS, JS, Design...)
@@ -88,7 +89,7 @@ tags:
 - [DigitalOcean's Hacktoberfest is Hurting Open Source](https://blog.domenic.me/hacktoberfest/)
 - [How One Guy Ruined #Hacktoberfest2020 #Drama](https://joel.net/how-one-guy-ruined-hacktoberfest2020-drama)
 
-En français / In French: 
+En français / In French:
 
 - [Les codes sources de plusieurs Windows, dont XP, divulgués](https://www.lemondeinformatique.fr/actualites/lire-les-codes-sources-de-plusieurs-windows-dont-xp-divulgues-80495.html)
 

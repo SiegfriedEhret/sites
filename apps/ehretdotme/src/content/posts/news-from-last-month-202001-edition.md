@@ -1,22 +1,22 @@
 ---
-date: '2020-01-10T00:00:00.000Z'
-updatedAt: '2022-10-29T19:27:22.715Z'
+date: "2020-01-10T00:00:00.000Z"
+updatedAt: "2022-10-29T19:27:22.715Z"
 title: News from last month (2020/01 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 ## Programming
 
-* [musicForProgramming();](https://musicforprogramming.net/)
+- [musicForProgramming();](https://musicforprogramming.net/)
 
 ### Some review on 2019 and expectations for 2020
 
 > The 2000s made us marvel in awe from the progress brought by Facebook, Google, and Amazon.<br>
 > The 2010s made us recoil in horror as they consumed our attention, sanity, and markets.<br>
-> The 2020s is when we finally gather the courage to fight back.<br>
-> [DHH](https://twitter.com/dhh/status/1212773530309464064)
+> The 2020s is when we finally gather the courage to fight back.<br> > [DHH](https://twitter.com/dhh/status/1212773530309464064)
 
 - [Dave Rupert: 2019](https://daverupert.com/2019/12/twenty-nineteen/)
 - [David Walsh: Goals For 2020](https://davidwalsh.name/2020-goals)

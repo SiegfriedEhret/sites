@@ -1,12 +1,13 @@
 ---
-date: '2019-05-04T00:00:00.000Z'
-updatedAt: '2022-10-29T19:20:35.326Z'
+date: "2019-05-04T00:00:00.000Z"
+updatedAt: "2022-10-29T19:20:35.326Z"
 title: News from last month (2019/05 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 ## Special things
 
 - Fear: [Rise of the Zombie Deer](https://thecompost.io/articles/rise-of-the-zombie-deer)

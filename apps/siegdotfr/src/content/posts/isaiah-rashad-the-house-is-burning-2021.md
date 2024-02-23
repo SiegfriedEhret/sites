@@ -1,6 +1,6 @@
 ---
-date: '2021-08-09T00:00:00.000Z'
-updatedAt: '2022-02-06T08:54:07.789Z'
+date: "2021-08-09T00:00:00.000Z"
+updatedAt: "2022-02-06T08:54:07.789Z"
 title: Isaiah Rashad - The House Is Burning (2021)
 description: >-
   Depuis le temps qu'on attend quelque chose de chez TDE, voici une des grosses
@@ -10,6 +10,7 @@ tags:
   - music
   - review
 ---
+
 ## Préambule
 
 Depuis le temps qu'on attend quelque chose de chez TDE, voici une des grosses sorties si attendues: un nouvel album d'Isaiah Rashad, nommé The House Is Burning. C'est son troisième album, qui sort donc 5 ans après le précédent.
@@ -23,7 +24,7 @@ Un petit bruit de cassette et ça démarre tout gentiment avec Darkseid (sur la 
 
 From the Garden. J'ai vraiment du l'écouter beaucoup de fois pour que ça passe. Je trouve aujourd'hui rigolo le refrain que je trouvais bête. Et l'exercice d'Isaiah sur le rythme est plutôt sympa.
 
-J'ai l'impression qu'il commence à s'endormir avec RIP Young... Et moi aussi. Une énième chanson à base de voitures, de flingues, d'argent... 
+J'ai l'impression qu'il commence à s'endormir avec RIP Young... Et moi aussi. Une énième chanson à base de voitures, de flingues, d'argent...
 
 J'ai déjà mentionné Lay Wit Ya plus haut, c'est nul. Voilà.
 
@@ -84,4 +85,4 @@ Voilà ! C'est juste mon avis, j'espère que vous en avez un différent. Bisous 
 
 ## Liens
 
-* [Genius](https://genius.com/albums/Isaiah-rashad/The-house-is-burning)
+- [Genius](https://genius.com/albums/Isaiah-rashad/The-house-is-burning)

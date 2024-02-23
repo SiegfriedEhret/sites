@@ -1,11 +1,12 @@
 ---
-date: '2021-01-05T00:00:00.000Z'
-updatedAt: '2021-05-24T07:43:17.898Z'
+date: "2021-01-05T00:00:00.000Z"
+updatedAt: "2021-05-24T07:43:17.898Z"
 title: To 2021 and beyond
 description: It's that time again... A review of last year.
 tags:
   - personalbranling
 ---
+
 Hello, I hope you are doing well.
 
 ## Still in Switzerland!
@@ -75,15 +76,15 @@ I send a few pull requests to fix typos in some projects, let's continue to make
 - [Dark (finally!!!)](https://www.netflix.com/title/80100172)
 - [The Haunting Of Bly Manor (I don't watch many scary things, and that was good)](https://www.netflix.com/fr/title/81237854)
 - [Rick and Morty (still great!)](https://en.wikipedia.org/wiki/Rick_and_Morty)
-- [What We Do in the Shadows (one of the funniest thing I saw in 2020)](https://en.wikipedia.org/wiki/What_We_Do_in_the_Shadows_(TV_series))
+- [What We Do in the Shadows (one of the funniest thing I saw in 2020)](<https://en.wikipedia.org/wiki/What_We_Do_in_the_Shadows_(TV_series)>)
 
 I want to see:
 
 - [Feels Good Man](https://www.rottentomatoes.com/m/feels_good_man)
-- [Tenet](https://en.wikipedia.org/wiki/Tenet_(film))
+- [Tenet](<https://en.wikipedia.org/wiki/Tenet_(film)>)
 - [The Undoing](https://www.hbo.com/the-undoing)
 - [Tiger King](https://www.netflix.com/title/81115994)
-- [Lovecraft Country](https://en.wikipedia.org/wiki/Lovecraft_Country_(TV_series))
+- [Lovecraft Country](<https://en.wikipedia.org/wiki/Lovecraft_Country_(TV_series)>)
 - [Solar Opposites](https://en.wikipedia.org/wiki/Solar_Opposites)
 - [The Queen's Gambit](https://www.netflix.com/title/80234304)
 - [Mank](https://www.mankmovie.com/synopsis/)
@@ -118,16 +119,16 @@ Last year I added a few thoughts about tech. I don't really want to do this now,
 
 I just hope for something better than what happened in 2020.
 
-* Starting 2021 with the end of Trump as a President of the USA is a good sign, right?
-* The decline of COVID-19: officially (emergency) approved vaccines are getting distributed, and the few people who got the Russian one and are still alive can confirm that it works well
-* Elon Musk sends complotists on Mars so we can be at peace here
+- Starting 2021 with the end of Trump as a President of the USA is a good sign, right?
+- The decline of COVID-19: officially (emergency) approved vaccines are getting distributed, and the few people who got the Russian one and are still alive can confirm that it works well
+- Elon Musk sends complotists on Mars so we can be at peace here
 
 On my side:
 
-* I cooked a few cakes last year, maybe because of Dessertissime (see below), and I will continue
-* I have a long list of classical music that I want to listen to
-* I will keep on learning kanji!
-* And maybe you browsed some of my "News from last month", I will continue that!
+- I cooked a few cakes last year, maybe because of Dessertissime (see below), and I will continue
+- I have a long list of classical music that I want to listen to
+- I will keep on learning kanji!
+- And maybe you browsed some of my "News from last month", I will continue that!
 
 Take care and please go meet [Stéphane](https://www.dessertissime.fr/) and buy his cakes!
 

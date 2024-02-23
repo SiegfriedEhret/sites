@@ -1,12 +1,13 @@
 ---
-date: '2022-12-01T00:00:00.000Z'
-updatedAt: '2023-02-03T10:33:09.957Z'
+date: "2022-12-01T00:00:00.000Z"
+updatedAt: "2023-02-03T10:33:09.957Z"
 title: News from last month (2022/12 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 Hello folks!
 
 Let's have a special moment for the grand muskarade:
@@ -153,7 +154,7 @@ En français / In French:
 - [Start paying for internet stuff - Can's blog](https://canolcer.com/post/pay-for-internet-stuff/) <!-- TAGS: 2022-11,various -->
 - [Something about our languages · Garbage Collector](https://blog.zedas.fr/posts/something-about-language-nationalism/) <!-- TAGS: 2022-11,various -->
 - [Use RSS for privacy and efficiency :: [rsapkf/www]](https://rsapkf.org/weblog/q2z) <!-- TAGS: 2022-11,various -->
-- [“It was like holding a f**king live wire”: how Rage Against The Machine’s explosive debut album changed everything | Louder](https://www.loudersound.com/features/rage-against-the-machine-debut-album-story) <!-- TAGS: 2022-11,various -->
+- [“It was like holding a f\*\*king live wire”: how Rage Against The Machine’s explosive debut album changed everything | Louder](https://www.loudersound.com/features/rage-against-the-machine-debut-album-story) <!-- TAGS: 2022-11,various -->
 - [The many branches of the Fediverse](https://axbom.com/fediverse/) <!-- TAGS: 2022-11,various -->
 - [LinkedIn Users Are Lying on Their Profiles](https://futureparty.com/stories/LinkedIn-Users-Lying-Profiles) <!-- TAGS: 2022-11,various -->
 - [Please Stop Doing This - YouTube](https://www.youtube.com/watch?v=8dBiqSy8iVQ) <!-- TAGS: 2022-11,various -->

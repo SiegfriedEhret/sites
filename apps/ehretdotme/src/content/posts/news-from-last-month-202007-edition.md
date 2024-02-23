@@ -1,12 +1,13 @@
 ---
-date: '2020-07-04T00:00:00.000Z'
-updatedAt: '2022-10-29T19:34:24.312Z'
+date: "2020-07-04T00:00:00.000Z"
+updatedAt: "2022-10-29T19:34:24.312Z"
 title: News from last month (2020/07 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 Best bug report ever: [Cat sitting on keyboard crashes lightdm](https://bugs.launchpad.net/ubuntu/+source/unity/+bug/1463112)
 
 ## Programming
@@ -161,7 +162,7 @@ In French:
 - [The truth hurts: how VanMoof got banned from French TV](https://www.vanmoof.com/blog/en/the-truth-hurts-how-vanmoof-got-banned-from-french-tv)
 - [Break Up Google](https://www.tbray.org/ongoing/When/202x/2020/06/25/Break-Up-Google)
 
-In French: 
+In French:
 
 - [Île de Pâques : la civilisation qui a bâti les moaï ne s’est pas forcément « effondrée » sur elle-même](https://www.numerama.com/sciences/627781-ile-de-paques-la-civilisation-qui-a-bati-les-moai-ne-sest-pas-forcement-effondree-sur-elle-meme.html)
 - [La radioactivité et la sécurité nucléaire décryptées pour les enfants](https://www.ouest-france.fr/environnement/nucleaire/la-radioactivite-et-la-securite-nucleaire-decryptees-pour-les-enfants-6860190)

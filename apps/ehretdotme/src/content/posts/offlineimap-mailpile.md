@@ -1,12 +1,13 @@
 ---
-date: '2013-12-08T00:00:00.000Z'
-updatedAt: '2021-05-24T12:55:52.839Z'
+date: "2013-12-08T00:00:00.000Z"
+updatedAt: "2021-05-24T12:55:52.839Z"
 title: Offlineimap + Mailpile
 description: >-
   Let's try Mailpile, a modern, fast web-mail client with user-friendly
   encryption and privacy features.
 tags: []
 ---
+
 ## intro
 
 [Mailpile](https://www.mailpile.is/) is "a modern, fast web-mail client with user-friendly encryption and privacy features. 100% Free and Open Source software".

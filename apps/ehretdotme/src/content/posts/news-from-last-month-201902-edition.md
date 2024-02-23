@@ -1,12 +1,13 @@
 ---
-date: '2019-02-04T00:00:00.000Z'
-updatedAt: '2022-10-29T19:15:27.433Z'
+date: "2019-02-04T00:00:00.000Z"
+updatedAt: "2022-10-29T19:15:27.433Z"
 title: News from last month (2019/02 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 ## Articles
 
 So many links this month... I tried to add some categories, this will change in the future editions.

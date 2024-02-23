@@ -1,12 +1,13 @@
 ---
-date: '2020-06-04T00:00:00.000Z'
-updatedAt: '2022-10-29T19:32:46.096Z'
+date: "2020-06-04T00:00:00.000Z"
+updatedAt: "2022-10-29T19:32:46.096Z"
 title: News from last month (2020/06 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 TV show of the month (or year?): [After Life](https://www.imdb.com/title/tt8398600/), available on [Netflix](https://www.netflix.com/title/80998491).
 
 Intriguing: [Mark Zuckerberg – Dead At 36 – Says Social Media Sites Should Not Fact Check Posts](https://www.theshovel.com.au/2020/05/28/mark-zuckerberg-dead-at-36-says-social-media-fact-check/)

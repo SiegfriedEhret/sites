@@ -1,11 +1,12 @@
 ---
-date: '2019-01-17T00:00:00.000Z'
-updatedAt: '2021-05-24T08:03:21.598Z'
+date: "2019-01-17T00:00:00.000Z"
+updatedAt: "2021-05-24T08:03:21.598Z"
 title: Le bilan de mon aventure SFEIR (1/3)
 description: Les missions et projets.
 tags:
   - sfeir
 ---
+
 Je suis arrivé chez [SFEIR](https://SFEIR.com/) début avril 2014.
 
 À l'époque je jouais avec AngularJS (#ItsJustAngularJS) et j'y arrivais pour être développeur front.
@@ -48,7 +49,7 @@ Avant la mort de Belisarius, un autre projet commençait à se monter et une éq
 
 Il portait le doux nom de mobile-middleware. En gros, Axa est présent dans plein de pays mais les applications mobiles étaient développées à Barcelone. Il fallait une brique qui expose une API standard côté applications qui tape sur les API du pays et qui transforme les données.
 
-Le projet était déjà en route quand je suis arrivé, c'était du [Node.js](https://nodejs.org/en/) avec un [Loopback](https://loopback.io/) instrumenté qui permet de créer une API à partir d'une configuration. C'était chouette 
+Le projet était déjà en route quand je suis arrivé, c'était du [Node.js](https://nodejs.org/en/) avec un [Loopback](https://loopback.io/) instrumenté qui permet de créer une API à partir d'une configuration. C'était chouette
 
 On a démarré à 3, avec 2 autres de l'ancien projet. On a été rejoint par 2 «jeunes» (ce n'est pas péjoratif, ils sont vraiment plus jeunes que moi) absolument incroyables: un qui venait comme moi de SFEIR, et un que je connaissais depuis longtemps (c'était trop bizarre de lui faire passer un entretien). Ils n'ont pas toujours eu la vie facile dans l'équipe.
 
@@ -146,7 +147,7 @@ On était sur Microsoft Azure et ce n'était pas évident.
 
 Sur les autres fournisseurs de services Cloud, en gros on fait du Express et on pousse. Sur Azure, il faut coder en Azure. C'est vraiment un problème pour moi de se bloquer comme ça.
 
-Bilan: 
+Bilan:
 
 - Faire passer un projet d'un mois à un projet de 6 mois à cause de la plateforme, c'est moche (je n'exagère presque pas).
 - Le «Directeur de Projets» est un externe qui est chez Microsoft et qui impose sa vision du développement logiciel et agile qui n'a pas bougé depuis 20 ans. Dur.
@@ -155,7 +156,7 @@ Bilan:
 Question lol:
 
 > **Combien faut-il d'«architectes Azure» pour aider une équipe qui ne connait pas bien la plateforme ?**<br>
-Réponse: 2 de plus toutes les 2 semaines.
+> Réponse: 2 de plus toutes les 2 semaines.
 
 ## La fin
 

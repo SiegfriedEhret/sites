@@ -1,11 +1,12 @@
 ---
-date: '2017-08-17T00:00:00.000Z'
-updatedAt: '2021-05-23T21:05:56.611Z'
+date: "2017-08-17T00:00:00.000Z"
+updatedAt: "2021-05-23T21:05:56.611Z"
 title: Node.JS and environment variables
 description: A few notes on usage with Node.JS/npm.
 tags:
   - javascript
 ---
+
 I just went through [this nice article](https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html) and I just wanted to add a few things you do not usually find in articles about environment variables.
 
 Everyone (maybe) knows that you can reach environment variables through the `process.env` object in Node.JS.
@@ -251,6 +252,6 @@ See ? The result is totally different, because npm injects some keys/values:
 
 So [dotenv](https://www.npmjs.com/package/dotenv) is pretty cool but you can use the npm cli and a `.npmrc` file to have the same functionality.
 
-Protip: is you use [Yarn](https://yarnpkg.com/), a `yarn run start` will give you the same result as npm ! 
+Protip: is you use [Yarn](https://yarnpkg.com/), a `yarn run start` will give you the same result as npm !
 
 P.S.: I learned this thing with [rmat0n](https://twitter.com/rmat0n) or [dun4n](https://twitter.com/dun4n) (I don't remember which one ^^), thanks a lot for everything buddies !

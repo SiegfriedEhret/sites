@@ -1,10 +1,11 @@
 ---
-date: '2023-09-01T00:00:00.000Z'
-updatedAt: '2023-09-01T04:59:32.515Z'
+date: "2023-09-01T00:00:00.000Z"
+updatedAt: "2023-09-01T04:59:32.515Z"
 title: News from last month (2023/09 edition)
 description: A selection of links from last month.
 tags: []
 ---
+
 ## Programming
 
 ### Web (HTML, CSS, JS, Design...)
@@ -194,7 +195,7 @@ En français / In French:
 - [The Hip Hop Historians Who Are Racing to Preserve Its Story | WIRED](https://www.wired.com/story/archiving-hip-hop-history/) <!-- TAGS: 2023-08,various -->
 - [Teens Hacked Boston Subway’s CharlieCard to Get Infinite Free Rides—and This Time Nobody Got Sued | WIRED](https://www.wired.com/story/mtba-charliecard-hack-defcon-2023/) <!-- TAGS: 2023-08,various -->
 - [Micro benevolences](https://openwebdocs.org/content/posts/micro-benevolences/) <!-- TAGS: 2023-08,various -->
-- [Record Labels Hit Internet Archive With New $400m+ Copyright Lawsuit * TorrentFreak](https://torrentfreak.com/record-labels-hit-internet-archive-with-new-400m-copyright-lawsuit-230812/) <!-- TAGS: 2023-08,various -->
+- [Record Labels Hit Internet Archive With New $400m+ Copyright Lawsuit \* TorrentFreak](https://torrentfreak.com/record-labels-hit-internet-archive-with-new-400m-copyright-lawsuit-230812/) <!-- TAGS: 2023-08,various -->
 - [The Most Iconic Hip-Hop Sample of Every Year (1973-2023)](https://kottke.org/23/08/the-most-iconic-hip-hop-sample-of-every-year-1973-2023) <!-- TAGS: 2023-08,various -->
 - [Let Venice Sink | WIRED](https://www.wired.com/story/climate-change-heritage-preservation-venice/) <!-- TAGS: 2023-08,various -->
 - [‘Flying Aliens’ Harassing Village in Peru Are Actually Illegal Miners With Jetpacks, Cops Say](https://www.vice.com/en/article/pkazgy/peru-aliens-illegal-miners-with-jetpacks) <!-- TAGS: 2023-08,various -->

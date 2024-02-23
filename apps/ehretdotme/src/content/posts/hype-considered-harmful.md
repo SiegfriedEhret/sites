@@ -1,10 +1,11 @@
 ---
-date: '2016-11-27T00:00:00.000Z'
-updatedAt: '2021-05-23T20:09:00.955Z'
+date: "2016-11-27T00:00:00.000Z"
+updatedAt: "2021-05-23T20:09:00.955Z"
 title: Hype considered harmful
-description: 'Yep, another «XX considered harmful» clickbait title.'
+description: "Yep, another «XX considered harmful» clickbait title."
 tags: []
 ---
+
 Yep, another «XX considered harmful» clickbait title.
 
 So. [This thing](https://twitter.com/rauchg/status/802328362341384192) happened:

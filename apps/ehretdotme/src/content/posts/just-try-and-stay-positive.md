@@ -5,10 +5,10 @@ description: >-
   also wrote about the things I do not want to spend my personal time on. Let's
   see...
 author: Siegfried Ehret
-date: '2018-01-09T00:00:00.000Z'
+date: "2018-01-09T00:00:00.000Z"
 tags:
   - personalbranling
-updatedAt: '2021-05-24T06:32:39.595Z'
+updatedAt: "2021-05-24T06:32:39.595Z"
 ---
 
 ## What ?
@@ -63,7 +63,7 @@ By the way, I think [Flow](https://flow.org/) is a better match for me.
 
 ## Conclusion
 
-I hope that I will be able to find enough time to do this things. 
+I hope that I will be able to find enough time to do this things.
 
 More importantly, I hope that I will be able to find the right tool to solve a problem.
 

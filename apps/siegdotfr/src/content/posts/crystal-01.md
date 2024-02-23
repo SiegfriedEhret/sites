@@ -1,18 +1,19 @@
 ---
-date: '2020-05-20T00:00:00.000Z'
-updatedAt: '2022-04-01T09:06:45.666Z'
-title: 'Coder avec Crystal pour ne pas perdre la boule, première partie'
+date: "2020-05-20T00:00:00.000Z"
+updatedAt: "2022-04-01T09:06:45.666Z"
+title: "Coder avec Crystal pour ne pas perdre la boule, première partie"
 description: Découvrons le langage Crystal ensemble !
 tags:
   - crystal
 ---
+
 «Coder avec Crystal pour ne pas perdre la boule» est le titre d'une conférence que j'aurais eu l'honneur de présenter au [BreizhCamp](https://www.breizhcamp.org/) ainsi qu'à [Devoxx France](https://www.devoxx.fr/). Ces conférences ont malheureusement été annulées suite à la situation liée au Covid-19.
 
 Voici donc la première partie d'une petite série sur ce que je souhaitais aborder.
 
 ## Avant de démarrer...
 
-Les choses comme `ceci` ou 
+Les choses comme `ceci` ou
 
 ```text
 cela
@@ -129,7 +130,7 @@ Nous pouvons exécuter ce fichier
 ```shell
 # Dans ~/myapp
 ❯ cd bin
-❯ ./myapp 
+❯ ./myapp
 
 ```
 
@@ -210,7 +211,7 @@ Nous avons ici de l'interpolation dans la chaîne de caractère avec l'utilisati
 
 `VERSION` vient du module `Myapp` englobant.
 
-Nous ne connaissons pas [`exit`](https://crystal-lang.org/api/0.34.0/toplevel.html#exit(status=0):NoReturn-class-method), qui permet de terminer l'exécution du programme.
+Nous ne connaissons pas [`exit`](<https://crystal-lang.org/api/0.34.0/toplevel.html#exit(status=0):NoReturn-class-method>), qui permet de terminer l'exécution du programme.
 
 ### Brancher le tout
 
@@ -290,7 +291,7 @@ myapp v0.1.0
 Avec la commande par défaut:
 
 ```shell
-❯ ./myapp 
+❯ ./myapp
  myapp <command> [<options>]
 
  TODO
@@ -319,7 +320,7 @@ Le code est disponible [à cette adresse](https://git.sr.ht/~siegfriedehret/crys
 - [Shards](https://github.com/crystal-lang/shards) (gestionnaire de dépendances) et une [base de données de Shards](https://shardbox.org/).
 - [crystal-lang-tools](https://github.com/crystal-lang-tools) avec des outils et support pour les éditeurs.
 - Une ["awesome list"](https://github.com/veelenga/awesome-crystal) de la communauté Crystal.
-- [Crystal sur Wikipedia](https://fr.wikipedia.org/wiki/Crystal_(langage_de_programmation))
+- [Crystal sur Wikipedia](<https://fr.wikipedia.org/wiki/Crystal_(langage_de_programmation)>)
 - [Crystal sur "Apprendre X en Y minutes"](https://learnxinyminutes.com/docs/fr-fr/crystal-fr/).
 - Une [vidéo de 2015](https://www.youtube.com/watch?v=xbdVs4FhZac) par 2 des créateurs de Crystal.
 

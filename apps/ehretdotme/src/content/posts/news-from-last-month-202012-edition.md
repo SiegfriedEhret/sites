@@ -1,12 +1,13 @@
 ---
-date: '2020-12-04T00:00:00.000Z'
-updatedAt: '2022-10-29T19:37:44.606Z'
+date: "2020-12-04T00:00:00.000Z"
+updatedAt: "2022-10-29T19:37:44.606Z"
 title: News from last month (2020/12 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 ## Programming
 
 ### Web (HTML, CSS, JS, Design...)
@@ -102,7 +103,7 @@ En français / In French:
 - [SourceHut's second year in alpha](https://sourcehut.org/blog/2020-11-15-sourcehut-2-year-alpha/)
 - [Classic FOSS FPS 'Cube 2: Sauerbraten' sees the first release since 2013](https://www.gamingonlinux.com/2020/11/classic-foss-fps-cube-2-sauerbraten-sees-the-first-release-since-2013)
 
-En français / In French: 
+En français / In French:
 
 - [Framaprout : ceci est une Prout-révolution](https://framablog.org/2020/11/05/framaprout-ceci-est-une-prout-revolution/)
 - [Et si Vim avait raison ?](https://blog.octo.com/et-si-vim-avait-raison/)

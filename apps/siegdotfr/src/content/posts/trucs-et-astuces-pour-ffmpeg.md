@@ -1,11 +1,12 @@
 ---
-date: '2018-01-01T00:00:00.000Z'
-updatedAt: '2021-05-23T21:15:04.101Z'
+date: "2018-01-01T00:00:00.000Z"
+updatedAt: "2021-05-23T21:15:04.101Z"
 title: Trucs et astuces pour FFmpeg
 description: Voici quelques commandes pour FFmpeg qui m'ont été pratiques dernièrement.
 tags:
   - tips
 ---
+
 Voici quelques commandes pour [FFmpeg](https://ffmpeg.org/) qui m'ont été pratiques dernièrement.
 
 La page d'aide avec tous les paramètres est [ic](https://ffmpeg.org/ffmpeg.html).
@@ -43,7 +44,7 @@ ffmpeg -i audio.m4a -acodec libmp3lame -ac 0 -ab 320k audio.mp3
 
 Paramètres:
 
-- `-acodec libmp3lame` permet d'utiliser la libraire lame pour la conversion en mp3 
+- `-acodec libmp3lame` permet d'utiliser la libraire lame pour la conversion en mp3
 - `-ac 2` spécifie le nombre de canaux
 - `-ab 320k` spécifie le «débit binaire» (bitrate)
 

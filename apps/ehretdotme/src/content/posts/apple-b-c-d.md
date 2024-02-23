@@ -1,21 +1,22 @@
 ---
-date: '2017-01-04T00:00:00.000Z'
-updatedAt: '2021-05-23T20:35:54.127Z'
-title: 'Apple, B, C, D'
-description: 'After a year, here are a few thoughts about Apple and my iPhone.'
+date: "2017-01-04T00:00:00.000Z"
+updatedAt: "2021-05-23T20:35:54.127Z"
+title: "Apple, B, C, D"
+description: "After a year, here are a few thoughts about Apple and my iPhone."
 tags: []
 ---
-Okay, I *had* to buy an iPhone one year ago or so, because I wanted a phone with more than 16go of space. Well, after around one year, here are a few thoughts. Enjoy.
+
+Okay, I _had_ to buy an iPhone one year ago or so, because I wanted a phone with more than 16go of space. Well, after around one year, here are a few thoughts. Enjoy.
 
 **A**pple
 
-The company we love to hate. I had 2 iPod Touch, the second one was a replacement of the first because of a jack 
+The company we love to hate. I had 2 iPod Touch, the second one was a replacement of the first because of a jack
 
 **B**attery
 
 I was pretty happy for a few months, I didn't had to charge it during the day and still had 30% left ! It's not the case anymore. I have the freaking 30% battery bug: around 30-40% left, the phone shuts itself down. If I try to restart it, it asks me to plug it. I can try to restart it, and after 3 or 4 reboots, sometimes I can use it normally.
 
-To sum up: the battery sucks and I have to stay at more than 40%... (To be continued... see the *Support* part)
+To sum up: the battery sucks and I have to stay at more than 40%... (To be continued... see the _Support_ part)
 
 **C**amera
 
@@ -25,7 +26,7 @@ That is a pretty good point of the iPhone. Pictures are pretty cool !
 
 Apple, the king of design.
 
-When they switch to a flatter design and abandoned skeuomorphism, that was kind of a fail (even if a shitload of designers were fapping themselves because if you *think different* than Apple you are a moron).
+When they switch to a flatter design and abandoned skeuomorphism, that was kind of a fail (even if a shitload of designers were fapping themselves because if you _think different_ than Apple you are a moron).
 
 Now, with the nice, light and clean interface for all app, it became acceptable. For example:
 
@@ -75,7 +76,7 @@ I understand why they removed it on iPhone 7 !
 
 [Explanation about KISS](https://en.wikipedia.org/wiki/KISS_principle)
 
-Apple is often depicted as a company that makes products simple. The iPhone is not *that* simple.
+Apple is often depicted as a company that makes products simple. The iPhone is not _that_ simple.
 
 The best example for me is the notifications.
 
@@ -100,7 +101,7 @@ I don't remember how it was on ios9, but they suck on ios10.
 
 - not grouped
 - unclear what to do: pull, 3d touch ? Damn...
-- when a notification appears, you can pull to display some things (action buttons) and it you try to touch a button *before* the animation ends, there is no effect. Pretty boring.
+- when a notification appears, you can pull to display some things (action buttons) and it you try to touch a button _before_ the animation ends, there is no effect. Pretty boring.
 
 **O**pen / Closed principle
 
@@ -125,7 +126,7 @@ I like the way the settings are organized and how the apps and notifications are
 
 **S**upport
 
-The support. *sigh*
+The support. _sigh_
 
 Trying to find a way to solve the 30% battery bug, I contacted the [Apple Support](https://twitter.com/AppleSupport) on Twitter.
 
@@ -141,7 +142,7 @@ Seriously. Well, fuck you then, I'll go back to a real phone next time.
 
 It is basically cool only to swipe between your screens in the launcher. When I try to unlock my phone using a code (when the phone starts), I often have to try 2 times because the touch thing is not responsive enough to follow the 6 digits I input.
 
-Also, sometimes you have to «touch» to many times. For example, the alarm screen. To change the time of an alarm, you have to touch the «modify» label 
+Also, sometimes you have to «touch» to many times. For example, the alarm screen. To change the time of an alarm, you have to touch the «modify» label
 
 **U**sb
 

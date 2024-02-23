@@ -1,10 +1,11 @@
 ---
-date: '2016-10-12T00:00:00.000Z'
-updatedAt: '2021-05-24T08:41:15.512Z'
+date: "2016-10-12T00:00:00.000Z"
+updatedAt: "2021-05-24T08:41:15.512Z"
 title: Twitter Cleaner
 description: A Go(lang) tool to clean some mess from my Twitter.
 tags: []
 ---
+
 You may have heard of [JS Fatigue](https://encrypted.google.com/search?q=JS%20Fatigue). I am currently in a Twitter Fatigue mood.
 
 I use each social network differently:
@@ -34,4 +35,4 @@ So, I wrote twitter-cleaner (on [gitlab](https://gitlab.com/SiegfriedEhret/twitt
 
 I was following ~1120 accounts and I am back at 709... And it won't stop here, I need to cleanup active people now, but that is another story :)
 
-Also, I want to check links in my old tweets and remove the ones with links that doesn't work anymore. 
+Also, I want to check links in my old tweets and remove the ones with links that doesn't work anymore.

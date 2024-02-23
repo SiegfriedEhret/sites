@@ -1,12 +1,13 @@
 ---
-date: '2019-02-04T00:00:00.000Z'
-updatedAt: '2021-05-24T06:46:43.082Z'
-title: 'Azure, TL;DR'
+date: "2019-02-04T00:00:00.000Z"
+updatedAt: "2021-05-24T06:46:43.082Z"
+title: "Azure, TL;DR"
 description: Just a quick post to go over my experience with Microsoft Azure.
 tags:
   - cloud
   - tldr
 ---
+
 Just a quick post to go over my experience with [Microsoft Azure](https://azure.microsoft.com).
 
 I used Azure during my last mission at SFEIR last year for about 1.5 months.
@@ -89,9 +90,9 @@ My experience with AWS is a little bit far from now but I remember struggling wi
 ## Support
 
 > **How many "Azure Architectes" do you need to help a team who doesn't know the plarform?**<br>
-Answer: 2 more every 2 weeks.
+> Answer: 2 more every 2 weeks.
 
-When we arrived on the project there were 2 Microsoft persons already. Nice guys. They really helped us to understand the big picture of the projet and gave us some tips when we were blocked. But we needed more help to really understand the platform and work with it. 
+When we arrived on the project there were 2 Microsoft persons already. Nice guys. They really helped us to understand the big picture of the projet and gave us some tips when we were blocked. But we needed more help to really understand the platform and work with it.
 
 Microsoft brought 2 new persons in the project. It turned out that they were not here to help us. So we needed more. So they brought 2 new persons. And the previous ones stayed. WHAT.
 

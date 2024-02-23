@@ -1,10 +1,11 @@
 ---
-date: '2015-02-27T00:00:00.000Z'
-updatedAt: '2021-05-23T16:28:23.883Z'
-title: 'Farewell, Inbox !'
-description: 'Seriously, I can''t get into it.'
+date: "2015-02-27T00:00:00.000Z"
+updatedAt: "2021-05-23T16:28:23.883Z"
+title: "Farewell, Inbox !"
+description: "Seriously, I can't get into it."
 tags: []
 ---
+
 After a few months using [Google Inbox](http://www.google.com/inbox/), I decided to delete the app and go back to my previous email setup.
 
 So I am back to the current setup:

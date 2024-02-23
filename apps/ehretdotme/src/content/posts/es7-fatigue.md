@@ -1,11 +1,12 @@
 ---
-date: '2016-03-01T00:00:00.000Z'
-updatedAt: '2021-05-23T19:51:49.673Z'
+date: "2016-03-01T00:00:00.000Z"
+updatedAt: "2021-05-23T19:51:49.673Z"
 title: ES7 fatigue
 description: Betting on unfinished specs is dangerous.
 tags: []
 ---
-(I was about to name this thing *ES7 considered harmful*, but first I have to write a *«considered harmful» considered harmful* post ^^)
+
+(I was about to name this thing _ES7 considered harmful_, but first I have to write a _«considered harmful» considered harmful_ post ^^)
 
 <blockquote class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr">You, working with async/await or whatever ES7 unfinished specs, hoping it&#39;ll work in production. <a href="https://t.co/vy5cO96GoI">pic.twitter.com/vy5cO96GoI</a></p>&mdash; Siegfried Ehret ［Ξ］ (@SiegfriedEhret) <a href="https://twitter.com/SiegfriedEhret/status/704407160474771456">29 février 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -34,6 +35,6 @@ Another example: [Object.observe](https://esdiscuss.org/topic/an-update-on-objec
 In the end, by widely using unreleased features or specs you live in another world that can crumble at any time. And people are pushing a spec in a direction that may not be the optimal one.
 
 > Betting on unfinished specs is dangerous.<br>
-&mdash; Siegfried Ehret
+> &mdash; Siegfried Ehret
 
 About `async` / `await`, I would like to propose the following syntax: `stophammertime` / `heyholetsgo`.

@@ -1,12 +1,13 @@
 ---
-date: '2021-08-22T00:00:00.000Z'
-updatedAt: '2022-02-06T08:48:19.659Z'
+date: "2021-08-22T00:00:00.000Z"
+updatedAt: "2022-02-06T08:48:19.659Z"
 title: Villagers - Fever Dreams (2021)
 description: >-
   Un groupe que j'ai découvert très récemment, et un joli album qui donne envie
   de se plonger dans les précédents.
 tags: []
 ---
+
 ## Préambule
 
 Découvrons aujourd'hui Villagers avec Fever Dreams, leur sixième album.
@@ -22,9 +23,9 @@ The First Day commence avec une voix un peu déformée et une petite basse... Av
 
 Le début de Song In Seven est tout doux avant le "Is that seven?" et la chanson qui démarre pour de vrai. En 7 temps ? Curieux... Ça démarre tranquillement comme une balade sur la mer, jusqu'à l'incident, comme une chute dans la mer, une coupure dans la chair, et ces « Oh, why?» qui ponctuent la fin de la chanson. Et les voix multiples, et les cuivres, et les cordes, c'est superbe.
 
-So Simpatico, la seule piste que j'avais entendu avant la sortie de l'album. La piste la plus longue. C'est une chouette balade, ça brille de nouveau, c'est de l'amour ! Et ce saxo qui accompagne  et complète bien le tout.
+So Simpatico, la seule piste que j'avais entendu avant la sortie de l'album. La piste la plus longue. C'est une chouette balade, ça brille de nouveau, c'est de l'amour ! Et ce saxo qui accompagne et complète bien le tout.
 
-Momentarily, une balade avec piano. Mais ce n'est pas une balade romantique ni joyeuse, car tout s'efface momentanément, à cause de toutes choses, petites ou grandes. 
+Momentarily, une balade avec piano. Mais ce n'est pas une balade romantique ni joyeuse, car tout s'efface momentanément, à cause de toutes choses, petites ou grandes.
 
 On enchaîne avec une chanson assez longue Circles In The Firing Line, c'est presque sympathique si l'on enlève les paroles, qui parlent de champ de tir, d'attente de la fin, et de rêve «foutu en l'air». Les notes de synthés comme une pluie de tirs de science fiction apportent une touche assez étrange, et la guitare qui a du mal à se lancer aussi. C'est un peu psychédélique, avec une fin où l'on s'attendrait presque à partir sur une conclusion punk, mais le rêve est détruit.
 
@@ -63,6 +64,6 @@ Voilà ! C'est juste mon avis, j'espère que vous en avez un différent. Bisous 
 
 ## Liens
 
-* [Site](https://www.wearevillagers.com/)
-* [Bandcamp](https://wearevillagers.bandcamp.com/album/fever-dreams)
-* [Genius](https://genius.com/albums/Villagers/Fever-dreams)
+- [Site](https://www.wearevillagers.com/)
+- [Bandcamp](https://wearevillagers.bandcamp.com/album/fever-dreams)
+- [Genius](https://genius.com/albums/Villagers/Fever-dreams)

@@ -1,10 +1,11 @@
 ---
-date: '2011-05-03T00:00:00.000Z'
-updatedAt: '2021-05-23T13:14:23.060Z'
+date: "2011-05-03T00:00:00.000Z"
+updatedAt: "2021-05-23T13:14:23.060Z"
 title: Form2json
-description: 'Form2json, an alternative decoder for form-urlencoded data for Express.'
+description: "Form2json, an alternative decoder for form-urlencoded data for Express."
 tags: []
 ---
+
 Form2json, an alternative decoder for form-urlencoded data for Express (and connect maybe)
 
 I forked the form2json for specific needs, cause I got some errors using the basic one.

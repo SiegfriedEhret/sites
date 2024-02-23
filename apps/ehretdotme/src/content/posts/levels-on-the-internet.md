@@ -1,6 +1,6 @@
 ---
-date: '2017-12-30T00:00:00.000Z'
-updatedAt: '2021-05-23T21:11:58.496Z'
+date: "2017-12-30T00:00:00.000Z"
+updatedAt: "2021-05-23T21:11:58.496Z"
 title: Levels on the internet
 description: >-
   I found this on reddit. I put this here to keep it somewhere. All credits to
@@ -8,6 +8,7 @@ description: >-
 tags:
   - lol
 ---
+
 I found this on reddit. I put this here to keep it somewhere. All credits to [this comment by u/Forgive_My_Cowardice](https://www.reddit.com/r/nottheonion/comments/7mqap0/people_keep_uploading_hamilton_to_pornhub/drwc9x5/).
 
 I added the images in the post, instead of linking them as in the comment

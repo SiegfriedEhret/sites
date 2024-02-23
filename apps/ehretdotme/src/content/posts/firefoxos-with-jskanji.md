@@ -1,10 +1,11 @@
 ---
-date: '2014-05-31T00:00:00.000Z'
-updatedAt: '2021-05-24T12:57:46.723Z'
+date: "2014-05-31T00:00:00.000Z"
+updatedAt: "2021-05-24T12:57:46.723Z"
 title: FirefoxOS with jskanji
 description: Trying to write japanese on a FirefoxOS phone.
 tags: []
 ---
+
 ## Why FirefoxOS ?
 
 ![FirefoxOS screenshot](/contentful/76g2jMUMas44VCulZsi6P2/cba41ab3eebf06c1bce324237b13d130/device_2013_01_24_163623.png)
@@ -126,9 +127,11 @@ I choose the lazy way by editing `<B2G folder>/gaia/Makefile`, changing the `GAI
 ```text
 GAIA_KEYBOARD_LAYOUTS?=en,fr,jp-kanji
 ```
+
 That's it !
 
 ### Building
+
 The phone should be connected to the computer, and:
 
 ```shell
@@ -161,13 +164,14 @@ Back to flashing !
 More info on flashing only some part [here](https://developer.mozilla.org/en-US/Firefox_OS/Installing_on_a_mobile_device).
 
 ## And ?
+
 That's all !
 
 ![What does the fox say ?](/contentful/3bNeIVnJOoF1Ce0VpGMean/222fd935f1b8d236f1b062f391b20f93/fox.png)
 
 (image from [here](https://www.mozilla.org/fr/firefox/os/))
 
-Well. Not so fast. We built and flashed the *master* branch, which may not be the most stable one. Please go [here](https://developer.mozilla.org/en-US/Firefox_OS/Preparing_for_your_first_B2G_build#Building_a_branch_2) to learn how to build a specific branch.
+Well. Not so fast. We built and flashed the _master_ branch, which may not be the most stable one. Please go [here](https://developer.mozilla.org/en-US/Firefox_OS/Preparing_for_your_first_B2G_build#Building_a_branch_2) to learn how to build a specific branch.
 
 You should definitely give FirefoxOS a try if you can. It's powered by the web, and everybody who can do some web can create an app. Ain't that amazing ?
 

@@ -1,6 +1,6 @@
 ---
-date: '2022-05-26T00:00:00.000Z'
-updatedAt: '2022-05-26T13:11:01.773Z'
+date: "2022-05-26T00:00:00.000Z"
+updatedAt: "2022-05-26T13:11:01.773Z"
 title: >-
   Interview de Philippe Charrière: JavaScript, programmation fonctionnelle et
   Golo
@@ -10,6 +10,7 @@ description: >-
   JavaScript et ce qu’est Golo.
 tags: []
 ---
+
 📢 Cet article a initialement été publié le 6 octobre 2016 sur le blog de [Sfeir](https://www.sfeir.com/fr/), qui a disparu depuis.
 
 J'ai rencontré Philippe Charrière pour la première fois au JUG Summer Camp en 2016. Il nous explique sa vision de la programmation fonctionnelle en JavaScript et ce qu’est Golo.
@@ -40,7 +41,7 @@ Je suis partisan de faire du JS plus “roots” au départ, pour apprendre la m
 
 [Monet.js](http://cwmyers.github.io/monet.js/) ! La documentation est super claire et le dev super gentil et ouvert. Quand j’ai eu quelques résultats pas cohérents, j’ai ouvert une issue en lui disant “je ne suis pas certain d’avoir compris comment tu ferais ça”, il a tout de suite répondu en disant que c’était une erreur et en me faisant essayer une version corrigée. Alors que sur [Ramda](http://ramdajs.com) par exemple, on va plutôt te répondre qu’on ne comprend pas pourquoi tu veux faire ça, que ça ne se fait pas ! Ramda est très bien hein ! Mais plus pour les puristes… Monet, c’est simple, pas très lourd, mais largement suffisant pour avoir un code JS qui est propre et qui reste lisible. On n’obtient pas un truc que seul le dev d’origine comprend.
 
-## Est-ce que tu as regardé des choses comme [PureScript](https://www.purescript.org/), [ClojureScript](https://github.com/clojure/clojurescript), [Elm](https://fr.wikipedia.org/wiki/Elm_(langage)), etc. qui vont générer du JavaScript ?
+## Est-ce que tu as regardé des choses comme [PureScript](https://www.purescript.org/), [ClojureScript](https://github.com/clojure/clojurescript), [Elm](<https://fr.wikipedia.org/wiki/Elm_(langage)>), etc. qui vont générer du JavaScript ?
 
 Le problème c’est que j’aime beaucoup JavaScript, donc je n’ai pas besoin de [transpiler](https://fr.wikipedia.org/wiki/Compilateur_source_%C3%A0_source). J’ai quand même beaucoup aimé [CoffeeScript](https://coffeescript.org/) parce que la notion de classe m’a longtemps manqué en JavaScript. Mais disons que je me méfie beaucoup de ce genre d’outils pour faire du JS, tu ne sais jamais vraiment ce qu’ils font derrière. Le jour où ça plante, tu ne sais pas comment t’en sortir. Et c’est du JS, pas du Java ! À mon sens on n’a pas besoin de ces outils, surtout avec des librairies un peu fonctionnelles qui peuvent aider à faire du code propre, sans obligatoirement utiliser un langage typé. Il faut juste arrêter d’être un &laquo;&nbsp;goret&nbsp;&raquo;, avoir une bonne hygiène de code pour obtenir un résultat correct.
 

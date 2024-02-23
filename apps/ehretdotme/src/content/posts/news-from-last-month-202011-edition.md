@@ -1,12 +1,13 @@
 ---
-date: '2020-11-01T00:00:00.000Z'
-updatedAt: '2022-10-29T19:37:09.388Z'
+date: "2020-11-01T00:00:00.000Z"
+updatedAt: "2022-10-29T19:37:09.388Z"
 title: News from last month (2020/11 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 ## Programming
 
 ### Web (HTML, CSS, JS, Design...)
@@ -75,7 +76,7 @@ En français / In French:
 - [NASA’s SOFIA Discovers Water on Sunlit Surface of Moon](https://www.nasa.gov/press-release/nasa-s-sofia-discovers-water-on-sunlit-surface-of-moon/)
 - [Media Multitasking Disrupts Memory, Even in Young Adults](https://www.scientificamerican.com/article/media-multitasking-disrupts-memory-even-in-young-adults/)
 - [New analysis shows ancient dogs and humans shared a surprising bond](https://www.inverse.com/science/ancient-dog-dna-reveal)
-- [What do 10 *million* stars look like?](https://www.syfy.com/syfywire/what-do-10-million-stars-look-like)
+- [What do 10 _million_ stars look like?](https://www.syfy.com/syfywire/what-do-10-million-stars-look-like)
 
 ## Open source, Projects & Tools
 

@@ -1,10 +1,11 @@
 ---
-date: '2011-09-15T00:00:00.000Z'
-updatedAt: '2021-05-23T13:20:38.202Z'
+date: "2011-09-15T00:00:00.000Z"
+updatedAt: "2021-05-23T13:20:38.202Z"
 title: img2base64
 description: An image to base64 conversion script in ruby.
 tags: []
 ---
+
 ## Intro
 
 An image to base64 conversion script in ruby.
@@ -25,8 +26,8 @@ The github repository is [here](https://github.com/SiegfriedEhret/img2base64).
 ## License
 
 This script is licensed under the terms of the WTF Public License (see [here ](http://en.wikipedia.org/wiki/WTFPL)and [here](http://sam.zoy.org/wtfpl/)) :
-               DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                        Version 2, December 2004
+DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+Version 2, December 2004
 
      Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
 

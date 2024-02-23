@@ -1,15 +1,16 @@
 ---
-date: '2019-06-05T00:00:00.000Z'
-updatedAt: '2022-10-29T19:21:09.140Z'
+date: "2019-06-05T00:00:00.000Z"
+updatedAt: "2022-10-29T19:21:09.140Z"
 title: News from last month (2019/06 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 ## Special things
 
-- Oldie: [The Influence of theUNIX® Operating System on the Development ofTw o Video  Games](http://www.langston.com/Papers/vidgam.pdf)
+- Oldie: [The Influence of theUNIX® Operating System on the Development ofTw o Video Games](http://www.langston.com/Papers/vidgam.pdf)
 - Less old but good: [Software disenchantment](https://tonsky.me/blog/disenchantment/)
 - Ha ha moment: [«This is Windows 95, running in an Electron app. Yes, it's the full thing. I'm sorry.»](https://github.com/felixrieseberg/windows95)
 

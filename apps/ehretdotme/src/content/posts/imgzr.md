@@ -1,10 +1,11 @@
 ---
-date: '2012-01-12T00:00:00.000Z'
-updatedAt: '2021-05-23T13:23:07.601Z'
+date: "2012-01-12T00:00:00.000Z"
+updatedAt: "2021-05-23T13:23:07.601Z"
 title: imgzr
 description: A jQuery responsive image plugin
 tags: []
 ---
+
 imgzr, a jQuery responsive image plugin
 
 - Update: february 24, 2012 : changing the img source only when needed.
@@ -15,25 +16,25 @@ imgzr, a jQuery responsive image plugin
 
 Include :
 
-* jquery.
-* Include jquery [smartresize](https://github.com/louisremi/jquery-smartresize/)
-* Include the imgzr.js file.
+- jquery.
+- Include jquery [smartresize](https://github.com/louisremi/jquery-smartresize/)
+- Include the imgzr.js file.
 
 And call:
 
 ```javascript
 $(function () {
-  $('body').imgzr();
+  $("body").imgzr();
 });
 ```
 
 It will look into the given element (here "body") for image and change the src if needed. Check the [demo (broken link)](http://dev.federalbureauofinhumanity.org/imgzr/) (last version is v0.3.1)It has been tested under :
 
-* Chrome 16
-* Firefox 9
-* IE9
-* Ipad
-* Iphone
+- Chrome 16
+- Firefox 9
+- IE9
+- Ipad
+- Iphone
 
 There's a weird thing happening on my Android 2.3.5 (strange behaviour about screen orientation), but I hope to make it work soon !
 
@@ -41,10 +42,10 @@ There's a weird thing happening on my Android 2.3.5 (strange behaviour about scr
 
 Prepare your images ! Your image should have the small image in src to prevent bandwith overcharging. Add data- with the well sized image. Example :
 
-* src="./img/small.jpg" alt=""
-* data-small="./img/small.jpg"
-* data-medium="./img/medium.jpg"
-* data-large="./img/large.jpg"
+- src="./img/small.jpg" alt=""
+- data-small="./img/small.jpg"
+- data-medium="./img/medium.jpg"
+- data-large="./img/large.jpg"
 
 The default configuration is the following :
 
@@ -61,13 +62,13 @@ You can change this passing a new configuration to the function call :
 ```js
 $(function () {
   var config = {
-    resolutions:{
-      small:{min:0, max:1000},
-      medium:{min:1000, max:10000},
-      large:{min:10000, max:100000}
-    }
+    resolutions: {
+      small: { min: 0, max: 1000 },
+      medium: { min: 1000, max: 10000 },
+      large: { min: 10000, max: 100000 },
+    },
   };
-  $('body').imgzr(config);
+  $("body").imgzr(config);
 });
 ```
 

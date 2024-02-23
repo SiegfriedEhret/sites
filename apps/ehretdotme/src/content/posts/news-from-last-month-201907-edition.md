@@ -1,12 +1,13 @@
 ---
-date: '2019-07-02T00:00:00.000Z'
-updatedAt: '2022-10-29T19:23:04.163Z'
+date: "2019-07-02T00:00:00.000Z"
+updatedAt: "2022-10-29T19:23:04.163Z"
 title: News from last month (2019/07 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 ## Special things
 
 - [The economics of open source](https://github.com/ceejbot/economics-of-package-management) and [entropic](https://github.com/entropic-dev/entropic/)

@@ -1,11 +1,12 @@
 ---
-date: '2018-01-01T00:00:00.000Z'
-updatedAt: '2021-05-24T06:20:12.617Z'
+date: "2018-01-01T00:00:00.000Z"
+updatedAt: "2021-05-24T06:20:12.617Z"
 title: To 2018 and beyond
 description: It’s that time again... A review of last year.
 tags:
   - personalbranling
 ---
+
 It's that time again...
 
 This year was not an easy one for me, switching between too many contexts for too long. This explains why I almost stopped coding outside of work I think. I am reassured when I read this like [this post from Julia Evans «Learning at work»](https://jvns.ca/blog/2017/08/06/learning-at-work/), especially this:
@@ -73,11 +74,11 @@ That was a lazy year. I learn to disconnect when I am at home, I will tell you m
 [beulogue](https://www.npmjs.com/package/beulogue) has been discontinued. That was fun. Here is the final source code:
 
 ```javascript
-'use strict';
+"use strict";
 
-const path = require('path');
+const path = require("path");
 
-const pkg = require(path.resolve(__dirname, './package.json'));
+const pkg = require(path.resolve(__dirname, "./package.json"));
 
 console.log(`
   beulogue v${pkg.version} #EOL

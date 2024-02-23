@@ -1,12 +1,13 @@
 ---
-date: '2016-12-15T00:00:00.000Z'
-updatedAt: '2021-05-23T20:54:14.950Z'
+date: "2016-12-15T00:00:00.000Z"
+updatedAt: "2021-05-23T20:54:14.950Z"
 title: ng-semver
-description: 'A story about angular, semver, npm, and fails.'
+description: "A story about angular, semver, npm, and fails."
 tags:
   - angular
   - javascript
 ---
+
 ## A small story
 
 I work on a pretty cool project (Node.js + Angular.js 1.5.8). I even use Webpack !
@@ -44,9 +45,9 @@ Semver may or may not be perfect, it is what is used on [npm](https://npmjs.com/
 Here is what [semver](http://semver.org/) defines versioning:
 
 > Given a version number MAJOR.MINOR.PATCH, increment the:<br>
-MAJOR version when you make incompatible API changes,<br>
-MINOR version when you add functionality in a backwards-compatible manner, and<br>
-PATCH version when you make backwards-compatible bug fixes.
+> MAJOR version when you make incompatible API changes,<br>
+> MINOR version when you add functionality in a backwards-compatible manner, and<br>
+> PATCH version when you make backwards-compatible bug fixes.
 
 That is basically it.
 
@@ -55,27 +56,27 @@ That is basically it.
 The classic thing with npm is a [`package.json` file](https://docs.npmjs.com/getting-started/using-a-package.json).
 
 > Requirements<br>
-<br>
-As a bare minimum, a package.json must have:<br>
-<br>
-"name"<br>
-all lowercase<br>
-one word, no spaces<br>
-dashes and underscores allowed<br>
-<br>
-"version"<br>
-in the form of x.x.x<br>
-follows [semver spec](https://docs.npmjs.com/getting-started/semantic-versioning)<br>
+> <br>
+> As a bare minimum, a package.json must have:<br>
+> <br>
+> "name"<br>
+> all lowercase<br>
+> one word, no spaces<br>
+> dashes and underscores allowed<br>
+> <br>
+> "version"<br>
+> in the form of x.x.x<br>
+> follows [semver spec](https://docs.npmjs.com/getting-started/semantic-versioning)<br>
 
 Let's check some other stuff from [npm package.json docs](https://docs.npmjs.com/files/package.json)
 
 > version<br>
-<br>
-The most important things in your package.json are the name and version fields. Those are actually required, and your package won't install without them. The name and version together form an identifier that is assumed to be completely unique. Changes to the package should come along with changes to the version.<br>
-<br>
-Version must be parseable by node-semver, which is bundled with npm as a dependency. (npm install semver to use it yourself.)<br>
-<br>
-More on version numbers and ranges at semver.<br>
+> <br>
+> The most important things in your package.json are the name and version fields. Those are actually required, and your package won't install without them. The name and version together form an identifier that is assumed to be completely unique. Changes to the package should come along with changes to the version.<br>
+> <br>
+> Version must be parseable by node-semver, which is bundled with npm as a dependency. (npm install semver to use it yourself.)<br>
+> <br>
+> More on version numbers and ranges at semver.<br>
 
 So, if you put your libs on npm, it is recommended to follow semver.
 
@@ -83,7 +84,7 @@ When you install things from npm and check your package.json, the version are pr
 
 - Patch releases: 1.0 or 1.0.x or ~1.0.4
 - Minor releases: 1 or 1.x or ^1.0.4
-- Major releases: * or x
+- Major releases: \* or x
 
 The prefix can be [configured](https://docs.npmjs.com/misc/config#save-prefix), and the default is `^`.
 
@@ -108,5 +109,6 @@ Last point: it is freaking crazy how much energy and time the Angular marketing/
 To finish this article/rant, a fun little piece of advice to the Angular team:
 
 > About versioning, @angularjs should use:<br>
+
 - odd major numbers for Angular.js<br>
 - even major numbers for Angular<br>

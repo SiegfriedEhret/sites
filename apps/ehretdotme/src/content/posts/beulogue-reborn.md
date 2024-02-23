@@ -1,12 +1,13 @@
 ---
-date: '2019-05-10T00:00:00.000Z'
-updatedAt: '2021-05-24T06:53:33.366Z'
+date: "2019-05-10T00:00:00.000Z"
+updatedAt: "2021-05-24T06:53:33.366Z"
 title: beulogue
-description: 'beulogue, beulogueur than ever !'
+description: "beulogue, beulogueur than ever !"
 tags:
   - beulogue
   - blog
 ---
+
 ## Farewell, Hugo !
 
 I used [Hugo](https://gohugo.io/) for a few months / years and it's great. I am not crazy about the templating part of it and I was starting to look for alternative. I tried [Zola](https://www.getzola.org/) which is also great but didn't meet my expectations regarding multilingual sites.

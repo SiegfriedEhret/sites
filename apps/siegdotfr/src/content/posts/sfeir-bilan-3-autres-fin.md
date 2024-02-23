@@ -1,11 +1,12 @@
 ---
-date: '2019-01-29T00:00:00.000Z'
-updatedAt: '2021-05-24T08:07:52.174Z'
+date: "2019-01-29T00:00:00.000Z"
+updatedAt: "2021-05-24T08:07:52.174Z"
 title: Le bilan de mon aventure SFEIR (3/3)
 description: Suite et fin
 tags:
   - sfeir
 ---
+
 Bonjour vous !
 
 Voici la dernière partie de ce petit bilan de 4.5 ans de SFEIR. Si vous avez lu [Missions et projets](https://ehret.me/fr/sfeir-bilan-1-missions-et-projets) et [Team Leader](https://ehret.me/fr/sfeir-bilan-2-team-leader): courage, c'est bientôt fini !
@@ -45,9 +46,9 @@ Heureusement, on arrive quand même à faire autre chose (j'ai vécu du AWS et d
 
 ### L'impression du manque d'évolution
 
-Ce n'est pas mon cas mais il y a plusieurs personnes pour qui l'évolution se limite à «devenir Team Leader». Le management ne plait pas à tout le monde ! 
+Ce n'est pas mon cas mais il y a plusieurs personnes pour qui l'évolution se limite à «devenir Team Leader». Le management ne plait pas à tout le monde !
 
-Au fur et à mesure de l'expérience on peut aller vers du lead ou de l'architecture, mais ce n'est pas forcément évident pour tout le monde. Il faut avoir une mission qui le permet, l'envie de le faire, et l'appliquer ! 
+Au fur et à mesure de l'expérience on peut aller vers du lead ou de l'architecture, mais ce n'est pas forcément évident pour tout le monde. Il faut avoir une mission qui le permet, l'envie de le faire, et l'appliquer !
 
 Donc qu'est-ce qu'on fait ?
 

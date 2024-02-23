@@ -1,12 +1,13 @@
 ---
-date: '2021-09-01T00:00:00.000Z'
-updatedAt: '2022-02-06T08:46:20.747Z'
+date: "2021-09-01T00:00:00.000Z"
+updatedAt: "2022-02-06T08:46:20.747Z"
 title: Between The Buried And Me - Colors II (2021)
 description: >-
   Voyons voir ce que donne ce dixième album, et suite de Colors (2007). Une
   bonne première impression mais au final un poil mitigé.
 tags: []
 ---
+
 ## Préambule
 
 Voici “Colors II”, le dixième album de Between the Buried and Me, un groupe de métal progressif originaire des États-Unis, en œuvre depuis plus de 20 ans.
@@ -17,7 +18,7 @@ Quid de cette suite ? Ouvrons les oreilles, c’est parti.
 
 ## Revue
 
-Monochrome ouvre l’album tout gentiment au piano avant de prendre un peu de corps et passer sur  des guitares avec distortion et synthé. Et ça s’énerve un peu (ça commence bien !) sur la fin… Est-ce vraiment la fin ?
+Monochrome ouvre l’album tout gentiment au piano avant de prendre un peu de corps et passer sur des guitares avec distortion et synthé. Et ça s’énerve un peu (ça commence bien !) sur la fin… Est-ce vraiment la fin ?
 
 Car l’enchainement avec The Double Helix of Extinction se fait sans s’en rendre compte. Et ce sera vrai pour le reste de l’album, qui est en fait une piste géante.
 Et donc cette deuxième piste est plus technique, dans les guitares, la basse… On parle de notre confort qui prend le pas sur tout le reste, sur les villes et le bétons qui prennent le pas sur la nature.

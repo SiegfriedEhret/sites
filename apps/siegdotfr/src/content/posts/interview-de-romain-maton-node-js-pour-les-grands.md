@@ -1,6 +1,6 @@
 ---
-date: '2022-05-26T00:00:00.000Z'
-updatedAt: '2022-05-26T12:07:34.091Z'
+date: "2022-05-26T00:00:00.000Z"
+updatedAt: "2022-05-26T12:07:34.091Z"
 title: Interview de Romain Maton - Node.js pour les grands !
 description: >-
   Romain Maton est un développeur freelance qui aime plus que tout raviver la
@@ -12,6 +12,7 @@ description: >-
 tags:
   - interview
 ---
+
 📢 Cet article a initialement été publié le 19 juin 2017 sur le blog de [Sfeir](https://www.sfeir.com/fr/), qui a disparu depuis.
 
 Romain Maton est un développeur freelance qui aime plus que tout raviver la curiosité de ses pairs. Avec [Florian Orpelière](https://twitter.com/florpeliere), nous avons pu échanger avec lui lors du dernier DevoxxFR suite à son talk [Node.js pour les grands](https://www.youtube.com/watch?v=RIRB2AFrPV8). Si vous aspirez à une longue carrière en tant que développeur, et que vous avez une certaine affinité avec le Javascript, ce témoignage devrait grandement vous intéresser ! Découvrez son approche des talks dans cette interview.
@@ -96,7 +97,7 @@ C’était une très bonne université, clairement dans la catégorie intermédi
 
 ## C’est vrai que les notions de l’université de Martin, ça nous change de background-color: yellow; ou api.getMachin().
 
-Oh oui ! *_rires_*
+Oh oui ! _*rires*_
 
 ## Merci Romain !
 

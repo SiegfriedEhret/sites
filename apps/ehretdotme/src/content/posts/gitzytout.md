@@ -1,10 +1,11 @@
 ---
-date: '2016-02-20T00:00:00.000Z'
-updatedAt: '2021-05-23T19:50:29.260Z'
+date: "2016-02-20T00:00:00.000Z"
+updatedAt: "2021-05-23T19:50:29.260Z"
 title: gitzytout
 description: gitzytout allows to easily maintain a list of repositories in sync.
 tags: []
 ---
+
 Hello you !
 
 I made a (really) small [golang](https://golang.org/) project: [gitzytout](https://gitlab.com/SiegfriedEhret/gitzytout) !
@@ -32,7 +33,7 @@ This is the example from gitzytout (dogfooding FTW):
 ```yaml
 main: git@gitlab.com:SiegfriedEhret/gitzytout.git
 mirrors:
-- git@github.com:SiegfriedEhret/gitzytout.git
+  - git@github.com:SiegfriedEhret/gitzytout.git
 ```
 
 Then, run `gitzytout` it will automagically configure your `.git/config` to allow you to push to multiple repositories.

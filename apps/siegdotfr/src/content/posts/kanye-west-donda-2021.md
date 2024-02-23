@@ -1,10 +1,11 @@
 ---
-date: '2021-09-04T00:00:00.000Z'
-updatedAt: '2022-02-06T08:43:23.635Z'
+date: "2021-09-04T00:00:00.000Z"
+updatedAt: "2022-02-06T08:43:23.635Z"
 title: Kanye West - Donda (2021)
-description: 'Kanye et Dieu, Kanye et son divorce, Kanye ses potes, Kanye et Kanye.'
+description: "Kanye et Dieu, Kanye et son divorce, Kanye ses potes, Kanye et Kanye."
 tags: []
 ---
+
 ## Préambule
 
 On a presque toutes et tous entendu parler de [Kanye West](https://fr.wikipedia.org/wiki/Kanye_West). Avec un premier album en 2004, il a fait du chemin pour arriver à Donda, son dixième album.
@@ -23,7 +24,7 @@ Curieusement, la version que j'ai écoutée ne comporte pas de gros mots tels qu
 
 L'album commence avec Donda Chant, où le nom de la mère de Kanye West, « Donda », est répété plein de fois, avec différentes intonations. Intriguant.
 
-Première chanson: Jail. Avec Jay-Z ! Une première bonne surprise ! Parce que la voix de Kanye sur cette piste est insupportable, déformée sans goût. Le son est original (pour du rap), sans percussions, en gros juste guitare (très effacée) et un son de basse synthé (trop présente ?). Un peu avant la fin, on a une entrée de batterie et je  sais qu'il y a une Jail Pt. 2 à la fin de l'album... Un labyrinthe ? Et bien non. L'entrée de batterie à la fin est inutile, elle ne mène ni à la chanson suivante ni à Jail Pt. 2.
+Première chanson: Jail. Avec Jay-Z ! Une première bonne surprise ! Parce que la voix de Kanye sur cette piste est insupportable, déformée sans goût. Le son est original (pour du rap), sans percussions, en gros juste guitare (très effacée) et un son de basse synthé (trop présente ?). Un peu avant la fin, on a une entrée de batterie et je sais qu'il y a une Jail Pt. 2 à la fin de l'album... Un labyrinthe ? Et bien non. L'entrée de batterie à la fin est inutile, elle ne mène ni à la chanson suivante ni à Jail Pt. 2.
 
 On continue donc avec God Breathed. Instru très minimal, ça me fait penser aux instrus de Billie Eilish, et un chœur en arrière plan, c'est original. Dans les paroles: Dieu et... Kanye. Exactement ce pourquoi je n'adhére pas au personnage et à la plupart de ses réalisations.
 
@@ -35,7 +36,7 @@ Toujours le même sujet avec Praise God. Je ne comprends toujours pas pourquoi l
 
 Jonah, un titre inspiré par la mort de Jonah Ware, tué par balles à 19 ans. On dirait une chanson de Vory (que je ne connais pas), avec Kanye comme invité qui fait un couplet. Le refrain n'est pas terrible (pourquoi toujours ces voix déformées...).
 
-Ok Ok. Un refrain digne du titre de la chanson, avec plein de « ok » mais pas très intéressant. 
+Ok Ok. Un refrain digne du titre de la chanson, avec plein de « ok » mais pas très intéressant.
 
 Junya, une chanson sur la mode ? Trop de répétitions, ça manque vraiment d'inspiration. J'aime bien le son en revanche, la grosse basse et l'orgue avec les percus ça fonctionne pas mal. La voix de Playboi Carti n'est pas déformée n'importe comment cette fois.
 
@@ -53,7 +54,7 @@ Donda démarre avec un texte lu par la mère de Kanye, Donda, sur une musique au
 
 La caisse claire est curieuse sur Keep My Spirit Alive. Ma phrase préférée est quand même « I don't do commercials, 'cause they too commercial », on est dans la chanson à texte là.
 
-Le son est sympa sur Jesus Lord, avec son gros boum et les orgues. La chanson dure presque 9 minutes et on a 3 gros couplets, c'est une jolie performance. On a (enfin) un vrai rap de Kanye ! L'utilisation de « Jesus, Lord » tout au long de la chanson rend plutôt bien. Le témoignage dans le troisième couplet est très touchant. 
+Le son est sympa sur Jesus Lord, avec son gros boum et les orgues. La chanson dure presque 9 minutes et on a 3 gros couplets, c'est une jolie performance. On a (enfin) un vrai rap de Kanye ! L'utilisation de « Jesus, Lord » tout au long de la chanson rend plutôt bien. Le témoignage dans le troisième couplet est très touchant.
 
 L'intro de New Again est très approximative et mal chantée. Curieux son «dance». La voix de Chris Brown est nulle. Toujours le même thème de Kanye qui demande à être sauvé et tout, c'est fatiguant.
 
@@ -67,7 +68,7 @@ Come to Life. Je n'aime pas la voix de Kanye sur cette piste. Quand il rap (donc
 
 Dans No Child Left Behind, le son calme et brillant est chouette. La fin est coupée net et c'est dommage. Et l'album aurait dû s'arrêter là.
 
-Jail, Pt. 2: alors c'est presque la même que Jail, avec un autre invité. 
+Jail, Pt. 2: alors c'est presque la même que Jail, avec un autre invité.
 
 Ok Ok, Pt. 2: alors c'est presque la même que Ok Ok, avec d'autres invités. Le couplet de Shenseea est bien.
 
@@ -121,5 +122,5 @@ Voilà ! C'est juste mon avis, j'espère que vous en avez un différent. Bisous 
 
 ## Liens
 
-* [Site](https://www.kanyewest.com/)
-* [Genius](https://genius.com/albums/Kanye-west/Donda)
+- [Site](https://www.kanyewest.com/)
+- [Genius](https://genius.com/albums/Kanye-west/Donda)

@@ -1,11 +1,12 @@
 ---
-date: '2016-04-29T00:00:00.000Z'
-updatedAt: '2021-05-24T08:39:36.687Z'
+date: "2016-04-29T00:00:00.000Z"
+updatedAt: "2021-05-24T08:39:36.687Z"
 title: I don't understand TypeScript
 description: A few personal thoughts about my interactions with the TypeScript world.
 tags:
   - angular
 ---
+
 A few days ago I gave a [talk](http://cfp.devoxx.fr/2016/talk/YXM-4879/la-quete-du-graal.js) with [Romain](https://twitter.com/rmat0n) at [Devoxx France](http://devoxx.fr/), about frontend JavaScript and the hype of frameworks. I was able to listen to 2 talks where [TypeScript](http://www.typescriptlang.org/) was mentioned.
 
 ![typescript](/contentful/r8d34JqRZr1mEfMJBdlHZ/461c16ad5fde99118fafe5f8eca55fbf/typescript.jpg)
@@ -48,7 +49,7 @@ Using TypeScript is currently only sugar in your IDE, and I am not found of the 
 
 I don't think so.
 
-*Maybe* TypeScript can make onboarding of junior developers understand how things are structured in a big project.
+_Maybe_ TypeScript can make onboarding of junior developers understand how things are structured in a big project.
 
 This was a punchline from [this talk](https://speakerdeck.com/vberetti/devoxx-fr-2016-typescript):
 
@@ -78,6 +79,6 @@ You also surely need the [typings](https://www.npmjs.com/package/typings) packag
 
 Well... I am a JavaScript developer (even if I made some Java before), and I like the language. People working with JavaScript should stick with JavaScript.
 
-Will TypeScript really win? And why [Dart](https://en.wikipedia.org/wiki/Dart_(programming_language)) wasn't able to win ? Only the future will tell us.
+Will TypeScript really win? And why [Dart](<https://en.wikipedia.org/wiki/Dart_(programming_language)>) wasn't able to win ? Only the future will tell us.
 
 Note: I am not a fan of [CoffeeScript](http://coffeescript.org/) or [Babel](https://babeljs.io/) either, we have to much tooling to do before really coding, but that's another story about fatigue...

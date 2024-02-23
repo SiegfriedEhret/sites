@@ -1,7 +1,7 @@
 ---
-date: '2022-05-26T00:00:00.000Z'
-updatedAt: '2022-05-26T12:06:40.770Z'
-title: 'Interview de Raphaël Goetter : les avantages de Flexbox'
+date: "2022-05-26T00:00:00.000Z"
+updatedAt: "2022-05-26T12:06:40.770Z"
+title: "Interview de Raphaël Goetter : les avantages de Flexbox"
 description: >
   Raphaël Goetter et Rodolphe Rimelé étaient présents pour l’édition 2016 de
   Best of Web. Avec Cyril Balit, en avons profité pour prendre un peu de temps à
@@ -10,6 +10,7 @@ description: >
 tags:
   - interview
 ---
+
 📢 Cet article a initialement été publié le 15 juin 2016 sur le blog de [Sfeir](https://www.sfeir.com/fr/), qui a disparu depuis.
 
 Raphaël Goetter et Rodolphe Rimelé étaient présents pour l’édition 2016 de Best of Web. Avec [Cyril Balit](https://twitter.com/cbalit), en avons profité pour prendre un peu de temps à Raphaël, avant qu’il ne retourne dans sa contrée, pour lui poser quelques questions, notamment sur Flexbox !
@@ -60,8 +61,8 @@ Très bonne question !
 
 Grid layout et Flexbox layout sont deux spécifications différentes dont les objectifs et les buts sont normalement différents:
 
-  * grid layout a pour but de s’occuper de tout ce qui est architecture, gabarit/template de la page, responsive bien sûr
-  * Flexbox doit s’occuper de l’intérieur : des composants (navigation, slider, etc.)
+- grid layout a pour but de s’occuper de tout ce qui est architecture, gabarit/template de la page, responsive bien sûr
+- Flexbox doit s’occuper de l’intérieur : des composants (navigation, slider, etc.)
 
 C’est donc compatible et complémentaire. La seule “petite” complication aujourd’hui c’est que grid layout est supporté à peu près par aucun navigateur, même si ça va bouger très vite, car le premier à l’avoir implémenté c’est Internet Explorer. En général c’est lui qu’on attend, et là ce sera l’inverse et ça bouge.
 
@@ -71,6 +72,6 @@ Je vous en prie !
 
 ## Quelques liens
 
-  * [Le site de Raphaël](http://goetter.fr/)
-  * [Alsacréations](http://www.alsacreations.com/)
-  * [Grid layout](https://www.w3.org/TR/css3-grid-layout/)
+- [Le site de Raphaël](http://goetter.fr/)
+- [Alsacréations](http://www.alsacreations.com/)
+- [Grid layout](https://www.w3.org/TR/css3-grid-layout/)

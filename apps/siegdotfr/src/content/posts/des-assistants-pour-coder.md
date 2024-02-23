@@ -1,10 +1,11 @@
 ---
-date: '2023-04-27T00:00:00.000Z'
-updatedAt: '2023-04-27T18:04:23.491Z'
+date: "2023-04-27T00:00:00.000Z"
+updatedAt: "2023-04-27T18:04:23.491Z"
 title: Des assistants pour coder
-description: 'Copilot et ChatGPT, c''est mieux que ce que j''espérais.'
+description: "Copilot et ChatGPT, c'est mieux que ce que j'espérais."
 tags: []
 ---
+
 ## GitHub Copilot
 
 Très curieux - et dubitatif - des outils tels que [Tabnine](https://www.tabnine.com/) ou [GitHub Copilot](https://github.com/features/copilot/), il fallait quand même que j'essaie un peu.

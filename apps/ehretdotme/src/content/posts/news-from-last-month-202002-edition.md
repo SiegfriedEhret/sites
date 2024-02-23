@@ -1,12 +1,13 @@
 ---
-date: '2020-02-05T00:00:00.000Z'
-updatedAt: '2022-10-29T19:28:03.794Z'
+date: "2020-02-05T00:00:00.000Z"
+updatedAt: "2022-10-29T19:28:03.794Z"
 title: News from last month (2020/02 edition)
 description: A selection of links from last month.
 tags:
   - links
   - nflm
 ---
+
 Quite sad about this:
 
 - [The End of Indie Web Browsers: You Can (Not) Compete](https://blog.samuelmaddock.com/posts/the-end-of-indie-web-browsers/)
@@ -88,7 +89,7 @@ In French:
 - [Elasticsearch Rust Client](https://github.com/elastic/elasticsearch-rs)
 - [How to exit vim](https://github.com/hakluke/how-to-exit-vim/blob/master/README.md)
 - [The source code to VVVVVV, now open and public!](https://github.com/TerryCavanagh/vvvvvv)
-- [JetBrains Mono. A typeface for developers_](https://www.jetbrains.com/lp/mono/)
+- [JetBrains Mono. A typeface for developers\_](https://www.jetbrains.com/lp/mono/)
 - [GNU Guile 3.0.0 released](https://www.gnu.org/software/guile/news/gnu-guile-300-released.html)
 - [X11 on iOS](https://maxleiter.com/X11/)
 - [From zsh to fish: A Complete Setup Guide](https://reckoning.dev/blog/fish-shell/)

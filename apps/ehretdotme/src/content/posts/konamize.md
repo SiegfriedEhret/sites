@@ -1,10 +1,11 @@
 ---
-date: '2013-03-12T00:00:00.000Z'
-updatedAt: '2021-05-23T13:31:03.337Z'
+date: "2013-03-12T00:00:00.000Z"
+updatedAt: "2021-05-23T13:31:03.337Z"
 title: konamize
 description: Easy jQuery konami code integration !
 tags: []
 ---
+
 ## intro
 
 Easy jQuery konami code integration !
@@ -14,24 +15,26 @@ The demo page is [here](https://dev.ehret.me/konamize)
 
 ## how to
 
-* include jquery
-* include konamize
+- include jquery
+- include konamize
 
 Then, call the stuff:
 
 ```javascript
-$(function() {
-  $('body').konamize({
-    callback: function() { alert('callback'); }
+$(function () {
+  $("body").konamize({
+    callback: function () {
+      alert("callback");
+    },
   });
 });
 ```
 
 ## parameters
 
-* callback: the function to return
-* code: the code (default `[38, 38, 40, 40, 37, 39, 37, 39, 66, 65]`)
-* timer: the timer limit (default: `5000`)
+- callback: the function to return
+- code: the code (default `[38, 38, 40, 40, 37, 39, 37, 39, 66, 65]`)
+- timer: the timer limit (default: `5000`)
 
 ## license
 

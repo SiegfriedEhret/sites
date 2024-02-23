@@ -1,18 +1,20 @@
 ---
-date: '2021-09-26T00:00:00.000Z'
-updatedAt: '2022-02-06T08:36:46.445Z'
+date: "2021-09-26T00:00:00.000Z"
+updatedAt: "2022-02-06T08:36:46.445Z"
 title: Injury Reserve - By The Time I Get To Phoenix (2021)
 description: >-
   Voilà le genre d’expérience qui fait que le hip hop est un genre digne
   d’intérêt.  Déroutant et passionnant.
 tags: []
 ---
+
 ## Préambule
+
 Injury Reserve est un groupe de hip hop (ou pas, on y reviendra) américain.
 
 J'avais bien aimé leur premier album (le titre est Injury Reserve), et je n'espérais pas un autre suite au décès d'un des membre du groupe.
 
-Et donc surprise,  un nouvel album annoncé suite à la sortie du titre [Knees](https://www.youtube.com/watch?v=AvYU1mIMiuY).
+Et donc surprise, un nouvel album annoncé suite à la sortie du titre [Knees](https://www.youtube.com/watch?v=AvYU1mIMiuY).
 
 ![Injury Reserve - By The Time I Get To Phoenix (2021)](/contentful/4G3itU0MNSLVuXpqwkMP8u/d1a7c5dbc92dba2d50a6200e7d4a953b/a0710208795_10.jpg)
 
@@ -26,9 +28,9 @@ Pour SS San Francisco, on a un ensemble basse/guitare comme dans une intro d'un 
 
 Footwork in a Forest Fire démarre comme un mix étrange entre une percussion, un son bizarre et des voix incompréhensibles... Avant de partir comme un vrai rap énervé sur une instru où il se passe beaucoup de choses. Il y a un petit moment de calme sur la fin, avec des voix un peu fantômatiques.
 
-Ground Zero, un mix intéressant avec certaines voix qui passent sur une oreille, d'autres sur les deux. Le son est minimaliste et une nouvelle fois légèrement glitch. 
+Ground Zero, un mix intéressant avec certaines voix qui passent sur une oreille, d'autres sur les deux. Le son est minimaliste et une nouvelle fois légèrement glitch.
 
-Smoke Don't Clear, encore quelque chose de minimal sur le son, on retient surtout cette grosse basse, et ces petits points brillants par ci par là. 
+Smoke Don't Clear, encore quelque chose de minimal sur le son, on retient surtout cette grosse basse, et ces petits points brillants par ci par là.
 
 Top Picks for You est une piste toute calme, une des plus chargées en sentiments sur l'album, à propos de ce qui reste après la perte de quelqu'un, avec l'ensemble des technologies actuelles. Le son est sans percussion, et se tord sur la fin. Ça me donne des frissons.
 
@@ -68,7 +70,7 @@ Voilà ! C'est juste mon avis, j'espère que vous en avez un différent. Bisous 
 
 ## Liens
 
-* [Wikipedia (EN)](https://en.wikipedia.org/wiki/Injury_Reserve#Albums)
-* [Site](https://injuryreserve.online/)
-* [Bandcamp](https://injuryreserve.bandcamp.com/)
-* [Genius](https://genius.com/albums/Injury-reserve/By-the-time-i-get-to-phoenix)
+- [Wikipedia (EN)](https://en.wikipedia.org/wiki/Injury_Reserve#Albums)
+- [Site](https://injuryreserve.online/)
+- [Bandcamp](https://injuryreserve.bandcamp.com/)
+- [Genius](https://genius.com/albums/Injury-reserve/By-the-time-i-get-to-phoenix)

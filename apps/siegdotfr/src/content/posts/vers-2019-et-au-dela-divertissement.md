@@ -1,11 +1,12 @@
 ---
-date: '2019-01-02T00:00:00.000Z'
-updatedAt: '2021-05-24T07:59:42.490Z'
-title: 'Vers 2019 et au-delà: divertissement'
+date: "2019-01-02T00:00:00.000Z"
+updatedAt: "2021-05-24T07:59:42.490Z"
+title: "Vers 2019 et au-delà: divertissement"
 description: It’s that time again... A review of last year - entertainment part !
 tags:
   - personalbranling
 ---
+
 Cette partie prenait beaucoup de place dans ma rétro 2018, donc voilà le truc dans un billet séparé. Avec pas vraiment d'ordre.
 
 ## Musique
@@ -31,7 +32,7 @@ Et j'écoute aussi des trucs:
 - Aphex Twin - Collapse EP (écoute [T69 Collapse](https://www.youtube.com/watch?v=SqayDnQ2wmw)): j'ai une relation compliquée avec Aphex Twin. Il y a des choses que j'aime bien, et beaucoup qui ne m'intéressent pas. Celui là, c'est une bonne surprise !
 - Open Mike Eagle - What Happens When I Try To Relax (écoute [Microfiche](https://www.youtube.com/watch?v=GSP0b85BKmY)): toujours aussi bien !
 - Post Malone - Beerbongs & Bentleys (écoute [Better now](https://www.youtube.com/watch?v=UYwF-jdcVjY)): complètement indifférent jusqu'à maintenant, j'ai trouvé ça sympa !
-- Prof - Pookie Baby (écoute [Eulogy](https://www.youtube.com/watch?v=WfHXXY2UYio)): j'aime toujours ce qu'il fait, c'est décalé, complètement différent du paysage du hip hop 
+- Prof - Pookie Baby (écoute [Eulogy](https://www.youtube.com/watch?v=WfHXXY2UYio)): j'aime toujours ce qu'il fait, c'est décalé, complètement différent du paysage du hip hop
 - Pig Destroyer - Head Cage (écoute [Terminal Itch](https://www.youtube.com/watch?v=RNalOfyDnVs)): quelle belle claque, ça fait du bien qu'on ne m'avait pas secoué comme ça.
 - Tenacious D - Post-Apocalypto (écoute [POST-APOCALYPTO THEME](https://www.youtube.com/watch?v=PtAFDlJYH3s)): c'est tellement bien, comme toujours !
 - Dirge - Lost Empyrean (écoute [Lost Empyrean](https://www.youtube.com/watch?v=r-zOoW9peKA)): une chouette découverte encore, je suis bien content !
@@ -60,7 +61,7 @@ Je n'ai pas encore écouté:
 - JPEGMAFIA - VETERAN
 - DAOKO - 私的旅行: j'ai jeté une oreille et je n'ai pas trouvé ça terrible. Il faut que je creuse, il y a quelques trucs bien dans ce qu'elle a fait avant.
 
-Et l'album de l'année: 
+Et l'album de l'année:
 
 [Zeal & Ardor - Stranger Fruit](https://zealandardor.bandcamp.com/album/stranger-fruit).
 
@@ -70,7 +71,7 @@ Et l'album de l'année:
 - [Brooklyn Nine-Nine](https://fr.wikipedia.org/wiki/Brooklyn_Nine-Nine): j'ai découvert ça dans l'avion lors d'un voyage, j'ai adoré !
 - [BoJack Horseman](https://fr.wikipedia.org/wiki/BoJack_Horseman): j'ai découvert ça, c'était bien.
 - [The Good Place](https://fr.wikipedia.org/wiki/The_Good_Place): j'ai continué, toujours sympa !
-- [Happy](https://fr.wikipedia.org/wiki/Happy!_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)): bordel, qu'est-ce que c'est que ce truc ?
+- [Happy](<https://fr.wikipedia.org/wiki/Happy!_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)>): bordel, qu'est-ce que c'est que ce truc ?
 - [Death by Magic](https://www.netflix.com/title/80191074): une série sur de la magie, j'ai bien aimé les petits tours qu'il fait plus que l'intrigue globale à chaque épisode.
 - [Magic for Humans](https://en.wikipedia.org/wiki/Magic_for_Humans): une autre série sur de la magie, c'est drôle et les tours sont chouettes.
 
@@ -80,11 +81,11 @@ C'était bien:
 
 - [Black Mirror : Bandersnatch](https://fr.wikipedia.org/wiki/Black_Mirror_:_Bandersnatch): c'était ouf ! Un film dont vous êtes le héros !
 - [Ant-Man et la Guêpe](https://fr.wikipedia.org/wiki/Ant-Man_et_la_Gu%C3%AApe): c'était sympa
-- [Black Panther](https://fr.wikipedia.org/wiki/Black_Panther_(film)): les films de ce genre qui sont vraiment bien sont rares. Ce lui là est vraiment bien.
+- [Black Panther](<https://fr.wikipedia.org/wiki/Black_Panther_(film)>): les films de ce genre qui sont vraiment bien sont rares. Ce lui là est vraiment bien.
 - [Les indestructibles 2](https://fr.wikipedia.org/wiki/Les_Indestructibles_2): je suis allé le voir pendant la finale de la coupe du monde, c'était bien !
 - [Cro man](https://fr.wikipedia.org/wiki/Cro_Man): ça marche bien avec moi ça :).
 - [L'île aux chiens](https://fr.wikipedia.org/wiki/L%27%C3%8Ele_aux_chiens): c'était chouette.
-- [Upgrade](https://fr.wikipedia.org/wiki/Upgrade_(film,_2018)): c'était une très bonne surprise !
+- [Upgrade](<https://fr.wikipedia.org/wiki/Upgrade_(film,_2018)>): c'était une très bonne surprise !
 - [Deadpool 2](https://fr.wikipedia.org/wiki/Deadpool_2): tellement n'imp, il faut débrancher son bulbe parfois, et ça fait du bien.
 - [Solo: A Star Wars Story](https://fr.wikipedia.org/wiki/Solo:_A_Star_Wars_Story): bien mieux que je pensais, et bien mieux que le précédent opus de la énième trilogie...
 - [Au Poste !](https://fr.wikipedia.org/wiki/Au_poste_!): complètement bizarre mais super intéressant !
@@ -93,8 +94,8 @@ C'était bien:
 C'était «meh»:
 
 - [The House with a Clock in Its Walls](https://fr.wikipedia.org/wiki/La_Proph%C3%A9tie_de_l%27horloge): je suis un peu vieux peut être ? Mais je ne peux pas rater un film avec Jack Black.
-- [Ready Player One](https://fr.wikipedia.org/wiki/Ready_Player_One_(film)): meh.
-- [Sans un bruit](https://fr.wikipedia.org/wiki/Sans_un_bruit_(film)): meh.
+- [Ready Player One](<https://fr.wikipedia.org/wiki/Ready_Player_One_(film)>): meh.
+- [Sans un bruit](<https://fr.wikipedia.org/wiki/Sans_un_bruit_(film)>): meh.
 - [Super Troopers 2](https://en.wikipedia.org/wiki/Super_Troopers_2): j'aime les films de qualité comme ça.
 - [Ocean's 8](https://fr.wikipedia.org/wiki/Ocean%27s_8): ça se laisse regarder
 - [Tag](https://fr.wikipedia.org/wiki/Tag_:_Une_r%C3%A8gle,_z%C3%A9ro_limite): c'est bête mais ça marche avec moi ces trucs là.
@@ -104,10 +105,10 @@ C'était nul:
 - [Jurassic World: Fallen Kingdom](https://fr.wikipedia.org/wiki/Jurassic_World:_Fallen_Kingdom): meh.
 - [Le Labyrinthe 3](https://fr.wikipedia.org/wiki/Le_Labyrinthe_:_Le_Rem%C3%A8de_mortel): c'était génial ! Non, je plaisante, c'était de la merde. Les 3 films sont nuls. Il faut avoir une limite basse.
 - [Avengers: Infinity War](https://fr.wikipedia.org/wiki/Avengers:_Infinity_War): au secours, c'est nuuul.
-- [Skyscraper](https://en.wikipedia.org/wiki/Skyscraper_(2018_film)): c'était nul, mais on ne peut pas rater un film avec The Rock.
+- [Skyscraper](<https://en.wikipedia.org/wiki/Skyscraper_(2018_film)>): c'était nul, mais on ne peut pas rater un film avec The Rock.
 - [Rampage](https://fr.wikipedia.org/wiki/Rampage_:_Hors_de_contr%C3%B4le): c'était nul, mais on ne peut pas rater un film avec The Rock.
 - [Mission: Impossible – Fallout](https://fr.wikipedia.org/wiki/Mission_impossible_:_Fallout): nul.
-- [The Meg](https://fr.wikipedia.org/wiki/En_eaux_troubles_(film,_2018)): nul, mais on ne peut pas rater un film avec Jason Statham.
+- [The Meg](<https://fr.wikipedia.org/wiki/En_eaux_troubles_(film,_2018)>): nul, mais on ne peut pas rater un film avec Jason Statham.
 
 ## Et voilà !
 

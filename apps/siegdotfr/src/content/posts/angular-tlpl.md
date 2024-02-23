@@ -1,7 +1,7 @@
 ---
-date: '2018-10-22T00:00:00.000Z'
-updatedAt: '2021-05-24T06:44:57.366Z'
-title: 'Angular, TL;PL'
+date: "2018-10-22T00:00:00.000Z"
+updatedAt: "2021-05-24T06:44:57.366Z"
+title: "Angular, TL;PL"
 description: >-
   Ça fait plusieurs fois que je parle d'Angular sur mon blog. Après avoir enfin
   avoir travaillé avec professionnellement, voici quelques pensées sur ce
@@ -10,6 +10,7 @@ tags:
   - angular
   - tldr
 ---
+
 Ça fait plusieurs fois que je parle d'[Angular](https://angular.io/) sur mon blog. Après avoir enfin avoir travaillé avec professionnellement, voici quelques pensées sur ce framework et ce qui l'entoure.
 
 Au final, travailler avec Angular était intéressant, et je trouve qu'Angular est un framework contradictoire.
@@ -40,13 +41,13 @@ J'adore l'idée des [Angular Elements](https://angular.io/guide/elements) bien q
 
 ## CLI
 
-Le CLI ne laisse pas le choix de réfléchir à l’architecture. 
+Le CLI ne laisse pas le choix de réfléchir à l’architecture.
 
 Un petit tweet de Dan Abramov ne fait jamais de mal. À propos d'une discussion sur comment organiser ses fichiers, il a sorti [ceci](http://react-file-structure.surge.sh/) et voici son conseil:
 
 <blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">It is a guideline though. It means literally “start by putting everything in one file; when it feels like it’s annoying, start splitting them up; what THAT gets annoying, maybe add some folders”.</p>&mdash; Dan Abramov (@dan_abramov) <a href="https://twitter.com/dan_abramov/status/1027248875072114689?ref_src=twsrc%5Etfw">August 8, 2018</a></blockquote>
 
-*C'est une ligne directrice. Cela signifie littéralement «commencez par tout mettre dans un seul fichier; quand cela vous semble agaçant, commencez à les séparer; que CELA devient agaçant, ajoutez peut-être des dossiers ”.*
+_C'est une ligne directrice. Cela signifie littéralement «commencez par tout mettre dans un seul fichier; quand cela vous semble agaçant, commencez à les séparer; que CELA devient agaçant, ajoutez peut-être des dossiers ”._
 
 Le CLI d'Angular est intéressant pour répondre au point sur les composants qu'il faut forcément indiquer dans les modules mais... Pour les habitués de react / vue, où un composant est importé directement dans le composant parent sans avoir à le déclarer tout en haut de la chaîne, ce n'est pas naturel.
 
@@ -70,7 +71,7 @@ En Angular, c'est encore pire. La mise en place des tests est insupportable pour
 
 ## Observables
 
-Les observables répondent à quelque chose de précis, et Angular a fait le choix de les utiliser pour tout. 
+Les observables répondent à quelque chose de précis, et Angular a fait le choix de les utiliser pour tout.
 
 Je parle souvent de devoir utiliser quelque chose qui répond à un besoin, et utiliser les Observables pour tout, non merci.
 

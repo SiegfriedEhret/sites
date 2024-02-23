@@ -1,12 +1,13 @@
 ---
-date: '2017-07-26T00:00:00.000Z'
-updatedAt: '2021-05-23T21:03:25.347Z'
+date: "2017-07-26T00:00:00.000Z"
+updatedAt: "2021-05-23T21:03:25.347Z"
 title: Hodor with React
 description: hodor.jsx !
 tags:
   - javascript
   - react
 ---
+
 ## react-hodor
 
 ![Hodor !](/contentful/38log8us31S0ROXlnqJn9b/839584563121d043f69dcee812c88aae/oatmeal_hodor.jpg)
@@ -19,9 +20,9 @@ Install using `npm install react-hodor` !
 Include some stuff !
 
 ```javascript
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Hodor from 'react-hodor';
+import React from "react";
+import ReactDOM from "react-dom";
+import Hodor from "react-hodor";
 ```
 
 ### hodor
@@ -29,9 +30,7 @@ import Hodor from 'react-hodor';
 The default `<Hodor/>` directive replace the $element content with "hodor".
 
 ```javascript
-ReactDOM.render(
-    <Hodor/>,
-    document.getElementById('hodor'));
+ReactDOM.render(<Hodor />, document.getElementById("hodor"));
 ```
 
 will be displayed as:
@@ -46,8 +45,9 @@ Give it some hodoring:
 
 ```javascript
 ReactDOM.render(
-    <Hodor hodorhodor="10"/>,
-    document.getElementById('hodorhodor'));
+  <Hodor hodorhodor="10" />,
+  document.getElementById("hodorhodor"),
+);
 ```
 
 and it will
@@ -62,8 +62,9 @@ Make it hodor speak with:
 
 ```javascript
 ReactDOM.render(
-    <Hodor hodor="hodor" hodorhodor="100"/>,
-    document.getElementById('hodorhodorhodor'));
+  <Hodor hodor="hodor" hodorhodor="100" />,
+  document.getElementById("hodorhodorhodor"),
+);
 ```
 
 Aaaaand here it comes !

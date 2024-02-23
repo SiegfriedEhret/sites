@@ -1,10 +1,11 @@
 ---
-date: '2013-11-15T00:00:00.000Z'
-updatedAt: '2021-05-24T12:55:05.153Z'
-title: 'Designers, stop pimping and start creating'
-description: 'A little rant about designers trying to make Apple design, all the time.'
+date: "2013-11-15T00:00:00.000Z"
+updatedAt: "2021-05-24T12:55:05.153Z"
+title: "Designers, stop pimping and start creating"
+description: "A little rant about designers trying to make Apple design, all the time."
 tags: []
 ---
+
 ## Intro
 
 If you haven't subscribed to [Sidebar](http://sidebar.io/), you should. It is super cool and brings 5 design related links everyday.
@@ -50,10 +51,10 @@ This may be the limit between art and design: both are creation related processe
 
 ## Last words
 
-> STOP PIMPING AND START CREATING<br/>&mdash; *Siegfried Ehret*
+> STOP PIMPING AND START CREATING<br/>&mdash; _Siegfried Ehret_
 
 I am not saying designers can't create. I am saying that they should stop pimping Apple related product or app to gain recognition.
 
-Systems' and OSes' guidelines are not goals, they are constraints. They motivate designers to join a *fashionable design* but they are restraining their imagination from artistic innovation.
+Systems' and OSes' guidelines are not goals, they are constraints. They motivate designers to join a _fashionable design_ but they are restraining their imagination from artistic innovation.
 
 And I will try to apply the same rule to myself in development related stuff.

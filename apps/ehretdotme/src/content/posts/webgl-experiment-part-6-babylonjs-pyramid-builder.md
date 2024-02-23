@@ -1,11 +1,12 @@
 ---
-date: '2013-10-07T00:00:00.000Z'
-updatedAt: '2021-05-24T21:08:07.816Z'
+date: "2013-10-07T00:00:00.000Z"
+updatedAt: "2021-05-24T21:08:07.816Z"
 title: WebGL experiment part 6
 description: BabylonJS Pyramid builder.
 tags:
   - webgl
 ---
+
 ## Intro
 
 In this experiment, we will create this:
@@ -28,106 +29,182 @@ The [Mesh class](https://github.com/BabylonJS/Babylon.js/blob/master/Babylon/Mes
 
 We are going to add a function that creates a square-based pyramid **CreatePyramid4**. The function have 5 parameters:
 
-* name: the name of our mesh (string)
-* baseSize: the width (our height) of the base square (float)
-* height: the height of the pyramid (float)
-* scene: the scene where the pyramid will be added
-* updatable: if the vertex buffer is dynamic (boolean)
+- name: the name of our mesh (string)
+- baseSize: the width (our height) of the base square (float)
+- height: the height of the pyramid (float)
+- scene: the scene where the pyramid will be added
+- updatable: if the vertex buffer is dynamic (boolean)
 
 ```javascript
 BABYLON.Mesh.CreatePyramid4 = function (name, baseSize, height, scene, updatable) {
   var pyramid = new BABYLON.Mesh(name, scene);
 ```
+
 Positions for the pyramid points:
+
 ```javascript
-  // Adding faces
-  var positions = [
-    // Front face
-    0,  height/2,  0,
-    baseSize/2, -height/2, baseSize/2,
-    -baseSize/2, -height/2, baseSize/2,
+// Adding faces
+var positions = [
+  // Front face
+  0,
+  height / 2,
+  0,
+  baseSize / 2,
+  -height / 2,
+  baseSize / 2,
+  -baseSize / 2,
+  -height / 2,
+  baseSize / 2,
 
-    // Right face
-    0, height/2, 0,
-    baseSize/2, -height/2, -baseSize/2,
-    baseSize/2, -height/2, baseSize/2,
+  // Right face
+  0,
+  height / 2,
+  0,
+  baseSize / 2,
+  -height / 2,
+  -baseSize / 2,
+  baseSize / 2,
+  -height / 2,
+  baseSize / 2,
 
-    // Back face
-    0, height/2,  0,
-    -baseSize/2, -height/2, -baseSize/2,
-    baseSize/2, -height/2, -baseSize/2,
+  // Back face
+  0,
+  height / 2,
+  0,
+  -baseSize / 2,
+  -height / 2,
+  -baseSize / 2,
+  baseSize / 2,
+  -height / 2,
+  -baseSize / 2,
 
-    // Left face
-    0, height/2,  0,
-    -baseSize/2, -height/2, baseSize/2,
-    -baseSize/2, -height/2, -baseSize/2,
+  // Left face
+  0,
+  height / 2,
+  0,
+  -baseSize / 2,
+  -height / 2,
+  baseSize / 2,
+  -baseSize / 2,
+  -height / 2,
+  -baseSize / 2,
 
-    // Bottom face
-    -baseSize/2, -height/2, baseSize/2,
-    baseSize/2, -height/2, baseSize/2,
-    baseSize/2, -height/2, -baseSize/2,
-    -baseSize/2, -height/2, -baseSize/2
-  ];
+  // Bottom face
+  -baseSize / 2,
+  -height / 2,
+  baseSize / 2,
+  baseSize / 2,
+  -height / 2,
+  baseSize / 2,
+  baseSize / 2,
+  -height / 2,
+  -baseSize / 2,
+  -baseSize / 2,
+  -height / 2,
+  -baseSize / 2,
+];
 ```
+
 Normals for the faces:
+
 ```javascript
-  var normals = [
-    height, baseSize/2, 0,
-    height, baseSize/2, 0,
-    height, baseSize/2, 0,
+var normals = [
+  height,
+  baseSize / 2,
+  0,
+  height,
+  baseSize / 2,
+  0,
+  height,
+  baseSize / 2,
+  0,
 
-    0, baseSize/2, height,
-    0, baseSize/2, height,
-    0, baseSize/2, height,
+  0,
+  baseSize / 2,
+  height,
+  0,
+  baseSize / 2,
+  height,
+  0,
+  baseSize / 2,
+  height,
 
-    -height, baseSize/2, 0,
-    -height, baseSize/2, 0,
-    -height, baseSize/2, 0,
+  -height,
+  baseSize / 2,
+  0,
+  -height,
+  baseSize / 2,
+  0,
+  -height,
+  baseSize / 2,
+  0,
 
-    0, baseSize/2, -height,
-    0, baseSize/2, -height,
-    0, baseSize/2, -height,
+  0,
+  baseSize / 2,
+  -height,
+  0,
+  baseSize / 2,
+  -height,
+  0,
+  baseSize / 2,
+  -height,
 
-    0, -1, 0,
-    0, -1, 0,
-    0, -1, 0,
-    0, -1, 0
-  ];
+  0,
+  -1,
+  0,
+  0,
+  -1,
+  0,
+  0,
+  -1,
+  0,
+  0,
+  -1,
+  0,
+];
 ```
+
 Indices (order of points when creating the faces) and uvs (coordonnées de textures):
+
 ```javascript
-  var indices = [];
-  var uvs = [];
-  var i = 0;
+var indices = [];
+var uvs = [];
+var i = 0;
 ```
+
 For the 4 faces pointing to the top of the pyramid
-```javascript
-  while (i < 12) {
-    indices.push(i+0);
-    uvs.push(1.0, 1.0);
-    indices.push(i+1);
-    uvs.push(0.0, 1.0);
-    indices.push(i+2);
-    uvs.push(0.0, 0.0);
-    i = i+3;
-  }
-```
-And for the base:
-```javascript
-  indices.push(12);
-  indices.push(13);
-  indices.push(14);
 
-  indices.push(12);
-  indices.push(14);
-  indices.push(15);
-
+```javascript
+while (i < 12) {
+  indices.push(i + 0);
   uvs.push(1.0, 1.0);
+  indices.push(i + 1);
   uvs.push(0.0, 1.0);
+  indices.push(i + 2);
   uvs.push(0.0, 0.0);
-  uvs.push(1.0, 0.0);
+  i = i + 3;
+}
 ```
+
+And for the base:
+
+```javascript
+indices.push(12);
+indices.push(13);
+indices.push(14);
+
+indices.push(12);
+indices.push(14);
+indices.push(15);
+
+uvs.push(1.0, 1.0);
+uvs.push(0.0, 1.0);
+uvs.push(0.0, 0.0);
+uvs.push(1.0, 0.0);
+```
+
 And we load everything in the mesh:
+
 ```javascript
   pyramid.setVerticesData(positions, BABYLON.VertexBuffer.PositionKind, updatable);
   pyramid.setVerticesData(normals, BABYLON.VertexBuffer.NormalKind, updatable);
@@ -138,9 +215,11 @@ And we load everything in the mesh:
 }
 
 ```
+
 ### Demo time !
 
 In the demo page is [here](https://dev.ehret.me/webgl-experiments/experiment06.html), I added 4 pyramids: a big one in the center, and 3 small along the axis:
+
 ```javascript
 function drawStuff(engine) {
   var scene = new BABYLON.Scene(engine);
@@ -149,23 +228,31 @@ function drawStuff(engine) {
   var light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(50, 100, 0), scene);
   var camera = new BABYLON.ArcRotateCamera("Camera", 0, 0.8, 100, new BABYLON.Vector3.Zero(), scene);
 ```
+
 The big pyramid:
+
 ```javascript
-  var pyramid = BABYLON.Mesh.CreatePyramid4("pyramid", 10, 20, scene);
+var pyramid = BABYLON.Mesh.CreatePyramid4("pyramid", 10, 20, scene);
 ```
+
 And the smaller ones:
+
 ```javascript
-  var formX = BABYLON.Mesh.CreatePyramid4("formX", 1, 2, scene);
-  var formY = BABYLON.Mesh.CreatePyramid4("formY", 2, 4, scene);
-  var formZ = BABYLON.Mesh.CreatePyramid4("formZ", 4, 8, scene);
+var formX = BABYLON.Mesh.CreatePyramid4("formX", 1, 2, scene);
+var formY = BABYLON.Mesh.CreatePyramid4("formY", 2, 4, scene);
+var formZ = BABYLON.Mesh.CreatePyramid4("formZ", 4, 8, scene);
 ```
+
 Moved along different axis:
+
 ```javascript
-  formX.position.x = 20;
-  formY.position.y = 20;
-  formZ.position.z = 20;
+formX.position.x = 20;
+formY.position.y = 20;
+formZ.position.z = 20;
 ```
+
 And let's rotate our big pyramid:
+
 ```javascript
   rotate(pyramid);
 

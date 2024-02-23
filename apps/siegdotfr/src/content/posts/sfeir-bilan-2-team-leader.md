@@ -1,11 +1,12 @@
 ---
-date: '2019-01-23T00:00:00.000Z'
-updatedAt: '2021-05-24T08:04:49.318Z'
+date: "2019-01-23T00:00:00.000Z"
+updatedAt: "2021-05-24T08:04:49.318Z"
 title: Le bilan de mon aventure SFEIR (2/3)
 description: Team leader
 tags:
   - sfeir
 ---
+
 Quand je suis arrivé chez SFEIR, j'ai eu un Team Leader, [Cyril](https://twitter.com/cbalit). Il m'a suivi pendant mes débuts et lors de mon entretien annuel il m'a demandé vers quoi je souhaite m'orienter dans le futur proche et je lui ai répondu «Team Leader». Finalement il y a eu des besoins et 3 mois après nous étions 3 nouveaux Team Leaders !
 
 ## Pourquoi une ou un Team Leader ?
@@ -16,7 +17,7 @@ Où sont les managers dans cette structure ? Ce sont les Team Leaders ! Nous som
 
 Dans une société telle que SFEIR dans laquelle les personnes sont placées chez les clients, les Team Leaders permettent de rapprocher les personnes entre elles et avec SFEIR.
 
-## Et ça fait quoi 
+## Et ça fait quoi
 
 ### Le suivi des gens
 

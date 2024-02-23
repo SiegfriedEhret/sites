@@ -1,10 +1,11 @@
 ---
-date: '2023-03-01T00:00:00.000Z'
-updatedAt: '2023-03-01T05:14:19.894Z'
+date: "2023-03-01T00:00:00.000Z"
+updatedAt: "2023-03-01T05:14:19.894Z"
 title: News from last month (2023/03 edition)
 description: A selection of links from last month.
 tags: []
 ---
+
 ## Programming
 
 ### Web (HTML, CSS, JS, Design...)
@@ -121,7 +122,7 @@ En français / In French:
 - [Elon Musk lays off more Twitter employees in sales, engineering - The Verge](https://www.theverge.com/2023/2/21/23609522/elon-musk-more-twitter-layoffs-sales-engineering-ads-google-revamp) <!-- TAGS: 2023-02,work -->
 - [NLRB prohibits employers from including clauses that silence workers | CNN Business](https://edition.cnn.com/2023/02/22/success/severance-agreements-rule-change-from-nlrb/index.html) <!-- TAGS: 2023-02,work -->
 - [4-day workweek trial: Shorter hours, happier employees | AP News](https://apnews.com/article/business-d114ef8be69e1665fd22c39515bdaecf) <!-- TAGS: 2023-02,work -->
-- [Meetings *are* the work. Wherein I take aim at the common tech… | by Elizabeth Ayer | Feb, 2023 | Medium](https://medium.com/@ElizAyer/meetings-are-the-work-9e429dde6aa3) <!-- TAGS: 2023-02,work -->
+- [Meetings _are_ the work. Wherein I take aim at the common tech… | by Elizabeth Ayer | Feb, 2023 | Medium](https://medium.com/@ElizAyer/meetings-are-the-work-9e429dde6aa3) <!-- TAGS: 2023-02,work -->
 - [The Tyranny of "The Plan"](https://www.infoq.com/presentations/tyranny-of-plan/) <!-- TAGS: 2023-02,work -->
 - [Stanford Professor: Mass Tech Layoffs Caused by 'Social Contagion'](https://www.businessinsider.com/stanford-professor-mass-layoffs-caused-by-social-contagion-companies-imitating-2023-2) <!-- TAGS: 2023-02,work -->
 

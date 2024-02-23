@@ -1,10 +1,11 @@
 ---
-date: '2017-02-13T00:00:00.000Z'
-updatedAt: '2021-05-23T20:43:24.991Z'
+date: "2017-02-13T00:00:00.000Z"
+updatedAt: "2021-05-23T20:43:24.991Z"
 title: Leaving facebook
-description: 'Seriously, let''s all do this.'
+description: "Seriously, let's all do this."
 tags: []
 ---
+
 ## Cool story bro, but why ?
 
 Mostly because I think these are more insteresting than facebook, which is full of shitty ads and videos instead of news about my friends.

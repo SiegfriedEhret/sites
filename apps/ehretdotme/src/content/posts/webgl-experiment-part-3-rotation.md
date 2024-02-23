@@ -1,11 +1,12 @@
 ---
-date: '2013-09-29T00:00:00.000Z'
-updatedAt: '2021-05-24T08:31:44.969Z'
+date: "2013-09-29T00:00:00.000Z"
+updatedAt: "2021-05-24T08:31:44.969Z"
 title: WebGL experiment part 3
 description: Let's rotate that thing !
 tags:
   - webgl
 ---
+
 ## Intro
 
 A very small update from [part 2](/en/webgl-experiment-part-2-adding-colour/).
@@ -18,21 +19,27 @@ We will only rotate our elements.
 The demo page is [here](https://dev.ehret.me/webgl-experiments/experiment03.html) and the code is [here](https://github.com/SiegfriedEhret/webgl-experiments).
 
 ## Function drawStuff
+
 We will create our elements as usual, and then apply rotation on them
 
 ### Triangle rotation
+
 Square rotation, along y axis:
+
 ```javascript
 var triangle = drawTriangle(scene);
-triangle.rotation = new BABYLON.Vector3(0, -Math.PI/4, 0);
+triangle.rotation = new BABYLON.Vector3(0, -Math.PI / 4, 0);
 ```
+
 Square rotation, along x axis:
+
 ```javascript
 var square = drawSquare(scene);
-square.rotation = new BABYLON.Vector3(Math.PI/4, 0, 0);
+square.rotation = new BABYLON.Vector3(Math.PI / 4, 0, 0);
 ```
 
 ## The end
+
 You will find more information about rotation and scaling on this [BabylonJS tutorial](https://github.com/BabylonJS/Babylon.js/wiki/03-Rotation-&-Scaling).
 
 Next lesson will be about creating 3d objects. OH YEAH.
