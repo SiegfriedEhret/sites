@@ -1,5 +1,5 @@
 ---
-title: 'Interview: Taichi Nakashima from Mercari'
+title: "Interview: Taichi Nakashima from Mercari"
 description: >-
   I was in Japan and took the time to meet Taichi Nakashima from Mercari. Let’s
   talk architecture with Kubernetes, Go, and microservices !
@@ -44,8 +44,8 @@ Yeah, this is also a motivation.
 
 There is Mercari. And we also have a subsidiary company named [Souzoh](https://www.souzoh.com/jp/) with multiple products:
 
-* [Kauru](https://mercarikauru.com/) focused on books, cd, dvd...
-* [Maisonz](https://www.mercarimaisonz.com/) for high brand clothes.
+- [Kauru](https://mercarikauru.com/) focused on books, cd, dvd...
+- [Maisonz](https://www.mercarimaisonz.com/) for high brand clothes.
 
 We have also started a new company named [Merpay](https://www.merpay.com/jp/) which is a payment service.
 
