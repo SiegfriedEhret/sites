@@ -31,10 +31,7 @@ let sortedPosts = posts.sort(
     sortedPosts.map(({ data: { description, title, slug, date } }) => (
       <div class="post">
         <a href={`/${slug}`}>{title}</a>
-        <>
-          <time datetime={date}>{formatDate(date)}</time>
-          <br />
-        </>
+        <time datetime={date}>{formatDate(date)}</time>
         <span>{description}</span>
       </div>
     ))

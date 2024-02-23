@@ -41,10 +41,7 @@ let sortedPosts = posts.sort(
           ) : (
             <a href={`/ied/${slug}`}>{title}</a>
           )}
-          <>
-            <time datetime={date}>{formatDate(date)}</time>
-            <br />
-          </>
+          <time datetime={date}>{formatDate(date)}</time>
           <span>{description}</span>
         </div>
       ),
