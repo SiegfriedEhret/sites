@@ -4,6 +4,9 @@ updatedAt: "2022-09-13T19:47:13.293Z"
 title: Le stack
 description: Quelques détails sur l'extravagance technologique utilisée pour mes sites.
 tags: []
+image: >-
+  /contentful//1hhfrXPLbw7UIdWoJUwZAM/e93e864db30b8101a2c36dee30b09385/l_estaque.jpg
+imageDescription: Georges Braque - Paysage à l'Estaque
 ---
 
 J'ai longtemps utilisé mon propre générateur de site statique pour mon site. D'abord réalisé en Node.js, je me suis ensuite tourné vers Crystal pour [la deuxième version](https://git.sr.ht/~siegfriedehret/beulogue). Ça fait maintenant plus d'un an que je suis passé à la troisième version, que j'ai gardée pour moi jusqu'à maintenant. Satisfait des derniers changements, voici donc venu le temps - des rires et des chants - du partage de ce qui est devenu la base de mon site en anglais ([ehret.me](https://ehret.me/)), avant d'être repris pour mon site en français ([sieg.fr/ied](https://sieg.fr/ied)).

@@ -4,6 +4,9 @@ updatedAt: "2023-05-21T16:03:24.320Z"
 title: beulogue v4
 description: An update on the stack used for my website.
 tags: []
+image: >-
+  /contentful//4ZGKt8LKA7v8RynaccxQ32/f525b12344e73044ae714a1d792a1b54/beulogue-logo.png
+imageDescription: beulogue logo
 ---
 
 The previous post like this happened [on my French website](https://sieg.fr/ied/le-stack), where I explained the move to [SvelteKit](https://kit.svelte.dev/) and other details.

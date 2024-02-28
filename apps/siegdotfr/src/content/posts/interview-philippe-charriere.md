@@ -9,6 +9,9 @@ description: >-
   2016. Il nous explique sa vision de la programmation fonctionnelle en
   JavaScript et ce qu’est Golo.
 tags: []
+image: >-
+  /contentful//445YyjfsvvLGisWlYvBREz/87c895f943e5dea6f9969b7ef1c0fdd1/Philippe-Charriere-1024x537.jpg
+imageDescription: Avec Philippe Charrière
 ---
 
 📢 Cet article a initialement été publié le 6 octobre 2016 sur le blog de [Sfeir](https://www.sfeir.com/fr/), qui a disparu depuis.

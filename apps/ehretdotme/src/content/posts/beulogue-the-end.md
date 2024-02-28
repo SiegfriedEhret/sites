@@ -6,6 +6,9 @@ description: Looking back at the multiple lives of beulogue.
 tags:
   - beulogue
   - blog
+image: >-
+  /contentful//4GXm8DOof1LZ6mmwXkyAvV/139faf292ec6e5205c290fd5a9c650f7/IMG_0932.png
+imageDescription: Sunset in Onagawa
 ---
 
 ## Once upon a beulogue...

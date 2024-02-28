@@ -9,6 +9,9 @@ description: >
   questions, notamment sur Flexbox !
 tags:
   - interview
+image: >-
+  /contentful//VAdy9BjVtZ6VBJQqpfZzB/b4da14a040cac6dfa316c1148df1f750/IMG_3362.JPG
+imageDescription: Avec Raphaêl Goetter et Cyril Balit
 ---
 
 📢 Cet article a initialement été publié le 15 juin 2016 sur le blog de [Sfeir](https://www.sfeir.com/fr/), qui a disparu depuis.

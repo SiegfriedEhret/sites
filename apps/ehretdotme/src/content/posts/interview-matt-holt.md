@@ -7,6 +7,9 @@ description: >-
   Let’s Encrypt and the life of a programmer who is still studying!
 tags:
   - interview
+image: >-
+  /contentful//5WBIsVDfOeL2Dhyeqb5Hy1/c5c146a9fd1b30af31c78813dd5fc752/IMG_4770.JPG
+imageDescription: With Matt Holt
 ---
 
 📢 This article was first published on 2nd of November 2016, on [Sfeir](https://www.sfeir.com/en/)'s blog, which has disappeared since.

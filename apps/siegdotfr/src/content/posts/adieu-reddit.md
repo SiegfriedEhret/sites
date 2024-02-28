@@ -4,6 +4,12 @@ updatedAt: "2023-06-11T19:13:44.818Z"
 title: Reddit
 description: La fin d'une dizaine d'années de défilement d'actualités et de mèmes.
 tags: []
+image: >-
+  /contentful//2BnqOkZ7SfnOBUZHqNdzpP/433e96a678031fd2d1458659893a222c/0_I_closed_my_reddit_account_today_after_it_was_anno_esrgan-v1-x2plus.png
+imageDescription: >-
+  Image générée par stable-diffusion-xl-beta-v2-2-2 avec la phrase « I closed my
+  reddit account today after it was announced that Apollo, my favourite client,
+  would be shutting down due to the API's insane new pricing. »
 ---
 
 Après avoir quitté Twitter l'année dernière et assisté à sa descente en flammes, entraînant la fin des applications tierces telles que [Tweetbot](https://en.wikipedia.org/wiki/Tweetbot) et [Twitterrific](https://en.wikipedia.org/wiki/Twitterrific), l'histoire se répète et c'est aujourd'hui au tour de Reddit de suivre le même chemin.

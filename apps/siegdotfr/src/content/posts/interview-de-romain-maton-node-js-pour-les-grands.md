@@ -11,6 +11,9 @@ description: >-
   intéresser ! Découvrez son approche des talks dans cette interview.
 tags:
   - interview
+image: >-
+  /contentful//1alxkuAfVWfDLSf3GjYEzn/57124c92690c12a8be4f53626479bd94/nodejs-romainmaton.jpg
+imageDescription: Romain Maton
 ---
 
 📢 Cet article a initialement été publié le 19 juin 2017 sur le blog de [Sfeir](https://www.sfeir.com/fr/), qui a disparu depuis.

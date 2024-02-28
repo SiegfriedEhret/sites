@@ -4,6 +4,9 @@ updatedAt: "2023-06-30T22:57:32.378Z"
 title: News from last month (2023/07 edition)
 description: A selection of links from last month.
 tags: []
+image: >-
+  /contentful//3ZH9Z54RJj7c8BgRf94Nu5/771ac38625db69a1c16ae4a0db4f7f14/3543543300_xl-1024-v0-9.png
+imageDescription: Generated using stable-diffusion-xl-1024-v0-9.
 ---
 
 ## Programming

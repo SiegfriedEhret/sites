@@ -6,6 +6,9 @@ description: >-
   I took advantage of a trip to Japan in 2016 to meet Eiji Kitamura, developer
   advocate at Google, working on the open web.
 tags: []
+image: >-
+  /contentful//ll4Wpe9vkudu6lnMnHVSB/eb52eb0962fc60f8d5f89da46cde3970/IMG_2398.jpg
+imageDescription: With Eiji Kitamura
 ---
 
 📢 This article was first published on 10th of June 2016, on [Sfeir](https://www.sfeir.com/en/)'s blog, which has disappeared since.

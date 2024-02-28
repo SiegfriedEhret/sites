@@ -6,6 +6,11 @@ description: >-
   Comment s'échapper (un peu) de la bulle de l'intelligence artificielle qui
   veut utiliser nos contenus.
 tags: []
+image: >-
+  /contentful//6BHy76XDxnRvOREsQscRfa/ca7a453fee14495445074e388ddf0716/53610_A_farewell_to_bots__in_the_style_of_the_ending_of__xl-1024-v1-0.png
+imageDescription: >-
+  Image générée avec SDXL 1.0, avec le texte « A farewell to bots, in the style
+  of the ending of a tv show. »
 ---
 
 Pour suivre la voie prise part [Tracy Durnell](https://tracydurnell.com/2023/07/11/pulling-my-site-from-google-over-ai-training/) ou [Vasilis van Gemert](https://vasilis.nl/nerd/how-to-disagree-with-googles-privacy-policy/), j'ai décidé de réduire les possibilités de certains robots à utiliser mon site à des fins que je ne souhaite pas imaginer, avec par exemple Google qui annonce pouvoir utiliser tout ce qui est posté pour amuser ses projets d'intelligence artificielle ([en savoir plus](https://gizmodo.com/google-says-itll-scrape-everything-you-post-online-for-1850601486)) ou OpenAI avec ChatGPT qui peut faire de même.
