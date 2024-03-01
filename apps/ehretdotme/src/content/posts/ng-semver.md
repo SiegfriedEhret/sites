@@ -55,27 +55,21 @@ That is basically it.
 
 The classic thing with npm is a [`package.json` file](https://docs.npmjs.com/getting-started/using-a-package.json).
 
-> Requirements<br>
-> <br>
-> As a bare minimum, a package.json must have:<br>
-> <br>
+> Requirements<br> > <br>
+> As a bare minimum, a package.json must have:<br> > <br>
 > "name"<br>
 > all lowercase<br>
 > one word, no spaces<br>
-> dashes and underscores allowed<br>
-> <br>
+> dashes and underscores allowed<br> > <br>
 > "version"<br>
 > in the form of x.x.x<br>
 > follows [semver spec](https://docs.npmjs.com/getting-started/semantic-versioning)<br>
 
 Let's check some other stuff from [npm package.json docs](https://docs.npmjs.com/files/package.json)
 
-> version<br>
-> <br>
-> The most important things in your package.json are the name and version fields. Those are actually required, and your package won't install without them. The name and version together form an identifier that is assumed to be completely unique. Changes to the package should come along with changes to the version.<br>
-> <br>
-> Version must be parseable by node-semver, which is bundled with npm as a dependency. (npm install semver to use it yourself.)<br>
-> <br>
+> version<br> > <br>
+> The most important things in your package.json are the name and version fields. Those are actually required, and your package won't install without them. The name and version together form an identifier that is assumed to be completely unique. Changes to the package should come along with changes to the version.<br> > <br>
+> Version must be parseable by node-semver, which is bundled with npm as a dependency. (npm install semver to use it yourself.)<br> > <br>
 > More on version numbers and ranges at semver.<br>
 
 So, if you put your libs on npm, it is recommended to follow semver.

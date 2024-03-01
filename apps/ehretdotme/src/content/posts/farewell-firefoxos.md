@@ -10,8 +10,7 @@ tags: []
 
 Recently, they announced:
 
-> We will make space for this [IoT] exploration by stopping our work to build and ship smartphones through carrier partners.<br>
-> &mdash; [source](https://blog.mozilla.org/blog/2015/12/09/firefox-os-pivot-to-connected-devices/)
+> We will make space for this [IoT] exploration by stopping our work to build and ship smartphones through carrier partners.<br> > &mdash; [source](https://blog.mozilla.org/blog/2015/12/09/firefox-os-pivot-to-connected-devices/)
 
 ## FirefoxOS devices
 

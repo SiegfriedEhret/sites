@@ -34,7 +34,6 @@ Another example: [Object.observe](https://esdiscuss.org/topic/an-update-on-objec
 
 In the end, by widely using unreleased features or specs you live in another world that can crumble at any time. And people are pushing a spec in a direction that may not be the optimal one.
 
-> Betting on unfinished specs is dangerous.<br>
-> &mdash; Siegfried Ehret
+> Betting on unfinished specs is dangerous.<br> > &mdash; Siegfried Ehret
 
 About `async` / `await`, I would like to propose the following syntax: `stophammertime` / `heyholetsgo`.

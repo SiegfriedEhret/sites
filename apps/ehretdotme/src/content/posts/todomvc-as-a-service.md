@@ -42,8 +42,7 @@ fetch(
 
 ### Web components
 
-> "A tiny little heart for the Web"<br>
-> &mdash; from [Carmen Popoviciu](https://carmenpopoviciu.github.io/ascii-heart/)
+> "A tiny little heart for the Web"<br> > &mdash; from [Carmen Popoviciu](https://carmenpopoviciu.github.io/ascii-heart/)
 
 Web components are a set of 4 specifications:
 
@@ -111,8 +110,7 @@ I added the [webcomponents.js polyfill](https://github.com/WebComponents/webcomp
 
 If you can make Mozilla add all Web Components standards, I won't be sad anymore.
 
-> Mozilla will not ship an implementation of HTML Imports.<br>
-> &mdash; https://hacks.mozilla.org/2014/12/mozilla-and-web-components/
+> Mozilla will not ship an implementation of HTML Imports.<br> > &mdash; https://hacks.mozilla.org/2014/12/mozilla-and-web-components/
 
 ## License
 

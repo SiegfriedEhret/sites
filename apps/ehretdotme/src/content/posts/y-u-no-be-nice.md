@@ -91,8 +91,7 @@ And:
 
 I love this tweet from [Addy Osmani](http://addyosmani.com/) and the answer. I want to stop being a douchebag and I hope you will too.
 
-> ![stick-grunt-1](/contentful/1epygrjtCPhujFOMKf01X1/9f1e89e4c7f354449294192337c6b588/stick-grunt-1.png)
-> <br>&mdash; [source](https://twitter.com/addyosmani/status/431575503615442945)
+> ![stick-grunt-1](/contentful/1epygrjtCPhujFOMKf01X1/9f1e89e4c7f354449294192337c6b588/stick-grunt-1.png) > <br>&mdash; [source](https://twitter.com/addyosmani/status/431575503615442945)
 
 Last quote:
 
