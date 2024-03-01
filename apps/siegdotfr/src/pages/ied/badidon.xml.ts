@@ -1,5 +1,8 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
+import sanitizeHtml from "sanitize-html";
+import MarkdownIt from "markdown-it";
+const parser = new MarkdownIt();
 
 export async function GET(context) {
   const items = (await getCollection("badidon"))
@@ -10,6 +13,14 @@ export async function GET(context) {
         "sieg.fr//",
         "sieg.fr/",
       );
+      let description = "";
+      try {
+        description = sanitizeHtml(parser.render(entry.body));
+      } catch (e) {
+        console.log("Failed to convert body", e);
+        description = entry.data.description;
+      }
+
       return {
         link,
         guid: link,
@@ -17,10 +28,12 @@ export async function GET(context) {
         description: entry.data.description,
         pubDate: entry.data.date,
         customData: `<enclosure url="${entry.data.audioUrl}" length="${entry.data.audioSize}" type="audio/mpeg" />
+<content:encoded><![CDATA[${description.trim()}]]></content:encoded>
 <itunes:episode>${episodeNumber}</itunes:episode>
 <itunes:episodeType>false</itunes:episodeType>
 <itunes:duration>${entry.data.audioDuration}</itunes:duration>
 <itunes:image href="${image}"></itunes:image>
+<itunes:summary><![CDATA[${entry.body}]]></itunes:summary>
 `,
       };
     })
