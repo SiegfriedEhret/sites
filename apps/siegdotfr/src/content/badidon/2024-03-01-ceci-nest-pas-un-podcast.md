@@ -13,7 +13,7 @@ audioDuration: 1140
 
 Coucou !
 
-Voici l'épisode 2, où l'on parle de choucroute et de notre récent voyage à Bruxelles (avec un x muet).
+Voici l'épisode 2, enregistré le mercredi 28 février 2024, où l'on parle de choucroute et de notre récent voyage à Bruxelles (avec un x muet).
 
 Et quelques liens pour aller avec l'épisode :
 
