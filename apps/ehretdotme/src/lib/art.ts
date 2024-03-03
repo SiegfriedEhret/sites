@@ -32,8 +32,8 @@ export interface ArtRequest {
   };
 }
 
-export function getTitle(item: Art) {
-  const title = `${item.artist}: ${item.name}`;
+export function getTitle(item) {
+  const title = `${item.artistName}: ${item.name}`;
   if (item.date) {
     return `${title} (${item.date})`;
   }
@@ -41,6 +41,6 @@ export function getTitle(item: Art) {
   return title;
 }
 
-export function filter(items: Art[], byArtist: string) {
-  return items.filter((el) => (byArtist ? el.artist.name === byArtist : true));
+export function filter(items: [], byArtist: string) {
+  return items.filter((el) => (byArtist ? el.artistName === byArtist : true));
 }

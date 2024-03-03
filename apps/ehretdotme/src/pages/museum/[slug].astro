@@ -1,41 +1,33 @@
 ---
-import { contentfulClient } from "../../lib/contentful";
-import type { Art } from "../../lib/art";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import { formatDateHuman } from "@packages/utils/date";
 
 export async function getStaticPaths() {
-  const entries = await contentfulClient.getEntries<Art>({
-    content_type: "art",
-    limit: 50,
-    select:
-      "fields.artist,fields.date,fields.description,fields.location,fields.media,fields.name,fields.shot,fields.slug",
-  });
+  const items = await getCollection("museum");
 
-  const items = [];
-  for (const item of entries.items) {
-    const { artist, date, description, location, media, name, shot, slug } =
-      item.fields;
-    items.push({
-      params: { slug },
-      props: {
-        artist: artist.fields,
-        date,
-        description,
-        location,
-        media: media.map((i) => i.fields.file.url),
-        name,
-        shot,
-        slug,
-      },
-    });
-  }
-
-  return items;
+  return items.map((item) => ({
+    params: { slug: item.slug },
+    props: {
+      ...item,
+      ...item.data,
+    },
+  }));
 }
 
-const { artist, date, description, location, media, name, shot, slug } =
-  Astro.props;
+const {
+  artistName,
+  artistBirth,
+  artistDeath,
+  date,
+  description,
+  location,
+  images,
+  name,
+  shot,
+  slug,
+} = Astro.props;
 ---
 
 <Layout title={name}>
@@ -45,14 +37,10 @@ const { artist, date, description, location, media, name, shot, slug } =
 
   <article>
     {
-      media.map((url) => (
+      images.map(({ image, imageDescription = "pouet" }) => (
         <figure>
-          <img src={url} alt={name} />
-          <figcaption>
-            <a href={url} title={name}>
-              {name}
-            </a>
-          </figcaption>
+          <Image src={image} alt={imageDescription} />
+          <figcaption>{name}</figcaption>
         </figure>
       ))
     }
@@ -71,7 +59,7 @@ const { artist, date, description, location, media, name, shot, slug } =
       }
       <dt>Artist</dt>
       <dd>
-        {artist.name} ({artist.dateOfBirth} - {artist.dateOfDeath ?? ""})
+        {artistName} ({artistBirth} - {artistDeath ?? ""})
       </dd>
       {
         location?.name && (

@@ -22,8 +22,6 @@
     "@types/alpinejs": "^3.13.6",
     "alpinejs": "^3.13.5",
     "astro": "^4.4.8",
-    "contentful": "^10.6.22",
-    "highlight.js": "^11.9.0",
     "markdown-it": "^14.0.0",
     "sanitize-html": "^2.12.1",
     "tinacms": "^1.5.28"

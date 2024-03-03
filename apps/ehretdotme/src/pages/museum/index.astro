@@ -1,27 +1,16 @@
 ---
-import { contentfulClient } from "../../lib/contentful";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import { Art, getTitle } from "../../lib/art";
+import { getTitle } from "../../lib/art";
 import slugify from "@sindresorhus/slugify";
 
-const entries = await contentfulClient.getEntries<Art>({
-  content_type: "art",
-  limit: 50,
-  order: "fields.date",
-  select: "fields.name,fields.slug,fields.artist,fields.date,fields.media",
-});
+const items = (await getCollection("museum")).map((el) => ({
+  ...el,
+  ...el.data,
+}));
 
-const posts = entries.items.map((item) => {
-  const { name, slug, artist, date } = item.fields;
-  return {
-    name,
-    slug,
-    date,
-    artist: artist.fields.name,
-    media: item.fields.media.map((i) => i.fields.file.url),
-  };
-});
-const artists = Array.from(new Set(posts.map((i) => i.artist))).sort();
+const artists = Array.from(new Set(items.map((i) => i.artistName))).sort();
 ---
 
 <Layout title="/ [ehret.me]">
@@ -44,18 +33,21 @@ const artists = Array.from(new Set(posts.map((i) => i.artist))).sort();
 
     <div class="grid">
       {
-        posts.map((item) => (
+        items.map((item) => (
           <a
             class="item"
             href={`/museum/${item.slug}`}
-            x-show={`['all', '${slugify(item.artist)}'].includes(selected)`}
+            x-show={`['all', '${slugify(item.artistName)}'].includes(selected)`}
           >
             <figure>
               <figcaption>{getTitle(item)}</figcaption>
-              <img
-                loading="lazy"
-                src={`${item.media[0]}?fm=jpg&q=50&w=300`}
+              <Image
+                src={item.images[0].image}
                 alt={getTitle(item)}
+                width={300}
+                quality="low"
+                decoding="async"
+                loading="lazy"
               />
             </figure>
           </a>
@@ -150,6 +142,7 @@ const artists = Array.from(new Set(posts.map((i) => i.artist))).sort();
   figure img,
   figure figcaption {
     width: 100%;
+    height: auto;
   }
 
   figcaption {
