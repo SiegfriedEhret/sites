@@ -24,6 +24,7 @@
     "astro": "^4.4.9",
     "markdown-it": "^14.0.0",
     "sanitize-html": "^2.12.1",
+    "sharp": "^0.33.2",
     "tinacms": "^1.5.29"
   },
   "devDependencies": {
