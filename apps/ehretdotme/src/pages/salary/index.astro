@@ -1,44 +1,16 @@
 ---
-import { contentfulClient } from "../../lib/contentful";
-import type { Job } from "@packages/utils/types/jobs";
+import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 
-const entries = await contentfulClient.getEntries<Job>({
-  content_type: "job",
-  limit: 50,
-  order: "-fields.startDate",
-  select:
-    "fields.title,fields.url,fields.company,fields.startDate,fields.endDate,fields.salary,fields.currency,fields.variable,fields.bonus,fields.bonusDescription,fields.comment",
-});
+const entries = await getCollection("jobs");
 
-const items = entries.items.map((item) => {
-  const {
-    title,
-    url,
-    company,
-    startDate,
-    endDate,
-    salary,
-    currency,
-    variable,
-    bonus,
-    bonusDescription,
-    comment,
-  } = item.fields;
-  return {
-    title,
-    url,
-    company,
-    startDate,
-    endDate,
-    salary,
-    currency,
-    variable,
-    bonus,
-    bonusDescription,
-    comment,
-  };
-});
+const items = entries
+  .map((item) => {
+    return {
+      ...item.data,
+    };
+  })
+  .sort((a, b) => b.startDate.localeCompare(a.startDate));
 
 function f(amount: number, currency: string) {
   return new Intl.NumberFormat("en", { style: "currency", currency }).format(
