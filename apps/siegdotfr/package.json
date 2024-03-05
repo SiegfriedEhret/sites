@@ -18,14 +18,14 @@
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
     "@sindresorhus/slugify": "^2.2.1",
-    "@tinacms/cli": "^1.5.40",
+    "@tinacms/cli": "^1.5.41",
     "@types/alpinejs": "^3.13.6",
-    "alpinejs": "^3.13.5",
-    "astro": "^4.4.9",
+    "alpinejs": "^3.13.6",
+    "astro": "^4.4.11",
     "markdown-it": "^14.0.0",
     "sanitize-html": "^2.12.1",
     "sharp": "^0.33.2",
-    "tinacms": "^1.5.29"
+    "tinacms": "^1.5.30"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

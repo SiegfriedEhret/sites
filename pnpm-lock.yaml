@@ -19,7 +19,7 @@ importers:
     dependencies:
       '@astrojs/alpinejs':
         specifier: ^0.3.2
-        version: 0.3.2(@types/alpinejs@3.13.6)(alpinejs@3.13.5)
+        version: 0.3.2(@types/alpinejs@3.13.6)(alpinejs@3.13.6)
       '@astrojs/rss':
         specifier: ^4.0.5
         version: 4.0.5
@@ -36,17 +36,17 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1
       '@tinacms/cli':
-        specifier: ^1.5.40
-        version: 1.5.40(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^1.5.41
+        version: 1.5.41(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
       '@types/alpinejs':
         specifier: ^3.13.6
         version: 3.13.6
       alpinejs:
-        specifier: ^3.13.5
-        version: 3.13.5
+        specifier: ^3.13.6
+        version: 3.13.6
       astro:
-        specifier: ^4.4.9
-        version: 4.4.9
+        specifier: ^4.4.11
+        version: 4.4.11
       highlight.js:
         specifier: ^11.9.0
         version: 11.9.0
@@ -54,8 +54,8 @@ importers:
         specifier: ^0.33.2
         version: 0.33.2
       tinacms:
-        specifier: ^1.5.29
-        version: 1.5.29(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^1.5.30
+        version: 1.5.30(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       prettier:
         specifier: ^3.2.5
@@ -76,8 +76,8 @@ importers:
         specifier: workspace:^
         version: link:../../packages/utils
       astro:
-        specifier: ^4.4.9
-        version: 4.4.9
+        specifier: ^4.4.11
+        version: 4.4.11
     devDependencies:
       prettier:
         specifier: ^3.2.5
@@ -90,7 +90,7 @@ importers:
     dependencies:
       '@astrojs/alpinejs':
         specifier: ^0.3.2
-        version: 0.3.2(@types/alpinejs@3.13.6)(alpinejs@3.13.5)
+        version: 0.3.2(@types/alpinejs@3.13.6)(alpinejs@3.13.6)
       '@astrojs/rss':
         specifier: ^4.0.5
         version: 4.0.5
@@ -107,17 +107,17 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1
       '@tinacms/cli':
-        specifier: ^1.5.40
-        version: 1.5.40(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^1.5.41
+        version: 1.5.41(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
       '@types/alpinejs':
         specifier: ^3.13.6
         version: 3.13.6
       alpinejs:
-        specifier: ^3.13.5
-        version: 3.13.5
+        specifier: ^3.13.6
+        version: 3.13.6
       astro:
-        specifier: ^4.4.9
-        version: 4.4.9
+        specifier: ^4.4.11
+        version: 4.4.11
       markdown-it:
         specifier: ^14.0.0
         version: 14.0.0
@@ -128,8 +128,8 @@ importers:
         specifier: ^0.33.2
         version: 0.33.2
       tinacms:
-        specifier: ^1.5.29
-        version: 1.5.29(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^1.5.30
+        version: 1.5.30(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       prettier:
         specifier: ^3.2.5
@@ -155,7 +155,7 @@ importers:
     dependencies:
       '@markdoc/markdoc':
         specifier: ^0.1.13
-        version: 0.1.13(@types/markdown-it@12.2.3)(@types/react@18.2.61)
+        version: 0.1.13(@types/markdown-it@12.2.3)(@types/react@18.2.63)
       highlight.js:
         specifier: ^11.9.0
         version: 11.9.0
@@ -167,8 +167,8 @@ importers:
         specifier: ^12.2.3
         version: 12.2.3
       '@types/react':
-        specifier: ^18.2.61
-        version: 18.2.61
+        specifier: ^18.2.63
+        version: 18.2.63
       prettier:
         specifier: ^2.8.8
         version: 2.8.8
@@ -217,22 +217,22 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/alpinejs@0.3.2(@types/alpinejs@3.13.6)(alpinejs@3.13.5):
+  /@astrojs/alpinejs@0.3.2(@types/alpinejs@3.13.6)(alpinejs@3.13.6):
     resolution: {integrity: sha512-RzGFR1ZgoEtfMv2FypHuTQhCZ7QXeJRE49SyHxUZJf/tksO/HRwPikft8poTPamVbT4EqHPZtRWFFTAgp/u1Jw==}
     peerDependencies:
       '@types/alpinejs': ^3.0.0
       alpinejs: ^3.0.0
     dependencies:
       '@types/alpinejs': 3.13.6
-      alpinejs: 3.13.5
+      alpinejs: 3.13.6
     dev: false
 
   /@astrojs/compiler@1.8.2:
     resolution: {integrity: sha512-o/ObKgtMzl8SlpIdzaxFnt7SATKPxu4oIP/1NL+HDJRzxfJcAkOTAb/ZKMRyULbz4q+1t2/DAebs2Z1QairkZw==}
     dev: true
 
-  /@astrojs/compiler@2.6.0:
-    resolution: {integrity: sha512-c74k8iGHL3DzkosSJ0tGcHIEBEiIfBhr7eadSaPyvWlVKaieDVzVs8OW1tnRSQyBsfMc8DZQ4RcN2KAcESD8UQ==}
+  /@astrojs/compiler@2.7.0:
+    resolution: {integrity: sha512-XpC8MAaWjD1ff6/IfkRq/5k1EFj6zhCNqXRd5J43SVJEBj/Bsmizkm8N0xOYscGcDFQkRgEw6/eKnI5x/1l6aA==}
     dev: false
 
   /@astrojs/internal-helpers@0.2.1:
@@ -292,7 +292,7 @@ packages:
   /@astrojs/ts-plugin@1.5.3:
     resolution: {integrity: sha512-exMHUWAa+JxJ1GaOw6TrC/znZMSwuFMaZrtGxjqfdsMnBAVR4WzJbs9560JNAJCxG7HMqpIfVcjqHdQe2oJ9LA==}
     dependencies:
-      '@astrojs/compiler': 2.6.0
+      '@astrojs/compiler': 2.7.0
       '@jridgewell/sourcemap-codec': 1.4.15
       '@volar/language-core': 2.0.4
       '@volar/typescript': 2.0.4
@@ -870,7 +870,7 @@ packages:
     resolution: {integrity: sha512-rtjk5ifyMzOna1c7PBu7J1VCt0PvA5wy3o8eMVnxMKb7z8KA7JFecvD04dSn14vj/bBaAbqRsGed5OjtofEnLA==}
     dependencies:
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.24.1
+      '@codemirror/view': 6.25.0
       '@lezer/common': 1.2.1
       '@lezer/highlight': 1.2.0
       '@lezer/lr': 1.4.0
@@ -881,8 +881,8 @@ packages:
     resolution: {integrity: sha512-QkEyUiLhsJoZkbumGZlswmAhA7CBU02Wrz7zvH4SrcifbsqwlXShVXg65f3v/ts57W3dqyamEriMhij1Z3Zz4A==}
     dev: false
 
-  /@codemirror/view@6.24.1:
-    resolution: {integrity: sha512-sBfP4rniPBRQzNakwuQEqjEuiJDWJyF2kqLLqij4WXRoVwPPJfjx966Eq3F7+OPQxDtMt/Q9MWLoZLWjeveBlg==}
+  /@codemirror/view@6.25.0:
+    resolution: {integrity: sha512-XnMGOm6qXB8znzCko0N7k97qZayVdvqpA0JebxA5fHtgBjC/XlCPhH9TK92TahsoCKMPQlaTCUep06Dwj/+GXQ==}
     dependencies:
       '@codemirror/state': 6.4.1
       style-mod: 4.1.2
@@ -2177,7 +2177,7 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /@markdoc/markdoc@0.1.13(@types/markdown-it@12.2.3)(@types/react@18.2.61):
+  /@markdoc/markdoc@0.1.13(@types/markdown-it@12.2.3)(@types/react@18.2.63):
     resolution: {integrity: sha512-zUdUpr2U3tf0uBQKr1aAiNDvwtZChAjCw3WPVv4PMKcPjYYlVHE0lizIS3NjChruRPJ2FvVQAI4ceyNpJWobiw==}
     engines: {node: '>=14.7.0'}
     peerDependencies:
@@ -2185,7 +2185,7 @@ packages:
       '@types/react': '*'
     dependencies:
       '@types/markdown-it': 12.2.3
-      '@types/react': 18.2.61
+      '@types/react': 18.2.63
     dev: false
 
   /@medv/finder@3.2.0:
@@ -3850,8 +3850,8 @@ packages:
     resolution: {integrity: sha512-Y5B4EYyv1j9V8LzeAoOVeTg0LI7Fo5InYKgAjkY1Pu9GjtUwX/EKxNcU7ng3sKr99WEf+bPTcktAeybyMOYo+g==}
     dev: false
 
-  /@tinacms/app@1.2.36(@babel/core@7.24.0)(yup@0.32.11):
-    resolution: {integrity: sha512-0nR9qzyOAbcsmfwDCR7bk5NHcCyAGf2s7e3snxqvQQlqa1FrNhpRH4du6Sdn9xz19OYf+Vlvd4bB9Pr1B19Meg==}
+  /@tinacms/app@1.2.37(@babel/core@7.24.0)(yup@0.32.11):
+    resolution: {integrity: sha512-szutC0FrHpM8Qr2jZFDo7FCzNL8jq691pcHuMTSYz8/nl+1P607E00bjeOd14eHwWSXXv4/c5A3AKKjIgYuDMQ==}
     dependencies:
       '@codemirror/language': 6.0.0
       '@graphiql/toolkit': 0.8.4(graphql@15.8.0)
@@ -3869,7 +3869,7 @@ packages:
       react-dom: 17.0.2(react@17.0.2)
       react-router-dom: 6.3.0(react-dom@17.0.2)(react@17.0.2)
       tailwindcss: 3.4.1
-      tinacms: 1.5.29(@babel/core@7.24.0)(react-dom@17.0.2)(react@17.0.2)
+      tinacms: 1.5.30(@babel/core@7.24.0)(react-dom@17.0.2)(react@17.0.2)
       typescript: 4.9.5
       zod: 3.22.4
     transitivePeerDependencies:
@@ -3896,8 +3896,8 @@ packages:
       - yup
     dev: false
 
-  /@tinacms/cli@1.5.40(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-lz3SC2nzurI/Su1/ziE/VXvYAnEiDzaJTkgEyMYXtOfBv7fPjEIc01ub5owm2VamTa6hx1wQpGG/HTgPO4npmQ==}
+  /@tinacms/cli@1.5.41(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-xB8G4vnfwHGSI+9uX1VuBz5hIwCMv/AoIYJKzVd9bEbxoRWJmosY+JjU25ZIYpb4PYylCN91MzWrR8c7byJ12Q==}
     hasBin: true
     dependencies:
       '@graphql-codegen/core': 2.6.8(graphql@15.8.0)
@@ -3914,7 +3914,7 @@ packages:
       '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.4.1)
       '@tailwindcss/line-clamp': 0.3.1(tailwindcss@3.4.1)
       '@tailwindcss/typography': 0.5.10(tailwindcss@3.4.1)
-      '@tinacms/app': 1.2.36(@babel/core@7.24.0)(yup@0.32.11)
+      '@tinacms/app': 1.2.37(@babel/core@7.24.0)(yup@0.32.11)
       '@tinacms/datalayer': 1.2.33(react@18.2.0)
       '@tinacms/graphql': 1.4.33(react@18.2.0)
       '@tinacms/metrics': 1.0.2(fs-extra@9.1.0)
@@ -3959,7 +3959,7 @@ packages:
       readable-stream: 4.5.2
       rollup-plugin-visualizer: 5.12.0
       tailwindcss: 3.4.1
-      tinacms: 1.5.29(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+      tinacms: 1.5.30(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
       typanion: 3.13.0
       typescript: 4.3.5
       url-pattern: 1.0.3
@@ -4352,7 +4352,7 @@ packages:
   /@types/hoist-non-react-statics@3.3.5:
     resolution: {integrity: sha512-SbcrWzkKBw2cdwRTwQAswfpB9g9LJWfjtUeW/jvNwbhC8cpmmNYVePa+ncbUe0rGTQ7G3Ff6mYUN2VMfLVr+Sg==}
     dependencies:
-      '@types/react': 18.2.61
+      '@types/react': 18.2.63
       hoist-non-react-statics: 3.3.2
     dev: false
 
@@ -4413,13 +4413,13 @@ packages:
     resolution: {integrity: sha512-NF8m5AjWCkert+fosDsN3hAlHzpjSiXlVy9EgQEmLoBhaNXbmyeGs/aj5dQzKuF+/q+S7JQagorGDW8pJ28Hmg==}
     dependencies:
       '@types/hoist-non-react-statics': 3.3.5
-      '@types/react': 18.2.61
+      '@types/react': 18.2.63
       hoist-non-react-statics: 3.3.2
       redux: 4.2.1
     dev: false
 
-  /@types/react@18.2.61:
-    resolution: {integrity: sha512-NURTN0qNnJa7O/k4XUkEW2yfygA+NxS0V5h1+kp9jPwhzZy95q3ADoGMP0+JypMhrZBTTgjKAUlTctde1zzeQA==}
+  /@types/react@18.2.63:
+    resolution: {integrity: sha512-ppaqODhs15PYL2nGUOaOu2RSCCB4Difu4UFrP4I3NHLloXC/ESQzQMi9nvjfT1+rudd0d2L3fQPJxRSey+rGlQ==}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
@@ -6883,7 +6883,7 @@ packages:
       slate-react: '>=0.94.0'
     dependencies:
       '@udecode/plate-common': 21.5.0(@babel/core@7.24.0)(react-dom@17.0.2)(react@17.0.2)(scheduler@0.19.0)(slate-history@0.93.0)(slate-react@0.97.2)(slate@0.94.1)
-      html-entities: 2.5.0
+      html-entities: 2.5.2
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
       slate: 0.94.1
@@ -6918,7 +6918,7 @@ packages:
       slate-react: '>=0.94.0'
     dependencies:
       '@udecode/plate-common': 21.5.0(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.19.0)(slate-history@0.93.0)(slate-react@0.97.2)(slate@0.94.1)
-      html-entities: 2.5.0
+      html-entities: 2.5.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       slate: 0.94.1
@@ -7662,8 +7662,8 @@ packages:
       uri-js: 4.4.1
     dev: false
 
-  /alpinejs@3.13.5:
-    resolution: {integrity: sha512-1d2XeNGN+Zn7j4mUAKXtAgdc4/rLeadyTMWeJGXF5DzwawPBxwTiBhFFm6w/Ei8eJxUZeyNWWSD9zknfdz1kEw==}
+  /alpinejs@3.13.6:
+    resolution: {integrity: sha512-/F7pVR+11r1A0KVw+eY1DcjTFlRQn9arD3p5/2Q4vq0N2WDC/dHpg+Pz7ZMiVQlHE7ZmZmcqTRm1wYTdDLMiEg==}
     dependencies:
       '@vue/reactivity': 3.1.5
     dev: false
@@ -7778,12 +7778,12 @@ packages:
     resolution: {integrity: sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==}
     dev: false
 
-  /astro@4.4.9:
-    resolution: {integrity: sha512-FTWhzKjao7rHHiF/CqPqPS18AFad+fmUcYUFhWWIsYETHcc9g0IIIiv6cHXUE7g6mEZf7ycAa+WdboeEHUhraQ==}
+  /astro@4.4.11:
+    resolution: {integrity: sha512-mJ1k67xzAJO1vTTpATe76uSWhOgiEj3Id7narE6X2rMMOBjR8vJM+9Cmv/Wbpot6uMwFo780skUowlMptK96fQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
-      '@astrojs/compiler': 2.6.0
+      '@astrojs/compiler': 2.7.0
       '@astrojs/internal-helpers': 0.2.1
       '@astrojs/markdown-remark': 4.2.1
       '@astrojs/telemetry': 3.0.4
@@ -7842,8 +7842,8 @@ packages:
       tsconfck: 3.0.2
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.1.4
-      vitefu: 0.2.5(vite@5.1.4)
+      vite: 5.1.5
+      vitefu: 0.2.5(vite@5.1.5)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
       zod: 3.22.4
@@ -8098,8 +8098,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001593
-      electron-to-chromium: 1.4.690
+      caniuse-lite: 1.0.30001594
+      electron-to-chromium: 1.4.693
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
     dev: false
@@ -8184,8 +8184,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: false
 
-  /caniuse-lite@1.0.30001593:
-    resolution: {integrity: sha512-UWM1zlo3cZfkpBysd7AS+z+v007q9G1+fLTUU42rQnY6t2axoogPW/xol6T7juU5EUoOhML4WgBIdG+9yYqAjQ==}
+  /caniuse-lite@1.0.30001594:
+    resolution: {integrity: sha512-VblSX6nYqyJVs8DKFMldE2IVCJjZ225LW00ydtUWwh5hk9IfkTOffO6r8gJNsH0qqqeAF8KrbMYA2VEwTlGW5g==}
     dev: false
 
   /capital-case@1.0.4:
@@ -8852,8 +8852,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: false
 
-  /electron-to-chromium@1.4.690:
-    resolution: {integrity: sha512-+2OAGjUx68xElQhydpcbqH50hE8Vs2K6TkAeLhICYfndb67CVH0UsZaijmRUE3rHlIxU1u0jxwhgVe6fK3YANA==}
+  /electron-to-chromium@1.4.693:
+    resolution: {integrity: sha512-/if4Ueg0GUQlhCrW2ZlXwDAm40ipuKo+OgeHInlL8sbjt+hzISxZK949fZeJaVsheamrzANXvw1zQTvbxTvSHw==}
     dev: false
 
   /emoji-regex@10.3.0:
@@ -9720,8 +9720,8 @@ packages:
       react-is: 16.13.1
     dev: false
 
-  /html-entities@2.5.0:
-    resolution: {integrity: sha512-g3xzbdhD5HamT50Sc7/KVvFvU3SUMpKmJkQWYVRhcXHzwUzRXZt5HzTNwn/5BNMm4bECBZc5YnuPh0J8PIBbAQ==}
+  /html-entities@2.5.2:
+    resolution: {integrity: sha512-K//PSRMQk4FZ78Kyau+mZurHn3FH0Vwr+H36eE0rPbeYkRRi9YxceYPhuN60UwWorxyKHhqoAJl2OFKa4BVtaA==}
     dev: false
 
   /html-escaper@3.0.3:
@@ -14045,8 +14045,8 @@ packages:
       any-promise: 1.3.0
     dev: false
 
-  /tinacms@1.5.29(@babel/core@7.24.0)(react-dom@17.0.2)(react@17.0.2):
-    resolution: {integrity: sha512-JbAkh19cr4aNuzXRwoXYCLRLAVVZsovv4Lu8QmejS3HsOZrdBEYAsV86YpRz1JeepBytFkwFxAKe/qK+p32IHA==}
+  /tinacms@1.5.30(@babel/core@7.24.0)(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-vho540vCEuMSo/eyxBlpVqJZy/LASliG2t2zGHAHKVpm4+GWardQV3xDONEN+btRFbe9UF/3cg6hCvYVGAwGug==}
     peerDependencies:
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
@@ -14124,8 +14124,8 @@ packages:
       - supports-color
     dev: false
 
-  /tinacms@1.5.29(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-JbAkh19cr4aNuzXRwoXYCLRLAVVZsovv4Lu8QmejS3HsOZrdBEYAsV86YpRz1JeepBytFkwFxAKe/qK+p32IHA==}
+  /tinacms@1.5.30(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-vho540vCEuMSo/eyxBlpVqJZy/LASliG2t2zGHAHKVpm4+GWardQV3xDONEN+btRFbe9UF/3cg6hCvYVGAwGug==}
     peerDependencies:
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
@@ -14958,8 +14958,8 @@ packages:
       fsevents: 2.3.3
     dev: false
 
-  /vite@5.1.4:
-    resolution: {integrity: sha512-n+MPqzq+d9nMVTKyewqw6kSt+R3CkvF9QAKY8obiQn8g1fwTscKxyfaYnC632HtBXAQGc1Yjomphwn1dtwGAHg==}
+  /vite@5.1.5:
+    resolution: {integrity: sha512-BdN1xh0Of/oQafhU+FvopafUp6WaYenLU/NFoL5WyJL++GxkNfieKzBhM24H3HVsPQrlAqB7iJYTHabzaRed5Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -14993,7 +14993,7 @@ packages:
       fsevents: 2.3.3
     dev: false
 
-  /vitefu@0.2.5(vite@5.1.4):
+  /vitefu@0.2.5(vite@5.1.5):
     resolution: {integrity: sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0
@@ -15001,7 +15001,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 5.1.4
+      vite: 5.1.5
     dev: false
 
   /vscode-languageserver-textdocument@1.0.11:
