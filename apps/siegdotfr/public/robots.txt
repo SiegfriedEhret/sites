@@ -1,24 +1,77 @@
-User-agent: GPTBot
+User-agent: *
+Disallow:
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: AdsBot-Google
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: AwarioRssBot
+Disallow: /
+
+User-agent: AwarioSmartBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
 Disallow: /
 
 User-agent: ChatGPT-User
 Disallow: /
 
-User-agent: Googlebot
+User-agent: ClaudeBot
 Disallow: /
-Allow: /ied/badidon.xml
 
-User-agent: CCBot
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Googlebot
 Disallow: /
 
 User-agent: Google-Extended
 Disallow: /
 
-User-agent: Omgilibot
+User-agent: GPTBot
 Disallow: /
 
-User-Agent: FacebookBot
+User-agent: ImagesiftBot
 Disallow: /
 
-User-agent: LinkedInBot
-Allow: /
+User-agent: magpie-crawler
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+User-agent: peer39_crawler
+Disallow: /
+
+User-agent: peer39_crawler/1.0
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
