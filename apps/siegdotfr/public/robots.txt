@@ -45,6 +45,7 @@ Disallow: /
 
 User-agent: Googlebot
 Disallow: /
+Allow: /ied/badidon.xml
 
 User-agent: Google-Extended
 Disallow: /
