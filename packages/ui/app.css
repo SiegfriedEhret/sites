@@ -136,23 +136,26 @@ img {
 }
 
 .link {
-  border: 2px solid color-mix(in srgb, var(--text) 50%, white);
+  border: 2px solid transparent;
   color: var(--text);
   font-size: 1rem;
-  padding: calc(var(--base) / 4) calc(var(--base));
+  text-decoration: underline;
+  padding: var(--base) var(--babase);
   transform: rotateZ(0);
-  will-change: transform;
+  will-change: transform, border-color, color, background-color;
   transition:
     transform 0.3s,
+    border-color 0.3s,
     color 0.3s,
     background-color 0.3s;
 }
 
 .link:is(:active, :focus, :hover) {
   transform: rotate3d(1, 1, 1, 10deg);
-  background: var(--lake-red);
-  border: 2px solid var(--wevet);
+  background-color: var(--lake-red);
+  border-color: var(--wevet);
   color: var(--wevet);
+  text-decoration: none;
 }
 
 article pre {
