@@ -24,9 +24,10 @@ const { Content, headings } = await post.render();
 
 <Layout title={title} description={description} metaImage={image}>
   <article>
-    {image && <Figure url={image} title={imageDescription || title} />}
-
     <h1>{title}</h1>
+
+    {image && <Figure url={image} title={imageDescription || title} maxHeight="42rem" />}
+
     {headings && <Toc headings={headings} />}
 
     <Content />
@@ -59,8 +60,11 @@ const { Content, headings } = await post.render();
   }
   h1 {
     color: var(--wevet);
-    margin: 0 0 var(--babase);
+    margin: 0;
     padding: var(--base) var(--babase);
     background: var(--prime);
+    text-wrap: balance;
+    text-align: center;
+    font-family: "ShipsWhitle", "Berkeley Mono", monospace;
   }
 </style>

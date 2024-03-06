@@ -3,19 +3,21 @@ import logo from "./sieg.jpg";
 ---
 
 <header>
-  <div class="logo">
-    <a href="/"><img src={logo.src} alt="Kabuki Siegfried" /></a>
-  </div>
-
   <nav>
-    <slot name="title" />
-    <slot name="links" />
+    <div class="links">
+      <slot name="links1" />
+    </div>
+    <div class="logo">
+      <a href="/"><img src={logo.src} alt="Kabuki Siegfried" /></a>
+    </div>
+    <div class="links">
+      <slot name="links2" />
+    </div>
   </nav>
 </header>
 
 <style>
   header {
-    display: flex;
     justify-content: space-between;
     gap: var(--babase);
     padding: var(--babase);
@@ -23,13 +25,13 @@ import logo from "./sieg.jpg";
 
   .logo {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
   .logo img {
     border: 4px solid var(--lake-red);
     border-radius: 50%;
-    max-width: 80px;
-    max-height: 80px;
+    max-width: calc(3*var(--babase));
+    max-height: calc(3*var(--babase));
     aspect-ratio: 1 / 1;
     will-change: transform;
     transition: transform 0.3s;
@@ -42,9 +44,8 @@ import logo from "./sieg.jpg";
   }
 
   nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: 1fr calc(4*var(--babase)) 1fr;
     align-items: center;
     gap: var(--base);
 
@@ -53,20 +54,18 @@ import logo from "./sieg.jpg";
     }
   }
 
-  @media screen and (min-width: 47rem) {
-    header {
-      flex-direction: column;
-      position: sticky;
-      top: 0;
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--base);
+
+    &:first-child {
+      justify-content: flex-end;
     }
-    nav {
-      flex-direction: column;
-      align-items: flex-end;
-    }
-  }
-  @media screen and (min-width: 68rem) {
-    header {
-      padding-top: var(--babase);
+    &:last-child {
+      justify-content: flex-start;
     }
   }
+
 </style>
