@@ -56,7 +56,7 @@ tags:
 
 - [The accidental genius of Yo: On minimal viable communications. More isn’t always better.](https://capiche.com/e/yo-atomized-communication)
 - [Making Mass Effect not require administrator rights, or maybe how to not write a boolean check](https://www.me3tweaks.com/blog/modding/making-me1-not-require-admin-rights-part-2/)
-- [Moving OkCupid from REST to GraphQL](hhttps://tech.okcupid.com/moving-okcupid-from-rest-to-graphql-f7cf2c8a1ebd)
+- [Moving OkCupid from REST to GraphQL](https://tech.okcupid.com/moving-okcupid-from-rest-to-graphql-f7cf2c8a1ebd)
 - [Evidence-based software engineering: book released](https://shape-of-code.coding-guidelines.com/2020/11/08/evidence-based-software-engineering-book-released/)
 - [How do Spotify Codes work?](https://boonepeter.github.io/posts/2020-11-10-spotify-codes/)
 - [Things I Wished More Developers Knew About Databases](https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78)
