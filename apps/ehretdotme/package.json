@@ -14,17 +14,17 @@
   "dependencies": {
     "@astrojs/alpinejs": "^0.3.2",
     "@astrojs/rss": "^4.0.5",
-    "@astrojs/ts-plugin": "^1.5.3",
+    "@astrojs/ts-plugin": "^1.6.0",
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
     "@sindresorhus/slugify": "^2.2.1",
-    "@tinacms/cli": "^1.5.41",
-    "@types/alpinejs": "^3.13.6",
-    "alpinejs": "^3.13.6",
-    "astro": "^4.4.11",
+    "@tinacms/cli": "^1.5.42",
+    "@types/alpinejs": "^3.13.7",
+    "alpinejs": "^3.13.7",
+    "astro": "^4.5.2",
     "highlight.js": "^11.9.0",
     "sharp": "^0.33.2",
-    "tinacms": "^1.5.30"
+    "tinacms": "^1.6.0"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
