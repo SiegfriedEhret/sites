@@ -33,7 +33,6 @@ export async function GET(context) {
 <itunes:episodeType>false</itunes:episodeType>
 <itunes:duration>${entry.data.audioDuration}</itunes:duration>
 <itunes:image href="${image}"></itunes:image>
-<itunes:summary><![CDATA[${entry.body}]]></itunes:summary>
 `,
       };
     })
