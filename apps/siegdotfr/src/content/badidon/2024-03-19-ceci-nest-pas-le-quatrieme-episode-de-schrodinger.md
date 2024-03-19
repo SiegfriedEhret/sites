@@ -18,6 +18,8 @@ Voici l'épisode 4, enregistré le dimanche 17 mars 2024.
 
 Cette fois, Ayako a préparé 3 questions pour tester nos connaissances sur nous :).
 
+Désolé pour le son, le micro n’était pas bien réglé et nous n’avons pas eu le courage de tout enregistré une deuxième fois.
+
 Voici quelques liens pour accompagner l'épisode :
 
 - [Kanten (Agar-Agar)](https://fr.wikipedia.org/wiki/Agar-agar)
