@@ -44,3 +44,7 @@ yarn-error.log*
 
 # turbo
 .turbo
+
+# nflm
+nflm_dev.md
+nflm_var.md
