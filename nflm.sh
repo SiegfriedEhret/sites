@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-ym="2024-03"
+year="2024"
+month="03"
+ym="$year$month"
+
 nflm_dev="nflm_dev.md"
 nflm_var="nflm_var.md"
 nflm_len="links_en.md"
