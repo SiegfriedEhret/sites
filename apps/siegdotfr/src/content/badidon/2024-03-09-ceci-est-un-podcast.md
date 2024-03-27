@@ -13,7 +13,7 @@ audioDuration: 1986
 
 Coucou !
 
-Voici l'épisode 3, enregistré le jeudi 7 février 2024, où l'on parle de podcasts.
+Voici l'épisode 3, enregistré le jeudi 7 mars 2024, où l'on parle de podcasts.
 
 Et quelques liens pour aller avec l'épisode :
 
