@@ -4,8 +4,12 @@ year="2024"
 month="03"
 ym="$year$month"
 
-nflm_dev="nflm_dev.md"
-nflm_var="nflm_var.md"
+postYear="2024"
+postMonth="04"
+postDay="02"
+
+nflm_dev="news-from-last-month-$postYear$postMonth-developer-edition.md"
+nflm_var="news-from-last-month-$postYear$postMonth-wonderer-edition.md"
 nflm_len="links_en.md"
 nflm_lfr="links_fr.md"
 
@@ -13,6 +17,24 @@ rm $nflm_len
 rm $nflm_lfr
 rm $nflm_dev
 rm $nflm_var
+
+writeHeader() {
+  local output=$1
+  local edition=$2
+
+  {
+    echo "---"
+    echo "title: News from last month ($postYear/$postMonth), $edition edition"
+    echo "description: A selection of links from last month."
+    echo "date: $postYear-$postMonth-${postDay}T00:00:00.000Z"
+    echo "updatedAt: $postYear-$postMonth-${postDay}T00:00:00.000Z"
+    echo "image: """
+    echo "imageDescription: """
+    echo "tags:"
+    echo "  - nflm"
+    echo "---"
+  } >> "$output"
+}
 
 writeLinks() {
 	local input=$1
@@ -44,6 +66,8 @@ save() {
   fi
 }
 
+writeHeader $nflm_dev "developer"
+
 buku -e $nflm_len -t $ym + dev + web - fr --np
 buku -e $nflm_lfr -t $ym + dev + web + fr --np
 save $nflm_dev "## Web (HTML, CSS, JS, Design...)"
@@ -59,6 +83,8 @@ save $nflm_dev "## Open source, Projects & Tools"
 buku -e $nflm_len -t $ym + dev + various - fr --np
 buku -e $nflm_lfr -t $ym + dev + various + fr --np
 save $nflm_dev "## Other things, good practices, thoughts etc"
+
+writeHeader $nflm_var "wonderer"
 
 buku -e $nflm_len -t $ym + science - fr --np
 buku -e $nflm_lfr -t $ym + science + fr --np
