@@ -161,6 +161,12 @@ article pre {
   max-width: 100%;
 }
 
+code {
+  &::before, &::after {
+    content: "`";
+  }
+}
+
 pre {
   color: var(--wevet);
   background-color: var(--code);
