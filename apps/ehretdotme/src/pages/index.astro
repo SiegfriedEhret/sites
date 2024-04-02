@@ -16,9 +16,12 @@ const posts = (await getCollection("posts"))
     date: item.data.date,
     image: item.data.image,
     imageDescription: item.data.imageDescription,
+    tags: item.data.tags
   }))
   .sort((a, b) => formatDate(b.date).localeCompare(formatDate(a.date)))
-  .slice(0, 3);
+
+const nflm = posts.filter(el => el.tags.includes("nflm")).slice(0, 6);
+const other = posts.filter(el => !el.tags.includes("nflm")).slice(0, 3);
 ---
 
 <Layout title="/ [ehret.me]">
@@ -37,10 +40,20 @@ const posts = (await getCollection("posts"))
   </Intro>
 
   <Responsive tag="section">
+    <h2>The "News from last month" series</h2>
+    <nav>
+      <div class="spotlight">
+        {nflm.map((item) => <ClickOnThatPost item={item} />)}
+      </div>
+    </nav>
+    <a href="/tag/nflm">More news.</a>
+  </Responsive>
+
+  <Responsive tag="section">
     <h2>The latest notes, get them while they're hot!</h2>
     <nav>
       <div class="spotlight">
-        {posts.slice(0, 3).map((item) => <ClickOnThatPost item={item} />)}
+        {other.map((item) => <ClickOnThatPost item={item} />)}
       </div>
     </nav>
     <a href="/notes">All notes.</a>
