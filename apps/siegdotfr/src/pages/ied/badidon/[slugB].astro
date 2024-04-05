@@ -36,9 +36,7 @@ const { Content, headings } = await entry.render();
     <SuperTitle title={title} />
 
     <Responsive>
-      <div>
-        {description}
-      </div>
+      {headings && <Toc headings={headings} />}
 
       <Player
         url={audioUrl}
@@ -46,8 +44,6 @@ const { Content, headings } = await entry.render();
         title={title}
         analytics={`badidon-${entry.slug}`}
       />
-
-      {headings && <Toc headings={headings} />}
 
       <Content />
 
