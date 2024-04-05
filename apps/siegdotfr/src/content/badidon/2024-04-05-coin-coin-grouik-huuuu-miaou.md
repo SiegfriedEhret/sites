@@ -6,6 +6,8 @@ description: >-
 date: 2024-04-05T00:00:00.000Z
 updatedAt: 2024-04-05T00:00:00.000Z
 image: /assets/badidon-badidon.jpg
+tags:
+  - badidon
 audioUrl: >-
   https://badidon.s3.fr-par.scw.cloud/badidon-06-coin-coin-grouik-huuuu-miaou.mp3
 audioSize: 30819718
