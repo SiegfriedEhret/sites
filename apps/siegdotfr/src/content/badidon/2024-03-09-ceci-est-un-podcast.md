@@ -1,6 +1,6 @@
 ---
 title: "Épisode 3 : ceci est un podcast."
-description: Où l'on parle de podcasts.
+description: Dans lequel on parle de podcasts.
 date: 2024-03-09T00:00:00.000Z
 updatedAt: 2024-03-09T00:00:00.000Z
 image: /assets/badidon-badidon.jpg

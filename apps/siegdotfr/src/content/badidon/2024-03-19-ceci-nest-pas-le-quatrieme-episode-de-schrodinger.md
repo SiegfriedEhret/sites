@@ -1,6 +1,6 @@
 ---
 title: "Épisode 4 : ceci n'est pas le quatrième épisode de Schrödinger"
-description: Où l'on vérifie qu'on se connait.
+description: Dans lequel on vérifie qu'on se connait.
 date: 2024-03-19T00:00:00.000Z
 updatedAt: 2024-03-19T00:00:00.000Z
 image: /assets/badidon-badidon.jpg
