@@ -1,5 +1,5 @@
 ---
-title: 'Épisode 6 : coin coin grouik huuuu miaou'
+title: "Épisode 6 : coin coin grouik huuuu miaou"
 description: >-
   Dans lequel nous parlons de mots ou expressions que nous aimons bien ou non
   dans la langue française.
