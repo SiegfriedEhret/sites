@@ -26,6 +26,8 @@ Quelques références pour les gâteaux mentionnés :
 - [Dinosaurus](https://www.lotusbakeries.be/fr/produits/dinosaurus-au-chocolat)
 - [Les produits LU](https://www.lu.fr/produits/) (il n'y a plus de page spécifique pour la barquette !)
 
+Et le fameux [Pierre-papier-ciseaux](https://fr.wikipedia.org/wiki/Pierre-papier-ciseaux) !
+
 ## Merci !
 
 Et pour nous contacter: [badidon@sieg.fr](mailto:badidon@sieg.fr)
