@@ -28,7 +28,7 @@ const episode: BadidonSchema = entry.data;
 const { title, description, audioUrl, date, updatedAt, duration, image, tags } =
   episode;
 
-const { Content, headings } = await entry.render();
+const { Content } = await entry.render();
 ---
 
 <Layout title={title} description={description} metaImage={image}>
@@ -36,8 +36,6 @@ const { Content, headings } = await entry.render();
     <SuperTitle title={title} />
 
     <Responsive>
-      {headings && <Toc headings={headings} />}
-
       <Player
         url={audioUrl}
         image={image}
