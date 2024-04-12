@@ -15,7 +15,7 @@ audioDuration: 1267
 
 Bonjour !
 
-Voici l'épisode 8 de badidon, enregistré le 12 avril 2024.
+Voici l'épisode 8 de badidon, enregistré le 11 avril 2024.
 
 Dans cet épisode, nous parlons des journées mondiales.
 
