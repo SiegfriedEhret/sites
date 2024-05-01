@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 year="2024"
-month="03"
+month="04"
 ym="$year$month"
 
 postYear="2024"
-postMonth="04"
-postDay="02"
+postMonth="05"
+postDay="01"
 
 nflm_dev="news-from-last-month-$postYear$postMonth-developer-edition.md"
 nflm_var="news-from-last-month-$postYear$postMonth-wonderer-edition.md"
@@ -75,6 +75,10 @@ save $nflm_dev "## Web (HTML, CSS, JS, Design...)"
 buku -e $nflm_len -t $ym + dev + backend - fr --np
 buku -e $nflm_lfr -t $ym + dev + backend + fr --np
 save $nflm_dev "## Backend & languages"
+
+buku -e $nflm_len -t $ym + dev + devops - fr --np
+buku -e $nflm_lfr -t $ym + dev + devops + fr --np
+save $nflm_dev "## Cloud & DevOps"
 
 buku -e $nflm_len -t $ym + opensource - fr --np
 buku -e $nflm_lfr -t $ym + opensource + fr --np
