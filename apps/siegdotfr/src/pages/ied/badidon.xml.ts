@@ -11,7 +11,7 @@ export async function GET(context) {
       const link = `${context.site}ied/badidon/${entry.slug}`;
       const image = `${context.site}${entry.data.image}`.replaceAll(
         "sieg.fr//",
-        "sieg.fr/",
+        "sieg.fr/"
       );
       let description = "";
       try {
@@ -27,7 +27,9 @@ export async function GET(context) {
         title: entry.data.title,
         description: entry.data.description,
         pubDate: entry.data.date,
-        customData: `<enclosure url="${entry.data.audioUrl}" length="${entry.data.audioSize}" type="audio/mpeg" />
+        customData: `<enclosure url="${entry.data.audioUrl}" length="${
+          entry.data.audioSize
+        }" type="audio/mpeg" />
 <content:encoded><![CDATA[${description.trim()}]]></content:encoded>
 <itunes:episode>${episodeNumber}</itunes:episode>
 <itunes:episodeType>false</itunes:episodeType>
@@ -37,7 +39,7 @@ export async function GET(context) {
       };
     })
     .sort((a, b) =>
-      b.pubDate.toISOString().localeCompare(a.pubDate.toISOString()),
+      b.pubDate.toISOString().localeCompare(a.pubDate.toISOString())
     );
 
   const link = `${context.site}ied/badidon.xml`;

@@ -67,12 +67,12 @@ function drawStuff(engine) {
   var camera = new BABYLON.FreeCamera(
     "Camera",
     new BABYLON.Vector3(0, 0, -10),
-    scene,
+    scene
   );
   var light0 = new BABYLON.PointLight(
     "Omni0",
     new BABYLON.Vector3(0, 100, 100),
-    scene,
+    scene
   );
 
   var triangle = drawTriangle(scene);

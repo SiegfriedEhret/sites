@@ -9,7 +9,7 @@ const items = (await getCollection("posts"))
     pubDate: entry.data.date,
   }))
   .sort((a, b) =>
-    b.pubDate.toISOString().localeCompare(a.pubDate.toISOString()),
+    b.pubDate.toISOString().localeCompare(a.pubDate.toISOString())
   )
   .slice(0, 10);
 

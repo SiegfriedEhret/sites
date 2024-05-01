@@ -28,7 +28,7 @@ const museumCollection = defineCollection({
         z.object({
           image: image(),
           imageDescription: z.string().optional(),
-        }),
+        })
       ),
       description: z.string().optional(),
     }),

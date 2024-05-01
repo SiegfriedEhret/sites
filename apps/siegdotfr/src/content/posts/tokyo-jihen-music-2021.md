@@ -26,7 +26,7 @@ Et non, on se calme avec 命の帳 (Veil of Life), une petite balade sentimental
 
 On reprend avec 黄金比 (The Golden Ratio), que j'aime beaucoup: les instruments fonctionnent bien ensemble, le rythme du refrain est entraînant et me donne quelques frissons. À noter: le refrain n'est pas le même refrain !
 
-Ensuite, on croit que 青のID (Blue Period) démarre calmement, mais en fait non. J'ai l'impression de retrouver du Tokyo Jihen de l'époque de [Killer Tune](https://www.youtube.com/watch?v=lC8la4l4RhQ), et ça fait du bien ! Ça s'emballe et ça donne envie de taper du pied.
+Ensuite, on croit que 青の ID (Blue Period) démarre calmement, mais en fait non. J'ai l'impression de retrouver du Tokyo Jihen de l'époque de [Killer Tune](https://www.youtube.com/watch?v=lC8la4l4RhQ), et ça fait du bien ! Ça s'emballe et ça donne envie de taper du pied.
 
 J'ai une relation compliqué avec la chanson suivante, 闇なる白 (Whiteout), principalement à cause des changements apportés à la voix de la chanteuse et au son du synthé utilisé qui manque de goût pour moi.
 
@@ -59,7 +59,7 @@ Voilà ! C'est juste mon avis, j'espère que vous en avez un différent. Bisous 
 3. 紫電 (Lightning)
 4. 命の帳 (Veil of Life)
 5. 💖 黄金比 (The Golden Ratio)
-6. 💖 青のID (Blue Period)
+6. 💖 青の ID (Blue Period)
 7. 闇なる白 (Whiteout)
 8. 赤の同盟 (Red Alliance)
 9. 銀河民 (The Galactic Man)

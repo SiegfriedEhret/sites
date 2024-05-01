@@ -1,10 +1,10 @@
 ---
-title: 'News from last month (2024/05), wonderer edition'
+title: "News from last month (2024/05), wonderer edition"
 description: A selection of links from last month.
 date: 2024-05-01T00:00:00.000Z
 updatedAt: 2024-05-01T00:00:00.000Z
 image: /assets/hase-dera-kamakura.jpg
-imageDescription: 'A picture from a garden in Hase-dera, a Buddhist temple in Kamakura.'
+imageDescription: "A picture from a garden in Hase-dera, a Buddhist temple in Kamakura."
 tags:
   - nflm
 ---
@@ -87,4 +87,3 @@ En français / In French:
 - [Bienvenue sur le site de La Fondation du Rien](https://www.fondationdurien.org/) <!-- TAGS: 202404,fr,various -->
 - [Tchao Pantin : le jour où Coluche a arrêté de faire rire - YouTube](https://www.youtube.com/watch?v=mqMUniMScGw&si=wEo6Vl7K803KuLfX) <!-- TAGS: 202404,fr,various -->
 - [Acupuncture : piqûre de rappel ! / Mytho-théories - Info ou Mytho - YouTube](https://www.youtube.com/watch?v=48Rgu0jnZo0) <!-- TAGS: 202404,fr,various -->
-
