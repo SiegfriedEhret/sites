@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "license": "AGPL-3.0-or-later",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
     "build": "turbo run build",
     "build:ehretdotme": "turbo run build --scope ehretdotme",
@@ -22,7 +18,7 @@
     "turbo": "^1.13.3"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   },
-  "packageManager": "pnpm@7.9.5"
+  "packageManager": "pnpm@9.0.6"
 }
