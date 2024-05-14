@@ -6,7 +6,9 @@ import Responsive from "@packages/ui/Responsive.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
-  const tags = [...new Set(posts.flatMap((el) => el.data.tags))];
+  const tags = [...new Set(posts.flatMap((el) => el.data.tags))].filter(
+    (t) => !!t,
+  );
 
   return tags.map((t) => {
     return {

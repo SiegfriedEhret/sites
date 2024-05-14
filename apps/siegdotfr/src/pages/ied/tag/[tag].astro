@@ -8,7 +8,9 @@ export async function getStaticPaths() {
   const posts = await getCollection("posts");
   const badidon = await getCollection("badidon");
   const items = [...posts, ...badidon];
-  const tags = [...new Set(items.flatMap((el) => el.data.tags))];
+  const tags = [...new Set(items.flatMap((el) => el.data.tags))].filter(
+    (t) => !!t,
+  );
 
   return tags.map((t) => {
     return {
