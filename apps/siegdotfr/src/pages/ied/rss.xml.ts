@@ -22,7 +22,7 @@ export async function GET(context) {
 
   const items = [...posts, ...badidon]
     .sort((a, b) =>
-      b.pubDate.toISOString().localeCompare(a.pubDate.toISOString())
+      b.pubDate.toISOString().localeCompare(a.pubDate.toISOString()),
     )
     .slice(0, 10);
 

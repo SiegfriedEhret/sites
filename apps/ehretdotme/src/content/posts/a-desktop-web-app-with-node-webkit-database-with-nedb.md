@@ -77,7 +77,7 @@ function saveUser(firstName, lastName) {
       } else {
         showUser(newDoc);
       }
-    }
+    },
   );
 }
 ```

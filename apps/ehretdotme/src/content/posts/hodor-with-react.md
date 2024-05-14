@@ -46,7 +46,7 @@ Give it some hodoring:
 ```javascript
 ReactDOM.render(
   <Hodor hodorhodor="10" />,
-  document.getElementById("hodorhodor")
+  document.getElementById("hodorhodor"),
 );
 ```
 
@@ -63,7 +63,7 @@ Make it hodor speak with:
 ```javascript
 ReactDOM.render(
   <Hodor hodor="hodor" hodorhodor="100" />,
-  document.getElementById("hodorhodorhodor")
+  document.getElementById("hodorhodorhodor"),
 );
 ```
 

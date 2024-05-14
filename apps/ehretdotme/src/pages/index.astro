@@ -16,12 +16,12 @@ const posts = (await getCollection("posts"))
     date: item.data.date,
     image: item.data.image,
     imageDescription: item.data.imageDescription,
-    tags: item.data.tags
+    tags: item.data.tags,
   }))
-  .sort((a, b) => formatDate(b.date).localeCompare(formatDate(a.date)))
+  .sort((a, b) => formatDate(b.date).localeCompare(formatDate(a.date)));
 
-const nflm = posts.filter(el => el.tags.includes("nflm")).slice(0, 6);
-const other = posts.filter(el => !el.tags.includes("nflm")).slice(0, 3);
+const nflm = posts.filter((el) => el.tags.includes("nflm")).slice(0, 6);
+const other = posts.filter((el) => !el.tags.includes("nflm")).slice(0, 3);
 ---
 
 <Layout title="/ [ehret.me]">

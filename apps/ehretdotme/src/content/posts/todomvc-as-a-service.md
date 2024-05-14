@@ -22,11 +22,11 @@ I use [fetch](https://developer.mozilla.org/en-US/docs/Web/API/GlobalFetch/fetch
 
 ```javascript
 fetch(
-  "https://api.github.com/repos/tastejs/todomvc/git/trees/6d71146f56e9ad51ddf3b6776e8871d33e02f4bd"
+  "https://api.github.com/repos/tastejs/todomvc/git/trees/6d71146f56e9ad51ddf3b6776e8871d33e02f4bd",
 ).then(function (response) {
   if (response.status !== 200) {
     console.log(
-      "Looks like there was a problem. Status Code: " + response.status
+      "Looks like there was a problem. Status Code: " + response.status,
     );
     return;
   }
@@ -68,7 +68,7 @@ The code for my web component is:
   proto.createdCallback = function () {
     var shadowRoot = this.createShadowRoot();
     fetch(
-      "https://api.github.com/repos/tastejs/todomvc/git/trees/6d71146f56e9ad51ddf3b6776e8871d33e02f4bd"
+      "https://api.github.com/repos/tastejs/todomvc/git/trees/6d71146f56e9ad51ddf3b6776e8871d33e02f4bd",
     ).then(function (response) {
       "see the previous part about fetch";
     });

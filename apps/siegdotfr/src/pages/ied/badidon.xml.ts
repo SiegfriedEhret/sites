@@ -11,7 +11,7 @@ export async function GET(context) {
       const link = `${context.site}ied/badidon/${entry.slug}`;
       const image = `${context.site}${entry.data.image}`.replaceAll(
         "sieg.fr//",
-        "sieg.fr/"
+        "sieg.fr/",
       );
       let description = "";
       try {
@@ -39,7 +39,7 @@ export async function GET(context) {
       };
     })
     .sort((a, b) =>
-      b.pubDate.toISOString().localeCompare(a.pubDate.toISOString())
+      b.pubDate.toISOString().localeCompare(a.pubDate.toISOString()),
     );
 
   const link = `${context.site}ied/badidon.xml`;

@@ -162,7 +162,8 @@ article pre {
 }
 
 code {
-  &::before, &::after {
+  &::before,
+  &::after {
     content: "`";
   }
 }
