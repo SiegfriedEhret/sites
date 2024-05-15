@@ -1,6 +1,6 @@
 ---
 title: Les Derniers d'Entre Nous
-description: "Avez-vous remarqué la nouvelle formule pour toutes les séries sur Netflix, Amazon ou autre\_?"
+description: Une série avec deux épisodes sept !
 date: 2024-05-15T11:00:00.000Z
 updatedAt: 2024-05-15T11:00:00.000Z
 image: /assets/the-anarchists-s01-ka-1920.jpg
@@ -15,7 +15,7 @@ N'ayant pas joué au jeu, je ne connaissais que de nom et je n'avais aucune idé
 
 Pour faire suite au billet précédent « [Épisode Sept](/ied/episode-sept) », voici quelques lignes à propos de la série The Last of Us, que j'ai regardée l'année dernière. Et dans The Last of US, il y a **deux** « épisodes sept » :
 
-- L'épisode 3 « [Long, Long Time](<https://en.wikipedia.org/wiki/Long,_Long_Time_(The_Last_of_Us)>) » avec l'histoire de Bill et Frank.
-- L'épisode 7 « [Left Behind](<https://en.wikipedia.org/wiki/Left_Behind_(The_Last_of_Us)>) » avec l'histoire de la morsure d'Ellie.
+* L'épisode 3 « [Long, Long Time](https://en.wikipedia.org/wiki/Long,_Long_Time_\(The_Last_of_Us\)) » avec l'histoire de Bill et Frank.
+* L'épisode 7 « [Left Behind](https://en.wikipedia.org/wiki/Left_Behind_\(The_Last_of_Us\)) » avec l'histoire de la morsure d'Ellie.
 
 Sur une série de 9 épisodes, avoir 2 épisodes 7 ça prend vraiment beaucoup de place et c'est dommage. Même si l'épisode 3 était bien.
