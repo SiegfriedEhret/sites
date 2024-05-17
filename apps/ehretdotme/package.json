@@ -23,10 +23,14 @@
     "alpinejs": "^3.13.10",
     "astro": "^4.8.6",
     "highlight.js": "^11.9.0",
+    "markdown-it": "^14.1.0",
+    "sanitize-html": "^2.13.0",
     "sharp": "^0.33.4",
     "tinacms": "^1.6.3"
   },
   "devDependencies": {
+    "@types/markdown-it": "^14.1.1",
+    "@types/sanitize-html": "^2.11.0",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.12.3"
   }

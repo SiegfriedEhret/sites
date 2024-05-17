@@ -1,11 +1,27 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
+import sanitizeHtml from "sanitize-html";
+import MarkdownIt from "markdown-it";
+
+const parser = new MarkdownIt();
+
+function getDescription(entry) {
+  let description = "";
+  try {
+    description = `<![CDATA[${sanitizeHtml(parser.render(entry.body))}]]>`;
+  } catch (e) {
+    console.log("Failed to convert body", e);
+    description = entry.data.description;
+  }
+
+  return description;
+}
 
 export async function GET(context) {
   const posts = (await getCollection("posts")).map((entry) => ({
     link: `https://sieg.fr/ied/${entry.slug}`,
     title: entry.data.title,
-    description: entry.data.description,
+    description: getDescription(entry),
     pubDate: entry.data.date,
   }));
 
@@ -15,7 +31,7 @@ export async function GET(context) {
     return {
       link,
       title: `🎙️ ${entry.data.title}`,
-      description: entry.data.description,
+      description: getDescription(entry),
       pubDate: entry.data.date,
     };
   });
