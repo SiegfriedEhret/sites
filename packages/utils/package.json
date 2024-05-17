@@ -18,17 +18,10 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@types/markdown-it": "^12.2.3",
-    "@types/react": "^18.3.2",
     "prettier": "^2.8.8"
   },
   "dependencies": {
-    "@markdoc/markdoc": "^0.1.13",
     "highlight.js": "^11.9.0",
     "uid": "^2.0.2"
-  },
-  "peerDependencies": {
-    "@types/markdown-it": "^12.2.3",
-    "@types/react": "^18.0.28"
   }
 }
