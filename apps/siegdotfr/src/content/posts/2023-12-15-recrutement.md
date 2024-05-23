@@ -6,7 +6,7 @@ description: >-
   recrutement.
 date: 2023-12-15T00:00:00.000Z
 updatedAt: 2023-12-15T00:00:00.000Z
-image: /assets/2023-12-15-recrutement.png
+image: ../../../public/assets/2023-12-15-recrutement.png
 imageDescription: >-
   Le développeur en rencontre un autre, qui tente de l’aguicher avec les bons
   côtés de sa boîte. Générée avec SDXL 1.0.

@@ -16,7 +16,7 @@ Comme genres, [Wikipedia](<https://en.wikipedia.org/wiki/Lingua_Ignota_(musician
 
 L'inspiration vient entre autres de textes Amish and Mennonite des années 1700 et 1800. Elle traite aussi de la solitude et de la relation avec dieu.
 
-![LINGUA IGNOTA - SINNER GET READY](/contentful/5r4knatfzIRw2FPpEsHwg3/2972199be9b3ae02b6ba8781abf36b26/R-19744813-1628124896-4495.jpeg.jpg)
+![LINGUA IGNOTA - SINNER GET READY](/assets/contentful/5r4knatfzIRw2FPpEsHwg3/2972199be9b3ae02b6ba8781abf36b26/R-19744813-1628124896-4495.jpeg.jpg)
 
 ## Revue
 

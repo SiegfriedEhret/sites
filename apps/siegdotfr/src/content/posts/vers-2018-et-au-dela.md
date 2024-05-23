@@ -59,7 +59,7 @@ J'ai été assistant d'une formation donnée par [Sébastien](https://twitter.co
 
 Avec madame, nous avons créé la SFEIR School Japonais pour faire une petite introduction à cette langue.
 
-![](/assets/20180101-to-2018-and-beyond/aya-sieg2.jpg)
+![](../../../public/assets/20180101-to-2018-and-beyond/aya-sieg2.jpg)
 
 ### Magie
 
@@ -135,7 +135,7 @@ Et quelques uns que je souhaite regarder:
 
 Et l'album de l'année:
 
-![Open Mike Eagle - Brick Body Kids Still Daydream (Cover)](/contentful/1M4I21nWgxNMVON4YNCtjY/a367c11ecf0ac62958d4c073a20338e4/open-mike-eagle.jpg)
+![Open Mike Eagle - Brick Body Kids Still Daydream (Cover)](/assets/contentful/1M4I21nWgxNMVON4YNCtjY/a367c11ecf0ac62958d4c073a20338e4/open-mike-eagle.jpg)
 
 [Écouter sur bandcamp](https://openmikeeagle360.bandcamp.com/album/brick-body-kids-still-daydream).
 

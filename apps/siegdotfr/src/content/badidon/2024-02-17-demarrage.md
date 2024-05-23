@@ -5,7 +5,7 @@ title: Le tout premier épisode du podcast !
 description: "Badidon, c'est parti ! Découvrez le premier épisode de notre podcast."
 date: 2024-02-17T20:35:30.170Z
 updatedAt: 2024-02-17T20:35:30.170Z
-image: /assets/badidon-badidon.jpg
+image: ../../../public/assets/badidon-badidon.jpg
 tags:
   - badidon
 audioUrl: "https://badidon.s3.fr-par.scw.cloud/badidon-01-introduction.mp3"

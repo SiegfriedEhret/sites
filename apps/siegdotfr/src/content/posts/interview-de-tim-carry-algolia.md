@@ -6,7 +6,7 @@ description: >-
   Algolia....
 date: 2024-02-23T08:02:42.437Z
 updatedAt: 2024-02-23T08:02:42.437Z
-image: /assets/ITW-Tim-Carry-520x245.jpg
+image: ../../../public/assets/ITW-Tim-Carry-520x245.jpg
 tags:
   - interviews
 ---

@@ -13,7 +13,7 @@ tags: []
 Découvrons aujourd'hui Villagers avec Fever Dreams, leur sixième album.
 C'est un groupe que je ne connais pas (juste la chanson [So Simpatico](https://www.youtube.com/watch?v=bguJJOGdAwU), sur cet album). L'internet mondial ([Wikipedia](https://fr.wikipedia.org/wiki/Villagers)) annonce «indie folk» comme genre. Allons-y.
 
-![Villagers - Fever Dreams](/contentful/4FzOOkQKoJysKII1DuVoHu/13560ff3f3d59edde9106b616281ae88/a0819139326_10.jpg)
+![Villagers - Fever Dreams](/assets/contentful/4FzOOkQKoJysKII1DuVoHu/13560ff3f3d59edde9106b616281ae88/a0819139326_10.jpg)
 
 ## Revue
 

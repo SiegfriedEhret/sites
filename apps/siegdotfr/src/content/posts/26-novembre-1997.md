@@ -12,4 +12,4 @@ Il a écrit une histoire, La Vie fabuleuse de Méloé, que j'ai enfin décidé d
 
 Un petit souvenir de quand il était bien plus jeune.
 
-![Papa](/contentful/6LPTM62Zww7lxbXPFOE6S/a9eb5cf9f8862621c004e53ea14267a7/IMG_2778.jpg)
+![Papa](/assets/contentful/6LPTM62Zww7lxbXPFOE6S/a9eb5cf9f8862621c004e53ea14267a7/IMG_2778.jpg)

@@ -14,7 +14,7 @@ tags:
 
 Très orienté sur la vie dans une petite ville des États-Unis (par exemple [Nephi](<https://fr.wikipedia.org/wiki/Nephi_(Utah)>), où le chanteur a passé une partie de sa jeunesse), il touche des thèmes importants et parfois graves. De jolis textes dans une instrumentation peu surprenante.
 
-![The Killers - Pressure Machine](/contentful/42IRSzodKltj35tVKjGIQ2/d1dadd79041953b596767efdd7c01a72/R-19829656-1628933248-3292.jpeg.jpg)
+![The Killers - Pressure Machine](/assets/contentful/42IRSzodKltj35tVKjGIQ2/d1dadd79041953b596767efdd7c01a72/R-19829656-1628933248-3292.jpeg.jpg)
 
 ## Revue
 

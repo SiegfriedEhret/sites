@@ -13,7 +13,7 @@ J'étais à [Devoxx](http://devoxx.fr/) en 2017 avec mon très cher [Florian Orp
 
 La relecture ayant traîné côté Quentin comme du mien, voici enfin l'interview. Mieux vaut tard que jamais.
 
-![Siegfried, Quentin, Florian](/contentful/4ZXqLmmmB4UfgJRisH3Qsf/c0b79f5d1764f9f48073fe9ae5623c40/DSC_5243.jpg)
+![Siegfried, Quentin, Florian](/assets/contentful/4ZXqLmmmB4UfgJRisH3Qsf/c0b79f5d1764f9f48073fe9ae5623c40/DSC_5243.jpg)
 
 ## Bonjour Quentin, comment ça va en cette fin de Devoxx ?
 

@@ -5,7 +5,7 @@ title: Le stack
 description: Quelques détails sur l'extravagance technologique utilisée pour mes sites.
 tags: []
 image: >-
-  /contentful/1hhfrXPLbw7UIdWoJUwZAM/e93e864db30b8101a2c36dee30b09385/l_estaque.jpg
+  ../../../public/assets/contentful/1hhfrXPLbw7UIdWoJUwZAM/e93e864db30b8101a2c36dee30b09385/l_estaque.jpg
 imageDescription: Georges Braque - Paysage à l'Estaque
 ---
 

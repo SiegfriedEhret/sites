@@ -34,7 +34,7 @@ J'ai l'essentiel sur un seul écran. J'utilise quand même les dossiers pour org
 
 Une expérience que nous faisons depuis quelques semaines: mettre le téléphone en niveaux de gris. Ça donne quelque chose comme ceci (corrigé avec [GIMP](https://www.gimp.org/), car les captures d'écran et photos restent en couleurs):
 
-![distraction-iphone](/contentful/60RV3lVup8whkeEMQkEiLe/bf3c66396ba483b8d913dd4cf5436434/distraction-iphone.jpg)
+![distraction-iphone](/assets/contentful/60RV3lVup8whkeEMQkEiLe/bf3c66396ba483b8d913dd4cf5436434/distraction-iphone.jpg)
 
 Sur un écran en couleurs par exemple, les pastilles avec les compteurs de notifications sont rouges et très visible. Dans ce cas, c'est difficile à identifier, et c'est le but recherché.
 

@@ -14,7 +14,7 @@ Voici “Colors II”, le dixième album de Between the Buried and Me, un groupe
 Colors II est donc la suite de Colors, sorti en 2007, qui était un chouette album. J’avais eu un bon à priori avec [Fix The Error](https://www.youtube.com/watch?v=2q93v_nHmSM).
 Quid de cette suite ? Ouvrons les oreilles, c’est parti.
 
-![Between the Buried and Me - Colors II (2021)](/contentful/3FwHqxzKSQz9RblZ6QsVut/b4e03c10e6337064cdc8fa2c69d70b5a/btbam-colors2.jpg)
+![Between the Buried and Me - Colors II (2021)](/assets/contentful/3FwHqxzKSQz9RblZ6QsVut/b4e03c10e6337064cdc8fa2c69d70b5a/btbam-colors2.jpg)
 
 ## Revue
 

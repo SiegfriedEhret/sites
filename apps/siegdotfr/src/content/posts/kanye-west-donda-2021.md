@@ -16,7 +16,7 @@ Avertissement: j'ai surtout écouté les tous premiers albums tels que The Colle
 
 C'est parti pour une heure et quarante neuf minutes de Kanye qui va parler de son divorce et de Dieu. Souhaitez-moi bon courage.
 
-![Kanye West - Donda](/contentful/7AmxWzuI8Mn3JwCPTwLEOc/920f8e0862f5231786ebe5df27059e5c/donda.png)
+![Kanye West - Donda](/assets/contentful/7AmxWzuI8Mn3JwCPTwLEOc/920f8e0862f5231786ebe5df27059e5c/donda.png)
 
 ## Revue
 

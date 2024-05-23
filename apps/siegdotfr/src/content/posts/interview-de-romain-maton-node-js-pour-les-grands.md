@@ -12,7 +12,7 @@ description: >-
 tags:
   - interview
 image: >-
-  /contentful/1alxkuAfVWfDLSf3GjYEzn/57124c92690c12a8be4f53626479bd94/nodejs-romainmaton.jpg
+  ../../../public/assets/contentful/1alxkuAfVWfDLSf3GjYEzn/57124c92690c12a8be4f53626479bd94/nodejs-romainmaton.jpg
 imageDescription: Romain Maton
 ---
 
@@ -80,7 +80,7 @@ Tant qu’ils y trouvent un intérêt, c’est top ! Leurs retours sont d’aill
 
 ## Ce n’est pas comme dans certains projets open source ou ça passe parfois très vite à l’attaque dans les Pull Requests et autres “discussions” Github. Genre ce [PR de bootstrap](https://github.com/twbs/bootstrap/issues/3057) où [@fat](https://twitter.com/fat) invoque [Douglas Crockford](http://crockford.com/), et se fait recevoir…
 
-![Fat VS Crockford](/contentful/3RECs5SNkOeq4Kj3RY8BaZ/aeaa7d9540b9be3270065dc645057c38/Romain-Maton-fat-crockford.png)
+![Fat VS Crockford](/assets/contentful/3RECs5SNkOeq4Kj3RY8BaZ/aeaa7d9540b9be3270065dc645057c38/Romain-Maton-fat-crockford.png)
 
 Effectivement, j’ai bien ri ! Mais c’est dommage d’en arriver là…
 

@@ -12,7 +12,7 @@ Carcass est un groupe anglais de métal extrême pionnier dans de multiple genre
 
 Les paroles ne sont pas disponibles, sauf pour une chanson. Je vais faire ce que je peux avec les breu-breus et la musique ! Aller, on se chauffe les muscles du cou, prêt pour la séance de headbang.
 
-![Carcass - Torn Arteries (2021)](/contentful/1giOnuyhI4vfReqjbVTFUP/38d2252f60cd8aed3f22f0eb5661aa9b/carcass_-_torn_arteries.jpg)
+![Carcass - Torn Arteries (2021)](/assets/contentful/1giOnuyhI4vfReqjbVTFUP/38d2252f60cd8aed3f22f0eb5661aa9b/carcass_-_torn_arteries.jpg)
 
 ## Revue
 

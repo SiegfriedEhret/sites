@@ -25,7 +25,7 @@ Quand vous voyez `❯ ` dans un bloc, c'est que la suite sur la même ligne est 
 
 ## Crystal ?
 
-[![Le logo de Crystal](/contentful/ChK308uj9HCJfv3IGHxEd/4045723f4d95a5612c501cc15166f2fa/logo.png)](https://crystal-lang.org/media/)
+[![Le logo de Crystal](/assets/contentful/ChK308uj9HCJfv3IGHxEd/4045723f4d95a5612c501cc15166f2fa/logo.png)](https://crystal-lang.org/media/)
 
 Crystal est un langage généraliste inspiré de Ruby et qui cible des performances proches du C. Il est bien placé dans les étoiles sur GitHub (14.8k) entre Scala (12.7k) et Elixir (16.9k) et est accompagné d'une petite communauté bien productive.
 
@@ -187,7 +187,7 @@ Cette classe contient une unique méthode `run`. La déclaration d'une méthode 
 
 Le contenu de l'aide est une [chaine de caractères](https://crystal-lang.org/reference/syntax_and_semantics/literals/string.html). Ici, on remarque des choses bizarres `<<-HELP` et `HELP`. C'est un [type de chaîne spécial](https://crystal-lang.org/reference/syntax_and_semantics/literals/string.html#heredoc), pratique pour délimiter une chaîne sur plusieurs lignes et identifier le début et la fin facilement. Voici ce que ça donne dans mon éditeur:
 
-![Un peu de Crystal dans Sublime Text](/contentful/1B7MYEKG5g8gYQz1x18yLz/b2c42d58161255ba7430352793d43eee/subl.png)
+![Un peu de Crystal dans Sublime Text](/assets/contentful/1B7MYEKG5g8gYQz1x18yLz/b2c42d58161255ba7430352793d43eee/subl.png)
 
 ### Afficher la version
 

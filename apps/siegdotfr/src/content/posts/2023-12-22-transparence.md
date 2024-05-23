@@ -6,7 +6,7 @@ description: >-
   transparence.
 date: 2023-12-22T00:00:00.000Z
 updatedAt: 2023-12-22T00:00:00.000Z
-image: /assets/2023-12-22-transparence.png
+image: ../../../public/assets/2023-12-22-transparence.png
 imageDescription: >-
   Quand il y a moins d'arbres, le développeur y voit un peu plus clair. Générée
   avec SDXL 1.0.

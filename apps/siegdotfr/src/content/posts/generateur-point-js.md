@@ -3,7 +3,7 @@ title: "J'ai enfin utilisé un générateur en JavaScript"
 description: Le code, des fois c'est quand même mieux quand c'est compliqué pour pas grand chose!
 date: 2024-03-22T00:00:00.000Z
 updatedAt: 2024-03-22T00:00:00.000Z
-image: /assets/generateurs_xl-1024-v1-0.png
+image: ../../../public/assets/generateurs_xl-1024-v1-0.png
 imageDescription: >-
   Générée avec SDXL 1.0 en utilisant le code de la fonction avec un générateur.
   C'est n'importe quoi.

@@ -16,17 +16,17 @@ Quelques mois plus tard, je décide d'essayer pour de vrai et j'utilise Copilot 
 
 Par exemple, quand j'ai cette `struct` en Go:
 
-![Exemple Copilot 1a: on part d'une struct en Go](/contentful/2au3I6A9rwVVRydq95rLjF/0376d05f6a8f97d3149320b87894535c/copilot-1a.png)
+![Exemple Copilot 1a: on part d'une struct en Go](/assets/contentful/2au3I6A9rwVVRydq95rLjF/0376d05f6a8f97d3149320b87894535c/copilot-1a.png)
 
 Copilot est capable de me sortir ça:
 
-![Exemple Copilot 1b: il génère une fonction utilitaire](/contentful/1lmPFFIbM66FAlu3XvlQQJ/e4805d49b5ec9f32f2408acf21931bef/copilot-1b.png)
+![Exemple Copilot 1b: il génère une fonction utilitaire](/assets/contentful/1lmPFFIbM66FAlu3XvlQQJ/e4805d49b5ec9f32f2408acf21931bef/copilot-1b.png)
 
 Ce qui est très utile car mon grand âge et mon expérience n'ont aucune valeur à apporter sur ce genre de code.
 
 Parfois il fait des bêtises, comme tout le monde. Ivre, il essaie de me faire faire du Angular dans un projet Svelte:
 
-![Exemple 2: il se trompe de framework !](/contentful/zACvb8WRbhrgbdmNUayTU/109b6122481f3204b5ca9f52d66e4eb6/copilot-fail.png)
+![Exemple 2: il se trompe de framework !](/assets/contentful/zACvb8WRbhrgbdmNUayTU/109b6122481f3204b5ca9f52d66e4eb6/copilot-fail.png)
 
 ## ChatGPT
 

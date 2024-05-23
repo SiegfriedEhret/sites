@@ -7,7 +7,7 @@ description: >-
   veut utiliser nos contenus.
 tags: []
 image: >-
-  /contentful/6BHy76XDxnRvOREsQscRfa/ca7a453fee14495445074e388ddf0716/53610_A_farewell_to_bots__in_the_style_of_the_ending_of__xl-1024-v1-0.png
+  ../../../public/assets/contentful/6BHy76XDxnRvOREsQscRfa/ca7a453fee14495445074e388ddf0716/53610_A_farewell_to_bots__in_the_style_of_the_ending_of__xl-1024-v1-0.png
 imageDescription: >-
   Image générée avec SDXL 1.0, avec le texte « A farewell to bots, in the style
   of the ending of a tv show. »

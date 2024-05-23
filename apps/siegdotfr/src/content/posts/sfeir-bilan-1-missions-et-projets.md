@@ -27,7 +27,7 @@ J'ai ensuite démarré ma première mission.
 
 Il me semble qu'on doit taire le nom quand on parle à des gens d'Axa ^^.
 
-![Belisarius](/contentful/3nHg4EUQ42IhBT157PbktQ/1451711c61b8e14a9dca189a6fa426aa/IMG_7405.JPG)
+![Belisarius](/assets/contentful/3nHg4EUQ42IhBT157PbktQ/1451711c61b8e14a9dca189a6fa426aa/IMG_7405.JPG)
 
 [Belisarius](https://fr.wikipedia.org/wiki/B%C3%A9lisaire) est le nom d'un général Byzantin et c'était le nom de notre produit. C'était un [CMS](https://en.wikipedia.org/wiki/Content_management_system) développé en interne. Il y avait la partie gestion de contenu, avec les API et le front, ainsi que la partie création de page et templating. C'était chouette !
 

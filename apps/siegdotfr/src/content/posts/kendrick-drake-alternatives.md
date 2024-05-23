@@ -3,7 +3,7 @@ title: Pour se changer les idées pendant la bataille entre Kendrick Lamar et Dr
 description: "Une liste d'albums à écouter, qui méritent certainement plus d'attention."
 date: 2024-05-06T00:00:00.000Z
 updatedAt: 2024-05-06T00:00:00.000Z
-image: /assets/IMG_3757.JPG
+image: ../../../public/assets/IMG_3757.JPG
 imageDescription: Une photo d'un concert de PNL pour la rigolade.
 tags:
   - musique

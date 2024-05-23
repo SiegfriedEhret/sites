@@ -61,7 +61,7 @@ Le seul moment vraiment agile pour moi était sur la partie onboarding de SonarC
 
 L'agile SonarSource c'est plutôt ce qui est représenté en figure 5:
 
-![agilol](/contentful/2fPMwFMUiscHAfBOTaJe59/8b575880b785715165d446714ad3ba64/agile.png)
+![agilol](/assets/contentful/2fPMwFMUiscHAfBOTaJe59/8b575880b785715165d446714ad3ba64/agile.png)
 ([source](https://twitter.com/DT_comic/status/1324278112813764608))
 
 On essayait de cibler des «sprints» de 2 semaines, qui débordaient quasiment tout le temps.

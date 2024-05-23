@@ -6,7 +6,7 @@ description: >-
   l’engagement.
 date: 2023-12-06T00:00:00.000Z
 updatedAt: 2023-12-29T00:00:00.000Z
-image: /assets/2023-12-06-engagement.png
+image: ../../../public/assets/2023-12-06-engagement.png
 imageDescription: >-
   Le développeur assiste à des gens bien trop engagés qui font semblant
   d’apprécier un team building loin de leurs familles. Générée avec SDXL 1.0.

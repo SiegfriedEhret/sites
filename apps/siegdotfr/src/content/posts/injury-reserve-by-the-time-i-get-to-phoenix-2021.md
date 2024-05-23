@@ -16,7 +16,7 @@ J'avais bien aimé leur premier album (le titre est Injury Reserve), et je n'esp
 
 Et donc surprise, un nouvel album annoncé suite à la sortie du titre [Knees](https://www.youtube.com/watch?v=AvYU1mIMiuY).
 
-![Injury Reserve - By The Time I Get To Phoenix (2021)](/contentful/4G3itU0MNSLVuXpqwkMP8u/d1a7c5dbc92dba2d50a6200e7d4a953b/a0710208795_10.jpg)
+![Injury Reserve - By The Time I Get To Phoenix (2021)](/assets/contentful/4G3itU0MNSLVuXpqwkMP8u/d1a7c5dbc92dba2d50a6200e7d4a953b/a0710208795_10.jpg)
 
 ## Revue
 

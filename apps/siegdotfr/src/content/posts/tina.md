@@ -6,7 +6,7 @@ description: >-
   charmant éditeur.
 date: 2023-10-25T22:00:00.000Z
 updatedAt: 2023-10-25T22:00:00.000Z
-image: /assets/llama.png
+image: ../../../public/assets/llama.png
 imageDescription: >-
   Générée avec SDXL 1.0, avec le texte « A llama in a storage room full of    
   papers, in a cartoon style. »

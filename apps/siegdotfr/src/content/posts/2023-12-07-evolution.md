@@ -6,7 +6,7 @@ description: >-
   l’évolution
 date: 2023-12-07T00:00:00.000Z
 updatedAt: 2023-12-07T00:00:00.000Z
-image: /assets/2023-12-07-evolution.png
+image: ../../../public/assets/2023-12-07-evolution.png
 imageDescription: >-
   Le développeur observe les différentes évolutions qui lui sont possible.
   Générée avec SDXL 1.0.

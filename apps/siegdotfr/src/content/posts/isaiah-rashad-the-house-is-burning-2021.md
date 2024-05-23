@@ -16,7 +16,7 @@ tags:
 Depuis le temps qu'on attend quelque chose de chez TDE, voici une des grosses sorties si attendues: un nouvel album d'Isaiah Rashad, nommé The House Is Burning. C'est son troisième album, qui sort donc 5 ans après le précédent.
 Après quelques pistes sorties avant l'album (le soporifique [Lay Wit Ya](https://www.youtube.com/watch?v=dzrQCsJzr70) et Headshots), l'album a débarqué le 30 Juillet 2021. Voyons voir ce que ça donne.
 
-![Isaiah Rashad - The House Is Burning](/contentful/5lAdkTZwgGNdbVcO5eogKI/b3153016f865559b8e22fcb7798cfa7f/R-19683439-1627676029-4226.png.webp)
+![Isaiah Rashad - The House Is Burning](/assets/contentful/5lAdkTZwgGNdbVcO5eogKI/b3153016f865559b8e22fcb7798cfa7f/R-19683439-1627676029-4226.png.webp)
 
 ## Revue
 

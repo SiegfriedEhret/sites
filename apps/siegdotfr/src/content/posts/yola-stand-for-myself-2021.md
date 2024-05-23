@@ -14,7 +14,7 @@ tags:
 
 Yola est une chanteuse pop/soul anglaise, que j’ai découverte il y a quelques mois avec la chanson [Diamond Studded Shoes](https://www.youtube.com/watch?v=GfC_n8efpiM) et son [Tiny Desk Concert](https://www.youtube.com/watch?v=usDb7VDRzeM). Je m’étais jeté sur son premier album, Walk Through Fire, et attendais cet album avec impatience. Allons-y !
 
-![Yola - Stand For Myself](/contentful/4DkvpoD8sdqsS3QuFnFm4N/1c948a41b50e8e9085c483ad94a6b2b8/R-19689355-1627731585-3075.jpeg.jpg)
+![Yola - Stand For Myself](/assets/contentful/4DkvpoD8sdqsS3QuFnFm4N/1c948a41b50e8e9085c483ad94a6b2b8/R-19689355-1627731585-3075.jpeg.jpg)
 
 ## Revue
 

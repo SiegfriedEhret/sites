@@ -3,7 +3,7 @@ title: Les Derniers d'Entre Nous
 description: Une série avec deux épisodes sept !
 date: 2024-05-15T11:00:00.000Z
 updatedAt: 2024-05-15T11:00:00.000Z
-image: /assets/the-anarchists-s01-ka-1920.jpg
+image: ../../../public/assets/the-anarchists-s01-ka-1920.jpg
 imageDescription: Une image des personnages principaux de la série.
 tags:
   - serie

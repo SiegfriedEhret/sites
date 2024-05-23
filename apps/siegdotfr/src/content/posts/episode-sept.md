@@ -3,7 +3,7 @@ title: Épisode sept
 description: "Avez-vous remarqué la nouvelle formule pour toutes les séries sur Netflix, Amazon ou autre\_?"
 date: 2024-05-14T20:00:00.000Z
 updatedAt: 2024-05-14T20:00:00.000Z
-image: /assets/how-to-avoid-distractions-all-work-a.gif
+image: ../../../public/assets/how-to-avoid-distractions-all-work-a.gif
 imageDescription: Un gif extrait du film Shining.
 ---
 

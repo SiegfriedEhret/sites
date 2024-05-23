@@ -12,7 +12,7 @@ tags:
 
 J'attends toujours avec beaucoup d'impatience de la musique de [Tokyo Jihen](https://fr.wikipedia.org/wiki/Tokyo_Jihen) / [Shiina Ringo](https://fr.wikipedia.org/wiki/Ringo_Shiina)... Voici donc le 6ème album: 音楽 (Music), sorti le 9 juin 2021.
 
-![東京事変 (Tokyo Jihen) - 音楽 (Music) (2021)](/contentful/22G5EtRrMmIIB0RHSaUHNX/de7252b2f7e3493ea9e2ff93ef32ace8/upch20568.jpg)
+![東京事変 (Tokyo Jihen) - 音楽 (Music) (2021)](/assets/contentful/22G5EtRrMmIIB0RHSaUHNX/de7252b2f7e3493ea9e2ff93ef32ace8/upch20568.jpg)
 
 ## Revue
 

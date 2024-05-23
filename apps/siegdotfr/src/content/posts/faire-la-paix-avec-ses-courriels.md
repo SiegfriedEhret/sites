@@ -14,7 +14,7 @@ Je suis récemment tombé sur [cet article](https://piet.me/my-email-workflow-in
 
 C'est la base ! L'objectif ici est d'identifier les contacts en les regroupant par thème.
 
-![Les groupes de contacts dans Fastmail](/contentful/7G2KEfIMDwZnP54SomHp9l/fca0e5dfd5b7b3b2f0e8978930f810c6/groupes.png)
+![Les groupes de contacts dans Fastmail](/assets/contentful/7G2KEfIMDwZnP54SomHp9l/fca0e5dfd5b7b3b2f0e8978930f810c6/groupes.png)
 
 J'ai créé les groupes suivants:
 
@@ -40,7 +40,7 @@ J'en ai profité pour trier tous mes contacts afin de les remettre dans le bon g
 
 J'ai créé des règles pour ranger automatiquement ce que je reçois (oui, il manque quelques traductions dans la version française, ça m'amuse):
 
-![Création d'une règle de filtrage dans Fastmail](/contentful/4BcUR81B7QqyyCd9jIKyfN/5662a2ec778ebe7a1e30c6570f3da715/regle.png)
+![Création d'une règle de filtrage dans Fastmail](/assets/contentful/4BcUR81B7QqyyCd9jIKyfN/5662a2ec778ebe7a1e30c6570f3da715/regle.png)
 
 Chaque message d'un contact appartenant au groupe `Flux`:
 

@@ -6,7 +6,7 @@ description: >-
   l’artisanat.
 date: 2023-12-02T14:00:00.000Z
 updatedAt: 2023-12-29T14:00:00.000Z
-image: /assets/2023-12-02-artisanat.png
+image: ../../../public/assets/2023-12-02-artisanat.png
 imageDescription: Un développeur sur le chemin de l’artisanat. Générée avec SDXL 1.0.
 tags:
   - avent-2023

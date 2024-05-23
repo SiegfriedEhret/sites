@@ -3,7 +3,7 @@ title: "Épisode 2 : ceci n'est pas un podcast."
 description: Dans lequel on parle de choucroute et de notre voyage à Bruxelles.
 date: 2024-03-01T00:00:00.000Z
 updatedAt: 2024-03-01T00:00:00.000Z
-image: /assets/badidon-badidon.jpg
+image: ../../../public/assets/badidon-badidon.jpg
 tags:
   - badidon
 audioUrl: "https://badidon.s3.fr-par.scw.cloud/badidon-02-ceci-nest-pas-un-podcast.mp3"

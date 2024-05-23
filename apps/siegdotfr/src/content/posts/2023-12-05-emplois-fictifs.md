@@ -6,7 +6,7 @@ description: >-
   emplois fictifs.
 date: 2023-12-05T00:00:00.000Z
 updatedAt: 2023-12-05T00:00:00.000Z
-image: /assets/2023-12-05-emplois-fictifs.png
+image: ../../../public/assets/2023-12-05-emplois-fictifs.png
 imageDescription: >-
   Le développeur continue d’avancer, d’autres attendent sans but. Générée avec
   SDXL 1.0.

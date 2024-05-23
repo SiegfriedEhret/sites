@@ -6,7 +6,7 @@ description: >-
   communication.
 date: 2023-12-03T11:36:00.000Z
 updatedAt: 2023-12-03T11:36:00.000Z
-image: /assets/2023-12-03-communication.png
+image: ../../../public/assets/2023-12-03-communication.png
 imageDescription: >-
   Un développeur qui essaie de survivre avec tous les messages qui l’entourent.
   Générée avec SDXL 1.0.

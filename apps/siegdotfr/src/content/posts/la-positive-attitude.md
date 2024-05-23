@@ -68,4 +68,4 @@ Plus important: j'espère pouvoir trouver le bon outil pour surmonter les probl�
 
 Terminons avec une citation d'un billet récent de Jett Atwood: «[To Serve Man, with Software](https://blog.codinghorror.com/to-serve-man-with-software/)»,
 
-![What do you love most about coding?](/contentful/5WcNMpDjD2V6pfvDE33qdU/575514458dc4499343417d071d173a9a/dk-findout-coding-page-50-quote.jpg)
+![What do you love most about coding?](/assets/contentful/5WcNMpDjD2V6pfvDE33qdU/575514458dc4499343417d071d173a9a/dk-findout-coding-page-50-quote.jpg)
