@@ -32,9 +32,6 @@ importers:
       '@packages/utils':
         specifier: workspace:^
         version: link:../../packages/utils
-      '@sindresorhus/slugify':
-        specifier: ^2.2.1
-        version: 2.2.1
       '@tinacms/cli':
         specifier: ^1.5.45
         version: 1.5.45(@babel/core@7.24.5)(@babel/template@7.24.0)(@types/react@18.3.2)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(rollup@4.18.0)
@@ -45,8 +42,8 @@ importers:
         specifier: ^3.14.0
         version: 3.14.0
       astro:
-        specifier: ^4.9.0
-        version: 4.9.0
+        specifier: ^4.9.1
+        version: 4.9.1
       highlight.js:
         specifier: ^11.9.0
         version: 11.9.0
@@ -59,6 +56,9 @@ importers:
       sharp:
         specifier: ^0.33.4
         version: 0.33.4
+      slugify:
+        specifier: ^1.6.6
+        version: 1.6.6
       tinacms:
         specifier: ^1.6.3
         version: 1.6.3(@babel/core@7.24.5)(@babel/template@7.24.0)(@types/react@18.3.2)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
@@ -88,8 +88,8 @@ importers:
         specifier: workspace:^
         version: link:../../packages/utils
       astro:
-        specifier: ^4.9.0
-        version: 4.9.0
+        specifier: ^4.9.1
+        version: 4.9.1
     devDependencies:
       prettier:
         specifier: ^3.2.5
@@ -115,9 +115,6 @@ importers:
       '@packages/utils':
         specifier: workspace:^
         version: link:../../packages/utils
-      '@sindresorhus/slugify':
-        specifier: ^2.2.1
-        version: 2.2.1
       '@tinacms/cli':
         specifier: ^1.5.45
         version: 1.5.45(@babel/core@7.24.5)(@babel/template@7.24.0)(@types/react@18.3.2)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(rollup@4.18.0)
@@ -128,8 +125,8 @@ importers:
         specifier: ^3.14.0
         version: 3.14.0
       astro:
-        specifier: ^4.9.0
-        version: 4.9.0
+        specifier: ^4.9.1
+        version: 4.9.1
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.0
@@ -139,6 +136,9 @@ importers:
       sharp:
         specifier: ^0.33.4
         version: 0.33.4
+      slugify:
+        specifier: ^1.6.6
+        version: 1.6.6
       tinacms:
         specifier: ^1.6.3
         version: 1.6.3(@babel/core@7.24.5)(@babel/template@7.24.0)(@types/react@18.3.2)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
@@ -162,8 +162,8 @@ importers:
         specifier: workspace:*
         version: link:../utils
       astro:
-        specifier: ^4.9.0
-        version: 4.9.0
+        specifier: ^4.9.1
+        version: 4.9.1
     devDependencies:
       prettier:
         specifier: ^3.2.5
@@ -1840,14 +1840,6 @@ packages:
   '@shikijs/core@1.6.0':
     resolution: {integrity: sha512-NIEAi5U5R7BLkbW1pG/ZKu3eb1lzc3/+jD0lFsuxMT7zjaf9bbNwdNyMr7zh/Zl8EXQtQ+MYBAt5G+JLu+5DlA==}
 
-  '@sindresorhus/slugify@2.2.1':
-    resolution: {integrity: sha512-MkngSCRZ8JdSOCHRaYd+D01XhvU3Hjy6MGl06zhOk614hp9EOAp5gIkBeQg7wtmxpitU6eAL4kdiRMcJa2dlrw==}
-    engines: {node: '>=12'}
-
-  '@sindresorhus/transliterate@1.6.0':
-    resolution: {integrity: sha512-doH1gimEu3A46VX6aVxpHTeHrytJAG6HgdxntYnCFiIFHEM/ZGpG8KiZGBChchjQmG0XFIBL552kBTjVcMZXwQ==}
-    engines: {node: '>=12'}
-
   '@svgr/babel-plugin-add-jsx-attribute@6.5.1':
     resolution: {integrity: sha512-9PYGcXrAxitycIjRmZB+Q0JaN07GZIWaTBIGQzfaZv+qr1n8X1XUEJ5rZ/vx6OVD9RRYlrNnXWExQXcmZeD/BQ==}
     engines: {node: '>=10'}
@@ -2506,14 +2498,14 @@ packages:
     peerDependencies:
       vite: ^4.1.0-beta.0
 
-  '@volar/language-core@2.2.4':
-    resolution: {integrity: sha512-7As47GndxGxsqqYnbreLrfB5NDUeQioPM2LJKUuB4/34c0NpEJ2byVl3c9KYdjIdiEstWZ9JLtLKNTaPWb5jtA==}
+  '@volar/language-core@2.2.5':
+    resolution: {integrity: sha512-2htyAuxRrAgETmFeUhT4XLELk3LiEcqoW/B8YUXMF6BrGWLMwIR09MFaZYvrA2UhbdAeSyeQ726HaWSWkexUcQ==}
 
-  '@volar/source-map@2.2.4':
-    resolution: {integrity: sha512-m92FLpR9vB1YEZfiZ+bfgpLrToL/DNkOrorWVep3pffHrwwI4Tx2oIQN+sqHJfKkiT5N3J1owC+8crhAEinfjg==}
+  '@volar/source-map@2.2.5':
+    resolution: {integrity: sha512-wrOEIiZNf4E+PWB0AxyM4tfhkfldPsb3bxg8N6FHrxJH2ohar7aGu48e98bp3pR9HUA7P/pR9VrLmkTrgCCnWQ==}
 
-  '@volar/typescript@2.2.4':
-    resolution: {integrity: sha512-uAQC53tgEbHO62G8NXMfmBrJAlP2QJ9WxVEEQqqK3I6VSy8frL5LbH3hAWODxiwMWixv74wJLWlKbWXOgdIoRQ==}
+  '@volar/typescript@2.2.5':
+    resolution: {integrity: sha512-eSV/n75+ppfEVugMC/salZsI44nXDPAyL6+iTYCNLtiLHGJsnMv9GwiDMujrvAUj/aLQyqRJgYtXRoxop2clCw==}
 
   '@vue/reactivity@3.1.5':
     resolution: {integrity: sha512-1tdfLmNjWG6t/CsPldh+foumYFo3cpyCHgBYQ34ylaMsJ+SNHQ1kApMIa8jN+i593zQuaw3AdWH0nJTARzCFhg==}
@@ -2644,8 +2636,8 @@ packages:
   asap@2.0.6:
     resolution: {integrity: sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==}
 
-  astro@4.9.0:
-    resolution: {integrity: sha512-beb3go5Oh5QDjns7YVxG1r40Flt/cuXB+YFTnVRqbh2NuMpYRoXZqIT+ZNaorleEfrLjLFXfsn1AAKVP+XZ2KA==}
+  astro@4.9.1:
+    resolution: {integrity: sha512-9TsoAu0WBPiqyAIj9H0JW7R+tIjPjFsPKo70Nja6WL3imTTuUJQmnCre4ZVmoNV3oicTTlb+N4zjRYANW0Ty9A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3164,8 +3156,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.4.779:
-    resolution: {integrity: sha512-oaTiIcszNfySXVJzKcjxd2YjPxziAd+GmXyb2HbidCeFo6Z88ygOT7EimlrEQhM2U08VhSrbKhLOXP0kKUCZ6g==}
+  electron-to-chromium@1.4.780:
+    resolution: {integrity: sha512-NPtACGFe7vunRYzvYqVRhQvsDrTevxpgDKxG/Vcbe0BTNOY+5+/2mOXSw2ls7ToNbE5Bf/+uQbjTxcmwMozpCw==}
 
   emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
@@ -5373,6 +5365,10 @@ packages:
   slate@0.94.1:
     resolution: {integrity: sha512-GH/yizXr1ceBoZ9P9uebIaHe3dC/g6Plpf9nlUwnvoyf6V1UOYrRwkabtOCd3ZfIGxomY4P7lfgLr7FPH8/BKA==}
 
+  slugify@1.6.6:
+    resolution: {integrity: sha512-h+z7HKHYXj6wJU+AnS/+IH8Uh9fdcX1Lrhg1/VMdf9PwoBQXFcXiAdsy2tSK0P6gKwJLXp02r90ahUCqHk9rrw==}
+    engines: {node: '>=8.0.0'}
+
   snake-case@3.0.4:
     resolution: {integrity: sha512-LAOh4z89bGQvl9pFfNF8V146i7o7/CqFPbqzYgP+yYzDIDeS9HaNFtXABamRW+AQzEVODcvE79ljJ+8a9YSdMg==}
 
@@ -6199,8 +6195,8 @@ snapshots:
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@jridgewell/sourcemap-codec': 1.4.15
-      '@volar/language-core': 2.2.4
-      '@volar/typescript': 2.2.4
+      '@volar/language-core': 2.2.5
+      '@volar/typescript': 2.2.5
       semver: 7.6.2
       vscode-languageserver-textdocument: 1.0.11
 
@@ -7757,15 +7753,6 @@ snapshots:
   '@sambego/storybook-styles@1.0.0': {}
 
   '@shikijs/core@1.6.0': {}
-
-  '@sindresorhus/slugify@2.2.1':
-    dependencies:
-      '@sindresorhus/transliterate': 1.6.0
-      escape-string-regexp: 5.0.0
-
-  '@sindresorhus/transliterate@1.6.0':
-    dependencies:
-      escape-string-regexp: 5.0.0
 
   '@svgr/babel-plugin-add-jsx-attribute@6.5.1(@babel/core@7.24.5)':
     dependencies:
@@ -9431,17 +9418,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@volar/language-core@2.2.4':
+  '@volar/language-core@2.2.5':
     dependencies:
-      '@volar/source-map': 2.2.4
+      '@volar/source-map': 2.2.5
 
-  '@volar/source-map@2.2.4':
+  '@volar/source-map@2.2.5':
     dependencies:
       muggle-string: 0.4.1
 
-  '@volar/typescript@2.2.4':
+  '@volar/typescript@2.2.5':
     dependencies:
-      '@volar/language-core': 2.2.4
+      '@volar/language-core': 2.2.5
       path-browserify: 1.0.1
 
   '@vue/reactivity@3.1.5':
@@ -9571,7 +9558,7 @@ snapshots:
 
   asap@2.0.6: {}
 
-  astro@4.9.0:
+  astro@4.9.1:
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.4.0
@@ -9782,7 +9769,7 @@ snapshots:
   browserslist@4.23.0:
     dependencies:
       caniuse-lite: 1.0.30001621
-      electron-to-chromium: 1.4.779
+      electron-to-chromium: 1.4.780
       node-releases: 2.0.14
       update-browserslist-db: 1.0.16(browserslist@4.23.0)
 
@@ -10198,7 +10185,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.4.779: {}
+  electron-to-chromium@1.4.780: {}
 
   emoji-regex@10.3.0: {}
 
@@ -13112,6 +13099,8 @@ snapshots:
       immer: 9.0.21
       is-plain-object: 5.0.0
       tiny-warning: 1.0.3
+
+  slugify@1.6.6: {}
 
   snake-case@3.0.4:
     dependencies:

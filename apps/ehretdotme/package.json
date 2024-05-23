@@ -17,15 +17,15 @@
     "@astrojs/ts-plugin": "^1.8.0",
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
-    "@sindresorhus/slugify": "^2.2.1",
     "@tinacms/cli": "^1.5.45",
     "@types/alpinejs": "^3.13.10",
     "alpinejs": "^3.14.0",
-    "astro": "^4.9.0",
+    "astro": "^4.9.1",
     "highlight.js": "^11.9.0",
     "markdown-it": "^14.1.0",
     "sanitize-html": "^2.13.0",
     "sharp": "^0.33.4",
+    "slugify": "^1.6.6",
     "tinacms": "^1.6.3"
   },
   "devDependencies": {
