@@ -1,5 +1,5 @@
 import { defineConfig } from "tinacms";
-import { tinaCommonFields } from "@packages/utils/tina";
+import { imageUi, tinaCommonFields } from "@packages/utils/tina";
 import slugify from "slugify";
 
 // Your hosting provider likely exposes this as an environment variable
@@ -11,8 +11,6 @@ const posts = {
   path: "src/content/posts",
   fields: [...tinaCommonFields],
 };
-
-const assetPrefix = "../../../public";
 
 const moppas = {
   name: "moppa",
@@ -89,15 +87,7 @@ const moppas = {
           name: "image",
           label: "Image",
           required: true,
-          ui: {
-            // is called on every form change but result is stored in data and not in the form value (saved to file but not displayed to the user)
-            parse: (val?: string) => val && `${assetPrefix}${val}`,
-            // Is called on every form change and the result is put back into the value of the form (displayed to the user)
-            format: (val?: string) =>
-              val && val.startsWith(assetPrefix)
-                ? val.slice(assetPrefix.length)
-                : val,
-          },
+          ui: imageUi,
         },
         {
           type: "string",

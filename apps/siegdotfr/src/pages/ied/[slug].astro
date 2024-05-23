@@ -26,7 +26,15 @@ const { Content, headings } = await post.render();
     <SuperTitle title={title} />
 
     <Responsive>
-      {image && <Figure url={image} title={imageDescription || title} />}
+      {
+        image && (
+          <Figure
+            url={image}
+            title={imageDescription || title}
+            maxHeight="34rem"
+          />
+        )
+      }
 
       {headings && <Toc headings={headings} />}
 
