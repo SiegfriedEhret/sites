@@ -7,6 +7,6 @@ artistName: Robert Indiana
 artistBirth: "1928"
 artistDeath: "2018"
 images:
-  - image: ./robert-indiana-peace-escapes-once-again-2003.png
+  - image: ../../../public/assets/robert-indiana-peace-escapes-once-again-2003.png
 description: Oil on canvas
 ---

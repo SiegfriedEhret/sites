@@ -74,7 +74,7 @@ Interlude: [Carly Rae Jepsen - Higher](https://www.youtube.com/watch?v=Fd_EJSHch
 
 I've been to some events like [coding game «coders stike back»](https://lemag.sfeir.com/codingame-coders-strike-back-debrief/)
 
-![sfeiriens codingame](/contentful/7n8LWUbPu3ppoUmmbueHpk/96888160af45fbf7b519470e794c432f/sfeiriens-codingame2-1024x638.jpg)
+![sfeiriens codingame](../../../public/assets/contentful/7n8LWUbPu3ppoUmmbueHpk/96888160af45fbf7b519470e794c432f/sfeiriens-codingame2-1024x638.jpg)
 
 (That dude with a My Little Pony t-shirt... That is me)
 

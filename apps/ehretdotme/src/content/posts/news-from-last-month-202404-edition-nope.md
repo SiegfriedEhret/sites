@@ -3,7 +3,7 @@ title: No news from last month (2024/04 edition)
 description: No selection of links from last month.
 date: 2024-04-01T00:00:00.000Z
 updatedAt: 2024-04-01T00:00:00.000Z
-image: /assets/newspaper_killed_by_microphone.png
+image: ../../../public/assets/newspaper_killed_by_microphone.png
 imageDescription: A crime scene where a microphone murdered some news. Generated with SDXL 1.0.
 tags:
   - nflm

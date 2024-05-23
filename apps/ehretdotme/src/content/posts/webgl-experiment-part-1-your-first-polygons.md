@@ -13,7 +13,7 @@ Welcome to the first part of these WebGL experiments !
 
 We are going to draw this:
 
-![Two polygons](/contentful/2SPIrkEV61yvelXeUMjvEn/ec1e0eb98becb790077b251c11d593f2/lesson02.jpg)
+![Two polygons](../../../public/assets/contentful/2SPIrkEV61yvelXeUMjvEn/ec1e0eb98becb790077b251c11d593f2/lesson02.jpg)
 (image from [NeHe website](http://nehe.gamedev.net/tutorial/lessons_01__05/22004/))
 
 The demo page is [here](https://dev.ehret.me/webgl-experiments/experiment01.html) and the code is [here](https://github.com/SiegfriedEhret/webgl-experiments).

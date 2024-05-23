@@ -7,6 +7,6 @@ artistName: Pablo Picasso
 artistBirth: "1881"
 artistDeath: "1973"
 images:
-  - image: ./pablo-picasso-still-life-with-pears-1923.jpg
+  - image: ../../../public/assets/pablo-picasso-still-life-with-pears-1923.jpg
 description: Gouache stenciled on paper
 ---

@@ -12,7 +12,7 @@ If you haven't subscribed to [Sidebar](http://sidebar.io/), you should. It is su
 
 Recently, this came out: [Messages redesign by Ramotion](http://www.behance.net/gallery/Messagesapp-Concept/12081377), showing a revamped Messages.app design :
 
-![Messages.app Concept](/contentful/2t559XU2tgaQDkBDpUa5FO/3232144baa7a5fba5fbd1e59c2384f0b/messages_app_concept.jpg)
+![Messages.app Concept](../../../public/assets/contentful/2t559XU2tgaQDkBDpUa5FO/3232144baa7a5fba5fbd1e59c2384f0b/messages_app_concept.jpg)
 
 Then, [this post](http://blog.wells.ee/guys-stop-sexualizing-women-in-your-mockups/) happened, calling for an end of using sexy women in mockups (great article !).
 
@@ -27,7 +27,7 @@ This concept is just an iOS7 styled Messages.app remake.
 Is everything wrong ? Not at all.
 This idea of multiple thumbnails instead of a big picture is pretty sweet:
 
-![Message.app concept transfer](/contentful/4GBPlRWFA8IPA7TuPlagm4/df53609c81b8d6b2943c3e8353d40ec4/messages_app_concept_2_JPG.jpg)
+![Message.app concept transfer](../../../public/assets/contentful/4GBPlRWFA8IPA7TuPlagm4/df53609c81b8d6b2943c3e8353d40ec4/messages_app_concept_2_JPG.jpg)
 
 The design is very nice and **you already know it because you know how iOS7 looks**.
 
@@ -35,7 +35,7 @@ The design is very nice and **you already know it because you know how iOS7 look
 
 This [article](http://blog.wells.ee/guys-stop-sexualizing-women-in-your-mockups/) also shows the [Ripple location based chat app](https://medium.com/design-ux/bb582274b93f)
 
-![Ripple](/contentful/6lLRnaMMBPgk4xo3i5nD1Z/e6478b1865d6b1617184133dc030761c/ripple.png)
+![Ripple](../../../public/assets/contentful/6lLRnaMMBPgk4xo3i5nD1Z/e6478b1865d6b1617184133dc030761c/ripple.png)
 
 It is very nice too. And it is again an iOS7 styled app... And that's their goal: designing for iOS7.
 

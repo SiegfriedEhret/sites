@@ -3,7 +3,7 @@ title: News from last month (2024/03 edition)
 description: A selection of links from last month.
 date: 2024-03-01T00:00:00.000Z
 updatedAt: 2024-03-01T00:00:00.000Z
-image: /assets/810585_xl-1024-v1-0.png
+image: ../../../public/assets/810585_xl-1024-v1-0.png
 imageDescription: >-
   Generated with SDXL 1.0 using the prompt "It's time to get some news. Tank
   Girl delivers, sitting on top of her tank. There are newspapers flying

@@ -30,7 +30,7 @@ When they switch to a flatter design and abandoned skeuomorphism, that was kind 
 
 Now, with the nice, light and clean interface for all app, it became acceptable. For example:
 
-![alarm](/contentful/8OKyvxdPfJhslXJbDP4TZ/bafadde8d8fef574c3df43517da63e23/alarm.png)
+![alarm](../../../public/assets/contentful/8OKyvxdPfJhslXJbDP4TZ/bafadde8d8fef574c3df43517da63e23/alarm.png)
 
 WHAT. THE. HELL.
 

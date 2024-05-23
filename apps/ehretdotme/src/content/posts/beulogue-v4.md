@@ -5,7 +5,7 @@ title: beulogue v4
 description: An update on the stack used for my website.
 tags: []
 image: >-
-  /contentful//4ZGKt8LKA7v8RynaccxQ32/f525b12344e73044ae714a1d792a1b54/beulogue-logo.png
+  ../../../public/assets/contentful/4ZGKt8LKA7v8RynaccxQ32/f525b12344e73044ae714a1d792a1b54/beulogue-logo.png
 imageDescription: beulogue logo
 ---
 

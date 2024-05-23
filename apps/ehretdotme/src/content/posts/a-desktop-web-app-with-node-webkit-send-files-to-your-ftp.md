@@ -18,7 +18,7 @@ The release v0.3.0 is [here](https://github.com/SiegfriedEhret/node-webkit-app/r
 
 It looks like a good old form:
 
-![An experiment with node-webkit: the page !](/contentful/4lqpHbUpwWq67KDo3QKoHv/e3070f48c2e1dcbdc817e94ba9794382/node_webkit_file.jpg)
+![An experiment with node-webkit: the page !](../../../public/assets/contentful/4lqpHbUpwWq67KDo3QKoHv/e3070f48c2e1dcbdc817e94ba9794382/node_webkit_file.jpg)
 
 You will be asked to provide your ftp details, and drop a file on the nice pink (#f39 FTW) on the right.
 

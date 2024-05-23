@@ -7,6 +7,6 @@ artistName: Andrew Wyeth
 artistBirth: "1917"
 artistDeath: "2009"
 images:
-  - image: ./andrew-wyeth-christinas-world-1948.png
+  - image: ../../../public/assets/andrew-wyeth-christinas-world-1948.png
 description: Tempera on panel
 ---

@@ -59,7 +59,7 @@ I was the trainer ([Sébastien](https://twitter.com/sebastienfriess)) 's assista
 
 We create a SFEIR School with my wife: an introduction to the Japanese language !
 
-![aya sieg](/contentful/2z4nQrf1h145yMzMUdsu16/228203babbff4a95ed3d14b850a71f1c/aya-sieg.jpg)
+![aya sieg](../../../public/assets/contentful/2z4nQrf1h145yMzMUdsu16/228203babbff4a95ed3d14b850a71f1c/aya-sieg.jpg)
 
 ### Magic
 
@@ -135,7 +135,7 @@ Things I want to watch:
 
 And the album of the year:
 
-![Open Mike Eagle - Brick Body Kids Still Daydream (Cover)](/contentful/1M4I21nWgxNMVON4YNCtjY/a367c11ecf0ac62958d4c073a20338e4/open-mike-eagle.jpg)
+![Open Mike Eagle - Brick Body Kids Still Daydream (Cover)](../../../public/assets/contentful/1M4I21nWgxNMVON4YNCtjY/a367c11ecf0ac62958d4c073a20338e4/open-mike-eagle.jpg)
 
 [Listen on bandcamp](https://openmikeeagle360.bandcamp.com/album/brick-body-kids-still-daydream).
 

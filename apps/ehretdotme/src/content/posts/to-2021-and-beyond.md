@@ -27,7 +27,7 @@ I was slacking on LinkedIn in the summer and found an interesting opportunity at
 
 In 2019 I got a bike and 2020 was really cool, Strava said I did 3593 kilometers! [My Strava profile](https://www.strava.com/athletes/45491558)
 
-![My bike at the Col de La Croisette](/contentful/6LbNdKhwuFnRgwxtO05LG0/bd0ae345d2a5ba850ba271917333fc2c/IMG_4919.jpg)
+![My bike at the Col de La Croisette](../../../public/assets/contentful/6LbNdKhwuFnRgwxtO05LG0/bd0ae345d2a5ba850ba271917333fc2c/IMG_4919.jpg)
 
 This old bike suffered with me to the top of the few mountains around Geneva, and around Lake Geneva twice!
 

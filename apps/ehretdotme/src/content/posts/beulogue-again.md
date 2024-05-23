@@ -7,7 +7,7 @@ tags:
   - beulogue
 ---
 
-![beulogue logo](/contentful/4ZGKt8LKA7v8RynaccxQ32/f525b12344e73044ae714a1d792a1b54/beulogue-logo.png)
+![beulogue logo](../../../public/assets/contentful/4ZGKt8LKA7v8RynaccxQ32/f525b12344e73044ae714a1d792a1b54/beulogue-logo.png)
 
 > beulogue [\bøloɡ\]: french for blog.
 

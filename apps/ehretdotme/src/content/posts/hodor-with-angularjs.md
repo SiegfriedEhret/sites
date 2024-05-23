@@ -10,7 +10,7 @@ tags:
 
 ## angular-hodor
 
-![Hodor !](/contentful/38log8us31S0ROXlnqJn9b/839584563121d043f69dcee812c88aae/oatmeal_hodor.jpg)
+![Hodor !](../../../public/assets/contentful/38log8us31S0ROXlnqJn9b/839584563121d043f69dcee812c88aae/oatmeal_hodor.jpg)
 
 You'll find more hodor in the [github repository](https://github.com/SiegfriedEhret/angular-hodor).
 

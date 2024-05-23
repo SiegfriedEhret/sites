@@ -21,7 +21,7 @@ When I arrived I received 2 computers: a windows brick to check my MetLife mails
 
 The view was nice also (click on the image to get the big version): will you find the Mount Fuji?
 
-[![Tokyo view from Olinas Tower](/contentful/3d7lMvDA3rVVPE5rZYEGY7/7eed49eada9a4c640232375f8bb001a3/IMG_7067_small.JPG)](https:/contentful/1zaXoC2digGhVxafCFUgoT/9142f7d8eb39af774be88d2cd35d644d/IMG_7067.JPG)
+[![Tokyo view from Olinas Tower](../../../public/assets/contentful/3d7lMvDA3rVVPE5rZYEGY7/7eed49eada9a4c640232375f8bb001a3/IMG_7067_small.JPG)](https:../../../public/assets/contentful/1zaXoC2digGhVxafCFUgoT/9142f7d8eb39af774be88d2cd35d644d/IMG_7067.JPG)
 
 Around the place (it is near Kinshichō, a few stations east of Akihabara) there was a lot of nice restaurants, including interesting ramen shops and a home-like cooking with specialities from the Akita region (known as Andrew's Secret Place).
 
@@ -37,7 +37,7 @@ We are in Geneva and we also have an office in France (I went there) and also in
 
 I bought a bicycle last summer:
 
-![My bike near the Lac Léman](/contentful/4w4V6LLxZjqX9TPfeNJ90Y/c9b87e092e6e27801ab4d23681964060/IMG_20190830_180158.jpg)
+![My bike near the Lac Léman](../../../public/assets/contentful/4w4V6LLxZjqX9TPfeNJ90Y/c9b87e092e6e27801ab4d23681964060/IMG_20190830_180158.jpg)
 
 And it took me:
 
@@ -199,7 +199,7 @@ Hopefully I'll keep on sharing stuff I learn in conferences.
 
 I will continue to learn magic :tophat: :rabbit:. This year I met [Takumi Takahashi](https://www.youtube.com/watch?v=ri61lcjDkG4) and that was amazing!
 
-![Meeting Takumi Takahashi](/contentful/luwQJrg5WGYrWxawBjzK9/1d766da4a43bb27ca6f809640d66b43d/IMG_3707.JPG)
+![Meeting Takumi Takahashi](../../../public/assets/contentful/luwQJrg5WGYrWxawBjzK9/1d766da4a43bb27ca6f809640d66b43d/IMG_3707.JPG)
 
 I will continue to explore Crystal for a bit, I have a few ideas... And I'll probably start (again) my secret project with Svelte & Sapper!
 

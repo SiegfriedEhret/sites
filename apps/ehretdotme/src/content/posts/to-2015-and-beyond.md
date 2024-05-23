@@ -31,7 +31,7 @@ I want to go further and give talks at meetups etc.
 
 Last year, I finished the [Functional Programming Principles in Scala](https://www.coursera.org/course/progfun) coursera, I had a CSS workshop with [Raphaël Goetter](http://goetter.fr/) from [alsacreations](http://www.alsacreations.com/).
 
-![Learn all the things](/contentful/5b94SCN2t2PU34J20FsJUp/dc5cab70587236bf71f15c1700952617/iltni.jpg)
+![Learn all the things](../../../public/assets/contentful/5b94SCN2t2PU34J20FsJUp/dc5cab70587236bf71f15c1700952617/iltni.jpg)
 
 I will continue to use and discover:
 

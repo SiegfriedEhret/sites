@@ -7,7 +7,7 @@ artistName: Pablo Picasso
 artistBirth: "1881"
 artistDeath: "1973"
 images:
-  - image: ./pablo-picasse-girl-with-a-mandolin-fanny-tellier-1910.png
+  - image: ../../../public/assets/pablo-picasse-girl-with-a-mandolin-fanny-tellier-1910.png
 description: |-
   Oil on canvas
 

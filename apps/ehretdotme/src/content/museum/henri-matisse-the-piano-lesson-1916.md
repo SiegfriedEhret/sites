@@ -7,7 +7,7 @@ artistName: Henri Matisse
 artistBirth: "1869"
 artistDeath: "1954"
 images:
-  - image: ./henri-matisse-the-piano-lesson-1916.png
+  - image: ../../../public/assets/henri-matisse-the-piano-lesson-1916.png
 description: |-
   Oil on canvas
 

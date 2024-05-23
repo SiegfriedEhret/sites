@@ -13,7 +13,7 @@ So I heard you liked webgl...
 
 We are going to draw this:
 
-![3D shapes](/contentful/6qtsN2kqo9JLEuNpW9qJ1f/01609330aef4ea462ab26037c2625d48/lesson05.jpg)
+![3D shapes](../../../public/assets/contentful/6qtsN2kqo9JLEuNpW9qJ1f/01609330aef4ea462ab26037c2625d48/lesson05.jpg)
 (image from [NeHe website](http://nehe.gamedev.net/tutorial/lessons_01__05/22004/))
 
 The demo page is [here](https://dev.ehret.me/webgl-experiments/experiment04.html) and the code is [here](https://github.com/SiegfriedEhret/webgl-experiments).

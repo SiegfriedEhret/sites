@@ -35,11 +35,11 @@ The demo page is [here](http://jsfiddle.net/GQBTW/).
 
 On Chrome, when you hover on the label, the border of the input does not change.
 
-![Rendering on Chrome 31](/contentful/1K9jTvF7gI5ZhfU7kusWru/acdac32503152ef2add2715d41997442/chrome_bug_ko.jpg)
+![Rendering on Chrome 31](../../../public/assets/contentful/1K9jTvF7gI5ZhfU7kusWru/acdac32503152ef2add2715d41997442/chrome_bug_ko.jpg)
 
 On other browsers, it is displayed with a nice pink border.
 
-![Rendering on Firefox Aurora](/contentful/4vVN7vw6Wz1NA7OQ8gsXwT/e43861afe0ee66f69f05fd213c5f554d/chrome_bug_ok.jpg)
+![Rendering on Firefox Aurora](../../../public/assets/contentful/4vVN7vw6Wz1NA7OQ8gsXwT/e43861afe0ee66f69f05fd213c5f554d/chrome_bug_ok.jpg)
 
 Tested with Windows 7 & 8 64 bits.
 

@@ -26,7 +26,7 @@ buku is made in Python which, as all Python programs I had troubles to make it w
 
 This is done with `buku -a <url> <tag1, tag2>`, and buku displays the entry:
 
-![Output of buku after adding a bookmark](/contentful/6qj0u4tdI6MENX4umJaVdw/2ac2ae32ad35b6e11b2dad1b5c05191b/buku-svelte.png)
+![Output of buku after adding a bookmark](../../../public/assets/contentful/6qj0u4tdI6MENX4umJaVdw/2ac2ae32ad35b6e11b2dad1b5c05191b/buku-svelte.png)
 
 Note that buku fetches the title for you.
 

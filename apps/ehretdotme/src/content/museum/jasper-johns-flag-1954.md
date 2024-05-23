@@ -6,7 +6,7 @@ name: Flag
 artistName: Jasper Johns
 artistBirth: "1930"
 images:
-  - image: ./jasper-johns-flag-1954.png
+  - image: ../../../public/assets/jasper-johns-flag-1954.png
 description: |-
   Encaustic, oil, and collage on fabric mounted on plywood, three panels
 

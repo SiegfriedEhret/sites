@@ -7,7 +7,7 @@ artistName: Yves Klein
 artistBirth: "1928"
 artistDeath: "1962"
 images:
-  - image: ./yves-klein-blue-monochrome-1961.png
+  - image: ../../../public/assets/yves-klein-blue-monochrome-1961.png
 description: |-
   Dry pigment in polyvinyl acetate on cotton over plywood
 

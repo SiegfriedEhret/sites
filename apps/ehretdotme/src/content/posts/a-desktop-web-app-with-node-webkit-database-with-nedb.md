@@ -24,13 +24,13 @@ To install it, just use `npm install nedb`.
 
 We're adding a page with a form to add dudes
 
-![The dude](/contentful/6uV0HotqpIEoK45TvHJCUC/002baf7788b65102af461d95f2249a55/node_webkit_app_the_dude.jpg)
+![The dude](../../../public/assets/contentful/6uV0HotqpIEoK45TvHJCUC/002baf7788b65102af461d95f2249a55/node_webkit_app_the_dude.jpg)
 
 (image from [imdb](http://www.imdb.com/media/rm452582656/ch0003518/))
 
 The new page looks like this:
 
-![DB test app](/contentful/5dkF0nd6VItUP9T53ZzSpO/8811af3562434a6f8de69ac2441e795a/node_webkit_02.jpg)
+![DB test app](../../../public/assets/contentful/5dkF0nd6VItUP9T53ZzSpO/8811af3562434a6f8de69ac2441e795a/node_webkit_02.jpg)
 
 The page contains:
 

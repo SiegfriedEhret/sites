@@ -3,7 +3,7 @@ title: News from last month (2023/12 edition)
 description: A selection of links from last month.
 date: 2023-11-30T23:00:00.000Z
 updatedAt: 2023-12-04T00:00:00.000Z
-image: /assets/princess.png
+image: ../../../public/assets/princess.png
 imageDescription: >-
   Generated with SDXL 1.0 using the prompt "A Disney princess is looking to save
   some news. Add newspapers everywhere. Short hair. Wearing a hoodie."

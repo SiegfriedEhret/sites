@@ -14,7 +14,7 @@ I made a (really) small [golang](https://golang.org/) project: [gitzytout](https
 
 ## Why go ?
 
-![golang](/contentful/3qVjtvRO0AS6ezERw6pnvr/9a2ec247e79f6279ec745295f6a380cf/Cbcx15qUcAUChGH.jpg)
+![golang](../../../public/assets/contentful/3qVjtvRO0AS6ezERw6pnvr/9a2ec247e79f6279ec745295f6a380cf/Cbcx15qUcAUChGH.jpg)
 
 It is made in [go](https://golang.org) because [Vincent](https://github.com/vbehar) thinks this language is awesome.
 

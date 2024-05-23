@@ -28,7 +28,7 @@ There is a nice Audible app for android on the [Play Store](https://play.google.
 
 **BUT** it's not available for the Kindle.
 
-![Not available](/contentful/25DjWv5KRzFhycHfXPUUj6/dce477f65c646aef5fb3824022c54505/20140426_seriously_amazon_01.jpg)
+![Not available](../../../public/assets/contentful/25DjWv5KRzFhycHfXPUUj6/dce477f65c646aef5fb3824022c54505/20140426_seriously_amazon_01.jpg)
 
 > WHAAAAAAAAAAAAAAAT<br/>&mdash; _Siegfried Ehret_
 

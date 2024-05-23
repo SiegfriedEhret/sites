@@ -7,6 +7,6 @@ artistName: Paul Cézanne
 artistBirth: "1839"
 artistDeath: "1906"
 images:
-  - image: ./paul-cezanne-lestaque-1879-83.png
+  - image: ../../../public/assets/paul-cezanne-lestaque-1879-83.png
 description: Oil on canvas.
 ---

@@ -7,5 +7,5 @@ artistName: Nam June Paik
 artistBirth: "1932"
 artistDeath: "2006"
 images:
-  - image: ./nam-june-paik-burning-buddha-1985.jpg
+  - image: ../../../public/assets/nam-june-paik-burning-buddha-1985.jpg
 ---

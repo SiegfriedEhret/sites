@@ -26,7 +26,7 @@ This week, our latest image was used and the app was not working at all.
 
 MRW I launch the app...
 
-![cry](/contentful/4OMh606Nh4UnwMBFshSchJ/fce512bc338d1322d312eaefe05b2ac4/cry.gif)
+![cry](../../../public/assets/contentful/4OMh606Nh4UnwMBFshSchJ/fce512bc338d1322d312eaefe05b2ac4/cry.gif)
 
 ## What happened
 

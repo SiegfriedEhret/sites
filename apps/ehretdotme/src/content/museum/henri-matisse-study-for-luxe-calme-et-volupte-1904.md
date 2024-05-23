@@ -6,7 +6,7 @@ artistName: Henri Matisse
 artistBirth: "1869"
 artistDeath: "1954"
 images:
-  - image: ./henri-matisse-study-for-luxe-calme-et-volupte-1904.png
+  - image: ../../../public/assets/henri-matisse-study-for-luxe-calme-et-volupte-1904.png
 description: |-
   Oil on canvas
 

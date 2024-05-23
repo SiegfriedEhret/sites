@@ -9,7 +9,7 @@ tags:
 
 Last month, [@thisdotmedia](https://twitter.com/thisdotmedia) hosted an interesting «thisdotjavascript» event, bringing people from popular libraries and framework together:
 
-[![thisdothype stream screenshot](/contentful/1DI4ZTYuqjaRshRRqYOIEU/5987e861316654e27f8be4cdaa1f0805/screenshot.jpg)](https://www.youtube.com/watch?v=InOWBvseRYU)
+[![thisdothype stream screenshot](../../../public/assets/contentful/1DI4ZTYuqjaRshRRqYOIEU/5987e861316654e27f8be4cdaa1f0805/screenshot.jpg)](https://www.youtube.com/watch?v=InOWBvseRYU)
 
 This was really cool and I started following the host twitter account.
 
@@ -17,7 +17,7 @@ The first thing I found strange is that the dude from RxJS is here. It is intere
 
 Then... Sponsoring some things and not all. I made a small program called [thisdothype](https://gitlab.com/SiegfriedEhret/thisdothype), and this is the result (until february, 18th):
 
-![thisdothype graph](/contentful/6NxQshGenSOlzDKmoYc8EU/d0fa14128f31b7566a413323038b13a6/graph.png)
+![thisdothype graph](../../../public/assets/contentful/6NxQshGenSOlzDKmoYc8EU/d0fa14128f31b7566a413323038b13a6/graph.png)
 
 It's a graph, so there is science behind it, and the results are clear: RxJS and Angular are the great winners of this propaganda.
 
@@ -59,7 +59,7 @@ The fact that some people favor a few technologies and their «thought leaders»
 
 From a co-worker:
 
-![thisdothype buddies](/contentful/7GYFKuAXMeu9Rnw64nPSwX/9f6b759b5ad8aa5538ebf291356c1211/buddies.png)
+![thisdothype buddies](../../../public/assets/contentful/7GYFKuAXMeu9Rnw64nPSwX/9f6b759b5ad8aa5538ebf291356c1211/buddies.png)
 
 > For the first webinar. Tracey invited her buddies. And Ben is one of them. It's that simple.
 
@@ -67,6 +67,6 @@ Should the uninvited frameworks be considered dead ? Fuck.
 
 There will be [another session](http://thisdot.co/javascript) on 2/18th, with... The same people as in the first episode:
 
-![thisdotjavascript](/contentful/puUu5ALMULpxSSGF0L9BI/b2ef1c146a8b9b49a4e2ad1a50bf65d8/thisdotjavascript.jpg)
+![thisdotjavascript](../../../public/assets/contentful/puUu5ALMULpxSSGF0L9BI/b2ef1c146a8b9b49a4e2ad1a50bf65d8/thisdotjavascript.jpg)
 
 Wait & see...

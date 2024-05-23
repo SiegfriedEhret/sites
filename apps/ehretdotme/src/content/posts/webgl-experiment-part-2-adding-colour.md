@@ -13,7 +13,7 @@ Part 2 ! OMG !
 
 This is a very small update, and we are going to draw this:
 
-![Polygons with colour](/contentful/62g5dRKJWnhDkjxHoQPAxU/9eb34b8877e8bfeca299a55e4dd0cf83/lesson03.jpg)
+![Polygons with colour](../../../public/assets/contentful/62g5dRKJWnhDkjxHoQPAxU/9eb34b8877e8bfeca299a55e4dd0cf83/lesson03.jpg)
 (image from [NeHe website](http://nehe.gamedev.net/tutorial/lessons_01__05/22004/))
 
 The demo page is [here](https://dev.ehret.me/webgl-experiments/experiment02.html) and the code is [here](https://github.com/SiegfriedEhret/webgl-experiments).

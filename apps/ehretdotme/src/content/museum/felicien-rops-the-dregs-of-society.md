@@ -7,6 +7,6 @@ artistName: Félicien Rops
 artistBirth: "1833"
 artistDeath: "1898"
 images:
-  - image: ./felicien-rops-the-dregs-of-society.jpg
+  - image: ../../../public/assets/felicien-rops-the-dregs-of-society.jpg
 description: Oil on canvas
 ---

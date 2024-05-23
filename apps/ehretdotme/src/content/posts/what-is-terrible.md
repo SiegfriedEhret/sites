@@ -15,7 +15,7 @@ Some people understand the feeling of the author, some don't. Maintainers have m
 
 > A comprehensive guide on how to complain about open source software in an impactful way
 
-![don't](/contentful/6nwSS12L0FUUAay3pAgu6l/e5102b9e0ddef45566438221cc61f38d/dont.jpeg)
+![don't](../../../public/assets/contentful/6nwSS12L0FUUAay3pAgu6l/e5102b9e0ddef45566438221cc61f38d/dont.jpeg)
 
 Wow. Seriously ?
 
@@ -106,4 +106,4 @@ Since the announcement of Angular to the reaction, the only terrible thing is, a
 - on reporting issues
 - on replying and prioritizing things
 
-![opinion](/contentful/3cILIAsSaRHBJFe6gbY0fZ/2f1e670674b4017c435a116bbc641521/opinion.gif)
+![opinion](../../../public/assets/contentful/3cILIAsSaRHBJFe6gbY0fZ/2f1e670674b4017c435a116bbc641521/opinion.gif)

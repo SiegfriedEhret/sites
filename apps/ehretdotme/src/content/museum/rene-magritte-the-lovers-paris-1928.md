@@ -7,7 +7,7 @@ artistName: René Magritte
 artistBirth: "1898"
 artistDeath: "1967"
 images:
-  - image: ./rene-magritte-the-lovers-paris-1928.png
+  - image: ../../../public/assets/rene-magritte-the-lovers-paris-1928.png
 description: |-
   Oil on canvas 
 

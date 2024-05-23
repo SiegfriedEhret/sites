@@ -3,7 +3,7 @@ title: "Interview: Jaana B. Dogan’s vision of Go"
 description: "The conference dotGo\_was the perfect occasion to interview Jaana B. Dogan, Software Engineer at Google. Siegfried Ehret seized the opportunity to learn more about her role in developing tools like\_pprof\_and..."
 date: 2024-02-23T08:02:42.437Z
 updatedAt: 2024-02-23T08:02:42.437Z
-image: /assets/JAANA-GOLANG-520x245.jpg
+image: ../../../public/assets/JAANA-GOLANG-520x245.jpg
 tags:
   - interview
 ---

@@ -5,7 +5,7 @@ title: News from last month (2023/08 edition)
 description: A selection of links from last month.
 tags: []
 image: >-
-  /contentful//5ocLEhcRVh9ds9ym9mZf0V/f8beee244827b4419eefe79f130858a4/628246_A_cover_ad_for_my_blog_post_News_from_last_month__xl-1024-v1-0.png
+  ../../../public/assets/contentful/5ocLEhcRVh9ds9ym9mZf0V/f8beee244827b4419eefe79f130858a4/628246_A_cover_ad_for_my_blog_post_News_from_last_month__xl-1024-v1-0.png
 imageDescription: >-
   Generated with SXDL 1.0 with the prompt "A cover ad for my blog post "News
   from last month" which covers interesting links about programming, society,

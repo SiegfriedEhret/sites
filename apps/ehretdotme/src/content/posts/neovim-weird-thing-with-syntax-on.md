@@ -20,4 +20,4 @@ sudo apt-get install python-pip python-dev
 sudo pip install neovim
 ```
 
-![That's all Folks!](/contentful/1DktW2XUbZKaYxK1lkSvP6/f5a92ac49bab8e5c31984287e2b54407/3082315.jpg)
+![That's all Folks!](../../../public/assets/contentful/1DktW2XUbZKaYxK1lkSvP6/f5a92ac49bab8e5c31984287e2b54407/3082315.jpg)

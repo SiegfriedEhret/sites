@@ -73,13 +73,13 @@ Strava says I did 1267kms; a lot less than last year, but I did some nice rides:
 - [Genève => Col de la Colombière => Annecy => Genève (🚴‍♂️ 138.51km, 🚵‍♂️ 2039m)](https://www.strava.com/activities/5910472999)
 - [Genève => Bellegarde => Col de la faucille => Genève (🚴‍♂️ 115.06km, 🚵‍♂️ 1807m)](https://www.strava.com/activities/6161214080)
 
-![Cycling at the Col de la Givrine](/contentful/7KCFYoeLPELbySXe7h1VgW/c62d5cac2355340658360263412e8e6d/IMG_6553.jpg)
+![Cycling at the Col de la Givrine](../../../public/assets/contentful/7KCFYoeLPELbySXe7h1VgW/c62d5cac2355340658360263412e8e6d/IMG_6553.jpg)
 
 ### Cooking
 
 I continued cooking for a few months, I made some breads and I have never felt so French! I had to stop for a few months for personal reasons but now I can get back into it. Yeah!
 
-![Some bread](/contentful/5m13NvLj1ZecSTI5c9IbtM/940deb9472ad9193c762fa15bf72bb16/IMG_6533.jpg)
+![Some bread](../../../public/assets/contentful/5m13NvLj1ZecSTI5c9IbtM/940deb9472ad9193c762fa15bf72bb16/IMG_6533.jpg)
 
 I also upgraded my cookies level and I am getting close to what I want: some sablés which are cooked but not brown. Still a few tests to do :).
 
@@ -89,15 +89,15 @@ We were able to go to France to see the family a few times.
 
 We also went to Fribourg in July:
 
-![Fribourg](/contentful/6PsLYbiwJ7nwWh3J4g90hq/962ace48fff1ebcf68d61965bdf43cf1/IMG_7414.jpg)
+![Fribourg](../../../public/assets/contentful/6PsLYbiwJ7nwWh3J4g90hq/962ace48fff1ebcf68d61965bdf43cf1/IMG_7414.jpg)
 
 And Thun / Bern in September:
 
-![Thun](/contentful/4bvpNYanEiXrEher3ddlad/349b056f32fbf65dec028cbd74315671/IMG_7907.jpg)
+![Thun](../../../public/assets/contentful/4bvpNYanEiXrEher3ddlad/349b056f32fbf65dec028cbd74315671/IMG_7907.jpg)
 
 We also went to the Musée Rath, part of the Musée d'Art et d'Histoire de Genève for a tête à tête with some art pieces, it was amazing:
 
-![La Toilette d’Atalante from James Pradier at the Musée Rath (Genève)](/contentful/4yIArVbi7lo6mbCP0a3RMX/e23f2ee708ea735ffee79cee2d3eb0fc/IMG_7486.JPG)
+![La Toilette d’Atalante from James Pradier at the Musée Rath (Genève)](../../../public/assets/contentful/4yIArVbi7lo6mbCP0a3RMX/e23f2ee708ea735ffee79cee2d3eb0fc/IMG_7486.JPG)
 
 ### Various
 

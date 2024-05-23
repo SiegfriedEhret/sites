@@ -7,7 +7,7 @@ artistName: Barnett Newman
 artistBirth: "1905"
 artistDeath: "1970"
 images:
-  - image: ./barnett-newman-vir-heroicus-sublimis-1950-51.png
+  - image: ../../../public/assets/barnett-newman-vir-heroicus-sublimis-1950-51.png
 description: |-
   Oil on canvas.
 

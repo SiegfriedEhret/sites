@@ -6,7 +6,7 @@ description: I read that !
 tags: []
 ---
 
-![Bennett speaks "da female language"](/contentful/1YbAZDYHqQiRJoNJqdVopf/6ea44a69b73159fdcc1b0f69fa69c5e8/tumblr_lw82dbpfM41qk9nrro1_500.png)
+![Bennett speaks "da female language"](../../../public/assets/contentful/1YbAZDYHqQiRJoNJqdVopf/6ea44a69b73159fdcc1b0f69fa69c5e8/tumblr_lw82dbpfM41qk9nrro1_500.png)
 (from [here](http://textsfrombennett.tumblr.com/post/14242386878/bennett-is-a-ninja-textsfrombennett))
 
 ## Mac Lethal ?
@@ -55,5 +55,5 @@ I can't wait to see what happens with this: [FX Buys Odd Couple Comedy From Rand
 
 ## Last words
 
-![Bennett and transformers](/contentful/75Gl0DFae9VjJzsqFeGsx/5c384842c459f791c235ab1e43c5c560/tumblr_lvyeyqgR271qk9nrro1_500.png)
+![Bennett and transformers](../../../public/assets/contentful/75Gl0DFae9VjJzsqFeGsx/5c384842c459f791c235ab1e43c5c560/tumblr_lvyeyqgR271qk9nrro1_500.png)
 (from [here](http://textsfrombennett.tumblr.com/post/13979698816/bennett-loves-transformers-2-textsfrombennett))

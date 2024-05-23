@@ -7,7 +7,7 @@ artistName: Morris Louis
 artistBirth: "1912"
 artistDeath: "1962"
 images:
-  - image: ./morris-louis-intrigue-1954.png
+  - image: ../../../public/assets/morris-louis-intrigue-1954.png
 description: |-
   Acrylic on canvas
 

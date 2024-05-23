@@ -7,5 +7,5 @@ artistName: Vincent Van Gogh
 artistBirth: "1953"
 artistDeath: "1890"
 images:
-  - image: ./vincent-van-gogh-the-olive-trees-1889.png
+  - image: ../../../public/assets/vincent-van-gogh-the-olive-trees-1889.png
 ---

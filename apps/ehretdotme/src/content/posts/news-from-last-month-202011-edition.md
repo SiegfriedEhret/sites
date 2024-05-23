@@ -102,7 +102,7 @@ En français / In French:
 
 Currently, the [youtube-dl repository is down](https://github.com/ytdl-org/youtube-dl/):
 
-![DMCA takedown on youtube-dl repository](/contentful/2mukvIPAwUuFvjFoBv3mVX/a825cdcc2c12b2be84d8c1ca52d4b3f2/ytdl.png)
+![DMCA takedown on youtube-dl repository](../../../public/assets/contentful/2mukvIPAwUuFvjFoBv3mVX/a825cdcc2c12b2be84d8c1ca52d4b3f2/ytdl.png)
 
 You can [download youtube-dl on their website](https://yt-dl.org/), and the source is available in the [github.com/github/dmca](https://github.com/github/dmca/tree/416da574ec0df3388f652e44f7fe71b1e3a4701f) 😄.
 

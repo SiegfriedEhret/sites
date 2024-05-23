@@ -13,7 +13,7 @@ A very small update from [part 2](/en/webgl-experiment-part-2-adding-colour/).
 
 We will only rotate our elements.
 
-![Polygons and rotation](/contentful/13NtKTSTFmYKBT7e7S8d8I/063438d478931698e7f32747518a4339/lesson04.jpg)
+![Polygons and rotation](../../../public/assets/contentful/13NtKTSTFmYKBT7e7S8d8I/063438d478931698e7f32747518a4339/lesson04.jpg)
 (image from [NeHe website](http://nehe.gamedev.net/tutorial/lessons_01__05/22004/))
 
 The demo page is [here](https://dev.ehret.me/webgl-experiments/experiment03.html) and the code is [here](https://github.com/SiegfriedEhret/webgl-experiments).

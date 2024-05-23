@@ -107,7 +107,7 @@ Then, go to your server on port 33411 to see Mailpile's frontend: http://my-serv
 
 You should see Mailpile interface:
 
-![Mailpile interface](/contentful/7rsKQ64TT7HBfpgTX6HSyz/5b725d042d67245a08a3be28e47915f2/Mailpile_0_1_Interface_Inbox.jpg)
+![Mailpile interface](../../../public/assets/contentful/7rsKQ64TT7HBfpgTX6HSyz/5b725d042d67245a08a3be28e47915f2/Mailpile_0_1_Interface_Inbox.jpg)
 
 ## nginx
 

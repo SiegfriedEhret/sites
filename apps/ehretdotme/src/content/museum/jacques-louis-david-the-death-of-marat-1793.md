@@ -7,6 +7,6 @@ artistName: Jacques-Louis David
 artistBirth: "1748"
 artistDeath: "1825"
 images:
-  - image: ./jacques-louis-david-the-death-of-marat-1793.jpg
+  - image: ../../../public/assets/jacques-louis-david-the-death-of-marat-1793.jpg
 description: Oil on canvas
 ---

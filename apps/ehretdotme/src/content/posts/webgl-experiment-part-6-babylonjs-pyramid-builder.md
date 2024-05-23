@@ -11,7 +11,7 @@ tags:
 
 In this experiment, we will create this:
 
-![A pyramid !](/contentful/Ycy8Oui2qXAgUoRA9hbUn/e75b172afddb68502e2297edce8cd214/experiment06_JPG-1.jpg)
+![A pyramid !](../../../public/assets/contentful/Ycy8Oui2qXAgUoRA9hbUn/e75b172afddb68502e2297edce8cd214/experiment06_JPG-1.jpg)
 
 The demo page is [here](https://dev.ehret.me/webgl-experiments/experiment06.html) and the code is [here](https://github.com/SiegfriedEhret/webgl-experiments).
 

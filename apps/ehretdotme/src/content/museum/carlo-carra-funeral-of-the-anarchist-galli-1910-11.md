@@ -7,7 +7,7 @@ artistName: Carlo Carrà
 artistBirth: "1881"
 artistDeath: "1966"
 images:
-  - image: ./carlo-carra-funeral-of-the-anarchist-galli-1910-11.png
+  - image: ../../../public/assets/carlo-carra-funeral-of-the-anarchist-galli-1910-11.png
 description: |-
   Oil on canvas
 

@@ -7,7 +7,7 @@ artistName: René Magritte
 artistBirth: "1898"
 artistDeath: "1967"
 images:
-  - image: ./rene-magritte-the-palace-of-curtains-iii-1928-29.png
+  - image: ../../../public/assets/rene-magritte-the-palace-of-curtains-iii-1928-29.png
 description: |-
   Oil on canvas
 

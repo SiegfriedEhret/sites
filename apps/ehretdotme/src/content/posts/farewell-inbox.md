@@ -15,7 +15,7 @@ So I am back to the current setup:
 
 ## Inbox: the good parts
 
-![me-gusta](/contentful/8iWJdC1t28LuRHkBMpEsI/46e32b78368fae06f9cd7667030f1061/me-gusta.jpg)
+![me-gusta](../../../public/assets/contentful/8iWJdC1t28LuRHkBMpEsI/46e32b78368fae06f9cd7667030f1061/me-gusta.jpg)
 
 - The swiping thing on the mobile app.
 - Delaying mails for later.
@@ -23,7 +23,7 @@ So I am back to the current setup:
 
 ## Inbox: the not so good parts
 
-![no-me-gusta](/contentful/H5MAcDwNu5hFzrLg8JO1n/0f510ac88325080f7655c61f9764018a/no-me-gusta.png)
+![no-me-gusta](../../../public/assets/contentful/H5MAcDwNu5hFzrLg8JO1n/0f510ac88325080f7655c61f9764018a/no-me-gusta.png)
 
 - I prefer my old manual classification, using labels and rules.
 - No clear count of mails.

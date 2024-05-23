@@ -9,7 +9,7 @@ tags:
 
 A few days ago I gave a [talk](http://cfp.devoxx.fr/2016/talk/YXM-4879/la-quete-du-graal.js) with [Romain](https://twitter.com/rmat0n) at [Devoxx France](http://devoxx.fr/), about frontend JavaScript and the hype of frameworks. I was able to listen to 2 talks where [TypeScript](http://www.typescriptlang.org/) was mentioned.
 
-![typescript](/contentful/r8d34JqRZr1mEfMJBdlHZ/461c16ad5fde99118fafe5f8eca55fbf/typescript.jpg)
+![typescript](../../../public/assets/contentful/r8d34JqRZr1mEfMJBdlHZ/461c16ad5fde99118fafe5f8eca55fbf/typescript.jpg)
 
 Here are a few personal thoughts about my interactions with the TypeScript world.
 
@@ -17,17 +17,17 @@ Here are a few personal thoughts about my interactions with the TypeScript world
 
 There are a lot of [articles](https://medium.com/@basarat/typescript-won-a4e0dfde4b08) or [presentations](https://speakerdeck.com/vberetti/devoxx-fr-2016-typescript) depicting TypeScript as a superset of ES5/ES6 (and more). Something like:
 
-![typescript is wrong](/contentful/5LGgXA9Iqq5dDyhoT1BLpT/09f94fa4464d993cc23a5541db7d1d8b/wrong.png)
+![typescript is wrong](../../../public/assets/contentful/5LGgXA9Iqq5dDyhoT1BLpT/09f94fa4464d993cc23a5541db7d1d8b/wrong.png)
 
 TypeScript is actually compatible with [60% of ES6](https://kangax.github.io/compat-table/es6/#typescript):
 
-![kangax stats on compilers and polyfills](/contentful/XcyEJat7NJ7hbYY8JhAbm/d106000101869c57519b452924ef0de9/kangax.png)
+![kangax stats on compilers and polyfills](../../../public/assets/contentful/XcyEJat7NJ7hbYY8JhAbm/d106000101869c57519b452924ef0de9/kangax.png)
 
 Even the current page of the [french wikipedia](https://fr.wikipedia.org/wiki/TypeScript) is misleading about the reality of TypeScript:
 
 > Is supports the ECMAScript 6 specification.
 
-![Wikipedia article about TypeScript](/contentful/5UY3b4USNsh4RypJV40B5p/7629c76cd7a1760bed7a33647d9e6a22/wikipedia.png)
+![Wikipedia article about TypeScript](../../../public/assets/contentful/5UY3b4USNsh4RypJV40B5p/7629c76cd7a1760bed7a33647d9e6a22/wikipedia.png)
 
 ## TypeScript is not a standard
 
@@ -57,7 +57,7 @@ This was a punchline from [this talk](https://speakerdeck.com/vberetti/devoxx-fr
 
 Look at this example from Angular 2:
 
-![An example with angular and TypeScript](/contentful/5zrNqgmxK93jJAmXkX1Ub6/f8afe5df2266224d54b5de565e64980b/angular2-code.png)
+![An example with angular and TypeScript](../../../public/assets/contentful/5zrNqgmxK93jJAmXkX1Ub6/f8afe5df2266224d54b5de565e64980b/angular2-code.png)
 
 It's like... Java.
 

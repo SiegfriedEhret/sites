@@ -3,7 +3,7 @@ title: To 2024 and beyond
 description: It is that time again... A review of last year.
 date: 2024-01-01T10:00:00.000Z
 updatedAt: 2024-01-01T10:00:00.000Z
-image: /assets/3543543300_xl-1024-v0-9.png
+image: ../../../public/assets/3543543300_xl-1024-v0-9.png
 imageDescription: Generated using stable-diffusion-xl-1024-v0-9.
 tags:
   - personalbranling
@@ -52,15 +52,15 @@ And we moved Ayako’s email out of Gmail to a Fastmail account (if you want one
 
 We went to Japan to see the family. We went to Tokyo and Kyoto. Here is a view of the [torii gates](https://en.wikipedia.org/wiki/Torii) in Fushimi Inari-taisha:
 
-![](/assets/IMG_8860.JPG "First time going to Fushimi Inari-taisha in Kyoto")
+![](../../../public/assets/IMG_8860.JPG "First time going to Fushimi Inari-taisha in Kyoto")
 
 The aquarium in Kyoto is great! Here is a picture of me and my daughter:
 
-![](/assets/IMG_8758.JPG "That's me and our daughter!")
+![](../../../public/assets/IMG_8758.JPG "That's me and our daughter!")
 
 We also went to Chamonix to celebrate the 2 years of our daughter, we had a nice view:
 
-![](/assets/IMG_7239.jpg)
+![](../../../public/assets/IMG_7239.jpg)
 
 Also: Brussels (where I did some babysitting while Ayako gave a course), Burgundy and Paris to meet some friends, Saillon to enjoy a nice restaurant and the pool with our daughter, and Nice for Christmas
 

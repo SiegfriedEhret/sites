@@ -6,7 +6,7 @@ name: "The Marriage of Reason and Squalor, II"
 artistName: Frank Stella
 artistBirth: "1936"
 images:
-  - image: ./frank-stella-the-marriage-of-reason-and-squalor-ii-1959.png
+  - image: ../../../public/assets/frank-stella-the-marriage-of-reason-and-squalor-ii-1959.png
 description: |-
   Enamel on canvas.
 

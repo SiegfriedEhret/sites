@@ -42,17 +42,17 @@ I am still cooking a bit and baking some cakes! I improved on the cookies game, 
 
 We were able to go to Japan (after a cancellation from Air France the day before because Russia, we went with Etihad) for a few weeks.
 
-![Enjoying some sakura trees in Tokyo](/contentful/6FmbSHmmJyKf5EgYpuDV2X/b2fec28ae0b51a03ec5a0cb53dc59d60/IMG_0340.jpg)
+![Enjoying some sakura trees in Tokyo](../../../public/assets/contentful/6FmbSHmmJyKf5EgYpuDV2X/b2fec28ae0b51a03ec5a0cb53dc59d60/IMG_0340.jpg)
 
 I highly recommend going to Japan when tourists are not allowed, we were able to go to the top of Sky Tree and it was almost empty:
 
-![View from Sky Tree in Tokyo](/contentful/1SV2ECcIyPFCYZ3MOOhtdC/3f54e18ccd45bc3685f378b5d970d768/IMG_0536.jpg)
+![View from Sky Tree in Tokyo](../../../public/assets/contentful/1SV2ECcIyPFCYZ3MOOhtdC/3f54e18ccd45bc3685f378b5d970d768/IMG_0536.jpg)
 
 We also went to Paris and Lyon to visit some friends and family.
 
 For the summer holidays, we went to Vevey / Montreux, then Gstaad, and Gruyères. We took the [Belle Époque train from Montreux to Gstaad](https://mob.ch/activity/belle-epoque/?lang=en) because [i really like to ride the train](https://www.youtube.com/watch?v=7KjrrBaNljg):
 
-![View from the train between Montreux and Gstaad](/contentful/727UuQDvt3jlpRnXMLYnX1/11fa0580b7583a6bf0d67964e942e65a/IMG_1676.jpg)
+![View from the train between Montreux and Gstaad](../../../public/assets/contentful/727UuQDvt3jlpRnXMLYnX1/11fa0580b7583a6bf0d67964e942e65a/IMG_1676.jpg)
 
 ## Entertainment
 

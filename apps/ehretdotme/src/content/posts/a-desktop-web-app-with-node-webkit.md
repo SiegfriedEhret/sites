@@ -112,7 +112,7 @@ The `node-webkit-builder` grunt task creates a package (a nice 52mb application 
 
 ## Demo time !
 
-![node-webkit demo app](/contentful/4NZxelKwaboTHhePuNB6fn/22a1ed15042bc6a26a78b824a80bb9d1/node_webkit_01.jpg)
+![node-webkit demo app](../../../public/assets/contentful/4NZxelKwaboTHhePuNB6fn/22a1ed15042bc6a26a78b824a80bb9d1/node_webkit_01.jpg)
 
 [Download the release file if you don't want to build it yourself](https://github.com/SiegfriedEhret/node-webkit-app/releases/tag/v0.1.0)
 

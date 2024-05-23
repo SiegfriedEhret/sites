@@ -5,7 +5,7 @@ title: News from last month (2023/10 edition)
 description: A selection of links from last month.
 tags: []
 image: >-
-  /contentful//6oddr5yVwPqNQbE81LZu4c/c6401c0633b408bdbf17b7ee96d10174/264310_The_news_are_missing._She_is_here_to_bring_them_ba_xl-1024-v1-0.png
+  ../../../public/assets/contentful/6oddr5yVwPqNQbE81LZu4c/c6401c0633b408bdbf17b7ee96d10174/264310_The_news_are_missing._She_is_here_to_bring_them_ba_xl-1024-v1-0.png
 imageDescription: >-
   Generated with SDXL 1.0 with the prompt "The news are missing. She is here to
   bring them back. The scene shows a whirlpool of newspapers flying around her."

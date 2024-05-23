@@ -7,6 +7,6 @@ artistName: Alphonse Mucha
 artistBirth: "1860"
 artistDeath: "1939"
 images:
-  - image: ./alphonse-mucha-the-nature-1899-1900.jpg
+  - image: ../../../public/assets/alphonse-mucha-the-nature-1899-1900.jpg
 description: "Gilt bronze, malachite ornaments"
 ---

@@ -53,7 +53,7 @@ Oh, and my computer is quite old so everything runs quite slowly.
 
 For the "base" dataset, we run each generator on 1 document only.
 
-![Frameworks performance for 1 document](/contentful/4Wvaj10WUfhiWIxS3TkbTK/f3cb55202f075ab1625f34ebcb7fe2eb/base.png)
+![Frameworks performance for 1 document](../../../public/assets/contentful/4Wvaj10WUfhiWIxS3TkbTK/f3cb55202f075ab1625f34ebcb7fe2eb/base.png)
 
 beulogue wins! :trophy:
 
@@ -61,7 +61,7 @@ beulogue wins! :trophy:
 
 For the "small" dataset, we run each generator on [0, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024] documents.
 
-![Frameworks performance for small sites](/contentful/22vv4UMbOpZW00pyjBNEXb/5c61075f332daef5410bd2257dacd1ad/small-sites.png)
+![Frameworks performance for small sites](../../../public/assets/contentful/22vv4UMbOpZW00pyjBNEXb/5c61075f332daef5410bd2257dacd1ad/small-sites.png)
 
 beulogue performs quite well, close to Hugo for small sites, with a weird progression to join Eleventy in the end. Let's see how it goes for larger sites.
 
@@ -69,7 +69,7 @@ beulogue performs quite well, close to Hugo for small sites, with a weird progre
 
 For the "large" dataset, we run each generator on [1000, 2000, 4000, 8000, 16000, 32000, 64000] documents. This takes quite some time!
 
-![Frameworks performance for large sites](/contentful/71347oDwPwf1v2KFYPbLSs/158e938aeb9becec152fa858f6e1b1b8/large-sites.png)
+![Frameworks performance for large sites](../../../public/assets/contentful/71347oDwPwf1v2KFYPbLSs/158e938aeb9becec152fa858f6e1b1b8/large-sites.png)
 
 beulogue stays close to Eleventy. Jekyll and Next.js are a bit faster.
 

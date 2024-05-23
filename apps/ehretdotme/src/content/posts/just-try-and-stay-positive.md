@@ -69,4 +69,4 @@ More importantly, I hope that I will be able to find the right tool to solve a p
 
 Let's end this with a quote from a recent blog post from Jett Atwood: «[To Serve Man, with Software](https://blog.codinghorror.com/to-serve-man-with-software/)»,
 
-![What do you love most about coding?](/contentful/5WcNMpDjD2V6pfvDE33qdU/575514458dc4499343417d071d173a9a/dk-findout-coding-page-50-quote.jpg)
+![What do you love most about coding?](../../../public/assets/contentful/5WcNMpDjD2V6pfvDE33qdU/575514458dc4499343417d071d173a9a/dk-findout-coding-page-50-quote.jpg)

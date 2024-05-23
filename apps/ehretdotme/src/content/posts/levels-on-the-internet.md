@@ -19,7 +19,7 @@ It's like a skill tree.
 
 Level 0:
 
-![Too many toolbars](/contentful/2rdF3fWfdYxfH1YYDYdwFw/43863f4c9a1650af33401465b6116bd9/Too_many_toolbars-1024x837.jpg)
+![Too many toolbars](../../../public/assets/contentful/2rdF3fWfdYxfH1YYDYdwFw/43863f4c9a1650af33401465b6116bd9/Too_many_toolbars-1024x837.jpg)
 
 Level 1: Google, Hotmail
 
@@ -57,8 +57,8 @@ Level 17: Bodily fluids routinely stored in Mountain Dew bottles, ability to DDO
 
 Level 18: Become FCC Chairman because fucking the entire Internet gives you a sense of pride and accomplishment.
 
-![dance](/contentful/3AjpfuOKt8jTBzoQFpMt8l/670809a56f81ad94f7932acfb694a7f8/dance.gif)
+![dance](../../../public/assets/contentful/3AjpfuOKt8jTBzoQFpMt8l/670809a56f81ad94f7932acfb694a7f8/dance.gif)
 
 Ability to see the future..
 
-![what is net neutrality isp package diagram](/contentful/6LJNbx1mcI6UhOIwvE5c5x/e225fcc49817c65534ad4f8e5a02b07c/what-is-net-neutrality-isp-package-diagram.0.jpg)
+![what is net neutrality isp package diagram](../../../public/assets/contentful/6LJNbx1mcI6UhOIwvE5c5x/e225fcc49817c65534ad4f8e5a02b07c/what-is-net-neutrality-isp-package-diagram.0.jpg)

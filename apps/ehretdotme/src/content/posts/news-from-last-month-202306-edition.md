@@ -5,7 +5,7 @@ title: News from last month (2023/06 edition)
 description: A selection of links from last month.
 tags: []
 image: >-
-  /contentful//4zhUWg8f3WnIrQSXBAczIQ/97b1628b273f4c652fefaaf647ddf505/0_An_illustration_for_my_monthly_post_called_News_f_esrgan-v1-x2plus.png
+  ../../../public/assets/contentful/4zhUWg8f3WnIrQSXBAczIQ/97b1628b273f4c652fefaaf647ddf505/0_An_illustration_for_my_monthly_post_called_News_f_esrgan-v1-x2plus.png
 imageDescription: >-
   Generated using stable-diffusion-xl-beta-v2-2-2, with the prompt « An
   illustration for my monthly post called "News from last month", with all the

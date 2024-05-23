@@ -7,6 +7,6 @@ artistName: Giacomo Del Po
 artistBirth: "1652"
 artistDeath: "1726"
 images:
-  - image: ./giacomo-del-po-gates-of-hell-1703-08.png
+  - image: ../../../public/assets/giacomo-del-po-gates-of-hell-1703-08.png
 description: Oil on canvas
 ---

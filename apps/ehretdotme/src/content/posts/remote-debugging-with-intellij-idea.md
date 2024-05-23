@@ -57,13 +57,13 @@ And the javac task:
 
 In the edit configuration :
 
-![intellij-remote](https:/contentful/3ztEeHuXG1tb6awJQJMt2/e1362f8a76294572bbe5da0792a2638a/intellij-remote.png)
+![intellij-remote](https:../../../public/assets/contentful/3ztEeHuXG1tb6awJQJMt2/e1362f8a76294572bbe5da0792a2638a/intellij-remote.png)
 
 ## Debug session
 
 Start tomcat with the debug options, then, in IntelliJ IDEA:
 
-![Run debug tools in IntelliJ IDEA](https:/contentful/5N61k8YH2ojywooGbwbjO/f4fcdf8d7733ef6dcce4e2a50028f537/intellij-debug.png)
+![Run debug tools in IntelliJ IDEA](https:../../../public/assets/contentful/5N61k8YH2ojywooGbwbjO/f4fcdf8d7733ef6dcce4e2a50028f537/intellij-debug.png)
 
 This load the debugging tools from Intellij, and you can add breakpoints to your code and follow stuff...
 

@@ -5,7 +5,7 @@ description: >-
   talk architecture with Kubernetes, Go, and microservices !
 date: 2024-02-23T08:02:42.437Z
 updatedAt: 2024-02-23T08:02:42.437Z
-image: /assets/Interview-Taichi-Nakashima-from-Mercari-720x340.jpg
+image: ../../../public/assets/Interview-Taichi-Nakashima-from-Mercari-720x340.jpg
 tags:
   - interviews
 ---

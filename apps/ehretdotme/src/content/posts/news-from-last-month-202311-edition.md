@@ -3,7 +3,7 @@ title: News from last month (2023/11 edition)
 description: A selection of links from last month.
 date: 2023-10-31T23:00:00.000Z
 updatedAt: 2023-10-31T23:00:00.000Z
-image: /assets/news-ukiyo-e.png
+image: ../../../public/assets/news-ukiyo-e.png
 imageDescription: >-
   Generated with SDXL 1.0 with the prompt "A japanese woman looking for some
   news. Like Ukiyo-e from Hokusai, with the Fuji in the background."

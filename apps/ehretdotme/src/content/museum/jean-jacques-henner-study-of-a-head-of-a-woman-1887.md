@@ -7,6 +7,6 @@ artistName: Jean-Jacques Henner
 artistBirth: "1829"
 artistDeath: "1905"
 images:
-  - image: ./jean-jacques-henner-study-of-a-head-of-a-woman-1887.png
+  - image: ../../../public/assets/jean-jacques-henner-study-of-a-head-of-a-woman-1887.png
 description: Oil on canvas
 ---

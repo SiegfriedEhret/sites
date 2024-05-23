@@ -3,7 +3,7 @@ title: "News from last month (2024/04), developer edition"
 description: A selection of links from last month.
 date: 2024-04-02T00:00:00.000Z
 updatedAt: 2024-04-02T00:00:00.000Z
-image: /assets/back_to_the_news.png
+image: ../../../public/assets/back_to_the_news.png
 imageDescription: >-
   The delorean from back to the future has returned with some news. Generated with
   SDXL 1.0.

@@ -7,7 +7,7 @@ artistName: Andy Warhol
 artistBirth: "1928"
 artistDeath: "1987"
 images:
-  - image: ./andy-warhol-gold-marilyn-monroe-1962.png
+  - image: ../../../public/assets/andy-warhol-gold-marilyn-monroe-1962.png
 description: >-
   Silkscreen ink and acrylic on canvas.
 

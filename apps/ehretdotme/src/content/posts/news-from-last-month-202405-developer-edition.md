@@ -3,7 +3,7 @@ title: "News from last month (2024/05), developer edition"
 description: A selection of links from last month.
 date: 2024-05-01T00:00:00.000Z
 updatedAt: 2024-05-01T00:00:00.000Z
-image: /assets/hase-dera-kamakura.jpg
+image: ../../../public/assets/hase-dera-kamakura.jpg
 imageDescription: "A picture from a garden in Hase-dera, a Buddhist temple in Kamakura."
 tags:
   - nflm

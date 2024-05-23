@@ -5,7 +5,7 @@ title: News from last month (2023/09 edition)
 description: A selection of links from last month.
 tags: []
 image: >-
-  /contentful//67VZIS7iW4fVKHD4pxSw43/0f38f81361fc9ecd379954642e7e9e61/293435_The_news_are_missing_and_a_samurai_is_here_to_brin_xl-1024-v1-0.png
+  ../../../public/assets/contentful/67VZIS7iW4fVKHD4pxSw43/0f38f81361fc9ecd379954642e7e9e61/293435_The_news_are_missing_and_a_samurai_is_here_to_brin_xl-1024-v1-0.png
 imageDescription: >-
   Generated with SDXL 1.0, with the prompt "The news are missing and a samurai
   is here to bring them from the past. The scene shows a whirlpool of newspapers

@@ -7,7 +7,7 @@ description: >-
   advocate at Google, working on the open web.
 tags: []
 image: >-
-  /contentful//ll4Wpe9vkudu6lnMnHVSB/eb52eb0962fc60f8d5f89da46cde3970/IMG_2398.jpg
+  ../../../public/assets/contentful/ll4Wpe9vkudu6lnMnHVSB/eb52eb0962fc60f8d5f89da46cde3970/IMG_2398.jpg
 imageDescription: With Eiji Kitamura
 ---
 
@@ -158,4 +158,4 @@ Find Eiji on :
 - Mastodon: [@agektmr@toot.cafe](https://toot.cafe/@agektmr)
 - Medium: [https://medium.com/@agektmr](https://medium.com/@agektmr)
 
-![View from the Google office in Tokyo](/contentful/LzbRHlvTtTkmYkIgclpJy/47e9f852640ebb0575ef574a1ae4939a/IMG_2388.jpg)
+![View from the Google office in Tokyo](../../../public/assets/contentful/LzbRHlvTtTkmYkIgclpJy/47e9f852640ebb0575ef574a1ae4939a/IMG_2388.jpg)

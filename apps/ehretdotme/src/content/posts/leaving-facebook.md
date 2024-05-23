@@ -10,7 +10,7 @@ tags: []
 
 Mostly because I think these are more insteresting than facebook, which is full of shitty ads and videos instead of news about my friends.
 
-![beaker dont give a fuck](/contentful/4iMyQy9PEpmploO94SKHyw/f677692ecf8420abac4b3ac5242057ef/beaker-dont-give-a-fuck-700x437.jpg)
+![beaker dont give a fuck](../../../public/assets/contentful/4iMyQy9PEpmploO94SKHyw/f677692ecf8420abac4b3ac5242057ef/beaker-dont-give-a-fuck-700x437.jpg)
 
 ## But where can I reach you ?
 

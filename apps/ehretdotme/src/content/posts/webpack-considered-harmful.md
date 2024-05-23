@@ -16,7 +16,7 @@ Edit: 2016-09-08
 
 [webpack](https://webpack.github.io/) is a module bundler. Bundling files is its goal.
 
-![what is webpack](/contentful/1zYfudDplLiPRz2awDUcEA/5bfbb74a07ef9ba3db323b0e6a377e0a/what-is-webpack.png)
+![what is webpack](../../../public/assets/contentful/1zYfudDplLiPRz2awDUcEA/5bfbb74a07ef9ba3db323b0e6a377e0a/what-is-webpack.png)
 
 In most cases you will be able to replace your build toolchain (with _legacy_ things like [grunt](http://gruntjs.com/) or [gulp](http://gulpjs.com/)) with webpack, but keep in mind that their goals are different.
 
@@ -87,4 +87,4 @@ Repeat after me:
 - Webpack is a module bundler.
 - Keep your tools and your app independant.
 
-![One doesn't simply do webpack](/contentful/1QXYIhnZE1gCGQabEVs04w/ad57f8ee795594de7e1ff9ac866314bc/67462178.jpg)
+![One doesn't simply do webpack](../../../public/assets/contentful/1QXYIhnZE1gCGQabEVs04w/ad57f8ee795594de7e1ff9ac866314bc/67462178.jpg)

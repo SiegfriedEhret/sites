@@ -10,7 +10,7 @@ tags:
 
 ## react-hodor
 
-![Hodor !](/contentful/38log8us31S0ROXlnqJn9b/839584563121d043f69dcee812c88aae/oatmeal_hodor.jpg)
+![Hodor !](../../../public/assets/contentful/38log8us31S0ROXlnqJn9b/839584563121d043f69dcee812c88aae/oatmeal_hodor.jpg)
 
 - The demo is [here](https://dev.ehret.me/react-hodor/demo/).
 - The repo is [here](https://github.com/SiegfriedEhret/react-hodor)

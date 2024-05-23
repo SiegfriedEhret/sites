@@ -12,11 +12,11 @@ tags:
 
 What is the difference between:
 
-![angularjs old](/contentful/5xhW8Ivq8MwrTSGfvhQl96/566dc2c5397970ddc7b20e080d16dd9b/angularjs-old.png)
+![angularjs old](../../../public/assets/contentful/5xhW8Ivq8MwrTSGfvhQl96/566dc2c5397970ddc7b20e080d16dd9b/angularjs-old.png)
 
 and
 
-![angularjs new](/contentful/1EWdiXVJy5fm66xcle8bco/3122d186ea8d162091f542ff7779a1ed/angularjs-new.png)
+![angularjs new](../../../public/assets/contentful/1EWdiXVJy5fm66xcle8bco/3122d186ea8d162091f542ff7779a1ed/angularjs-new.png)
 
 ?
 
@@ -26,7 +26,7 @@ Yep. The search bar was removed from the [AngularJS](https://angularjs.org/) web
 
 From a coworker (Google fanboy):
 
-![Why Angular why](/contentful/1Wx6vEMZpK9UwCAn2pSacd/2e016576dc01fc259d5be2e389858995/le-why.png)
+![Why Angular why](../../../public/assets/contentful/1Wx6vEMZpK9UwCAn2pSacd/2e016576dc01fc259d5be2e389858995/le-why.png)
 
 > We are starting to re-route people to [angular.io](https://angular.io/)
 

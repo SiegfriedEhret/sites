@@ -11,7 +11,7 @@ tags:
 
 In this experiment, we will create this:
 
-![Texture mapping](/contentful/21vFkn0JjOhZv0cvjcohij/cabe2f37c81098da42c489f6320225bc/lesson06.jpg)
+![Texture mapping](../../../public/assets/contentful/21vFkn0JjOhZv0cvjcohij/cabe2f37c81098da42c489f6320225bc/lesson06.jpg)
 (image from [NeHe website](http://nehe.gamedev.net/tutorial/lessons_06__10/17010/))
 
 We will learn how to use BabylonJS basic elements and how to move them.

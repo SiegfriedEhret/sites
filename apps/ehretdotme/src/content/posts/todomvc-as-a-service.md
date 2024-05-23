@@ -99,7 +99,7 @@ The code is on [Github](https://github.com/SiegfriedEhret/todomvcaas).
 
 ## IT DOESN'T WORK
 
-![it works on my machine](/contentful/6BF0DBsfVGZnsJmq3WBNOn/b28b74ade359819510ee9da1f6725a65/works.png)
+![it works on my machine](../../../public/assets/contentful/6BF0DBsfVGZnsJmq3WBNOn/b28b74ade359819510ee9da1f6725a65/works.png)
 
 (I haven't tried it outside of Opera/Chrome though...)
 

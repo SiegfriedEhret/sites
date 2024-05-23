@@ -7,7 +7,7 @@ artistName: Henri Matisse
 artistBirth: "1869"
 artistDeath: "1954"
 images:
-  - image: ./henri-matisse-view-of-notre-dame-1914.png
+  - image: ../../../public/assets/henri-matisse-view-of-notre-dame-1914.png
 description: |-
   Oil on canvas
 

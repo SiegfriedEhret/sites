@@ -16,7 +16,7 @@ The slides are [here](http://slides.com/siegfriedehret/and-keep-calm-hack-lisp/)
 
 First, I introduced John McCarthy (the guy who invented lisp) and Dennis Ritchie (you should know this guy, who admired lisp). They died in october 2011, I just wanted the audience to remember that Steve Jobs is not the only guy who died at this time...
 
-![lisp logo](/contentful/5cBsgy1FYxD6g9pJIOED1h/1aabd28128aa52b813e62878070a2816/lisplogo_256.png)
+![lisp logo](../../../public/assets/contentful/5cBsgy1FYxD6g9pJIOED1h/1aabd28128aa52b813e62878070a2816/lisplogo_256.png)
 
 Then, I talked about lisp, the spec and some implementations.
 
@@ -270,7 +270,7 @@ T
 
 ### How to macros ?
 
-![Maquereau](/contentful/2M9GwVmaWYVypZDvoWJp89/22da74f81f10a9bceb73a8f8f2690736/Maquereau.gif)
+![Maquereau](../../../public/assets/contentful/2M9GwVmaWYVypZDvoWJp89/22da74f81f10a9bceb73a8f8f2690736/Maquereau.gif)
 (Maquereau is the french word for Mackerel)
 
 3 steps:
@@ -281,7 +281,7 @@ T
 
 ## Conclusion
 
-![i have a lisp](/contentful/6HArEmceO7CckceOmd4zET/7767a7ca6a9559acc262b2a7f2ea0e53/i_have_a_lisp.gif)
+![i have a lisp](../../../public/assets/contentful/6HArEmceO7CckceOmd4zET/7767a7ca6a9559acc262b2a7f2ea0e53/i_have_a_lisp.gif)
 
 I concluded this introduction to lisp saying that it is awesome, and even if I can't use it professionally, it's pretty interesting to play with it.
 

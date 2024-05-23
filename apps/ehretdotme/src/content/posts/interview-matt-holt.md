@@ -8,7 +8,7 @@ description: >-
 tags:
   - interview
 image: >-
-  /contentful//5WBIsVDfOeL2Dhyeqb5Hy1/c5c146a9fd1b30af31c78813dd5fc752/IMG_4770.JPG
+  ../../../public/assets/contentful/5WBIsVDfOeL2Dhyeqb5Hy1/c5c146a9fd1b30af31c78813dd5fc752/IMG_4770.JPG
 imageDescription: With Matt Holt
 ---
 

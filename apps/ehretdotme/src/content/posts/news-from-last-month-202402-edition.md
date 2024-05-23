@@ -3,7 +3,7 @@ title: News from last month (2024/02 edition)
 description: A selection of links from last month.
 date: 2024-02-01T00:00:00.000Z
 updatedAt: 2024-02-01T00:00:00.000Z
-image: /assets/567603_xl-1024-v1-0.png
+image: ../../../public/assets/567603_xl-1024-v1-0.png
 imageDescription: >-
   Generated with SDXL 1.0 using the prompt "A scene from Tomb Raider. She is
   fighting for the news in a Japanese temple. Newspapers are flying around her."

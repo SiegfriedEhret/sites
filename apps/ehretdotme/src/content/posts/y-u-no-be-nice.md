@@ -12,7 +12,7 @@ I just read your tweet about how you don't like it. Actually, let me rephrase my
 
 Seriously:
 
-![y-u-no-be-nice](/contentful/1cMDmQYOsEFpb4eyfOrXXa/fcf9cbb38a6f7429164201e95e2d4a55/y-u-no-be-nice.jpg)
+![y-u-no-be-nice](../../../public/assets/contentful/1cMDmQYOsEFpb4eyfOrXXa/fcf9cbb38a6f7429164201e95e2d4a55/y-u-no-be-nice.jpg)
 
 ## Ok, it's my fault too
 
@@ -91,7 +91,7 @@ And:
 
 I love this tweet from [Addy Osmani](http://addyosmani.com/) and the answer. I want to stop being a douchebag and I hope you will too.
 
-> ![stick-grunt-1](/contentful/1epygrjtCPhujFOMKf01X1/9f1e89e4c7f354449294192337c6b588/stick-grunt-1.png) > <br>&mdash; [source](https://twitter.com/addyosmani/status/431575503615442945)
+> ![stick-grunt-1](../../../public/assets/contentful/1epygrjtCPhujFOMKf01X1/9f1e89e4c7f354449294192337c6b588/stick-grunt-1.png) > <br>&mdash; [source](https://twitter.com/addyosmani/status/431575503615442945)
 
 Last quote:
 

@@ -8,13 +8,13 @@ tags: []
 
 ## Why FirefoxOS ?
 
-![FirefoxOS screenshot](/contentful/76g2jMUMas44VCulZsi6P2/cba41ab3eebf06c1bce324237b13d130/device_2013_01_24_163623.png)
+![FirefoxOS screenshot](../../../public/assets/contentful/76g2jMUMas44VCulZsi6P2/cba41ab3eebf06c1bce324237b13d130/device_2013_01_24_163623.png)
 
 (image from [here](https://developer.mozilla.org/en-US/Firefox_OS/Platform/Gaia/Introduction_to_Gaia))
 
 ## The phone
 
-![Le Peak](/contentful/2YY1ug01r0NTZQD8MrwNbc/73408a2636b7a52bbb191518a36174d8/GeeksPhone_Peak___front_and_back_jpeg.jpeg)
+![Le Peak](../../../public/assets/contentful/2YY1ug01r0NTZQD8MrwNbc/73408a2636b7a52bbb191518a36174d8/GeeksPhone_Peak___front_and_back_jpeg.jpeg)
 
 (image from [Wikipedia](https://en.wikipedia.org/wiki/File:GeeksPhone_Peak_-_front_and_back.jpeg))
 
@@ -140,7 +140,7 @@ The phone should be connected to the computer, and:
 
 ### Flashing
 
-![Flash! Aaah aaaaaah, saviour of the universe!](/contentful/2wjRmwJkG0rQqloZLXmtq7/b9f6e9fac46b035c299bf3f2431578d9/Garrick_ross.jpg)
+![Flash! Aaah aaaaaah, saviour of the universe!](../../../public/assets/contentful/2wjRmwJkG0rQqloZLXmtq7/b9f6e9fac46b035c299bf3f2431578d9/Garrick_ross.jpg)
 
 (image from [Wikipedia](https://en.wikipedia.org/wiki/File:Garrick_ross.jpg))
 
@@ -167,7 +167,7 @@ More info on flashing only some part [here](https://developer.mozilla.org/en-US/
 
 That's all !
 
-![What does the fox say ?](/contentful/3bNeIVnJOoF1Ce0VpGMean/222fd935f1b8d236f1b062f391b20f93/fox.png)
+![What does the fox say ?](../../../public/assets/contentful/3bNeIVnJOoF1Ce0VpGMean/222fd935f1b8d236f1b062f391b20f93/fox.png)
 
 (image from [here](https://www.mozilla.org/fr/firefox/os/))
 

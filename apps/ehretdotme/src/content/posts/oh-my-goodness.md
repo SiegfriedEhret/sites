@@ -10,6 +10,6 @@ tags: []
 
 I made an article about node-webkit a few months ago, it has now 1000 views ! Awesome !
 
-![1000 views !](/contentful/4aPgcbC9uKBs4SVnnne1IC/21888b824f255bedae78de9a7f3f7b4b/analytics.jpg)
+![1000 views !](../../../public/assets/contentful/4aPgcbC9uKBs4SVnnne1IC/21888b824f255bedae78de9a7f3f7b4b/analytics.jpg)
 
 Thanks a lot !

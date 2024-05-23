@@ -7,6 +7,6 @@ artistName: Léon Spilliaert
 artistBirth: "1881"
 artistDeath: "1946"
 images:
-  - image: ./leon-spilliaert-woman-on-a-dyke-1907.jpg
+  - image: ../../../public/assets/leon-spilliaert-woman-on-a-dyke-1907.jpg
 description: "Pencil, watercolour, gouache and white gouache, coloured pencil on paper "
 ---

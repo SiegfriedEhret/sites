@@ -7,7 +7,7 @@ tags:
   - beulogue
   - blog
 image: >-
-  /contentful//4GXm8DOof1LZ6mmwXkyAvV/139faf292ec6e5205c290fd5a9c650f7/IMG_0932.png
+  ../../../public/assets/contentful/4GXm8DOof1LZ6mmwXkyAvV/139faf292ec6e5205c290fd5a9c650f7/IMG_0932.png
 imageDescription: Sunset in Onagawa
 ---
 
@@ -23,7 +23,7 @@ Today is the end of the second beulogue.
 
 ## But alors, you abandon us?
 
-Haha no, I abandoning myself since I was the only user!
+Haha no, I am abandoning myself since I was the only user!
 
 Even if beulogue will not be developed anymore in its current form, a third one may see the light one day!
 
