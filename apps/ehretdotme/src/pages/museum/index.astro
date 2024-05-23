@@ -3,8 +3,8 @@ import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import { getTitle } from "../../lib/art";
-import slugify from "@sindresorhus/slugify";
 import Responsive from "@packages/ui/Responsive.astro";
+import slugify from "slugify";
 
 const items = (await getCollection("museum")).map((el) => ({
   ...el,

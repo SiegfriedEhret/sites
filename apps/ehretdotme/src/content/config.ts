@@ -19,7 +19,7 @@ const museumCollection = defineCollection({
   schema: ({ image }) =>
     z.object({
       year: z.string(),
-      shot: z.string().optional(),
+      shot: z.coerce.date().optional(),
       location: z.string().optional(),
       name: z.string(),
       artistName: z.string(),
