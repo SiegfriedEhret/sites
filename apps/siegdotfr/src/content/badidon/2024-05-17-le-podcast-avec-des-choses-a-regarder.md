@@ -24,7 +24,7 @@ On a été bien occupés, avec Devoxx France et voici les deux sujets dont on pa
 - [CyberPeace Miners : introduction à la cybersécurité avec Minecraft](https://www.youtube.com/watch?v=x0iqj2e6og8)
 - [🚀 Vers l'infini et l'au-delà : exploration des mondes secrets d'Internet](https://www.youtube.com/watch?v=wg_Zv-T1FGw)
 
-J'ai aussi été bien occupé avec une formation : [SEC401: Security Essentials - Network, Endpoint, and Cloud](https://www.sans.org/cyber-security-courses/security-essentials-network-endpoint-cloud/). J'ai passé l'examen il y a quelques jours et j'ai réussi ! 
+J'ai aussi été bien occupé avec une formation : [SEC401: Security Essentials - Network, Endpoint, and Cloud](https://www.sans.org/cyber-security-courses/security-essentials-network-endpoint-cloud/). J'ai passé l'examen il y a quelques jours et j'ai réussi !
 
 ## Première recommandation d'Ayako
 

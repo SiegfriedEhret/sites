@@ -1,20 +1,19 @@
 ---
-name: 'Primary Light Group: Red, Green, Blue'
+name: "Primary Light Group: Red, Green, Blue"
 description: |-
   Oil and acrylic on canvas, three panels.
 
   © 2021 Jo Baer
 artistName: Jo Baer
-artistBirth: '1929'
+artistBirth: "1929"
 shot: 2007-07-01T00:00:00.000Z
 location: MoMA
-year: '1969'
+year: "1969"
 images:
   - image: ../../../public/assets/joe-baer-primary-light-group-red.png
-    imageDescription: 'Jo Baer: Primary Light Group: Red (1964-65)'
+    imageDescription: "Jo Baer: Primary Light Group: Red (1964-65)"
   - image: ../../../public/assets/joe-baer-primary-light-group-green.png
-    imageDescription: 'Jo Baer: Primary Light Group: Green (1964-65)'
+    imageDescription: "Jo Baer: Primary Light Group: Green (1964-65)"
   - image: ../../../public/assets/joe-baer-primary-light-group-blue.png
-    imageDescription: 'Jo Baer: Primary Light Group: Blue (1964-65)'
+    imageDescription: "Jo Baer: Primary Light Group: Blue (1964-65)"
 ---
-
