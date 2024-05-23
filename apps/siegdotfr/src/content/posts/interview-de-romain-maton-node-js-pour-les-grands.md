@@ -12,7 +12,7 @@ description: >-
 tags:
   - interview
 image: >-
-  /contentful//1alxkuAfVWfDLSf3GjYEzn/57124c92690c12a8be4f53626479bd94/nodejs-romainmaton.jpg
+  /contentful/1alxkuAfVWfDLSf3GjYEzn/57124c92690c12a8be4f53626479bd94/nodejs-romainmaton.jpg
 imageDescription: Romain Maton
 ---
 

@@ -10,7 +10,7 @@ description: >-
   JavaScript et ce qu’est Golo.
 tags: []
 image: >-
-  /contentful//445YyjfsvvLGisWlYvBREz/87c895f943e5dea6f9969b7ef1c0fdd1/Philippe-Charriere-1024x537.jpg
+  /contentful/445YyjfsvvLGisWlYvBREz/87c895f943e5dea6f9969b7ef1c0fdd1/Philippe-Charriere-1024x537.jpg
 imageDescription: Avec Philippe Charrière
 ---
 

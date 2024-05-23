@@ -10,7 +10,7 @@ description: >
 tags:
   - interview
 image: >-
-  /contentful//VAdy9BjVtZ6VBJQqpfZzB/b4da14a040cac6dfa316c1148df1f750/IMG_3362.JPG
+  /contentful/VAdy9BjVtZ6VBJQqpfZzB/b4da14a040cac6dfa316c1148df1f750/IMG_3362.JPG
 imageDescription: Avec Raphaêl Goetter et Cyril Balit
 ---
 
