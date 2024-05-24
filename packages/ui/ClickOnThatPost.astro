@@ -8,7 +8,7 @@ const { url, title, description, date, image, imageDescription } = item;
 
 <a class="post" href={url}>
   <div class="image">
-    <Image src={image} alt={imageDescription ?? ""} />
+    <Image src={image} alt={imageDescription ?? ""} class="img" />
   </div>
   <div class="title">{title}</div>
   <div class="description">{description}</div>
@@ -30,7 +30,7 @@ const { url, title, description, date, image, imageDescription } = item;
       overflow: hidden;
     }
 
-    img {
+    .img {
       width: 100%;
       height: auto;
       aspect-ratio: 16/9;
@@ -42,7 +42,7 @@ const { url, title, description, date, image, imageDescription } = item;
     }
   }
 
-  .post:is(:active, :focus, :hover) img {
+  .post:is(:active, :focus, :hover) .img {
     transform: scale3d(1.1, 1.1, 1);
   }
 
