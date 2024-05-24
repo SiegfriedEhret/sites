@@ -1,0 +1,12 @@
+---
+name: July (Summer Luxuriance")
+description: Oil on canvas
+artistName: Jacobus van Lopy
+artistBirth: "1855"
+artistDeath: "1930"
+shot: 2024-05-21T00:00:00.000Z
+location: "Rijksmuseum, Amsterdam"
+year: "1900"
+images:
+  - image: ../../../public/assets/IMG_9911.jpg
+---

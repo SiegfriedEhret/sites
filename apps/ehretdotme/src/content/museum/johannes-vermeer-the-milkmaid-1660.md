@@ -1,0 +1,12 @@
+---
+name: The Milkmaid
+description: Oil on canvas
+artistName: Johannes Vermeer
+artistBirth: "1632"
+artistDeath: "1675"
+shot: 2024-05-21T00:00:00.000Z
+location: "Rijksmuseum, Amsterdam"
+year: "1660"
+images:
+  - image: ../../../public/assets/IMG_9884.jpg
+---
