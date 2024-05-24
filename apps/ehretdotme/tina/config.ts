@@ -19,7 +19,9 @@ const moppas = {
   ui: {
     filename: {
       slugify: (values) => {
-        return slugify(`${values?.artistName} ${values?.name} ${values?.year}`);
+        return slugify(
+          `${values?.artistName} ${values?.name} ${values?.year}`,
+        ).toLowerCase();
       },
     },
   },
@@ -87,7 +89,7 @@ const moppas = {
           name: "image",
           label: "Image",
           required: true,
-          ui: imageUi,
+          ui: imageUi(),
         },
         {
           type: "string",
