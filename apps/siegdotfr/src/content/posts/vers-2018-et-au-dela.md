@@ -59,7 +59,7 @@ J'ai été assistant d'une formation donnée par [Sébastien](https://twitter.co
 
 Avec madame, nous avons créé la SFEIR School Japonais pour faire une petite introduction à cette langue.
 
-![](../../../public/assets/20180101-to-2018-and-beyond/aya-sieg2.jpg)
+![](../../../public/assets/IMG_1085.JPG)
 
 ### Magie
 
