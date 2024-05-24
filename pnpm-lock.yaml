@@ -90,6 +90,9 @@ importers:
       astro:
         specifier: ^4.9.1
         version: 4.9.1
+      sharp:
+        specifier: ^0.33.4
+        version: 0.33.4
     devDependencies:
       prettier:
         specifier: ^3.2.5
