@@ -5,9 +5,9 @@
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "build": "turbo run build",
-    "build:ehretdotme": "turbo run build --scope ehretdotme",
-    "build:meloedotfr": "turbo run build --scope meloedotfr",
-    "build:siegdotfr": "turbo run build --scope siegdotfr",
+    "build:ehretdotme": "turbo run build --filter=ehretdotme",
+    "build:meloedotfr": "turbo run build --filter=meloedotfr",
+    "build:siegdotfr": "turbo run build --filter=siegdotfr",
     "dev": "turbo run dev --parallel",
     "tina": "turbo run tina --parallel",
     "lint": "turbo run lint",
