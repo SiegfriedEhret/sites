@@ -5,7 +5,7 @@ description: >-
   pour avoir une carte en WebGL.
 date: 2024-05-30T00:00:00.000Z
 updatedAt: 2024-05-30T00:00:00.000Z
-image: /assets../../../public/webgl-map.jpg
+image: ../../../public/assets/webgl-map.jpg
 imageDescription: La carte faite avec l'aide de gpt-4o.
 tags:
   - ai
