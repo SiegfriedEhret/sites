@@ -41,10 +41,10 @@ J'avoue, celui-ci m'a fait rire.
 
 Il m'a dit qu'il ne peut pas, mais que les étapes sont :
 
-* Faire un canvas WebGL
-* Charger la géométrie du monde
-* Appliquer les Textures
-* Gérer la mise en valeur des pays
+- Faire un canvas WebGL
+- Charger la géométrie du monde
+- Appliquer les Textures
+- Gérer la mise en valeur des pays
 
 Il y avait un peu plus de détails que ça mais juste des explications. Et que tout ça nécessite du code. SU-PER.
 
