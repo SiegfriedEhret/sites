@@ -20,7 +20,7 @@
     "@tinacms/cli": "^1.5.45",
     "@types/alpinejs": "^3.13.10",
     "alpinejs": "^3.14.0",
-    "astro": "^4.9.1",
+    "astro": "^4.9.2",
     "highlight.js": "^11.9.0",
     "markdown-it": "^14.1.0",
     "sanitize-html": "^2.13.0",

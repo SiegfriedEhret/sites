@@ -14,7 +14,7 @@
   "type": "module",
   "dependencies": {
     "@packages/utils": "workspace:*",
-    "astro": "^4.9.1"
+    "astro": "^4.9.2"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
