@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
 year="2024"
-month="04"
+month="05"
 ym="$year$month"
 
 postYear="2024"
-postMonth="05"
+postMonth="06"
 postDay="01"
 
+nflm_top="news-from-last-month-$postYear$postMonth-top.md"
 nflm_dev="news-from-last-month-$postYear$postMonth-developer-edition.md"
 nflm_var="news-from-last-month-$postYear$postMonth-wonderer-edition.md"
 nflm_len="links_en.md"
@@ -17,6 +18,7 @@ rm $nflm_len
 rm $nflm_lfr
 rm $nflm_dev
 rm $nflm_var
+rm $nflm_top
 
 writeHeader() {
   local output=$1
@@ -65,6 +67,10 @@ save() {
     writeLinks "$nflm_lfr" "$filename"
   fi
 }
+
+buku -e $nflm_len -t $ym + top - fr --np
+buku -e $nflm_lfr -t $ym + top + fr --np
+save $nflm_top "## NFLM Intro"
 
 writeHeader $nflm_dev "developer"
 
