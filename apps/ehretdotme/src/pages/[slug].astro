@@ -24,7 +24,7 @@ const { title, date, updatedAt, description, image, imageDescription, tags } =
 const { Content, headings } = await post.render();
 ---
 
-<Layout title={title} description={description} metaImage={image.src}>
+<Layout title={title} description={description} metaImage={image?.src}>
   <article>
     <SuperTitle title={title} />
 
