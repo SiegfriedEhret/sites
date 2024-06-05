@@ -21,7 +21,7 @@ J'ai fait la même demande à chaque assistant :
 
 > words: hour, pint, life, baked. What is the category
 
-Voici les différentes réponses obtenus
+Voici les différentes réponses obtenues.
 
 ## Mistral Large
 
