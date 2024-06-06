@@ -14,11 +14,11 @@
     "@astrojs/rss": "^4.0.6",
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
-    "astro": "^4.9.2",
+    "astro": "^4.10.0",
     "sharp": "^0.33.4"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.1",
     "prettier-plugin-astro": "^0.12.3"
   }
 }
