@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import { formatDateHuman } from "@packages/utils/date";
 import Responsive from "@packages/ui/Responsive.astro";
+import SuperTitle from "@packages/ui/SuperTitle.astro";
 
 export async function getStaticPaths() {
   const items = await getCollection("museum");
@@ -28,52 +29,58 @@ const {
   name,
   shot,
   slug,
+  year,
 } = Astro.props;
+
+const pageName = `${artistName} - ${name} (${year})`;
 ---
 
-<Layout title={name}>
-  <Responsive tag="article">
-    <nav>
-      <a href="/museum">&lt;= all works</a>
-    </nav>
+<Layout title={pageName}>
+  <article>
+    <SuperTitle title={pageName} />
+    <Responsive>
+      <nav>
+        <a href="/museum">&lt;= all works</a>
+      </nav>
 
-    {
-      images.map(({ image, imageDescription = "pouet" }) => (
-        <figure>
-          <Image src={image} alt={imageDescription} />
-          <figcaption>{name}</figcaption>
-        </figure>
-      ))
-    }
-    <h1>{name}</h1>
+      {
+        images.map(({ image, imageDescription = "pouet" }) => (
+          <figure>
+            <Image src={image} alt={imageDescription} />
+            <figcaption>{pageName}</figcaption>
+          </figure>
+        ))
+      }
+      <h1>{name}</h1>
 
-    <dl>
-      <dt>Name</dt>
-      <dd>{name}</dd>
-      {
-        description && (
-          <>
-            <dt>Info</dt>
-            <dd>{description}</dd>
-          </>
-        )
-      }
-      <dt>Artist</dt>
-      <dd>
-        {artistName} ({artistBirth} - {artistDeath ?? ""})
-      </dd>
-      {
-        location?.name && (
-          <>
-            <dt>Shot</dt>
-            <dd>
-              at {location.name} on {formatDateHuman(shot)}
-            </dd>
-          </>
-        )
-      }
-    </dl>
-  </Responsive>
+      <dl>
+        <dt>Name</dt>
+        <dd>{name}</dd>
+        {
+          description && (
+            <>
+              <dt>Info</dt>
+              <dd>{description}</dd>
+            </>
+          )
+        }
+        <dt>Artist</dt>
+        <dd>
+          {artistName} ({artistBirth} - {artistDeath ?? ""})
+        </dd>
+        {
+          location && (
+            <>
+              <dt>Shot</dt>
+              <dd>
+                at {location} on {formatDateHuman(shot)}
+              </dd>
+            </>
+          )
+        }
+      </dl>
+    </Responsive>
+  </article>
 </Layout>
 
 <style>

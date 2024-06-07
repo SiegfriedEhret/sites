@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import { getTitle } from "../../lib/art";
 import Responsive from "@packages/ui/Responsive.astro";
+import SuperTitle from "@packages/ui/SuperTitle.astro";
 import slugify from "slugify";
 
 const items = (await getCollection("museum")).map((el) => ({
@@ -15,49 +16,50 @@ const artists = Array.from(new Set(items.map((i) => i.artistName))).sort();
 ---
 
 <Layout title="/ [ehret.me]">
-  <Responsive>
-    <h1>Museum of Poorly Photographed Art</h1>
+  <article>
+    <SuperTitle title="Museum of Poorly Photographed Art" />
+    <Responsive>
+      <div class="tacos" x-data="{selected: 'all'}">
+        <div class="filters">
+          <button class="artists-all" @click="selected = 'all'">All</button>
+          {
+            artists.map((artist) => (
+              <button
+                class="artist-select"
+                @click={`selected = '${slugify(artist)}'`}
+              >
+                {artist}
+              </button>
+            ))
+          }
+        </div>
 
-    <div class="tacos" x-data="{selected: 'all'}">
-      <div class="filters">
-        <button class="artists-all" @click="selected = 'all'">All</button>
-        {
-          artists.map((artist) => (
-            <button
-              class="artist-select"
-              @click={`selected = '${slugify(artist)}'`}
-            >
-              {artist}
-            </button>
-          ))
-        }
+        <div class="grid">
+          {
+            items.map((item) => (
+              <a
+                class="item"
+                href={`/museum/${item.slug}`}
+                x-show={`['all', '${slugify(item.artistName)}'].includes(selected)`}
+              >
+                <figure>
+                  <figcaption>{getTitle(item)}</figcaption>
+                  <Image
+                    src={item.images[0].image}
+                    alt={getTitle(item)}
+                    width={300}
+                    quality="low"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </figure>
+              </a>
+            ))
+          }
+        </div>
       </div>
-
-      <div class="grid">
-        {
-          items.map((item) => (
-            <a
-              class="item"
-              href={`/museum/${item.slug}`}
-              x-show={`['all', '${slugify(item.artistName)}'].includes(selected)`}
-            >
-              <figure>
-                <figcaption>{getTitle(item)}</figcaption>
-                <Image
-                  src={item.images[0].image}
-                  alt={getTitle(item)}
-                  width={300}
-                  quality="low"
-                  decoding="async"
-                  loading="lazy"
-                />
-              </figure>
-            </a>
-          ))
-        }
-      </div>
-    </div>
-  </Responsive>
+    </Responsive>
+  </article>
 </Layout>
 
 <style>

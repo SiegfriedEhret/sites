@@ -7,9 +7,13 @@ const { url, title, description, date, image, imageDescription } = item;
 ---
 
 <a class="post" href={url}>
-  <div class="image">
-    <Image src={image} alt={imageDescription ?? ""} class="img" />
-  </div>
+  {
+    image && (
+      <div class="image">
+        <Image src={image} alt={imageDescription ?? ""} class="img" />
+      </div>
+    )
+  }
   <div class="title">{title}</div>
   <div class="description">{description}</div>
   <time datetime={date}>{formatDate(date)}</time>
