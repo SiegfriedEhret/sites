@@ -35,9 +35,11 @@ const { Content, headings } = await post.render();
           />
         )
       }
+    </Responsive>
 
-      {headings && <Toc headings={headings} />}
+    {headings && <Toc headings={headings} />}
 
+    <Responsive>
       <Content />
 
       <hr />

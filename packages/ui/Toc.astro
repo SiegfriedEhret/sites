@@ -1,79 +1,63 @@
 ---
+import Responsive from "./Responsive.astro";
 const { headings } = Astro.props;
 ---
 
 {
   headings && headings.length > 0 && (
-    <div class="toc" x-data="{ open: false }">
-      <button @click="open = !open" @click.outside="open = false">
-        Shortcuts
-      </button>
-
-      <nav x-show="open" x-cloak x-transition>
-        {headings.map((heading) => (
-          <a
-            class:list={{
-              h2: heading.level === "h2" || heading.depth === 2,
-              h3: heading.level === "h3" || heading.depth === 3,
-              h4: heading.level === "h4" || heading.depth === 4,
-              h5: heading.level === "h5" || heading.depth === 5,
-              h6: heading.level === "h6" || heading.depth === 6,
-            }}
-            href={`#${heading.id || heading.slug}`}
-          >
-            {heading.title || heading.text}
-          </a>
-        ))}
-      </nav>
-    </div>
+    <nav>
+      <Responsive>
+        <div class="toc">
+          <p>Table of contents</p>
+          {headings.map((heading) => (
+            <a
+              class:list={{
+                h2: heading.level === "h2" || heading.depth === 2,
+                h3: heading.level === "h3" || heading.depth === 3,
+                h4: heading.level === "h4" || heading.depth === 4,
+                h5: heading.level === "h5" || heading.depth === 5,
+                h6: heading.level === "h6" || heading.depth === 6,
+              }}
+              href={`#${heading.id || heading.slug}`}
+            >
+              {heading.title || heading.text}
+            </a>
+          ))}
+        </div>
+      </Responsive>
+    </nav>
   )
 }
 
 <style>
-  .toc {
-    float: right;
-  }
-  .toc button {
-    border-radius: 0.5rem;
-    border: 1px solid var(--text);
-    background: transparent;
-    color: var(--text);
-    padding: 0.5rem 1rem;
-  }
-  .toc .h2 {
-    padding-left: 0.5rem;
-  }
-  .toc .h3 {
-    padding-left: 1rem;
-  }
-  .toc .h4 {
-    padding-left: 1.5rem;
-  }
-  .toc .h5 {
-    padding-left: 2rem;
-  }
-  .toc .h6 {
-    padding-left: 2.5rem;
-  }
   nav {
-    position: absolute;
-    display: flex;
-    right: 0;
-    flex-direction: column;
-    line-height: 1.25rem;
-    width: 100vw;
-    margin-block-start: 4px;
-    max-width: 16rem;
-    border: 2px solid var(--text);
     background-color: var(--back);
   }
-  @media screen and (min-width: 55rem) {
-    .toc {
-      align-self: auto;
-    }
+  .toc {
+    display: flex;
+    flex-direction: column;
+    gap: var(--base);
+  }
+  nav p {
+    margin: 0;
+  }
+  nav .h2 {
+    padding-left: 0.5rem;
+  }
+  nav .h3 {
+    padding-left: 1rem;
+  }
+  nav .h4 {
+    padding-left: 1.5rem;
+  }
+  nav .h5 {
+    padding-left: 2rem;
+  }
+  nav .h6 {
+    padding-left: 2.5rem;
   }
   @media (prefers-color-scheme: dark) {
-    .toc a {
+    nav a {
       color: var(--text);
     }
   }
