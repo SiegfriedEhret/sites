@@ -9,6 +9,7 @@ imageDescription: >-
   effect applied to make the scene look miniature. Shot on December 30th, 2020.
 tags:
   - nflm
+  - wonderer
 ---
 
 Welcome to this edition of News From Last Month!

@@ -9,6 +9,7 @@ imageDescription: >-
   SDXL 1.0.
 tags:
   - nflm
+  - wonderer
 ---
 
 Hello!

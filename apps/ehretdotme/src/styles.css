@@ -11,6 +11,7 @@
 
   /*  theme vars */
   --back: var(--wevet);
+  --back-reverse: var(--imperial-purple);
   --baback: var(--strong-white);
   --prime: var(--lake-red);
   --text: var(--imperial-purple);
@@ -19,6 +20,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --back: var(--imperial-purple);
+    --back-reverse: var(--wevet);
     --baback: var(--paean-black);
     --prime: var(--lake-red);
     --text: var(--wevet);

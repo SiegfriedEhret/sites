@@ -1,0 +1,40 @@
+---
+import { getCollection } from "astro:content";
+import SuperTitle from "@packages/ui/SuperTitle.astro";
+import Layout from "../layouts/Layout.astro";
+import Responsive from "@packages/ui/Responsive.astro";
+import { formatDate } from "@packages/utils/date";
+import ClickOnThatNFLM from "../components/ClickOnThatNFLM.astro";
+
+const posts = (await getCollection("posts"))
+  .filter((p) => p.data.tags.includes("nflm"))
+  .map((item) => ({
+    title: item.data.title,
+    url: `/${item.slug}`,
+    description: item.data.description,
+    date: item.data.date,
+    image: item.data.image,
+    imageDescription: item.data.imageDescription,
+    tags: item.data.tags,
+  }))
+  .sort((a, b) => formatDate(b.date).localeCompare(formatDate(a.date)));
+
+const grouped = posts.reduce((acc, el) => {
+  const fDate = formatDate(el.date);
+  return {
+    ...acc,
+    [fDate]: [...(acc[fDate] ?? []), el].filter((el) => !!el),
+  };
+}, {});
+
+const sortedGroups = Object.keys(grouped).sort().reverse();
+---
+
+<Layout title="/nflm [ehret.me]">
+  <nav>
+    <SuperTitle title="News From Last Month" />
+    <Responsive>
+      {sortedGroups.map((key) => <ClickOnThatNFLM items={grouped[key]} />)}
+    </Responsive>
+  </nav>
+</Layout>

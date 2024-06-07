@@ -1,0 +1,116 @@
+---
+import { Image } from "astro:assets";
+import { formatDate } from "@packages/utils/date";
+
+const { items } = Astro.props;
+const { url, title, description, date, image, imageDescription, tags } =
+  items[0];
+
+const developer = items.find((el) => el.tags.includes("developer"));
+const wonderer = items.find((el) => el.tags.includes("wonderer"));
+---
+
+<div class="post">
+  {
+    image && (
+      <div class="image">
+        <Image src={image} alt={imageDescription ?? ""} class="img" />
+      </div>
+    )
+  }
+  <div class={`items-${items.length}`}>
+    <div class="title">{title}</div>
+    <div class="description">{description}</div>
+    <time datetime={date}>{formatDate(date)}</time>
+    <div class="buttons">
+      {items.length === 1 && <a href={url}>📝 read</a>}
+      {
+        items.length === 2 && (
+          <>
+            <a href={developer.url}>⌨️ developer edition</a>
+            <a href={wonderer.url}>✨ wonderer edition</a>
+          </>
+        )
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .post {
+    display: flex;
+    flex-direction: column;
+    gap: var(--base);
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    margin-block: var(--babase);
+    border-bottom: 1px solid var(--back-reverse);
+  }
+
+  @media screen and (min-width: 34rem) {
+    .post {
+      display: grid;
+
+      grid-template-columns: min(300px, 21rem) 1fr;
+      gap: var(--babase);
+    }
+  }
+
+  .items-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .image {
+    overflow: hidden;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+    transition: transform 300ms;
+    transform: scale3d(1, 1, 1);
+    transform-style: preserve-3d;
+  }
+
+  .post:is(:active, :focus, :hover) .img {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+
+  .post .title {
+    font-size: var(--step-3);
+  }
+
+  .post time {
+    font-size: var(--step-0);
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--babase);
+    margin-block-end: var(--babase);
+  }
+
+  @media screen and (min-width: 34rem) {
+    .buttons {
+      flex-direction: row;
+    }
+  }
+
+  .buttons a {
+    display: grid;
+    text-decoration: none;
+    border: 1px solid var(--back-reverse);
+    padding: var(--base) var(--babase);
+  }
+  .buttons a:is(:active, :focus, :hover) {
+    border: 1px solid var(--prime);
+  }
+</style>

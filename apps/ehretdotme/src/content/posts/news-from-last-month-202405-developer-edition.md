@@ -7,6 +7,7 @@ image: ../../../public/assets/hase-dera-kamakura.jpg
 imageDescription: "A picture from a garden in Hase-dera, a Buddhist temple in Kamakura."
 tags:
   - nflm
+  - developer
 ---
 
 Welcome to this edition of News From Last Month!
