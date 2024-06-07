@@ -1,23 +1,25 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
 import Responsive from "@packages/ui/Responsive.astro";
+import SuperTitle from "@packages/ui/SuperTitle.astro";
 ---
 
 <Layout
   title="/causeries [sieg.fr/ied]"
   description="Quelques détails de conférences"
 >
-  <Responsive>
-    <h1>Causeries</h1>
+  <article>
+    <SuperTitle title="Causeries." />
+    <Responsive>
+      <p>🚧 Pages en cours de construction</p>
 
-    <p>🚧 Pages en cours de construction</p>
-
-    <ul>
-      <li>
-        <a href="/ied/causeries/crystal"
-          >Coder avec Crystal pour ne pas perdre la boule</a
-        >
-      </li>
-    </ul>
-  </Responsive>
+      <ul>
+        <li>
+          <a href="/ied/causeries/crystal"
+            >Coder avec Crystal pour ne pas perdre la boule</a
+          >
+        </li>
+      </ul>
+    </Responsive>
+  </article>
 </Layout>

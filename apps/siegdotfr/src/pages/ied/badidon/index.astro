@@ -4,6 +4,7 @@ import Layout from "../../../layouts/Layout.astro";
 import { formatDate, getYear } from "@packages/utils/date";
 import BadidonSubscribe from "../../../components/BadidonSubscribe.astro";
 import Responsive from "@packages/ui/Responsive.astro";
+import SuperTitle from "@packages/ui/SuperTitle.astro";
 
 const badidon = (await getCollection("badidon"))
   .map((item) => ({
@@ -18,8 +19,8 @@ const badidon = (await getCollection("badidon"))
 ---
 
 <Layout title="/badidon [sieg.fr/ied]" description="🎙️badidon. Un podcast.">
+  <SuperTitle title="Badidon." />
   <Responsive>
-    <h1>Badidon.</h1>
     <p>Un podcast.</p>
 
     <div class="badidon">

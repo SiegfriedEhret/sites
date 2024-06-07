@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import { formatDate, getYear } from "@packages/utils/date";
 import { getCollection } from "astro:content";
 import Responsive from "@packages/ui/Responsive.astro";
+import SuperTitle from "@packages/ui/SuperTitle.astro";
 
 const entriesFromRepository = await getCollection("posts");
 
@@ -17,8 +18,8 @@ const posts = [
 ---
 
 <Layout title="/notes [ehret.me]">
+  <SuperTitle title="Notes." />
   <Responsive>
-    <h1>Notes.</h1>
     <p>A little of everything and a lot of nothing.</p>
 
     <nav>
