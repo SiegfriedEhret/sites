@@ -2,6 +2,7 @@
 import Layout from "@packages/ui/Layout.astro";
 import Header from "@packages/ui/Header.astro";
 import Footer from "@packages/ui/Footer.astro";
+import Vouivre from "@packages/ui/Vouivre.astro";
 const {
   title,
   description = "Je m'appelle Siegfried. Je suis développeur.",
@@ -51,6 +52,13 @@ import "../styles.css";
   </Fragment>
 
   <Footer slot="footer">
+    <Vouivre
+      domain="sieg.fr"
+      textPrevious="Précédent"
+      textNext="Suivant"
+      textRandom="Au pif"
+    />
+
     <p>Vous êtes chouettes. Bisous.</p>
     <p>
       Bidouillé avec 💖 et <a href="https://github.com/SiegfriedEhret/sites"

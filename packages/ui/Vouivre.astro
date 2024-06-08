@@ -1,0 +1,18 @@
+---
+const { domain, textPrevious, textNext, textRandom } = Astro.props;
+---
+
+<nav>
+  <a href="https://vouivre.ehret.me/">🐉 vouivre</a>
+  <a href={`https://vouivre.ehret.me/previous/${domain}`}>{textPrevious}</a>
+  <a href={`https://vouivre.ehret.me/random`}>{textRandom}</a>
+  <a href={`https://vouivre.ehret.me/next/${domain}`}>{textNext}</a>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    gap: var(--base);
+    justify-content: center;
+  }
+</style>

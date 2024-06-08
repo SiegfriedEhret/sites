@@ -2,6 +2,7 @@
 import Layout from "@packages/ui/Layout.astro";
 import Header from "@packages/ui/Header.astro";
 import Footer from "@packages/ui/Footer.astro";
+import Vouivre from "@packages/ui/Vouivre.astro";
 const {
   title,
   description = "My name is Siegfried Ehret. I am a developer.",
@@ -52,6 +53,12 @@ import "../styles.css";
   </Fragment>
 
   <Footer slot="footer">
+    <Vouivre
+      domain="ehret.me"
+      textPrevious="Previous"
+      textNext="Next"
+      textRandom="Random"
+    />
     <p>I think you are awesome. Peace.</p>
     <p>
       Made with 💖 and <a href="https://github.com/SiegfriedEhret/sites">⌨️</a>.
