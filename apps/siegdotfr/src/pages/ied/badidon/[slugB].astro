@@ -1,11 +1,9 @@
 ---
 import { CollectionEntry, getCollection } from "astro:content";
 import { formatDate } from "@packages/utils/date";
-import Toc from "@packages/ui/Toc.astro";
 import SuperTitle from "@packages/ui/SuperTitle.astro";
 import Responsive from "@packages/ui/Responsive.astro";
 import Layout from "../../../layouts/Layout.astro";
-import { BadidonSchema } from "../../../content/config";
 import Player from "../../../components/Player.astro";
 import { Image } from "astro:assets";
 import BadidonSubscribe from "../../../components/BadidonSubscribe.astro";
@@ -24,7 +22,7 @@ export async function getStaticPaths() {
 }
 
 const { entry, episodeNumber } = Astro.props;
-const episode: BadidonSchema = entry.data;
+const episode = entry.data;
 const { title, description, audioUrl, date, updatedAt, duration, image, tags } =
   episode;
 
