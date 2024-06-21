@@ -29,7 +29,7 @@ const { title, description, audioUrl, date, updatedAt, duration, image, tags } =
 const { Content } = await entry.render();
 ---
 
-<Layout title={title} description={description} metaImage={image}>
+<Layout title={title} description={description} metaImage={image?.src}>
   <article>
     <SuperTitle title={title} />
 
