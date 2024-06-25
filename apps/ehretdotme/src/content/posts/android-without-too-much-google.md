@@ -1,6 +1,6 @@
 ---
-date: "2013-09-24T00:00:00.000Z"
-updatedAt: "2021-05-23T13:49:25.637Z"
+date: 2013-09-24T00:00:00.000Z
+updatedAt: 2021-05-23T13:49:25.637Z
 title: Android without (too much) Google
 description: So how to survive on Android without the Store ?
 tags: []

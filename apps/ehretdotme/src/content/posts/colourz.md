@@ -1,6 +1,6 @@
 ---
-date: "2012-03-16T00:00:00.000Z"
-updatedAt: "2021-05-23T13:28:18.695Z"
+date: 2012-03-16T00:00:00.000Z
+updatedAt: 2021-05-23T13:28:18.695Z
 title: colourz
 description: "Colourz, a jquery plugin for color conversion."
 tags: []

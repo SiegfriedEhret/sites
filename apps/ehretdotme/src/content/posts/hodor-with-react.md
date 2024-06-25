@@ -1,6 +1,6 @@
 ---
-date: "2017-07-26T00:00:00.000Z"
-updatedAt: "2021-05-23T21:03:25.347Z"
+date: 2017-07-26T00:00:00.000Z
+updatedAt: 2021-05-23T21:03:25.347Z
 title: Hodor with React
 description: hodor.jsx !
 tags:

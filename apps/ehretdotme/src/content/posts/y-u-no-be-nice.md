@@ -1,6 +1,6 @@
 ---
-date: "2015-03-17T00:00:00.000Z"
-updatedAt: "2021-05-23T19:04:49.855Z"
+date: 2015-03-17T00:00:00.000Z
+updatedAt: 2021-05-23T19:04:49.855Z
 title: Y U NO BE NICE ?!?!?!
 description: "A rant about criticism, that I should read sometimes instead of being stupid."
 tags: []

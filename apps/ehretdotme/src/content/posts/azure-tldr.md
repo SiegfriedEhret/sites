@@ -1,6 +1,6 @@
 ---
-date: "2019-02-04T00:00:00.000Z"
-updatedAt: "2021-05-24T06:46:43.082Z"
+date: 2019-02-04T00:00:00.000Z
+updatedAt: 2021-05-24T06:46:43.082Z
 title: "Azure, TL;DR"
 description: Just a quick post to go over my experience with Microsoft Azure.
 tags:

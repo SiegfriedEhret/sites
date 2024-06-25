@@ -1,6 +1,6 @@
 ---
-date: "2011-09-15T00:00:00.000Z"
-updatedAt: "2021-05-23T13:20:38.202Z"
+date: 2011-09-15T00:00:00.000Z
+updatedAt: 2021-05-23T13:20:38.202Z
 title: img2base64
 description: An image to base64 conversion script in ruby.
 tags: []

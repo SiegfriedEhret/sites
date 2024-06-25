@@ -1,6 +1,6 @@
 ---
-date: "2015-12-21T00:00:00.000Z"
-updatedAt: "2021-05-23T19:13:22.825Z"
+date: 2015-12-21T00:00:00.000Z
+updatedAt: 2021-05-23T19:13:22.825Z
 title: "Farewell, FirefoxOS"
 description: Mozilla announced that they stopped their work on FirefoxOS.
 tags: []

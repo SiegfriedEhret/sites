@@ -3,7 +3,6 @@ title: "Épisode 5 : cuisine japonaise 🇯🇵"
 description: Dans lequel on vous donne envie d'aller au Japon pour le dîner
 date: 2024-03-27T00:00:00.000Z
 updatedAt: 2024-03-27T00:00:00.000Z
-image: ../../../public/assets/badidon-badidon.jpg
 tags:
   - badidon
 audioUrl: >-

@@ -1,6 +1,6 @@
 ---
-date: "2016-10-12T00:00:00.000Z"
-updatedAt: "2021-05-23T20:04:40.507Z"
+date: 2016-10-12T00:00:00.000Z
+updatedAt: 2021-05-23T20:04:40.507Z
 title: About yarn
 description: >-
   Yarn came out yesterday, and raises a few questions, Imma just leave this

@@ -1,6 +1,6 @@
 ---
-date: "2013-10-07T00:00:00.000Z"
-updatedAt: "2021-05-24T21:08:07.816Z"
+date: 2013-10-07T00:00:00.000Z
+updatedAt: 2021-05-24T21:08:07.816Z
 title: WebGL experiment part 6
 description: BabylonJS Pyramid builder.
 tags:

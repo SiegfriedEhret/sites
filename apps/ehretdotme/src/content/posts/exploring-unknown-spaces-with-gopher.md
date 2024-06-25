@@ -1,6 +1,6 @@
 ---
-date: "2020-12-29T00:00:00.000Z"
-updatedAt: "2021-05-24T07:38:47.295Z"
+date: 2020-12-29T00:00:00.000Z
+updatedAt: 2021-05-24T07:38:47.295Z
 title: "Exploring unknown spaces: Gopher"
 description: Let's discover the smallest parts of the Internet.
 tags:

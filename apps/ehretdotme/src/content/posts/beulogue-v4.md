@@ -1,6 +1,6 @@
 ---
-date: "2023-05-21T00:00:00.000Z"
-updatedAt: "2023-05-21T16:03:24.320Z"
+date: 2023-05-21T00:00:00.000Z
+updatedAt: 2023-05-21T16:03:24.320Z
 title: beulogue v4
 description: An update on the stack used for my website.
 tags: []

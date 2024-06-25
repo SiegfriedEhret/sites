@@ -1,6 +1,6 @@
 ---
-date: "2013-10-04T00:00:00.000Z"
-updatedAt: "2021-05-24T08:32:06.184Z"
+date: 2013-10-04T00:00:00.000Z
+updatedAt: 2021-05-24T08:32:06.184Z
 title: WebGL experiment part 4
 description: 3D shapes.
 tags:

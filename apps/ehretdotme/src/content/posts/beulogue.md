@@ -1,6 +1,6 @@
 ---
-date: "2015-12-10T00:00:00.000Z"
-updatedAt: "2021-05-24T21:08:08.229Z"
+date: 2015-12-10T00:00:00.000Z
+updatedAt: 2021-05-24T21:08:08.229Z
 title: beulogue
 description: "beulogue is alive, alive !"
 tags:

@@ -1,6 +1,6 @@
 ---
-date: "2013-09-29T00:00:00.000Z"
-updatedAt: "2021-05-24T08:31:44.969Z"
+date: 2013-09-29T00:00:00.000Z
+updatedAt: 2021-05-24T08:31:44.969Z
 title: WebGL experiment part 3
 description: Let's rotate that thing !
 tags:

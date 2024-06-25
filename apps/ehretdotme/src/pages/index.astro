@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import { formatDate } from "@packages/utils/date";
@@ -8,20 +7,16 @@ import Intro from "@packages/ui/Intro.astro";
 import Marquee from "@packages/ui/Marquee.astro";
 import Responsive from "@packages/ui/Responsive.astro";
 
-const posts = (await getCollection("posts"))
-  .map((item) => ({
-    title: item.data.title,
-    url: `/${item.slug}`,
-    description: item.data.description,
-    date: item.data.date,
-    image: item.data.image,
-    imageDescription: item.data.imageDescription,
-    tags: item.data.tags,
-  }))
-  .sort((a, b) => formatDate(b.date).localeCompare(formatDate(a.date)));
+const posts = (await getCollection("posts")).sort((a, b) =>
+  formatDate(b.data.date).localeCompare(formatDate(a.data.date)),
+);
 
-const nflm = posts.filter((el) => el.tags.includes("nflm")).slice(0, 6);
-const other = posts.filter((el) => !el.tags.includes("nflm")).slice(0, 3);
+const nflm = posts
+  .filter((el) => (el.data.tags ?? []).includes("nflm"))
+  .slice(0, 6);
+const other = posts
+  .filter((el) => !(el.data.tags ?? []).includes("nflm"))
+  .slice(0, 3);
 ---
 
 <Layout title="/ [ehret.me]">

@@ -1,6 +1,6 @@
 ---
-date: "2016-12-07T00:00:00.000Z"
-updatedAt: "2021-05-24T21:08:08.312Z"
+date: 2016-12-07T00:00:00.000Z
+updatedAt: 2021-05-24T21:08:08.312Z
 title: What is terrible ?
 description: Some thoughts about Angular and how the world reacts.
 tags:

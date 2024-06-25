@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { defineConfig } from "tinacms";
 import { tinaCommonFields } from "@packages/utils/tina";
 

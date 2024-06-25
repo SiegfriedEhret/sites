@@ -1,6 +1,6 @@
 ---
-date: "2016-10-12T00:00:00.000Z"
-updatedAt: "2021-05-24T08:41:15.512Z"
+date: 2016-10-12T00:00:00.000Z
+updatedAt: 2021-05-24T08:41:15.512Z
 title: Twitter Cleaner
 description: A Go(lang) tool to clean some mess from my Twitter.
 tags: []

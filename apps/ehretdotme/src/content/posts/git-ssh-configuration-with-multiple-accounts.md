@@ -1,6 +1,6 @@
 ---
-date: "2019-08-04T00:00:00.000Z"
-updatedAt: "2021-05-24T06:59:47.381Z"
+date: 2019-08-04T00:00:00.000Z
+updatedAt: 2021-05-24T06:59:47.381Z
 title: git ssh configuration with multiple accounts
 description: This is how I use git with multiple account.
 tags:

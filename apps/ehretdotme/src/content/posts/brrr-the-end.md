@@ -1,6 +1,6 @@
 ---
-date: "2021-04-11T00:00:00.000Z"
-updatedAt: "2021-05-24T07:49:00.620Z"
+date: 2021-04-11T00:00:00.000Z
+updatedAt: 2021-05-24T07:49:00.620Z
 title: Brrr... The end!
 description: "Some thoughts on the life of brrr, and what's next."
 tags:

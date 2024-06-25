@@ -1,6 +1,6 @@
 ---
-date: "2014-04-24T00:00:00.000Z"
-updatedAt: "2021-05-24T12:57:07.168Z"
+date: 2014-04-24T00:00:00.000Z
+updatedAt: 2021-05-24T12:57:07.168Z
 title: Audible vs Kindle Fire
 description: >-
   How to survive with a Kindle Fire, because there is nothing on their app

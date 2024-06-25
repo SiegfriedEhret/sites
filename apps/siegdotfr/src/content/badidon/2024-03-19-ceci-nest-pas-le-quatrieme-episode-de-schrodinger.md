@@ -3,7 +3,6 @@ title: "Épisode 4 : ceci n'est pas le quatrième épisode de Schrödinger"
 description: Dans lequel on vérifie qu'on se connait.
 date: 2024-03-19T00:00:00.000Z
 updatedAt: 2024-03-19T00:00:00.000Z
-image: ../../../public/assets/badidon-badidon.jpg
 tags:
   - badidon
 audioUrl: >-

@@ -5,17 +5,20 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "check": "astro sync && astro check",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write . --plugin=prettier-plugin-astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.7.0",
     "@astrojs/rss": "^4.0.7",
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
     "astro": "^4.11.1",
-    "sharp": "^0.33.4"
+    "sharp": "^0.33.4",
+    "typescript": "^5.5.2"
   },
   "devDependencies": {
     "prettier": "^3.3.2",

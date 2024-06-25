@@ -1,6 +1,6 @@
 ---
-date: "2014-05-31T00:00:00.000Z"
-updatedAt: "2021-05-24T12:57:46.723Z"
+date: 2014-05-31T00:00:00.000Z
+updatedAt: 2021-05-24T12:57:46.723Z
 title: FirefoxOS with jskanji
 description: Trying to write japanese on a FirefoxOS phone.
 tags: []

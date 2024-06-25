@@ -1,6 +1,6 @@
 ---
-date: "2022-05-01T00:00:00.000Z"
-updatedAt: "2022-10-29T19:02:08.104Z"
+date: 2022-05-01T00:00:00.000Z
+updatedAt: 2022-10-29T19:02:08.104Z
 title: News from last month (2022/05 edition)
 description: A selection of links from last month.
 tags:

@@ -1,6 +1,6 @@
 ---
-date: "2021-05-25T00:00:00.000Z"
-updatedAt: "2021-05-26T21:03:37.350Z"
+date: 2021-05-25T00:00:00.000Z
+updatedAt: 2021-05-26T21:03:37.350Z
 title: Beulogue... The end?
 description: Looking back at the multiple lives of beulogue.
 tags:

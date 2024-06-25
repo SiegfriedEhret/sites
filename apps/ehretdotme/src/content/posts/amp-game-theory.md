@@ -1,6 +1,6 @@
 ---
-date: "2018-02-17T00:00:00.000Z"
-updatedAt: "2021-05-24T06:34:00.410Z"
+date: 2018-02-17T00:00:00.000Z
+updatedAt: 2021-05-24T06:34:00.410Z
 title: AMP Game Theory
 description: >-
   This is an ugly copypasta from this twitter thread (and I don’t like threads)

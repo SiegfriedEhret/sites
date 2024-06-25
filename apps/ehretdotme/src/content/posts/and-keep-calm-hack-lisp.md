@@ -1,6 +1,6 @@
 ---
-date: "2015-07-05T00:00:00.000Z"
-updatedAt: "2021-05-23T19:10:56.290Z"
+date: 2015-07-05T00:00:00.000Z
+updatedAt: 2021-05-23T19:10:56.290Z
 title: (and (keep calm) (hack lisp))
 description: A quick presentation to discover the marvelous world of lisp.
 tags: []

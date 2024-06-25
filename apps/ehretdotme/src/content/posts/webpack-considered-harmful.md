@@ -1,6 +1,6 @@
 ---
-date: "2016-09-06T00:00:00.000Z"
-updatedAt: "2021-05-23T20:02:50.406Z"
+date: 2016-09-06T00:00:00.000Z
+updatedAt: 2021-05-23T20:02:50.406Z
 title: Webpack considered harmful
 description: I hope you enjoy this clickbait title.
 tags: []

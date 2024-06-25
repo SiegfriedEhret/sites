@@ -1,6 +1,6 @@
 ---
-date: "2012-01-12T00:00:00.000Z"
-updatedAt: "2021-05-23T13:23:07.601Z"
+date: 2012-01-12T00:00:00.000Z
+updatedAt: 2021-05-23T13:23:07.601Z
 title: imgzr
 description: A jQuery responsive image plugin
 tags: []

@@ -2,12 +2,12 @@
 title: News from last month (2022/11 edition)
 slug: news-from-last-month-202211-edition
 description: A selection of links from last month.
-date: "2022-11-01T00:00:00.000Z"
+date: 2022-11-01T00:00:00.000Z
 author: Siegfried Ehret
 tags:
   - links
   - nflm
-updatedAt: "2023-02-03T10:33:10.027Z"
+updatedAt: 2023-02-03T10:33:10.027Z
 ---
 
 Hello folks!

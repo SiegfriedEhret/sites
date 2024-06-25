@@ -1,13 +1,20 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import { Image } from "astro:assets";
 import { formatDate } from "@packages/utils/date";
 
-const { items } = Astro.props;
-const { url, title, description, date, image, imageDescription, tags } =
-  items[0];
+interface Props {
+  items: CollectionEntry<"posts">[];
+}
 
-const developer = items.find((el) => el.tags.includes("developer"));
-const wonderer = items.find((el) => el.tags.includes("wonderer"));
+const { items } = Astro.props;
+const first: CollectionEntry<"posts"> = items[0];
+const { title, description, date, image, imageDescription } = first.data;
+
+const hasTag = (items: CollectionEntry<"posts">[], t: string) =>
+  items.find((el) => (el.data.tags ?? []).includes(t));
+const developer = hasTag(items, "developer");
+const wonderer = hasTag(items, "wonderer");
 ---
 
 <div class="post">
@@ -21,14 +28,16 @@ const wonderer = items.find((el) => el.tags.includes("wonderer"));
   <div class={`items-${items.length}`}>
     <div class="title">{title}</div>
     <div class="description">{description}</div>
-    <time datetime={date}>{formatDate(date)}</time>
+    <time datetime={date.toISOString()}>{formatDate(date)}</time>
     <div class="buttons">
-      {items.length === 1 && <a href={url}>📝 read</a>}
+      {items.length === 1 && <a href={`/${first.slug}`}>📝 read</a>}
       {
         items.length === 2 && (
           <>
-            <a href={developer.url}>⌨️ developer edition</a>
-            <a href={wonderer.url}>✨ wonderer edition</a>
+            {developer && (
+              <a href={`/${developer.slug}`}>⌨️ developer edition</a>
+            )}
+            {wonderer && <a href={`/${wonderer.slug}`}>✨ wonderer edition</a>}
           </>
         )
       }

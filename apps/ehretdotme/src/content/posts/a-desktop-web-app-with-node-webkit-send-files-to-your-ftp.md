@@ -1,6 +1,6 @@
 ---
-date: "2014-03-21T00:00:00.000Z"
-updatedAt: "2021-05-24T12:56:41.673Z"
+date: 2014-03-21T00:00:00.000Z
+updatedAt: 2021-05-24T12:56:41.673Z
 title: "A desktop web-app with node-webkit, send files to your ftp !"
 description: "Let's play with node-webkit, to make a desktop web-app (part 3)."
 tags: []

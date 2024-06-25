@@ -1,44 +1,52 @@
 ---
 import { formatDate } from "@packages/utils/date";
 import Layout from "../../layouts/Layout.astro";
-import { getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 import Responsive from "@packages/ui/Responsive.astro";
 import SuperTitle from "@packages/ui/SuperTitle.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
-  const tags = [...new Set(posts.flatMap((el) => el.data.tags))].filter(
-    (t) => !!t,
-  );
+  const allTags: string[] = posts.flatMap((el) => el.data.tags ?? []);
+  const tags: string[] = [...new Set(allTags)].filter((t) => !!t);
 
   return tags.map((t) => {
     return {
       params: { tag: t },
       props: {
         tag: t,
-        posts: posts.filter((el) => (el.data.tags ?? []).includes(t)),
+        posts: posts
+          .filter((el) => (el.data.tags ?? []).includes(t))
+          .sort((a, b) =>
+            b.data.date.toISOString().localeCompare(a.data.date.toISOString()),
+          ),
       },
     };
   });
 }
 
+interface Props {
+  tag: string;
+  posts: CollectionEntry<"posts">[];
+}
+
 const { tag, posts } = Astro.props;
 
-let sortedPosts = posts.sort(
-  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
-);
+const title = `Posts tagged with "${tag}"`;
 ---
 
-<Layout>
+<Layout title={title}>
   <nav>
-    <SuperTitle title={`Posts tagged with "${tag}"`} />
+    <SuperTitle title={title} />
     <Responsive>
       {
-        sortedPosts.map(({ data: { description, title, slug, date } }) => (
+        posts.map((entry) => (
           <div class="post">
-            <a href={`/${slug}`}>{title}</a>
-            <time datetime={date}>{formatDate(date)}</time>
-            <span>{description}</span>
+            <a href={`/${entry.slug}`}>{title}</a>
+            <time datetime={entry.data.date.toISOString()}>
+              {formatDate(entry.data.date)}
+            </time>
+            <span>{entry.data.description}</span>
           </div>
         ))
       }

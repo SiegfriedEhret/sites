@@ -17,7 +17,7 @@ export function formatDate(date: string | number | Date, locale = "en") {
   }
 }
 
-export function formatDateHuman(date: string, locale = "en") {
+export function formatDateHuman(date: number | string | Date, locale = "en") {
   const d = new Date(date);
   return `${d.getDate()} ${d.toLocaleString(
     isValidLocale(locale) ? locale : "en",

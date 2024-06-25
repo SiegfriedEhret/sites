@@ -1,6 +1,6 @@
 ---
-date: "2022-08-22T00:00:00.000Z"
-updatedAt: "2022-08-22T12:05:37.027Z"
+date: 2022-08-22T00:00:00.000Z
+updatedAt: 2022-08-22T12:05:37.027Z
 title: buku 101
 description: "Some notes about buku, a powerful bookmark manager"
 tags: []

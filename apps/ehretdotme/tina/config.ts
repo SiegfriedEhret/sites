@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { defineConfig } from "tinacms";
 import { imageUi, tinaCommonFields } from "@packages/utils/tina";
 import slugify from "slugify";

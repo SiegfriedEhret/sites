@@ -1,6 +1,6 @@
 ---
-date: "2022-05-27T00:00:00.000Z"
-updatedAt: "2022-05-27T21:03:30.089Z"
+date: 2022-05-27T00:00:00.000Z
+updatedAt: 2022-05-27T21:03:30.089Z
 title: "Interview: Eiji Kitamura"
 description: >-
   I took advantage of a trip to Japan in 2016 to meet Eiji Kitamura, developer

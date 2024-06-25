@@ -1,6 +1,6 @@
 ---
-date: "2014-06-27T00:00:00.000Z"
-updatedAt: "2021-05-23T20:54:27.873Z"
+date: 2014-06-27T00:00:00.000Z
+updatedAt: 2021-05-23T20:54:27.873Z
 title: Hodor with AngularJS
 description: ng-hodor !
 tags:

@@ -1,6 +1,6 @@
 ---
-date: "2016-04-29T00:00:00.000Z"
-updatedAt: "2021-05-24T08:39:36.687Z"
+date: 2016-04-29T00:00:00.000Z
+updatedAt: 2021-05-24T08:39:36.687Z
 title: I don't understand TypeScript
 description: A few personal thoughts about my interactions with the TypeScript world.
 tags:

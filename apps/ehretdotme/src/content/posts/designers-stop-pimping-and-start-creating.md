@@ -1,6 +1,6 @@
 ---
-date: "2013-11-15T00:00:00.000Z"
-updatedAt: "2021-05-24T12:55:05.153Z"
+date: 2013-11-15T00:00:00.000Z
+updatedAt: 2021-05-24T12:55:05.153Z
 title: "Designers, stop pimping and start creating"
 description: "A little rant about designers trying to make Apple design, all the time."
 tags: []

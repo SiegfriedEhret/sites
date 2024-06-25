@@ -1,6 +1,6 @@
 ---
-date: "2023-04-01T00:00:00.000Z"
-updatedAt: "2023-04-01T07:52:01.844Z"
+date: 2023-04-01T00:00:00.000Z
+updatedAt: 2023-04-01T07:52:01.844Z
 title: News from last month (2023/04 edition)
 description: A selection of links from last month.
 tags: []

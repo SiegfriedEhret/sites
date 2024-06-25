@@ -1,6 +1,6 @@
 ---
-date: "2013-10-06T00:00:00.000Z"
-updatedAt: "2021-05-24T08:32:21.634Z"
+date: 2013-10-06T00:00:00.000Z
+updatedAt: 2021-05-24T08:32:21.634Z
 title: WebGL experiment part 5
 description: Texture mapping.
 tags:

@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 import { formatDate } from "@packages/utils/date";
 import Layout from "../../../layouts/Layout.astro";
 import Responsive from "@packages/ui/Responsive.astro";
@@ -9,26 +9,30 @@ export async function getStaticPaths() {
   const posts = await getCollection("posts");
   const badidon = await getCollection("badidon");
   const items = [...posts, ...badidon];
-  const tags = [...new Set(items.flatMap((el) => el.data.tags))].filter(
-    (t) => !!t,
-  );
+  const allTags: string[] = items.flatMap((el) => el.data.tags ?? []);
+  const tags: string[] = [...new Set(allTags)].filter((t) => !!t);
 
   return tags.map((t) => {
     return {
       params: { tag: t },
       props: {
         tag: t,
-        posts: items.filter((el) => (el.data.tags ?? []).includes(t)),
+        posts: items
+          .filter((el) => (el.data.tags ?? []).includes(t))
+          .sort((a, b) =>
+            b.data.date.toISOString().localeCompare(a.data.date.toISOString()),
+          ),
       },
     };
   });
 }
 
-const { tag, posts } = Astro.props;
+interface Props {
+  tag: string;
+  posts: (CollectionEntry<"posts"> | CollectionEntry<"badidon">)[];
+}
 
-let sortedPosts = posts.sort(
-  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
-);
+const { tag, posts } = Astro.props;
 ---
 
 <Layout>
@@ -36,22 +40,22 @@ let sortedPosts = posts.sort(
     <SuperTitle title={`Billets avec l'étiquette « ${tag} »`} />
     <Responsive>
       {
-        sortedPosts.map(
-          ({ data: { description, title, date, audioUrl }, slug }) => (
-            <div class="post">
-              {audioUrl ? (
-                <a href={`/ied/badidon/${slug}`}>
-                  <span>🎙️</span>
-                  <span>{title}</span>
-                </a>
-              ) : (
-                <a href={`/ied/${slug}`}>{title}</a>
-              )}
-              <time datetime={date}>{formatDate(date)}</time>
-              <span>{description}</span>
-            </div>
-          ),
-        )
+        posts.map((item) => (
+          <div class="post">
+            {(item as CollectionEntry<"badidon">).data.audioUrl ? (
+              <a href={`/ied/badidon/${item.slug}`}>
+                <span>🎙️</span>
+                <span>{item.data.title}</span>
+              </a>
+            ) : (
+              <a href={`/ied/${item.slug}`}>{item.data.title}</a>
+            )}
+            <time datetime={item.data.date.toISOString()}>
+              {formatDate(item.data.date)}
+            </time>
+            <span>{item.data.description}</span>
+          </div>
+        ))
       }
     </Responsive>
   </article>

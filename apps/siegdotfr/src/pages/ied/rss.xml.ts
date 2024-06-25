@@ -1,11 +1,14 @@
 import rss from "@astrojs/rss";
-import { getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
+import type { APIRoute } from "astro";
 
 const parser = new MarkdownIt();
 
-function getDescription(entry) {
+function getDescription(
+  entry: CollectionEntry<"posts"> | CollectionEntry<"badidon">,
+) {
   let description = "";
   try {
     description = `<![CDATA[${sanitizeHtml(parser.render(entry.body))}]]>`;
@@ -17,7 +20,7 @@ function getDescription(entry) {
   return description;
 }
 
-export async function GET(context) {
+export const GET: APIRoute = async (context) => {
   const posts = (await getCollection("posts")).map((entry) => ({
     link: `https://sieg.fr/ied/${entry.slug}`,
     title: entry.data.title,
@@ -25,8 +28,7 @@ export async function GET(context) {
     pubDate: entry.data.date,
   }));
 
-  const badidon = (await getCollection("badidon")).map((entry, index) => {
-    const episodeNumber = index + 1;
+  const badidon = (await getCollection("badidon")).map((entry) => {
     const link = `${context.site}ied/badidon/${entry.slug}`;
     return {
       link,
@@ -45,7 +47,7 @@ export async function GET(context) {
   return rss({
     title: "Je m'appelle Siegfried. Je suis développeur.",
     description: "Ceci est mon site personnel.",
-    site: `${context.site}/ied`,
+    site: `${(context.site as URL).href}/ied`,
     items: items,
     xmlns: {
       atom: "http://www.w3.org/2005/Atom",
@@ -56,4 +58,4 @@ export async function GET(context) {
 <language>fr</language>
 <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>`,
   });
-}
+};

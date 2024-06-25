@@ -1,6 +1,6 @@
 ---
-date: "2015-04-03T00:00:00.000Z"
-updatedAt: "2021-05-23T19:07:25.597Z"
+date: 2015-04-03T00:00:00.000Z
+updatedAt: 2021-05-23T19:07:25.597Z
 title: TodoMVC As A Service
 description: Choose a random thing for your next project !
 tags: []

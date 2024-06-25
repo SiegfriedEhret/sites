@@ -1,6 +1,6 @@
 ---
-date: "2013-09-20T00:00:00.000Z"
-updatedAt: "2021-05-23T13:42:00.617Z"
+date: 2013-09-20T00:00:00.000Z
+updatedAt: 2021-05-23T13:42:00.617Z
 title: Moved to Ghost !
 description: A new life for my blog.
 tags: []

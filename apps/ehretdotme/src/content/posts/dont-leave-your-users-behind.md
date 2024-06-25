@@ -1,6 +1,6 @@
 ---
-date: "2017-02-17T00:00:00.000Z"
-updatedAt: "2021-05-24T21:08:08.246Z"
+date: 2017-02-17T00:00:00.000Z
+updatedAt: 2021-05-24T21:08:08.246Z
 title: Don't leave your users behind
 description: Angular is trying to lose some market again...
 tags:

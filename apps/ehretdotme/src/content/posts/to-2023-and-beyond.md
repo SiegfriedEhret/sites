@@ -1,6 +1,6 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
-updatedAt: "2024-01-01T09:00:54.459Z"
+date: 2023-01-01T00:00:00.000Z
+updatedAt: 2024-01-01T09:00:54.459Z
 title: To 2023 and beyond
 description: It is that time again... A review of last year.
 tags: []

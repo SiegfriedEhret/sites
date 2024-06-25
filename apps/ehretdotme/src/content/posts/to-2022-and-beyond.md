@@ -1,6 +1,6 @@
 ---
-date: "2022-01-08T00:00:00.000Z"
-updatedAt: "2022-01-08T06:45:24.627Z"
+date: 2022-01-08T00:00:00.000Z
+updatedAt: 2022-01-08T06:45:24.627Z
 title: To 2022 and beyond
 description: It is that time again... A review of last year.
 tags:

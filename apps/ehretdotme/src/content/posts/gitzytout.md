@@ -1,6 +1,6 @@
 ---
-date: "2016-02-20T00:00:00.000Z"
-updatedAt: "2021-05-23T19:50:29.260Z"
+date: 2016-02-20T00:00:00.000Z
+updatedAt: 2021-05-23T19:50:29.260Z
 title: gitzytout
 description: gitzytout allows to easily maintain a list of repositories in sync.
 tags: []

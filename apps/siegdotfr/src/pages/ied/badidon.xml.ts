@@ -2,17 +2,19 @@ import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
+import type { APIRoute } from "astro";
 const parser = new MarkdownIt();
 
-export async function GET(context) {
+export const GET: APIRoute = async (context) => {
   const items = (await getCollection("badidon"))
     .map((entry, index) => {
       const episodeNumber = index + 1;
       const link = `${context.site}ied/badidon/${entry.slug}`;
-      const image = `${context.site}${entry.data.image}`.replaceAll(
-        "sieg.fr//",
-        "sieg.fr/",
-      );
+      const image =
+        `${context.site}/public/assets/badidon-badidon.jpg`.replaceAll(
+          "sieg.fr//",
+          "sieg.fr/",
+        );
       let description = "";
       try {
         description = sanitizeHtml(parser.render(entry.body));
@@ -47,7 +49,7 @@ export async function GET(context) {
     title: "Badidon.",
     description:
       "Le podcast qui vous fait dire « badidon ». Par Ayako et Siegfried.",
-    site: `${context.site}ied`,
+    site: `${(context.site as URL).href}ied`,
     items,
     xmlns: {
       itunes: "http://www.itunes.com/dtds/podcast-1.0.dtd",
@@ -77,4 +79,4 @@ Culture, musique, développement, France, Japon
 </itunes:keywords>
 `,
   });
-}
+};

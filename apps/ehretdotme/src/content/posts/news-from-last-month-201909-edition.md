@@ -1,6 +1,6 @@
 ---
-date: "2019-09-04T00:00:00.000Z"
-updatedAt: "2022-10-29T19:24:51.870Z"
+date: 2019-09-04T00:00:00.000Z
+updatedAt: 2022-10-29T19:24:51.870Z
 title: News from last month (2019/09 edition)
 description: A selection of links from last month.
 tags:

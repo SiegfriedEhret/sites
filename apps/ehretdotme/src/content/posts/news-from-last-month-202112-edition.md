@@ -1,6 +1,6 @@
 ---
-date: "2021-12-01T00:00:00.000Z"
-updatedAt: "2022-10-29T19:45:00.215Z"
+date: 2021-12-01T00:00:00.000Z
+updatedAt: 2022-10-29T19:45:00.215Z
 title: News from last month (2021/12 edition)
 description: A selection of links from last month.
 tags:

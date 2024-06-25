@@ -1,6 +1,6 @@
 ---
-date: "2013-09-28T00:00:00.000Z"
-updatedAt: "2021-05-24T21:08:07.848Z"
+date: 2013-09-28T00:00:00.000Z
+updatedAt: 2021-05-24T21:08:07.848Z
 title: WebGL experiment part 1
 description: Your first polygons.
 tags:

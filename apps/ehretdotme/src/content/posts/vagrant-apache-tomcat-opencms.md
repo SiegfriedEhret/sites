@@ -1,6 +1,6 @@
 ---
-date: "2013-04-05T00:00:00.000Z"
-updatedAt: "2021-05-23T13:39:09.065Z"
+date: 2013-04-05T00:00:00.000Z
+updatedAt: 2021-05-23T13:39:09.065Z
 title: "Vagrant, Apache, Tomcat, OpenCms"
 description: "This is mostly a vagrant guide for me, which may be useful for somebody."
 tags: []

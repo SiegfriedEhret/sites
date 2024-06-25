@@ -1,6 +1,6 @@
 ---
-date: "2013-08-07T00:00:00.000Z"
-updatedAt: "2021-05-23T13:40:48.456Z"
+date: 2013-08-07T00:00:00.000Z
+updatedAt: 2021-05-23T13:40:48.456Z
 title: A CLisp installer for Chocolatey
 description: >-
   I made a little chocolatey package for you, to install clisp on your nice

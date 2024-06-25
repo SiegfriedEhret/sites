@@ -1,6 +1,6 @@
 ---
-date: "2011-05-05T00:00:00.000Z"
-updatedAt: "2021-05-23T13:18:28.817Z"
+date: 2011-05-05T00:00:00.000Z
+updatedAt: 2021-05-23T13:18:28.817Z
 title: json2xml
 description: A json to xml converter in JavaScript.
 tags: []

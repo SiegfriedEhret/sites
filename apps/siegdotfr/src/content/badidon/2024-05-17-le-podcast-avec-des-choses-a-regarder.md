@@ -4,7 +4,6 @@ description: >-
   Dans lequel nous parlons de YouTube.
 date: 2024-05-17T00:00:00.000Z
 updatedAt: 2024-05-17T00:00:00.000Z
-image: ../../../public/assets/badidon-badidon.jpg
 tags:
   - badidon
 audioUrl: >-

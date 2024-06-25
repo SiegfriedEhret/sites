@@ -1,6 +1,6 @@
 ---
-date: "2023-05-04T00:00:00.000Z"
-updatedAt: "2023-05-04T15:10:52.613Z"
+date: 2023-05-04T00:00:00.000Z
+updatedAt: 2023-05-04T15:10:52.613Z
 title: Using different package repositories with Alpine Linux
 description: >-
   I needed a way to install something from the "testing" repository in Alpine

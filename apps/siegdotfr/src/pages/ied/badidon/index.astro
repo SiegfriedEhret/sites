@@ -6,16 +6,9 @@ import BadidonSubscribe from "../../../components/BadidonSubscribe.astro";
 import Responsive from "@packages/ui/Responsive.astro";
 import SuperTitle from "@packages/ui/SuperTitle.astro";
 
-const badidon = (await getCollection("badidon"))
-  .map((item) => ({
-    title: item.data.title,
-    slug: item.slug,
-    description: item.data.description,
-    image: item.data.image,
-    date: formatDate(item.data.date),
-    tags: item.data.tags,
-  }))
-  .sort((a, b) => b.date.localeCompare(a.date));
+const badidon = (await getCollection("badidon")).sort((a, b) =>
+  b.data.date.toISOString().localeCompare(a.data.date.toISOString()),
+);
 ---
 
 <Layout title="/badidon [sieg.fr/ied]" description="🎙️badidon. Un podcast.">
@@ -30,17 +23,19 @@ const badidon = (await getCollection("badidon"))
     <nav>
       {
         badidon.map((item) => (
-          <section data-year={getYear(item.date)}>
+          <section data-year={getYear(item.data.date)}>
             <h2>
               <a href={`/ied/badidon/${item.slug}`}>
                 <span>🎙️</span>
-                <span>{item.title}</span>
+                <span>{item.data.title}</span>
               </a>
             </h2>
             <div>
-              <time datetime={item.date}>{formatDate(item.date)}</time>
+              <time datetime={item.data.date.toISOString()}>
+                {formatDate(item.data.date)}
+              </time>
             </div>
-            <p>{item.description}</p>
+            <p>{item.data.description}</p>
           </section>
         ))
       }

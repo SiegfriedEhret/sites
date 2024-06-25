@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 import SuperTitle from "@packages/ui/SuperTitle.astro";
 import Layout from "../layouts/Layout.astro";
 import Responsive from "@packages/ui/Responsive.astro";
@@ -7,24 +7,21 @@ import { formatDate } from "@packages/utils/date";
 import ClickOnThatNFLM from "../components/ClickOnThatNFLM.astro";
 
 const posts = (await getCollection("posts"))
-  .filter((p) => p.data.tags.includes("nflm"))
-  .map((item) => ({
-    title: item.data.title,
-    url: `/${item.slug}`,
-    description: item.data.description,
-    date: item.data.date,
-    image: item.data.image,
-    imageDescription: item.data.imageDescription,
-    tags: item.data.tags,
-  }))
-  .sort((a, b) => formatDate(b.date).localeCompare(formatDate(a.date)));
+  .filter((p) => (p.data.tags ?? []).includes("nflm"))
+  .sort((a, b) =>
+    formatDate(b.data.date).localeCompare(formatDate(a.data.date)),
+  );
 
-const grouped = posts.reduce((acc, el) => {
-  const fDate = formatDate(el.date);
-  return {
-    ...acc,
-    [fDate]: [...(acc[fDate] ?? []), el].filter((el) => !!el),
-  };
+type Posts = Record<string, CollectionEntry<"posts">[]>;
+const grouped: Posts = posts.reduce((acc: Posts, el) => {
+  const fDate = formatDate(el.data.date);
+  if (!acc[fDate]) {
+    acc[fDate] = [];
+  }
+  if (el) {
+    acc[fDate].push(el);
+  }
+  return acc;
 }, {});
 
 const sortedGroups = Object.keys(grouped).sort().reverse();

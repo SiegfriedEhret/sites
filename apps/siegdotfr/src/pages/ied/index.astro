@@ -26,7 +26,7 @@ const badidon = (await getCollection("badidon"))
     title: item.data.title,
     url: `/ied/badidon/${item.slug}`,
     description: item.data.description,
-    image: item.data.image,
+    image: "/public/assets/badidon-badidon.jpg",
     imageDescription:
       "Le logo de notre podcast, avec des bols de riz et des bouts de pain. On lit badidon par dessus le reste.",
     date: formatDate(item.data.date),

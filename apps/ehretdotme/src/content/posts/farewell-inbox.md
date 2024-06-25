@@ -1,6 +1,6 @@
 ---
-date: "2015-02-27T00:00:00.000Z"
-updatedAt: "2021-05-23T16:28:23.883Z"
+date: 2015-02-27T00:00:00.000Z
+updatedAt: 2021-05-23T16:28:23.883Z
 title: "Farewell, Inbox !"
 description: "Seriously, I can't get into it."
 tags: []

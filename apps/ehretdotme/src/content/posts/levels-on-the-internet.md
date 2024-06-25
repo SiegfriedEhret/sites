@@ -1,6 +1,6 @@
 ---
-date: "2017-12-30T00:00:00.000Z"
-updatedAt: "2021-05-23T21:11:58.496Z"
+date: 2017-12-30T00:00:00.000Z
+updatedAt: 2021-05-23T21:11:58.496Z
 title: Levels on the internet
 description: >-
   I found this on reddit. I put this here to keep it somewhere. All credits to

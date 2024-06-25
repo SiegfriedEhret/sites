@@ -1,6 +1,6 @@
 ---
-date: "2021-01-05T00:00:00.000Z"
-updatedAt: "2021-05-24T07:43:17.898Z"
+date: 2021-01-05T00:00:00.000Z
+updatedAt: 2021-05-24T07:43:17.898Z
 title: To 2021 and beyond
 description: It's that time again... A review of last year.
 tags:

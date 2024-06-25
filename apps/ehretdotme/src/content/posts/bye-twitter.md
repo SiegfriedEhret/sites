@@ -1,6 +1,6 @@
 ---
-date: "2022-05-01T00:00:00.000Z"
-updatedAt: "2022-05-02T00:02:58.739Z"
+date: 2022-05-01T00:00:00.000Z
+updatedAt: 2022-05-02T00:02:58.739Z
 title: Twitter
 description: >-
   Following the recent news of acquisition by Elon Musk, I will be closing my

@@ -1,6 +1,6 @@
 ---
-date: "2019-12-31T00:00:00.000Z"
-updatedAt: "2021-05-24T07:11:05.479Z"
+date: 2019-12-31T00:00:00.000Z
+updatedAt: 2021-05-24T07:11:05.479Z
 title: Get some superpowers with your terminal
 description: >-
   A few notes about the apps I use from my terminal to be the only one who can

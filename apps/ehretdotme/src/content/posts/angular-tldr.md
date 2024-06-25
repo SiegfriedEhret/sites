@@ -1,6 +1,6 @@
 ---
-date: "2018-10-22T00:00:00.000Z"
-updatedAt: "2021-05-24T06:45:06.858Z"
+date: 2018-10-22T00:00:00.000Z
+updatedAt: 2021-05-24T06:45:06.858Z
 title: "Angular, TL;DR"
 description: >-
   I have written a few things about Angular in the past here. I have finally

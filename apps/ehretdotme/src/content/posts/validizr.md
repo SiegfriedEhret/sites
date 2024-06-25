@@ -1,6 +1,6 @@
 ---
-date: "2012-03-15T00:00:00.000Z"
-updatedAt: "2021-05-23T13:26:48.069Z"
+date: 2012-03-15T00:00:00.000Z
+updatedAt: 2021-05-23T13:26:48.069Z
 title: validizr
 description: A plugin for form validation.
 tags: []

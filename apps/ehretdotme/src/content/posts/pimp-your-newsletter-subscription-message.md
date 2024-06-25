@@ -1,6 +1,6 @@
 ---
-date: "2012-06-01T00:00:00.000Z"
-updatedAt: "2021-05-23T13:29:31.751Z"
+date: 2012-06-01T00:00:00.000Z
+updatedAt: 2021-05-23T13:29:31.751Z
 title: Pimp your newsletter subscription message
 description: An interesting newsletter I received
 tags: []

@@ -1,6 +1,6 @@
 ---
-date: "2013-09-29T00:00:00.000Z"
-updatedAt: "2021-05-24T21:08:07.814Z"
+date: 2013-09-29T00:00:00.000Z
+updatedAt: 2021-05-24T21:08:07.814Z
 title: WebGL experiment part 2
 description: Adding colour.
 tags:

@@ -1,6 +1,6 @@
 ---
-date: "2022-05-26T00:00:00.000Z"
-updatedAt: "2022-05-26T13:17:38.314Z"
+date: 2022-05-26T00:00:00.000Z
+updatedAt: 2022-05-26T13:17:38.314Z
 title: "Interview: Matt Holt"
 description: >-
   I interviewed Matt Holt at dotGo 2016. We talked about open source, Caddy, Go,

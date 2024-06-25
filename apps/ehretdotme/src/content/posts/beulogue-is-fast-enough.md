@@ -1,6 +1,6 @@
 ---
-date: "2020-10-29T00:00:00.000Z"
-updatedAt: "2021-05-24T08:45:14.633Z"
+date: 2020-10-29T00:00:00.000Z
+updatedAt: 2021-05-24T08:45:14.633Z
 title: beulogue is fast enough
 description: "A quick article about a recent change in beulogue, and benchmarks"
 tags:

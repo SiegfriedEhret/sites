@@ -1,6 +1,6 @@
 ---
-date: "2016-12-15T00:00:00.000Z"
-updatedAt: "2021-05-23T20:54:14.950Z"
+date: 2016-12-15T00:00:00.000Z
+updatedAt: 2021-05-23T20:54:14.950Z
 title: ng-semver
 description: "A story about angular, semver, npm, and fails."
 tags:

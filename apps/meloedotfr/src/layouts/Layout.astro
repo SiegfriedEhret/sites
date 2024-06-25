@@ -1,14 +1,19 @@
 ---
-import Layout from "@packages/ui/Layout.astro";
+import CommonLayout from "@packages/ui/CommonLayout.astro";
 import Header from "@packages/ui/Header.astro";
 import Responsive from "@packages/ui/Responsive.astro";
+import "../styles.css";
+
+interface Props {
+  title: string;
+  description: string;
+  metaImage: string;
+}
 
 const { title, description, metaImage } = Astro.props;
-
-import "../styles.css";
 ---
 
-<Layout
+<CommonLayout
   title={title}
   description={description}
   metaImage={metaImage}
@@ -34,4 +39,4 @@ import "../styles.css";
       async
       src="/analytics.js"></script>
   </Fragment>
-</Layout>
+</CommonLayout>

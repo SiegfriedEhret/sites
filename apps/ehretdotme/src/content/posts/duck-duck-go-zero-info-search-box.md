@@ -1,6 +1,6 @@
 ---
-date: "2011-05-16T00:00:00.000Z"
-updatedAt: "2021-05-23T13:19:27.223Z"
+date: 2011-05-16T00:00:00.000Z
+updatedAt: 2021-05-23T13:19:27.223Z
 title: Duck Duck Go Zero Info search box
 description: A jQuery plugin for Duck Duck Go.
 tags: []

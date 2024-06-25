@@ -2,6 +2,7 @@ import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
+import type { APIRoute } from "astro";
 
 const parser = new MarkdownIt();
 
@@ -27,11 +28,11 @@ const items = (await getCollection("posts"))
   )
   .slice(0, 10);
 
-export function GET(context) {
+export const GET: APIRoute = async (context) => {
   return rss({
     title: "I'm Siegfried. A developer. Yep.",
     description: "This is my personal website.",
-    site: context.site,
+    site: (context.site as URL).href,
     items,
     xmlns: {
       atom: "http://www.w3.org/2005/Atom",
@@ -42,4 +43,4 @@ export function GET(context) {
 <language>en</language>
 <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>`,
   });
-}
+};

@@ -1,6 +1,6 @@
 ---
-date: "2017-01-04T00:00:00.000Z"
-updatedAt: "2021-05-23T20:35:54.127Z"
+date: 2017-01-04T00:00:00.000Z
+updatedAt: 2021-05-23T20:35:54.127Z
 title: "Apple, B, C, D"
 description: "After a year, here are a few thoughts about Apple and my iPhone."
 tags: []

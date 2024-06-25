@@ -1,6 +1,6 @@
 ---
-date: "2017-08-17T00:00:00.000Z"
-updatedAt: "2021-05-23T21:05:56.611Z"
+date: 2017-08-17T00:00:00.000Z
+updatedAt: 2021-05-23T21:05:56.611Z
 title: Node.JS and environment variables
 description: A few notes on usage with Node.JS/npm.
 tags:

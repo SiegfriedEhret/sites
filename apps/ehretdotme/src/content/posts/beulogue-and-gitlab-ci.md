@@ -1,6 +1,6 @@
 ---
-date: "2017-03-05T00:00:00.000Z"
-updatedAt: "2021-05-24T21:08:07.818Z"
+date: 2017-03-05T00:00:00.000Z
+updatedAt: 2021-05-24T21:08:07.818Z
 title: beulogue and gitlab ci
 description: How do I deploy my beulogue blog with Gitlab CI ?
 tags:

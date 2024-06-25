@@ -1,6 +1,6 @@
 ---
-date: "2013-04-03T00:00:00.000Z"
-updatedAt: "2022-03-30T23:50:09.170Z"
+date: 2013-04-03T00:00:00.000Z
+updatedAt: 2022-03-30T23:50:09.170Z
 title: Remote debugging with IntelliJ IDEA
 description: How to debug a vagrant running app with IntelliJ.
 tags: []

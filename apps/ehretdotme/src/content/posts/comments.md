@@ -1,6 +1,6 @@
 ---
-date: "2013-09-24T00:00:00.000Z"
-updatedAt: "2021-05-23T13:45:02.165Z"
+date: 2013-09-24T00:00:00.000Z
+updatedAt: 2021-05-23T13:45:02.165Z
 title: Comments !
 description: I added disqus.
 tags: []

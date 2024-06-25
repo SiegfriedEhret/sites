@@ -1,6 +1,6 @@
 ---
-date: "2015-02-10T00:00:00.000Z"
-updatedAt: "2021-05-24T12:52:56.515Z"
+date: 2015-02-10T00:00:00.000Z
+updatedAt: 2021-05-24T12:52:56.515Z
 title: Neovim weird thing with syntax on
 description: A quick tip for an error I encountered.
 tags: []

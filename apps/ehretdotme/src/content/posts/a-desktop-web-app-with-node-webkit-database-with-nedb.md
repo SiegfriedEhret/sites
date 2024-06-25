@@ -1,6 +1,6 @@
 ---
-date: "2014-01-21T00:00:00.000Z"
-updatedAt: "2021-05-24T12:56:28.200Z"
+date: 2014-01-21T00:00:00.000Z
+updatedAt: 2021-05-24T12:56:28.200Z
 title: "A desktop web-app with node-webkit, database with nedb !"
 description: "Let's play with node-webkit, to make a desktop web-app (part 2)."
 tags: []

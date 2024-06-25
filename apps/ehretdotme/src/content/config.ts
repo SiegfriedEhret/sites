@@ -6,8 +6,10 @@ const postCollection = defineCollection({
     z.object({
       title: z.string(),
       description: z.string(),
-      date: z.coerce.date().optional(),
-      updatedAt: z.coerce.date().optional(),
+      date: z.date(),
+      updatedAt: z.date(),
+      // date: z.string().transform((str) => new Date(str)),
+      // updatedAt: z.string().transform((str) => new Date(str)),
       image: image().optional(),
       imageDescription: z.string().optional(),
       tags: z.array(z.string()).optional(),
@@ -15,11 +17,11 @@ const postCollection = defineCollection({
 });
 
 const museumCollection = defineCollection({
-  type: "content",
+  type: "data",
   schema: ({ image }) =>
     z.object({
       year: z.string(),
-      shot: z.coerce.date().optional(),
+      shot: z.date(),
       location: z.string().optional(),
       name: z.string(),
       artistName: z.string(),
@@ -36,7 +38,7 @@ const museumCollection = defineCollection({
 });
 
 const jobCollection = defineCollection({
-  type: "content",
+  type: "data",
   schema: z.object({
     title: z.string(),
     company: z.string(),
@@ -45,6 +47,9 @@ const jobCollection = defineCollection({
     startDate: z.string(),
     endDate: z.string().optional(),
     salary: z.number(),
+    variable: z.number().optional(),
+    bonus: z.number().optional(),
+    bonusDescription: z.string().optional(),
     currency: z.string(),
     comment: z.string().optional(),
   }),

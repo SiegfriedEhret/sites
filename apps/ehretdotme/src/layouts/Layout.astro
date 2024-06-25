@@ -1,8 +1,15 @@
 ---
-import Layout from "@packages/ui/Layout.astro";
+import CommonLayout from "@packages/ui/CommonLayout.astro";
 import Header from "@packages/ui/Header.astro";
 import Footer from "@packages/ui/Footer.astro";
 import Vouivre from "@packages/ui/Vouivre.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  metaImage?: string;
+}
+
 const {
   title,
   description = "My name is Siegfried Ehret. I am a developer.",
@@ -12,7 +19,7 @@ const {
 import "../styles.css";
 ---
 
-<Layout
+<CommonLayout
   title={title}
   description={description}
   metaImage={metaImage}
@@ -70,4 +77,4 @@ import "../styles.css";
       async
       src="/analytics.js"></script>
   </Footer>
-</Layout>
+</CommonLayout>

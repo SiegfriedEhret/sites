@@ -1,6 +1,6 @@
 ---
-date: "2016-03-01T00:00:00.000Z"
-updatedAt: "2021-05-23T19:51:49.673Z"
+date: 2016-03-01T00:00:00.000Z
+updatedAt: 2021-05-23T19:51:49.673Z
 title: ES7 fatigue
 description: Betting on unfinished specs is dangerous.
 tags: []

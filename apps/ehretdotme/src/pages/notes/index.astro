@@ -5,16 +5,9 @@ import { getCollection } from "astro:content";
 import Responsive from "@packages/ui/Responsive.astro";
 import SuperTitle from "@packages/ui/SuperTitle.astro";
 
-const entriesFromRepository = await getCollection("posts");
-
-const posts = [
-  ...entriesFromRepository.map((item) => ({
-    title: item.data.title,
-    slug: item.slug,
-    description: item.data.description,
-    date: formatDate(item.data.date),
-  })),
-].sort((a, b) => b.date.localeCompare(a.date));
+const posts = (await getCollection("posts")).sort((a, b) =>
+  b.data.date.toISOString().localeCompare(a.data.date.toISOString()),
+);
 ---
 
 <Layout title="/notes [ehret.me]">
@@ -25,14 +18,16 @@ const posts = [
     <nav>
       {
         posts.map((item) => (
-          <section data-year={getYear(item.date)}>
+          <section data-year={getYear(item.data.date)}>
             <h2>
-              <a href={`/${item.slug}`}>{item.title}</a>
+              <a href={`/${item.slug}`}>{item.data.title}</a>
             </h2>
             <div>
-              <time datetime={item.date}>{formatDate(item.date)}</time>
+              <time datetime={item.data.date.toISOString()}>
+                {formatDate(item.data.date)}
+              </time>
             </div>
-            <p>{item.description}</p>
+            <p>{item.data.description}</p>
           </section>
         ))
       }

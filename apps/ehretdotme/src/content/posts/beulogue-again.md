@@ -1,6 +1,6 @@
 ---
-date: "2016-05-12T00:00:00.000Z"
-updatedAt: "2021-05-24T08:40:21.569Z"
+date: 2016-05-12T00:00:00.000Z
+updatedAt: 2021-05-24T08:40:21.569Z
 title: beulogue again
 description: beulogue is my small attempt of making my blog generator.
 tags:

@@ -4,7 +4,6 @@ description: >-
   Dans lequel nous parlons des journées mondiales.
 date: 2024-04-12T00:00:00.000Z
 updatedAt: 2024-04-12T00:00:00.000Z
-image: ../../../public/assets/badidon-badidon.jpg
 tags:
   - badidon
 audioUrl: >-

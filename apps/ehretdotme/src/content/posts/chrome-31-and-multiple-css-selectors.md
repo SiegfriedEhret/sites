@@ -1,6 +1,6 @@
 ---
-date: "2013-11-20T00:00:00.000Z"
-updatedAt: "2021-05-24T12:55:38.281Z"
+date: 2013-11-20T00:00:00.000Z
+updatedAt: 2021-05-24T12:55:38.281Z
 title: Chrome 31 and multiple '+' CSS selectors
 description: A weird thing happend on Chrome 31.
 tags: []

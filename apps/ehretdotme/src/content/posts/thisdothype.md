@@ -1,6 +1,6 @@
 ---
-date: "2017-02-18T00:00:00.000Z"
-updatedAt: "2021-05-24T21:08:08.254Z"
+date: 2017-02-18T00:00:00.000Z
+updatedAt: 2021-05-24T21:08:08.254Z
 title: thisdothype
 description: An experiment about bias in the JavaScript world.
 tags:

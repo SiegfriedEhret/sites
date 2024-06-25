@@ -3,7 +3,6 @@ title: "Épisode 3 : ceci est un podcast."
 description: Dans lequel on parle de podcasts.
 date: 2024-03-09T00:00:00.000Z
 updatedAt: 2024-03-09T00:00:00.000Z
-image: ../../../public/assets/badidon-badidon.jpg
 tags:
   - badidon
 audioUrl: "https://badidon.s3.fr-par.scw.cloud/badidon-03-ceci-est-un-podcast.mp3"

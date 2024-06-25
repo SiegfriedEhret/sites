@@ -1,6 +1,6 @@
 ---
-date: "2013-03-12T00:00:00.000Z"
-updatedAt: "2021-05-23T13:31:03.337Z"
+date: 2013-03-12T00:00:00.000Z
+updatedAt: 2021-05-23T13:31:03.337Z
 title: konamize
 description: Easy jQuery konami code integration !
 tags: []

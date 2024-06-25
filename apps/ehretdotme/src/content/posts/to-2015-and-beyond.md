@@ -1,6 +1,6 @@
 ---
-date: "2015-01-19T00:00:00.000Z"
-updatedAt: "2021-05-23T20:54:41.352Z"
+date: 2015-01-19T00:00:00.000Z
+updatedAt: 2021-05-23T20:54:41.352Z
 title: To 2015 and beyond !
 description: It’s that time again... A review of last year.
 tags:

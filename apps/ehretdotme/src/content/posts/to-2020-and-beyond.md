@@ -1,6 +1,6 @@
 ---
-date: "2020-01-01T00:00:00.000Z"
-updatedAt: "2021-05-24T07:17:27.212Z"
+date: 2020-01-01T00:00:00.000Z
+updatedAt: 2021-05-24T07:17:27.212Z
 title: To 2020 and beyond
 description: It’s that time again... A review of last year.
 tags:

@@ -1,6 +1,6 @@
 ---
-date: "2013-09-21T00:00:00.000Z"
-updatedAt: "2021-05-23T13:43:19.538Z"
+date: 2013-09-21T00:00:00.000Z
+updatedAt: 2021-05-23T13:43:19.538Z
 title: My ghost install
 description: What I use for my server to setup Ghost.
 tags: []

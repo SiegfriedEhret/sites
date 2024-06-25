@@ -1,36 +1,40 @@
 ---
 import { Image } from "astro:assets";
-import { getCollection } from "astro:content";
+import { type CollectionEntry, getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import { formatDateHuman } from "@packages/utils/date";
 import Responsive from "@packages/ui/Responsive.astro";
 import SuperTitle from "@packages/ui/SuperTitle.astro";
+import { getSlug } from "../../lib/museum";
 
 export async function getStaticPaths() {
-  const items = await getCollection("museum");
-
-  return items.map((item) => ({
-    params: { slug: item.slug },
-    props: {
-      ...item,
-      ...item.data,
-    },
-  }));
+  const items: CollectionEntry<"museum">[] = await getCollection("museum");
+  return items.map((item) => {
+    return {
+      params: { slug: getSlug(item) },
+      props: {
+        item,
+      },
+    };
+  });
 }
 
+interface Props {
+  item: CollectionEntry<"museum">;
+}
+
+const { item } = Astro.props;
 const {
   artistName,
   artistBirth,
   artistDeath,
-  date,
   description,
   location,
   images,
   name,
   shot,
-  slug,
   year,
-} = Astro.props;
+} = item.data;
 
 const pageName = `${artistName} - ${name} (${year})`;
 ---

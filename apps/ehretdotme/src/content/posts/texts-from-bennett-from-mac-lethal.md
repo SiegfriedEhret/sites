@@ -1,6 +1,6 @@
 ---
-date: "2013-11-07T00:00:00.000Z"
-updatedAt: "2021-05-24T12:54:46.440Z"
+date: 2013-11-07T00:00:00.000Z
+updatedAt: 2021-05-24T12:54:46.440Z
 title: Texts from Bennett from Mac Lethal
 description: I read that !
 tags: []
