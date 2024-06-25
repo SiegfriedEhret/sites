@@ -12,15 +12,15 @@
     "tina": "pnpm tinacms --port 4004 --datalayer-port 9004 dev -c 'pnpm run dev'"
   },
   "dependencies": {
-    "@astrojs/alpinejs": "^0.3.2",
-    "@astrojs/rss": "^4.0.6",
+    "@astrojs/alpinejs": "^0.4.0",
+    "@astrojs/rss": "^4.0.7",
     "@astrojs/ts-plugin": "^1.8.0",
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
     "@tinacms/cli": "^1.5.46",
     "@types/alpinejs": "^3.13.10",
     "alpinejs": "^3.14.1",
-    "astro": "^4.11.0",
+    "astro": "^4.11.1",
     "markdown-it": "^14.1.0",
     "sanitize-html": "^2.13.0",
     "sharp": "^0.33.4",
