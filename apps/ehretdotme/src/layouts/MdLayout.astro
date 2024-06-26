@@ -1,6 +1,8 @@
 ---
 import Layout from "./Layout.astro";
 import SuperTitle from "@packages/ui/SuperTitle.astro";
+import Responsive from "@packages/ui/Responsive.astro";
+import Toc from "@packages/ui/Toc.astro";
 
 interface Props {
   title: string;
@@ -8,12 +10,18 @@ interface Props {
   image?: string;
 }
 
-const { title, description, image } = Astro.props;
+const { frontmatter, headings } = Astro.props;
+const { title, description, image } = frontmatter;
 ---
 
 <Layout title={title} description={description} metaImage={image}>
   <article>
     <SuperTitle title={title} />
-    <slot />
+
+    {headings && <Toc headings={headings} title="Table of contents" />}
+
+    <Responsive>
+      <slot />
+    </Responsive>
   </article>
 </Layout>
