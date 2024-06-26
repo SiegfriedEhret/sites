@@ -12,10 +12,6 @@
     "dev": {
       "cache": false,
       "persistent": true
-    },
-    "tina": {
-      "cache": false,
-      "persistent": true
     }
   }
 }

@@ -6,11 +6,10 @@
     "dev": "astro dev",
     "start": "astro dev",
     "check": "astro sync && astro check",
-    "build": "astro check && tinacms --port 4004 --datalayer-port 9004 build && astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write . --plugin=prettier-plugin-astro",
-    "tina": "pnpm tinacms --port 4004 --datalayer-port 9004 dev -c 'pnpm run dev'"
+    "format": "prettier --write . --plugin=prettier-plugin-astro"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
@@ -19,7 +18,6 @@
     "@astrojs/ts-plugin": "^1.8.0",
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
-    "@tinacms/cli": "^1.5.46",
     "@types/alpinejs": "^3.13.10",
     "alpinejs": "^3.14.1",
     "astro": "^4.11.1",
@@ -27,7 +25,6 @@
     "sanitize-html": "^2.13.0",
     "sharp": "^0.33.4",
     "slugify": "^1.6.6",
-    "tinacms": "^1.6.4",
     "typescript": "^5.5.2"
   },
   "devDependencies": {

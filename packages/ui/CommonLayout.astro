@@ -119,12 +119,16 @@ const img = metaImage
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#C85168" />
 
-    {rssTitle && rssHref && <link
-        rel="alternate"
-        type="application/rss+xml"
-        title={rssTitle}
-        href={rssHref}
-    />}
+    {
+      rssTitle && rssHref && (
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title={rssTitle}
+          href={rssHref}
+        />
+      )
+    }
   </head>
   <body>
     <slot name="first" />

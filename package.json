@@ -9,7 +9,6 @@
     "build:meloedotfr": "turbo run build --filter=meloedotfr",
     "build:siegdotfr": "turbo run build --filter=siegdotfr",
     "dev": "turbo run dev --parallel",
-    "tina": "turbo run tina --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
