@@ -1,10 +1,19 @@
 {
   "$schema": "https://turborepo.org/schema.json",
-  "pipeline": {
+  "tasks": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["build/**", ".vercel_build_output/**", "dist/**"],
-      "inputs": ["apps/src/**/*.{html,js,ts,astro}", "packages/**/*.{html,js,ts,astro}" ]
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "build/**",
+        ".vercel_build_output/**",
+        "dist/**"
+      ],
+      "inputs": [
+        "apps/src/**/*.{html,js,ts,astro}",
+        "packages/**/*.{html,js,ts,astro}"
+      ]
     },
     "lint": {
       "outputs": []
