@@ -2,6 +2,7 @@
 import Layout from "./Layout.astro";
 import SuperTitle from "@packages/ui/SuperTitle.astro";
 import Responsive from "@packages/ui/Responsive.astro";
+import Figure from "@packages/ui/Figure.astro";
 import Toc from "@packages/ui/Toc.astro";
 
 interface Props {
@@ -10,13 +11,36 @@ interface Props {
   image?: string;
 }
 
+interface Props {
+  frontmatter: {
+    title: string;
+    description: string;
+    image: string;
+    imageDescription: string;
+  };
+  headings: { depth: number; slug: string; text: string }[];
+}
+
 const { frontmatter, headings } = Astro.props;
-const { title, description, image } = frontmatter;
+const { title, description, image, imageDescription = "" } = frontmatter;
 ---
 
 <Layout title={title} description={description} metaImage={image}>
   <article>
     <SuperTitle title={title} />
+
+    <Responsive>
+      {
+        image && (
+          <Figure
+            url={image}
+            title={imageDescription || title}
+            maxHeight="34rem"
+            fit="cover"
+          />
+        )
+      }
+    </Responsive>
 
     {headings && <Toc headings={headings} title="Table of contents" />}
 

@@ -2,6 +2,8 @@
 layout: ../layouts/MdLayout.astro
 title: Things I use
 description: A list of software (and other stuff) that I use.
+image: /assets/IMG_1962.JPG
+imageDescription: "My keyboard, a Leopold FC660C."
 ---
 
 ⚠️ this is in progress ⚠️
