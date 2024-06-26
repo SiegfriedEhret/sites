@@ -1,6 +1,6 @@
 ---
-date: "2021-09-26T00:00:00.000Z"
-updatedAt: "2022-02-06T08:36:46.445Z"
+date: 2021-09-26T00:00:00.000Z
+updatedAt: 2022-02-06T08:36:46.445Z
 title: Injury Reserve - By The Time I Get To Phoenix (2021)
 description: >-
   Voilà le genre d’expérience qui fait que le hip hop est un genre digne

@@ -1,6 +1,6 @@
 ---
-date: "2018-01-09T00:00:00.000Z"
-updatedAt: "2021-05-24T08:48:37.297Z"
+date: 2018-01-09T00:00:00.000Z
+updatedAt: 2021-05-24T08:48:37.297Z
 title: La positive attitude
 description: >-
   Dans mon billet rétro sur 2018 et la suite je disais que je souhaitais être

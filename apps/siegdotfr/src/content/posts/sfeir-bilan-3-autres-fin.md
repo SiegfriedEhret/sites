@@ -1,6 +1,6 @@
 ---
-date: "2019-01-29T00:00:00.000Z"
-updatedAt: "2021-05-24T08:07:52.174Z"
+date: 2019-01-29T00:00:00.000Z
+updatedAt: 2021-05-24T08:07:52.174Z
 title: Le bilan de mon aventure SFEIR (3/3)
 description: Suite et fin
 tags:

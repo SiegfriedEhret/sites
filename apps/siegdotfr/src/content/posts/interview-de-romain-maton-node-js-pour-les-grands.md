@@ -1,6 +1,6 @@
 ---
-date: "2022-05-26T00:00:00.000Z"
-updatedAt: "2022-05-26T12:07:34.091Z"
+date: 2022-05-26T00:00:00.000Z
+updatedAt: 2022-05-26T12:07:34.091Z
 title: Interview de Romain Maton - Node.js pour les grands !
 description: >-
   Romain Maton est un développeur freelance qui aime plus que tout raviver la

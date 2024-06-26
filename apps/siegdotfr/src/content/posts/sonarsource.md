@@ -1,6 +1,6 @@
 ---
-date: "2022-01-23T00:00:00.000Z"
-updatedAt: "2022-01-24T06:23:57.654Z"
+date: 2022-01-23T00:00:00.000Z
+updatedAt: 2022-01-24T06:23:57.654Z
 title: >-
   Candidat·e à SonarSource ? Voici quelques questions à poser qui peuvent t'être
   utiles.

@@ -1,6 +1,6 @@
 ---
-date: "2022-11-26T00:00:00.000Z"
-updatedAt: "2022-11-26T22:17:02.408Z"
+date: 2022-11-26T00:00:00.000Z
+updatedAt: 2022-11-26T22:17:02.408Z
 title: 26 novembre 1997
 description: Mon père est mort il y a 25 ans.
 tags: []

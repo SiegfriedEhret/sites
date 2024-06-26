@@ -1,6 +1,6 @@
 ---
-date: "2021-09-01T00:00:00.000Z"
-updatedAt: "2022-02-06T08:46:20.747Z"
+date: 2021-09-01T00:00:00.000Z
+updatedAt: 2022-02-06T08:46:20.747Z
 title: Between The Buried And Me - Colors II (2021)
 description: >-
   Voyons voir ce que donne ce dixième album, et suite de Colors (2007). Une

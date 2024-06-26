@@ -3,6 +3,8 @@ import { getCollection } from "astro:content";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 import type { APIRoute } from "astro";
+import { compareDates } from "@packages/utils/date";
+
 const parser = new MarkdownIt();
 
 export const GET: APIRoute = async (context) => {
@@ -40,9 +42,7 @@ export const GET: APIRoute = async (context) => {
 `,
       };
     })
-    .sort((a, b) =>
-      b.pubDate.toISOString().localeCompare(a.pubDate.toISOString()),
-    );
+    .sort((a, b) => compareDates(a.pubDate, b.pubDate));
 
   const link = `${context.site}ied/badidon.xml`;
   return rss({

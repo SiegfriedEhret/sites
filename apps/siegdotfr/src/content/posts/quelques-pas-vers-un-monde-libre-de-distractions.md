@@ -1,6 +1,6 @@
 ---
-date: "2022-08-01T00:00:00.000Z"
-updatedAt: "2022-08-01T07:32:02.353Z"
+date: 2022-08-01T00:00:00.000Z
+updatedAt: 2022-08-01T07:32:02.353Z
 title: Quelques pas vers un monde libre de distractions
 description: Quelques notes pour s'orienter vers moins de dépendance à nos ordiphones.
 tags: []

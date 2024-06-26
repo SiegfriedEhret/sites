@@ -1,6 +1,6 @@
 ---
-date: "2021-08-09T00:00:00.000Z"
-updatedAt: "2022-02-06T08:54:07.789Z"
+date: 2021-08-09T00:00:00.000Z
+updatedAt: 2022-02-06T08:54:07.789Z
 title: Isaiah Rashad - The House Is Burning (2021)
 description: >-
   Depuis le temps qu'on attend quelque chose de chez TDE, voici une des grosses

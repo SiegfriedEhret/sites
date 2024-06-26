@@ -1,6 +1,6 @@
 ---
-date: "2018-10-22T00:00:00.000Z"
-updatedAt: "2021-05-24T06:44:57.366Z"
+date: 2018-10-22T00:00:00.000Z
+updatedAt: 2021-05-24T06:44:57.366Z
 title: "Angular, TL;PL"
 description: >-
   Ça fait plusieurs fois que je parle d'Angular sur mon blog. Après avoir enfin

@@ -1,6 +1,6 @@
 ---
-date: "2022-05-01T00:00:00.000Z"
-updatedAt: "2022-05-01T09:03:50.972Z"
+date: 2022-05-01T00:00:00.000Z
+updatedAt: 2022-05-01T09:03:50.972Z
 title: Twitter
 description: >-
   Suite aux annonces de rachat par Elon Musk, je vais bientôt fermer mon compte

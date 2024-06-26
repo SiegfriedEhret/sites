@@ -1,12 +1,12 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { formatDate, getYear } from "@packages/utils/date";
+import { compareDates, formatDate, getYear } from "@packages/utils/date";
 import { getCollection } from "astro:content";
 import Responsive from "@packages/ui/Responsive.astro";
 import SuperTitle from "@packages/ui/SuperTitle.astro";
 
 const posts = (await getCollection("posts")).sort((a, b) =>
-  b.data.date.toISOString().localeCompare(a.data.date.toISOString()),
+  compareDates(a.data.date, b.data.date),
 );
 ---
 

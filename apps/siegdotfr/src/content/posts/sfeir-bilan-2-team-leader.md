@@ -1,6 +1,6 @@
 ---
-date: "2019-01-23T00:00:00.000Z"
-updatedAt: "2021-05-24T08:04:49.318Z"
+date: 2019-01-23T00:00:00.000Z
+updatedAt: 2021-05-24T08:04:49.318Z
 title: Le bilan de mon aventure SFEIR (2/3)
 description: Team leader
 tags:

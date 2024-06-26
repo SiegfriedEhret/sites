@@ -3,20 +3,23 @@ import { Image } from "astro:assets";
 import { formatDate } from "@packages/utils/date";
 
 const { item } = Astro.props;
-const { url, title, description, date, image, imageDescription } = item;
 ---
 
-<a class="post" href={url}>
+<a class="post" href={`/${item.slug}`}>
   {
-    image && (
+    item.data.image && (
       <div class="image">
-        <Image src={image} alt={imageDescription ?? ""} class="img" />
+        <Image
+          src={item.data.image}
+          alt={item.data.imageDescription ?? ""}
+          class="img"
+        />
       </div>
     )
   }
-  <div class="title">{title}</div>
-  <div class="description">{description}</div>
-  <time datetime={date}>{formatDate(date)}</time>
+  <div class="title">{item.data.title}</div>
+  <div class="description">{item.data.description}</div>
+  <time datetime={item.data.date}>{formatDate(item.data.date)}</time>
 </a>
 
 <style>

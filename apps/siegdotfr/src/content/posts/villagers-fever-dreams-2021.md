@@ -1,6 +1,6 @@
 ---
-date: "2021-08-22T00:00:00.000Z"
-updatedAt: "2022-02-06T08:48:19.659Z"
+date: 2021-08-22T00:00:00.000Z
+updatedAt: 2022-02-06T08:48:19.659Z
 title: Villagers - Fever Dreams (2021)
 description: >-
   Un groupe que j'ai découvert très récemment, et un joli album qui donne envie

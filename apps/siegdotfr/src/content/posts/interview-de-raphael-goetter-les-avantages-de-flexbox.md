@@ -1,6 +1,6 @@
 ---
-date: "2022-05-26T00:00:00.000Z"
-updatedAt: "2022-05-26T12:06:40.770Z"
+date: 2022-05-26T00:00:00.000Z
+updatedAt: 2022-05-26T12:06:40.770Z
 title: "Interview de Raphaël Goetter : les avantages de Flexbox"
 description: >
   Raphaël Goetter et Rodolphe Rimelé étaient présents pour l’édition 2016 de

@@ -1,6 +1,6 @@
 ---
-date: "2018-01-01T00:00:00.000Z"
-updatedAt: "2021-05-23T21:15:04.101Z"
+date: 2018-01-01T00:00:00.000Z
+updatedAt: 2021-05-23T21:15:04.101Z
 title: Trucs et astuces pour FFmpeg
 description: Voici quelques commandes pour FFmpeg qui m'ont été pratiques dernièrement.
 tags:

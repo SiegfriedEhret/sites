@@ -1,6 +1,6 @@
 ---
-date: "2018-07-10T00:00:00.000Z"
-updatedAt: "2021-05-24T07:57:09.504Z"
+date: 2018-07-10T00:00:00.000Z
+updatedAt: 2021-05-24T07:57:09.504Z
 title: Interview de Quentin Adam
 description: >-
   J'étais à Devoxx en 2017 avec mon très cher Florian et nous avons rencontré

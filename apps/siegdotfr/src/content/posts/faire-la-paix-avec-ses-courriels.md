@@ -1,6 +1,6 @@
 ---
-date: "2021-05-13T00:00:00.000Z"
-updatedAt: "2021-05-24T12:12:16.494Z"
+date: 2021-05-13T00:00:00.000Z
+updatedAt: 2021-05-24T12:12:16.494Z
 title: Faire la paix avec ses courriels
 description: Voici comment je survis au milieu de l'océan de messages que je reçois.
 tags: []

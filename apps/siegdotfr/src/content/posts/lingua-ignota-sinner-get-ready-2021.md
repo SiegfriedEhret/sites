@@ -1,6 +1,6 @@
 ---
-date: "2021-08-11T00:00:00.000Z"
-updatedAt: "2022-02-06T08:52:18.736Z"
+date: 2021-08-11T00:00:00.000Z
+updatedAt: 2022-02-06T08:52:18.736Z
 title: LINGUA IGNOTA - SINNER GET READY (2021)
 description: Découvrons ensemble le nouvel album de LINGUA IGNOTA. C'est magnifique.
 tags:

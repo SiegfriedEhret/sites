@@ -1,5 +1,5 @@
 ---
-import { formatDate } from "@packages/utils/date";
+import { compareDates, formatDate } from "@packages/utils/date";
 import Layout from "../../layouts/Layout.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 import Responsive from "@packages/ui/Responsive.astro";
@@ -17,9 +17,7 @@ export async function getStaticPaths() {
         tag: t,
         posts: posts
           .filter((el) => (el.data.tags ?? []).includes(t))
-          .sort((a, b) =>
-            b.data.date.toISOString().localeCompare(a.data.date.toISOString()),
-          ),
+          .sort((a, b) => compareDates(a.data.date, b.data.date)),
       },
     };
   });

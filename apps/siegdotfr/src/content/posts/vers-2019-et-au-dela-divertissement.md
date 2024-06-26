@@ -1,6 +1,6 @@
 ---
-date: "2019-01-02T00:00:00.000Z"
-updatedAt: "2021-05-24T07:59:42.490Z"
+date: 2019-01-02T00:00:00.000Z
+updatedAt: 2021-05-24T07:59:42.490Z
 title: "Vers 2019 et au-delà: divertissement"
 description: It’s that time again... A review of last year - entertainment part !
 tags:

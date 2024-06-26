@@ -1,6 +1,6 @@
 ---
-date: "2022-09-13T00:00:00.000Z"
-updatedAt: "2022-09-13T19:47:13.293Z"
+date: 2022-09-13T00:00:00.000Z
+updatedAt: 2022-09-13T19:47:13.293Z
 title: Le stack
 description: Quelques détails sur l'extravagance technologique utilisée pour mes sites.
 tags: []

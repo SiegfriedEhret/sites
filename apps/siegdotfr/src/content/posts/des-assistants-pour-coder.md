@@ -1,6 +1,6 @@
 ---
-date: "2023-04-27T00:00:00.000Z"
-updatedAt: "2023-04-27T18:04:23.491Z"
+date: 2023-04-27T00:00:00.000Z
+updatedAt: 2023-04-27T18:04:23.491Z
 title: Des assistants pour coder
 description: "Copilot et ChatGPT, c'est mieux que ce que j'espérais."
 tags: []

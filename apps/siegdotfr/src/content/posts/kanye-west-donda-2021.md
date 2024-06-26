@@ -1,6 +1,6 @@
 ---
-date: "2021-09-04T00:00:00.000Z"
-updatedAt: "2022-02-06T08:43:23.635Z"
+date: 2021-09-04T00:00:00.000Z
+updatedAt: 2022-02-06T08:43:23.635Z
 title: Kanye West - Donda (2021)
 description: "Kanye et Dieu, Kanye et son divorce, Kanye ses potes, Kanye et Kanye."
 tags: []

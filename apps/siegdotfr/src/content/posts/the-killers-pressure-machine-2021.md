@@ -1,6 +1,6 @@
 ---
-date: "2021-08-21T00:00:00.000Z"
-updatedAt: "2022-02-06T08:50:03.587Z"
+date: 2021-08-21T00:00:00.000Z
+updatedAt: 2022-02-06T08:50:03.587Z
 title: The Killers - Pressure Machine (2021)
 description: Le 7ème album the The Killers. Sans surprise.
 tags:

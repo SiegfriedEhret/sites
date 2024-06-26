@@ -1,6 +1,6 @@
 ---
-date: "2021-08-01T00:00:00.000Z"
-updatedAt: "2022-02-06T08:55:59.794Z"
+date: 2021-08-01T00:00:00.000Z
+updatedAt: 2022-02-06T08:55:59.794Z
 title: Yola - Stand For Myself (2021)
 description: >-
   Quelques remarques sur le deuxième album de Yola «Stand For Myself», sorti le

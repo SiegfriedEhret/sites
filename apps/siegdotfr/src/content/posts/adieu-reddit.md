@@ -1,6 +1,6 @@
 ---
-date: "2023-06-08T00:00:00.000Z"
-updatedAt: "2023-06-11T19:13:44.818Z"
+date: 2023-06-08T00:00:00.000Z
+updatedAt: 2023-06-11T19:13:44.818Z
 title: Reddit
 description: La fin d'une dizaine d'années de défilement d'actualités et de mèmes.
 tags: []

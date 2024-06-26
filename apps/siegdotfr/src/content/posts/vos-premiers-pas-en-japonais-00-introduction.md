@@ -1,6 +1,6 @@
 ---
-date: "2018-06-22T00:00:00.000Z"
-updatedAt: "2021-05-24T07:54:06.362Z"
+date: 2018-06-22T00:00:00.000Z
+updatedAt: 2021-05-24T07:54:06.362Z
 title: "Vos premiers pas en japonais 00: introduction"
 description: Ceci est l'introduction à une série d'articles sur la langue japonaise.
 tags:

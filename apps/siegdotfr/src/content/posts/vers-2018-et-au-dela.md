@@ -1,6 +1,6 @@
 ---
-date: "2018-01-01T00:00:00.000Z"
-updatedAt: "2021-05-24T06:20:01.725Z"
+date: 2018-01-01T00:00:00.000Z
+updatedAt: 2021-05-24T06:20:01.725Z
 title: Vers 2018 et au-delà
 description: Un retour sur l'année dernière.
 tags:

@@ -1,6 +1,6 @@
 ---
-date: "2023-08-09T00:00:00.000Z"
-updatedAt: "2023-08-09T18:54:56.246Z"
+date: 2023-08-09T00:00:00.000Z
+updatedAt: 2023-08-09T18:54:56.246Z
 title: À plus les bots !
 description: >-
   Comment s'échapper (un peu) de la bulle de l'intelligence artificielle qui

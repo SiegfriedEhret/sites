@@ -1,13 +1,13 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
-import { formatDate, getYear } from "@packages/utils/date";
+import { compareDates, formatDate, getYear } from "@packages/utils/date";
 import BadidonSubscribe from "../../../components/BadidonSubscribe.astro";
 import Responsive from "@packages/ui/Responsive.astro";
 import SuperTitle from "@packages/ui/SuperTitle.astro";
 
 const badidon = (await getCollection("badidon")).sort((a, b) =>
-  b.data.date.toISOString().localeCompare(a.data.date.toISOString()),
+  compareDates(a.data.date, b.data.date),
 );
 ---
 

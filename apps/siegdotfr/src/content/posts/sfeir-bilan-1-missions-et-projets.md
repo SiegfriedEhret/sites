@@ -1,6 +1,6 @@
 ---
-date: "2019-01-17T00:00:00.000Z"
-updatedAt: "2021-05-24T08:03:21.598Z"
+date: 2019-01-17T00:00:00.000Z
+updatedAt: 2021-05-24T08:03:21.598Z
 title: Le bilan de mon aventure SFEIR (1/3)
 description: Les missions et projets.
 tags:

@@ -1,6 +1,6 @@
 ---
-date: "2022-05-26T00:00:00.000Z"
-updatedAt: "2022-05-26T13:11:01.773Z"
+date: 2022-05-26T00:00:00.000Z
+updatedAt: 2022-05-26T13:11:01.773Z
 title: >-
   Interview de Philippe Charrière: JavaScript, programmation fonctionnelle et
   Golo

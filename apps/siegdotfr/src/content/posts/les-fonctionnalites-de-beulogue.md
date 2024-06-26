@@ -1,6 +1,6 @@
 ---
-date: "2019-05-24T00:00:00.000Z"
-updatedAt: "2021-05-24T06:55:50.530Z"
+date: 2019-05-24T00:00:00.000Z
+updatedAt: 2021-05-24T06:55:50.530Z
 title: Les fonctionnalités de beulogue
 description: Plongeons un peu dans ce que beulogue sait faire.
 tags:

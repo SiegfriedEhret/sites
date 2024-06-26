@@ -1,6 +1,6 @@
 ---
-date: "2019-01-02T00:00:00.000Z"
-updatedAt: "2021-05-24T08:52:44.104Z"
+date: 2019-01-02T00:00:00.000Z
+updatedAt: 2021-05-24T08:52:44.104Z
 title: Vers 2019 et au-delà
 description: It’s that time again... A review of last year.
 tags:

@@ -31,3 +31,7 @@ export function getYear(date: string | number | Date) {
   const d = new Date(date);
   return d.getFullYear();
 }
+
+export function compareDates(a: Date, b: Date) {
+  return b.toISOString().localeCompare(a.toISOString());
+}

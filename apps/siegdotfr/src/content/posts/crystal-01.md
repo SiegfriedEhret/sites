@@ -1,6 +1,6 @@
 ---
-date: "2020-05-20T00:00:00.000Z"
-updatedAt: "2022-04-01T09:06:45.666Z"
+date: 2020-05-20T00:00:00.000Z
+updatedAt: 2022-04-01T09:06:45.666Z
 title: "Coder avec Crystal pour ne pas perdre la boule, première partie"
 description: Découvrons le langage Crystal ensemble !
 tags:

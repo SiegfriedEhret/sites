@@ -1,6 +1,6 @@
 ---
-date: "2021-09-19T00:00:00.000Z"
-updatedAt: "2022-02-06T08:40:50.124Z"
+date: 2021-09-19T00:00:00.000Z
+updatedAt: 2022-02-06T08:40:50.124Z
 title: Carcass - Torn Arteries (2021)
 description: Les pionniers du chirurgie-core reviennent avec un album incroyable.
 tags: []

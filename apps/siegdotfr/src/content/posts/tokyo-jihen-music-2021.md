@@ -1,6 +1,6 @@
 ---
-date: "2021-07-29T00:00:00.000Z"
-updatedAt: "2022-02-06T08:57:38.500Z"
+date: 2021-07-29T00:00:00.000Z
+updatedAt: 2022-02-06T08:57:38.500Z
 title: 東京事変 (Tokyo Jihen) - 音楽 (Music) (2021)
 description: Un retour sur le dernier album!
 tags:
