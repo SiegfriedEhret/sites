@@ -35,7 +35,11 @@ const badidon = (await getCollection("badidon"))
   <Responsive tag="section">
     <h2>C'est tout chaud, voici les dernières notes.</h2>
     <nav class="spotlight">
-      {posts.map((item) => <ClickOnThatPost item={item} />)}
+      {
+        posts.map((item) => (
+          <ClickOnThatPost item={{ ...item, slug: `ied/${item.slug}` }} />
+        ))
+      }
     </nav>
     <a href="/ied/notes">Toutes les notes.</a>
   </Responsive>
