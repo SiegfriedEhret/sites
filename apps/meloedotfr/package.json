@@ -16,7 +16,7 @@
     "@astrojs/rss": "^4.0.7",
     "@packages/ui": "workspace:^",
     "@packages/utils": "workspace:^",
-    "astro": "^4.11.1",
+    "astro": "^4.11.3",
     "sharp": "^0.33.4",
     "typescript": "^5.5.2"
   },
