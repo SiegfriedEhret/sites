@@ -220,3 +220,15 @@ main > * + * {
 [x-cloak] {
   display: none !important;
 }
+
+.icon.icon-link {
+  display: inline-block;
+  opacity: 0;
+}
+.icon.icon-link::after {
+  content: "🔗";
+  margin-inline-start: var(--base);
+}
+:is(h1, h2, h3, h4, h5, h6):is(:hover) .icon.icon-link {
+  opacity: 1;
+}
