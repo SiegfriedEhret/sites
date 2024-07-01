@@ -9,6 +9,12 @@ tags:
   - nflm
 ---
 
+Welcome to this edition of News From Last Month!
+
+You are now exploring the `developer` edition. The [`wonderer` edition is here](/news-from-last-month-202407-wonderer-edition)!
+
+I have started a small web ring called [🐉 vouivre](https://vouivre.ehret.me/) to play a bit with [Astro DB](https://astro.build/db/), it was fun!
+
 ## Web (HTML, CSS, JS, Design...)
 
 - [What's new in Svelte: June 2024](https://svelte.dev/blog/whats-new-in-svelte-june-2024) <!-- TAGS: 202406,dev,web -->

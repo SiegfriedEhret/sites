@@ -9,6 +9,10 @@ tags:
   - nflm
 ---
 
+Welcome to this edition of News From Last Month!
+
+You are now exploring the `wonderer` edition. The [`developer` edition is here](/news-from-last-month-202407-developer-edition)!
+
 I am starting this day by looking at the results of the first round of the [2024 French legislative election](https://en.wikipedia.org/wiki/2024_French_legislative_election). Please vote, and please vote for the least worst candidate. [Et tout le monde s'en fout](https://www.youtube.com/watch?v=BoqpHwDT6Kg) (in French).
 
 ## Science
