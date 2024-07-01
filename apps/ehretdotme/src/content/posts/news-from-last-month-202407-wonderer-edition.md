@@ -15,6 +15,10 @@ You are now exploring the `wonderer` edition. The [`developer` edition is here](
 
 I am starting this day by looking at the results of the first round of the [2024 French legislative election](https://en.wikipedia.org/wiki/2024_French_legislative_election). Please vote, and please vote for the least worst candidate. [Et tout le monde s'en fout](https://www.youtube.com/watch?v=BoqpHwDT6Kg) (in French).
 
+Getting back to Open Mike Eagle from the picture at the top. His 2012's [4NML HSPTL](https://fakefour.bandcamp.com/album/4nml-hsptl) was a blast and I have been addicted since. [Brick Body Kids Still Daydream](https://openmikeeagle360.bandcamp.com/album/brick-body-kids-still-daydream) is one of my favorite. His concert was the last before my departure from Paris at the end of 2018.
+
+Ok, you want the links, here you go!
+
 ## Science
 
 - [‘We’re trying to find the shape of space’: scientists wonder if the universe is like a doughnut | Space | The Guardian](https://www.theguardian.com/science/article/2024/jun/08/shape-universe-topology-doughnut-flat-curvature-dimensions) <!-- TAGS: 202406,science -->
@@ -62,10 +66,6 @@ En français / In French:
 - [OpenAI Exec Says AI Will Kill Creative Jobs That "Shouldn't Have Been There in the First Place"](https://futurism.com/the-byte/openai-exec-ai-creative-jobs-shouldnt-exist) <!-- TAGS: 202406,ai -->
 
 ## Various
-
-Getting back to Open Mike Eagle from the picture at the top. His 2012's [4NML HSPTL](https://fakefour.bandcamp.com/album/4nml-hsptl) was a blast and I have been addicted since. [Brick Body Kids Still Daydream](https://openmikeeagle360.bandcamp.com/album/brick-body-kids-still-daydream) is one of my favorite. His concert was the last before my departure from Paris at the end of 2018.
-
-Ok, you want the links, here you go:
 
 - [Napster Sparked a File-Sharing Revolution 25 Years Ago \* TorrentFreak](https://torrentfreak.com/napster-sparked-a-file-sharing-revolution-25-years-ago-250601/) <!-- TAGS: 202406,various -->
 - [Kareem Roustom | Defining Classical Arabic Music with the Emmy-Nominated Composer - YouTube](https://www.youtube.com/watch?v=H9juh0VhKAA) <!-- TAGS: 202406,various -->
