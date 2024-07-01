@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 year="2024"
-month="05"
+month="06"
 ym="$year$month"
 
 postYear="2024"
-postMonth="06"
+postMonth="07"
 postDay="01"
 
 nflm_top="news-from-last-month-$postYear$postMonth-top.md"
