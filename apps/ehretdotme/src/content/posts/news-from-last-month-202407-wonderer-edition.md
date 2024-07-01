@@ -7,6 +7,7 @@ image: ./assets/IMG_5441.JPG
 imageDescription: I have been listening to a lot of Open Mike Eagle recently, so here is a picture fromt the beginning of his live show in Paris on 2018-11-26.
 tags:
   - nflm
+  - wonderer
 ---
 
 Welcome to this edition of News From Last Month!
