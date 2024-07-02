@@ -4,8 +4,9 @@ import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
 import type { APIRoute } from "astro";
 import { compareDates } from "@packages/utils/date";
+import { inline_comment_plugin } from "@packages/utils/markdown-remove-comments";
 
-const parser = new MarkdownIt();
+const parser = new MarkdownIt().use(inline_comment_plugin);
 
 const items = (await getCollection("posts"))
   .map((entry) => {
