@@ -12,7 +12,7 @@ const items = (await getCollection("posts"))
   .map((entry) => {
     let description = "";
     try {
-      description = `<![CDATA[${sanitizeHtml(parser.render(entry.body))}]]>`;
+      description = sanitizeHtml(parser.render(entry.body));
     } catch (e) {
       console.log("Failed to convert body", e);
       description = entry.data.description;
